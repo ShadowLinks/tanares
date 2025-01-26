@@ -2,10 +2,10 @@
 <elements>
 	<info>
 		<update version="0.0.1">
-			<file name="source.xml" url="" />
+			<file name="source.xml" url="https://github.com/ShadowLinks/tanares/blob/main/source.xml" />
 		</update>
 	</info>
-	<element name="Tanares RPG 5e" type="Source" source="Core" id="TANARES_RPG_5E">
+	<element name="Tanares RPG 5e" type="Source" source="Core" id="ID_TRPG5E">
 		<description>
 			<p><strong>Step into a world of adventure with the Player’s Guide to
 Tanares, your gateway to the thrilling world of Tanares. This
@@ -16,7 +16,9 @@ dive right in and start playing.</strong></p>
 		</description>
 		<setters>
 			<set name="abbreviation">TRPG5E</set>
+			<set name="url">https://dragorigames.com/tanares-5e/</set>
 			<set name="image">https://d1vzi28wh99zvq.cloudfront.net/images/24685/464263.webp</set>
+			<set name="author" abbreviation="DG" url="https://dragorigames.com/">Dragori Games</set>
 			<set name="official">false</set>
 			<set name="supplement">true</set>
 

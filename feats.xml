@@ -5,10 +5,10 @@
 		<description>Optional Features from Tanares RPG 5e</description>
 		<author url="">Tanares RPG 5e</author>
 		<update version="0.0.1">
-			<file name="feats.xml" url="" />
+			<file name="feats.xml" url="https://github.com/ShadowLinks/tanares/blob/main/feats.xml" />
 		</update>
 	</info>
-	<element name="Dwarf - Crusty Mind" type="Feat" source="Tanares RPG 5e" id="TANARES_RPG_5E">
+	<element name="Dwarf - Crusty Mind" type="Feat" source="Tanares RPG 5e" id="ID_TRPG_FEAT_CRUSTY_MIND">
 		<prerequisite>Dwarf</prerequisite>
 		<requirements>ID_SRD_RACE_DWARF||ID_WOTC_TCOE_RACE_CUSTOM_LINEAGE||ID_INTERNAL_GRANT_RACE_DWARF</requirements>
 		<description>

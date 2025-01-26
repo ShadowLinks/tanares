@@ -4,10 +4,10 @@
 		<description>Summer Elf from Tanares RPG 5E.</description>
 		<author url="">Dragori Games</author>
 		<update version="0.0.1">
-			<file name="race-elf.xml" url=""/>
+			<file name="race-elf.xml" url="https://github.com/ShadowLinks/tanares/blob/main/race-elf.xml"/>
 		</update>
 	</info>
-	<element name="Summer Elf" type="Sub Race" source="Tanares RPG 5E" id="TANARES_RPG_5E">
+	<element name="Summer Elf" type="Sub Race" source="Tanares RPG 5E" id="ID_TRPG_SUBRACE_SUMMER_ELF">
 		<supports>Elf</supports>
 		<description>
 			<p>.</p>
@@ -66,6 +66,75 @@
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_PHB_SPELL_TONGUES" level="7"/>
+		</rules>
+	</element>
+	<element name="Spring Elf" type="Sub Race" source="Tanares RPG 5E" id="ID_TRPG_SUBRACE_SPRING_ELF">
+		<supports>Elf</supports>
+		<description>
+			<p>.</p>
+			<p class="indent">.</p>
+			<p class="indent">.</p>
+			<p class="indent">
+				<strong>
+					<em>Ability Score Increase.</em>
+				</strong>
+				Your Wisdom score increases by 1 and another ability score by 1 except Dexterity and Wisdom.
+			</p>
+			<p class="indent">
+				<strong>
+					<em>Elf Bow Training.</em>
+				</strong>
+				You have proficiency with the longbow and shortbow.
+			</p>
+			<p class="indent">
+				<strong>
+					<em>Ancestral Spring Magic.</em>
+				</strong>
+				Through your connection to nature and the power of the forests, you gain access to spells linked to life. You know one cantrip of your choice from the druid spell list. When you reach 5th level, you learn a 2nd-level druid spell of your choice and can cast it once with this trait. At 7th level, you can cast the speak with plants spell once with this trait. You regain the ability to cast these spells when you finish a long rest. During character creation, you choose whether your spellcasting ability for these spells is Intelligence or Wisdom
+			</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="Wisdom" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Spring Elf)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTBOW" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGBOW" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY"/>
+			<grant type="Racial Trait" id="ID_TRPG_RACIAL_TRAIT_SPRING_MAGIC_CANTRIP" level="1" />
+            <grant type="Racial Trait" id="ID_TRPG_RACIAL_TRAIT_SPRING_MAGIC_SPELL" level="5" />
+            <grant type="Racial Trait" id="ID_TRPG_RACIAL_TRAIT_SPRING_MAGIC_SPEAK" level="7" />
+		</rules>
+	</element>
+	<element name="Cantrip" type="Racial Trait" source="Tanares RPG 5E" id="ID_TRPG_RACIAL_TRAIT_SPRING_MAGIC_CANTRIP">
+		<description>
+			<p>You know one cantrip of your choice from the Druid Spell list. </p>
+		</description>
+		<sheet display="false">
+			<description>You know one cantrip of your choice from the Druid spell list.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Druid Cantrip (Spring Elf)" supports="Druid,0"/>
+		</rules>
+	</element>
+    <element name="Spell" type="Racial Trait" source="Tanares RPG 5E" id="ID_TRPG_RACIAL_TRAIT_SPRING_MAGIC_SPELL">
+		<description>
+			<p>You know one Spell of your choice from the Druid spell list. </p>
+		</description>
+		<sheet display="false">
+			<description>You know one 2nd level spell of your choice from the Druid Spell list.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Druid Spell (Spring Elf)" supports="Druid,2"/>
+		</rules>
+	</element>
+     <element name="Spell" type="Racial Trait" source="Tanares RPG 5E" id="ID_TRPG_RACIAL_TRAIT_SPRING_MAGIC_SPEAK">
+		<description>
+			<p>You know Tongues. </p>
+		</description>
+		<sheet display="false">
+			<description>You know the spell Speak With Plants.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_PLANTS" level="7"/>
 		</rules>
 	</element>
 </elements>
