@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Feats</name>
+		<description>Optional Features from Tanares RPG 5e</description>
+		<author url="">Tanares RPG 5e</author>
+		<update version="0.0.1">
+			<file name="feats.xml" url="" />
+		</update>
+	</info>
+	<element name="Dwarf - Crusty Mind" type="Feat" source="Tanares RPG 5e" id="TANARES_RPG_5E">
+		<prerequisite>Dwarf</prerequisite>
+		<requirements>ID_SRD_RACE_DWARF||ID_WOTC_TCOE_RACE_CUSTOM_LINEAGE||ID_INTERNAL_GRANT_RACE_DWARF</requirements>
+		<description>
+			<p><i>Prerequisite: Dwarf</i></p>
+			<p>Your grumpy nature and natural weariness caused by the tragic past of your people made you careful and dedicated in your work but also distant to most people. You receive a -1 penalty on all your Charisma checks, but gain a +1 bonus on all your Wisdom checks.</p>
+		</description>
+		<sheet>
+			<description>You receive a -1 penalty on all your Charisma checks, but gain a +1 bonus on all your Wisdom checks.</description>
+		</sheet>
+		<rules>
+			<select type="penalty" ability="Charisma" value="-1" />
+			<select type="bonus" ability="Wisdom" value="1" />
+		</rules>
+	</element>
+</elements>

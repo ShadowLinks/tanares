@@ -1,0 +1,71 @@
+<elements>
+	<info>
+		<name>Summer Elf</name>
+		<description>Summer Elf from Tanares RPG 5E.</description>
+		<author url="">Dragori Games</author>
+		<update version="0.0.1">
+			<file name="race-elf.xml" url=""/>
+		</update>
+	</info>
+	<element name="Summer Elf" type="Sub Race" source="Tanares RPG 5E" id="TANARES_RPG_5E">
+		<supports>Elf</supports>
+		<description>
+			<p>.</p>
+			<p class="indent">.</p>
+			<p class="indent">.</p>
+			<p class="indent">
+				<strong>
+					<em>Ability Score Increase.</em>
+				</strong>
+				Your Charisma score increases by 1 and another ability score by 1 except Dexterity and Charisma.
+			</p>
+			<p class="indent">
+				<strong>
+					<em>Ancestral Summer Magic.</em>
+				</strong>
+				Through your people’s tradition and passionate spirit, you gain access to spells to influence others. You know one enchantment cantrip of your choice. When you reach 5th level, you learn a 2nd-level enchantment spell of your choice and can cast it once with this trait. At 7th level, you can cast the tongues spell once with this trait. You regain the ability to cast these spells when you finish a long rest. During character creation, you choose whether your spellcasting ability for these spells is Charisma or Intelligence.
+			</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="Charisma" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Summer Elf)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<grant type="Racial Trait" id="ID_TRPG_RACIAL_TRAIT_SUMMER_MAGIC_CANTRIP" level="1" />
+            <grant type="Racial Trait" id="ID_TRPG_RACIAL_TRAIT_SUMMER_MAGIC_SPELL" level="5" />
+            <grant type="Racial Trait" id="ID_TRPG_RACIAL_TRAIT_SUMMER_MAGIC_TONGUES" level="7" />
+		</rules>
+	</element>
+	<element name="Cantrip" type="Racial Trait" source="Tanares RPG 5E" id="ID_TRPG_RACIAL_TRAIT_SUMMER_MAGIC_CANTRIP">
+		<description>
+			<p>You know one cantrip of your choice from the Enchantment school. </p>
+		</description>
+		<sheet display="false">
+			<description>You know one cantrip of your choice from the Enchantment School.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Enchantment Cantrip (Summer Elf)" supports="Enchantment,0"/>
+		</rules>
+	</element>
+    <element name="Spell" type="Racial Trait" source="Tanares RPG 5E" id="ID_TRPG_RACIAL_TRAIT_SUMMER_MAGIC_SPELL">
+		<description>
+			<p>You know one Spell of your choice from the Enchantment school. </p>
+		</description>
+		<sheet display="false">
+			<description>You know one 2nd level spell of your choice from the Enchantment School.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Enchantment Spell (Summer Elf)" supports="Enchantment,2"/>
+		</rules>
+	</element>
+     <element name="Spell" type="Racial Trait" source="Tanares RPG 5E" id="ID_TRPG_RACIAL_TRAIT_SUMMER_MAGIC_TONGUES">
+		<description>
+			<p>You know Tongues. </p>
+		</description>
+		<sheet display="false">
+			<description>You know the spell Tounges.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_TONGUES" level="7"/>
+		</rules>
+	</element>
+</elements>
