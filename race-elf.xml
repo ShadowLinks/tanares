@@ -3,7 +3,7 @@
 		<name>Summer Elf</name>
 		<description>Summer Elf from Tanares RPG 5E.</description>
 		<author url="">Dragori Games</author>
-		<update version="0.0.1">
+		<update version="0.1.1">
 			<file name="race-elf.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/race-elf.xml" />
 		</update>
 	</info>
@@ -29,7 +29,7 @@
 		<sheet display="false"/>
 		<rules>
 			<stat name="Charisma" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
-			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Summer Elf)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Summer Elf)" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM" />
 			<grant type="Racial Trait" id="ID_TRPG_RACIAL_TRAIT_SUMMER_MAGIC_CANTRIP" level="1" />
             <grant type="Racial Trait" id="ID_TRPG_RACIAL_TRAIT_SUMMER_MAGIC_SPELL" level="5" />
             <grant type="Racial Trait" id="ID_TRPG_RACIAL_TRAIT_SUMMER_MAGIC_TONGUES" level="7" />
@@ -96,7 +96,7 @@
 		<sheet display="false"/>
 		<rules>
 			<stat name="Wisdom" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
-			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Spring Elf)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Spring Elf)" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_CHARISMA" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTBOW" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY"/>
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGBOW" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY"/>
 			<grant type="Racial Trait" id="ID_TRPG_RACIAL_TRAIT_SPRING_MAGIC_CANTRIP" level="1" />
@@ -135,6 +135,128 @@
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_PLANTS" level="7"/>
+		</rules>
+	</element>
+	<element name="Autumn Elf" type="Sub Race" source="Tanares RPG 5E" id="ID_TRPG_SUBRACE_AUTUMN_ELF">
+		<supports>Elf</supports>
+		<description>
+			<p>.</p>
+			<p class="indent">.</p>
+			<p class="indent">.</p>
+			<p class="indent">
+				<strong>
+					<em>Ability Score Increase.</em>
+				</strong>
+				Your Intelligence score increases by 1 and another ability score by 1 except Dexterity and Intelligence.
+			</p>
+			<p class="indent">
+				<strong>
+					<em>Ancestral Autumn Magic.</em>
+				</strong>
+				Through the magical legacy and ancestry of your people, you gain access to spells from the school of Abjuration. You know one cantrip of your choice from the abjuration school. When you reach 5th level, you learn a 2nd-level abjuration spell of your choice and can cast it once with this trait. At 7th level, you can cast the remove curse spell once with this trait. You regain the ability to cast these spells when you finish a long rest. During character creation, you choose whether your spellcasting ability for these spells is Intelligence or Wisdom.
+			</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="Intelligence" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Autumn Elf)" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_CHARISMA|ID_PHB_FEAT_ASI_WISDOM" />
+			<grant type="Racial Trait" id="ID_TRPG_RACIAL_TRAIT_AUTUMN_MAGIC_CANTRIP" level="1" />
+			<grant type="Racial Trait" id="ID_TRPG_RACIAL_TRAIT_AUTUMN_MAGIC_SPELL" level="5" />
+			<grant type="Racial Trait" id="ID_TRPG_RACIAL_TRAIT_AUTUMN_MAGIC_REMOVE_CURSE" level="7" />
+		</rules>
+	</element>
+	<element name="Cantrip" type="Racial Trait" source="Tanares RPG 5E" id="ID_TRPG_RACIAL_TRAIT_AUTUMN_MAGIC_CANTRIP">
+		<description>
+			<p>You know one cantrip of your choice from the Abjuration school. </p>
+		</description>
+		<sheet display="false">
+			<description>You know one cantrip of your choice from the Abjuration school.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Abjuration Cantrip (Autumn Elf)" supports="Abjuration,0"/>
+		</rules>
+	</element>
+	<element name="Spell" type="Racial Trait" source="Tanares RPG 5E" id="ID_TRPG_RACIAL_TRAIT_AUTUMN_MAGIC_SPELL">
+		<description>
+			<p>You know one Spell of your choice from the Abjuration school. </p>
+		</description>
+		<sheet display="false">
+			<description>You know one 2nd level spell of your choice from the Abjuration school.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Abjuration Spell (Autumn Elf)" supports="Abjuration,2"/>
+		</rules>
+	</element>
+	<element name="Spell" type="Racial Trait" source="Tanares RPG 5E" id="ID_TRPG_RACIAL_TRAIT_AUTUMN_MAGIC_REMOVE_CURSE">
+		<description>
+			<p>You know Remove Curse. </p>
+		</description>
+		<sheet display="false">
+			<description>You know the spell Remove Curse.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_REMOVE_CURSE" level="7"/>
+		</rules>
+	</element>
+	<element name="Winter Elf" type="Sub Race" source="Tanares RPG 5E" id="ID_TRPG_SUBRACE_WINTER_ELF">
+		<supports>Elf</supports>
+		<description>
+			<p>.</p>
+			<p class="indent">.</p>
+			<p class="indent">.</p>
+			<p class="indent">
+				<strong>
+					<em>Ability Score Increase.</em>
+				</strong>
+				Your Constitution score increases by 1 and another ability score by 1 except Dexterity and Constitution.
+			</p>
+			<p class="indent">
+				<strong>
+					<em>Ancestral Winter Magic.</em>
+				</strong>
+				Through your connection with the ancestral power of your people over death, you gain access to spells from the school of Necromancy. You know one cantrip of your choice from the necromancy school. When you reach 5th level, you learn a 2nd-level necromancy spell of your choice and can cast it once with this trait. At 7th level, you can cast the speak with dead spell once with this trait. You regain the ability to cast these spells when you finish a long rest. During character creation, you choose whether your spellcasting ability for these spells is Intelligence or Wisdom.
+			</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="Constitution" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Winter Elf)" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_CHARISMA|ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM" />
+			<grant type="Racial Trait" id="ID_TRPG_RACIAL_TRAIT_WINTER_MAGIC_CANTRIP" level="1" />
+			<grant type="Racial Trait" id="ID_TRPG_RACIAL_TRAIT_WINTER_MAGIC_SPELL" level="5" />
+			<grant type="Racial Trait" id="ID_TRPG_RACIAL_TRAIT_WINTER_MAGIC_SPEAK_WITH_DEAD" level="7" />
+		</rules>
+	</element>
+	<element name="Cantrip" type="Racial Trait" source="Tanares RPG 5E" id="ID_TRPG_RACIAL_TRAIT_WINTER_MAGIC_CANTRIP">
+		<description>
+			<p>You know one cantrip of your choice from the Necromancy school. </p>
+		</description>
+		<sheet display="false">
+			<description>You know one cantrip of your choice from the Necromancy school.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Necromancy Cantrip (Winter Elf)" supports="Necromancy,0"/>
+		</rules>
+	</element>
+	<element name="Spell" type="Racial Trait" source="Tanares RPG 5E" id="ID_TRPG_RACIAL_TRAIT_WINTER_MAGIC_SPELL">
+		<description>
+			<p>You know one Spell of your choice from the Necromancy school. </p>
+		</description>
+		<sheet display="false">
+			<description>You know one 2nd level spell of your choice from the Necromancy school.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Necromancy Spell (Winter Elf)" supports="Necromancy,2"/>
+		</rules>
+	</element>
+	<element name="Spell" type="Racial Trait" source="Tanares RPG 5E" id="ID_TRPG_RACIAL_TRAIT_WINTER_MAGIC_SPEAK_WITH_DEAD">
+		<description>
+			<p>You know Speak with Dead. </p>
+		</description>
+		<sheet display="false">
+			<description>You know the spell Speak with Dead.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_DEAD" level="7"/>
 		</rules>
 	</element>
 </elements>
