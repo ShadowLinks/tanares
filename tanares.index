@@ -12,6 +12,6 @@
 		<file name="feats.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/feats.xml" />
         <file name="race-elf.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/race-elf.xml" />
         <file name="source.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/source.xml" />
-		<file name="source.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/race-dragonborn.xml" />
+		<file name="race-dragonborn.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/race-dragonborn.xml" />
     </files>
 </index>
