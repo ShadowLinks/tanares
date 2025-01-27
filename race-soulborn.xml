@@ -1,0 +1,10 @@
+<elements>
+	<info>
+		<name>Soulborn</name>
+		<description>Soulborn species from Tanares RPG 5e.</description>
+		<author url="">Dragori Games</author>
+		<update version="0.0.1">
+			<file name="race-soulborn.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/race-soulborn.xml" />
+		</update>
+	</info>
+</elements>

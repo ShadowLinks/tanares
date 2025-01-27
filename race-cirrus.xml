@@ -1,0 +1,10 @@
+<elements>
+	<info>
+		<name>Cirrus</name>
+		<description>Cirrus species from Tanares RPG 5e.</description>
+		<author url="">Dragori Games</author>
+		<update version="0.0.1">
+			<file name="race-cirrus.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/race-cirrus.xml" />
+		</update>
+	</info>
+</elements> 
