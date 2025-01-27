@@ -18,15 +18,12 @@
 				</strong>
 				Your Strength score increases by 2 and Constitution score by 1 instead of the normal Dragonborn ability score increases. </p>
 		</description>
-		<sheet alt="Red">
-			<description>Your draconic ancestry is {{draconic-ancestry}}. Your damage type is {{draconic-ancestry:damage type}}. Your breath weapon is {{draconic-ancestry:breath}}.</description>
+		<sheet alt="Kaldris's Strength">
+			<description> +2 STR +1 CON.</description>
 		</sheet>
 		<rules>
 			<grant type="Grants" id="ID_WOTC_EGTW_GRANTS_DRAGONBORN_VARIANT"/>
 			<grant type="Grants" id="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_RED" />
-			<stat inline="true" name="draconic-ancestry" value="Red"/>
-			<stat inline="true" name="draconic-ancestry:damage type" value="Fire"/>
-			<stat inline="true" name="draconic-ancestry:breath" value="15 ft. cone (Dex. save)"/>
             <stat name="strength" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
             <stat name="constitution" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_DAMAGE_RESISTANCE" />
