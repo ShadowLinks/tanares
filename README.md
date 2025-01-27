@@ -1,6 +1,6 @@
 Aurora Builder element for Tanares RPG
 
-Index - HERE
+Index - https://github.com/ShadowLinks/tanares/blob/main/tanares.index
 
 Starting with Species.
 
