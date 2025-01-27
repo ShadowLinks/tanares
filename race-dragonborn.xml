@@ -24,9 +24,184 @@
 		<rules>
 			<grant type="Grants" id="ID_WOTC_EGTW_GRANTS_DRAGONBORN_VARIANT"/>
 			<grant type="Grants" id="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_RED" />
-            <stat name="strength" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
-            <stat name="constitution" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<stat name="strength" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<stat name="constitution" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_DAMAGE_RESISTANCE" />
+		</rules>
+	</element>
+	<element name="Tanares Draconic Ancestry (Blue)" type="Racial Trait" source="Tanares RPG 5e" id="ID_TRPG_RACIAL_TRAIT_DRACONIC_ANCESTRY_BLUE">
+		<supports>Draconic Ancestry</supports>
+		<description>
+			<div element="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY"/>
+			<p> Analytical, strategic, and disciplined, blue dragonborn reflect Thalara’s keen intellect and blue-scaled, scholarly appearance. They value structure and efficiency but can be arrogant. Respected for their problem-solving skills, they are indispensable assets in the fight against the Ungods</p>
+			<p class="indent">
+				<strong>
+					<em>Thelara's Intellect.</em>
+				</strong>
+				Your Intelligence score increases by 2 and Wisdom score by 1 instead of the normal Dragonborn ability score increases. </p>
+		</description>
+		<sheet alt="Thelara's Intellect">
+			<description> +2 INT +1 WIS.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_WOTC_EGTW_GRANTS_DRAGONBORN_VARIANT"/>
+			<grant type="Grants" id="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_BLUE" />
+			<stat name="intelligence" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<stat name="wisdom" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_DAMAGE_RESISTANCE" />
+		</rules>
+	</element>
+	<element name="Tanares Draconic Ancestry (White)" type="Racial Trait" source="Tanares RPG 5e" id="ID_TRPG_RACIAL_TRAIT_DRACONIC_ANCESTRY_WHITE">
+		<supports>Draconic Ancestry</supports>
+		<description>
+			<div element="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY"/>
+			<p>  Steadfast and honorable, white dragonborn share the loyalty and silver-white scales of Valorus, as well as his serrated claws. They have a strong moral compass and excel in combat. While their rigid worldview can make them inflexible, their dedication makes them formidable allies against the Ungods.</p>
+			<p class="indent">
+				<strong>
+					<em>Valorus' Resilience.</em>
+				</strong>
+				Your Constitution score increases by 2 and Charisma score by 1 instead of the normal Dragonborn ability score increases. </p>
+		</description>
+		<sheet alt="Valorus' Resilience">
+			<description> +2 CON +1 CHA.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_WOTC_EGTW_GRANTS_DRAGONBORN_VARIANT"/>
+			<grant type="Grants" id="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_WHITE" />
+			<stat name="constitution" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<stat name="charisma" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_DAMAGE_RESISTANCE" />
+		</rules>
+	</element>
+	<element name="Tanares Draconic Ancestry (Green)" type="Racial Trait" source="Tanares RPG 5e" id="ID_TRPG_RACIAL_TRAIT_DRACONIC_ANCESTRY_GREEN">
+		<supports>Draconic Ancestry</supports>
+		<description>
+			<div element="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY"/>
+			<p> Witty and adaptable, green dragonborn embody Sylvara’s playful nature, as well as her brilliant eyes and vibrant green scales. They enjoy socializing and possess cunning minds, excelling in manipulation and diplomacy, but carrying a spark of greed and love for gold. Their ability to unite diverse forces against the Ungods is crucial.</p>
+			<p class="indent">
+				<strong>
+					<em>Sylvaria's Guile.</em>
+				</strong>
+				Your Dexterity score increases by 2 and Charisma score by 1 instead of the normal Dragonborn ability score increases. </p>
+		</description>
+		<sheet alt="Sylvaria's Guile">
+			<description> +2 DEX +1 CHA.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_WOTC_EGTW_GRANTS_DRAGONBORN_VARIANT"/>
+			<grant type="Grants" id="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_GREEN" />
+			<stat name="dexterity" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<stat name="charisma" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_DAMAGE_RESISTANCE" />
+		</rules>
+	</element>
+	<element name="Tanares Draconic Ancestry (Black)" type="Racial Trait" source="Tanares RPG 5e" id="ID_TRPG_RACIAL_TRAIT_DRACONIC_ANCESTRY_BLACK">
+		<supports>Draconic Ancestry</supports>
+		<description>
+			<div element="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY"/>
+			<p> Enigmatic and relentless, black dragonborns mirror Zarkon’s jet-black scales and long horns, as well as his preference for concealing attire. They seek understanding and walk morally ambiguous paths. Their determination and willingness to make tough choices create reliable allies in the battle against the Ungods</p>
+			<p class="indent">
+				<strong>
+					<em>Zarkon’s Versatility.</em>
+				</strong>
+				Your increase 4 different scores by 1 instead of the normal Dragonborn ability score increases. </p>
+		</description>
+		<sheet alt="Zarkon's Versatility">
+			<description> +1 x4.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_WOTC_EGTW_GRANTS_DRAGONBORN_VARIANT"/>
+			<grant type="Grants" id="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_BLACK" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Black Dragonborn)1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" supports="Black_dragon_var" number="4" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_DAMAGE_RESISTANCE" />
+		</rules>
+	</element>
+	<element name="Tanares Draconic Ancestry (Gold)" type="Racial Trait" source="Tanares RPG 5e" id="ID_TRPG_RACIAL_TRAIT_DRACONIC_ANCESTRY_GOLD">
+		<supports>Draconic Ancestry</supports>
+		<description>
+			<div element="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY"/>
+			<p> Compassionate and devoted, gold dragonborns exemplify Auros’ faith in the gods Tamera and Bauron, as well as his radiant golden scales and very long, thin tail. Tirelessly aiding others, they can be overly trusting and naive. Their steadfast loyalty and benevolence serve as a beacon of hope in the struggle against the Ungods.</p>
+			<p class="indent">
+				<strong>
+					<em>Auros' Wisdom.</em>
+				</strong>
+				Your Wisdom score increases by 2 and Charisma score by 1 instead of the normal Dragonborn ability score increases. </p>
+		</description>
+		<sheet alt="Auros' Wisdom">
+			<description> +2 WIS +1 CHA.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_WOTC_EGTW_GRANTS_DRAGONBORN_VARIANT"/>
+			<grant type="Grants" id="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_GOLD" />
+			<stat name="wisdom" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<stat name="charisma" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_DAMAGE_RESISTANCE" />
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Strength)" type="Ability Score Improvement" source="Tanares RPG 5E" id="ID_RACE_BLACK_DRAGON_VARIANT_STRENGTH">
+		<compendium display="false"/>
+		<supports>Black_dragon_var</supports>
+		<description>
+			<p>Your Strength score increases by 1.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="strength" value="1" alt="Black Dragon ASI"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Dexterity)" type="Ability Score Improvement" source="Tanares RPG 5E" id="ID_RACE_BLACK_DRAGON_VARIANT_DEXTERITY">
+		<compendium display="false"/>
+		<supports>Black_dragon_var</supports>
+		<description>
+			<p>Your Dexterity score increases by 1.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="dexterity" value="1" alt="Black Dragon ASI"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Constitution)" type="Ability Score Improvement" source="Tanares RPG 5E" id="ID_RACE_BLACK_DRAGON_VARIANT_CONSTITUTION">
+		<compendium display="false"/>
+		<supports>Black_dragon_var</supports>
+		<description>
+			<p>Your Constitution score increases by 1.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="constitution" value="1" alt="Black Dragon ASI"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Intelligence)" type="Ability Score Improvement" source="Tanares RPG 5E" id="ID_RACE_BLACK_DRAGON_VARIANT_INTELLIGENCE">
+		<compendium display="false"/>
+		<supports>Black_dragon_var</supports>
+		<description>
+			<p>Your Intelligence score increases by 1.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="intelligence" value="1" alt="Black Dragon ASI"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Wisdom)" type="Ability Score Improvement" source="Tanares RPG 5E" id="ID_RACE_BLACK_DRAGON_VARIANT_WISDOM">
+		<compendium display="false"/>
+		<supports>Black_dragon_var</supports>
+		<description>
+			<p>Your Wisdom score increases by 1.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="wisdom" value="1" alt="Black Dragon ASI"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Charisma)" type="Ability Score Improvement" source="Tanares RPG 5E" id="ID_RACE_BLACK_DRAGON_VARIANT_CHARISMA">
+		<compendium display="false"/>
+		<supports>Black_dragon_var</supports>
+		<description>
+			<p>Your Charisma score increases by 1.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="charisma" value="1" alt="Black Dragon ASI"/>
 		</rules>
 	</element>
 </elements>
