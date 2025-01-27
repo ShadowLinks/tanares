@@ -4,7 +4,7 @@
 		<name>Tanares</name>
 		<description>Supplements from Tanares RPG 5E to expand your core gaming elements.</description>
 		<author url="https://dragorigames.com/">Dragori Games</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="tanares.index" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/tanares.index" />
 		</update>
 	</info>
@@ -12,5 +12,6 @@
 		<file name="feats.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/feats.xml" />
         <file name="race-elf.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/race-elf.xml" />
         <file name="source.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/source.xml" />
+		<file name="source.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/race-dragonborn.xml" />
     </files>
 </index>

@@ -1,9 +1,9 @@
 <elements>
 	<info>
-		<name>Summer Elf</name>
-		<description>Summer Elf from Tanares RPG 5E.</description>
+		<name>Tanares Elf</name>
+		<description>Elf subspecies from Tanares RPG 5E.</description>
 		<author url="">Dragori Games</author>
-		<update version="0.1.1">
+		<update version="0.1.2">
 			<file name="race-elf.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/race-elf.xml" />
 		</update>
 	</info>

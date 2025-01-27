@@ -1,0 +1,33 @@
+<elements>
+	<info>
+		<name>Tanares Dragonborn</name>
+		<description>Dragonborn from Tanares RPG 5E.</description>
+		<author url="">Dragori Games</author>
+		<update version="0.0.1">
+			<file name="race-dragonborn.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/race-dragonborn.xml" />
+		</update>
+	</info>
+	<element name="Tanares Draconic Ancestry (Red)" type="Racial Trait" source="Tanares RPG 5e" id="ID_TRPG_RACIAL_TRAIT_DRACONIC_ANCESTRY_RED">
+		<supports>Draconic Ancestry</supports>
+		<description>
+			<div element="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY"/>
+			<p> Passionate and bold, red dragonborn embody camaraderie and fearlessness. Resembling the legendary progenitor Kaldris, they have fiery-red scales and muscular builds. They enjoy festivities and social gatherings, and have a high alcohol tolerance. Valuing bravery and decisiveness, they can be impulsive and competitive. Their unwavering courage represents hope for Tanares’ people in the fight against the Ungods</p>
+			<p class="indent">
+				<strong>
+					<em>Kaldris's Strength.</em>
+				</strong>
+				Your Strength score increases by 2 and Constitution score by 1 instead of the normal Dragonborn ability score increases. </p>
+		</description>
+		<sheet alt="Red">
+			<description>Your draconic ancestry is {{draconic-ancestry}}. Your damage type is {{draconic-ancestry:damage type}}. Your breath weapon is {{draconic-ancestry:breath}}.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_WOTC_EGTW_GRANTS_DRAGONBORN_VARIANT"/>
+			<stat inline="true" name="draconic-ancestry" value="Red"/>
+			<stat inline="true" name="draconic-ancestry:damage type" value="Fire"/>
+			<stat inline="true" name="draconic-ancestry:breath" value="15 ft. cone (Dex. save)"/>
+            <stat name="strength" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+            <stat name="constitution" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+		</rules>
+	</element>
+</elements>
