@@ -1,10 +1,86 @@
 <elements>
-	<info>
-		<name>Cirrus</name>
-		<description>Cirrus species from Tanares RPG 5e.</description>
-		<author url="">Dragori Games</author>
-		<update version="0.0.1">
-			<file name="race-cirrus.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/race-cirrus.xml" />
-		</update>
-	</info>
-</elements> 
+    <info>
+        <name>Cirrus</name>
+        <description>Cirrus species from Tanares RPG 5e.</description>
+        <author url="">Dragori Games</author>
+        <update version="0.0.1">
+            <file name="race-cirrus.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/race-cirrus.xml" />
+        </update>
+    </info>
+    <element name="Cirrus" type="Race" source="Tanares RPG 5E" id="ID_RACE_CIRRUS">
+        <description>
+        <!-- NEED TO FIX FORMATTING-->
+            <p class="flavor">Bearers of two souls and two personalities, these angel-like beings organize themselves in knightly orders dedicated to eradication of the Ungods and to accomplish their divine calling</p>
+            <h4>The first Spellcasters</h4>
+            <p>Throughout the annals of history, the cirrus have distinguished themselves as the first mortals to pray for the gods, and the earliest scholars to unearth the secrets of wizardry. They seamlessly interlaced magic into the essence of their civilization, forging a society where the might of arcane arts and divine power is entwined with their chivalrous way of life. Renowned for their mastery of all forms of magic and their unyielding determination to obliterate the Ungods and their nefarious servants, the cirrus strive to pierce the enigmatic Tanarean Magic Field. They believe that this untamed and raw power holds the key to vanquishing the Ungods once and for all. While many other species consider this a great taboo, for the gods themselves established the Tanaren Magic Field, no condemnation has ever deterred the cirrus from pursuing their belief in this divine mandate to find ultimate magic power. The chivalric orders of the cirrus exemplify their ingenious and diverse mastery of magic. Each order embodies a unique fusion of virtues and magical expertise, reflecting the rich complexity of cirrus society. Orders bearing black banners excel in arcane spellcasting, while those with white banners champion divine spells. As per time-honored tradition, every cirrus is expected to join one of these orders upon reaching adulthood, undergoing rigorous training as squires before ascending to the esteemed ranks of knights. Though most embrace the path of spellcasting, not all choose this calling; many cirrus adeptly balance their magical prowess with formidable physical combat skills. Magic is woven into the very fabric of cirrus culture, molding their society and their relentless battle against the Ungods. Their insatiable thirst for arcane knowledge and divine wisdom has led them to craft potent rituals, capable of decimating their foes and shielding their people. The cirrus’ groundbreaking utilization of magic has bestowed upon them a distinct advantage in their ongoing conflict against the Ungods, and their unyielding determination to unravel the enigma of the Tanarean Magic Field bears witness to their unrelenting pursuit of ultimate triumph. As a species that has constructed its very existence upon the foundation of magic, the cirrus exemplifies the limitless potential of arcane and divine power.</p>
+        
+        <p class="indent"></p>
+        <p class="indent"></p>
+        <h4>CIRRUS TRAITS</h4>
+        <p class="indent">
+            <strong>
+                <em>Ability Score Increase.</em>
+            </strong>
+            Increase one ability score of your choice by 2 and increase a different score by 1, or increase three different scores by 1.
+            <i>Your other half cannot use the same ablity scores</i>
+        </p>
+        <p class="indent">
+            <strong>
+                <em>Creature Type.</em>
+            </strong>
+            You are a Humanoid. 
+        </p>
+        <p class="indent">
+            <strong>
+                <em>Size.</em>
+            </strong>
+            You are Medium.
+        </p>
+        <p class="indent">
+            <strong>
+                <em>Speed.</em>
+            </strong>
+            Your walking speed is 30 feet.
+        </p>
+        <p class="indent">
+            <strong>
+                <em>Two in One.</em>
+            </strong>
+            <!-- NEED TO FIX FORMATTING-->
+            When creating a cirrus, you must create two distinct character sheets, one representing your Tamerian side and another representing your Bauronean side. Throughout a day, you will use only one of these character sheets, keeping the other stored, and you must switch to the other immediately after the first long rest performed in a 24-hour period (counted from the time the last long rest where you changed your character sheet began). Both character sheets have the same amount of experience, ensuring they will always have the same character level. The benefits granted by a long rest will apply to the character sheet that will assume control after it is performed. Magic items attuned to one side will not be attuned to the other. Some effects will apply to both character sheets, regardless of their origin. They are: • Effects with a duration counted in days; • Effects that cause loss of a limb, such as a hand or arm, for example; • Curses or any effects related to the soul; • Levels of exhaustion. If a level of exhaustion is gained or lost by one character sheet, it will be gained or lost equally in the other; and • Death
+        </p>
+        <p class="indent">
+            <strong>
+                <em>Darkvision</em>
+            </strong>
+            Accustomed to dark mountains and the night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.
+        </p>
+        <p class="indent">
+            <strong>
+                <em>High Mountain Living</em>
+            </strong>
+             You have proficiency in AnimalHandling and Athletics.
+        </p>
+        <p class="indent">
+            <strong>
+                <em>Winged Soul.</em>
+            </strong>
+            At the 7th level, your connection to your celestial creation becomes stronger and a pair of wings is born from your back, granting you a flying speed of 30 feet.
+        </p>
+           </description>      
+        <setters>
+            <set name="names" type="male">Assiz, Ossaez, Sans, Sayöes, Saëzz, Zianis, Zarekis, Zenthar, Szarion, Szarys, Zeraxus, Zythas, Zelaris, Sazriel, Zephys, Szalyn, Zorinax</set>
+            <set name="names" type="female">Aziza, Sarah, Sazis, Se-ena, Siff, Zafara, Zoe, Zoza, Sylzara, Zaelis, Sazira, Zarithas, Sylzeth, Zorintha, Sylzana, Szanara, Sylzix</set>
+            <set name="names" type="clan">They carry a title such as Skyborn or Fallenangel. Additionally, if they are a follower of the Windspeakers, they may also indicate which of the Four Winds they belong to</set>
+            <set name="names-format">{{name}} {{clan}}</set>
+        </setters>
+        <rules>
+            <select type="Ability Score Improvement" name="Ability Score Improvement +2 (Cirrus)" supports="Custom Ability Score Increase 2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />  
+            <select type="Ability Score Improvement" name="Ability Score Improvement +1 (Cirrus)" supports="Custom Ability Score Increase 1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+            <grant type="Size" id="ID_SIZE_MEDIUM"/>
+            <grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE"/>
+
+        </rules>
+       
+    </element>
+</elements>
