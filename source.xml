@@ -21,7 +21,6 @@ dive right in and start playing.</strong></p>
 			<set name="author" abbreviation="DG" url="https://dragorigames.com/">Dragori Games</set>
 			<set name="official">false</set>
 			<set name="supplement">true</set>
-
 		</setters>
 	</element>
 </elements>
