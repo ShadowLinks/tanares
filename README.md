@@ -9,8 +9,8 @@ Alternate rule for Dwarf added as feat for the time being.
 To Do:
 - Species
     - Common Classic Species
-        - Dwarf
-        - Elf (Summer Spring Autumn Winter)
+        - Dwarf (PLACEHOLDER)
+        - Elf Summer Spring Autumn Winter COMPLETED
         - Dragonborn (red/blue/white/green/black/gold and alt rules)
     - New Species
         - Cirrus
