@@ -4,7 +4,7 @@
 		<name>Feats</name>
 		<description>Optional Features from Tanares RPG 5e</description>
 		<author url="">Tanares RPG 5e</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="feats.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/feats.xml" />
 		</update>
 	</info>
