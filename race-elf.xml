@@ -29,7 +29,7 @@
 		<sheet display="false"/>
 		<rules>
 			<stat name="Charisma" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
-			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Summer Elf)" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Summer Elf)" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
 			<grant type="Racial Trait" id="ID_TRPG_RACIAL_TRAIT_SUMMER_MAGIC_CANTRIP" level="1" />
             <grant type="Racial Trait" id="ID_TRPG_RACIAL_TRAIT_SUMMER_MAGIC_SPELL" level="5" />
             <grant type="Racial Trait" id="ID_TRPG_RACIAL_TRAIT_SUMMER_MAGIC_TONGUES" level="7" />
@@ -96,7 +96,7 @@
 		<sheet display="false"/>
 		<rules>
 			<stat name="Wisdom" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
-			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Spring Elf)" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_CHARISMA" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Spring Elf)" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_CHARISMA" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTBOW" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY"/>
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGBOW" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY"/>
 			<grant type="Racial Trait" id="ID_TRPG_RACIAL_TRAIT_SPRING_MAGIC_CANTRIP" level="1" />
@@ -159,7 +159,7 @@
 		<sheet display="false"/>
 		<rules>
 			<stat name="Intelligence" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
-			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Autumn Elf)" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_CHARISMA|ID_PHB_FEAT_ASI_WISDOM" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Autumn Elf)" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_CHARISMA|ID_PHB_FEAT_ASI_WISDOM" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
 			<grant type="Racial Trait" id="ID_TRPG_RACIAL_TRAIT_AUTUMN_MAGIC_CANTRIP" level="1" />
 			<grant type="Racial Trait" id="ID_TRPG_RACIAL_TRAIT_AUTUMN_MAGIC_SPELL" level="5" />
 			<grant type="Racial Trait" id="ID_TRPG_RACIAL_TRAIT_AUTUMN_MAGIC_REMOVE_CURSE" level="7" />
@@ -220,7 +220,7 @@
 		<sheet display="false"/>
 		<rules>
 			<stat name="Constitution" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
-			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Winter Elf)" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_CHARISMA|ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Winter Elf)" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_CHARISMA|ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
 			<grant type="Racial Trait" id="ID_TRPG_RACIAL_TRAIT_WINTER_MAGIC_CANTRIP" level="1" />
 			<grant type="Racial Trait" id="ID_TRPG_RACIAL_TRAIT_WINTER_MAGIC_SPELL" level="5" />
 			<grant type="Racial Trait" id="ID_TRPG_RACIAL_TRAIT_WINTER_MAGIC_SPEAK_WITH_DEAD" level="7" />
