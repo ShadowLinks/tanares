@@ -112,7 +112,7 @@
 		<rules>
 			<grant type="Grants" id="ID_WOTC_EGTW_GRANTS_DRAGONBORN_VARIANT"/>
 			<grant type="Grants" id="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY_BLACK" />
-			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Black Dragonborn)1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" supports="Black_dragon_var" number="4" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Black Dragonborn)1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" supports="Custom Ability Score Increase 1" number="4" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_DAMAGE_RESISTANCE" />
 		</rules>
 	</element>
@@ -136,72 +136,6 @@
 			<stat name="wisdom" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
 			<stat name="charisma" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_DAMAGE_RESISTANCE" />
-		</rules>
-	</element>
-	<element name="Ability Score Increase (Strength)" type="Ability Score Improvement" source="Tanares RPG 5E" id="ID_RACE_BLACK_DRAGON_VARIANT_STRENGTH">
-		<compendium display="false"/>
-		<supports>Black_dragon_var</supports>
-		<description>
-			<p>Your Strength score increases by 1.</p>
-		</description>
-		<sheet display="false"/>
-		<rules>
-			<stat name="strength" value="1" alt="Black Dragon ASI"/>
-		</rules>
-	</element>
-	<element name="Ability Score Increase (Dexterity)" type="Ability Score Improvement" source="Tanares RPG 5E" id="ID_RACE_BLACK_DRAGON_VARIANT_DEXTERITY">
-		<compendium display="false"/>
-		<supports>Black_dragon_var</supports>
-		<description>
-			<p>Your Dexterity score increases by 1.</p>
-		</description>
-		<sheet display="false"/>
-		<rules>
-			<stat name="dexterity" value="1" alt="Black Dragon ASI"/>
-		</rules>
-	</element>
-	<element name="Ability Score Increase (Constitution)" type="Ability Score Improvement" source="Tanares RPG 5E" id="ID_RACE_BLACK_DRAGON_VARIANT_CONSTITUTION">
-		<compendium display="false"/>
-		<supports>Black_dragon_var</supports>
-		<description>
-			<p>Your Constitution score increases by 1.</p>
-		</description>
-		<sheet display="false"/>
-		<rules>
-			<stat name="constitution" value="1" alt="Black Dragon ASI"/>
-		</rules>
-	</element>
-	<element name="Ability Score Increase (Intelligence)" type="Ability Score Improvement" source="Tanares RPG 5E" id="ID_RACE_BLACK_DRAGON_VARIANT_INTELLIGENCE">
-		<compendium display="false"/>
-		<supports>Black_dragon_var</supports>
-		<description>
-			<p>Your Intelligence score increases by 1.</p>
-		</description>
-		<sheet display="false"/>
-		<rules>
-			<stat name="intelligence" value="1" alt="Black Dragon ASI"/>
-		</rules>
-	</element>
-	<element name="Ability Score Increase (Wisdom)" type="Ability Score Improvement" source="Tanares RPG 5E" id="ID_RACE_BLACK_DRAGON_VARIANT_WISDOM">
-		<compendium display="false"/>
-		<supports>Black_dragon_var</supports>
-		<description>
-			<p>Your Wisdom score increases by 1.</p>
-		</description>
-		<sheet display="false"/>
-		<rules>
-			<stat name="wisdom" value="1" alt="Black Dragon ASI"/>
-		</rules>
-	</element>
-	<element name="Ability Score Increase (Charisma)" type="Ability Score Improvement" source="Tanares RPG 5E" id="ID_RACE_BLACK_DRAGON_VARIANT_CHARISMA">
-		<compendium display="false"/>
-		<supports>Black_dragon_var</supports>
-		<description>
-			<p>Your Charisma score increases by 1.</p>
-		</description>
-		<sheet display="false"/>
-		<rules>
-			<stat name="charisma" value="1" alt="Black Dragon ASI"/>
 		</rules>
 	</element>
 </elements>
