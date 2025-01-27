@@ -5,12 +5,12 @@
 		<description>Supplements from Tanares RPG 5E to expand your core gaming elements.</description>
 		<author url="https://dragorigames.com/">Dragori Games</author>
 		<update version="0.0.1">
-			<file name="tanares.index" url="https://github.com/ShadowLinks/tanares/blob/main/tanares.index" />
+			<file name="tanares.index" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/tanares.index" />
 		</update>
 	</info>
 	<files>
-		<file name="feats.xml" url="https://github.com/ShadowLinks/tanares/blob/main/feats.xml" />
-        <file name="race-elf.xml" url="https://github.com/ShadowLinks/tanares/blob/main/race-elf.xml" />
-        <file name="source.xml" url="https://github.com/ShadowLinks/tanares/blob/main/source.xml" />
+		<file name="feats.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/feats.xml" />
+        <file name="race-elf.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/race-elf.xml" />
+        <file name="source.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/source.xml" />
     </files>
 </index>

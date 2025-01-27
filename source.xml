@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<update version="0.0.1">
-			<file name="source.xml" url="https://github.com/ShadowLinks/tanares/blob/main/source.xml" />
+			<file name="source.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/source.xml" />
 		</update>
 	</info>
 	<element name="Tanares RPG 5e" type="Source" source="Core" id="ID_TRPG5E">

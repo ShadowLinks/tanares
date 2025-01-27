@@ -4,7 +4,7 @@
 		<description>Summer Elf from Tanares RPG 5E.</description>
 		<author url="">Dragori Games</author>
 		<update version="0.0.1">
-			<file name="race-elf.xml" url="https://github.com/ShadowLinks/tanares/blob/main/race-elf.xml" />
+			<file name="race-elf.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/race-elf.xml" />
 		</update>
 	</info>
 	<element name="Summer Elf" type="Sub Race" source="Tanares RPG 5E" id="ID_TRPG_SUBRACE_SUMMER_ELF">
