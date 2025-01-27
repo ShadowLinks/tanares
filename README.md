@@ -11,7 +11,7 @@ To Do:
     - Common Classic Species
         - Dwarf (PLACEHOLDER)
         - Elf Summer Spring Autumn Winter COMPLETED
-        - Dragonborn (red/blue/white/green/black/gold and alt rules)
+        - Dragonborn red/blue/white/green/black/gold COMPLETED
     - New Species
         - Cirrus
         - Soulborn
