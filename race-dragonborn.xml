@@ -3,7 +3,7 @@
 		<name>Tanares Dragonborn</name>
 		<description>Dragonborn from Tanares RPG 5E.</description>
 		<author url="">Dragori Games</author>
-		<update version="0.0.2">
+		<update version="0.1.2">
 			<file name="race-dragonborn.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/race-dragonborn.xml" />
 		</update>
 	</info>
