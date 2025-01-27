@@ -71,7 +71,7 @@
         <setters>
             <set name="names" type="male">Assiz, Ossaez, Sans, Sayöes, Saëzz, Zianis, Zarekis, Zenthar, Szarion, Szarys, Zeraxus, Zythas, Zelaris, Sazriel, Zephys, Szalyn, Zorinax</set>
             <set name="names" type="female">Aziza, Sarah, Sazis, Se-ena, Siff, Zafara, Zoe, Zoza, Sylzara, Zaelis, Sazira, Zarithas, Sylzeth, Zorintha, Sylzana, Szanara, Sylzix</set>
-            <set name="names" type="clan">They carry a title such as Skyborn or Fallenangel. Additionally, if they are a follower of the Windspeakers, they may also indicate which of the Four Winds they belong to</set>
+            <set name="names" type="clan">Skyborn, Fallenangel, North, South, East, West </set>
             <set name="names-format">{{name}} {{clan}}</set>
         </setters>
         <rules>
