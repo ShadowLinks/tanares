@@ -7,20 +7,15 @@
 	</info>
 	<element name="Tanares RPG 5e" type="Source" source="Core" id="ID_TRPG5E">
 		<description>
-			<p><strong>Step into a world of adventure with the Player’s Guide to
-Tanares, your gateway to the thrilling world of Tanares. This
-book is your key to unlocking endless possibilities, designed
-to work seamlessly with all official 5E material so you can
-dive right in and start playing.</strong></p>
-
+			<p><strong>Step into a world of adventure with the Player’s Guide to Tanares, your gateway to the thrilling world of Tanares. This book is your key to unlocking endless possibilities, designed to work seamlessly with all official 5E material so you can dive right in and start playing.</strong></p>
 		</description>
 		<setters>
 			<set name="abbreviation">TRPG5E</set>
 			<set name="url">https://dragorigames.com/tanares-5e/</set>
 			<set name="image">https://d1vzi28wh99zvq.cloudfront.net/images/24685/464263.webp</set>
 			<set name="author" abbreviation="DG" url="https://dragorigames.com/">Dragori Games</set>
-			<set name="official">false</set>
-			<set name="supplement">true</set>
+			<set name="third-party">true</set>
+			<set name="release">2023</set>
 		</setters>
 	</element>
 </elements>
