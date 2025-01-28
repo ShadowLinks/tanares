@@ -81,7 +81,7 @@
             <grant type="Size" id="ID_SIZE_MEDIUM"/>
             <stat name="innate speed" value="30" bonus="base" />
             <grant type="Vision" id="ID_VISION_DARKVISION"/>
-            <stat name="ability score increase" type="Constitution" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+            <stat name="constitution" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
             <select type="Ability Score Improvement" name="Ability Score Improvement +1 (Gloomfolk)" supports="Custom Ability Score Increase 1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
 			<grant type="racial trait" id="ID_TRPG_RACIAL_TRAIT_GLOOMFOLK_PERSEVERANCE"/>
 			<grant type="racial trait" id="ID_TRPG_RACIAL_TRAIT_GLOOMFOLK_SURVIVAL_INSTINCT"/>
