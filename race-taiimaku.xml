@@ -3,11 +3,11 @@
 		<name>Taii'maku</name>
 		<description>Taii'maku species from Tanares RPG 5e.</description>
 		<author url="">Dragori Games</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="race-taiimaku.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/race-taiimaku.xml" />
 		</update>
 	</info>
-	<element name="Cirrus" type="Race" source="Tanares RPG 5E" id="ID_TRPG_RACE_CIRRUS">
+	<element name="Taii'maku" type="Race" source="Tanares RPG 5E" id="ID_TRPG_RACE_TAIIMAKU">
 		<description>
 			<p class="flavor">Standing tall and robust, the taii’maku are pacifist intellectuals who favor logic over emotions. They excel in math and engineering, creating remarkable inventions.</p>
 			<p class="indent"></p>
@@ -116,11 +116,11 @@
 		</description>
 		<sheet display="false"/>
 		<rules>
-			<select type="Sub Race" name="Taii'maku Inclination" supports="Taii'maku"/>
+			<select type="Sub Race" name="Taii'maku Inclination" supports="Taiimaku"/>
 		</rules>
 	</element>
-	<element name="Philosophy Inclination" type="Subrace" source="Tanares RPG 5E" id="ID_TRPG_TAIIMAKU_PHILOSOPHY_INCLINATION">
-		<supports>Taii'maku</supports>
+	<element name="Philosophy Inclined Taii'maku" type="Sub Race" source="Tanares RPG 5E" id="ID_TRPG_TAIIMAKU_PHILOSOPHY_INCLINATION">
+		<supports>Taiimaku</supports>
 		<description>
 		<p class="indent">
 				<strong>
@@ -195,14 +195,15 @@
 			<description>Anytime you would gain a +1 bonus to an ability score from a feat, you can apply it to a different ability score. This decision, once made, is permanent. (This feature applies only if your game includes the optional feat rules.)</description>
 		</sheet>
 	</element>
-	<element name="Engineering Inclination" type="Subrace" source="Tanares RPG 5E" id="ID_TRPG_TAIIMAKU_ENGINEERING_INCLINATION">
-		<supports>Taii'maku</supports>
+	<element name="Engineering Inclined Taii'maku" type="Sub Race" source="Tanares RPG 5E" id="ID_TRPG_TAIIMAKU_ENGINEERING_INCLINATION">
+		<supports>Taiimaku</supports>
 		<description>
-		<p class="indent">
+			<p class="indent">
 				<strong>
 					<em>Ability Score Increase.</em>
 				</strong>
 				Your Intelligence score increases by 2. 
+				</p>
 			<p class="indent">
 				<strong>
 					<em>Innate Engineers.</em>
@@ -213,15 +214,9 @@
 				<strong>
 					<em>Ingenious Inventors</em>
 				</strong>
-				You gain a +2 bonus to all ability checks (including when using skills). If you are “in balance,” this bonus is also applied to all saving throws.
-			</p>
-			<p class="indent">
-				<strong>
-					<em>Expanded Insight</em>
-				</strong>
-				Using tinker’s tools, you can construct magical mechanisms. Spend 1 hour and 20 gp on materials to create a mechanism, limited to three at any given time. If you create a fourth, you must sever the magical connection with an existing one. When creating a mechanism, choose from the following options:
-				<ul>
-					<li><strong>Extended Vision Module</strong> his device lets you see better. While wearing it, your vision range doubles, and you have advantage on Wisdom (Perception) checks that rely on sight. (Weight: 1)</li>
+					Using tinker’s tools, you can construct magical mechanisms. Spend 1 hour and 20 gp on materials to create a mechanism, limited to three at any given time. If you create a fourth, you must sever the magical connection with an existing one. When creating a mechanism, choose from the following options:				
+					<ul>						
+					<li><strong>Extended Vision Module</strong> This device lets you see better. While wearing it, your vision range doubles, and you have advantage on Wisdom (Perception) checks that rely on sight. (Weight: 1)</li>
 					<li><strong>Clock-Compass</strong>This item always shows you the exact time and which way is north. (Weight: 0)</li>
 					<li><strong>Sound Aplifier</strong>This device helps you hear better. You have advantage on Wisdom (Perception) checks that rely on hearing. Alternatively, you can use it to amplify your voice so it can be heard twice as far. (Weight: 1).</li>
 					<li><strong>Foldable Glider</strong>This item allows you to slow your fall and move forward. For every 5 feet you fall, you can move forward up to 5 feet reducing this distance from the fall, as long as you have enough space. If you can’t move forward you take the remaining damage as normal. (Weight: 4)</li>
@@ -238,10 +233,10 @@
 			<grant type="Racial Trait" id="ID_TRPG_RACIAL_TRAIT_TAIIMAKU_ENGINEERING_INCLINATION_ABILITY_SCORE_INCREASE" />
 			<grant type="Racial Trait" id="ID_TRPG_RACIAL_TRAIT_TAIIMAKU_ENGINEERING_INCLINATION_INNATE_ENGINEERS" />
 			<grant type="Racial Trait" id="ID_TRPG_RACIAL_TRAIT_TAIIMAKU_ENGINEERING_INCLINATION_INGENIOUS_INVENTORS" />
-			<grant type="Racial Trait" id="ID_TRPG_RACIAL_TRAIT_TAIIMAKU_ENGINEERING_INCLINATION_EXPANDED_INSIGHT" />
 		</rules>
 	</element>
 	<element name="Ability Score Increase (Engineering)" type="Racial Trait" source="Tanares RPG 5E" id="ID_TRPG_RACIAL_TRAIT_TAIIMAKU_ENGINEERING_INCLINATION_ABILITY_SCORE_INCREASE">
+		<description>
 			<p>Your Intelligence score increases by 2.</p>
 		</description>
 		<rules>
@@ -249,6 +244,7 @@
 		</rules>
 	</element>
 	<element name="Innate Engineers" type="Racial Trait" source="Tanares RPG 5E" id="ID_TRPG_RACIAL_TRAIT_TAIIMAKU_ENGINEERING_INCLINATION_INNATE_ENGINEERS">
+		<description>
 			<p>You are proficient with tinker’s tools. Additionally, when analyzing a mechanism such as an automaton or a mechanical trap, you can attempt an Intelligence (Investigation) check to determine its purpose and function. If successful, you or creatures to whom you have explained the mechanism have advantage in ability checks made to use or disable it.</p>
 		</description>
 		<sheet alt="Innate Engineers">
@@ -258,4 +254,25 @@
 			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY"/>
 		</rules>
 	</element>
+	<element name="Ingenious Inventors" type="Racial Trait" source="Tanares RPG 5E" id="ID_TRPG_RACIAL_TRAIT_TAIIMAKU_ENGINEERING_INCLINATION_INGENIOUS_INVENTORS">
+		<description>
+			<p>Using tinker’s tools, you can construct magical mechanisms. Spend 1 hour and 20 gp on materials to create a mechanism, limited to three at any given time. If you create a fourth, you must sever the magical connection with an existing one. When creating a mechanism, choose from the following options:
+				<ul>						
+					<li><strong>Extended Vision Module</strong> This device lets you see better. While wearing it, your vision range doubles, and you have advantage on Wisdom (Perception) checks that rely on sight. (Weight: 1)</li>
+					<li><strong>Clock-Compass</strong>This item always shows you the exact time and which way is north. (Weight: 0)</li>
+					<li><strong>Sound Aplifier</strong>This device helps you hear better. You have advantage on Wisdom (Perception) checks that rely on hearing. Alternatively, you can use it to amplify your voice so it can be heard twice as far. (Weight: 1).</li>
+					<li><strong>Foldable Glider</strong>This item allows you to slow your fall and move forward. For every 5 feet you fall, you can move forward up to 5 feet reducing this distance from the fall, as long as you have enough space. If you can’t move forward you take the remaining damage as normal. (Weight: 4)</li>
+					<li><strong>Mechanical Thrower</strong>This item lets you throw a weapon or improvised weapon 10 feet farther than normal. (Weight: 1)</li>
+					<li><strong>Automatic Reloader</strong> This item lets you ignore the loading property of a ranged weapon you are wielding twice, recovering its uses on a short rest. (Weight: 2)</li>
+					<li><strong>Jumper</strong>This gadget allows you to make extraordinary leaps. While wearing it, your jump range doubles, and you have advantage on Strength (Athletics) checks related to jumping. (Weight: 1)</li>
+					<li><strong>Climber</strong>This item allows you to climb easily. While wearing it, climbing does not cost you extra movement, and you have advantage on Strength (Athletics) checks related to climbing. (Weight: 1)</li>
+					<li><strong>Carrying Frame</strong>This set of springs and gears helps you carry more weight. While wearing it, you are considered to have +3 to your Strength ability score for the purposes of calculating load and lifting weight, as well as for the Strength requirements of armor. (Weight: 3)</li>
+					<li><strong>Potion Injector</strong>This contraption allows you to load a potion into a mounted reservoir at the end of a long rest. As a bonus action, you can inject the loaded potion directly into your bloodstream and receive its effects. (Weight: 2)</li>
+				</ul>
+			</p>
+		</description>
+		<sheet alt="Ingenious Inventors">
+			<description>Using tinker’s tools, you can construct magical mechanisms. Spend 1 hour and 20 gp on materials to create a mechanism, limited to three at any given time. If you create a fourth, you must sever the magical connection with an existing one. When creating a mechanism, choose from the following options: Extended Vision Module, Clock-Compass, Sound Amplifier, Foldable Glider, Mechanical Thrower, Automatic Reloader, Jumper, Climber, Carrying Frame, Potion Injector.</description>
+		</sheet>
+	</element>				
 </elements>

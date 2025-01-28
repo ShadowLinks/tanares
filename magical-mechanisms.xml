@@ -1,0 +1,90 @@
+<elements>
+  <info>
+    <name>Magical Mechanisms</name>
+    <description>Taii'maku creations from Tanares RPG 5e.</description>
+    <author url="">Dragori Games</author>
+    <update version="0.0.2">
+      <file name="magical-mechanisms.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/magical-mechanisms.xml"/>
+    </update>
+  </info>
+  <element name="Extended Vision Module" type="Magic Item" source="Tanares RPG 5e" id="ID_TRPG_MECHANISM_EXTENDED_VISION_MODULE">
+    <description>This device lets you see better. While wearing it, your vision range doubles, and you have advantage on Wisdom (Perception) checks that rely on sight. (Weight: 1)</description>
+    <setters>
+      <set name="weight" lb="1">1</set>
+      <set name="category">Magical Mechanism</set>
+      <set name="type">Magical Mechanism</set>
+    </setters>
+  </element>
+  <element name="Clock-Compass" type="Magic Item" source="Tanares RPG 5e" id="ID_TRPG_MECHANISM_CLOCK_COMPASS">
+    <description>This item always shows you the exact time and which way is north. (Weight: 0)</description>
+    <setters>
+      <set name="weight" lb="0">0</set>
+      <set name="category">Magical Mechanism</set>
+      <set name="type">Magical Mechanism</set>
+    </setters>
+  </element>
+  <element name="Sound Amplifier" type="Magic Item" source="Tanares RPG 5e" id="ID_TRPG_MECHANISM_SOUND_AMPLIFIER">
+    <description>This device helps you hear better. You have advantage on Wisdom (Perception) checks that rely on hearing. Alternatively, you can use it to amplify your voice so it can be heard twice as far. (Weight: 1).</description>
+    <setters>
+      <set name="weight" lb="1">1</set>
+      <set name="category">Magical Mechanism</set>
+      <set name="type">Magical Mechanism</set>
+    </setters>
+  </element>
+  <element name="Foldable Glider" type="Magic Item" source="Tanares RPG 5e" id="ID_TRPG_MECHANISM_FOLDABLE_GLIDER">
+    <description>This item allows you to slow your fall and move forward. For every 5 feet you fall, you can move forward up to 5 feet reducing this distance from the fall, as long as you have enough space. If you can’t move forward you take the remaining damage as normal. (Weight: 4)</description>
+    <setters>
+      <set name="weight" lb="4">4</set>
+      <set name="category">Magical Mechanism</set>
+      <set name="type">Magical Mechanism</set>
+    </setters>
+  </element>
+  <element name="Mechanical Thrower" type="Magic Item" source="Tanares RPG 5e" id="ID_TRPG_MECHANISM_MECHANICAL_THROWER">
+    <description>This item lets you throw a weapon or improvised weapon 10 feet farther than normal. (Weight: 1)</description>
+    <setters>
+      <set name="weight" lb="1">1</set>
+      <set name="category">Magical Mechanism</set>
+      <set name="type">Magical Mechanism</set>
+    </setters>
+  </element>
+  <element name="Automatic Reloader" type="Magic Item" source="Tanares RPG 5e" id="ID_TRPG_MECHANISM_AUTOMATIC_RELOADER">
+    <description>This item lets you ignore the loading property of a ranged weapon you are wielding twice, recovering its uses on a short rest. (Weight: 2)</description>
+    <setters>
+      <set name="weight" lb="2">2</set>
+      <set name="category">Magical Mechanism</set>
+      <set name="type">Magical Mechanism</set>
+    </setters>
+  </element>
+  <element name="Jumper" type="Magic Item" source="Tanares RPG 5e" id="ID_TRPG_MECHANISM_JUMPER">
+    <description>This gadget allows you to make extraordinary leaps. While wearing it, your jump range doubles, and you have advantage on Strength (Athletics) checks related to jumping. (Weight: 1)</description>
+    <setters>
+      <set name="weight" lb="1">1</set>
+      <set name="category">Magical Mechanism</set>
+      <set name="type">Magical Mechanism</set>
+    </setters>
+  </element>
+  <element name="Climber" type="Magic Item" source="Tanares RPG 5e" id="ID_TRPG_MECHANISM_CLIMBER">
+    <description>This item allows you to climb easily. While wearing it, climbing does not cost you extra movement, and you have advantage on Strength (Athletics) checks related to climbing. (Weight: 1)</description>
+    <setters>
+      <set name="weight" lb="1">1</set>
+      <set name="category">Magical Mechanism</set>
+      <set name="type">Magical Mechanism</set>
+    </setters>
+  </element>
+  <element name="Carrying Frame" type="Magic Item" source="Tanares RPG 5e" id="ID_TRPG_MECHANISM_CARRYING_FRAME">
+    <description>This set of springs and gears helps you carry more weight. While wearing it, you are considered to have +3 to your Strength ability score for the purposes of calculating load and lifting weight, as well as for the Strength requirements of armor. (Weight: 3)</description>
+    <setters>
+      <set name="weight" lb="3">3</set>
+      <set name="category">Magical Mechanism</set>
+      <set name="type">Magical Mechanism</set>
+    </setters>
+  </element>
+  <element name="Potion Injector" type="Magic Item" source="Tanares RPG 5e" id="ID_TRPG_MECHANISM_POTION_INJECTOR">
+    <description>This contraption allows you to load a potion into a mounted reservoir at the end of a long rest. As a bonus action, you can inject the loaded potion directly into your bloodstream and receive its effects. (Weight: 2)</description>
+    <setters>
+      <set name="weight" lb="2">2</set>
+      <set name="category">Magical Mechanism</set>
+      <set name="type">Magical Mechanism</set>
+    </setters>
+  </element>
+</elements>

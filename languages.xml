@@ -1,7 +1,7 @@
 <elements>
     <info>
         <name>Languages</name>
-        <update version="0.0.2">
+        <update version="0.0.3">
             <file name="languages.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/languages.xml"/>
         </update>
     </info>
@@ -37,4 +37,5 @@
             <set name="speakers">Taii'maku</set>
             <set name="script">Taii'makian runes</set>
         </setters>
+    </element>
 </elements>
