@@ -1,10 +1,261 @@
 <elements>
 	<info>
-		<name>Taii'Maku</name>
-		<description>Taii'Maku species from Tanares RPG 5e.</description>
+		<name>Taii'maku</name>
+		<description>Taii'maku species from Tanares RPG 5e.</description>
 		<author url="">Dragori Games</author>
 		<update version="0.0.1">
 			<file name="race-taiimaku.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/race-taiimaku.xml" />
 		</update>
 	</info>
+	<element name="Cirrus" type="Race" source="Tanares RPG 5E" id="ID_TRPG_RACE_CIRRUS">
+		<description>
+			<p class="flavor">Standing tall and robust, the taii’maku are pacifist intellectuals who favor logic over emotions. They excel in math and engineering, creating remarkable inventions.</p>
+			<p class="indent"></p>
+			<p class="indent"></p>
+			<h4>TAII'MAKU TRAITS</h4>
+			<p class="indent">
+				<strong>
+					<em>Ability Score Increase.</em>
+				</strong>
+				Your Constitution score increases by 1.
+			</p>
+			<p class="indent">
+				<strong>
+					<em>Creature Type.</em>
+				</strong>
+				You are a Humanoid. 
+			</p>
+			<p class="indent">
+				<strong>
+					<em>Size.</em>
+				</strong>
+				You are Medium.
+			</p>
+			<p class="indent">
+				<strong>
+					<em>Speed.</em>
+				</strong>
+				Your walking speed is 30 feet.
+			</p>
+			<p class="indent">
+				<strong>
+					<em>Historical Nomadism</em>
+				</strong>
+				You gain proficiency in one of the following skills of your choice: History or Survival
+			</p>
+			<p class="indent">
+				<strong>
+					<em>Strong Hands</em>
+				</strong>
+				Endowed with six fingers, taii’makus possess enhanced hand strength. You have advantage on Strength (Athletics) checks related to climbing and saving throws against disarming effects
+			</p>
+			<p class="indent">
+				<strong>
+					<em>Mathematical Mind.</em>
+				</strong>
+				The unique and logical thought process of the taii’maku grant them an edge with numbers and math. You have advantage on all ability checks directly involving mathematical or accounting tasks
+			</p>
+			<p class="indent">
+				<strong>
+					<em>Languages.</em>
+				</strong>
+				You can speak, read, and write Common and Taii'makian.
+			</p>
+			<p class="indent">
+				<strong>
+					<em>Mind Inclination</em>
+				</strong>
+				Rather than subspecies, taii’maku display dispositions inclined either towards Philosophy, with a comprehensive approach, or Engineering, focusing on specific areas of study
+			</p>
+		</description>      
+		<setters>
+			<set name="names" type="male">A’Kole, B’Abku, B’Ogaji, B’Un, C’Hakado, D’Alolo, D’Umikole, E’Boko, E’Dowu, E’Ntun, G’Honk, G’Ombo, J’Aborii, J’Oawari, K’Antobu, K’Obbimbe, K’Onego, K’Oyode, K’Uwako, L’Amumbo, M’Antuna, M’Bollo, N’Ingolo, O’Bimbolo, O’Kashar, O’Ketokunbo, O’Lujime, T’Hanlu, U’Chenno, Z’Hantan, Z’Ouwanga</set>
+			<set name="names" type="female">A’Beba, A’Deuga, A’Isha, A’Laba, A’Yodela, B’Alan, B’Ennah, B’Onbya, B’Usari, C’Honwalla, D’Ainoka, D’Aljih, E’Nla, E’Thuhole, F’Alizah, G’Ainda, J’Ahali, K’Akilih, K’Anyeta, K’Azanatti, K’Oomanni, L’Atesha, L’Ifanni, M’Olaika, N’Aan, U’Gocha, V’Ulah, W’Anjika, Y’Eeja, Z’Alan</set>
+			<set name="names" type="surname">Alaabo (protector), Alaafia (peace), Apata (rock), Asa (shield), Asale (desert), Enjini (engine), Eranko (animal), Ewa (beauty), Ianryn (sand), Ibimo (birth), Idan (magic), Igbagbo (faith), Igbesi (life), Iho (cave), Iji (storm), Iku (death), Imole (light), Irinajo (travel), Iseda (nature), Ja (fight), Koeko (learn), Lagbara (strong), Nla (great), Ododo (flower), Ogo (club), Ojo (day), Oke (mountain), Ona (way), Oorun (sun), Sode (hunt).</set>
+			<set name="names-format">{{name}} {{surname}}</set>
+		</setters>
+		<rules>
+			<stat name="constitution" value="1"  requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<grant type="Size" id="ID_SIZE_MEDIUM"/>
+			<stat name="innate speed" value="30" bonus="base"/>
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE"/>
+			<grant type="Language" id="ID_LANGUAGE_TAIIMAKIAN" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE"/>
+			<grant type="Racial Trait" id="ID_TRPG_RACIAL_TRAIT_TAIIMAKU_HISTORICAL_NOMADISM"/>
+			<grant type="Racial Trait" id="ID_TRPG_RACIAL_TRAIT_TAIIMAKU_STRONG_HANDS" />
+			<grant type="Racial Trait" id="ID_TRPG_RACIAL_TRAIT_TAIIMAKU_MATHEMATICAL_MIND" />
+			<grant type="Racial Trait" id="ID_TRPG_RACIAL_TRAIT_TAIIMAKU_SUBRACE" />
+		</rules>
+	</element>
+	<element name="Historical Nomadism" type="Racial Trait" source="Tanares RPG 5e" id="ID_TRPG_RACIAL_TRAIT_TAIIMAKU_HISTORICAL_NOMADISM">
+		<description>
+			<p>You gain proficiency in one of the following skills of your choice: History or Survival</p>
+		</description>
+		<rules>
+			<select  type="Proficiency" name="Historical Nomadism Proficiency" supports="ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_SURVIVAL" />
+		</rules>
+	</element>
+	<element name="Strong Hands" type="Racial Trait" source="Tanares RPG 5e" id="ID_TRPG_RACIAL_TRAIT_TAIIMAKU_STRONG_HANDS">
+		<description>
+			<p>Endowed with six fingers, taii’makus possess enhanced hand strength. You have advantage on Strength (Athletics) checks related to climbing and saving throws against disarming effects</p>
+		</description>
+		<sheet alt="Strong Hands">
+			<description>You have advantage on Strength (Athletics) checks related to climbing and saving throws against disarming effects</description>
+		</sheet>
+	</element>
+	<element name="Mathematical Mind" type="Racial Trait" source="Tanares RPG 5e" id="ID_TRPG_RACIAL_TRAIT_TAIIMAKU_MATHEMATICAL_MIND">
+		<description>
+			<p>The unique and logical thought process of the taii’maku grant them an edge with numbers and math. You have advantage on all ability checks directly involving mathematical or accounting tasks</p>
+		</description>
+		<sheet alt="Mathematical Mind">
+			<description>You have advantage on all ability checks directly involving mathematical or accounting tasks</description>
+		</sheet>
+	</element>
+	<element name="Taii'maku Inclination" type="Racial Trait" source="Tanares RPG 5e" id="ID_TRPG_RACIAL_TRAIT_TAIIMAKU_SUBRACE">
+		<description>
+			<p>Rather than subspecies, taii’maku display dispositions inclined either towards Philosophy, with a comprehensive approach, or Engineering, focusing on specific areas of study</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<select type="Sub Race" name="Taii'maku Inclination" supports="Taii'maku"/>
+		</rules>
+	</element>
+	<element name="Philosophy Inclination" type="Subrace" source="Tanares RPG 5E" id="ID_TRPG_TAIIMAKU_PHILOSOPHY_INCLINATION">
+		<supports>Taii'maku</supports>
+		<description>
+		<p class="indent">
+				<strong>
+					<em>Ability Score Increase.</em>
+				</strong>
+				Your Wisdom score increases by 1. Two other ability scores of your choice, except Constitution, increase by 1 each.
+			</p>
+			<p class="indent">
+				<strong>
+					<em>Equalibrium.</em>
+				</strong>
+				The taii’maku learn to harness their individual limits in pursuit of balance. If the difference between your highest and lowest ability scores is no more than 2, you’re considered “in balance”.
+			</p>
+			<p class="indent">
+				<strong>
+					<em>Expanded Knowledge</em>
+				</strong>
+				You gain a +2 bonus to all ability checks (including when using skills). If you are “in balance,” this bonus is also applied to all saving throws.
+			</p>
+			<p class="indent">
+				<strong>
+					<em>Expanded Insight</em>
+				</strong>
+				Anytime you would gain a +1 bonus to an ability score from a feat, you can apply it to a different ability score. This decision, once made, is permanent. (This feature applies only if your game includes the optional feat rules.)
+			</p>
+		</description>
+		<rules>
+			<grant type="Racial Trait" id="ID_TRPG_RACIAL_TRAIT_TAIIMAKU_PHILOSOPHY_INCLINATION_ABILITY_SCORE_INCREASE" />
+			<grant type="Racial Trait" id="ID_TRPG_RACIAL_TRAIT_TAIIMAKU_PHILOSOPHY_INCLINATION_EQUALIBRIUM" />
+			<grant type="Racial Trait" id="ID_TRPG_RACIAL_TRAIT_TAIIMAKU_PHILOSOPHY_INCLINATION_EXPANDED_KNOWLEDGE" />
+			<grant type="Racial Trait" id="ID_TRPG_RACIAL_TRAIT_TAIIMAKU_PHILOSOPHY_INCLINATION_EXPANDED_INSIGHT" />
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Philosophy)" type="Racial Trait" source="Tanares RPG 5E" id="ID_TRPG_RACIAL_TRAIT_TAIIMAKU_PHILOSOPHY_INCLINATION_ABILITY_SCORE_INCREASE">
+		<description>
+			<p>Your Wisdom score increases by 1. Two other ability scores of your choice, except Constitution, increase by 1 each.</p>
+		</description>
+		<rules>
+			<stat name="wisdom" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Ability Score Improvement (Philosophy)" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" supports="Custom Ability Score Increase 1" number="2"/>
+		</rules>
+	</element>
+	<element name="Equalibrium" type="Racial Trait" source="Tanares RPG 5E" id="ID_TRPG_RACIAL_TRAIT_TAIIMAKU_PHILOSOPHY_INCLINATION_EQUALIBRIUM">
+		<description>
+			<p>The taii’maku learn to harness their individual limits in pursuit of balance. If the difference between your highest and lowest ability scores is no more than 2, you’re considered “in balance”. While in balance your lowest ability score is considered 2 points higher. At level 6 this bonus applies to all your ability scores.</p>
+		</description>
+		<sheet alt="Equalibrium">
+			<description>If the difference between your highest and lowest ability scores is no more than 2, you’re considered “in balance”. While in balance your lowest ability score is considered 2 points higher. At level 6 this bonus applies to all your ability scores.</description>
+		</sheet>
+		<rules>
+			<!-- Add  logic to create a balance state-->
+			<!-- Add  balance state modifier-->
+			<!-- Add level 6 adjustment-->
+		</rules>
+	</element>
+	<element name="Expanded Knowledge" type="Racial Trait" source="Tanares RPG 5E" id="ID_TRPG_RACIAL_TRAIT_TAIIMAKU_PHILOSOPHY_INCLINATION_EXPANDED_KNOWLEDGE">
+		<description>
+			<p>You gain a +2 bonus to all ability checks (including when using skills). If you are “in balance,” this bonus is also applied to all saving throws.</p>
+		</description>
+		<sheet alt="Expanded Knowledge">
+			<description>You gain a +2 bonus to all ability checks (including when using skills). If you are “in balance,” this bonus is also applied to all saving throws.</description>
+		</sheet>
+		<rules>
+			<!-- Add balance statee modifier-->
+		</rules>
+	</element>
+	<element name="Expanded Insight" type="Racial Trait" source="Tanares RPG 5E" id="ID_TRPG_RACIAL_TRAIT_TAIIMAKU_PHILOSOPHY_INCLINATION_EXPANDED_INSIGHT">
+		<description>
+			<p>Anytime you would gain a +1 bonus to an ability score from a feat, you can apply it to a different ability score. This decision, once made, is permanent. (This feature applies only if your game includes the optional feat rules.)</p>
+		</description>
+		<sheet alt="Expanded Insight">
+			<description>Anytime you would gain a +1 bonus to an ability score from a feat, you can apply it to a different ability score. This decision, once made, is permanent. (This feature applies only if your game includes the optional feat rules.)</description>
+		</sheet>
+	</element>
+	<element name="Engineering Inclination" type="Subrace" source="Tanares RPG 5E" id="ID_TRPG_TAIIMAKU_ENGINEERING_INCLINATION">
+		<supports>Taii'maku</supports>
+		<description>
+		<p class="indent">
+				<strong>
+					<em>Ability Score Increase.</em>
+				</strong>
+				Your Intelligence score increases by 2. 
+			<p class="indent">
+				<strong>
+					<em>Innate Engineers.</em>
+				</strong>
+				You are proficient with tinker’s tools. Additionally, when analyzing a mechanism such as an automaton or a mechanical trap, you can attempt an Intelligence (Investigation) check to determine its purpose and function. If successful, you or creatures to whom you have explained the mechanism have advantage in ability checks made to use or disable it.
+			</p>
+			<p class="indent">
+				<strong>
+					<em>Ingenious Inventors</em>
+				</strong>
+				You gain a +2 bonus to all ability checks (including when using skills). If you are “in balance,” this bonus is also applied to all saving throws.
+			</p>
+			<p class="indent">
+				<strong>
+					<em>Expanded Insight</em>
+				</strong>
+				Using tinker’s tools, you can construct magical mechanisms. Spend 1 hour and 20 gp on materials to create a mechanism, limited to three at any given time. If you create a fourth, you must sever the magical connection with an existing one. When creating a mechanism, choose from the following options:
+				<ul>
+					<li><strong>Extended Vision Module</strong> his device lets you see better. While wearing it, your vision range doubles, and you have advantage on Wisdom (Perception) checks that rely on sight. (Weight: 1)</li>
+					<li><strong>Clock-Compass</strong>This item always shows you the exact time and which way is north. (Weight: 0)</li>
+					<li><strong>Sound Aplifier</strong>This device helps you hear better. You have advantage on Wisdom (Perception) checks that rely on hearing. Alternatively, you can use it to amplify your voice so it can be heard twice as far. (Weight: 1).</li>
+					<li><strong>Foldable Glider</strong>This item allows you to slow your fall and move forward. For every 5 feet you fall, you can move forward up to 5 feet reducing this distance from the fall, as long as you have enough space. If you can’t move forward you take the remaining damage as normal. (Weight: 4)</li>
+					<li><strong>Mechanical Thrower</strong>This item lets you throw a weapon or improvised weapon 10 feet farther than normal. (Weight: 1)</li>
+					<li><strong>Automatic Reloader</strong> This item lets you ignore the loading property of a ranged weapon you are wielding twice, recovering its uses on a short rest. (Weight: 2)</li>
+					<li><strong>Jumper</strong>This gadget allows you to make extraordinary leaps. While wearing it, your jump range doubles, and you have advantage on Strength (Athletics) checks related to jumping. (Weight: 1)</li>
+					<li><strong>Climber</strong>This item allows you to climb easily. While wearing it, climbing does not cost you extra movement, and you have advantage on Strength (Athletics) checks related to climbing. (Weight: 1)</li>
+					<li><strong>Carrying Frame</strong>This set of springs and gears helps you carry more weight. While wearing it, you are considered to have +3 to your Strength ability score for the purposes of calculating load and lifting weight, as well as for the Strength requirements of armor. (Weight: 3)</li>
+					<li><strong>Potion Injector</strong>This contraption allows you to load a potion into a mounted reservoir at the end of a long rest. As a bonus action, you can inject the loaded potion directly into your bloodstream and receive its effects. (Weight: 2)</li>
+				</ul>
+			</p>
+		</description>      
+		<rules>
+			<grant type="Racial Trait" id="ID_TRPG_RACIAL_TRAIT_TAIIMAKU_ENGINEERING_INCLINATION_ABILITY_SCORE_INCREASE" />
+			<grant type="Racial Trait" id="ID_TRPG_RACIAL_TRAIT_TAIIMAKU_ENGINEERING_INCLINATION_INNATE_ENGINEERS" />
+			<grant type="Racial Trait" id="ID_TRPG_RACIAL_TRAIT_TAIIMAKU_ENGINEERING_INCLINATION_INGENIOUS_INVENTORS" />
+			<grant type="Racial Trait" id="ID_TRPG_RACIAL_TRAIT_TAIIMAKU_ENGINEERING_INCLINATION_EXPANDED_INSIGHT" />
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Engineering)" type="Racial Trait" source="Tanares RPG 5E" id="ID_TRPG_RACIAL_TRAIT_TAIIMAKU_ENGINEERING_INCLINATION_ABILITY_SCORE_INCREASE">
+			<p>Your Intelligence score increases by 2.</p>
+		</description>
+		<rules>
+			<stat name="intelligence" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+		</rules>
+	</element>
+	<element name="Innate Engineers" type="Racial Trait" source="Tanares RPG 5E" id="ID_TRPG_RACIAL_TRAIT_TAIIMAKU_ENGINEERING_INCLINATION_INNATE_ENGINEERS">
+			<p>You are proficient with tinker’s tools. Additionally, when analyzing a mechanism such as an automaton or a mechanical trap, you can attempt an Intelligence (Investigation) check to determine its purpose and function. If successful, you or creatures to whom you have explained the mechanism have advantage in ability checks made to use or disable it.</p>
+		</description>
+		<sheet alt="Innate Engineers">
+			<description>You are proficient with tinker’s tools. Additionally, when analyzing a mechanism such as an automaton or a mechanical trap, you can attempt an Intelligence (Investigation) check to determine its purpose and function. If successful, you or creatures to whom you have explained the mechanism have advantage in ability checks made to use or disable it.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY"/>
+		</rules>
+	</element>
 </elements>

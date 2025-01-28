@@ -27,4 +27,14 @@
             <set name="script">—</set>
         </setters>
     </element>
+    <element name="Taii'makian" type="Language" source="Tanares RPG 5e" id="ID_LANGUAGE_TAIIMAKIAN">
+        <supports>Exotic</supports>
+        <description>
+            <p>Typically spoken by the Taii'maku.</p>
+        </description>
+        <setters>
+            <set name="exotic">true</set>
+            <set name="speakers">Taii'maku</set>
+            <set name="script">Taii'makian runes</set>
+        </setters>
 </elements>
