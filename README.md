@@ -9,14 +9,14 @@ Alternate rule for Dwarf added as feat for the time being.
 To Do:
 - Species
     - Common Classic Species
-        - Dwarf (PLACEHOLDER)
+        - Dwarf [FEAT](https://github.com/ShadowLinks/tanares/issues/1)
         - Elf Summer Spring Autumn Winter COMPLETED
         - Dragonborn red/blue/white/green/black/gold COMPLETED
     - New Species
         - Cirrus COMPLETED
         - Soulborn COMPLETED
         - Gloomfolk COMPLETED
-        - Taii'Maku PARTIAL (balance mechanic not implemented)
+        - Taii'Maku [PARTIAL](https://github.com/ShadowLinks/tanares/issues/2) (balance mechanic not implemented)
 - New Classes
     - Dragonblade
     - Elementalist
