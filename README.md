@@ -2,10 +2,6 @@ Aurora Builder element for Tanares RPG
 
 Index -  https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/tanares.index
 
-Starting with Species.
-
-Alternate rule for Dwarf added as feat for the time being.
-
 To Do:
 - Species
     - Common Classic Species
