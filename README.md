@@ -13,9 +13,9 @@ To Do:
         - Elf Summer Spring Autumn Winter COMPLETED
         - Dragonborn red/blue/white/green/black/gold COMPLETED
     - New Species
-        - Cirrus
-        - Soulborn
-        - Gloomfolk
+        - Cirrus COMPLETED
+        - Soulborn COMPLETED
+        - Gloomfolk COMPLETED
         - Taii'Maku
 - New Classes
     - Dragonblade
