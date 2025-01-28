@@ -3,11 +3,11 @@
         <name>Cirrus</name>
         <description>Cirrus species from Tanares RPG 5e.</description>
         <author url="">Dragori Games</author>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="race-cirrus.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/race-cirrus.xml" />
         </update>
     </info>
-    <element name="Cirrus" type="Race" source="Tanares RPG 5E" id="ID_RACE_CIRRUS">
+    <element name="Cirrus" type="Race" source="Tanares RPG 5E" id="ID_TRPG_RACE_CIRRUS">
         <description>
         <!-- NEED TO FIX FORMATTING-->
             <p class="flavor">Bearers of two souls and two personalities, these angel-like beings organize themselves in knightly orders dedicated to eradication of the Ungods and to accomplish their divine calling</p>
@@ -78,9 +78,32 @@
             <select type="Ability Score Improvement" name="Ability Score Improvement +2 (Cirrus)" supports="Custom Ability Score Increase 2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />  
             <select type="Ability Score Improvement" name="Ability Score Improvement +1 (Cirrus)" supports="Custom Ability Score Increase 1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
             <grant type="Size" id="ID_SIZE_MEDIUM"/>
+            <stat name="innate speed" value="30" bonus="base"/>
             <grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE"/>
-
-        </rules>
-       
+            <grant type="Language" id="ID_LANGUAGE_PRIMORDIAL" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE"/>
+            <grant type="Vision" id="ID_VISION_DARKVISION"/>
+            <grant type="Racial Trait" id="ID_TRPG_RACIAL_TRAIT_CIRRUS_HIGH_MOUNTAIN_LIVING"/>
+            <grant type="Racial Trait" id="ID_TRPG_RACIAL_TRAIT_CIRRUS_WINGED_SOUL" level="7" />
+        </rules>     
     </element>
+      <element name="High Mountain Living" type="Racial Trait" source="Tanares RPG 5E" id="ID_TRPG_RACIAL_TRAIT_CIRRUS_HIGH_MOUNTAIN_LIVING">
+            <description>
+                <p>You have proficiency in Animal Handling and Athletics.</p>
+            </description>
+            <rules>
+                <grant type="proficiency" id="ID_PROFICIENCY_SKILL_ANIMALHANDLING" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY"/>
+                <grant type="proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY"/>
+            </rules>
+        </element>
+        <element name="Winged Soul" type="Racial Trait" source="Tanares RPG 5E" id="ID_TRPG_RACIAL_TRAIT_CIRRUS_WINGED_SOUL">
+            <description>
+                <p>At the 7th level, your connection to your celestial creation becomes stronger and a pair of wings is born from your back, granting you a flying speed of 30 feet.</p>
+            </description>
+            <sheet display="true">
+                <description>Your connection to your celestial creation becomes stronger and a pair of wings is born from your back, granting you a flying speed of 30 feet.</description>
+            </sheet>
+            <rules>
+                <stat name="speed:fly" value="30" bonus="base" />
+            </rules>
+        </element>
 </elements>
