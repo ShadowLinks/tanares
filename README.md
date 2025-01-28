@@ -15,6 +15,7 @@ To Do:
     - New Species
         - Cirrus
         - Soulborn
+        - Gloomfolk
         - Taii'Maku
 - New Classes
     - Dragonblade

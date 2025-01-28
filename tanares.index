@@ -16,5 +16,6 @@
 		<file name="race-cirrus.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/race-cirrus.xml" />
 		<file name="race-soulborn.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/race-soulborn.xml" />
 		<file name="race-taiimaku.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/race-taiimaku.xml" />
+		<file name="race-gloomfolk.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/race-gloomfolk.xml" />
 	</files>
 </index>
