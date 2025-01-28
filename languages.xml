@@ -1,0 +1,19 @@
+<elements>
+    <info>
+        <name>Languages</name>
+        <update version="0.0.1">
+            <file name="languages.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/languages.xml"/>
+        </update>
+    </info>
+    <element name="Gloomfolkean" type="Language" source="Tanares RPG 5e" id="ID_LANGUAGE_GLOOMFOLKEAN">
+        <supports>Exotic</supports>
+        <description>
+            <p>Typically spoken by the Gloomfolk.</p>
+        </description>
+        <setters>
+            <set name="exotic">true</set>
+            <set name="speakers">Gloomfolk</set>
+            <set name="script">—</set>
+        </setters>
+    </element>
+</elements>

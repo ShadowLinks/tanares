@@ -7,4 +7,155 @@
 			<file name="race-gloomfolk.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/race-gloomfolk.xml" />
 		</update>
 	</info>
+    <element name="Gloomfolk" type="Race" source="Tanares RPG 5E" id="ID_TRPG_RACE_GLOOMFOLK">
+		<description>
+			<p class="flavor"></p>
+			<h4>GLOOMFOLK TRAITS</h4>
+			<p class="indent">
+				<strong>
+					<em>Ability Score Increase.</em>
+				</strong>
+				Increase you Constitution score by 2 and one other ability score of your choice by 1.
+			</p>
+			<p class="indent">
+				<strong>
+					<em>Size/Speed/Vision.</em>
+				</strong>
+				Medium Size. 30ft movement speed. Darkvision 60ft.
+			</p>
+			<p class="indent">
+				<strong>
+					<em>Perseverance</em>
+				</strong>
+                 Perseverance. You gain proficiency in Survival, along with advantage on saving throws against effects originating from the Penumbral Plane environment. If you already have advantage, you may roll three dice and select the highest result.
+			</p>
+			<p class="indent">
+				<strong>
+					<em>Survival Instinct</em>
+				</strong>
+				Your honed survival instincts allow you to use any object as a weapon. When you wield an unconventional item as an improvised weapon, you can add your proficiency bonus to your attack rolls. Moreover, you may choose to use either your Dexterity or Strength bonus on these attack and damage rolls. These improvised weapons are also considered unarmed strikes for any relevant bonuses. The GM can decide on the weapon damage die, typically ranging from 1d4 to 1d8. Additionally, you can make an attack with your pincers or stinger as a bonus action once, regaining its use after a short or long rest.
+			</p>
+			<p class="indent">
+				<strong>
+					<em>Adapted Organism</em>
+				</strong>
+				You have resistance to poison damage and have advantage in saving throws against any type of poison. Furthermore, you are immune to poisons naturally produced by gloomfolks
+			</p>
+			<p class="indent">
+				<strong>
+					<em>Pincers</em>
+				</strong>
+				You possess a pair of pincers that can be used to pull, drag, lift, and hold objects (hold a torch, pull a lever, hang from a ledge, drag a box, lift a chest, or do other actions your GM deems appropriate). You are not able to wield a shield or handle a weapon with your pincers. You can make unarmed strikes with them, causing slashing damage instead of blunt damage. When you use them to grab, you receive a bonus equal to half your proficiency bonus (rounded up) on checks to keep the target grappled.
+			</p>
+            <p class="indent">
+				<strong>
+					<em>Stinger</em>
+				</strong>
+				Your elongated tail ends with a stinger, a natural melee weapon used to deliver unarmed strikes against adjacent creatures. If you have grappled a creature with your pincers, you have advantage on attacks with your stinger. On a hit, deal 1d4 + your Strength modifier piercing damage.
+			</p>
+            <p class="indent">
+				<strong>
+					<em>Poison</em>
+				</strong>
+				When your stinger hits a creature, you may choose to inject it with poison. The target must make a Constitution saving throw (DC = 8 + your proficiency bonus + your Constitution modifier). Failure results in 1d6 poison damage, and the creature must make additional saving throws at the end of each of its turns for the next minute. It takes 1d6 poison damage for each failed save, or ends the effect upon a successful save. You can’t use your poison again until you have completed a short or long rest.
+			</p>
+            <p class="indent">
+				<strong>
+					<em>Languages</em>
+				</strong>
+				You can speak, read, and write Common and Gloomfolkean
+			</p>
+            <p class="indent">
+				<strong>
+					<em>Extracting Poison</em>
+				</strong>
+				Gloomfolks have mastered the technique of poison extraction and preservation. During a short rest, you can use a vial and alchemical components worth 25 gp to extract and preserve two doses of your poison. Each dose of this poison can be used to coat a blade of a piercing or slashing weapon, or one piece of ammunition, which takes one action. A creature struck by a poisoned weapon or ammunition suffers the same effects as if stung by your stinger. The poison remains potent for seven days once extracted, and for one hour after being applied to a weapon or ammunition. After it hits a creature, the weapon or ammunition loses its poison properties. Poison can be extracted from an incapacitated gloomfolk following the same process.
+			</p>
+		</description>
+		<setters>
+			<set name="names" type="male">Zorndraxis, Faelosith, Ulltharion, Lythirax, Gormirax, Krythiorn, Maelthorn, Oryndar, Zephythos, Valtharion, Kethraxis, Nethrakos, Xyrthirion, Wyrndrak, Pyrthax, Vaelthir, Eryndros, Nyctharion, Thrakendrak, Zylthirax, Jythraxis, Taurthorn, Myndrakos, Sythirion, Thryndraxis, Yntharion, Graxorath, Hythirax, Dyrthirion, Vyxendrak.</set>
+			<set name="names" type="female">Zorndraxis, Faelosith, Ulltharion, Lythirax, Gormirax, Krythiorn, Maelthorn, Oryndar, Zephythos, Valtharion, Kethraxis, Nethrakos, Xyrthirion, Wyrndrak, Pyrthax, Vaelthir, Eryndros, Nyctharion, Thrakendrak, Zylthirax, Jythraxis, Taurthorn, Myndrakos, Sythirion, Thryndraxis, Yntharion, Graxorath, Hythirax, Dyrthirion, Vyxendrak.</set>
+			<set name="names-format">{{name}}</set>
+		</setters>
+		<rules>
+            <grant type="Size" id="ID_SIZE_MEDIUM"/>
+            <stat name="innate speed" value="30" bonus="base" />
+            <grant type="Vision" id="ID_VISION_DARKVISION"/>
+            <stat name="ability score increase" type="Constitution" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+            <select type="Ability Score Improvement" name="Ability Score Improvement +1 (Gloomfolk)" supports="Custom Ability Score Increase 1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<grant type="racial trait" id="ID_TRPG_RACIAL_TRAIT_GLOOMFOLK_PERSEVERANCE"/>
+			<grant type="racial trait" id="ID_TRPG_RACIAL_TRAIT_GLOOMFOLK_SURVIVAL_INSTINCT"/>
+			<grant type="racial trait" id="ID_TRPG_RACIAL_TRAIT_GLOOMFOLK_ADAPTED_ORGANISM"/>
+			<grant type="racial trait" id="ID_TRPG_RACIAL_TRAIT_GLOOMFOLK_PINCERS"/>
+            <grant type="racial trait" id="ID_TRPG_RACIAL_TRAIT_GLOOMFOLK_STINGER"/>
+            <grant type="racial trait" id="ID_TRPG_RACIAL_TRAIT_GLOOMFOLK_POISON"/>
+            <grant type="racial trait" id="ID_TRPG_RACIAL_TRAIT_GLOOMFOLK_POISON_EXTRACTION"/>
+            <grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE"/>
+            <grant type="Language" id="ID_LANGUAGE_GLOOMFOLKEAN" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE"/>
+		</rules>
+	</element>
+    <element name="Perseverance" type="Racial Trait" source="Tanares RPG 5e" id="ID_TRPG_RACIAL_TRAIT_GLOOMFOLK_PERSEVERANCE">
+        <description>
+            <p>Perseverance. You gain proficiency in Survival, along with advantage on saving throws against effects originating from the Penumbral Plane environment. If you already have advantage, you may roll three dice and select the highest result.</p>
+        </description>
+        <sheet alt="Perseverance">
+            <description>Advantage on saving throws against effects originating from the Penumbral Plane environment. If you already have advantage, roll 3 dice using the highest roll.</description>
+        </sheet>
+        <rules>
+            <grant type="proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY"/>
+        </rules>
+    </element>
+    <element name="Survival Instinct" type="Racial Trait" source="Tanares RPG 5e" id="ID_TRPG_RACIAL_TRAIT_GLOOMFOLK_SURVIVAL_INSTINCT">
+        <description>
+            <p>Your honed survival instincts allow you to use any object as a weapon. When you wield an unconventional item as an improvised weapon, you can add your proficiency bonus to your attack rolls. Moreover, you may choose to use either your Dexterity or Strength bonus on these attack and damage rolls. These improvised weapons are also considered unarmed strikes for any relevant bonuses. The GM can decide on the weapon damage die, typically ranging from 1d4 to 1d8. Additionally, you can make an attack with your pincers or stinger as a bonus action once, regaining its use after a short or long rest.</p>
+        </description>
+        <sheet alt="Survival Instinct">
+            <description>
+                Use any object as a weapon. Add proficiency bonus to attack rolls. Choose Dexterity or Strength bonus. Improvised weapons are considered unarmed strikes. GM decides on weapon damage die.  Additionally, you can make an attack with your pincers or stinger as a bonus action once, regaining its use after a short or long rest.
+            </description>
+        </sheet>
+    </element>
+    <element name="Adapted Organism" type="Racial Trait" source="Tanares RPG 5e" id="ID_TRPG_RACIAL_TRAIT_GLOOMFOLK_ADAPTED_ORGANISM">
+        <description>
+            <p>You have resistance to poison damage and have advantage in saving throws against any type of poison. Furthermore, you are immune to poisons naturally produced by gloomfolks</p>
+        </description>
+        <sheet alt="Adapted Organism">
+            <description>Resistance to poison damage. Advantage in saving throws against any type of poison. Immune to poisons naturally produced by gloomfolks.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON"/>
+        </rules>
+    </element>
+    <element name="Pincers" type="Racial Trait" source="Tanares RPG 5e" id="ID_TRPG_RACIAL_TRAIT_GLOOMFOLK_PINCERS">
+        <description>
+            <p>You possess a pair of pincers that can be used to pull, drag, lift, and hold objects (hold a torch, pull a lever, hang from a ledge, drag a box, lift a chest, or do other actions your GM deems appropriate). You are not able to wield a shield or handle a weapon with your pincers. You can make unarmed strikes with them, causing slashing damage instead of blunt damage. When you use them to grab, you receive a bonus equal to half your proficiency bonus (rounded up) on checks to keep the target grappled.</p>
+        </description>
+        <sheet alt="Pincers">
+            <description>Can be used to pull, drag, lift, and hold objects. Can't wield a shield or weapon. Can make unarmed strikes with them. When you use them to grab, you receive a bonus equal to half your proficiency bonus (rounded up) on checks to keep the target grappled.</description>
+        </sheet>
+    </element>
+    <element name="Stinger" type="Racial Trait" source="Tanares RPG 5e" id="ID_TRPG_RACIAL_TRAIT_GLOOMFOLK_STINGER">
+        <description>
+            <p>Your elongated tail ends with a stinger, a natural melee weapon used to deliver unarmed strikes against adjacent creatures. If you have grappled a creature with your pincers, you have advantage on attacks with your stinger. On a hit, deal 1d4 + your Strength modifier piercing damage.</p>
+        </description>
+        <sheet alt="Stinger">
+            <description>Your elongated tail ends with a stinger, a natural melee weapon used to deliver unarmed strikes against adjacent creatures. If you have grappled a creature with your pincers, you have advantage on attacks with your stinger. On a hit, deal 1d4 + your Strength modifier piercing damage.</description>
+        </sheet>
+    </element>
+    <element name="Poison" type="Racial Trait" source="Tanares RPG 5e" id="ID_TRPG_RACIAL_TRAIT_GLOOMFOLK_POISON">
+        <description>
+            <p>When your stinger hits a creature, you may choose to inject it with poison. The target must make a Constitution saving throw (DC = 8 + your proficiency bonus + your Constitution modifier). Failure results in 1d6 poison damage, and the creature must make additional saving throws at the end of each of its turns for the next minute. It takes 1d6 poison damage for each failed save, or ends the effect upon a successful save. You can’t use your poison again until you have completed a short or long rest.</p>
+        </description>
+        <sheet alt="Poison">
+            <description>When your stinger hits a creature, you may choose to inject it with poison. The target must make a Constitution saving throw (DC = 8 + your proficiency bonus + your Constitution modifier). Failure results in 1d6 poison damage, and the creature must make additional saving throws at the end of each of its turns for the next minute. It takes 1d6 poison damage for each failed save, or ends the effect upon a successful save. You can’t use your poison again until you have completed a short or long rest.</description>
+        </sheet>
+    </element>
+    <element name="Extracting Poison" type="Racial Trait" source="Tanares RPG 5e" id="ID_TRPG_RACIAL_TRAIT_GLOOMFOLK_POISON_EXTRACTION">
+        <description>
+            <p>Gloomfolks have mastered the technique of poison extraction and preservation. During a short rest, you can use a vial and alchemical components worth 25 gp to extract and preserve two doses of your poison. Each dose of this poison can be used to coat a blade of a piercing or slashing weapon, or one piece of ammunition, which takes one action. A creature struck by a poisoned weapon or ammunition suffers the same effects as if stung by your stinger. The poison remains potent for seven days once extracted, and for one hour after being applied to a weapon or ammunition. After it hits a creature, the weapon or ammunition loses its poison properties. Poison can be extracted from an incapacitated gloomfolk following the same process.</p>
+        </description>
+        <sheet alt="Extracting Poison">
+            <description>Gloomfolks have mastered the technique of poison extraction and preservation. During a short rest, you can use a vial and alchemical components worth 25 gp to extract and preserve two doses of your poison. Each dose of this poison can be used to coat a blade of a piercing or slashing weapon, or one piece of ammunition, which takes one action. A creature struck by a poisoned weapon or ammunition suffers the same effects as if stung by your stinger. The poison remains potent for seven days once extracted, and for one hour after being applied to a weapon or ammunition. After it hits a creature, the weapon or ammunition loses its poison properties. Poison can be extracted from an incapacitated gloomfolk following the same process.</description>
+        </sheet>
+    </element>
 </elements>
