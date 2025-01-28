@@ -16,7 +16,7 @@ To Do:
         - Cirrus COMPLETED
         - Soulborn COMPLETED
         - Gloomfolk COMPLETED
-        - Taii'Maku
+        - Taii'Maku PARTIAL (balance mechanic not implemented)
 - New Classes
     - Dragonblade
     - Elementalist
