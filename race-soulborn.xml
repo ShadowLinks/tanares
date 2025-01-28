@@ -3,7 +3,7 @@
 		<name>Soulborn</name>
 		<description>Soulborn species from Tanares RPG 5e.</description>
 		<author url="">Dragori Games</author>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="race-soulborn.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/race-soulborn.xml" />
 		</update>
 	</info>
@@ -60,6 +60,7 @@
 			<set name="names-format">{{name}} {{surname}}</set>
 		</setters>
 		<rules>
+			<select type="Racial Trait" name="Wisdom +1 or +2 (Soulborn)" supports="Custom Soulborn Score" />
 			<select type="Racial Trait" name="Size (Soulborn)" supports="ID_INTERNAL_RACIAL_TRAIT_SMALL|ID_INTERNAL_RACIAL_TRAIT_MEDIUM"/>
 			<select type="Racial Trait" name="Speed (Soulborn)" supports="Custom Racial Speed" />
 			<select type="Racial Trait" name="Vision (Soulborn)" supports="Custom Racial Vision" />
@@ -67,6 +68,30 @@
 			<select type="Racial Trait" name="Ancestral Memory (Soulborn)" supports="ID_SB_ANCESTRAL_MEMORY"/>
 			<grant type="racial trait" id="ID_TRPG_RACIAL_TRAIT_SOULBORN_ANOTHER_LIFE_KNOWLEDGE"/>
 			<grant type="racial trait" id="ID_TRPG_RACIAL_TRAIT_SOULBORN_SOULS_MEMORY"/>
+		</rules>
+	</element>
+	<element name="Wisdom +1 (Soulborn)" type="Racial Trait" source="Tanares RPG 5e" id="ID_SB_WISDOM_1">
+		<compendium display="false"/>
+		<supports> Custom Soulborn Score </supports>
+		<description>
+			<p>Your Wisdom score increases by 1</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="wisdom" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Ability Score Improvement +2 (Soulborn)" supports="Custom Ability Score Increase 2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+		</rules>
+	</element>
+	<element name="Wisdom +2 (Soulborn)" type="Racial Trait" source="Tanares RPG 5e" id="ID_SB_WISDOM_2">
+		<compendium display="false"/>
+		<supports> Custom Soulborn Score </supports>
+		<description>
+			<p>Your Wisdom score increases by 2</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="wisdom" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Ability Score Improvement +1 (Soulborn)" supports="Custom Ability Score Increase 1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
 		</rules>
 	</element>
 	<element name="Inherit Speed 30" type="Racial Trait" source="Tanares RPG 5e" id="SB_SPEED_30">

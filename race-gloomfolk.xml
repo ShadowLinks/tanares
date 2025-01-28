@@ -3,7 +3,7 @@
 		<name>Gloomfolk</name>
 		<description>Gloomfolk species from Tanares RPG 5e.</description>
 		<author url="">Dragori Games</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="race-gloomfolk.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/race-gloomfolk.xml" />
 		</update>
 	</info>
