@@ -3,8 +3,204 @@
 		<name>Soulborn</name>
 		<description>Soulborn species from Tanares RPG 5e.</description>
 		<author url="">Dragori Games</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="race-soulborn.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/race-soulborn.xml" />
 		</update>
 	</info>
+	<element name="Soulborn" type="Race" source="Tanares RPG 5E" id="ID_TRPG_RACE_SOULBORN">
+		<description>
+			<p class="flavor"></p>
+			<h4>SOULBORN TRAITS</h4>
+			<p class="indent">
+				<strong>
+					<em>Ability Score Increase.</em>
+				</strong>
+				Increase you Wisdom score by 2 and one other ability score of your choice by 1 or increase your Wisdom score by 1 and one other ability score of your choice by 2.
+			</p>
+			<p class="indent">
+				<strong>
+					<em>Size/Speed/Vision.</em>
+				</strong>
+				These match your birth parents
+			</p>
+			<p class="indent">
+				<strong>
+					<em>Living History</em>
+				</strong>
+				Having lived through a slice of history, you gain proficiency in History.
+			</p>
+			<p class="indent">
+				<strong>
+					<em>Ancestral Memory</em>
+				</strong>
+				Your past lives’ memories offer you one of the following benefits:
+				<ul>
+					<li>Proficiency in two tools of your choice.</li>
+					<li>Knowledge of one cantrip of your choice from the wizard or cleric spell lists.</li>
+					<li>Proficiency in three specific weapons of your choice.</li>		
+				</ul>
+			</p>
+			<p class="indent">
+				<strong>
+					<em>Another Life's Knowledge</em>
+				</strong>
+				As a bonus action, you can tap into your past lives to gain proficiency in a skill or tool of your choice for the next hour. After using Another Life’s Knowledge, you must complete a long rest before you can use it again.
+			</p>
+			<p class="indent">
+				<strong>
+					<em>Soul's Memory</em>
+				</strong>
+				Your cycles of reincarnation offer a wealth of experiences, enhancing your adaptability. When making an attack roll, ability check, or saving throw, you may roll an additional d20 before the result is determined and choose which of the d20s to use. This feature requires a long rest before it can be used again.
+			</p>
+		</description>
+		<setters>
+			<set name="names" type="male">Bjorn, Cho’wadu, Dragomir, Diego, Edward, Hachiman, Isidor, Jarl, Kaito, Lirien, Magnus, Naimon, Orvar, Perun, Rikuto, Ragnar, Severin, Thorne, Ulf, Vojin, Wulfgar, Xalvador, Yevgeny, Zephyr </set>
+			<set name="names" type="female">Aria, Brindisi, Calantha, Dara, Elysiel, Fae, Galadriel, Hana, Iliana, Je’Seli, Juniper, Kaida, Liriel, Maelle, Nymeria, Ophira, Perrine, Rhiannon, Sylvi, Thora, Ula, Vespera, Xanthe, Ylva, Zinerva </set>
+			<set name="names" type="surname">Blackhammer, Cliffwalker, Doomhammer, Firebeard, Grimaxe, Hammersong, Ironfist, Jadewalker, Moonwhisper, Oakenshield, Redblade, Shadowstalker, Stonefist, Thunderhorn, Windrider, Ashenheart, Bloodhoof, Darkwater, Emberlight, Frostfire, Goldenleaf, Stormcaller, Wildheart, Wyvernslayer </set>
+			<set name="names-format">{{name}} {{surname}}</set>
+		</setters>
+		<rules>
+			<select type="Racial Trait" name="Size (Soulborn)" supports="ID_INTERNAL_RACIAL_TRAIT_SMALL|ID_INTERNAL_RACIAL_TRAIT_MEDIUM"/>
+			<select type="Racial Trait" name="Speed (Soulborn)" supports="Custom Racial Speed" />
+			<select type="Racial Trait" name="Vision (Soulborn)" supports="Custom Racial Vision" />
+			<grant type="racial trait" id="ID_TRPG_RACIAL_TRAIT_SOULBORN_LIVING_HISTORY"/>
+			<select type="Racial Trait" name="Ancestral Memory (Soulborn)" supports="ID_SB_ANCESTRAL_MEMORY"/>
+			<grant type="racial trait" id="ID_TRPG_RACIAL_TRAIT_SOULBORN_ANOTHER_LIFE_KNOWLEDGE"/>
+			<grant type="racial trait" id="ID_TRPG_RACIAL_TRAIT_SOULBORN_SOULS_MEMORY"/>
+		</rules>
+	</element>
+	<element name="Inherit Speed 30" type="Racial Trait" source="Tanares RPG 5e" id="SB_SPEED_30">
+		<compendium display="false"/>
+		<supports> Custom Racial Speed </supports>
+		<description>
+			<p>Your Speed is 30</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="innate speed" value="30" bonus="base" />
+		</rules>
+	</element>
+	<element name="Inherit Speed 25" type="Racial Trait" source="Tanares RPG 5e" id="SB_SPEED_25">
+		<compendium display="false"/>
+		<supports> Custom Racial Speed </supports>
+		<description>
+			<p>Your Speed is 25</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="innate speed" value="25" bonus="base" />
+		</rules>
+	</element>
+	<element name="Inherit Normal Vision" type="Racial Trait" source="Tanares RPG 5e" id="SB_NORMAL_VISION">
+		<compendium display="false"/>
+		<supports> Custom Racial Vision </supports>
+		<description>
+			<p>You have normal vision</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+		</rules>
+	</element>
+	<element name="Inherit Dark Vision" type="Racial Trait" source="Tanares RPG 5e" id="SB_DARK_VISION">
+		<compendium display="false"/>
+		<supports> Custom Racial Vision </supports>
+		<description>
+			<p>You can see in darkness as if the darkness were dim light, so areas of darkness are only lightly obscured as far as that creature is concerned. However, the creature can’t discern color in darkness, only shades of gray.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Vision" id="ID_VISION_DARKVISION"/>
+		</rules>
+	</element>
+	<element name="Inherit Superior Dark Vision" type="Racial Trait" source="Tanares RPG 5e" id="SB_SUPERIOR_DARK_VISION">
+		<compendium display="false"/>
+		<supports> Custom Racial Vision </supports>
+		<description>
+			<p>You can see in darkness as if the darkness were dim light, so areas of darkness are only lightly obscured as far as that creature is concerned. However, the creature can’t discern color in darkness, only shades of gray.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Vision" id="ID_VISION_SUPERIORDARKVISION"/>
+		</rules>
+	</element>
+	<element name="Living History" type="Racial Trait" source="Tanares RPG 5E" id="ID_TRPG_RACIAL_TRAIT_SOULBORN_LIVING_HISTORY">
+		<description>
+			<p>Having lived through a slice of history, you gain proficiency in History.</p>
+		</description>
+		<rules>
+			<grant type="proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY"/>
+		</rules>
+	</element>
+	<element name="Ancestral Memory (Tools)" type="Racial Trait" source="Tanares RPG 5E" id="ID_TRPG_RACIAL_TRAIT_SOULBORN_ANCESTRAL_MEMORY_TOOLS">
+		<compendium display="false"/>
+		<supports> ID_SB_ANCESTRAL_MEMORY </supports>
+		<description>
+			<p>Proficiency in two tools of your choice.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<select type="Proficiency" name="Tools Proficiency" supports="Tool" numer="2" />
+		</rules>
+	</element>
+	<element name="Ancestral Memory (Magic)" type="Racial Trait" source="Tanares RPG 5E" id="ID_TRPG_RACIAL_TRAIT_SOULBORN_ANCESTRAL_MEMORY_CANTRIP">
+		<compendium display="false"/>
+		<supports> ID_SB_ANCESTRAL_MEMORY </supports>
+		<description>
+			<p>You know one captrip from the wizard or cleric spell list</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<select type="Racial Trait" name="Ancestral Memory Magic (Class)" supports="ID_SB_ANCESTRAL_MEMORY_TYPE"/>
+		</rules>
+	</element>
+	<element name="Ancestral Memory (Magic-Wizard)" type="Racial Trait" source="Tanares RPG 5E" id="ID_TRPG_RACIAL_TRAIT_SOULBORN_ANCESTRAL_MEMORY_CANTRIP_WIZARD">
+		<compendium display="false"/>
+		<supports> ID_SB_ANCESTRAL_MEMORY_TYPE </supports>
+		<description>
+			<p>You know one captrip from the wizard spell list</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<select type="Spell" name="Cantrip (Soulborn)" supports="Wizard,0" />
+		</rules>
+	</element>
+	<element name="Ancestral Memory (Magic-Cleric)" type="Racial Trait" source="Tanares RPG 5E" id="ID_TRPG_RACIAL_TRAIT_SOULBORN_ANCESTRAL_MEMORY_CANTRIP_CLERIC">
+		<compendium display="false"/>
+		<supports> ID_SB_ANCESTRAL_MEMORY_TYPE </supports>
+		<description>
+			<p>You know one captrip from the cleric spell list</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<select type="Spell" name="Cantrip (Soulborn)" supports="Cleric,0" />
+
+		</rules>
+	</element>
+	<element name="Ancestral Memory (Weapons)" type="Racial Trait" source="Tanares RPG 5E" id="ID_TRPG_RACIAL_TRAIT_SOULBORN_ANCESTRAL_MEMORY_WEAPON">
+		<compendium display="false"/>
+		<supports> ID_SB_ANCESTRAL_MEMORY </supports>
+		<description>
+			<p>Proficiency of 3 specific weapons.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<select type="Proficiency" name="Weapon Proficiency" supports="Weapon" number="3" />
+		</rules>
+	</element>
+	<element name="Another Life's Knowledge" type="Racial Trait" source="Tanares RPG 5E" id="ID_TRPG_RACIAL_TRAIT_SOULBORN_ANOTHER_LIFE_KNOWLEDGE">
+		<description>
+			<p>As a bonus action, you can tap into your past lives to gain proficiency in a skill or tool of your choice for the next hour. After using Another Life’s Knowledge, you must complete a long rest before you can use it again.</p>
+		</description>
+		<sheet alt="Another Life's Knowledge">
+			<description>As a bonus action, you can tap into your past lives to gain proficiency in a skill or tool of your choice for the next hour. After using Another Life’s Knowledge, you must complete a long rest before you can use it again.</description>
+		</sheet>
+	</element>
+	<element name="Soul's Memory" type="Racial Trait" source="Tanares RPG 5E" id="ID_TRPG_RACIAL_TRAIT_SOULBORN_SOULS_MEMORY">
+		<description>
+			<p>Your cycles of reincarnation offer a wealth of experiences, enhancing your adaptability. When making an attack roll, ability check, or saving throw, you may roll an additional d20 before the result is determined and choose which of the d20s to use. This feature requires a long rest before it can be used again.</p>
+		</description>
+		<sheet alt="Soul's Memory">
+			<description>When making an attack roll, ability check, or saving throw, you may roll an additional d20 before the result is determined and choose which of the d20s to use. This feature requires a long rest before it can be used again.</description>
+		</sheet>
+	</element>
 </elements>
