@@ -3,7 +3,7 @@
         <name>Cirrus</name>
         <description>Cirrus species from Tanares RPG 5e.</description>
         <author url="">Dragori Games</author>
-        <update version="0.0.2">
+        <update version="0.0.3">
             <file name="race-cirrus.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/race-cirrus.xml" />
         </update>
     </info>
@@ -59,7 +59,7 @@
             <strong>
                 <em>High Mountain Living</em>
             </strong>
-             You have proficiency in AnimalHandling and Athletics.
+             You have proficiency in Animal Handling and Athletics.
         </p>
         <p class="indent">
             <strong>
@@ -67,6 +67,12 @@
             </strong>
             At the 7th level, your connection to your celestial creation becomes stronger and a pair of wings is born from your back, granting you a flying speed of 30 feet.
         </p>
+        <p class="indent">
+            <strong>
+                <em>Languages.</em>
+            </strong>
+            You can speak, read, and write Common and Auran.
+            </p>
            </description>      
         <setters>
             <set name="names" type="male">Assiz, Ossaez, Sans, Sayöes, Saëzz, Zianis, Zarekis, Zenthar, Szarion, Szarys, Zeraxus, Zythas, Zelaris, Sazriel, Zephys, Szalyn, Zorinax</set>
@@ -80,7 +86,7 @@
             <grant type="Size" id="ID_SIZE_MEDIUM"/>
             <stat name="innate speed" value="30" bonus="base"/>
             <grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE"/>
-            <grant type="Language" id="ID_LANGUAGE_PRIMORDIAL" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE"/>
+            <grant type="Language" id="ID_MM_LANGUAGE_AURAN" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE"/>
             <grant type="Vision" id="ID_VISION_DARKVISION"/>
             <grant type="Racial Trait" id="ID_TRPG_RACIAL_TRAIT_CIRRUS_HIGH_MOUNTAIN_LIVING"/>
             <grant type="Racial Trait" id="ID_TRPG_RACIAL_TRAIT_CIRRUS_WINGED_SOUL" level="7" />

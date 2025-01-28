@@ -52,6 +52,12 @@
 				</strong>
 				Your cycles of reincarnation offer a wealth of experiences, enhancing your adaptability. When making an attack roll, ability check, or saving throw, you may roll an additional d20 before the result is determined and choose which of the d20s to use. This feature requires a long rest before it can be used again.
 			</p>
+			<p class="indent">
+				<strong>
+					<em>Languages.</em>
+				</strong>
+				 You can speak, read, and write Common, Kemet, and two other languages of your choice, often determined by your birth location or parents’ language
+			</p>
 		</description>
 		<setters>
 			<set name="names" type="male">Bjorn, Cho’wadu, Dragomir, Diego, Edward, Hachiman, Isidor, Jarl, Kaito, Lirien, Magnus, Naimon, Orvar, Perun, Rikuto, Ragnar, Severin, Thorne, Ulf, Vojin, Wulfgar, Xalvador, Yevgeny, Zephyr </set>
@@ -68,6 +74,9 @@
 			<select type="Racial Trait" name="Ancestral Memory (Soulborn)" supports="ID_SB_ANCESTRAL_MEMORY"/>
 			<grant type="racial trait" id="ID_TRPG_RACIAL_TRAIT_SOULBORN_ANOTHER_LIFE_KNOWLEDGE"/>
 			<grant type="racial trait" id="ID_TRPG_RACIAL_TRAIT_SOULBORN_SOULS_MEMORY"/>
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE"/>
+            <grant type="Language" id="ID_LANGUAGE_KEMET" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE"/>
+			<select type="Language" name="Other Languages (Soulborn)" number="2" />
 		</rules>
 	</element>
 	<element name="Wisdom +1 (Soulborn)" type="Racial Trait" source="Tanares RPG 5e" id="ID_SB_WISDOM_1">

@@ -1,7 +1,7 @@
 <elements>
     <info>
         <name>Languages</name>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="languages.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/languages.xml"/>
         </update>
     </info>
@@ -13,6 +13,17 @@
         <setters>
             <set name="exotic">true</set>
             <set name="speakers">Gloomfolk</set>
+            <set name="script">—</set>
+        </setters>
+    </element>
+    <element name="Kemet" type="Language" source="Tanares RPG 5e" id="ID_LANGUAGE_KEMET">
+        <supports>Exotic</supports>
+        <description>
+            <p>Typically spoken by the Soulborn.</p>
+        </description>
+        <setters>
+            <set name="exotic">true</set>
+            <set name="speakers">Soulboarn</set>
             <set name="script">—</set>
         </setters>
     </element>
