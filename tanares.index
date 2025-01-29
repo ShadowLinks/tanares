@@ -4,20 +4,27 @@
 		<name>Tanares</name>
 		<description>Supplements from Tanares RPG 5E to expand your core gaming elements.</description>
 		<author url="https://dragorigames.com/">Dragori Games</author>
-		<update version="0.0.4">
+		<update version="0.0.5">
 			<file name="tanares.index" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/tanares.index" />
 		</update>
 	</info>
 	<files>
+		<file name="source.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/source.xml" />
+
+		
 		<file name="feats.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/feats.xml" />
-        <file name="race-elf.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/race-elf.xml" />
-        <file name="source.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/source.xml" />
+        <file name="languages.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/languages.xml" />
+		<file name="magical-mechanisms.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/magical-mechanisms.xml"/>
+	
+
+		<file name="race-elf.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/race-elf.xml" />
 		<file name="race-dragonborn.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/race-dragonborn.xml" />
 		<file name="race-cirrus.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/race-cirrus.xml" />
 		<file name="race-soulborn.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/race-soulborn.xml" />
 		<file name="race-taiimaku.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/race-taiimaku.xml" />
 		<file name="race-gloomfolk.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/race-gloomfolk.xml" />
-		<file name="languages.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/languages.xml" />
-		<file name="magical-mechanisms.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/magical-mechanisms.xml"/>
+		
+        <file name="barbarian-brutalhunter.xml" url="https://github.com/ShadowLinks/tanares/raw/refs/heads/main/subclasses/barbarian-brutalhunter.xml"/>
+		
 	</files>
 </index>

@@ -1,0 +1,93 @@
+<elements>
+    <info>
+        <name>Path of the Brutal Hunter</name>
+        <description>The Path of the Brutal Hunter from Tanares RPG</description>
+        <author url="">Dragori Games</author>
+        <update version="0.0.1">
+            <file name="barbarian-brutalhunter.xml" url="https://github.com/ShadowLinks/tanares/raw/refs/heads/main/subclasses/barbarian-brutalhunter.xml"/>
+        </update>
+    </info>
+    <element name="Path of the Brutal Hunter" type="Archetype" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_BARBARIAN_BRUTAL">
+        <supports>Primal Path</supports>
+        <description>
+            <p>The Path of the Brutal Hunter is a barbaric tradition that holds to the notion that in the grand scheme of things, all beings are either hunters or prey. Those who embrace this path aim to become the ultimate predator, stalking and taking down the most formidable quarry they can find. The rite of passage for these barbarians involves solo hunting expeditions, where they must bring down the most powerful creature they can find. This rite is highly regarded within their tribes and serves as a way to prove one’s worth, attain prestige, or face shame. Fueled by a burning desire to demonstrate their strength to themselves, their tribe, or their enemies, the Brutal Hunters relentlessly pursue their targets with unyielding fervor. They may hunt for revenge against those who have wronged them, eliminate enemies, or prove their dominance over powerful creatures, making them trophies to add to their collection. Brutal Hunters take immense pride in their hunting trophies, viewing them as a symbol of their strength and prowess. Their collection of teeth from their fallen prey is a source of great respect among their peers and serves as a testament to their power. They are never content to rest on their laurels and are always seeking out greater challenges and more powerful prey, driven by a thirst to prove themselves and secure their place at the top of the food chain. </p>
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_BRUTAL_PREY_MARK"/>
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_BRUTAL_FOCUSED_HUNTER"/>
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_BRUTAL_TROPHY_HUNTER"/>
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_BRUTAL_ELITE_TRACKER"/>
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_BRUTAL_THE_HUNT_IS_MINE"/>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_BRUTAL_PREY_MARK" level="3" />
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_BRUTAL_FOCUSED_HUNTER" level="6" />
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_BRUTAL_TROPHY_HUNTER" level="6" />
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_BRUTAL_ELITE_TRACKER" level="10" />
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_BRUTAL_THE_HUNT_IS_MINE" level="14" />
+        </rules>
+    </element>
+    <element name="Prey Mark" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_BRUTAL_PREY_MARK">
+        <description>
+            <p>Upon selecting this path at the 3rd level, you can use a bonus action to designate a creature within your sight as your prey. This selection grants you the following benefits against your chosen quarry:
+                <ul>
+                    <li>You have advantage on Wisdom (Perception) checks made to perceive your prey, as well as on Wisdom (Survival) checks made to track it.</li>
+                    <li>Your prey have disadvantage on Wisdom (Perception) rolls made against you.</li>
+                    <li>Once you enter your rage, your attacks against your prey deal an extra 1d4 damage of the same type caused by the attack. The damage increases when you reach certain levels in this class, increasing to 1d6 at 9th level and 1d8 at 15th level</li>
+                </ul>
+                You can have only one active prey at a time, and you can’t switch targets unless the current target is defeated or until you finish a short or long rest. At the end of each rest, you must decide whether to retain or dismiss your current prey, provided you have one.
+            </p>
+        </description>
+        <sheet>
+            <description>
+                <p>Designate a creature as your prey. You have advantage on Wisdom (Perception) checks to perceive your prey, as well as on Wisdom (Survival) checks to track it. Your prey has disadvantage on Wisdom (Perception) checks against you. Your attacks against your prey deal an extra 1d4 damage of the same type caused by the attack. The damage increases to 1d6 at 9th level and 1d8 at 15th level.</p>
+            </description>
+        </sheet>
+    </element>
+    <element name="Focused Hunter" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_BRUTAL_FOCUSED_HUNTER">
+        <description>
+            <p>Starting at 6th level, you can channel your rage into a deep wrath against your prey. While in rage, your weapon attacks score a critical hit on a roll of 18-20 against your prey.</p>
+        </description>
+        <sheet>
+            <description>
+                <p>While in rage, your weapon attacks score a critical hit on a roll of 18-20 against your prey.</p>
+            </description>
+        </sheet>
+    </element>
+    <element name="Trophy Hunter" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_BRUTAL_TROPHY_HUNTER">
+        <description>
+            <p>At 6th level, whenever you set a prey, you can discern if its Challenge Rating (CR) surpasses your own, though the exact value remains unknown. If your current prey’s CR is greater than your level and you are raging, you gain resistance to all damage dealt by it.</p>
+        </description>
+        <sheet>
+            <description>
+                <p>You can tell if your prey's CR is higher than yours. If it is and you are raging, you gain resistance to all damage dealt by it.</p>
+            </description>
+        </sheet>
+    </element>
+    <element name="Elite Tracker" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_BRUTAL_ELITE_TRACKER">
+        <description>
+            <p>Starting at 10th level heightens your prowess in tracking your prey. You can cast the locate creature spell without expending a spell slot or material components, exclusively targeting your prey with this spell. You can use this ability once, regaining its use after a short or long rest.</p>
+        </description>
+        <sheet>
+            <description>
+                <p>Cast locate creature targeting your prey without expending a spell slot or material components. You can use this ability once, regaining its use after a short or long rest.</p>
+            </description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_LOCATE_CREATURE" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_SPELLS"/>
+        </rules>
+    </element>
+    <element name="The Hunt is Mine" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_BRUTAL_THE_HUNT_IS_MINE">
+        <description>
+            <p>At 14th level, you acquire additional information about your prey. You become aware of all the resistances and immunities your prey possesses, its current level of exhaustion, and whether its hit points are above or below half of their maximum. In addition, your prey loses the ability to hide from you within a 30-foot radius. If a concealed prey enters or is within this radius, it immediately becomes visible to you, regardless of any previous hiding efforts.</p>
+        </description>
+        <sheet>
+            <description>
+                <p>Learn your prey's resistances, immunities, exhaustion level, and hit points. Your prey can't hide from you within a 30-foot radius.</p>
+            </description>
+        </sheet>
+    </element>
+</elements>
+
+
+
+
