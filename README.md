@@ -32,7 +32,7 @@ To Do:
     - Bard COMPLETED
         - College of Life
     - Cleric
-        - Chaos Domain - Breaks PDF export
+        - Chaos Domain - [Breaks PDF export](https://github.com/ShadowLinks/tanares/issues/3)
         - Courage Domain
     - Druid
         - Circle of the Bloom
