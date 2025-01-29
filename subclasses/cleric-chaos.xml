@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Chaos Domain</name>
+		<description>Chaos Domain for Clerics from Tanares RPG 5e.</description>
+		<author url="">Dragori Games</author>
+		<update version="0.0.1">
+			<file name="cleric-chaos.xml" url="https://github.com/ShadowLinks/tanares/raw/refs/heads/main/subclasses/cleric-chaos.xml" />
+		</update>
+	</info>
+	<element name="Chaos Domain" type="Archetype" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_CLERIC_CHAOS">
+		<supports>Divine Domain</supports>
+		<description>
+			<p>Clerics of chaos, primarily linked with the Windspeaker and Ba-Ka faiths, embrace spontaneity, freedom, and perpetual change. Their decision-making reflects this spirit, using luck and randomness to determine the optimal course of action in uncertain situ- ations. It’s not unusual for a cleric of chaos to cast lots when concrete evidence is lacking, acknowledging the futility of controlling chance and fully accepting it. These clerics maintain that unpredictability is the only constant and that excessive reliance on laws and order stifles progress. They consider hierarchy limiting, as it constrains individuals and favors those in power. They believe natural chaos enables creatures to unveil their true selves and achieve their potential through self-responsibility. Windspeaker clerics of chaos honor Tamera and Bauron, the dual deities, by accepting the unpredictable and leaving matters to chance. They assert the world was born from the fusion of these conflicting natures, creating chaos. Conversely, clerics of chaos devoted to Ba-Ka, the Spirit God of Magic, laud the deity’s endorsement of magic in all its forms. They value that Chaos domain clerics can use magic from other domains, crediting this to Ba-Ka’s influence. These clerics see the extensive and intricate power of magic as irrefutable evidence of chaos’s potency, as magic transforms the world’s structure and rules. The Evolutionist Church previously harbored clerics of chaos who considered Bauron a God of Chaos. However, recent revelations from angels exposed the Ungods’ manipulation of sacred scriptures. Now recognizing Bauron as a law-abiding god of punishment, these clerics have either amended their views or left the church to pursue new life paths</p>
+			<p class="indent"></p>
+			<div element="ID_TRPG_ARCHETYPE_FEATURE_CLERIC_CHAOS_CHAOTIC_SPELL_LIST" />
+			<h5 class="caption">CHAOS DOMAIN SPELLS</h5>
+			<table>
+				<thead>
+					<tr>
+						<td>Cleric Level</td>
+						<td>Spells</td>
+					</tr>
+				</thead>
+				<tr>
+					<td>1st</td>
+					<td>
+						<em>faerie fire, shadow noose</em>
+					</td>
+				</tr>
+				<tr>
+					<td>3rd</td>
+					<td>
+						<em>mirror image, shatter</em>
+					</td>
+				</tr>
+				<tr>
+					<td>5th</td>
+					<td>
+						<em>lightning bolt, protection from energy</em>
+					</td>
+				</tr>
+				<tr>
+					<td>7th</td>
+					<td>
+						<em>confusion, hallucinatory terrain</em>
+					</td>
+				</tr>
+				<tr>
+					<td>9th</td>
+					<td>
+						<em>cloudkill, commune</em>
+					</td>
+				</tr>
+			</table>
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_CLERIC_CHAOS_INFUSE_CHAOS" />
+			<div element="ID_TRPG_ARCHETYPE_FEATURE_CLERIC_CHAOS_CD_CHAOTIC_PRESENCE" />
+			<div element="ID_TRPG_ARCHETYPE_FEATURE_CLERIC_CHAOS_IRREGULAR_DESTRUCTION" />
+			<div element="ID_TRPG_ARCHETYPE_FEATURE_CLERIC_CHAOS_POTENT_SPELLCASTING" />
+			<div element="ID_TRPG_ARCHETYPE_FEATURE_CLERIC_CHAOS_ZONE_OF_CHAOS" />
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<!--may need to create new spellcasting type-->
+			<grant type="Spell" id="ID_TRPG_SPELL_SHADOW_NOOSE" level="1" spellcasting="Cleric" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_FAERIE_FIRE" level="1" spellcasting="Cleric" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_MIRROR_IMAGE" level="3" spellcasting="Cleric" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_SHATTER" level="3" spellcasting="Cleric" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_LIGHTNING_BOLT" level="5" spellcasting="Cleric" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_PROTECTION_FROM_ENERGY" level="5" spellcasting="Cleric" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_CONFUSION" level="7" spellcasting="Cleric" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_HALLUCINATORY_TERRAIN" level="7" spellcasting="Cleric" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_CLOUDKILL" level="9" spellcasting="Cleric" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_COMMUNE" level="9" spellcasting="Cleric" prepared="true"/>
+            <!-- CURRENTLY BREAKS PDF EXPORT -->
+			<grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_CLERIC_CHAOS_CHAOTIC_SPELL_LIST" />
+           
+			<grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_CLERIC_CHAOS_INFUSE_CHAOS"  />
+			<grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_CLERIC_CHAOS_CD_CHAOTIC_PRESENCE" level="2" />
+			<grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_CLERIC_CHAOS_IRREGULAR_DESTRUCTION" level="6" />
+			<grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_CLERIC_CHAOS_POTENT_SPELLCASTING" level="8" />
+			<grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_CLERIC_CHAOS_ZONE_OF_CHAOS" level="17" />
+		</rules>
+	</element>
+	<element name="Chaotic Spell List" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_CLERIC_CHAOS_CHAOTIC_SPELL_LIST">
+		<description>
+			<p>When you’re preparing your spells, immediately after finishing a long rest, you may choose to prepare your spells using the cleric spell list, or roll 1d6 and compare the result to the Determining the List of Spells for Clerics of Chaos table to ran domly determine which spell list you will use to prepare them</p>
+			<table>
+				<thead>
+					<tr>
+						<td>D6</td>
+						<td>Spell List</td>
+					</tr>
+				</thead>
+				<tr>
+					<td>1</td>
+					<td>Bard</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Cleric</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Druid</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>Sorcerer</td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>Warlock</td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td>Wizard</td>
+				</tr>
+			</table>
+			<p>When you prepare spells from spell lists other than the cleric spell list, they become considered cleric spells for you. You retain access to all spells from your domain, but not other cleric spells. All other cleric spellcasting rules apply normally. Even if you acquire a spell list whose normal casters do not know all spells on the list to prepare them, you will still use the cleric rules, able to prepare any spell on the list as if it were a known spell for you.</p>
+		</description>
+		<sheet>
+			<description>
+				<p>When you’re preparing your spells, immediately after finishing a long rest, you may choose to prepare your spells using the cleric spell list, or roll 1d6 and compare the result to the Determining the List of Spells for Clerics of Chaos table to randomly determine which spell list you will use to prepare them. When you prepare spells from spell lists other than the cleric spell list, they become considered cleric spells for you. You retain access to all spells from your domain, but not other cleric spells. All other cleric spellcasting rules apply normally. Even if you acquire a spell list whose normal casters do not know all spells on the list to prepare them, you will still use the cleric rules, able to prepare any spell on the list as if it were a known spell for you.</p>
+			</description>
+		</sheet>
+		<spellcasting name="Cleric" ability="Wisdom" prepare="TRUE">
+			<list known="true">Cleric</list>
+		</spellcasting>
+		<rules>
+            <select type="Archetype Feature" name="Chaotic Spell List" supports="Chaotic Class" />
+        </rules>
+    </element>
+	<element name="Wizard" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_CLERIC_CHAOS_WIZARD">
+		<supports>Chaos Class</supports>
+		<description>Wizard Spell List</description>
+		<spellcasting name="Cleric" ability="Wisdom" prepare="TRUE">
+			<list known="false">Cleric</list>
+			<list known="true">Wizard</list>
+		</spellcasting>
+	</element>
+	<element name="Cleric" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_CLERIC_CHAOS_CLERIC">
+		<supports>Chaos Class</supports>
+		<description>Cleric Spell List</description>
+		<spellcasting name="Cleric" ability="Wisdom" prepare="TRUE">
+			<list known="true">Cleric</list>
+		</spellcasting>
+	</element>
+	<element name="Bard" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_CLERIC_CHAOS_BARD">
+		<supports>Chaos Class</supports>
+		<description>Bard Spell List</description>
+		<spellcasting name="Cleric" ability="Wisdom" prepare="TRUE">
+			<list known="false">Cleric</list>
+			<list known="true">Bard</list>
+		</spellcasting>
+	</element>
+	<element name="Druid" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_CLERIC_CHAOS_DRUID">
+		<supports>Chaos Class</supports>
+		<description>Druid Spell List</description>
+		<spellcasting name="Cleric" ability="Wisdom" prepare="TRUE">
+			<list known="false">Cleric</list>
+			<list known="true">Druid</list>
+		</spellcasting>
+	</element>
+	<element name="Sorcerer" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_CLERIC_CHAOS_SORCERER">
+		<supports>Chaos Class</supports>
+		<description>Sorcerer Spell List</description>
+		<spellcasting name="Cleric" ability="Wisdom" prepare="TRUE">
+			<list known="false">Cleric</list>
+			<list known="true">Sorcerer</list>
+		</spellcasting>
+	</element>
+	<element name="Warlock" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_CLERIC_CHAOS_WARLOCK">
+		<supports>Chaos Class</supports>
+		<description>Warlock Spell List</description>
+		<spellcasting name="Cleric" ability="Wisdom" prepare="TRUE">
+			<list known="false">Cleric</list>
+			<list known="true">Warlock</list>
+		</spellcasting>
+	</element>
+	<element name="Infuse Chaos" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_CLERIC_CHAOS_INFUSE_CHAOS">
+		<description>
+			<p>Starting at 1st level, you may choose to invoke chaos while casting a spell. By doing so, you modify the spell’s damage type randomly. Roll 1d10 and refer to the Infuse Chaos table to determine the new damage type. If the spell originally inflicts the same damage, the chaos-infused spell gains additional power, granting an extra 1d10 bonus damage of that same type. This bonus increases to 2d10 at 12th level.</p>
+			<table>
+				<thead>
+					<tr>
+						<td>D10</td>
+						<td>Infuse Chaos damage type</td>
+					</tr>
+				</thead>
+				<tr>
+					<td>1</td>
+					<td>Acid</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Bludgeoning</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Cold</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>Fire</td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>Lightning</td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td>Necrotic</td>
+				</tr>
+				<tr>
+					<td>7</td>
+					<td>Poison</td>
+				</tr>
+				<tr>
+					<td>8</td>
+					<td>Psychic</td>
+				</tr>
+				<tr>
+					<td>9</td>
+					<td>Radiant</td>
+				</tr>
+				<tr>
+					<td>10</td>
+					<td>Thunder</td>
+				</tr>
+			</table>
+		</description>
+		<sheet>
+			<description>
+				<p>You may choose to invoke chaos while casting a spell. Roll 1d10 and refer to the Infuse Chaos table to determine the new damage type. If the spell originally inflicts the same damage, the chaos-infused spell gains additional power, granting an extra 1d10 bonus damage of that same type. This bonus increases to 2d10 at 12th level.</p>
+                
+
+			</description>
+		</sheet>
+	</element>
+	<element name="Chaotic Presence" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_CLERIC_CHAOS_CD_CHAOTIC_PRESENCE">
+		<description>
+			<p>At 2nd level, you can harness your Channel Divinity to emit an aura of pure chaos, confusing hostile creatures and inciting them to strike their allies. As an action, you raise your holy symbol, forcing all enemies within 30 feet of you who can see you to make a Wisdom saving throw against your spell save DC. On a failed save, they are compelled to move up to 10 feet towards another creature of your choosing and make a melee attack if possible. This movement does not provoke opportunity attacks, and it occurs according to the initiative order.</p>
+		</description>
+		<sheet>
+			<description>
+				<p> As an action you can use your Channel Divinity to raise your holy symbol, forcing all enemies within 30 feet of you who can see you to make a Wisdom saving throw against your spell save DC. On a failed save, they are compelled to move up to 10 feet towards another creature of your choosing and make a melee attack if possible. This movement does not provoke opportunity attacks, and it occurs according to the initiative order.</p>
+			</description>
+		</sheet>
+	</element>
+	<element name="Irregular Destruction" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_CLERIC_CHAOS_IRREGULAR_DESTRUCTION">
+		<description>
+			<p>At 6th level, you gain the power to wield chaotic energies against your foes. As an action, roll 1d8 to select an effect from the Irregular Destruction table. Then, expend a spell slot of your choosing and make a ranged spell attack against a target within 60 feet of you. A successful attack inflicts 2d8 damage per spell slot level expended, with the damage type determined by rolling 1d10 and referring to the Infuse Chaos table</p>
+			<table>
+				<thead>
+					<tr>
+						<td>D8</td>
+						<td>Irregular Destruction effect</td>
+					</tr>
+				</thead>
+				<tr>
+					<td>1</td>
+					<td>You make the attack roll with disadvantage</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>On a sucessful attack, treat all damage dice of this attack as if they rolled a 3</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Consider a successful attack as a miss and a miss as a hit</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>You attack targes another hostile creature within 60ft of the original target. If there is no other creature the target remains unchanged.</td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>On a successful attack, the creature has disadvantage on the next attack it makes until the start of your next turn</td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td>On a successful attack, the creature is frightened of you until the end of your next turn</td>
+				</tr>
+				<tr>
+					<td>7</td>
+					<td>You roll the attack roll with advantage</td>
+				</tr>
+				<tr>
+					<td>8</td>
+					<td>On a successful attack, treat all damage dice of this attack as if they rolled an 8</td>
+				</tr>
+			</table>
+		</description>
+		<sheet>
+			<description>
+				<p>As an action, roll 1d8 to select an effect from the Irregular Destruction table. Then, expend a spell slot of your choosing and make a ranged spell attack against a target within 60 feet of you. A successful attack inflicts 2d8 damage per spell slot level expended, with the damage type determined by rolling 1d10 and referring to the Infuse Chaos table</p>
+			</description>
+		</sheet>
+	</element>
+	<element name="Potent Spellcasting" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_CLERIC_CHAOS_POTENT_SPELLCASTING">
+		<description>
+			<p>Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip.</p>
+		</description>
+		<sheet>
+			<description>
+				<p>You can add {{wisdom:modifier}} to the damage you deal with any cleric cantrip.</p>
+			</description>
+		</sheet>
+	</element>
+	<element name="Zone of Chaos" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_CLERIC_CHAOS_ZONE_OF_CHAOS">
+		<description>
+			<p>Starting at 17th level, as a bonus action, you can create an aura of chaotic energy extending 15 feet around you for a minute or until you deactivate it with a bonus action. Any hostile creature that begins its turn within the aura or enters it must succeed on a Wisdom saving throw against your spell save DC or be subjected to the effects of the confusion spell. Creatures that succeed on this saving throw are immune to your aura for the next 24 hours. You can use this feature a number of times equal to your Wisdom modifier, with all uses regained after a long rest</p>
+		</description>
+		<sheet>
+			<description>
+				<p>Create an aura of chaotic energy extending 15 feet around you as a bonus action for a minute or until you deactivate it with a bonus action. Any hostile creature that begins its turn within the aura or enters it must succeed on a Wisdom saving throw against your spell save DC or be subjected to the effects of the confusion spell. Creatures that succeed on this saving throw are immune to your aura for the next 24 hours. You can use this feature a number of times equal to your Wisdom modifier, with all uses regained after a long rest</p>
+			</description>
+		</sheet>
+	</element>
+</elements>

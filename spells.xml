@@ -1,0 +1,28 @@
+<elements>
+    <info>
+        <name>Tanares Spells</name>
+        <update version="0.0.1">
+            <file name="spells.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/spells.xml" />
+        </update>
+    </info>
+    <element name="Shadow Noose" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_SHADOW_NOOSE">
+        <supports>druid, ranger, warlock</supports>
+        <description>
+            <p>Upon casting this spell, beams of necrotic energy burst from the shadow of a target creature within range, seeking to ensnare it. The target creature must make a Dexterity saving throw. On a failure, shadowy tendrils form around the creature for the duration of the spell, halving its speed and inflicting necrotic damage equal to 1d6 plus your spellcasting ability modifier.</p>
+            <p class="indent">The ensnared creature may attempt a new saving throw at the end of each of its turns to free itself. Until it succeeds, it suffers necrotic damage equal to 1d6 plus your spellcasting ability modifier at the beginning of each of its turns. On a successful save, the spell ends</p>
+        </description>
+        <setters>
+            <set name="keywords">necrotic</set>
+            <set name="level">1</set>
+            <set name="school">Necromancy</set>
+            <set name="time">1 action</set>
+            <set name="range">40 feet</set>
+            <set name="duration">Concentration, up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+</elements>
