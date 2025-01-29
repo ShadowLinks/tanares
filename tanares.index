@@ -25,6 +25,8 @@
 		<file name="race-gloomfolk.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/race-gloomfolk.xml" />
 		
         <file name="barbarian-brutalhunter.xml" url="https://github.com/ShadowLinks/tanares/raw/refs/heads/main/subclasses/barbarian-brutalhunter.xml"/>
-		
+        <file name="barbarian-penumbra.xml" url="https://github.com/ShadowLinks/tanares/raw/refs/heads/main/subclasses/barbarian-penumbra.xml"/>
+
+
 	</files>
 </index>

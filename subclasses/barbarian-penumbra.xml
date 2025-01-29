@@ -1,0 +1,79 @@
+<elements>
+    <info>
+        <name>Path of the Penumbra</name>
+        <description>The Path of the Penumbra from Tanares RPG</description>
+        <author url="">Dragori Games</author>
+        <update version="0.0.1">
+            <file name="barbarian-penumbra.xml" url="https://github.com/ShadowLinks/tanares/raw/refs/heads/main/subclasses/barbarian-penumbra.xml"/>
+        </update>
+    </info>
+    <element name="Path of the Penumbra" type="Archetype" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_BARBARIAN_PENUMBRA">
+        <supports>Primal Path</supports>
+        <description>
+            <p>Tanares is a world with many dangers and few places are as treacherous as the Penumbral Plane. It takes a truly exceptional individual to survive in this realm of darkness, and the penumbral barbarians are such a breed. These barbarians have honed their skills through constant conflict and challenges and are composed of the strongest, the bravest, and sometimes even the most reckless outcasts. The trials of life in the Penumbral Plane have given rise to a new path, one of unparalleled combative prowess. These barbarians undergo grueling physical and mental training to become masters of survival and combat, and many of the gloomfolks tribesmen aspire to join this path. By continuously hunting and feeding on the power of the fearsome penumbral creatures they become resistant to the Penumbral Plane’s dangerous effects. These warriors wield weapons imbued with nightmarish power, striking fear into the hearts of their enemies. In addition to their combat prowess, penumbral barbarians are highly skilled navigators of the treacherous terrain of the Penumbral Plane. They possess great knowledge about the flora and fauna of the penumbra, as well as its many complex layers, using this expertise to gain an advantage in both survival and battle. The penumbral barbarians are a proud people, often sharing their incredible stories of survival and bravery with those who dare to enter their domain. These tales, recounted with conviction, combined with the warriors’ fearsome reputation, leave a lasting impression on all who encounter them. The authenticity of these stories may be called into question, but the penumbral barbarians’ unwavering spirit and bravery is undeniable</p>
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_PENUMBRA_OTHERWORLDLY_RAGE"/>
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_PENUMBRA_VETERANS_TOUGHNESS"/>
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_PENUMBRA_WILL_OF_SURVIVAL"/>
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_PENUMBRA_I_HAVE_SEEN_WORSE"/>
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_PENUMBRA_MIND_FRACTURE"/>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_PENUMBRA_OTHERWORLDLY_RAGE" level="3" />
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_PENUMBRA_VETERANS_TOUGHNESS" level="3" />
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_PENUMBRA_WILL_OF_SURVIVAL" level="6" />
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_PENUMBRA_I_HAVE_SEEN_WORSE" level="10" />
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_PENUMBRA_MIND_FRACTURE" level="14" />
+        </rules>
+    </element>
+    <element name="Otherworldly Rage" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_PENUMBRA_OTHERWORLDLY_RAGE">
+        <description>
+            <p>Upon choosing this path at 3rd level, your rage channels the might of the Penumbral Plane. While raging, the first successful melee weapon attack on each turn is imbued with additional psychic damage equal to your proficiency bonus. This extra damage ignores psychic immunities and resistances of undead and aberration creatures. Furthermore, while raging, your attack rolls have advantage against aberration or undead creatures.</p>
+        </description>
+        <sheet>
+            <description>
+                <p>While raging, the first successful melee weapon attack on each turn deals additional psychic damage equal to your proficiency bonus. This extra damage ignores psychic immunities and resistances of undead and aberration creatures. Your attack rolls have advantage against aberration or undead creatures.</p>
+            </description>
+        </sheet>
+    </element>
+    <element name="Veteran's Toughness" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_PENUMBRA_VETERANS_TOUGHNESS">
+        <description>
+        <p>At 3rd level, you adapt to the hardships of the world beyond. You become immune to all planar traits, including terrain or climate effects of the Penumbral Plane.</p>
+        </description>
+        <sheet>
+            <description>
+                <p>Immune to all planar traits, including terrain or climate effects of the Penumbral Plane.</p>
+            </description>
+        </sheet>
+    </element>
+    <element name="Will of Survival" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_PENUMBRA_WILL_OF_SURVIVAL">
+        <description>
+            <p>At 6th level, your mind’s robustness matches your physical prowess. During your rage, you become immune to psychic damage and any effect attempting to perceive your emotions, read your thoughts, cast divination spells on you, or inflict the charmed condition. Moreover, any gain in temporary hit points is supplemented by an additional number equal to your proficiency bonus.</p>
+        </description>
+        <sheet>
+            <description>
+                <p>During rage you are immune to psychic damage and any effect attempting to perceive your emotions, read your thoughts, cast divination spells on you, or inflict the charmed condition. Gain additional temporary hit points equal to your proficiency bonus.</p>
+            </description>
+        </sheet>
+    </element>
+    <element name="I Have Seen Worse" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_PENUMBRA_I_HAVE_SEEN_WORSE">
+        <description>
+            <p>At 10th level, your wealth of experience has familiarized you with the face of countless dangers. You can recall a tale of a past predicament you survived, providing you with the insight to tackle the current problem. Following an attack roll, ability check, or saving throw made by you or an ally within 60 feet, you or that ally can choose to roll a new d20 to replace the original roll. This decision must be made before the GM announces the success or failure of the roll. You can use this ability a number of times equal to your proficiency bonus, regaining its uses after finishing a long rest.</p>
+        </description>
+        <sheet>
+            <description>
+                <p>After an attack roll, ability check, or saving throw made by you or an ally within 60 feet, you or that ally can choose to roll a new d20 to replace the original roll. You can use this ability a number of times equal to your proficiency bonus, regaining its uses after finishing a long rest.</p>
+            </description>
+        </sheet>
+    </element>
+    <element name="Mind Fracture" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_PENUMBRA_MIND_FRACTURE">
+        <description>
+        <p>At 14th level, your rage becomes a conduit for the eerie powers of the Penumbral Plane, enabling your weapon attacks to rupture the essence of your foes. While raging, you can convert all damage inflicted by your weapon attacks into psychic damage. You bypass all psychic resistance or immunity.</p>
+        </description>
+        <sheet>
+            <description>
+                <p>While raging, convert all damage inflicted by your weapon attacks into psychic damage. You bypass all psychic resistance or immunity.</p>
+            </description>
+        </sheet>
+    </element>
+</elements>
