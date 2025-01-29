@@ -4,7 +4,7 @@
 		<name>Tanares</name>
 		<description>Supplements from Tanares RPG 5E to expand your core gaming elements.</description>
 		<author url="https://dragorigames.com/">Dragori Games</author>
-		<update version="0.0.5">
+		<update version="0.0.6">
 			<file name="tanares.index" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/tanares.index" />
 		</update>
 	</info>
@@ -26,7 +26,8 @@
 		
         <file name="barbarian-brutalhunter.xml" url="https://github.com/ShadowLinks/tanares/raw/refs/heads/main/subclasses/barbarian-brutalhunter.xml"/>
         <file name="barbarian-penumbra.xml" url="https://github.com/ShadowLinks/tanares/raw/refs/heads/main/subclasses/barbarian-penumbra.xml"/>
-
+        <file name="bard-life.xml" url="https://github.com/ShadowLinks/tanares/raw/refs/heads/main/subclasses/bard-life.xml"/>
+		
 
 	</files>
 </index>
