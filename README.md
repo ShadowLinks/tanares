@@ -26,10 +26,10 @@ To Do:
     - Priest
     - Scoundrel
 - New Subclasses
-    - Barbarian
+    - Barbarian COMPLETED
         - Path of the Savage Hunter
         - Path of the Penumbra
-    - Bard
+    - Bard COMPLETED
         - College of Life
     - Cleric
         - Chaos Domain
