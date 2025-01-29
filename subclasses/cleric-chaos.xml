@@ -76,7 +76,7 @@
 			<grant type="Spell" id="ID_PHB_SPELL_COMMUNE" level="9" spellcasting="Cleric" prepared="true"/>
             <!-- CURRENTLY BREAKS PDF EXPORT -->
 			<grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_CLERIC_CHAOS_CHAOTIC_SPELL_LIST" />
-           
+			           
 			<grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_CLERIC_CHAOS_INFUSE_CHAOS"  />
 			<grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_CLERIC_CHAOS_CD_CHAOTIC_PRESENCE" level="2" />
 			<grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_CLERIC_CHAOS_IRREGULAR_DESTRUCTION" level="6" />
@@ -126,57 +126,57 @@
 				<p>When you’re preparing your spells, immediately after finishing a long rest, you may choose to prepare your spells using the cleric spell list, or roll 1d6 and compare the result to the Determining the List of Spells for Clerics of Chaos table to randomly determine which spell list you will use to prepare them. When you prepare spells from spell lists other than the cleric spell list, they become considered cleric spells for you. You retain access to all spells from your domain, but not other cleric spells. All other cleric spellcasting rules apply normally. Even if you acquire a spell list whose normal casters do not know all spells on the list to prepare them, you will still use the cleric rules, able to prepare any spell on the list as if it were a known spell for you.</p>
 			</description>
 		</sheet>
-		<spellcasting name="Cleric" ability="Wisdom" prepare="TRUE">
-			<list known="true">Cleric</list>
-		</spellcasting>
 		<rules>
-            <select type="Archetype Feature" name="Chaotic Spell List" supports="Chaotic Class" />
+		<!--This is where things break the pdf export
+		It seems that trying to apply any spell lists known to the "Cleric" spellcasting name break the pdf export-->
+            <select type="Archetype Feature" name="Chaotic Spell List" supports="Chaos Class" />
         </rules>
     </element>
-	<element name="Wizard" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_CLERIC_CHAOS_WIZARD">
+	<element name="Wizard List" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_CLERIC_CHAOS_WIZARD">
 		<supports>Chaos Class</supports>
-		<description>Wizard Spell List</description>
+		<description>Wizard Spell List. Select, unselect, and reselect to work. NOTE: SELECTING ANY LIST WILL BREAK PDF EXPORT CURRENTLY</description>
 		<spellcasting name="Cleric" ability="Wisdom" prepare="TRUE">
-			<list known="false">Cleric</list>
 			<list known="true">Wizard</list>
 		</spellcasting>
+		
 	</element>
-	<element name="Cleric" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_CLERIC_CHAOS_CLERIC">
+	<element name="Bard List" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_CLERIC_CHAOS_BARD">
 		<supports>Chaos Class</supports>
-		<description>Cleric Spell List</description>
+		<description>Bard Spell List. Select, unselect, and reselect to work. NOTE: SELECTING ANY LIST WILL BREAK PDF EXPORT CURRENTLY</description>
 		<spellcasting name="Cleric" ability="Wisdom" prepare="TRUE">
-			<list known="true">Cleric</list>
-		</spellcasting>
-	</element>
-	<element name="Bard" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_CLERIC_CHAOS_BARD">
-		<supports>Chaos Class</supports>
-		<description>Bard Spell List</description>
-		<spellcasting name="Cleric" ability="Wisdom" prepare="TRUE">
-			<list known="false">Cleric</list>
+
 			<list known="true">Bard</list>
 		</spellcasting>
 	</element>
-	<element name="Druid" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_CLERIC_CHAOS_DRUID">
+	<element name="Cleric List" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_CLERIC_CHAOS_CLERIC">
 		<supports>Chaos Class</supports>
-		<description>Druid Spell List</description>
+		<description>Cleric Spell List. Select, unselect, and reselect to work. NOTE: SELECTING ANY LIST WILL BREAK PDF EXPORT CURRENTLY</description>
 		<spellcasting name="Cleric" ability="Wisdom" prepare="TRUE">
-			<list known="false">Cleric</list>
+
+			<list known="true" requirements="!">Cleric</list>
+		</spellcasting>
+	</element>
+	<element name="Druid List" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_CLERIC_CHAOS_DRUID">
+		<supports>Chaos Class</supports>
+		<description>Druid Spell List. Select, unselect, and reselect to work. NOTE: SELECTING ANY LIST WILL BREAK PDF EXPORT CURRENTLY</description>
+		<spellcasting name="Cleric" ability="Wisdom" prepare="TRUE">
+
 			<list known="true">Druid</list>
 		</spellcasting>
 	</element>
-	<element name="Sorcerer" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_CLERIC_CHAOS_SORCERER">
+	<element name="Sorcerer List" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_CLERIC_CHAOS_SORCERER">
 		<supports>Chaos Class</supports>
-		<description>Sorcerer Spell List</description>
+		<description>Sorcerer Spell List. Select, unselect, and reselect to work. NOTE: SELECTING ANY LIST WILL BREAK PDF EXPORT CURRENTLY</description>
 		<spellcasting name="Cleric" ability="Wisdom" prepare="TRUE">
-			<list known="false">Cleric</list>
+
 			<list known="true">Sorcerer</list>
 		</spellcasting>
 	</element>
-	<element name="Warlock" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_CLERIC_CHAOS_WARLOCK">
+	<element name="Warlock List" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_CLERIC_CHAOS_WARLOCK">
 		<supports>Chaos Class</supports>
-		<description>Warlock Spell List</description>
+		<description>Warlock Spell List. Select, unselect, and reselect to work. NOTE: SELECTING ANY LIST WILL BREAK PDF EXPORT CURRENTLY</description>
 		<spellcasting name="Cleric" ability="Wisdom" prepare="TRUE">
-			<list known="false">Cleric</list>
+
 			<list known="true">Warlock</list>
 		</spellcasting>
 	</element>

@@ -27,6 +27,8 @@
         <file name="barbarian-brutalhunter.xml" url="https://github.com/ShadowLinks/tanares/raw/refs/heads/main/subclasses/barbarian-brutalhunter.xml"/>
         <file name="barbarian-penumbra.xml" url="https://github.com/ShadowLinks/tanares/raw/refs/heads/main/subclasses/barbarian-penumbra.xml"/>
         <file name="bard-life.xml" url="https://github.com/ShadowLinks/tanares/raw/refs/heads/main/subclasses/bard-life.xml"/>
+		<file name="cleric-chaos.xml" url="https://github.com/ShadowLinks/tanares/raw/refs/heads/main/subclasses/cleric-chaos.xml" />
+
 		
 
 	</files>

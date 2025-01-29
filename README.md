@@ -32,7 +32,7 @@ To Do:
     - Bard COMPLETED
         - College of Life
     - Cleric
-        - Chaos Domain
+        - Chaos Domain - Breaks PDF export
         - Courage Domain
     - Druid
         - Circle of the Bloom
