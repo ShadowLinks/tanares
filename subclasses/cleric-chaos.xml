@@ -244,7 +244,7 @@
 		<description>
 			<p>At 2nd level, you can harness your Channel Divinity to emit an aura of pure chaos, confusing hostile creatures and inciting them to strike their allies. As an action, you raise your holy symbol, forcing all enemies within 30 feet of you who can see you to make a Wisdom saving throw against your spell save DC. On a failed save, they are compelled to move up to 10 feet towards another creature of your choosing and make a melee attack if possible. This movement does not provoke opportunity attacks, and it occurs according to the initiative order.</p>
 		</description>
-		<sheet>
+		<sheet usage="Channel Divinity">
 			<description>
 				<p> As an action you can use your Channel Divinity to raise your holy symbol, forcing all enemies within 30 feet of you who can see you to make a Wisdom saving throw against your spell save DC. On a failed save, they are compelled to move up to 10 feet towards another creature of your choosing and make a melee attack if possible. This movement does not provoke opportunity attacks, and it occurs according to the initiative order.</p>
 			</description>
