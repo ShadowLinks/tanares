@@ -25,4 +25,24 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
+    <element name="Veil of Bravery" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_VEIL_OF_BRAVERY">
+        <supports>bard, cleric</supports>
+        <description>
+            <p>You can turn your allies’ courage into a powerful protective energy. Choose up to 3 willing creatures within range. While under this spell, you and those creatures get +1 on all saving throws, plus the following effect:</p>
+            <p class="indent">When a creature affected with the veil of bravery takes damage, it can take a reaction to reduce the damage by 1d6 for each creature within 20 feet of it that is also affected by this spell. Each creature can use this spell’s effect only once; then the spell ends for it.</p>
+            <p class="indent">At Higher Levels. When you cast this spell using a spell slot of 4th level or higher, the damage reduction die increases by one step for every two slot levels above 2nd, reducing 1d8 for a 4th level, 1d10 for a 6th level, and 1d12 for an 8th level.</p>
+        </description>
+        <setters>
+            <set name="level">2</set>
+            <set name="school">Abjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">20 feet</set>
+            <set name="duration">1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
 </elements>

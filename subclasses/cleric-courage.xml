@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Courage Domain</name>
+		<description>Courage Domain for Clerics from Tanares RPG 5e.</description>
+		<author url="">Dragori Games</author>
+		<update version="0.0.1">
+			<file name="cleric-courage.xml" url="https://github.com/ShadowLinks/tanares/raw/refs/heads/main/subclasses/cleric-courage.xml" />
+		</update>
+	</info>
+	<element name="Courage Domain" type="Archetype" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_CLERIC_COURAGE">
+		<supports>Divine Domain</supports>
+		<description>
+            <p class="indent">In a world fraught with peril, uncertainty, and hardship, clerics are some of the selected few destined to fulfill a higher calling. To rise to this challenge, they must embody exceptional mental and moral fortitude—true valor. Considering the paramount role that courage plays in their faith, it is little wonder that numerous deities claim dominion over this domain.</p>
+            <p class="indent">One of such deities, The Glorious One has many clerics dedicated to the Courage domain, inspiring their followers to persevere through formidable circumstances and combat malevolence in pursuit of a better world. The Glorious One’s standard, soaring high during conflicts, emboldens others to champion the cause of righteousness and remain steadfast in the face of trepidation. Tamera, the goddess of the sun and life, also boasts some disciples who uphold the tenet of courage, for they believe in kindling hope within the disheartened. Her adherents are celebrated for their unwavering dedication to aiding the destitute and uplifting the spirits of the populace. The dwarves of Tanares hold another assemblage of intrepid clerics with utmost esteem. These clerics of Dorsi are distinguished by their dauntlessness, resoluteness, and rousing battle cries. In times of strife, they spearhead the vanguard, bolstering their comrades to achieve greatness and instilling terror within their adversaries.</p>
+            <p class="indent">These valiant clerics embody the essence of warriors, brandishing their weapons with expertise and igniting courage in those who surround them. As emissaries of their divine patrons, they epitomize bravery, guiding the common folk along the path of righteousness and honor Be it a soldier on the battlefield or an adventurer delving into the uncharted, these intrepid champions of courage are able to embolden the resolute and face any challenge head on. Steered by their unyielding spirit and celestial mandate, they will never yield, advancing toward triumph with valor in their hearts.</p>
+			<p class="indent"></p>
+			<h5 class="caption">COURAGE DOMAIN SPELLS</h5>
+			<table>
+				<thead>
+					<tr>
+						<td>Cleric Level</td>
+						<td>Spells</td>
+					</tr>
+				</thead>
+				<tr>
+					<td>1st</td>
+					<td>
+						<em>heroism, shield of faith</em>
+					</td>
+				</tr>
+				<tr>
+					<td>3rd</td>
+					<td>
+						<em>branding smite, veil of bravery</em>
+					</td>
+				</tr>
+				<tr>
+					<td>5th</td>
+					<td>
+						<em>haste, revivify</em>
+					</td>
+				</tr>
+				<tr>
+					<td>7th</td>
+					<td>
+						<em>freedom of movement, stoneskin</em>
+					</td>
+				</tr>
+				<tr>
+					<td>9th</td>
+					<td>
+						<em>greater restoration, legend lore</em>
+					</td>
+				</tr>
+			</table>
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_CLERIC_COURAGE_BONUS_PROFICIENCY" />
+			<div element="ID_TRPG_ARCHETYPE_FEATURE_CLERIC_COURAGE_WORDS_OF_ENCOURAGEMENT" />
+			<div element="ID_TRPG_ARCHETYPE_FEATURE_CLERIC_CD_TAKE_HEART" />
+			<div element="ID_TRPG_ARCHETYPE_FEATURE_CLERIC_COURAGE_DIVINE STRIKE" />
+			<div element="ID_TRPG_ARCHETYPE_FEATURE_CLERIC_COURAGE_UNYIELDING_SPIRIT" />
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+
+			<grant type="Spell" id="ID_PHB_SPELL_HEROISM" level="1" spellcasting="Cleric" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_SHIELD_OF_FAITH" level="1" spellcasting="Cleric" prepared="true"/>
+			<grant type="Spell" id="ID_TRPG_SPELL_VEIL_OF_BRAVERY" level="3" spellcasting="Cleric" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_BRANDING_SMITE" level="3" spellcasting="Cleric" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_HASTE" level="5" spellcasting="Cleric" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_REVIVIFY" level="5" spellcasting="Cleric" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT" level="7" spellcasting="Cleric" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_STONESKIN" level="7" spellcasting="Cleric" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_GREATER_RESTORATION" level="9" spellcasting="Cleric" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_LEGEND_LORE" level="9" spellcasting="Cleric" prepared="true"/>			           
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_CLERIC_COURAGE_BONUS_PROFICIENCY" level="1" />
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_CLERIC_COURAGE_WORDS_OF_ENCOURAGEMENT" level="1" />
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_CLERIC_CD_TAKE_HEART" level="2" />
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_CLERIC_COURAGE_DIVINE STRIKE" level="8" />
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_CLERIC_COURAGE_UNYIELDING_SPIRIT" level="17" />
+
+		</rules>
+	</element>
+	<element name="Bonus Proficiency" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_CLERIC_COURAGE_BONUS_PROFICIENCY">
+        <description>
+            <p>When you choose this domain at 1st level, you gain proficiency with heavy armor and martial weapons.</p>
+        </description>
+        <sheet>
+            <description>
+                <p>Proficiency with heavy armor and martial weapons.</p>
+            </description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR"/>
+        </rules>
+    </element>
+    <element name="Words of Encouragement" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_CLERIC_COURAGE_WORDS_OF_ENCOURAGEMENT">
+        <description>
+            <p>At 1st level, you have a number of Courage Points equal to your Wisdom modifier. You recover all your Courage Points after a short rest. The Courage Points can initially be used in three ways:</p>
+            <p class="indent">- When a creature within 30 feet of you fails a saving throw, you can spend a Courage Point as a reaction to instill in it the will to fight on. The creature can make a new saving throw and must use the second result.</p>
+            <p class="indent">-  As a bonus action, you can spend a Courage Point to summon your inner strength and smite your foes. Until the start of your next turn, your first successful melee attack deals +1d10 damage of the same type as your weapon. This damage increases to +2d10 at 6th level, +3d10 at 12th level, and +4d10 at 18th level.</p>
+            <p class="indent">- As an action, you can spend a Courage Point to shout a powerful war cry that strengthens your party’s resolve. You and all allies within 30 feet of you gain a number of temporary hit points equal to 1d6 + your cleric level for 1 minute, and can roll a saving throw to remove any effect causing the frightened condition. While the temporary hit points last, they also give advantage on all other saving throws made against effects that cause the frightened condition.</p>
+        </description>
+        <sheet>
+            <description>
+                <p>At 1st level, you have a number of Courage Points equal to your Wisdom modifier {{wisdom:modifier}}. You recover all your Courage Points after a short rest. The Courage Points can initially be used in three ways:</p>
+                <p class="indent">- When a creature within 30 feet of you fails a saving throw, you can spend a Courage Point as a reaction to instill in it the will to fight on. The creature can make a new saving throw and must use the second result.</p>
+                <p class="indent">-  As a bonus action, you can spend a Courage Point to summon your inner strength and smite your foes. Until the start of your next turn, your first successful melee attack deals +1d10 damage of the same type as your weapon. This damage increases to +2d10 at 6th level, +3d10 at 12th level, and +4d10 at 18th level.</p>
+                <p class="indent">- As an action, you can spend a Courage Point to shout a powerful war cry. You and all allies within 30 feet of you gain a number of temporary hit points equal to 1d6 + your cleric level for 1 minute, and can roll a saving throw to remove any effect causing the frightened condition. While the temporary hit points last, they also give advantage on all other saving throws made against effects that cause the frightened condition.</p>
+            </description>
+        </sheet>
+    </element>
+    <element name="Take Heart" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_CLERIC_CD_TAKE_HEART">
+        <description>
+            <p>Starting at 2nd level, you can use your Channel Divinity to bolster the courage of a creature you touch. As an action, you can give the touched creature one of the following benefits:</p>
+                <p class="indent">- +1 to AC</p>
+                <p class="indent">- +1 to Attack rolls</p>
+                <p class="indent">- +1 to Saving throws</p>
+                <p class="indent">- +1 to Damage rolls</p>
+                <p class="indent">These benefits last for 1 minute. When you use this feature, you can choose to spend a Courage Point to give a touched creature two different benefits instead of one</p>
+        </description>
+        <sheet usage="Channel Divinity">
+            <description>
+                <p>Starting at 2nd level, you can use your Channel Divinity as an action, you can give a touched creature one of the following benefits:</p>
+                <p class="indent">- +1 to AC</p>
+                <p class="indent">- +1 to Attack rolls</p>
+                <p class="indent">- +1 to Saving throws</p>
+                <p class="indent">- +1 to Damage rolls</p>
+                <p class="indent">These benefits last for 1 minute. When you use this feature, you can choose to spend a Courage Point to give a touched creature two different benefits instead of one</p>
+            </description>
+        </sheet>
+    </element>
+    <element name="Divine Strike" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_CLERIC_COURAGE_DIVINE STRIKE">
+        <description>
+            <p>At 8th level, you gain the ability to infuse your weapon attacks with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can trigger the attack to deal an extra 1d8 radiant damage to the target. When you reach the 14th level, the bonus damage increases to 2d8.</p>
+        </description>
+        <sheet>
+            <description>
+                <p>Once on each of your turns when you hit a creature with a weapon attack, you can trigger the attack to deal an extra 1d8 radiant damage to the target. When you reach the 14th level, the bonus damage increases to 2d8.</p>
+            </description>
+        </sheet>
+    </element>
+    <element name="Unyielding Spirit" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_CLERIC_COURAGE_UNYIELDING_SPIRIT">
+        <description>
+            <p>At 17th level, you and all allies within 15 feet of you become immune to the frightened condition. Additionally, you gain advantage on all Wisdom and Constitution saving throws.</p>
+        </description>
+        <sheet>
+            <description>
+                <p>You and all allies within 15 feet of you become immune to the frightened condition. Additionally, you gain advantage on all Wisdom and Constitution saving throws.</p>
+            </description>
+        </sheet>
+    </element>
+</elements>
