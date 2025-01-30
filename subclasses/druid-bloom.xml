@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+    <info>
+        <name>Circle of Bloom</name>
+        <description>Circle of Bloom subclass for Druids from Tanares RPG 5e.</description>
+        <author>Dragori Games</author>
+        <update version="0.0.1">
+            <file name="druid-bloom.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/subclasses/druid-bloom.xml" />
+        </update>
+    </info>
+    <element name="Circle of Bloom" type="Archetype" source="source" id="ID_TRPG_ARCHETYPE_DRUID_BLOOM">
+        <supports>Druid Circle</supports>
+        <description>
+            <p>Druids of the Circle of the Bloom hold a special reverence for the power and importance of plant life in the natural world. They form deep, personal connections with the plants they care for, viewing them as beloved friends and family, and often giving them individual names. These druids are known to talk to their plants, nurturing their growth and helping them to flourish. Their deep connection with the natural world is so strong that it calls forth a guardian spirit from the forest to accompany them on their journey. This spirit takes the form of a physical plant, and is a tireless protector, ready to defend the druid from any danger. As the druid grows in power and knowledge, so too does their spirit, evolving into a more formidable form, yet never losing its bond with its chosen druid.</p>
+            <p class="indent">The Circle of the Bloom is dedicated to preserving and restoring the natural balance of forests and other vegetation, recognizing that all creatures can benefit from the abundance and vitality of plants. From their bountiful fruits and herbs, to their life-giving essence and ability to heal, plants are a vital source of sustenance and growth. The most passionate members of the circle will even venture into the dangerous and mysterious Penumbral Plane to protect the plants that grow there, and to restore balance to the forces of nature.</p>
+            <p class="indent">Found in nearly every great forest, but mainly in the forests of the regions north of the Central Sea, the druids of the Circle of the Bloom are always vigilant against destruction and disrespect to forests and other natural places</p>
+            <table>
+                <thead>
+                    <tr><td>Druid Level</td><td>Circle Spells</td></tr>
+                </thead>
+                <tr><td>3rd</td><td>spike growth, spore blow</td></tr>
+                <tr><td>5th</td><td>speak with plants, wild path</td></tr>
+                <tr><td>7th</td><td>conjure woodland beings, tranquil groove</td></tr>
+                <tr><td>9th</td><td>awaken, tree stride</td></tr>
+            </table>
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_DRUID_BLOOM_PLANT_EMPATHY" />
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_DRUID_BLOOM_PLANT_GUARDIAN" />
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_DRUID_BLOOM_PLANT_WILD_SHAPE" />
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_DRUID_BLOOM_BLOOM" />
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_DRUID_BLOOM_PLANT_TELEPATHY" />
+        </description>
+        <sheet display="false">
+            <description>Found in nearly every great forest, but mainly in the forests of the regions north of the Central Sea, the druids of the Circle of the Bloom are always vigilant against destruction and disrespect to forests and other natural places.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_SPIKE_GROWTH" level="3" />
+            <grant type="Spell" id="ID_TRPG_SPELL_SPORE_BLOW" level="3" />
+            <grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_PLANTS" level="5" />
+            <grant type="Spell" id="ID_TRPG_SPELL_WILDPATH" level="5" />
+            <grant type="Spell" id="ID_PHB_SPELL_CONJURE_WOODLAND_BEINGS" level="7" />
+            <grant type="Spell" id="ID_TRPG_SPELL_TRANQUIL_GROVE" level="7" />
+            <grant type="Spell" id="ID_PHB_SPELL_AWAKEN" level="9" />
+            <grant type="Spell" id="ID_PHB_SPELL_TREE_STRIDE" level="9" />
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_DRUID_BLOOM_PLANT_EMPATHY" level="2" />
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_DRUID_BLOOM_PLANT_GUARDIAN" level="2" />
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_DRUID_BLOOM_PLANT_WILD_SHAPE" level="6" />
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_DRUID_BLOOM_BLOOM" level="10" />
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_DRUID_BLOOM_PLANT_TELEPATHY" level="14" />
+        </rules>
+    </element>
+    <element name="Plant Empathy" type="Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_DRUID_BLOOM_PLANT_EMPATHY">
+        <description>
+            <p>Starting the 2nd level, you obtain the capability to comprehend and communicate telepathically with plants within 30 feet of you. For this communication, all non-intelligent plants are treated as creatures with basic Intelligence (i.e., Int 3). Their knowledge and cognizance are restrained by their intelligence, yet they can provide you with information regarding nearby places and creatures, including everything they have observed within the past day. However, keep in mind that gaining knowledge from plants might require persuading them or doing simple tasks (such as watering, pruning, or removing a troublesome rodent family) at the GM’s discretion.</p>
+        </description>
+        <sheet>
+            <description>Starting the 2nd level, you obtain the capability to comprehend and communicate telepathically with plants within 30 feet of you. All non-intelligent plants are considered with INT 3. </description>
+        </sheet>
+    </element>
+    <element name="Plant Guardian" type="Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_DRUID_BLOOM_PLANT_GUARDIAN">
+        <description>
+            <p>At 2nd level, you learn a ritual that calls forth a spirit taking the shape of a plant-type creature known as a Plant Guardian. This ritual, involving roughly four hours of meditation, can be completed during a long rest. After the ritual, the Plant Guardian appears and stays with you until it drops to 0 hit points, or it’s dismissed as a bonus action. In case of its death or dismissal, you can resurrect it by conducting the same ritual.</p>
+            <p class="indent">The Plant Guardian follows the stat blocks listed on the Plant Guardian table and can take the form of a plant of your choice, determined at the time of the ritual and respecting the size of the creature.</p>
+            <p class="indent">The Plant Guardian obeys your orders to the best of its abilities and is always friendly towards you. It has its own initiative and acts independently on its turn, but its actions are limited to Dodge unless you command it otherwise on your turn as a bonus action. In that case, the Plant Guardian can execute any action of your choosing that it is capable of on its next turn.</p>
+            <p class="indent">When the Plant Guardian is reduced to 0 hit points, it dies, leaving behind only the wilted remnants of its form, which subsequently lose any attributes the original plant may have possessed.</p>
+            <table>
+                <thead>
+                    <tr><td>Required Druid Level</td><td>Plant Guardian Stat Block</td></tr>
+                </thead>
+                <tr><td>2</td><td>Guardian Sprout</td></tr>
+                <tr><td>6</td><td>Guardian Bush</td></tr>
+                <tr><td>10</td><td>Guardian Shrub</td></tr>
+                <tr><td>14</td><td>Guardian Tree</td></tr>
+                <tr><td>18</td><td>Ancient Guardian</td></tr>
+             </table>
+        </description>
+        <sheet>
+            <description>
+                <p>At 2nd level, you learn a ritual that calls forth a spirit taking the shape of a plant-type creature known as a Plant Guardian. This ritual, involving roughly four hours of meditation, can be completed during a long rest. After the ritual, the Plant Guardian appears and stays with you until it drops to 0 hit points, or it’s dismissed as a bonus action. In case of its death or dismissal, you can resurrect it by conducting the same ritual.</p>
+                <p class="indent">The Plant Guardian follows the stat blocks listed on the Plant Guardian table and can take the form of a plant of your choice, determined at the time of the ritual and respecting the size of the creature.</p>
+                <p class="indent">The Plant Guardian obeys your orders to the best of its abilities and is always friendly towards you. It has its own initiative and acts independently on its turn, but its actions are limited to Dodge unless you command it otherwise on your turn as a bonus action. In that case, the Plant Guardian can execute any action of your choosing that it is capable of on its next turn.</p>
+                <p class="indent">When the Plant Guardian is reduced to 0 hit points, it dies, leaving behind only the wilted remnants of its form, which subsequently lose any attributes the original plant may have possessed.</p>
+            </description>
+        </sheet>
+        <rules>
+            <Grant type="Companion" name="Guardian Sprout" id="ID_TRPG_ARCHETYPE_FEATURE_DRUID_BLOOM_SPROUT" level="2"/>
+            <Grant type="Companion" name="Guardian Bush" id="ID_TRPG_ARCHETYPE_FEATURE_DRUID_BLOOM_BUSH" level="6"/>
+            <Grant type="Companion" name="Guardian Shrub" id="ID_TRPG_ARCHETYPE_FEATURE_DRUID_BLOOM_SHRUB" level="10"/>
+            <Grant type="Companion" name="Guardian Tree" id="ID_TRPG_ARCHETYPE_FEATURE_DRUID_BLOOM_TREE" level="14"/>
+            <Grant type="Companion" name="Ancient Guardian" id="ID_TRPG_ARCHETYPE_FEATURE_DRUID_BLOOM_ANCIENT" level="18"/>          
+        </rules>
+    </element>
+    <element name="Guardian Sprout" type="Companion" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_DRUID_BLOOM_SPROUT">
+        <description>
+            <p>Guardian Sprout</p>
+        </description>
+        <sheet>
+              <stat name="companion:ac" value="13"/>
+            <stat name="companion:attack" value="3"/>
+            <stat name="companion:damage" value="6"/>
+            <stat name='companion:vulnerabilities' value='fire'/>
+            <stat name="companion:hp:max" value="27" />
+        </sheet>
+    </element>
+</elements>

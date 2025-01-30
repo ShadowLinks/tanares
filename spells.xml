@@ -6,7 +6,7 @@
         </update>
     </info>
     <element name="Shadow Noose" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_SHADOW_NOOSE">
-        <supports>druid, ranger, warlock</supports>
+        <supports>druid, ranger, warlock, Spell Saving Throw</supports>
         <description>
             <p>Upon casting this spell, beams of necrotic energy burst from the shadow of a target creature within range, seeking to ensnare it. The target creature must make a Dexterity saving throw. On a failure, shadowy tendrils form around the creature for the duration of the spell, halving its speed and inflicting necrotic damage equal to 1d6 plus your spellcasting ability modifier.</p>
             <p class="indent">The ensnared creature may attempt a new saving throw at the end of each of its turns to free itself. Until it succeeds, it suffers necrotic damage equal to 1d6 plus your spellcasting ability modifier at the beginning of each of its turns. On a successful save, the spell ends</p>
@@ -38,6 +38,71 @@
             <set name="time">1 action</set>
             <set name="range">20 feet</set>
             <set name="duration">1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Spore Blow" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_SPORE_BLOW">
+        <supports>druid, ranger, Spell Saving Throw</supports>
+        <description>
+            <p>You use natural energy to release dozens of magical spores that affect a 20-foot radius sphere within range. Any creature other than you that enters or starts its turn in the affected area must make a Dexterity saving throw. On a failure, 2d4 spores stick to the creature, or half as much on a success. The attached spores explode if the creature takes any damage. The creature then takes 1d4 poison damage for each exploded spore and must succeed on a Constitution saving throw to not become poisoned for 1 minute. As long as the spores have not exploded, a creature can, as an action, make a Dexterity (Sleight of Hand) check against your spell save DC to remove 1 of the spores attached to itself or another creature, but on failure, all spores explode.</p>
+        </description>
+        <setters>
+            <set name="keywords">poison</set>
+            <set name="level">2</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration, up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a dandelion flower</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Wildpath" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_WILDPATH">
+        <supports>ranger, Spell Saving Throw</supports>
+        <description>
+            <p>You create an opaque wall of magic bushes on a solid surface within range. You can make a wall up to 30-foot long, 5-foot high and 5-foot thick or a ring wall up to 20 feet in diameter, 5 feet high and 5 feet thick. Each creature within the area when the wall appears, and, subsequently, any creatures that pass through the spaces it occupies, must make a Dexterity saving throw. On a failure, the creature must roll 1d6 to determine which effect on the table happens to it</p>
+            <p class="indent"></p>
+            <table>
+                <thead>
+                    <tr><td>RESULT</td><td>EFFECT</td></tr>
+                </thead>
+                <tr><td>1-2</td><td>The twigs and vines ensnare the creature, which becomes restrained for the duration. The creature can use an action to make a Strength check against your spell save DC. If it succeeds, it is no longer restrained.</td></tr>
+                <tr><td>3-4</td><td>The branches and vines begin to whip the creature, dealing 2d6 slashing damage per turn as long as it remains in the area.</td></tr>
+                <tr><td>5-6</td><td>ranches, roots, and leaves sway around the creature, blocking its movement and vision. Terrain occupied by the wall of bushes is considered difficult terrain. While within the area, the creature has disadvantage on attacks and Wisdom (Perception) checks that rely on sight</td></tr>
+            </table>           
+        </description>
+        <setters>
+            <set name="level">2</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">8 hours</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Tranquil Grove" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_TRANQUIL_GROVE">
+        <supports>wizard</supports>
+        <description>
+            <p>You create a restful environment in a 20-foot radius around you, making it an ideal place for a long rest. A long rest taken in this area only requires half the usual time, and the creature resting recovers from the effects of one additional level of exhaustion. A creature can only benefit from this spell once per long rest, and must take at least one long rest outside of this area before it can benefit from the spell again</p>
+            <p class="indent"></p> </description>
+        <setters>
+            <set name="level">4</set>
+            <set name="school">Enchantment</set>
+            <set name="time">10 minutes</set>
+            <set name="range">20 ft</set>
+            <set name="duration">4 hours</set>
             <set name="hasVerbalComponent">true</set>
             <set name="hasSomaticComponent">true</set>
             <set name="hasMaterialComponent">false</set>
