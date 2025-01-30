@@ -34,7 +34,7 @@ To Do:
     - Cleric
         - Chaos Domain - [Breaks PDF export](https://github.com/ShadowLinks/tanares/issues/3)
         - Courage Domain
-    - Druid
+    - Druid COMPLETED
         - Circle of the Bloom
     - Fighter
         - Amazon
