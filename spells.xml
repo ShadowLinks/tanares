@@ -1,7 +1,7 @@
 <elements>
     <info>
         <name>Tanares Spells</name>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="spells.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/spells.xml" />
         </update>
     </info>

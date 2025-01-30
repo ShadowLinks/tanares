@@ -1,14 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?>
 <elements>
     <info>
         <name>Circle of Bloom</name>
         <description>Circle of Bloom subclass for Druids from Tanares RPG 5e.</description>
-        <author>Dragori Games</author>
+        <author url="">Dragori Games</author>
         <update version="0.0.1">
             <file name="druid-bloom.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/subclasses/druid-bloom.xml" />
         </update>
     </info>
-    <element name="Circle of Bloom" type="Archetype" source="source" id="ID_TRPG_ARCHETYPE_DRUID_BLOOM">
+    <element name="Circle of Bloom" type="Archetype" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_DRUID_BLOOM">
         <supports>Druid Circle</supports>
         <description>
             <p>Druids of the Circle of the Bloom hold a special reverence for the power and importance of plant life in the natural world. They form deep, personal connections with the plants they care for, viewing them as beloved friends and family, and often giving them individual names. These druids are known to talk to their plants, nurturing their growth and helping them to flourish. Their deep connection with the natural world is so strong that it calls forth a guardian spirit from the forest to accompany them on their journey. This spirit takes the form of a physical plant, and is a tireless protector, ready to defend the druid from any danger. As the druid grows in power and knowledge, so too does their spirit, evolving into a more formidable form, yet never losing its bond with its chosen druid.</p>
@@ -48,7 +47,7 @@
             <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_DRUID_BLOOM_PLANT_TELEPATHY" level="14" />
         </rules>
     </element>
-    <element name="Plant Empathy" type="Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_DRUID_BLOOM_PLANT_EMPATHY">
+    <element name="Plant Empathy" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_DRUID_BLOOM_PLANT_EMPATHY">
         <description>
             <p>Starting the 2nd level, you obtain the capability to comprehend and communicate telepathically with plants within 30 feet of you. For this communication, all non-intelligent plants are treated as creatures with basic Intelligence (i.e., Int 3). Their knowledge and cognizance are restrained by their intelligence, yet they can provide you with information regarding nearby places and creatures, including everything they have observed within the past day. However, keep in mind that gaining knowledge from plants might require persuading them or doing simple tasks (such as watering, pruning, or removing a troublesome rodent family) at the GM’s discretion.</p>
         </description>
@@ -56,7 +55,7 @@
             <description>Starting the 2nd level, you obtain the capability to comprehend and communicate telepathically with plants within 30 feet of you. All non-intelligent plants are considered with INT 3. </description>
         </sheet>
     </element>
-    <element name="Plant Guardian" type="Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_DRUID_BLOOM_PLANT_GUARDIAN">
+    <element name="Plant Guardian" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_DRUID_BLOOM_PLANT_GUARDIAN">
         <description>
             <p>At 2nd level, you learn a ritual that calls forth a spirit taking the shape of a plant-type creature known as a Plant Guardian. This ritual, involving roughly four hours of meditation, can be completed during a long rest. After the ritual, the Plant Guardian appears and stays with you until it drops to 0 hit points, or it’s dismissed as a bonus action. In case of its death or dismissal, you can resurrect it by conducting the same ritual.</p>
             <p class="indent">The Plant Guardian follows the stat blocks listed on the Plant Guardian table and can take the form of a plant of your choice, determined at the time of the ritual and respecting the size of the creature.</p>
@@ -82,23 +81,314 @@
             </description>
         </sheet>
         <rules>
-            <Grant type="Companion" name="Guardian Sprout" id="ID_TRPG_ARCHETYPE_FEATURE_DRUID_BLOOM_SPROUT" level="2"/>
-            <Grant type="Companion" name="Guardian Bush" id="ID_TRPG_ARCHETYPE_FEATURE_DRUID_BLOOM_BUSH" level="6"/>
-            <Grant type="Companion" name="Guardian Shrub" id="ID_TRPG_ARCHETYPE_FEATURE_DRUID_BLOOM_SHRUB" level="10"/>
-            <Grant type="Companion" name="Guardian Tree" id="ID_TRPG_ARCHETYPE_FEATURE_DRUID_BLOOM_TREE" level="14"/>
-            <Grant type="Companion" name="Ancient Guardian" id="ID_TRPG_ARCHETYPE_FEATURE_DRUID_BLOOM_ANCIENT" level="18"/>          
+            <select type="Companion" name="Plant Guardian" supports="Bloom Guardian"/>   
         </rules>
     </element>
+    <element name="Plant Wild Shape" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_DRUID_BLOOM_PLANT_WILD_SHAPE">
+        <description>
+            <p>Starting at 6th level, your Wild Shape ability allows you to transform into plant-type creatures. Additionally, you can choose to transform into a plant-type variant of a creature that you’re already capable of transforming into. The creature has a wooden, branch and leaf appearance and is considered a plant-type creature in addition to its other types. Use the stat block of the same creature, but you have resistance to piercing or bludgeoning damage, and vulnerability to fire damage. All other rules for Wild Shape still apply as usual, including the max. CR</p>
+            <p class="indent">When in a plant-type form, you gain an additional ability: Branch Snare.</p>
+            <p class="indent"><strong>Branch Snare.</strong> Every time you hit a creature with a melee attack during your turn, you have the option to ensnare that creature if it is no more than one size category larger than you. The creature becomes grappled by you (escape DC 13, plus your proficiency bonus). As long as this grapple persists, your melee attacks are restricted to the ensnared creature only</p>
+        </description>
+        <sheet>
+            <description>
+                <p>You can Wild Shape into plant-type creatures or a plant-type variant of a creature. It is considered a plant-type creature in addition to its other types. Use the stat block of the same creature, but you have resistance to piercing or bludgeoning damage, and vulnerability to fire damage. All other rules for Wild Shape still apply as usual, including the max. CR</p>
+                <p class="indent">When in a plant-type form, you gain an additional ability: Branch Snare.</p>
+                <p class="indent"><strong>Branch Snare.</strong> Every time you hit a creature with a melee attack during your turn, you have the option to ensnare that creature if it is no more than one size category larger than you. The creature becomes grappled by you (escape DC 13, plus your proficiency bonus). As long as this grapple persists, your melee attacks are restricted to the ensnared creature only</p>
+            </description>
+        </sheet>
+    </element>
+    <element name="Bloom" type="Archetype" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_DRUID_BLOOM_BLOOM">
+        <description>
+            <p>Starting at the 10th level, you can synchronize with your Plant Guardian once per long rest, triggering it to bloom and bear fruit. This tuning process takes 10 minutes and results in your Plant Guardian producing a number of fruits equivalent to your proficiency bonus, which last for 24 hours.</p>
+            <p class="indent">Your Plant Guardian must have received sunlight for at least one hour in the last 24 hours to produce these fruits. Consuming one of these fruits as an action confers several benefits:</p>
+            <ul>
+                <li>For the rest of the day, the creature no longer needs to drink or eat;</li>
+                <li>The creature regains 1d12 hit points; and</li>
+                <li>The creature is cured of any diseases afflicting it, and the conditions blinded, deafened, and poisoned are removed.</li>
+            </ul>
+            </description>
+        <sheet>
+            <description>
+                <p>You can synchronize with your Plant Guardian once per long rest, triggering it to bloom and bear fruit. This tuning process takes 10 minutes and results in your Plant Guardian producing a number of fruits equivalent to your proficiency bonus, which last for 24 hours.</p>
+                <p class="indent">Your Plant Guardian must have received sunlight for at least one hour in the last 24 hours to produce these fruits. Consuming one of these fruits as an action confers several benefits:</p>
+                <ul>
+                    <li>For the rest of the day, the creature no longer needs to drink or eat;</li>
+                    <li>The creature regains 1d12 hit points; and</li>
+                    <li>The creature is cured of any diseases afflicting it, and the conditions blinded, deafened, and poisoned are removed.</li>
+                </ul>
+            </description>
+        </sheet>
+    </element>
+    <element name="Plant Telepathy" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_DRUID_BLOOM_PLANT_TELEPATHY">
+        <description>
+            <p>Starting at 14th level, your telepathic connection with plants extends to 120 feet. You have advantage on all Charisma checks made with plants and plant-type creatures. Additionally, you gain the innate ability to cast the speak with plants spell at will, without spending a spell slot.</p>
+        </description>
+        <sheet>
+            <description>
+                <p>Your telepathic connection with plants extends to 120 feet. You have advantage on all Charisma checks made with plants and plant-type creatures. Additionally, you gain the innate ability to cast the speak with plants spell at will, without spending a spell slot.</p>
+            </description>
+        </sheet>
+    </element>
     <element name="Guardian Sprout" type="Companion" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_DRUID_BLOOM_SPROUT">
+        <supports>Bloom Guardian</supports>
         <description>
             <p>Guardian Sprout</p>
         </description>
+        <setters>
+            <set name="strength">12</set>
+            <set name="dexterity">9</set>
+            <set name="constitution">14</set>
+            <set name="intelligence">7</set>
+            <set name="wisdom">10</set>
+            <set name="charisma">6</set>
+            <set name="ac">13</set>
+            <set name="hp">27 (5d6+10)</set>
+            <set name="speed">20 ft.</set>
+            <set name="senses">blindsight 30 ft., passive Perception 10</set>
+            <set name="languages">Druidic</set>
+            <set name="resistances">bludgeoning, piercing</set>
+            <set name="vulnerabilites">fire</set>
+            <set name="type">Plant</set>
+            <set name="size">Small</set>
+            <set name="alignment">unaligned</set>
+            <set name="challenge">1/4</set>
+            <set name="actions">ID_TRPG_COMPANION_ACTION_SPROUT_SLAM</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="13"/>
+            <stat name="companion:hp:max" value="27" bonus="base"/>
+            <stat name="companion:speed" value="20" bonus="base"/>
+        </rules>
+    </element>
+    <element name="Branch Slam" type="Companion Action" source="Tanares RGP 5e" id="ID_TRPG_COMPANION_ACTION_SPROUT_SLAM">
+        <description>
+            <p>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 6 (2d4 + 1) bludgeoning damage and the guardian sprout can cause the target to become grappled if its size is Medium or smaller (escape DC 13). Until this grapple ends, the guardian sprout can’t use its Branch Slam on other targets.</p>
+        </description>
         <sheet>
-              <stat name="companion:ac" value="13"/>
-            <stat name="companion:attack" value="3"/>
-            <stat name="companion:damage" value="6"/>
-            <stat name='companion:vulnerabilities' value='fire'/>
-            <stat name="companion:hp:max" value="27" />
+            <description>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 6 (2d4 + 1) bludgeoning damage and the guardian sprout can cause the target to become grappled if its size is Medium or smaller (escape DC 13). Until this grapple ends, the guardian sprout can’t use its Branch Slam on other targets.</description>
         </sheet>
     </element>
+    <element name="Guardian Bush" type="Companion" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_DRUID_BLOOM_BUSH">
+        <supports>Bloom Guardian</supports>
+        <requirements>[level:6]</requirements>
+        <description>
+            <p>Guardian Bush</p>
+        </description>
+        <setters>
+            <set name="strength">14</set>
+            <set name="dexterity">9</set>
+            <set name="constitution">15</set>
+            <set name="intelligence">7</set>
+            <set name="wisdom">10</set>
+            <set name="charisma">6</set>
+            <set name="ac">14</set>
+            <set name="hp">39 (6d8+12)</set>
+            <set name="speed">25 ft.</set>
+            <set name="senses">blindsight 30 ft., passive Perception 10</set>
+            <set name="languages">Druidic</set>
+            <set name="resistances">bludgeoning, piercing</set>
+            <set name="vulnerabilites">fire</set>
+            <set name="type">Plant</set>
+            <set name="size">Medium</set>
+            <set name="alignment">unaligned</set>
+            <set name="challenge">1</set>
+            <set name="actions">ID_TRPG_COMPANION_ACTION_BUSH_SLAM</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="14"/>
+            <stat name="companion:hp:max" value="39" bonus="base"/>
+            <stat name="companion:speed" value="25" bonus="base"/>
+        </rules>
+    </element>
+    <element name="Branch Slam" type="Companion Action" source="Tanares RGP 5e" id="ID_TRPG_COMPANION_ACTION_BUSH_SLAM">
+        <description>
+            <p>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 9 (2d6 + 2) bludgeoning damage and the guardian can cause the target to become grappled if its size is Large or smaller (escape DC 14). Until this grapple ends, the guardian can’t use its Branch Slam on other targets.</p>
+        </description>
+        <sheet>
+            <description>
+                <p>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 9 (2d6 + 2) bludgeoning damage and the guardian can cause the target to become grappled if its size is Large or smaller (escape DC 14). Until this grapple ends, the guardian can’t use its Branch Slam on other targets.</p>
+            </description>
+        </sheet>
+    </element>
+    <element name="Guardian Shrub" type="Companion" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_DRUID_BLOOM_SHRUB">
+        <supports>Bloom Guardian</supports>
+
+        <requirements>[level:10]</requirements>
+        <description>
+            <p>Guardian Shrub</p>
+        </description>
+        <setters>
+            <set name="strength">18</set>
+            <set name="dexterity">8</set>
+            <set name="constitution">20</set>
+            <set name="intelligence">7</set>
+            <set name="wisdom">12</set>
+            <set name="charisma">6</set>
+            <set name="ac">15</set>
+            <set name="hp">84 (8d10+40)</set>
+            <set name="speed">30 ft.</set>
+            <set name="senses">blindsight 30 ft., passive Perception 11</set>
+            <set name="languages">Druidic</set>
+            <set name="resistances">bludgeoning, piercing</set>
+            <set name="vulnerabilites">fire</set>
+            <set name="type">Plant</set>
+            <set name="size">Large</set>
+            <set name="alignment">unaligned</set>
+            <set name="challenge">2</set>
+            <set name="actions">ID_TRPG_COMPANION_ACTION_SHRUB_SLAM,ID_TRPG_COMPANION_ACTION_SHRUB_ROOT</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="15"/>
+            <stat name="companion:hp:max" value="84" bonus="base"/>
+            <stat name="companion:speed" value="30" bonus="base"/>
+        </rules>
+    </element>
+    <element name="Branch Slam" type="Companion Action" source="Tanares RGP 5e" id="ID_TRPG_COMPANION_ACTION_SHRUB_SLAM">
+        <description>
+            <p>Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage and the guardian can cause the target to become grappled if its size is Large or smaller (escape DC 16). Until this grapple ends, the guardian can’t use its Branch Slam on other targets.</p>
+        </description>
+        <sheet>
+            <description>
+                <p>Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage and the guardian can cause the target to become grappled if its size is Large or smaller (escape DC 16). Until this grapple ends, the guardian can’t use its Branch Slam on other targets.</p>
+            </description>
+        </sheet>
+    </element>
+    <element name="Root Entanglement" type="Companion Action" source="Tanares RGP 5e" id="ID_TRPG_COMPANION_ACTION_SHRUB_ROOT">
+        <description>
+            <p>Root Entanglement (Recharge 5-6). The guardian shrub takes root in the ground and causes them to sprout in a 20-foot radius around it. All creatures in the area must succeed on a DC 16 Strength saving throw or be restrained by the entangling roots. A creature restrained by the guardian shrub can use its action to make a Strength saving throw. On a success, it frees itself. As long as there is a restrained creature, the guardian shrub has its speed reduced to 0, if it moves on its turn the restrained creature is released.</p>
+        </description>
+        <sheet>
+            <description>
+                <p>Root Entanglement (Recharge 5-6). The guardian shrub takes root in the ground and causes them to sprout in a 20-foot radius around it. All creatures in the area must succeed on a DC 16 Strength saving throw or be restrained by the entangling roots. A creature restrained by the guardian shrub can use its action to make a Strength saving throw. On a success, it frees itself. As long as there is a restrained creature, the guardian shrub has its speed reduced to 0, if it moves on its turn the restrained creature is released.</p>
+            </description>
+        </sheet>
+    </element>
+    <element name="Guardian Tree" type="Companion" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_DRUID_BLOOM_TREE">
+        <supports>Bloom Guardian</supports>
+
+        <requirements>[level:14]</requirements>
+        <description>
+            <p>Guardian Tree</p>
+        </description>
+        <setters>
+            <set name="strength">20</set>
+            <set name="dexterity">7</set>
+            <set name="constitution">22</set>
+            <set name="intelligence">7</set>
+            <set name="wisdom">14</set> 
+            <set name="charisma">6</set>
+            <set name="ac">15</set>
+            <set name="hp">112 (9d12+54)</set>
+            <set name="speed">30 ft.</set>
+            <set name="senses">blindsight 30 ft., passive Perception 12</set>
+            <set name="languages">Druidic</set>
+            <set name="resistances">bludgeoning, piercing</set>
+            <set name="vulnerabilites">fire</set>
+            <set name="type">Plant</set>
+            <set name="size">Huge</set>
+            <set name="alignment">unaligned</set>
+            <set name="challenge">4</set>
+            <set name="actions">ID_TRPG_COMPANION_ACTION_GOODBERRY,ID_TRPG_COMPANION_ACTION_TREE_SLAM,ID_TRPG_COMPANION_ACTION_TREE_ROOT</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="15"/>
+            <stat name="companion:hp:max" value="112" bonus="base"/>
+            <stat name="companion:speed" value="30" bonus="base"/>
+        </rules>
+    </element>
+    <element name="Innate Spellcasting" type="Companion Action" source="Tanares RGP 5e" id="ID_TRPG_COMPANION_ACTION_GOODBERRY">
+        <description>
+            <p>The guardian can innately cast the goodberry spell, three times per day, requiring no material components</p>
+        </description>
+        <sheet>
+            <description>
+                <p>The guardian can innately cast the goodberry spell, three times per day, requiring no material components</p>
+            </description>
+        </sheet>
+    </element>
+    <element name="Branch Slam" type="Companion Action" source="Tanares RGP 5e" id="ID_TRPG_COMPANION_ACTION_TREE_SLAM">
+        <description>
+            <p>Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 16 (2d10 + 5) bludgeoning damage and the guardian tree can cause the target to become grappled if its size is Huge or smaller (escape DC 17). Until this grapple ends, the guardian can’t use its Branch Slam on other targets.</p>
+        </description>
+        <sheet>
+            <description>
+                <p>Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 16 (2d10 + 5) bludgeoning damage and the guardian tree can cause the target to become grappled if its size is Huge or smaller (escape DC 17). Until this grapple ends, the guardian can’t use its Branch Slam on other targets.</p>
+            </description>
+        </sheet>
+    </element>
+    <element name="Root Entanglement" type="Companion Action" source="Tanares RGP 5e" id="ID_TRPG_COMPANION_ACTION_TREE_ROOT">
+        <description>
+            <p>Root Entanglement (Recharge 5-6). The guardian tree takes root in the ground and causes them to sprout in a 30-foot radius around it. All creatures in the area must succeed on a DC 17 Strength saving throw or be restrained by the entangling roots. A creature restrained by the guardian can use its action to make a Strength saving throw. On a success, it frees itself. As long as there is a restrained creature, the guardian has its speed reduced to 0, if it moves on its turn the restrained creature is released.</p>
+        </description>
+        <sheet>
+            <description>
+                <p>Root Entanglement (Recharge 5-6). The guardian tree takes root in the ground and causes them to sprout in a 30-foot radius around it. All creatures in the area must succeed on a DC 17 Strength saving throw or be restrained by the entangling roots. A creature restrained by the guardian can use its action to make a Strength saving throw. On a success, it frees itself. As long as there is a restrained creature, the guardian has its speed reduced to 0, if it moves on its turn the restrained creature is released.</p>
+            </description>
+        </sheet>
+    </element>
+    <element name="Ancient Guardian" type="Companion" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_DRUID_BLOOM_ANCIENT">
+        <supports>Bloom Guardian</supports>
+        <requirements>[level:18]</requirements>
+        <description>
+            <p>Ancient Guardian</p>
+        </description>
+        <setters>
+            <set name="strength">22</set>
+            <set name="dexterity">7</set>
+            <set name="constitution">24</set>
+            <set name="intelligence">7</set>
+            <set name="wisdom">16</set> 
+            <set name="charisma">6</set>
+            <set name="ac">16</set>
+            <set name="hp">121 (9d12+63)</set>
+            <set name="speed">30 ft.</set>
+            <set name="senses">blindsight 30 ft., passive Perception 13</set>
+            <set name="languages">Druidic</set>
+            <set name="resistances">bludgeoning, piercing</set>
+            <set name="vulnerabilites">fire</set>
+            <set name="type">Plant</set>
+            <set name="size">Huge</set>
+            <set name="alignment">unaligned</set>
+            <set name="challenge">6</set>
+            <set name="actions">ID_TRPG_COMPANION_ACTION_GOODBERRY,ID_TRPG_COMPANION_ACTION_ANCIENT_MULTI,ID_TRPG_COMPANION_ACTION_ANCIENT_SLAM,ID_TRPG_COMPANION_ACTION_ANCIENT_ROOT</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="16"/>
+            <stat name="companion:hp:max" value="121" bonus="base"/>
+            <stat name="companion:speed" value="30" bonus="base"/>
+        </rules>
+    </element>
+    <element name="Multiattack" type="Companion Action" source="Tanares RGP 5e" id="ID_TRPG_COMPANION_ACTION_ANCIENT_MULTI">
+        <description>
+            <p>The guardian tree makes two branch slam attacks</p>
+        </description>
+        <sheet>
+            <description>
+                <p>The guardian tree makes two branch slam attacks</p>
+            </description>
+        </sheet>
+    </element>
+    <element name="Branch Slam" type="Companion Action" source="Tanares RGP 5e" id="ID_TRPG_COMPANION_ACTION_ANCIENT_SLAM">
+        <description>
+            <p>Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 17 (2d10 + 6) bludgeoning damage and the guardian can cause the target to become grappled if its size is Huge or smaller (escape DC 20). Until this grapple ends, the guardian can’t use its Branch Slam on other targets.</p>
+        </description>
+        <sheet>
+            <description>
+                <p>Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 17 (2d10 + 6) bludgeoning damage and the guardian can cause the target to become grappled if its size is Huge or smaller (escape DC 20). Until this grapple ends, the guardian can’t use its Branch Slam on other targets.</p>
+            </description>
+        </sheet>
+    </element>
+    <element name="Root Entanglement" type="Companion Action" source="Tanares RGP 5e" id="ID_TRPG_COMPANION_ACTION_ANCIENT_ROOT">
+        <description>
+            <p>Root Entanglement (Recharge 5-6). The guardian takes root in the ground and causes them to sprout in a 30-foot radius around it. All creatures in the area must succeed on a DC 20 Strength saving throw or be restrained by the entangling roots. A creature restrained by the guardian can use its action to make a Strength saving throw. On a success, it frees itself. As long as there is a restrained creature, the guardian has its speed reduced to 0, if it moves on its turn the restrained creature is released.</p>
+        </description>
+        <sheet>
+            <description>
+                <p>Root Entanglement (Recharge 5-6). The guardian takes root in the ground and causes them to sprout in a 30-foot radius around it. All creatures in the area must succeed on a DC 20 Strength saving throw or be restrained by the entangling roots. A creature restrained by the guardian can use its action to make a Strength saving throw. On a success, it frees itself. As long as there is a restrained creature, the guardian has its speed reduced to 0, if it moves on its turn the restrained creature is released.</p>
+            </description>
+        </sheet>
+    </element>
+    
+
 </elements>
