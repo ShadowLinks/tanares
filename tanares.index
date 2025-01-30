@@ -15,7 +15,7 @@
 		<file name="feats.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/feats.xml" />
         <file name="languages.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/languages.xml" />
 		<file name="magical-mechanisms.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/magical-mechanisms.xml"/>
-	
+		<file name="spells.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/spells.xml" />
 
 		<file name="race-elf.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/race-elf.xml" />
 		<file name="race-dragonborn.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/race-dragonborn.xml" />
