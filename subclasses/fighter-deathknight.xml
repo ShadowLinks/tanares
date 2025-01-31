@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+    <info>
+        <name>Death Knight</name>
+        <description>Death Knight subclass for the Fighter class from Tanares RPG 5e.</description>
+        <author url="">Dragori Games</author>
+        <update version="0.0.1">
+            <file name="fighter-deathknight.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/subclasses/fighter-deathknight.xml" />
+        </update>
+    </info>
+    <element name="Death Knight" type="Archetype" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FIGHTER_DEATH_KNIGHT">
+        <supports>Martial Archetype</supports>
+        <description>
+            <p></p>
+            <p class="indent"></p>
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_FIGHTER_DEATH_DEATH_TOUCH" />
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_FIGHTER_DEATH_DEATH_SOUL" />
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_FIGHTER_DEATH_BLESSED_BY_DEATH" />
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_FIGHTER_DEATH_GRIM_REAPER" />
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_FIGHTER_DEATH_UNDEAD_MASTER" />
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_FIGHTER_DEATH_BETWEEN_LIFE_AND_DEATH" />
+        </description>
+        <sheet display="false">
+            <description>T
+            <p>The death knight is a fearsome warrior who wields the very essence of death’s power. This chilling bond may arise from arcane rituals, a miraculous resurrection, or an encounter with the afterlife that attunes the warrior to death’s dark might.</p>
+            <p class="indent">Misunderstood and dreaded, Death Knights are often perceived as cold, sinister beings, seemingly indifferent to death itself. However, they merely regard it as an intrinsic aspect of life’s cycle, a force they harness with great efficacy.</p>
+            <p class="indent">In kemet society, Death Knights have achieved fame for their insatiable thirst for battle and intimate connection with death, leading to the refinement of necromantic augmentations over countless generations. They also emerge in other death-revering cultures such as the Kepesh, as well as amongst malevolent cults, corrupted Dorsianist dwarves, and Shadow Wing devotees. Remarkably, virtuous Death Knights can be found among a few tragic heroes and the Republic-aligned winter elves who renounced Gullog.</p>
+            <p class="indent">Although Death Knights need not be inherently malevolent, it requires a stoic or extraordinary individual to attune their existence to death’s dominion. Regardless, the mere presence of a Death Knight is a formidable threat, for their unyielding pursuit of victory is undeterred by the specter of death</p>
+            </description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_FIGHTER_DEATH_DEATH_TOUCH" level="3" />
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_FIGHTER_DEATH_DEATH_SOUL" level="3" />
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_FIGHTER_DEATH_BLESSED_BY_DEATH" level="7" />
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_FIGHTER_DEATH_GRIM_REAPER" level="10" />
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_FIGHTER_DEATH_UNDEAD_MASTER" level="15" />
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_FIGHTER_DEATH_BETWEEN_LIFE_AND_DEATH" level="18" />
+        </rules>
+    </element>
+    <element name="Death Touch" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_FIGHTER_DEATH_DEATH_TOUCH">
+        <description>
+            <p>Starting at 3rd level, you have established a connection with the essence and power of death, granting you a suite of abilities that grow in strength as your connection deepens:</p>
+            <ul>
+                <li>Starting at 3rd level, when you use your Second Wind feature, you may spend up to two hit dice to recover hit points in addition to its other effects</li>
+                <li>Starting at 6th level, you only require half the normal amount of food, drink, and sleep for someone of your species. Additionally, you can hold your breath three times longer than normal and have advantage on saving throws and resistance to damage from inhaled gasses</li>
+                <li>Starting at 9th level, you become immune to diseases, poison damage, and the poisoned condition</li>
+                <li>Starting at 12th level, for every 3 years that pass, your body ages only 1 year, increasing your lifespan</li>
+                <li>Starting at 15th level, you may cast speak with dead spell once, regaining its use after a short rest.</li>
+                <li>Starting at 18th level, your hit point maximum can no longer be reduced in any way</li>
+                <li>At 20th level, you age even more slowly. For every 10 years that pass, your body ages only 1 year, and you become immune to magical aging</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>
+                <p>Starting at 3rd level, you have established a connection with the essence and power of death, granting you a suite of abilities that grow in strength as your connection deepens:</p>
+                <!--<ul>
+                    <li>Starting at 3rd level, when you use your Second Wind feature, you may spend up to two hit dice to recover hit points in addition to its other effects</li>
+                    <li>Starting at 6th level, you only require half the normal amount of food, drink, and sleep for someone of your species. Additionally, you can hold your breath three times longer than normal and have advantage on saving throws and resistance to damage from inhaled gasses</li>
+                    <li>Starting at 9th level, you become immune to diseases, poison damage, and the poisoned condition</li>
+                    <li>Starting at 12th level, for every 3 years that pass, your body ages only 1 year, increasing your lifespan</li>
+                    <li>Starting at 15th level, you may cast speak with dead spell once, regaining its use after a short rest.</li>
+                    <li>Starting at 18th level, your hit point maximum can no longer be reduced in any way</li>
+                    <li>At 20th level, you age even more slowly. For every 10 years that pass, your body ages only 1 year, and you become immune to magical aging</li>
+                </ul>-->
+            </description>
+        </sheet>
+        <rules>
+            <grant type="Death Touch Feature" id="ID_TRPG_ARCHETYPE_FEATURE_FIGHTER_DEATH_DEATH_TOUCH_3" level="3" />
+            <grant type="Death Touch Feature" id="ID_TRPG_ARCHETYPE_FEATURE_FIGHTER_DEATH_DEATH_TOUCH_6" level="6" />
+            <grant type="Death Touch Feature" id="ID_TRPG_ARCHETYPE_FEATURE_FIGHTER_DEATH_DEATH_TOUCH_9" level="9" />
+            <grant type="Death Touch Feature" id="ID_TRPG_ARCHETYPE_FEATURE_FIGHTER_DEATH_DEATH_TOUCH_12" level="12" />
+            <grant type="Death Touch Feature" id="ID_TRPG_ARCHETYPE_FEATURE_FIGHTER_DEATH_DEATH_TOUCH_15" level="15" />
+            <grant type="Death Touch Feature" id="ID_TRPG_ARCHETYPE_FEATURE_FIGHTER_DEATH_DEATH_TOUCH_18" level="18" />
+        </rules>
+    </element>
+    <element  name="Death Touch" type="Death Touch Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_FIGHTER_DEATH_DEATH_TOUCH_3">
+        <description>
+            <p>Starting at 3rd level, when you use your Second Wind feature, you may spend up to two hit dice to recover hit points in addition to its other effects</p>
+        </description>
+        <sheet>
+            <description>
+                <p>Starting at 3rd level, when you use your Second Wind feature, you may spend up to two hit dice to recover hit points in addition to its other effects</p>
+            </description>
+        </sheet>
+    </element>
+    <element  name="Death Touch" type="Death Touch Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_FIGHTER_DEATH_DEATH_TOUCH_6">
+        <description>
+            <p>Starting at 6th level, you only require half the normal amount of food, drink, and sleep for someone of your species. Additionally, you can hold your breath three times longer than normal and have advantage on saving throws and resistance to damage from inhaled gasses</p>
+        </description>
+        <sheet>
+            <description>
+                <p>Starting at 6th level, you only require half the normal amount of food, drink, and sleep for someone of your species. Additionally, you can hold your breath three times longer than normal and have advantage on saving throws and resistance to damage from inhaled gasses</p>
+            </description>
+        </sheet>
+    </element>
+    <element  name="Death Touch" type="Death Touch Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_FIGHTER_DEATH_DEATH_TOUCH_9">
+        <description>
+            <p>Starting at 9th level, you become immune to diseases, poison damage, and the poisoned condition</p>
+        </description>
+        <setters>
+            <set name="immunities" level="9">disease, poison</set>
+        </setters>
+        <sheet>
+            <description>
+                <p>Starting at 9th level, you become immune to diseases, poison damage, and the poisoned condition</p>
+            </description>
+        </sheet>
+    </element>
+    <element  name="Death Touch" type="Death Touch Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_FIGHTER_DEATH_DEATH_TOUCH_12">
+        <description>
+            <p>Starting at 12th level, for every 3 years that pass, your body ages only 1 year, increasing your lifespan</p>
+        </description>
+        <sheet>
+            <description>
+                <p>Starting at 12th level, for every 3 years that pass, your body ages only 1 year, increasing your lifespan</p>
+            </description>
+        </sheet>
+    </element>
+    <element  name="Death Touch" type="Death Touch Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_FIGHTER_DEATH_DEATH_TOUCH_15">
+        <description>
+            <p>Starting at 15th level, you may cast speak with dead spell once, regaining its use after a short rest.</p>
+        </description>
+        <sheet>
+            <description>
+                <p>Starting at 15th level, you may cast speak with dead spell once, regaining its use after a short rest.</p>
+            </description>
+        </sheet>
+    </element>
+    <element  name="Death Touch" type="Death Touch Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_FIGHTER_DEATH_DEATH_TOUCH_18">
+        <description>
+            <p>Starting at 18th level, your hit point maximum can no longer be reduced in any way</p>
+        </description>
+        <sheet>
+            <description>
+                <p>Starting at 18th level, your hit point maximum can no longer be reduced in any way</p>
+            </description>
+        </sheet>
+    </element>
+    <element name="Death Soul" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_FIGHTER_DEATH_DEATH_SOUL">
+        <description>
+            <p>Starting at 3rd level, you forge a bond with death and learn to harness its power through special energy points called Soul Points.</p>
+            <p class="indent"><strong>Death Powers </strong>You learn 3 Death Powers, which must be chosen from the Death Power List, and gain an additional one at levels 7th, 10th, 14th, and 18th. Some Death Powers have specific level requirements, which are noted in their description.</p>
+            <p class="indent"><strong>Saving Throws </strong>When a Death Power requires a creature to make a saving throw against its effect, the DC is calculated as follows:</p>
+            <p>Death Power save DC = 8 + your proficiency bonus + your Constitution modifier.</p>
+            <p class="indent"><strong>Soul Points </strong>You have 2 Soul Points and gain an additional Soul Point at 10th level. One Soul Point is always spent when using a Death Power. You regain all of your Soul Points after taking a short or long rest. Additionally, you gain 1 Soul Point whenever an intelligent creature (Intelligence 3 or higher), excluding constructs, dies within 15 feet of you, by taking part of the energy released by its essence. However, the maximum number of Soul Points you can accumulate is equal to 1 plus your proficiency bonus, and any Soul Points gained in this manner are lost after taking a short or long rest.</p>
+        </description>
+        <sheet>
+            <p>You learn {{death-powers}} Death Powers. Your Death Power Save DC is = 8 + {{proficiency}} + {{constitution:modifier}}. You have {{soul-points}} Soul Points. One Soul Point is always spent when using a Death Power. Your  SP is regained on short or long rest. Additionally, you gain 1 Soul Point whenever an intelligent creature (Intelligence 3 or higher), excluding constructs, dies within 15 feet of you. However, the maximum number of Soul Points you can accumulate is {{soul-points:max}}, and any Soul Points gained in this manner are lost after taking a short or long rest.</p>
+        </sheet>
+        <rules>
+            <select type="Archetype Feature" name="Death Powers" supports="deathpowers" level="3" number="3" />
+            <select type="Archetype Feature" name="Death Powers" supports="deathpowers" level="7" />
+            <select type="Archetype Feature" name="Death Powers" supports="deathpowers" level="10" />
+            <select type="Archetype Feature" name="Death Powers" supports="deathpowers" level="14" />
+            <select type="Archetype Feature" name="Death Powers" supports="deathpowers" level="18" />
+            <stat name="soul-points" level="3" value="2" />
+            <stat name="soul-points" level="10" value="1" />
+            <stat name="soul-points:max" value="1 + {{proficiency}}" /> 
+            <stat name="death-powers" level="3" value="3" />
+            <stat name="death-powers" level="7" value="1" />
+            <stat name="death-powers" level="10" value="1" />
+            <stat name="death-powers" level="14" value="1" />
+            <stat name="death-powers" level="18" value="1" />
+        </rules>
+    </element>
+    <element name="Blessed by Death" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_FIGHTER_DEATH_BLESSED_BY_DEATH">
+        <description>
+            <p>Starting at 7th level, when you make a death saving throw, any roll of 3 or higher is considered a success. If you roll a 1, it counts as only one failure. Additionally, if you roll a 20, you regain hit points equal to your level instead of just 1. However, you still automatically fail death saving throws if you take damage while you are at 0 hit points.</p>
+            <p class="indent">Additionally, as a bonus action, you can spend 1 Soul Point to regain up to 3 spent Hit Dice. You can use this additional effect once, regaining its use after a long rest.</p>
+        </description>
+        <sheet>
+            <description>
+                <p>3 or higher succeeds for death saving throws, 1 is only 1 failure, and 20 regains all hit points. As a bonus action you can use 1 Soul Point to regain up to 3 Hit Die once per long rest.</p>
+            </description>
+            </sheet>
+    </element>
+    <element name="Grim Reaper" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_FIGHTER_DEATH_GRIM_REAPER">
+        <description>
+            <p>t 10th level, you become a beacon for departing souls. When you harvest a Soul Point from a creature that has fallen to your attack, you also gain 1d12 temporary hit points.</p>
+        </description>
+        <sheet>
+            <description>
+                <p>When you harvest a Soul Point from a creature that has fallen to your attack, you also gain 1d12 temporary hit points.</p>
+            </description>
+        </sheet>
+    </element>
+    <element name="Undead Master" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_FIGHTER_DEATH_UNDEAD_MASTER">
+        <description>
+            <p>At 15th level, your intimate bond with death allows you to command the undead. You may cause any undead creature within a radius of 120 feet, who can see you, to make a Wisdom saving throw against your Death Power save DC. If it fails, the undead creature perceives you as a leader and becomes friendly, obeying your instructions. Intelligent undead creatures (Int 5+), however, have advantage on this saving throw and can resist your commands if you cause them harm or act against their fundamental beliefs. These intelligent undead can repeat their saving throw every 24 hours, potentially breaking free from your control. After 48 hours without your presence, any undead will automatically break free from this effect. You can only control a number of undead equal to your class level at the same time.</p>
+        </description>
+        <sheet>
+            <description>
+                <p>any undead creature within a radius of 120 feet, who can see you, to make a Wisdom saving throw against your Death Power save DC. If it fails, the undead creature perceives you as a leader and becomes friendly, obeying your instructions. Intelligent undead creatures (Int 5+), however, have advantage on this saving throw and can resist your commands if you cause them harm or act against their fundamental beliefs. These intelligent undead can repeat their saving throw every 24 hours. After 48 hours without your presence, any undead will automatically break free from this effect. You can only control a number of undead equal to your class level at the same time.</p>
+            </description>
+        </sheet>
+    </element>
+    <element name="Between Life and Death" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_FIGHTER_DEATH_BETWEEN_LIFE_AND_DEATH">
+        <description>
+            <p>At 18th level, you exist in the twilight zone between life and death. You don’t require food, drink, or sleep, and you cannot be affected by sleep effects or the frightened condition. Even though you don’t need sleep, taking a long rest still requires at least 4 hours of inactivity to rejuvenate your body and mind. During this period, you remain alert and do not need to be unconscious</p>
+        </description>
+        <sheet>
+            <description>
+                <p>You don’t require food, drink, or sleep, and you cannot be affected by sleep effects or the frightened condition. Even though you don’t need sleep, taking a long rest still requires at least 4 hours of inactivity to rejuvenate your body and mind. During this period, you remain alert and do not need to be unconscious</p>
+            </description>
+        </sheet>
+    </element>
+    <element name="Death Grip" type="Archetype Feature" source="Tanares RPG 5e" level="3" id="ID_TRPG_DEATH_POWER_DEATH_GRIP">
+        <supports>deathpowers</supports>
+        <description>
+            <p>You may use your bonus action and spend 1 Soul Point to conjure a hand of necrotic energy that reaches for a creature within 30 feet of you. This creature must succeed on a Strength saving throw or be pulled to the nearest empty space close to you, provided that the path is clear.</p>
+        </description>
+        <sheet>
+            <description>
+                <p>You may use your bonus action and spend 1 Soul Point to conjure a hand of necrotic energy that reaches for a creature within 30 feet of you. This creature must succeed on a Strength saving throw or be pulled to the nearest empty space close to you, provided that the path is clear.</p>
+            </description>
+        </sheet>
+    </element>
+</elements>
