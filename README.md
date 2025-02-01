@@ -41,7 +41,7 @@ To Do:
         - Death Knight
     - Monk COMPLETED
         - Way of the Animals
-    - Paladin
+    - Paladin COMPLETED
         - Oath of Freedom
     - Ranger
         - Shadow Investigator
