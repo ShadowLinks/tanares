@@ -176,7 +176,7 @@
     </element>
     <element name="Grim Reaper" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_FIGHTER_DEATH_GRIM_REAPER">
         <description>
-            <p>t 10th level, you become a beacon for departing souls. When you harvest a Soul Point from a creature that has fallen to your attack, you also gain 1d12 temporary hit points.</p>
+            <p>At 10th level, you become a beacon for departing souls. When you harvest a Soul Point from a creature that has fallen to your attack, you also gain 1d12 temporary hit points.</p>
         </description>
         <sheet>
             <description>
@@ -190,7 +190,7 @@
         </description>
         <sheet>
             <description>
-                <p>any undead creature within a radius of 120 feet, who can see you, to make a Wisdom saving throw against your Death Power save DC. If it fails, the undead creature perceives you as a leader and becomes friendly, obeying your instructions. Intelligent undead creatures (Int 5+), however, have advantage on this saving throw and can resist your commands if you cause them harm or act against their fundamental beliefs. These intelligent undead can repeat their saving throw every 24 hours. After 48 hours without your presence, any undead will automatically break free from this effect. You can only control a number of undead equal to your class level at the same time.</p>
+                <p>Any undead creature within a radius of 120 feet, who can see you, to make a Wisdom saving throw against your Death Power save DC. If it fails, the undead creature perceives you as a leader and becomes friendly, obeying your instructions. Intelligent undead creatures (Int 5+), however, have advantage on this saving throw and can resist your commands if you cause them harm or act against their fundamental beliefs. These intelligent undead can repeat their saving throw every 24 hours. After 48 hours without your presence, any undead will automatically break free from this effect. You can only control a number of undead equal to your class level at the same time.</p>
             </description>
         </sheet>
     </element>
@@ -212,6 +212,181 @@
         <sheet>
             <description>
                 <p>You may use your bonus action and spend 1 Soul Point to conjure a hand of necrotic energy that reaches for a creature within 30 feet of you. This creature must succeed on a Strength saving throw or be pulled to the nearest empty space close to you, provided that the path is clear.</p>
+            </description>
+        </sheet>
+    </element>
+    <element name="Death Protection" type="Archetype Feature" source="Tanares RPG 5e" level="3" id="ID_TRPG_DEATH_POWER_DEATH_PROTECTION">
+        <supports>deathpowers</supports>
+        <description>
+            <p>When a creature’s attack hits you or an ally within 5 feet of you, you may take a reaction and spend 1 Soul Point to give an AC bonus to the target hit by the attack equal to your proficiency bonus against this attack</p>
+        </description>
+        <sheet>
+            <description>
+                <p>When a creature’s attack hits you or an ally within 5 feet of you, you may take a reaction and spend 1 Soul Point to give an AC bonus of {{proficiency}} against this attack</p>
+            </description>
+        </sheet>
+    </element>
+    
+    <element name="Death Strike" type="Archetype Feature" source="Tanares RPG 5e" level="3" id="ID_TRPG_DEATH_POWER_DEATH_STRIKE">
+        <supports>deathpowers</supports>
+        <description>
+            <p>When you hit a creature with a melee weapon attack, you may spend 1 Soul Point to cause an extra 1d10 of necrotic damage to the creature. At 11th level, you may spend 2 Soul Points to cause an extra 2d10 of necrotic damage. You may only use this ability once per turn. </p>
+            <p class="indent">If a creature dies in the same turn you hit it with a Death Strike, you gain 1d6 temporary hit points, but you can’t gain any Soul Point from that death.</p>
+        </description>
+        <sheet>
+            <description>
+                <p>When you hit a creature with a melee weapon attack, you may spend 1 Soul Point to cause an extra 1d10 of necrotic damage to the creature. At 11th level, you may spend 2 Soul Points to cause an extra 2d10 of necrotic damage. You may only use this ability once per turn. If a creature dies in the same turn you hit it with a Death Strike, you gain 1d6 temporary hit points, but you can’t gain any Soul Point from that death.</p>
+            </description>
+        </sheet>
+    </element>
+    <element name="Death Terror" type="Archetype Feature" source="Tanares RPG 5e" level="3" id="ID_TRPG_DEATH_POWER_DEATH_TERROR">
+        <supports>deathpowers</supports>
+        <description>
+            <p>You may use your bonus action and spend 1 Soul Point to attempt to frighten a creature that is adjacent to you. The creature must make a Wisdom saving throw or be frightened of you for 1 minute. At the end of each of its turns, the affected creature may make a saving throw to try to end the frightened condition</p>
+        </description>
+        <sheet>
+            <description>
+                <p>You may use your bonus action and spend 1 Soul Point to attempt to frighten a creature that is adjacent to you. The creature must make a Wisdom saving throw or be frightened of you for 1 minute. At the end of each of its turns, the affected creature may make a saving throw to try to end the frightened condition</p>
+            </description>
+        </sheet>
+    </element>
+    <element name="Fleeing Death" type="Archetype Feature" source="Tanares RPG 5e" level="3" id="ID_TRPG_DEATH_POWER_FLEEING_DEATH">
+        <supports>deathpowers</supports>
+        <description>
+            <p>When another creature deals damage to you with a melee attack, you may take a reaction and spend 1 Soul Point to reduce the damage by 1d10. At 7th level, you may spend additional Soul Points to further reduce the damage taken. For each extra Soul Point spent with this Death Power, you reduce an additional 1d10 of the damage taken</p>
+        </description>
+        <sheet>
+            <description>
+                <p>When another creature deals damage to you with a melee attack, you may take a reaction and spend 1 Soul Point to reduce the damage by 1d10. At 7th level, you may spend additional Soul Points to further reduce the damage taken. For each extra Soul Point spent with this Death Power, you reduce an additional 1d10 of the damage taken</p>
+            </description>
+        </sheet>
+    </element>
+    <element name="Undying Knight" type="Archetype Feature" source="Tanares RPG 5e" level="3" id="ID_TRPG_DEATH_POWER_UNDYING_KNIGHT">
+        <supports>deathpowers</supports>
+        <description>
+            <p>As an action and by spending 1 Soul Point, you can spend up to 3 Hit Dice to regain hit points. Additionally, you regain an extra amount of hit points equal to half your Constitution bonus (rounded up) for each Hit Die used.</p>
+        </description>
+        <sheet>
+            <description>
+                <p>As an action and by spending 1 Soul Point, you can spend up to 3 Hit Dice to regain hit points. Additionally, you regain an extra amount of hit points equal to half your Constitution bonus (rounded up) for each Hit Die used.</p>
+            </description>
+        </sheet>
+    </element>
+    <element name="Unwearying Warrior" type="Archetype Feature" source="Tanares RPG 5e" level="3" id="ID_TRPG_DEATH_POWER_UNWEARYING_WARRIOR">
+        <supports>deathpowers</supports>
+        <description>
+            <p>When you would suffer a level of exhaustion, you can spend 1 Soul Point and not suffer it, regardless of its origin</p>
+        </description>
+        <sheet>
+            <description>
+                <p>When you would suffer a level of exhaustion, you can spend 1 Soul Point and not suffer it, regardless of its origin</p>
+            </description>
+        </sheet>
+    </element>
+    <element name="Vision of the Afterlife" type="Archetype Feature" source="Tanares RPG 5e" level="3" id="ID_TRPG_DEATH_POWER_P">
+        <supports>deathpowers</supports>
+        <description>
+            <p>You can use a bonus action and spend 1 Soul Point to gain darkvision with a range of 60 feet until your next short or long rest. If you already have darkvision, this Death Power doubles its range. When activated, you can concentrate using a bonus action to gain a glimpse of what is occurring in the Ethereal Plane for the next 10 minutes. After this time, Vision of the Afterlife ends.</p>
+        </description>
+        <sheet>
+            <description>
+                <p>You can use a bonus action and spend 1 Soul Point to gain darkvision with a range of 60 feet until your next short or long rest. If you already have darkvision, this Death Power doubles its range. When activated, you can concentrate using a bonus action to gain a glimpse of what is occurring in the Ethereal Plane for the next 10 minutes. After this time, Vision of the Afterlife ends.</p>
+            </description>
+        </sheet>
+    </element>
+    <element name="Ethereal Move" type="Archetype Feature" source="Tanares RPG 5e" level="7" id="ID_TRPG_DEATH_POWER_ETHEREAL_MOVE">
+         <requirements>[level:7]</requirements>
+        <supports>deathpowers</supports>
+        <description>
+            <p>You may use your bonus action and spen 1 Soul Point to automatically move 30 feet without spending your speed. During this movement, you move through the ethereal plane, so you do not provoke opportunity attacks, ignore difficult terrain, and can move through objects and creatures. You must end your movement in an unoccupied space, or be expelled to the nearest unoccupied space</p>
+        </description>
+        <sheet>
+            <description>
+                <p>You may use your bonus action and spen 1 Soul Point to automatically move 30 feet without spending your speed. During this movement, you move through the ethereal plane, so you do not provoke opportunity attacks, ignore difficult terrain, and can move through objects and creatures. You must end your movement in an unoccupied space, or be expelled to the nearest unoccupied space</p>
+            </description>
+        </sheet>
+    </element>
+    <element name="Strangling Grip" type="Archetype Feature" source="Tanares RPG 5e" level="7" id="ID_TRPG_DEATH_POWER_STRANGLING_GRIP">
+        <requirements>ID_TRPG_DEATH_POWER_DEATH_GRIP,[level:7]</requirements>
+        <supports>deathpowers</supports>
+        <description>
+            <p>(Prerequisite: Death Grip). When you declare the use of the Death Grip, you can use an action and spend an extra 1 Soul Point to impose the restrained condition on the target, in addition to the effects of Death Grip, if the target fails its saving throw. The target can repeat the saving throw at the end of each of its turns to end the condition.</p>
+        </description>
+        <sheet>
+            <description>
+                <p>(Prerequisite: Death Grip). When you declare the use of the Death Grip, you can use an action and spend an extra 1 Soul Point to impose the restrained condition on the target, in addition to the effects of Death Grip, if the target fails its saving throw. The target can repeat the saving throw at the end of each of its turns to end the condition.</p>
+            </description>
+        </sheet>
+    </element>
+    <element name="Death Embrace" type="Archetype Feature" source="Tanares RPG 5e" level="7" id="ID_TRPG_DEATH_POWER_DEATH_EMBRACE">
+        <requirements>[level:7]</requirements>
+        <supports>deathpowers</supports>
+        <description>
+            <p>When you suffer cold, lightning, or necrotic damage, you may take a reaction and spend 1 Soul Point to gain resistance against the triggering damage. At 12th level, you may spend an extra 1 Soul Point to gain immunity against the triggering damage, rather than just resistance</p>
+        </description>
+        <sheet>
+            <description>
+                <p>When you suffer cold, lightning, or necrotic damage, you may take a reaction and spend 1 Soul Point to gain resistance against the triggering damage. At 12th level, you may spend an extra 1 Soul Point to gain immunity against the triggering damage, rather than just resistance</p>
+            </description>
+        </sheet>
+    </element>
+    <element name="Undead Fortitude" type="Archetype Feature" source="Tanares RPG 5e" level="" id="ID_TRPG_DEATH_POWER_UNDEAD_FORTITUDE">
+        <requirements>[level:7]</requirements>
+        <supports>deathpowers</supports>
+        <description>
+            <p>When your hit points are reduced to 0 but you are not killed outright, you can spend 1 Soul Point and make a DC 14 Constitution saving throw. On a success, you remain at 1 hit point. The DC increases by 2 for each subsequent use of this ability before a long rest</p>
+        </description>
+        <sheet>
+            <description>
+                <p>When your hit points are reduced to 0 but you are not killed outright, you can spend 1 Soul Point and make a DC 14 Constitution saving throw. On a success, you remain at 1 hit point. The DC increases by 2 for each subsequent use of this ability before a long rest</p>
+            </description>
+        </sheet>
+    </element>
+    <element name="Creeping Darkness" type="Archetype Feature" source="Tanares RPG 5e" level="10" id="ID_TRPG_DEATH_POWER_CREEPING_DARKNESS">
+        <requirements>ID_TRPG_DEATH_POWER_ETHEREAL_MOVE,[level:10]</requirements>
+        <supports>deathpowers</supports>
+        <description>
+            <p> (Prerequisite: Ethereal Move). When an ally within 60 feet of you suffers an attack, you may take a reaction and spend 1 Soul Point to teleport to an unoccupied space adjacent to them and take the attack in their place, gaining resistance to the damage from this attack.</p>
+        </description>
+        <sheet>
+            <description>
+                <p> (Prerequisite: Ethereal Move). When an ally within 60 feet of you suffers an attack, you may take a reaction and spend 1 Soul Point to teleport to an unoccupied space adjacent to them and take the attack in their place, gaining resistance to the damage from this attack.</p>
+            </description>
+        </sheet>
+    </element>
+    <element name="Grave Mist" type="Archetype Feature" source="Tanares RPG 5e" level="10" id="ID_TRPG_DEATH_POWER_GRAVE_MIST">
+        <requirements>[level:10]</requirements>
+        <supports>deathpowers</supports>
+        <description>
+            <p>You may use your bonus action and spend 1 Soul Point to summon an eerie mist. You affect a circular area with a 10-foot radius centered on you for 1 minute. Any creature that enters or is within this area must make a Constitution saving throw. On a failure, the creature is poisoned for the next minute. If the creature is no longer in the affected area, it may make another saving throw at the end of each of its turns to try to end the poisoned condition.</p>
+        </description>
+        <sheet>
+            <description>
+                <p>You may use your bonus action and spend 1 Soul Point to summon an eerie mist. You affect a circular area with a 10-foot radius centered on you for 1 minute. Any creature that enters or is within this area must make a Constitution saving throw. On a failure, the creature is poisoned for the next minute. If the creature is no longer in the affected area, it may make another saving throw at the end of each of its turns to try to end the poisoned condition.</p>
+            </description>
+        </sheet>
+    </element>
+    <element name="Terrifying Howl" type="Archetype Feature" source="Tanares RPG 5e" level="10" id="ID_TRPG_DEATH_POWER_TERRIFYING_HOWL">
+        <requirements>[level:10]</requirements>
+        <supports>deathpowers</supports>
+        <description>
+            <p>You can use your action and spend 1 Soul Point to unleash a haunting howl that mimics the sound of death. Creatures of your choice that can hear you and are within 60 feet of you must make a Wisdom saving throw. On a failure, the creature is frightened of you for the next minute. A frightened creature must use all its movement to move away from you. The frightened creature can repeat the saving throw at the end of each of its turns to end the effect</p>
+        </description>
+        <sheet>
+            <description>
+                <p>You can use your action and spend 1 Soul Point to unleash a haunting howl that mimics the sound of death. Creatures of your choice that can hear you and are within 60 feet of you must make a Wisdom saving throw. On a failure, the creature is frightened of you for the next minute. A frightened creature must use all its movement to move away from you. The frightened creature can repeat the saving throw at the end of each of its turns to end the effect</p>
+            </description>
+        </sheet>
+    </element>
+    <element name="Life Drain" type="Archetype Feature" source="Tanares RPG 5e" level="10" id="ID_TRPG_DEATH_POWER_LIFE_DRAIN">
+        <requirements>[level:10]</requirements>
+        <supports>deathpowers</supports>
+        <description>
+            <p>You can use your action to attempt to touch a living creature adjacent to you. To determine if your touch is successful, you must make an unarmed strike against the creature. On a hit, you deal 1d10 necrotic damage for each Soul Point spent on this Death Power, and regain hit points equal to the damage dealt.</p>
+        </description>
+        <sheet>
+            <description>
+                <p>You can use your action to attempt to touch a living creature adjacent to you. To determine if your touch is successful, you must make an unarmed strike against the creature. On a hit, you deal 1d10 necrotic damage for each Soul Point spent on this Death Power, and regain hit points equal to the damage dealt.</p>
             </description>
         </sheet>
     </element>

@@ -4,7 +4,7 @@
 		<name>Tanares</name>
 		<description>Supplements from Tanares RPG 5E to expand your core gaming elements.</description>
 		<author url="https://dragorigames.com/">Dragori Games</author>
-		<update version="0.0.6">
+		<update version="0.0.7">
 			<file name="tanares.index" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/tanares.index" />
 		</update>
 	</info>
@@ -30,7 +30,8 @@
 		<file name="cleric-chaos.xml" url="https://github.com/ShadowLinks/tanares/raw/refs/heads/main/subclasses/cleric-chaos.xml" />
 		<file name="cleric-courage.xml" url="https://github.com/ShadowLinks/tanares/raw/refs/heads/main/subclasses/cleric-courage.xml" />
         <file name="druid-bloom.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/subclasses/druid-bloom.xml" />
-		
+        <file name="fighter-deathknight.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/subclasses/fighter-deathknight.xml" />
+
 
 		
 
