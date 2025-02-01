@@ -11,7 +11,10 @@
     <element name="Death Knight" type="Archetype" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FIGHTER_DEATH_KNIGHT">
         <supports>Martial Archetype</supports>
         <description>
-            <p></p>
+            <p>The death knight is a fearsome warrior who wields the very essence of death’s power. This chilling bond may arise from arcane rituals, a miraculous resurrection, or an encounter with the afterlife that attunes the warrior to death’s dark might.</p>
+            <p class="indent">Misunderstood and dreaded, Death Knights are often perceived as cold, sinister beings, seemingly indifferent to death itself. However, they merely regard it as an intrinsic aspect of life’s cycle, a force they harness with great efficacy.</p>
+            <p class="indent">In kemet society, Death Knights have achieved fame for their insatiable thirst for battle and intimate connection with death, leading to the refinement of necromantic augmentations over countless generations. They also emerge in other death-revering cultures such as the Kepesh, as well as amongst malevolent cults, corrupted Dorsianist dwarves, and Shadow Wing devotees. Remarkably, virtuous Death Knights can be found among a few tragic heroes and the Republic-aligned winter elves who renounced Gullog.</p>
+            <p class="indent">Although Death Knights need not be inherently malevolent, it requires a stoic or extraordinary individual to attune their existence to death’s dominion. Regardless, the mere presence of a Death Knight is a formidable threat, for their unyielding pursuit of victory is undeterred by the specter of death</p>
             <p class="indent"></p>
             <div element="ID_TRPG_ARCHETYPE_FEATURE_FIGHTER_DEATH_DEATH_TOUCH" />
             <div element="ID_TRPG_ARCHETYPE_FEATURE_FIGHTER_DEATH_DEATH_SOUL" />
@@ -21,7 +24,7 @@
             <div element="ID_TRPG_ARCHETYPE_FEATURE_FIGHTER_DEATH_BETWEEN_LIFE_AND_DEATH" />
         </description>
         <sheet display="false">
-            <description>T
+            <description>
             <p>The death knight is a fearsome warrior who wields the very essence of death’s power. This chilling bond may arise from arcane rituals, a miraculous resurrection, or an encounter with the afterlife that attunes the warrior to death’s dark might.</p>
             <p class="indent">Misunderstood and dreaded, Death Knights are often perceived as cold, sinister beings, seemingly indifferent to death itself. However, they merely regard it as an intrinsic aspect of life’s cycle, a force they harness with great efficacy.</p>
             <p class="indent">In kemet society, Death Knights have achieved fame for their insatiable thirst for battle and intimate connection with death, leading to the refinement of necromantic augmentations over countless generations. They also emerge in other death-revering cultures such as the Kepesh, as well as amongst malevolent cults, corrupted Dorsianist dwarves, and Shadow Wing devotees. Remarkably, virtuous Death Knights can be found among a few tragic heroes and the Republic-aligned winter elves who renounced Gullog.</p>
