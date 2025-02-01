@@ -39,7 +39,7 @@ To Do:
     - Fighter COMPLETED
         - Amazon
         - Death Knight
-    - Monk
+    - Monk COMPLETED
         - Way of the Animals
     - Paladin
         - Oath of Freedom
