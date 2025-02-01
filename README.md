@@ -36,7 +36,7 @@ To Do:
         - Courage Domain
     - Druid COMPLETED
         - Circle of the Bloom
-    - Fighter
+    - Fighter COMPLETED
         - Amazon
         - Death Knight
     - Monk

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+    <info>
+        <name>Amazon</name>
+        <description>Amazon subclass for the Fighter class from Tanares RPG 5e.</description>
+        <author url="">Dragori Games</author>
+        <update version="0.0.1">
+            <file name="fighter-amazon.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/subclasses/fighter-amazon.xml" />
+        </update>
+    </info>
+    <element name="Amazon" type="Archetype" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FIGHTER_AMAZON">
+        <supports>Martial Archetype</supports>
+        <description>
+            <p>Amazons are fierce warriors, often hailing from matriarchal societies, who train rigorously to become exceptional combatants. They favor the spear and javelin—weapons of notable versatility that prove effective in melee and at a distance. Their intensive physical training molds them into formidable athletes, capable of throwing weapons over great distances, sprinting with impressive speed, and fighting with a potent blend of agility and strength</p>
+            <p class="indent">Often residing in isolated societies that do not permit outsiders, they adhere to deep-seated traditions and a strict code of honor, guarding their communities, sacred sites, and ancestral wisdom with their lives.</p>
+            <p class="indent">Amazons transcend mere survivalism; their training in hunting and deep bond with the nature of their homelands bring them closer to the natural world than most other fighters.</p>
+            <p class="indent">Beginning training at a tender age, they are always mentored by an elder Amazon, who passes down skills, wisdom, strategic knowledge, and traditions of their people—a duty that every venerable Amazon must fulfill by training at least a few disciples during their lifetime</p>
+            <p class="indent">In addition, numerous Amazons depart their homelands in pursuit of glory or to combat the enemies of their people. Often, they seek valuable adversaries against whom to prove their mettle and skills, thereby bringing honor to their sisters. Some also assume the role of adventurers to locate and rescue endangered community members, acquire unique healing methods for ailing comrades, or exact vengeance against those who have harmed their people.</p>
+            <p class="indent"><i>Note: While Amazons are typically female, nothing prevents you from consulting with your GM about playing any style of Amazon, including male characters. Experiencing distinctive training with a master Amazon, or even having a unique story that ties your character to an Amazon village or a completely different village with unique values, is entirely possible.</i></p>
+            <p class="indent"></p>
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_FIGHTER_AMAZON_BONUS_PROFICIENCY" />
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_FIGHTER_AMAZON_SPEAR_BINDING" />
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_FIGHTER_AMAZON_PIERCING_THROW" />
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_FIGHTER_AMAZON_LIGHTNING_REFLEXES" />
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_FIGHTER_AMAZON_PIERCING_ASSAULT" />
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_FIGHTER_AMAZON_LIGHTNING_THROW" />
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_FIGHTER_AMAZON_AMAZON_PARAGON" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_FIGHTER_AMAZON_BONUS_PROFICIENCY" level="3" />
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_FIGHTER_AMAZON_SPEAR_BINDING" level="3" />
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_FIGHTER_AMAZON_PIERCING_THROW" level="3" />
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_FIGHTER_AMAZON_LIGHTNING_REFLEXES" level="7" />
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_FIGHTER_AMAZON_PIERCING_ASSAULT" level="10" />
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_FIGHTER_AMAZON_LIGHTNING_THROW" level="15" />
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_FIGHTER_AMAZON_AMAZON_PARAGON" level="18" />
+        </rules>
+    </element>
+    <element name="Bonus Proficiency" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_FIGHTER_AMAZON_BONUS_PROFICIENCY">
+        <description>When you choose this archetype at 3rd level, you gain proficiency in one skill of your choice from the following list: Animal Handling, Athletics, Nature, or Survival.
+        </description>
+        <rules>
+            <select type="Proficiency" name="Amazon Skill" supports="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_ANIMALHANDLING|ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_ATLETICS|ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_SURVIVAL" />
+        </rules>
+    </element>
+    <element name="Spear Binding" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_FIGHTER_AMAZON_SPEAR_BINDING">
+        <description>
+            <p>Starting at 3rd level, when you finish a long rest, you can forge a mystical bond with a spear or javelin of your choice. </p>
+            <p class="indent">While using your bonded weapon, you double the range of your weapon (both normal and long ranges) and gain a +1 bonus to attack and damage rolls. You can also draw it as part of the attack you make with it, and if you throw this weapon, it immediately returns to your hand after the attack, allowing you to make multiple ranged attacks with it on your turn.</p>
+        </description>
+        <sheet>
+            <p>You can bond with a spear or javelin after a long rest. When using it your ranges are doubled, it gains +1 to hit and damage, you can draw it as part of the attack, and it returns to your hand after throwing it for an attack to allow multiple ranged attacks.</p>
+        </sheet>
+    </element>
+    <element name="Piercing Throw" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_FIGHTER_AMAZON_PIERCING_THROW">
+        <description>
+            <p>Starting at 3rd level, when you hit a creature with a ranged spear or javelin attack, you can choose to deal an additional 1d4 damage and pierce through the target to hit another creature. Choose a second creature within 20 feet of the original target and in a line that extends through both you and the initial target. Make a new attack roll against the secondcreature. This second attack does not deal 1d4 extra damage.</p>
+            <p class="indent">You can use this feature twice, regaining all expended uses when you finish a short or long rest. The number of uses increases to three, and the extra damage to 1d6 when you reach 10th level.</p>
+        </description>
+        <sheet>
+            <p>Using a ranged spear or javelin attack, you can deal an additional 1d4 damage and pierce through the target to hit another creature within 20 feet in line with the target. Make a new attack roll against the second creature. This second attack does not deal the extra damage. You can use this feature twice per rest, increasing to three uses and 1d6 extra damage at 10th level.</p>
+        </sheet>
+    </element>
+    <element name="Lightning Reflexes" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_FIGHTER_AMAZON_LIGHTNING_REFLEXES">
+        <description>
+            <p>At 7th level, your quick reflexes enable you to evade danger nimbly. You gain proficiency in Dexterity saving throws. Additionally, you can use your bonus action to take the Disengage action. Once you use this feature, you can’t do so again until you finish a short or long rest</p>
+        </description>
+        <sheet>
+            <description>
+                <p>You can use your bonus action to take the Disengage action. Once you use this feature, you can’t do so again until you finish a short or long rest</p>
+            </description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" />
+        </rules>
+    </element>
+    <element name="Piercing Assault" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_FIGHTER_AMAZON_PIERCING_ASSAULT">
+        <description>
+            <p>Starting at 10th level, your Piercing Throw feature’s range extends to 30 feet. Furthermore, when you use your Piercing Throw, you can choose to have the spear pierce through every creature in a line that extends from you, passes through the first target, and reaches up to 30 feet beyond the first target.</p>
+        </description>
+        <sheet>
+            <description>
+                <p>Piercing throw's range is 30 ft. You can choose to pierce all creatures in that line.</p>
+            </description>
+        </sheet>
+    </element>
+    <element name="Lightning Throw" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_FIGHTER_AMAZON_LIGHTNING_THROW">
+        <description>
+            <p>Beginning at 15th level, you can use your action to imbue your spear or javelin throws with the essence of crackling lightning for one turn. Your ranged spear and javelin attacks deal an extra 1d6 lightning damage. Each creature hit must make a Constitution saving throw (DC = 8 + your proficiency bonus + your Strength modifier). On a failed save, the creature has disadvantage on all its attack rolls until the start of your next turn. A creature can be required to make this saving throw only once per turn. Once you use this feature, you can’t do so again until you finish a short or long rest.</p>
+        </description>
+        <sheet>
+            <description>
+                <p>For one turn, your ranged spear and javelin attacks deal an extra 1d6 lightning damage. Each creature hit must make a Constitution saving throw (DC = 8 + your proficiency bonus + your Strength modifier). On a failed save, the creature has disadvantage on all its attack rolls until the start of your next turn. A creature can be required to make this saving throw only once per turn. Once you use this feature, you can’t do so again until you finish a short or long rest.</p>
+            </description>
+        </sheet>
+    </element>
+    <element name="Amazon Paragon" type="Archetype Feature" source="Tanares RPG 5e" level="3" id="ID_TRPG_ARCHETYPE_FEATURE_FIGHTER_AMAZON_AMAZON_PARAGON">
+        <description>
+            <p>Upon reaching 18th level, both your Strength and Dexterity scores increase by 2, up to a maximum of 22.</p>
+        </description>
+        <sheet>
+            <description>
+                <p>Your max STR and DEX is now 22</p>
+            </description>
+        </sheet>
+        <rules>
+            <stat name="strength:max" value="2"/>
+            <stat name="dexterity:max" value="2"/>
+            <stat name="strength" value="2" />
+            <stat name="dexterity" value="2" />
+            
+        </rules>
+    </element>
+</elements>
