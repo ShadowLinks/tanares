@@ -1,0 +1,182 @@
+<elements>
+    <info>
+        <name>Oath of Freedom</name>
+        <description>Oath of Freedom for the Paladin class from Tanares RPG 5e.</description>
+        <author url="">Dragori Games</author>
+        <update version="0.0.1">
+            <file name="paladin-freedom.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/subclasses/paladin-freedom.xml" />
+        </update>
+    </info>
+    <element name="Oath of Freedom" type="Archetype" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_PALADIN_FREEDOM">
+        <supports>Sacred Oath</supports>
+        <description>
+            <p>The Oath of Freedom symbolizes a paladin’s unbreakable spirit to rid the world of tyranny and defend the innocent from oppression. Known as Free Knights, these liberators rise above the limitations of religious institutions, instead following their own unwavering principles in their quest for justice. In a world where the very foundations of law and order can be corrupted and used as weapons of oppression, these heroes stand tall, enshrining the ideals of equality, fraternity, and liberty above all else.</p>
+            <p class="indent">Free Knights approach each mission with unrelenting dedication and urgency, never backing down from the challenge at hand. Whether it be rescuing a lost child or exposing a corrupt church cardinal conspiring with evil forces, they work tirelessly and discreetly, never seeking recognition or glory for their heroic deeds. After each successful mission, they vanish into the night, ready to continue their endless fight against evil in all its forms.</p>
+            <p class="indent">These paladins are faithful to deities of goodness and freedom, nurturing a relationship of reverence and respect with their divine patrons, rather than one of servitude. They embark on personal quests to overthrow tyrants, aid the needy, and defend freedom, unwaveringly upholding the ideals of liberty and unity, even in the face of conflicting laws and societal norms. With their skills, training, and unbreakable spirit, Free Knights roam the lands, fearlessly investigating and vanquishing evil wherever it may hide.</p>
+            <h5 class="caption">PRINCIPLES OF FREEDOM</h5>
+            <p>Each Oath of Freedom is unique, reflecting the liberator’s personal values and beliefs. However, the principles of kindness, selflessness, and freedom are firmly entrenched in all Free Knights.</p>
+            <p class="indent">
+                <b><i>Autonomy</i></b>
+                Reject any organization or power that may restrict your ability to bring about good.
+            </p>
+            <p class="indent">
+                <b><i>Goodness</i></b>
+                Continuously strive to bring the greatest good to all whom your path may lead.
+            </p>
+            <p class="indent">
+                <b><i>Inspiration</i></b>
+                Lead by example, not by edict. Serve as a beacon of hope for the oppressed, inspiring others to join your noble cause.
+            </p>
+            <p class="indent">
+                <b><i>Freedom</i></b>
+                Defend individual freedoms and hold those accountable who threaten free will. Battle all forms of tyranny and oppression, and defend the ideals of equality, fraternity, and liberty.
+            </p>
+            <p class="indent">
+                <b><i>Solidarity</i></b>
+                Stand with the vulnerable and the oppressed, holding accountable those who would oppress them. Unite with others who share your ideals, and together, work towards building a better world for all.
+            </p>
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_PALADIN_FREEDOM_OATH_SPELLS" />
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_PALADIN_FREEDOM_CHANNEL_DIVINITY" />
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_PALADIN_FREEDOM_AURA_OF_SACRIFICE" />
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_PALADIN_FREEDOM_HANDS_OF_THE_FREE_MAN" />
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_PALADIN_FREEDOM_AVATAR_OF_FREEDOM" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_PALADIN_FREEDOM_OATH_SPELLS" level="3" />
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_PALADIN_FREEDOM_CHANNEL_DIVINITY" level="3" />
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_PALADIN_FREEDOM_AURA_OF_SACRIFICE" level="7" />
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_PALADIN_FREEDOM_HANDS_OF_THE_FREE_MAN" level="15" />
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_PALADIN_FREEDOM_AVATAR_OF_FREEDOM" level="20" />
+        </rules>
+    </element>
+    <element name="Oath Spells" type="Archetype Feature" source="Player’s Handbook" id="ID_TRPG_ARCHETYPE_FEATURE_PALADIN_FREEDOM_OATH_SPELLS">
+        <description>
+            <p>You gain oath spells at the paladin levels listed.</p>
+            <h5 class="caption">OATH OF FREEDOM SPELLS</h5>
+            <table>
+                <thead>
+                    <tr>
+                        <td>Paladin Level</td>
+                        <td>Spells</td>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>3rd</td>
+                    <td>
+                        <em>bless, disguise self</em>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5th</td>
+                    <td>
+                        <em>lesser restoration, shatter</em>
+                    </td>
+                </tr>
+                <tr>
+                    <td>9th</td>
+                    <td>
+                        <em>dispel magic, remove curse</em>
+                    </td>
+                </tr>
+                <tr>
+                    <td>13th</td>
+                    <td>
+                        <em>death ward, freedom of movement</em>
+                    </td>
+                </tr>
+                <tr>
+                    <td>17th</td>
+                    <td>
+                        <em>greater restoration, seeming</em>
+                    </td>
+                </tr>
+            </table>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_BLESS" level="3" spellcasting="Paladin" prepared="true"/>
+            <grant type="Spell" id="ID_PHB_SPELL_DISGUISE_SELF" level="3" spellcasting="Paladin" prepared="true"/>
+            <grant type="Spell" id="ID_PHB_SPELL_LESSER_RESTORATION" level="5" spellcasting="Paladin" prepared="true"/>
+            <grant type="Spell" id="ID_PHB_SPELL_SHATTER" level="5" spellcasting="Paladin" prepared="true"/>
+            <grant type="Spell" id="ID_PHB_SPELL_DISPEL_MAGIC" level="9" spellcasting="Paladin" prepared="true"/>
+            <grant type="Spell" id="ID_PHB_SPELL_REMOVE_CURSE" level="9" spellcasting="Paladin" prepared="true"/>
+            <grant type="Spell" id="ID_PHB_SPELL_DEATH_WARD" level="13" spellcasting="Paladin" prepared="true"/>
+            <grant type="Spell" id="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT" level="13" spellcasting="Paladin" prepared="true"/>
+            <grant type="Spell" id="ID_PHB_SPELL_GREATER_RESTORATION" level="17" spellcasting="Paladin" prepared="true"/>
+            <grant type="Spell" id="ID_PHB_SPELL_SEEMING" level="17" spellcasting="Paladin" prepared="true"/>
+        </rules>
+    </element>
+    <element name="Channel Divinity" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_PALADIN_FREEDOM_CHANNEL_DIVINITY">
+        <description>
+            <p>When you take this oath at 3rd level, you gain the following two Channel Divinity options.</p>
+            <p class="indent">
+                <b><i>Shield of Freedom.</i></b>
+                As a bonus action, you can infuse your shield with divine power using your Channel Divinity. For 1 minute, you add half your proficiency bonus (rounded up) to your AC while wielding this shield. Additionally, you gain advantage on saving throws against being grappled and against magical effects that cause the grappled, stunned, restrained, charmed, paralyzed, or petrified conditions.
+            </p>
+            <p class="indent">
+                <b><i>Light of Liberation.</i></b>
+                As an action, you brandish your holy symbol and pray for freedom, invoking your Channel Divinity. Choose a creature you can see or hear within 30 feet of you to end all magical effects on it that cause the charmed, grappled, paralyzed, petrified, restrained, or stunned conditions. Physical restraints are not automatically broken, but the creature gains advantage on checks made to escape, unlock, or break any physical confinement for 1 minute. This includes attempts to escape a grapple or use thieves’ tools to unlock a holding cell.
+            </p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_PALADIN_FREEDOM_CHANNEL_DIVINITY_SHIELD_OF_FREEDOM"/>
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_PALADIN_FREEDOM_CHANNEL_DIVINITY_LIGHT_OF_LIBERATION"/>
+        </rules>
+    </element>
+    <element name="Channel Divinity: Shield of Freedom" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_PALADIN_FREEDOM_CHANNEL_DIVINITY_SHIELD_OF_FREEDOM">
+        <description>
+            <p>As a bonus action, you can infuse your shield with divine power using your Channel Divinity. For 1 minute, you add half your proficiency bonus (rounded up) to your AC while wielding this shield. Additionally, you gain advantage on saving throws against being grappled and against magical effects that cause the grappled, stunned, restrained, charmed, paralyzed, or petrified conditions.</p>
+        </description>
+        <sheet alt="Shield of Freedom" action="Action" usage="Channel Divinity">
+            <description>As a Bonus action, you infuse your sheild and for 1 minute you add half your proficiency bonus (rounded up) to your AC while weilding the shield. You have advantage on Saving Throws against being grappled or magical effects that cause grappled, stunned, restrained, charmed, paralyzed, or petrified conditions.</description>
+        </sheet>
+    </element>
+    <element name="Channel Divinity: Light of Liberation" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_PALADIN_FREEDOM_CHANNEL_DIVINITY_LIGHT_OF_LIBERATION">
+        <description>
+            <p>As an action, you brandish your holy symbol and pray for freedom, invoking your Channel Divinity. Choose a creature you can see or hear within 30 feet of you to end all magical effects on it that cause the charmed, grappled, paralyzed, petrified, restrained, or stunned conditions. Physical restraints are not automatically broken, but the creature gains advantage on checks made to escape, unlock, or break any physical confinement for 1 minute. This includes attempts to escape a grapple or use thieves’ tools to unlock a holding cell.</p>
+        </description>
+        <sheet alt="Light of Liberation" action="Action" usage="Channel Divinity">
+            <description>As an action, Choose a creature you can see or hear within 30 feet of you to end all magical effects on it that cause the charmed, grappled, paralyzed, petrified, restrained, or stunned conditions. Physical restraints are not automatically broken, but the creature gains advantage on checks made to escape, unlock, or break any physical confinement for 1 minute. This includes attempts to escape a grapple or use thieves’ tools to unlock a holding cell.</description>
+        </sheet>
+    </element>
+    <element name="Aura of Sacrifice" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_PALADIN_FREEDOM_AURA_OF_SACRIFICE">
+        <description>
+            <p>At 7th level, your dedication to protect your allies manifests in a tangible manner. If a creature within 15 feet of you suffers damage and you are conscious and able to perceive the creature, you can choose to mystically absorb half of that damage as a free action. You cannot resist or reduce this transferred damage in any way (temporary hit points still function as usual against this damage).</p>
+            <p class="indent">f this feature’s damage reduce your hit points to 0, you can choose to remain at 1 hit point. Upon using this feature to remain at 1 hit point, your aura deactivates until you complete a short or long rest.</p>
+            <p class="indent">At 18th level, the range of this aura increases to 30 feet.</p>
+        </description>
+        <sheet>
+            <description>You can absorb damage of creatures within {{aura of warding:range}} feet of you if you are concious and can percieve the creature. You can remain at 1 HP if this would drop to 0, but deactivates until a short rest. </description>
+        </sheet>
+        <rules>
+            <stat name="aura of warding:range" value="15"/>
+            <stat name="aura of warding:range" value="15" level="18"/>
+        </rules>
+    </element>
+    <element name="Hands of the Free Man" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_PALADIN_FREEDOM_HANDS_OF_THE_FREE_MAN">
+        <description>
+            <p>Starting at 15th level, when you or an ally within your Aura of Sacrifice takes damage and you are conscious, you can use your Lay on Hands feature as a reaction instead of an action on the damaged creature, ignoring the typical range restriction of Lay on Hands. Once you use this feature, you can’t use it again until you complete a short rest</p>
+        </description>
+        <sheet>
+            <description>
+                <p>When you or an ally within your Aura of Sacrifice takes damage, you can use Lay on Hands as a reaction, ignoring the typical range restriction. Once used, you can't use it again until you complete a short rest.</p>
+            </description>
+        </sheet>
+    </element>
+    <element name="Avatar of Freedom" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_PALADIN_FREEDOM_AVATAR_OF_FREEDOM">
+        <description>
+            <p>At 20th level, as a bonus action, you can become an avatar of freedom. For 1 minute, your conviction manifests as a tangible aura, taking the form of an emblem of freedom that reflects your beliefs.</p>
+            <p class="indent">For the duration, you gain immunity to any magical effect that results in the stunned, restrained, charmed, paralyzed, or petrified conditions.</p>
+            <p class="indent">Moreover, you and all allies within 20 feet of you continually benefit from the effects of the freedom of movement spell. After using this feature, you can’t use it again until you finish a long rest.</p>
+        </description>
+        <sheet action="Bonus Action" usage="Once per long rest">
+            <description>
+                <p>As a bonus action, you become an avatar of freedom for 1 minute. You gain immunity to any magical effect that results in the stunned, restrained, charmed, paralyzed, or petrified conditions. You and all allies within 20 feet of you benefit from the effects of the freedom of movement spell. Once used, you can't use this feature again until you finish a long rest.</p>
+            </description>
+        </sheet>
+    </element>
+</elements>
