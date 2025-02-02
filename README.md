@@ -44,8 +44,8 @@ To Do:
     - Paladin COMPLETED
         - Oath of Freedom
     - Ranger
-        - Shadow Investigator
-        - Arcane Guardian
+        - Shadow Investigator COMPLETED
+        - Arcane Guardian [Partial](https://github.com/ShadowLinks/tanares/issues/4)
     - Rogue
         - Ninja
     - Sorcerer
