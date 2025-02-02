@@ -93,10 +93,9 @@
         <sheet>
             <description>You can cast a 7th level wizard spell without needing material component once per long rest</description>
         </sheet>
-        <!-- breaks
         <rules>
-            <select type="Spell" name="Spells (Arcane Guardian)" supports="Wizard,7)" level="15" number="1" spellcasting="Ranger"/>
+            <select type="Spell" name="Spells (Arcane Guardian)" supports="Wizard,7" level="15" number="1" spellcasting="Ranger"/>
         </rules>
-        -->
+        
     </element>
 </elements>
