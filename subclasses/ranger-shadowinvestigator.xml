@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+    <info>
+        <name>Shadow Investigator</name>
+        <description>Shadow Investigator subclass for the Ranger class from Tanares RPG 5e.</description>
+        <author url="">Dragori Games</author>
+        <update version="0.0.1">
+            <file name="ranger-shadowinvestigator.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/subclasses/ranger-shadowinvestigator.xml" />
+        </update>
+    </info>
+    <element name="Shadow Investigator" type="Archetype" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_RANGER_SHADOW_INVESTIGATOR">
+        <supports>Ranger Archetype</supports>
+        <description>
+            <p> The rapid spread of the penumbral threat has caused widespread fear and unease in populated areas, particularly in urban centers where these creatures can more easily blend in and corrupt individuals. In response, the Shadow Investigator has emerged, possessing the skills and intuition necessary to swiftly detect and eliminate these malevolent beings.</p>
+            <p class="indent">Through their extensive network of connections and their keen senses, the Shadow Investigator gathers information, analyzes affected locations, and identifies their targets with precision. Their mastery of the enemy and their tactics, honed through extensive training in fighting the penumbral threat, allows for efficient and effective operations. Whether it’s hunting down penumbral creatures or targeting sinister cultists, the Shadow Investigator is determined to root out evil at its source.</p>
+            <p class="indent">Despite their unconventional methods, the Shadow Investigator remains a critical component in the ongoing struggle against the penumbral menace. They keep their knowledge close to the vest, sharing it only with trusted pupils or assistants, but their mastery of the enemy and their tactics make them an indispensable force in the fight. Though their methods may engender distrust or fear among the general population, the Shadow Investigator is a necessary presence in the ongoing battle against the penumbral threat.</p>
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_RANGER_SHADOW_INVESTIGATOR_MAGIC" />
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_RANGER_SHADOW_INVESTIGATOR_INTUITION" />
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_RANGER_SHADOW_INVESTIGATOR_COMBAT_INSTINCT" />
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_RANGER_SHADOW_INVESTIGATOR_DETECTIVES_CUNNING" />
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_RANGER_SHADOW_INVESTIGATOR_QUICK_WITTED" />
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_RANGER_SHADOW_INVESTIGATOR_SHADOW_HUNTER" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_RANGER_SHADOW_INVESTIGATOR_MAGIC" level="3"/>
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_RANGER_SHADOW_INVESTIGATOR_INTUITION" level="3"/>
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_RANGER_SHADOW_INVESTIGATOR_COMBAT_INSTINCT" level="3"/>
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_RANGER_SHADOW_INVESTIGATOR_DETECTIVES_CUNNING" level="7"/>
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_RANGER_SHADOW_INVESTIGATOR_QUICK_WITTED" level="11"/>
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_RANGER_SHADOW_INVESTIGATOR_SHADOW_HUNTER" level="15"/>
+        </rules>
+    </element>
+    <element name="Shadow Investigator Magic" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_RANGER_SHADOW_INVESTIGATOR_MAGIC">
+        <description>
+            <p>Starting at 3rd level, you learn an additional spell when you reach certain levels in this class, as shown in the Shadow Investigator Spells table. The spell counts as a ranger spell for you, but it doesn't count against the number of ranger spells you know.</p>
+            <h5 class="caption">Shadow Investigator Spells</h5>
+            <table>
+                <thead>
+                    <tr>
+                        <td>Ranger Level</td>
+                        <td>Spells</td>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>3rd</td>
+                    <td>
+                        <em>disguise self</em>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5th</td>
+                    <td>
+                        <em>zone of truth</em>
+                    </td>
+                </tr>
+                <tr>
+                    <td>9th</td>
+                    <td>
+                        <em>speak with dead</em>
+                    </td>
+                </tr>
+                <tr>
+                    <td>13th</td>
+                    <td>
+                        <em>arcane eye</em>
+                    </td>
+                </tr>
+                <tr>
+                    <td>17th</td>
+                    <td>
+                        <em>legend lore</em>
+                    </td>
+                </tr>
+            </table>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_DISGUISE_SELF" level="3" spellcasting="Ranger" prepared="true"/>
+            <grant type="Spell" id="ID_PHB_SPELL_ZONE_OF_TRUTH" level="5" spellcasting="Ranger" prepared="true"/>
+            <grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_DEAD" level="9" spellcasting="Ranger" prepared="true"/>
+            <grant type="Spell" id="ID_PHB_SPELL_ARCANE_EYE" level="13" spellcasting="Ranger" prepared="true"/>
+            <grant type="Spell" id="ID_PHB_SPELL_LEGEND_LORE" level="17" spellcasting="Ranger" prepared="true"/>
+        </rules>
+    </element>
+    <element name="Shadow Investigator Intuition" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_RANGER_SHADOW_INVESTIGATOR_INTUITION">
+        <description>
+            <p>At 3rd level, you gain proficiency in the Insight skill. If you’re already proficient in it, your proficiency bonus is doubled for any ability check you make with it.</p>
+            <p class="indent">Moreover, whenever you make a Charisma (Deception) or Intelligence (Investigation) check, you can use your Wisdom modifier instead of your Charisma or Intelligence modifier. </p>
+        </description>
+        <sheet>
+            <description>Deception or Investigation Skill checks can be made with your Wisdom Modifier</description>
+        </sheet>
+        <rules>
+            <grant type="grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_INSIGHT" />
+        </rules>
+    </element>
+    <element name="Combat Instinct" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_RANGER_SHADOW_INVESTIGATOR_COMBAT_INSTINCT">
+        <description>
+            <p>Starting at 3rd level, you can analyze an enemy’s movements, giving you a unique advantage. As a bonus action, you can choose a creature you can see within 30 feet of you as your focus and select one of the following benefits:</p>
+            <p class="indent"><strong>Find the Opening</strong>Whenever you make an attack roll against your focus, you roll an extra 1d6 and add it to the result. This bonus increases to 1d8 if your focus is an aberration or a creature from the Penumbral Plane.</p>
+            <p class="indent"><strong>Dodge</strong> You gain a +3 bonus to your Armor Class against attacks from your focus. Additionally, when making a saving throw against an effect caused by your focus, roll an extra 1d6 and add it to the result. This die increases to 1d8 if your target is an aberration or a creature from the Penumbral Plane</p>
+            <p class="indent">This chosen benefit lasts until you finish a short or long rest, designate a new focus, or select a different benefit using this feature again.</p>
+        </description>
+        <sheet>
+            <description>As a bonus action, you can choose a creature you can see withing 20ft as your focus and select one benefit: Find the Opening - extra d6 or d8 if aberration or Penumbral creature damage vs focus. Dodge - +3 AC against attack from focus and d6 or d8 bonus to you saving throws if the focus is an aberration or Penumbral creature. This lasts until you finish a short rest, designate a new focus, or select a different benefit. </description>
+        </sheet>
+    </element>
+    <element name="Detective's Cunning" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_RANGER_SHADOW_INVESTIGATOR_DETECTIVES_CUNNING">
+        <description>
+            <p>At 7th level, your intuition sharpens. You can’t be surprised while you are conscious, and you gain advantage on saving throws against illusion and enchantment spells. Furthermore, you instantly notice when a creature within 20 feet of you alters or conceals its true form through disguise, magic, or other means. You can tell that the creature is disguising or hiding its true form, but you don’t learn its true form.</p>
+        </description>
+        <sheet>
+            <description>You cant be surprised while concious. You have advantage on saving throws vs illusion and enchantment spells. You instantly notice when a creature within 20 feet alters or conceals its true form, but you dont learn its true form.</description>
+        </sheet>
+    </element>
+    <element name="Quick-Witted" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_RANGER_SHADOW_INVESTIGATOR_QUICK_WITTED">
+        <description>
+            <p>At 11th level, your swift adaptability allows you to quickly formulate plans against your foes. Whenever you use the Combat Instinct feature, you can also perform one of the following as part of the same bonus action:</p>
+            <p class="indent"><strong>Cunning Step.</strong> You can move up to 5 feet. This movement doesn’t provoke opportunity attacks.</p>
+            <p class="indent"><strong>Exploit Weakness.</strong> The next successful attack you make against your focus this turn deals an extra 1d6 damage. This damage increases to 1d8 if your target is an aberration or a creature from the Penumbral Plane.</p>
+            <p class="indent"><strong>Quick Thinking.</strong> You can take the Use an Object action.</p>
+        </description>
+        <sheet>
+            <description>When you use combat instinct your can use <strong>Cunning Step</strong> to move 5 ft without provoking attacks, <strong>Exploit weakness</strong> deal an extra d6 vs your focus this turn and is a d8 against aberrations or Penumbral creatures, or <strong>Quick Thinking</strong> you can take the Use an Object action.</description>
+        </sheet>
+    </element>
+    <element name="Shadow Hunter" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_RANGER_SHADOW_INVESTIGATOR_SHADOW_HUNTER">
+        <description>
+            <p>At 15th level, you become a true scourge to aberrations and creatures from the Penumbral Plane. You gain advantage on Intelligence (Investigation), Wisdom (Insight), and Wisdom (Perception) check related to aberrations and creatures from the Penumbral Plane. In addition, you have advantage on attack rolls against these creatures and on saving throws against effects created by them.</p>
+        </description>
+        <sheet>
+            <description>Advantage on Investigation, Insight, Perception checks, attack rolls, and saving throws related to aberrations and Penumbral creatures and effects created by them</description>
+        </sheet>
+    </element>
+</elements>
