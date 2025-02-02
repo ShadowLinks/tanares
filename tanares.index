@@ -35,7 +35,7 @@
 		<file name="monk-animals.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/subclasses/monk-animals.xml" />
 		<file name="paladin-freedom.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/subclasses/paladin-freedom.xml" />
 		<file name="ranger-shadowinvestigator.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/subclasses/ranger-shadowinvestigator.xml" />
-		
+		<file name="ranger-arcaneguardian.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/subclasses/ranger-arcaneguardian.xml" />
 
 	</files>
 </index>

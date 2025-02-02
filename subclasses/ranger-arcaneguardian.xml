@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+    <info>
+        <name>Arcane Guardian</name>
+        <description>Arcane Guardian subclass for the Ranger class from Tanares RPG 5e.</description>
+        <author url="">Dragori Games</author>
+        <update version="0.0.1">
+            <file name="ranger-arcaneguardian.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/subclasses/ranger-arcaneguardian.xml" />
+        </update>
+    </info>
+    <element name="Arcane Guardian" type="Archetype" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_RANGER_ARCANE_GUARDIAN">
+        <supports>Ranger Archetype</supports>
+        <description>
+            <p> rcane spellcasters are known to inspire fear with their formidable and unpredictable magic, but some rangers have taken up the mantle of Arcane Guardians to counter this threat. Trained by prestigious noble houses, arcane schools, or remote temples, these elite warriors are experts in suppressing and punishing the misuse of magic and eliminating magical creatures that wreak havoc on the lives of the common folk.</p>
+            <p class="indent">Arcane Guardians are not your typical rangers. They possess knowledge of both wizard spells and ranger spells, granting them a powerful advantage in combating magical dangers. They have honed their skills in magic manipulation and resistance, and have learned to draw upon their inner reserves to unleash spells that surpass their normal capabilities. Their weapons are imbued with mystical energy that disrupts the magic of their foes, causing immense pain with each strike.</p>
+            <p class="indent">Many Arcane Guardians are created through alchemical processes or magic rituals, either voluntarily to protect their people or through forced experimentation. Regardless of their origin, they possess a versatility that sets them apart from other rangers, including access to more aggressive spells. Whether hunting specific creatures or patrolling as protectors against megalomaniacal spellcasters and dangerous magical artifacts, Arcane Guardians are always ready to face the unknown and defend the innocent from the perils of magic. These fearless warriors embody the true spirit of a ranger, fearlessly facing danger and steadfastly defending civilization.</p>
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_RANGER_ARCANE_GUARDIAN_ARCANE_EDUCATION" />
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_RANGER_ARCANE_GUARDIAN_MAGIC" />
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_RANGER_ARCANE_GUARDIAN_ARCANE_PREDATOR" />
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_RANGER_ARCANE_GUARDIAN_GUARDIAN_MEDITATION" />
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_RANGER_ARCANE_GUARDIAN_ARCANE_REBUKE" />
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_RANGER_ARCANE_GUARDIAN_ARCANE_ARCANE_SECRET_OF_THE_GUARDIAN" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_RANGER_ARCANE_GUARDIAN_MAGIC" level="3"/>
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_RANGER_ARCANE_GUARDIAN_ARCANE_EDUCATION" level="3"/>
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_RANGER_ARCANE_GUARDIAN_ARCANE_PREDATOR" level="3"/>
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_RANGER_ARCANE_GUARDIAN_GUARDIAN_MEDITATION" level="7"/>
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_RANGER_ARCANE_GUARDIAN_ARCANE_REBUKE" level="11"/>
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_RANGER_ARCANE_GUARDIAN_ARCANE_ARCANE_SECRET_OF_THE_GUARDIAN" level="15"/>
+        </rules>
+    </element>
+    <element name="Arcane Guardian Magic" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_RANGER_ARCANE_GUARDIAN_MAGIC">
+        <description>
+            <p>At 3rd level, you expand your magical knowledge. Whenever you learn a new ranger spell, you can choose it from the wizard spell list in addition to the ranger spell list</p>
+            <p class="indent">Also at 3rd level, you learn two additional spells of your choice from the wizard spell list. These spells must be of a level for which you have spell slots. They do not count towards the number of ranger spells you know.</p>
+            <p class="indent">Each time you gain a level in this class, you can replace one of these extra spells with another from the wizard spell list, as long as you have spell slots for the new spell’s level</p>
+        </description>
+        <!-- Trying to add the wizard spell list to the Ranger spell selection
+        <spellcasting name="Ranger" ability="Wisdom" prepare="true">
+            <list>Ranger</list>
+        </spellcasting>
+        -->
+        <sheet>
+            <description>You have access to the wizard spell list and 2 spells specifically from the wizard list, which can be changed on level up.</description>
+        </sheet>
+        <rules>
+        <!-- currently does not give you the correct spell level selection-->
+            <select type="Spell" name="Spells (Arcane Guardian)" supports="Wizard,$(spellcasting:slots)" level="3" number="2" spellcasting="Ranger"/>
+        </rules>
+    </element>
+    <element name="Arcane Education" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_RANGER_ARCANE_GUARDIAN_ARCANE_EDUCATION">
+        <description>
+            <p>At 3rd level, you gain proficiency in the Arcana skill and learn two wizard cantrips of your choice. Additionally, you have advantage on Wisdom (Survival) checks when tracking creatures of a magical nature or those that possess any form of spellcasting, at the GM’s discretion.</p>
+        </description>
+        <sheet>
+            <description>You have advantage on Survival checks when tracking creatures of a magical nature or those that posess any form of spellcasting, at the GM's discretion.</description>
+        </sheet>
+        <rules>
+            <grant type="proficiency" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_ARCANA" />
+            <select type="Spell" name="Cantrip (Arcane Guardian)" supports="Wizard, 0" level="3" number="2" spellcasting="Arcane Guardian"/>
+        </rules>
+    </element>
+    <element name="Arcane Predator" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_RANGER_ARCANE_GUARDIAN_ARCANE_PREDATOR">
+        <description>
+            <p>At 3rd level, you learn to channel your arcane energy into your strikes. The first time you hit an undead, an aberration, or a creature that has some form of spellcasting with a weapon attack each turn, you deal an extra 1d8 force damage. At 11th level, this additional damage increases to 1d10.</p>
+        </description>
+        <sheet>
+            <description>When you hit an Undead, Aberration, or creature with spellcasting with a weapon attack each turn, you deal an extra 1d8 force damage. This increases to 1d10 at 11th level.</description>
+        </sheet>
+    </element>
+    <element name="Guardian Meditation" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_RANGER_ARCANE_GUARDIAN_GUARDIAN_MEDITATION">
+        <description>
+            <p>Starting at 7th level, you can regain some of your magical energy by sitting in meditation and communing with nature. During a short rest, you choose expended spell slots to recover. The spell slots can have a combined level that is equal to or less than your proficiency bonus, and you can divide this recovery between multiple short rests. Once you reach the recovery limit, you can’t use this feature again until you finish a long rest.</p>
+        </description>
+        <sheet>
+            <description>During a short rest, you choose expended spell slots to recover. The spell slots can have a combined level that is equal to or less than your proficiency bonus {{proficiency}}, and you can divide this recovery between multiple short rests. Once you reach the recovery limit, you can’t use this feature again until you finish a long rest.</description>
+        </sheet>
+    </element>
+    <element name="Arcane Rebuke" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_RANGER_ARCANE_GUARDIAN_ARCANE_REBUKE">
+        <description>
+            <p>At 11th level, you gain advantage on saving throws against spells. Additionally, when a creature within 60 feet of you casts a spell that targets you and you succeed on the saving throw, you can reflect a portion of the spell’s energy back at the caster. This reflected energy deals 1d6 force damage per level of the spell to the caster.</p>
+        </description>
+        <sheet>
+            <description>Advantage on saving throws against spells and if you succeed on a saving throw vs a spell from a creature within 60 feet of you you can reflect 1d6 foce damage per level of the spell to the caster.</description>
+        </sheet>
+    </element>
+    <element name="Arcane Secret of the Guardian" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_RANGER_ARCANE_GUARDIAN_ARCANE_ARCANE_SECRET_OF_THE_GUARDIAN">
+        <description>
+            <p>At 15th level, your mastery of the arcane reaches new heights. You learn one 7th-level spell from the wizard spell list, which you can cast without needing any material components. Once you cast this spell, you can’t do so again until you finish a long rest.</p>
+        </description>
+        <sheet>
+            <description>You can cast a 7th level wizard spell without needing material component once per long rest</description>
+        </sheet>
+        <!-- breaks
+        <rules>
+            <select type="Spell" name="Spells (Arcane Guardian)" supports="Wizard,7)" level="15" number="1" spellcasting="Ranger"/>
+        </rules>
+        -->
+    </element>
+</elements>
