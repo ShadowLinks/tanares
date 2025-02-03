@@ -46,7 +46,7 @@ To Do:
     - Ranger
         - Shadow Investigator COMPLETED
         - Arcane Guardian [Partial](https://github.com/ShadowLinks/tanares/issues/4)
-    - Rogue
+    - Rogue COMPLETED
         - Ninja
     - Sorcerer
         - Cultist
