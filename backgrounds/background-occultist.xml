@@ -1,0 +1,78 @@
+
+<elements>
+    <info>
+        <name>Occultist</name>
+        <description>Occultist background</description>
+        <author urle="">Dragori Games</author>
+        <update version="0.0.1">
+            <file name="background-occultist.xml" url="https://github.com/ShadowLinks/tanares/raw/refs/heads/main/backgrounds/backgrounds-occultist.xml" />
+        </update>
+    </info>
+    <element name="Occultist" type="Background" source="Tanares RPG 5e" id="ID_TRPG_BACKGROUND_OCCULTIST">
+        <description>
+            <p>You were once a member of a dark and forbid den cult, feared and reviled by all who knew of its existence. This cult may have worshiped one of theUngods, aberrant deities of insanity, or the ancient god Bás, whose vengeful motivation and icy deathly powers are the stuff of legend. The cult’s practices were cruel and malevolent, invoking dark powers and twisted rituals that still haunt your dreams.</p>
+            <p class="indent">Driven by a growing sense of horror and disgust, you left the cult and began a new life, seeking to find a new path in life. But the cult remains active, its members lurking in the shadows and continuing to sow fear among the populace. You maintain a tenuous connection to the cult, a delicate balance of secrecy and danger that provides you with access to valuable information and resources.</p>
+            <ul class="unstyled">
+                <li><strong>Skill Proficiencies:</strong> Arcana, Deception</li>
+                <li><strong>Tool Proficiencies:</strong> </li>
+                <li><strong>Languages:</strong> A forbidden language (ie. Infernal)</li>
+                <li><strong>Equipment:</strong> A symbol of the cult, a notebook, ritual utensils, a dark robe, a set of simple clothes, a dagger, and a pouch containing 15 gp.</li>
+            </ul>
+            <div element="ID_TRPG_BACKGROUND_FEATURE_HIDDEN_CONTRACT" />
+            <h5>SUGGESTED CHARACTERISTICS</h5>
+            <p>As an occultist, you are driven by a desire to atone for the dark deeds of your past. You may be haunted by the memories of the cult and the horrors that you witnessed, or you may be driven by a fierce determination to bring the cult to justice. You possess a deep and abiding knowledge of the arcane, and may have developed a fascination with the forbidden and the occult. You are skilled in the art of deception, able to hide your true motives and intentions from those around you. You may struggle with a sense of isolation, knowing that few can understand the weight of your dark past. But you are resourceful and determined, willing to do whatever it takes to protect the innocent and make amends for your past mistakes.</p>
+        </description>
+        <setters>
+            <set name="short">Arcana, Deception, forbidden language</set>
+        </setters>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA"/>
+            <grant type="Background Feature" id="ID_TRPG_BACKGROUND_FEATURE_HIDDEN_CONTRACT" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+            <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+            <select type="List" name="Personality Trait" number="2">
+                <item id="1">I prefer to keep to myself, rarely speaking unless necessary. The cult taught me the value of silence.</item>
+                <item id="2">The horrors that I witnessed during my time in the cult have left a lasting impact on me. I often have vivid nightmares and struggle with trust issues as a result.</item>
+                <item id="3">The cult instilled in me a healthy sense of caution. I am always on the lookout for potential threats and do not share sensitive information unless absolutely necessary</item>
+                <item id="4">My knowledge of the cult's procedures and practices is a valuable asset, and I am not afraid to use their tactics and ways to my advantage.</item>
+                <item id="5">I have access to privileged information about the cult that most people do not. I am always on the lookout for any signs of their involvement in current events.</item>
+                <item id="6">I have turned my back on the cult and its practices. I will do whatever it takes to stop them from causing any more harm, even if it means betraying my former comrades.</item>
+            </select>
+            <select type="List" name="Ideal">
+                <item id="1">Redemption. I seek to atone for the sins of the cult and make amends for the harm I have caused. (Good)</item>
+                <item id="2">Power. I have acquired knowledge and resources that give me great influence. I will use this power to further my own goals, regardless of who I must manipulate or harm to achieve them. (Evil)</item>
+                <item id="3">Salvation. It is my duty to prevent the cult from perpetrating any more atrocities. I will work within the confines of the law to bring them to justice and restore order. (Lawful)</item>
+                <item id="4">Lunatic. The things I have seen have driven me to the brink of madness. I am convinced that the end of the world is near, and I will do whatever it takes to prepare for the apocalypse. (Chaotic)</item>
+                <item id="5">Responsibility. I have a solemn responsibility to prevent the cult from causing any more harm. I am prepared to take any action necessary to achieve this goal, regardless of the cost. (Neutral)</item>
+                <item id="6">Shaveling. The cult's dark practices and beliefs threaten to unravel the very fabric of reality. I will do whatever it takes to protect the world from their influence, even if it means resorting to unconventional or dangerous methods. (Any)</item>
+            </select>
+            <select type="List" name="Bond">
+                <item id="1">I have to make up for all the wrongs I did in the past.</item>
+                <item id="2">With the knowledge I've gained, I can prevent the worst.</item>
+                <item id="3">I felt the pain I witnessed and now I want to cause it to the perpetrators.</item>
+                <item id="4">I have a debt to the cult, but I can no longer go along with it. </item>
+                <item id="5">Now I know their worst side and how they think and how to deal with them.</item>
+                <item id="6">I can no longer go back to the cult and I will make sure no one else does.</item>
+            </select>
+            <select type="List" name="Flaw">
+                <item id="1">I am haunted by the atrocities that I participated in as a member of the cult. I struggle to forgive myself for the harm I caused and often feel overwhelmed by guilt and shame.</item>
+                <item id="2">Part of me is still loyal to my former cult and I am quick to defend their practices and beliefs, even when they contradict my own values. I struggle to separate my personal identity from that of the cult.</item>
+                <item id="3">I am addicted to the sense of power that I once held as a member of the cult. I am willing to take risks and manipulate others to regain that power, even if it means sacrificing my morals</item>
+                <item id="4">I have lost loved ones to the cult's practices and am consumed by a desire for vengeance. I am willing to take extreme measures to bring down the cult and avenge those I have lost, even if it means putting myself in danger.</item>
+                <item id="5">I became obsessed with gaining knowledge and power through the cult, but the price for that power was too high. I struggle with a sense of regret and longing for a simpler life, but cannot shake the allure of the cult's dark secrets.</item>
+                <item id="6">I had no choices in the past and was forced to join the cult against my will. Now that I have left, I struggle to make my own decisions and am plagued by doubts and second-guessing. I fear making the wrong choices and being led astray once again.</item>
+            </select>
+        </rules>
+    </element>
+        <element name="Feature: Hidden Contract" type="Background Feature" source="Tanares RPG 5e" id="ID_TRPG_BACKGROUND_FEATURE_HIDDEN_CONTRACT">
+        <description>
+            <p>Your tenuous connection to the cult that you abandoned has borne fruit in the form of a valuable ally. You have a hidden contact, a member of the cult who remains loyal to you despite your departure. This contact may have once been a close friend or confidante, or may simply share your distaste for the cult’s methods and beliefs. Regardless of their history, you maintain good relations with them, even with little contact.</p>
+            <p class="indent">Thanks to this hidden contact, you have access to valuable information about the cult’s activities and plans. They can provide you with insider knowledge of the cult’s rituals, beliefs, and hierarchy, as well as the identities of its members.</p>
+        </description>
+        <sheet alt="Hidden Contract">
+            <description>Your tenuous connection to the cult that you abandoned has borne fruit in the form of a valuable ally. You have a hidden contact, a member of the cult who remains loyal to you despite your departure. This contact may have once been a close friend or confidante, or may simply share your distaste for the cult’s methods and beliefs. Regardless of their history, you maintain good relations with them, even with little contact. Thanks to this hidden contact, you have access to valuable information about the cult’s activities and plans. They can provide you with insider knowledge of the cult’s rituals, beliefs, and hierarchy, as well as the identities of its members.</description>
+        </sheet>
+    </element>
+    
+</elements>
+    
