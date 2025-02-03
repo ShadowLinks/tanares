@@ -1,0 +1,78 @@
+
+<elements>
+    <info>
+        <name>Imperial Servant</name>
+        <description>Imperial Servant background</description>
+        <author urle="">Dragori Games</author>
+        <update version="0.0.1">
+            <file name="background-imperialservant.xml" url="https://github.com/ShadowLinks/tanares/raw/refs/heads/main/backgrounds/backgrounds-imperialservant.xml" />
+        </update>
+    </info>
+    <element name="Imperial Servant" type="Background" source="Tanares RPG 5e" id="ID_TRPG_BACKGROUND_">
+        <description>
+            <p>You are a member of the privileged class of the Empire, given the esteemed position of oversee ing lands and collecting taxes. Whether born intonobility or having earned your position through hard work, you hold a crucial role in the Empire’s functioning society. As an Imperial servant, your job may come with perks, but it also carries the weight of responsibility. You are tasked with upholding the policies of the Empire, a responsibility that many fear and few truly understand. Will you embrace the power and influence that come with your position, or will you question the motives of those in power and fight against the injustices of the Empire? Will you use your position for the greater good, or will you succumb to the corrupting influence of power?</p>
+            <p class="indent"></p>
+            <ul class="unstyled">
+                <li><strong>Skill Proficiencies:</strong> History, Intimidation</li>
+                <li><strong>Tool Proficiencies:</strong> One of your choice</li>
+                <li><strong>Languages:</strong> One of your choice</li>
+                <li><strong>Equipment:</strong> An Imperial insignia, an Imperial recommendation letter, a set of fine clothes, and a belt pouch containing 15 gp.</li>
+            </ul>
+            <div element="ID_TRPG_BACKGROUND_FEATURE_OLD_FRIENDS" />
+            <h5>SUGGESTED CHARACTERISTICS</h5>
+            <p>Living under the rule of the Empire was a challenging and often brutal experience, and those who served it are no exception. These individuals ranged from capable and loyal servants to ruthless officials who would do whatever it took to maintain their power and influence. While many drifted away from the Empire after its fall, you still maintain deep roots from years of obedience that are not easily pruned. As a result, you may be prone to maintaining loyalty to the Empire even after it has lost its former glory, or perhaps you harbor feelings of resentment for the role it played in your life. You may have an acute sense of duty and honor, or a ruthless streak that allows you to achieve your goalsby any means necessary. Whatever your disposition, your time as an Imperial servant has left an indelible mark on your character that will shape your decisions and actions for years to come.</p>
+        </description>
+        <setters>
+            <set name="short">History, Intimidation, language and tool choice</set>
+        </setters>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION"/>
+            <select type="Language" name="Language (Imperial Servant)" supports="Standard||Exotic"/>
+            <select type="Proficiency" name="Tool Proficiency (Imperial Servant)" supports="Tool"/>
+            <grant type="Background Feature" id="ID_TRPG_BACKGROUND_FEATURE_OLD_FRIENDS" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+            <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+            <select type="List" name="Personality Trait" number="2">
+                <item id="1">The Empire taught the rigor that I want to forgot.</item>
+                <item id="2">I'm a servant and I'm good at it.</item>
+                <item id="3">I'm a perfectionist, I like things the way they should be.</item>
+                <item id="4">Power without control is just a distraction. Everything in my reach must have my control.</item>
+                <item id="5">The Empire was the greatest nation that ever existed. Do you understand the historical wealth we live in?</item>
+                <item id="6">I am practical and direct, using force when necessary</item>
+            </select>
+            <select type="List" name="Ideal">
+                <item id="1">Charitable. After everything that happened, it's time to help people. (Good)</item>
+                <item id="2">Mediator. The Empire still exists and its laws must prevail. (Lawful)</item>
+                <item id="3">Sadistic. Deep down, everyone knows what the Empire is like and that will continue. (Evil)</item>
+                <item id="4">Perseverance. The imposition of the Empire is gone, now we can be free with our wills. (Chaotic)</item>
+                <item id="5">Pathfinder. There is a world beyond the Empire to be known. (Any)</item>
+                <item id="6">Survivor. Only fools believe that the Empire has ceased to exist. (Any)</item>
+            </select>
+            <select type="List" name="Bond">                
+                <item id="1">I lived the Empire, it's part of me.</item>
+                <item id="3">My family are from the Empire. How can I abandon them?</item>
+                <item id="4">Nobody erases the past, so why should I unlink?</item>
+                <item id="5">I remember everyone who suffered and I have to do something for them.</item>
+                <item id="6">I will still be recognized by the Empire, and thus return to its greatness.</item>
+            </select>
+            <select type="List" name="Flaw">
+                <item id="1">I regret not taking more advantage of the power of the Empire.</item>
+                <item id="2">The Empire was great, I blame myself for not having helped more</item>
+                <item id="3">The Empire destroyed a lot of people, I contributed to that unfortunately.</item>
+                <item id="4">I've done horrible things for the Empire, and it haunts me</item>
+                <item id="5">I want to get away from everything that relates to the Empire.</item>
+                <item id="6">The Empire deserved to fall, just like me.</item>
+            </select>
+        </rules>
+    </element>
+        <element name="Feature: Old Friends" type="Background Feature" source="Tanares RPG 5e" id="ID_TRPG_BACKGROUND_FEATURE_OLD_FRIENDS">
+        <description>
+            <p>Your years of service to the Empire allowed you to build a vast network of contacts still working within its various departments. You have at least one ally in each department who can help you obtain meetings, information, or simple items such as an insignia or official document (with no gp value and not magical) like a pass to enter the Empire. These old friends may owe you a favor, or you may owe them one, but the relationship is mutually beneficial and can prove valuable in a variety of situations.</p>
+        </description>
+        <sheet alt="Old Friends">
+            <description>Your years of service to the Empire allowed you to build a vast network of contacts still working within its various departments. You have at least one ally in each department who can help you obtain meetings, information, or simple items such as an insignia or official document (with no gp value and not magical) like a pass to enter the Empire. These old friends may owe you a favor, or you may owe them one, but the relationship is mutually beneficial and can prove valuable in a variety of situations.</description>
+        </sheet>
+    </element>
+    
+</elements>
+    
