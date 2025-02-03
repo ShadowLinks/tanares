@@ -1,0 +1,78 @@
+
+<elements>
+    <info>
+        <name>Penumbral Survivor</name>
+        <description>Penumbral Survivor background</description>
+        <author urle="">Dragori Games</author>
+        <update version="0.0.1">
+            <file name="background-penumbralsurvivor.xml" url="https://github.com/ShadowLinks/tanares/raw/refs/heads/main/backgrounds/backgrounds-penumbralsurvivor.xml" />
+        </update>
+    </info>
+    <element name="Penumbra Survivor" type="Background" source="Tanares RPG 5e" id="ID_TRPG_BACKGROUND_PENUMBRA_SURVIVOR">
+        <description>
+            <p>Once in your life, you were lost in the dark and hostile Penumbral Plane. Perhaps you were lured in by whispers of forbidden knowledge, or maybe you stumbled into a portal or rift by accident. Whatever the reason, you found yourself alone in an unforgiving environment, surrounded by monstrous creatures and toxic fumes.</p>
+            <p class="indent">The Penumbral Plane is a place of eternal darkness, where shadows writhe and slither just beyond the edge of your vision. The air is thick with the stench of decay and malevolence that seeps into your very soul. Every moment in this twisted landscape feels like an eternity, the oppressive weight of the environment slowly chipping away at your sanity and willpower.</p>
+            <p class="indent">But you refused to let the Penumbral Plane break you. Through a combination of sheer guts, cunning, and pure luck, you navigated the treacherous terrain and escaped through another portal. The experience left a deep and lasting scar on your mind and soul, haunting you with memories of the horrors you faced and the dangers that still lurk in the shadows.</p>
+            <ul class="unstyled">
+                <li><strong>Skill Proficiencies:</strong> Stealth, Survival</li>
+                <li><strong>Tool Proficiencies:</strong> </li>
+                <li><strong>Languages:</strong> </li>
+                <li><strong>Equipment:</strong> A small knife, a trophy take from a fallen penumbral creatures (such as a horn or piece of leather), a set of common clothes and a pouch containing 10gp</li>
+            </ul>
+            <div element="ID_TRPG_BACKGROUND_FEATURE_PENUMBRAL_WALKER" />
+            <h5>SUGGESTED CHARACTERISTICS</h5>
+            <p>As a penumbral survivor, your time in the Penumbral Plane has left an indelible mark on your character. You may be easily spooked and paranoid, or bold and eager to face down the darkness. You possess a keen sense of perception and may be skilled in the art of stealth and survival, able to find shelter and sustenance even in the most inhospitable of environments.</p>
+            <p class="indent">You may become a shadowy assassin who uses your knowledge of the Penumbral Plane to slip in and out of the shadows unnoticed, or a paranoid wanderer who is constantly on the lookout for danger and has a knack for finding hidden paths and shortcuts, or even a seeker of forbidden knowledge who is willing to risk anything to uncover the secrets of the Penumbral Plane.</p>
+        </description>
+        <setters>
+            <set name="short">Stealth, Survival</set>
+        </setters>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL"/>
+            <grant type="Background Feature" id="ID_TRPG_BACKGROUND_FEATURE_PENUMBRAL_WALKER" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+            <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+            <select type="List" name="Personality Trait" number="2">
+                <item id="1">I won’t speak about my experience in the Penumbra, as those horrors should be left there.</item>
+                <item id="2">My mind constantly wanders somewhere else, making it hard to focus on a single task.</item>
+                <item id="3">I have a deep fascination with shadows and darkness, and feel most comfortable in dimly lit environments.</item>
+                <item id="4">I have a dry wit and a sharp tongue, often using humor as a defense mechanism.</item>
+                <item id="5">I am constantly haunted by my experience in the Penumbral Plane, making it difficult for me to trust others.</item>
+                <item id="6">I am restless and always seeking new challenges, no matter how dangerous they may be.</item>
+            </select>
+            <select type="List" name="Ideal">
+                <item id="1">Guardian. I have a duty to protect others from the dangers of the Penumbral Plane. (Good)</item>
+                <item id="2">Balance. The Penumbra may be dangerous, but it is a necessary part of the natural order and must be preserved. (Lawful)</item>
+                <item id="3">Corrupted. The power and knowledge of the Penumbra are worth any price, no matter who or what is harmed in the process. (Evil)</item>
+                <item id="4">Second Home. The Penumbra has become a part of me, and I will do whatever it takes to return to it and make a living there. (Any)</item>
+                <item id="5">Slayer. Penumbral creatures are abominations that must be destroyed to ensure the safety of Tanares. (Good)</item>
+                <item id="6">Eerie. The Penumbra is mysterious, and we need to go there to understand more about it. (Chaotic)</item>
+            </select>
+            <select type="List" name="Bond">
+                <item id="1">When I returned to the Material Plane, my family was deeply worried, showing their love for me.</item>
+                <item id="2">I had a master but, after returning from the Penumbra, I’ve never seen it again.</item>
+                <item id="3">I went to the Penumbra with my old team. I was the only survivor, and I fight to honor their memory</item>
+                <item id="4">My family was being shamed before I crossed to the Penumbra. Now I must do something to bring them honor.</item>
+                <item id="5">I crossed the portal as the result of a prank played by my childhood friends. I want to find them.</item>
+                <item id="6">I glimpsed a fleeting image of someone I feel connected to in the Penumbral Plane, and now I am driven to find them before the darkness claims us both.</item>
+            </select>
+            <select type="List" name="Flaw">
+                <item id="1">The temptation to explore the Penumbra again is too great, even though it nearly cost my life the first time.</item>
+                <item id="2">I am obsessed with ending the penumbral influence in Tanares, to the point of recklessness and endangering others.</item>
+                <item id="3">In order to escape the Penumbra, I was forced to abandon a companion or ally, and I am haunted by guilt and shame.</item>
+                <item id="4">The penumbral influence has left me extremely paranoid, making it difficult to trust others and causing unnecessary conflicts.</item>
+                <item id="5">I unwittingly brought a penumbral monster with me to the Material Plane, and it has caused destruction and chaos wherever it goes.</item>
+                <item id="6">I willingly searched the Penumbra for an entity that could give me power, but what I found I dared not make any pact with, now it is after me.</item>
+            </select>
+        </rules>
+    </element>
+    <element name="Feature: Penumbral Walker" type="Background Feature" source="Tanares RPG 5e" id="ID_TRPG_BACKGROUND_FEATURE_PENUMBRAL_WALKER">
+        <description>
+            <p>Your time spent in the Penumbral Plane has made you an expert in navigating its treacherous terrain. You have advantage on all Dexterity (Stealth) and Wisdom (Survival) skill checks while in the Penumbra.</p>
+        </description>
+        <sheet alt="Penumbral Walker">
+            <description>Your time spent in the Penumbral Plane has made you an expert in navigating its treacherous terrain. You have advantage on all Dexterity (Stealth) and Wisdom (Survival) skill checks while in the Penumbra.</description>
+        </sheet>
+    </element>
+    
+</elements>
