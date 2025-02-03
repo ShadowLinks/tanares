@@ -48,9 +48,9 @@ To Do:
         - Arcane Guardian [Partial](https://github.com/ShadowLinks/tanares/issues/4)
     - Rogue COMPLETED
         - Ninja
-    - Sorcerer
+    - Sorcerer COMPLETED
         - Cultist
-    - Warlock
+    - Warlock COMPLETED
         - Pact of the Dark Hunter
     - Wizard
         - Lost Magic Researcher
