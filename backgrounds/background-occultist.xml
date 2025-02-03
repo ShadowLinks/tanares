@@ -28,6 +28,7 @@
         <rules>
             <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION"/>
             <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA"/>
+            <select type="Language" name="Language (Occultist)" supports="Standard||Exotic"/>
             <grant type="Background Feature" id="ID_TRPG_BACKGROUND_FEATURE_HIDDEN_CONTRACT" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
             <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
             <select type="List" name="Personality Trait" number="2">
