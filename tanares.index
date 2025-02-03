@@ -38,6 +38,7 @@
 		<file name="ranger-arcaneguardian.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/subclasses/ranger-arcaneguardian.xml" />
         <file name="rogue-ninja.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/subclasses/rogue-ninja.xml" />
 		<file name="sorcerer-cultist.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/subclasses/sorcerer-cultist.xml" />
-
+		<file name="warlock-darkhunter.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/subclasses/warlock-darkhunter.xml" />
+		
 	</files>
 </index>
