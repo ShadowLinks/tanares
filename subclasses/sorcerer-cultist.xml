@@ -1,0 +1,116 @@
+<elements>
+    <info>
+        <name>Cultist</name>
+        <description>Cultist subclass for the Sorcerer class from Tanares RPG 5e.</description>
+        <author url="">Dragori Games</author>
+        <update version="0.0.1">
+            <file name="sorcerer-cultist.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/subclasses/sorcerer-cultist.xml" />
+        </update>
+<element name="Cultist" type="Archetype" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_SORCERER_CULTIST">
+    <supports>Sorcerous Origin</supports>
+    <description>
+        <p>The cataclysmic Malrokian Curse that shook the very foundations of Arcana, forever changed the Tanarean Magic Field. Many mages were suddenly severed from their magic, sending them on a desperate journey to reclaim it. Some ventured into the shadows, striking deals with enigmatic forces and embracing forbidden powers in their quest for magical restoration. This gave rise to new, sinister cults, filled with individuals who thirsted for power and sought to harness the malevolent forces of mystical energies.</p>
+        <p class="indent">These cults formed unbreakable bonds with the unseen, transmitting their powers to future generations and unlocking new, mysterious methods of harnessing magic. But the power they obtained came with a terrible cost, warping their perceptions of reality and driving them to become fanatically unstable, consumed by their hunger for power. Despite this, they honed their obsession, amplifying their magic and summoning servants of pure nightmare from the penumbral plane</p>
+        <div element="ID_TRPG_ARCHETYPE_FEATURE_SORCERER_CULTIST_FANATACISM" />
+        <div element="ID_TRPG_ARCHETYPE_FEATURE_SORCERER_CULTIST_SUMMON" />
+        <div element="ID_TRPG_ARCHETYPE_FEATURE_SORCERER_CULTIST_PENUMBRAL_LINK" />
+        <div element="ID_TRPG_ARCHETYPE_FEATURE_SORCERER_CULTIST_BLOOD_PACT" />
+
+    </description>
+    <sheet display="false">
+        <description></description>
+    </sheet>
+    <rules>
+        <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_SORCERER_CULTIST_FANATACISM" level="1" />
+        <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_SORCERER_CULTIST_SUMMON" level="6" />
+        <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_SORCERER_CULTIST_PENUMBRAL_LINK" level="14" />
+        <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_SORCERER_CULTIST_BLOOD_PACT" level="18" />
+    </rules>
+    <element name="Fanaticism" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_SORCERER_CULTIST_FANATACISM">
+        <description>
+            <p>Starting at 1st level, your obsession allows you to channel your powers to persist even under dire circumstances. When you are reduced to 0 hit points, you do not fall unconscious. You can act normally and take turns, though you still make death saving throws as usual and incur automatic failed death saves if you take damage.</p>
+            <p class="indent">However, if you fail two death saving throws, including automatic failures from taking damage at 0 hit points, you immediately fall unconscious. Moreover, you only die after failing four death saving throws instead of three.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Summon from the Penumbra" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_SORCERER_CULTIST_SUMMON">
+        <description>
+            <p>Starting at 6th level, as an action, you can summon an eldritch spirit and imbue it with your magical power, turning it into a creature that obeys your commands. The creature manifests in an unoccupied space you can see within 90 feet of you.</p>
+            <p class="indent">This creature is friendly to you and your companions. In combat, the creature takes its turn immediately after yours. It obeys verbal commands that you give (no action required by you). If you don’t issue any commands, it defends itself but otherwise takes no action.</p>
+            <p class="indent">When you summon the spirit, choose the <strong>Sloth Invocation</strong>, <strong>Envy Invocation</strong>, or <strong>Gluttony Invocation</strong>. The creature physically resembles the chosen aspect, which also determines some traits in its stat block.</p>
+            <p class="indent">You can use this feature once, regaining use after a short or long rest. You can only have one such creature summoned at a time. If you use this feature while you already have a creature summoned from this feature, the previous creature disappears.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Penumbral Link" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_SORCERER_CULTIST_PENUMBRAL_LINK">
+        <description>
+            <p>At 14th level, your summon can share its senses with you. As a bonus action, you can see, hear, and feel as if you were your summon, while maintaining your regular senses. This ability lasts until the end of your turn.</p>
+            <p class="indent">Also, as your bond with your summon strengthens, it gains a flying speed of 30 feet.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Blood Pact" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_SORCERER_CULTIST_BLOOD_PACT">
+        <description>
+            <p>At 18th level, you can siphon the life force of your summon, restoring your health and magical energy.</p>
+            <p class="indent">You can sacrifice your summon to regain hit points equal to the summon’s current hit points. For every 10 hit points restored in this way, you regain 1 sorcery point. You can use this feature once, regaining its use after a long rest.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+
+
+    <!--Creatures-->
+    <element name="Sloth Invocation" type="Companion" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_SORCERER_CULTIST_SLOTH">
+        <supports>Penumbra Summon</supports>
+        <description>
+            <p>Sloth Invocation</p>
+        </description>
+        <setters>
+            <set name="strength">18</set>
+            <set name="dexterity">10</set>
+            <set name="constitution">15</set>
+            <set name="intelligence">14</set>
+            <set name="wisdom">13</set>
+            <set name="charisma">7</set>
+            <set name="ac">12+1 for each 2 sorcerer level</set>
+            <set name="hp">5x sorcerer</set>
+            <set name="speed">30 ft.</set>
+            <set name="senses">darkvistion 60 ft., passive Perception 11</set>
+            <set name="languages">Deep Speech, understands the languages you speak</set>
+            <set name="immunities"psychic></set>
+            <set name="type">averration</set>
+            <set name="size">Medium</set>
+            <set name="alignment">neutral evil</set>
+            <set name="challenge"></set>
+            <set name="actions">ID_TRPG_COMPANION_ACTION_SLOTH_MULTIATTACK,ID_TRPG_COMPANION_ACTION_SLOTH_BITE</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="15"/>
+            <stat name="companion:hp:max" value="30" bonus="base"/>
+            <stat name="companion:speed" value="30" bonus="base"/>
+        </rules>
+    </element>
+    <element name="Multiattack" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_SLOTH_MULTIATTACK">
+        <description>
+            <p>The sloth invocation makes a number of attacks equal to your proficiency bonus.</p>
+        </description>
+        <sheet>
+            <description>The sloth invocation makes a number of attacks equal to your proficiency bonus {{proficiency}}.</description>
+        </sheet>
+    </element>
+    <element name="Bite" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_SLOTH_BITE">
+        <description>
+            <p> Melee Weapon Attack: sloth invocation STR modifier (4) + your proficiency bonus, reach 5 ft., one target. Hit: 1d10 + 4 + your proficiency bonus piercing damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be knocked prone</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack: sloth invocation STR modifier (4) + your proficiency bonus, reach 5 ft., one target. Hit: 1d10 + 4 + your proficiency bonus piercing damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be knocked prone</description>
+        </sheet>
+    </element>
+</element>
