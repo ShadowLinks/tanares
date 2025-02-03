@@ -1,0 +1,79 @@
+
+<elements>
+    <info>
+        <name>Dragon Hunter</name>
+        <description>Dragon Hunter background</description>
+        <author urle="">Dragori Games</author>
+        <update version="0.0.1">
+            <file name="background-dragonhunter.xml" url="https://github.com/ShadowLinks/tanares/raw/refs/heads/main/backgrounds/backgrounds-dragonhunter.xml" />
+        </update>
+    </info>
+    <element name="Dragon Hunter" type="Background" source="Tanares RPG 5e" id="ID_TRPG_BACKGROUND_DRAGON_HUNTER">
+        <description>
+            <p>Your life is dedicated to the pursuit of the world’s greatest natural predators, the dragons. From the majesty of their wings to the ferocity of their flames, you have witnessed the chaos and destruction that these creatures can cause. Driven by a fierce determination to prevent them from spreading further terror, you have spent years studying every aspect of their existence. You have learned the nuances of their language, the intricacies of their customs, and the depths of their abilities. You have delved into the history of the world to better understand their influence, their origins, and their place in the tapestry of time.</p>
+            <p class="indent"></p>
+            <ul class="unstyled">
+                <li><strong>Skill Proficiencies:</strong> Investigation, Nature</li>
+                <li><strong>Tool Proficiencies:</strong> Vehicles(land)</li>
+                <li><strong>Languages:</strong> Draconic</li>
+                <li><strong>Equipment:</strong> A dragon scale, a memento form your home regions, a set of common clothes, and a belt pouch containing 15 gp.</li>
+            </ul>
+            <div element="ID_TRPG_BACKGROUND_FEATURE_DRACONIC_WHISPERS" />
+            <h5>SUGGESTED CHARACTERISTICS</h5>
+            <p>As a dragon hunter, you are consumed by your mission to rid the world of these powerful creatures. You are single-minded in your pursuit, driven by an unshakeable belief in the importance of your work. You relish the thrill of the hunt, the rush of adrenaline as you face down these fearsome beasts. You are highly knowledgeable about dragons and their behavior, a living encyclopedia of lore and legend. You are willing to take great risks to achieve your goals, venturing into dangerous territory and facing overwhelming odds. However, you are not invincible, and you may struggle with the toll that your lifestyle takes on your personal relationships and health. The constant vigilance, the solitude, and the fear of failure can wear on even the most stalwart soul.</p>
+        </description>
+        <setters>
+            <set name="short">Investigation, Nature, Vehicles, Draconic</set>
+        </setters>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INVESTIGATION"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE"/>
+            <grant type="Language" id="ID_LANGUAGE_DRACONIC" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_LAND"/>
+            <grant type="Background Feature" id="ID_TRPG_BACKGROUND_FEATURE_DRACONIC_WHISPERS" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+            <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+            <select type="List" name="Personality Trait" number="2">
+                <item id="1">I’ve never seen a dragon before. In fact, the mere thought of facing such an unrelenting force scares me out of my wits. Regardless, I know it is my mission.</item>
+                <item id="2">I am relentlessly devoted to my mission and I will do whatever I can to accomplish it, ignoring any distractions.</item>
+                <item id="3">I am always willing to acquire objects of draconic origin, sometimes paying much more than their worth.</item>
+                <item id="4">Part of me dreams of taming a dragon and riding on its back.</item>
+                <item id="5">I harbor a visceral, overpowering hatred for dragons and draconic creatures, even those who seem intelligent and civilized.</item>
+                <item id="6">I usually make dozens of drawings of dragon anatomy, their lairs and symbols.</item>
+            </select>
+            <select type="List" name="Ideal">
+                <item id="1">Preservation. I believe dragons are a fundamental part of the world. Though we must protect ourselves from them, indiscriminate hunt might irreparably harm nature’s balance. (Lawful)</item>
+                <item id="2">Change. The evil dragons’ reign of terror must end, bringing a new era of freedom for humanity. (Good)</item>
+                <item id="3">Fame. I wish to be known as the greatest dragonslayer the world has ever seen. Only then will I be truly satisfied. (Any)</item>
+                <item id="4">Vengeance. No matter the consequences, I am ready to accept them if it means I will exact my revenge on a dragon. (Chaotic)</item>
+                <item id="5">Knowledge. I must learn all there is to know about dragons. Then I’ll be ready to face them. (Any)</item>
+                <item id="6">Power. More than hunting dragons, what I wish is to capture one, using its power to take whatever I want. (Evil)</item>
+            </select>
+            <select type="List" name="Bond">
+                <item id="1">A roving dragon destroyed my village, and that’s why I devote myself to hunting down these beasts.</item>
+                <item id="2">I’m secretly in love for another hunter and I wish to prove myself to him/her before making my love known.</item>
+                <item id="3">I have a master who taught me on the nature and power of the dragons.</item>
+                <item id="4">I owe my life to my fellow hunters. I would never be able to betray or leave a single one of them behind.</item>
+                <item id="5">I grew up in a small city in a dragon’s territory. One day I hope to return and free my people.</item>
+                <item id="6">When I was young, a great hero saved me from a dragon. I have followed his steps ever since in order to become a hero myself.</item>
+            </select>
+            <select type="List" name="Flaw">
+                <item id="1">My journey has severed my ties to any human relations I had. Nowadays I find it extremely hard to relate and social interactions are a true challenge.</item>
+                <item id="2">I am always paranoid about an imminent dragon attack,</item>
+                <item id="3">My study on dragons made me arrogant towards unlearned people. I have no patience for those who I deem ignorant.</item>
+                <item id="4">I made a terrible mistake a couple years ago and this has cost a few lives. I hope to keep this mistake a secret from everyone.</item>
+                <item id="5">I squander any spare money I have on drinking. Alcohol is my courage elixir for facing dragons… and forgetting the horrors I witnessed.</item>
+                <item id="6">Just like a dragon, I hoard treasures and have a peculiar taste for gold and precious stones.</item>
+            </select>
+        </rules>
+    </element>
+        <element name="Feature: Draconic Whispers" type="Background Feature" source="Tanares RPG 5e" id="ID_TRPG_BACKGROUND_FEATURE_DRACONIC_WHISPERS">
+        <description>
+            <p>Through your long years of dragon hunting, you have built up a vast network of contacts. From magic scholars to local rangers and renegade dragonblades, you have gleaned valuable insights and knowledge about draconic activity. Your keen eye for detail and your experience in the field allow you to identify patterns and supernatural phenomena that others might miss.</p>
+            <p class="indent">When arriving at a city you can reach for your contacts to have access to privileged information regarding dragon activities, their schemes as well as the presence and actions of their servants in the region.</p>
+        </description>
+        <sheet alt="Draconic Whispers">
+            <description>Through your long years of dragon hunting, you have built up a vast network of contacts. From magic scholars to local rangers and renegade dragonblades, you have gleaned valuable insights and knowledge about draconic activity. Your keen eye for detail and your experience in the field allow you to identify patterns and supernatural phenomena that others might miss. When arriving at a city you can reach for your contacts to have access to privileged information regarding dragon activities, their schemes as well as the presence and actions of their servants in the region.</description>
+        </sheet>
+    </element>
+    
+</elements>
