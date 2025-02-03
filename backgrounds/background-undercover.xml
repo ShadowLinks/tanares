@@ -1,0 +1,77 @@
+
+<elements>
+    <info>
+        <name>Undercover</name>
+        <description>Undercover background</description>
+        <author urle="">Dragori Games</author>
+        <update version="0.0.1">
+            <file name="background-undercover.xml" url="https://github.com/ShadowLinks/tanares/raw/refs/heads/main/backgrounds/backgrounds-undercover.xml" />
+        </update>
+    </info>
+    <element name="Undercover" type="Background" source="Tanares RPG 5e" id="ID_TRPG_BACKGROUND_UNDERCOVER">
+        <description>
+            <p>You live in the shadows, your true identity shrouded in secrecy, while another identity allows you to navigate the tumultuous world of Tanares with ease. Perhaps you pose as a humble farmer, a stoic soldier, or even something more sinister. You have spent so much time in this other skin that it feels like a part of you, and you are recognized for it even in other regions. With the growing tensions of the Cold War, your unique ability to move unnoticed between your two identities provides a distinct advantage, allowing you to gather invaluable information for espionage purposes. But as the stakes become higher, the lines between your true self and your other identity begin to blur, and the risk of being discovered looms ever larger.</p>
+            <p class="indent"></p>
+            <ul class="unstyled">
+                <li><strong>Skill Proficiencies:</strong>  Deception, Investigation</li>
+                <li><strong>Tool Proficiencies:</strong> Disguise Kit</li>
+                <li><strong>Languages:</strong> </li>
+                <li><strong>Equipment:</strong> Two sets of common clothes, two sets of documents for each identity, a sturdy bag, and small pouch containing 15 gp.</li>
+            </ul>
+            <div element="ID_TRPG_BACKGROUND_FEATURE_ANOTHER_LIFE" />
+            <h5>SUGGESTED CHARACTERISTICS</h5>
+            <p>In a world wrought with instability and strife, the value of secrecy and stealth cannot be overstated. Espionage reigns supreme and those with the ability to blend in seamlessly with their surroundings are highly prized. Such individuals re often aloof, with a guarded air about them as they keep their true identities close to the vest. Every step they take, every word they utter, is calculated to maintain their disguise. The weight of their responsibility can lead to paranoia, constantly scanning their surroundings for any hint of danger.</p>
+            <p class="indent">Yet, not all who walk in shadows are wrought with anxiety. Some have a natural magnetism, a charm that allows them to slip into a role like a second skin. They possess an innate ability to blend in with the most disparate of crowds, effortlessly becoming someone else entirely. But, even for those with a silver tongue, maintaining multiple identities is an arduous task. One slip-up, one careless mistake, and the consequences can be dire. A moment’s distraction can bring an end to their carefully crafted charade and plunge them into the heart of danger.</p>
+        </description>
+        <setters>
+            <set name="short">Decepetion, Investigation, Disguise Kit</set>
+        </setters>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INVESTIGATION"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_DISGUISE_KIT"/>
+            <grant type="Background Feature" id="ID_TRPG_BACKGROUND_FEATURE_ANOTHER_LIFE" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+            <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+            <select type="List" name="Personality Trait" number="2">
+                <item id="1">I am constantly aware of my surroundings and the people around me, analyzing their every move and trying to anticipate their next actions.</item>
+                <item id="2">I dislike my real identity and I secretly enjoy my cover-up identity and life more than my real one.</item>
+                <item id="3">Empires rise and fall, and I want to be there to witness it all, in the heat of the political intrigue games.</item>
+                <item id="4">The weight of my double life can be overwhelming, causing me to withdraw from time to time and keep to myself as I struggle to maintain my two identities.</item>
+                <item id="5">I am always looking for new information to gather and use for espionage purposes, willing to take risks and push boundaries to get what I need.</item>
+                <item id="6">My past is shrouded in mystery, and even I am not sure where my true loyalties lie. I must constantly remind myself of my mission and the greater good to stay on track.</item>
+            </select>
+            <select type="List" name="Ideal">
+                <item id="1">New Life. My new persona allows me to help those in need without the burden of my past mistakes. (Good)</item>
+                <item id="2">The Greater Good. The information I gather, even through questionable means, serves a greater purpose for the safety and stability of Tanares. (Lawful)</item>
+                <item id="3">Power and Control. With my dual identities and knowledge of others' secrets, I will hold immense power and control over those around me. (Evil)</item>
+                <item id="4">Freedom. My own freedom and success are my top priorities, even if it means betraying others. (Chaotic)</item>
+                <item id="5">Mercenary. The information I gather has immense value, and I will sell it to the highest bidder. (Neutral)</item>
+                <item id="6">Survivor. I will do whatever it takes to survive and achieve my goals, even if it means sacrificing my true identity. (Any)</item>
+            </select>
+            <select type="List" name="Bond">
+                <item id="1">I have formed deep and meaningful connections with my contacts and will do anything to protect them and ensure their safety.</item>
+                <item id="2">The fate of two or more people rests on my ability to gather information and maintain my cover, and I will not let them down.</item>
+                <item id="3">My true loyalty lies with a specific organization or individual, and I will do whatever it takes to further their goals and protect their interests.</item>
+                <item id="4">I have been given a specific mission by my organization or employer, and I will not rest until it is accomplished, even if it means sacrificing my personal safety.</item>
+                <item id="5">I have fallen in love with someone who I must keep at a distance for fear of revealing my true identity, but I will do everything in my power to protect them from harm.</item>
+                <item id="6">I have become emotionally attached to a civilian who knows me only as my false identity, and I must constantly remind myself that my feelings are based on a lie and could lead to danger if revealed.</item>
+            </select>
+            <select type="List" name="Flaw">
+                <item id="1">I am haunted by my past mistakes and the people I've hurt while operating under my previous identity.</item>
+                <item id="2">I have used my undercover persona for personal gain, sometimes at the expense of others.</item>
+                <item id="3">I have developed close relationships with people who I must betray or distance myself from to maintain my cover.</item>
+                <item id="4">I have obtained sensitive information through illegal or unethical means, making me vulnerable to being blackmailed or exposed.</item>
+                <item id="5">My two identities have become so intertwined that I struggle to remember which one is my true self.</item>
+                <item id="6">The power and freedom that comes with my new identity has made me arrogant and overconfident, causing me to take dangerous risks without considering the consequences.</item>
+            </select>
+        </rules>
+    </element>
+    <element name="Feature: Another Life" type="Background Feature" source="Tanares RPG 5e" id="ID_TRPG_BACKGROUND_FEATURE_ANOTHER_LIFE">
+        <description>
+            <p>You possess a second identity that you’ve developed over the years, complete with the necessary documentation to authenticate each persona. You are known by one identity or the other, depending on the region or location you’re in. Your extensive experience in living a double life has made you an expert in secrecy, and you must not need to make any ability check when trying to make people believe you are one of your two established identities.</p>
+        </description>
+        <sheet alt="Another Life">
+            <description>You possess a second identity that you’ve developed over the years, complete with the necessary documentation to authenticate each persona. You are known by one identity or the other, depending on the region or location you’re in. Your extensive experience in living a double life has made you an expert in secrecy, and you must not need to make any ability check when trying to make people believe you are one of your two established identities.</description>
+        </sheet>
+    </element>
+</elements>
