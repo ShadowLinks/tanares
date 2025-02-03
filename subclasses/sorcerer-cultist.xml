@@ -6,7 +6,8 @@
         <update version="0.0.1">
             <file name="sorcerer-cultist.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/subclasses/sorcerer-cultist.xml" />
         </update>
-<element name="Cultist" type="Archetype" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_SORCERER_CULTIST">
+    </info>
+    <element name="Cultist" type="Archetype" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_SORCERER_CULTIST">
     <supports>Sorcerous Origin</supports>
     <description>
         <p>The cataclysmic Malrokian Curse that shook the very foundations of Arcana, forever changed the Tanarean Magic Field. Many mages were suddenly severed from their magic, sending them on a desperate journey to reclaim it. Some ventured into the shadows, striking deals with enigmatic forces and embracing forbidden powers in their quest for magical restoration. This gave rise to new, sinister cults, filled with individuals who thirsted for power and sought to harness the malevolent forces of mystical energies.</p>
@@ -26,13 +27,14 @@
         <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_SORCERER_CULTIST_PENUMBRAL_LINK" level="14" />
         <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_SORCERER_CULTIST_BLOOD_PACT" level="18" />
     </rules>
+    </element>
     <element name="Fanaticism" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_SORCERER_CULTIST_FANATACISM">
         <description>
             <p>Starting at 1st level, your obsession allows you to channel your powers to persist even under dire circumstances. When you are reduced to 0 hit points, you do not fall unconscious. You can act normally and take turns, though you still make death saving throws as usual and incur automatic failed death saves if you take damage.</p>
             <p class="indent">However, if you fail two death saving throws, including automatic failures from taking damage at 0 hit points, you immediately fall unconscious. Moreover, you only die after failing four death saving throws instead of three.</p>
         </description>
         <sheet>
-            <description></description>
+            <description> When you are reduced to 0 hit points, you do not fall unconscious. You can act normally and take turns, though you still make death saving throws as usual and incur automatic failed death saves if you take damage. However, if you fail two death saving throws, including automatic failures from taking damage at 0 hit points, you immediately fall unconscious. Moreover, you only die after failing four death saving throws instead of three.</description>
         </sheet>
     </element>
     <element name="Summon from the Penumbra" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_SORCERER_CULTIST_SUMMON">
@@ -43,8 +45,11 @@
             <p class="indent">You can use this feature once, regaining use after a short or long rest. You can only have one such creature summoned at a time. If you use this feature while you already have a creature summoned from this feature, the previous creature disappears.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You can summon the Sloth Invocation, Gluttony Invocation, or Envy Invocation to a spot within 60 ft as an action once per short rest. Only 1 can be summoned at a time and this creature is friendly to you and your companions. In combat, the creature takes its turn immediately after yours. It obeys verbal commands that you give (no action required by you). If you don’t issue any commands, it defends itself but otherwise takes no action.</description>
         </sheet>
+        <rules>
+            <select type="Companion" name="Elderich Spirit" supports="Penumbra Summon" />
+        </rules>
     </element>
     <element name="Penumbral Link" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_SORCERER_CULTIST_PENUMBRAL_LINK">
         <description>
@@ -52,7 +57,7 @@
             <p class="indent">Also, as your bond with your summon strengthens, it gains a flying speed of 30 feet.</p>
         </description>
         <sheet>
-            <description></description>
+            <description> As a bonus action, you can see, hear, and feel as if you were your summon, while maintaining your regular senses. This ability lasts until the end of your turn. Also, as your bond with your summon strengthens, it gains a flying speed of 30 feet.</description>
         </sheet>
     </element>
     <element name="Blood Pact" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_SORCERER_CULTIST_BLOOD_PACT">
@@ -61,7 +66,7 @@
             <p class="indent">You can sacrifice your summon to regain hit points equal to the summon’s current hit points. For every 10 hit points restored in this way, you regain 1 sorcery point. You can use this feature once, regaining its use after a long rest.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You can sacrifice your summon to regain hit points equal to the summon’s current hit points. For every 10 hit points restored in this way, you regain 1 sorcery point. You can use this feature once, regaining its use after a long rest.</description>
         </sheet>
     </element>
 
@@ -84,19 +89,48 @@
             <set name="speed">30 ft.</set>
             <set name="senses">darkvistion 60 ft., passive Perception 11</set>
             <set name="languages">Deep Speech, understands the languages you speak</set>
-            <set name="immunities"psychic></set>
-            <set name="type">averration</set>
+            <set name="immunities">psychic</set>
+            <set name="type">aberration</set>
             <set name="size">Medium</set>
             <set name="alignment">neutral evil</set>
             <set name="challenge"></set>
+            <set name="traits">ID_TRPG_COMPANION_TRAIT_SLOTH_AURA</set>
             <set name="actions">ID_TRPG_COMPANION_ACTION_SLOTH_MULTIATTACK,ID_TRPG_COMPANION_ACTION_SLOTH_BITE</set>
         </setters>
         <rules>
             <stat name="companion:ac" value="15"/>
             <stat name="companion:hp:max" value="30" bonus="base"/>
             <stat name="companion:speed" value="30" bonus="base"/>
+            <stat name="companion:ac" value="1" level="8" />
+            <stat name="companion:ac" value="1" level="10" /> 
+            <stat name="companion:ac" value="1" level="12" /> 
+            <stat name="companion:ac" value="1" level="14" /> 
+            <stat name="companion:ac" value="1" level="16" /> 
+            <stat name="companion:ac" value="1" level="18" /> 
+            <stat name="companion:ac" value="1" level="20" />
+            <stat name="companion:hp:max" value="5" level="7" />
+            <stat name="companion:hp:max" value="5" level="8" />
+            <stat name="companion:hp:max" value="5" level="9" />
+            <stat name="companion:hp:max" value="5" level="10" />
+            <stat name="companion:hp:max" value="5" level="11" />
+            <stat name="companion:hp:max" value="5" level="12" />
+            <stat name="companion:hp:max" value="5" level="13" />
+            <stat name="companion:hp:max" value="5" level="14" />
+            <stat name="companion:hp:max" value="5" level="15" />
+            <stat name="companion:hp:max" value="5" level="16" />
+            <stat name="companion:hp:max" value="5" level="17" />
+            <stat name="companion:hp:max" value="5" level="18" />
+            <stat name="companion:hp:max" value="5" level="19" />
+            <stat name="companion:hp:max" value="5" level="20" /> 
+            <stat name="companion:speed:fly" value="30" level="14" />
         </rules>
     </element>
+    <element name="Aura of Laziness 15ft" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_SLOTH_AURA">
+        <description> Any creature that enters or starts its turn in the aura must make a DC 13 Wisdom saving throw. If it fails, its speed is halved for the next minute. An affected creature that leaves the aura can repeat the saving throw at the end of its turns, ending the effect on a success.</description>
+        <sheet>
+            <description>15 foot Aura and any creature that enters or starts its turn in it must make a DC 13 Wisdom saving throw. If it fails, its speed is halved for the next minute. An affected creature that leaves the aura can repeat the saving throw at the end of its turns, ending the effect on a success.</description>
+        </sheet>
+        </element>
     <element name="Multiattack" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_SLOTH_MULTIATTACK">
         <description>
             <p>The sloth invocation makes a number of attacks equal to your proficiency bonus.</p>
@@ -113,4 +147,158 @@
             <description>Melee Weapon Attack: sloth invocation STR modifier (4) + your proficiency bonus, reach 5 ft., one target. Hit: 1d10 + 4 + your proficiency bonus piercing damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be knocked prone</description>
         </sheet>
     </element>
-</element>
+
+    <element name="Gluttony Invocation" type="Companion" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_SORCERER_CULTIST_GLUTTONY">
+        <supports>Penumbra Summon</supports>
+        <description>
+            <p>Gluttony Invocation</p>
+        </description>
+        <setters>
+            <set name="strength">18</set>
+            <set name="dexterity">10</set>
+            <set name="constitution">15</set>
+            <set name="intelligence">14</set>
+            <set name="wisdom">13</set>
+            <set name="charisma">7</set>
+            <set name="ac">10+1 for each 2 sorcerer level</set>
+            <set name="hp">5x sorcerer</set>
+            <set name="speed">30 ft.</set>
+            <set name="senses">darkvistion 60 ft., passive Perception 11</set>
+            <set name="languages">Deep Speech, understands the languages you speak</set>
+            <set name="immunities">psychic</set>
+            <set name="type">aberration</set>
+            <set name="size">Medium</set>
+            <set name="alignment">neutral evil</set>
+            <set name="challenge"></set>
+            <set name="traits">ID_TRPG_COMPANION_TRAIT_GLUTTONY_BLOOD_FRENZY</set>
+            <set name="actions">ID_TRPG_COMPANION_ACTION_GLUTTONY_MULTIATTACK,ID_TRPG_COMPANION_ACTION_GLUTTONY_BITE</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="13"/>
+            <stat name="companion:hp:max" value="30" bonus="base"/>
+            <stat name="companion:speed" value="30" bonus="base"/>
+            <stat name="companion:ac" value="1" level="8" />
+            <stat name="companion:ac" value="1" level="10" /> 
+            <stat name="companion:ac" value="1" level="12" /> 
+            <stat name="companion:ac" value="1" level="14" /> 
+            <stat name="companion:ac" value="1" level="16" /> 
+            <stat name="companion:ac" value="1" level="18" /> 
+            <stat name="companion:ac" value="1" level="20" /> 
+            <stat name="companion:hp:max" value="5" level="7" />
+            <stat name="companion:hp:max" value="5" level="8" />
+            <stat name="companion:hp:max" value="5" level="9" />
+            <stat name="companion:hp:max" value="5" level="10" />
+            <stat name="companion:hp:max" value="5" level="11" />
+            <stat name="companion:hp:max" value="5" level="12" />
+            <stat name="companion:hp:max" value="5" level="13" />
+            <stat name="companion:hp:max" value="5" level="14" />
+            <stat name="companion:hp:max" value="5" level="15" />
+            <stat name="companion:hp:max" value="5" level="16" />
+            <stat name="companion:hp:max" value="5" level="17" />
+            <stat name="companion:hp:max" value="5" level="18" />
+            <stat name="companion:hp:max" value="5" level="19" />
+            <stat name="companion:hp:max" value="5" level="20" />
+            <stat name="companion:speed:fly" value="30" level="14" />
+            
+ 
+        </rules>
+    </element>
+    <element name="Blood Frency" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_GLUTTONY_BLOOD_FRENZYT">
+        <description>The gluttony invocation has advantage on melee attack rolls against creatures that don’t have all hit points.</description>
+        <sheet>
+            <description>Advantage on melee attack rolls against creatures missing hit points</description>
+        </sheet>
+    </element>
+    <element name="Multiattack" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_GLUTTONY_MULTIATTACK">
+        <description>
+            <p>The gluttony invocation makes a number of attacks equal to your proficiency bonus.</p>
+        </description>
+        <sheet>
+            <description>The gluttony invocation makes a number of attacks equal to your proficiency bonus {{proficiency}}.</description>
+        </sheet>
+    </element>
+    <element name="Bite" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_GLUTTONY_BITE">
+        <description>
+            <p> Melee Weapon Attack: gluttony invocation STR modifier (4) + your proficiency bonus, reach 5 ft., one target. Hit: 1d10 + 4 + your proficiency bonus piercing damage. The Gluttony Invocation gains half of damage in temporary hit points. If the target is a living creature it must succeed on a DC 12 Wisdom saving throw or be cursed. A cursed creature has disadvantage on attack rolls until eating during a short or long rest, being targeted by a remove curse spell, or eating a berry created by a goodberry spell.</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack: gluttony invocation STR modifier (4) + your proficiency bonus {{proficiency}}, reach 5 ft., one target. Hit: 1d10 + 4 + your proficiency bonus {{proficiency}} piercing damage. The Gluttony Invocation gains half of damage in temporary hit points. If the target is a living creature it must succeed on a DC 12 Wisdom saving throw or be cursed. A cursed creature has disadvantage on attack rolls until eating during a short or long rest, being targeted by a remove curse spell, or eating a berry created by a goodberry spell.</description>
+        </sheet>
+    </element>
+
+    <element name="Envy Invocation" type="Companion" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_SORCERER_CULTIST_ENVY">
+        <supports>Penumbra Summon</supports>
+        <description>
+            <p>Envy Invocation</p>
+        </description>
+        <setters>
+            <set name="strength">10</set>
+            <set name="dexterity">18</set>
+            <set name="constitution">15</set>
+            <set name="intelligence">14</set>
+            <set name="wisdom">13</set>
+            <set name="charisma">7</set>
+            <set name="ac">10+1 for each 2 sorcerer level</set>
+            <set name="hp">5x sorcerer</set>
+            <set name="speed">30 ft.</set>
+            <set name="senses">darkvistion 60 ft., passive Perception 11</set>
+            <set name="languages">Deep Speech, understands the languages you speak</set>
+            <set name="immunities">psychic</set>
+            <set name="type">aberration</set>
+            <set name="size">Medium</set>
+            <set name="alignment">neutral evil</set>
+            <set name="challenge"></set>
+            <set name="traits">ID_TRPG_COMPANION_TRAIT_ENVY_PACK_TACTICS</set>
+            <set name="actions">ID_TRPG_COMPANION_ACTION_ENVY_MULTIATTACK,ID_TRPG_COMPANION_ACTION_ENVY_BITE</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="13"/>
+            <stat name="companion:hp:max" value="30" bonus="base"/>
+            <stat name="companion:speed" value="30" bonus="base"/>
+            <stat name="companion:ac" value="1" level="8" />
+            <stat name="companion:ac" value="1" level="10" /> 
+            <stat name="companion:ac" value="1" level="12" /> 
+            <stat name="companion:ac" value="1" level="14" /> 
+            <stat name="companion:ac" value="1" level="16" /> 
+            <stat name="companion:ac" value="1" level="18" /> 
+            <stat name="companion:ac" value="1" level="20" />
+            <stat name="companion:hp:max" value="5" level="7" />
+            <stat name="companion:hp:max" value="5" level="8" />
+            <stat name="companion:hp:max" value="5" level="9" />
+            <stat name="companion:hp:max" value="5" level="10" />
+            <stat name="companion:hp:max" value="5" level="11" />
+            <stat name="companion:hp:max" value="5" level="12" />
+            <stat name="companion:hp:max" value="5" level="13" />
+            <stat name="companion:hp:max" value="5" level="14" />
+            <stat name="companion:hp:max" value="5" level="15" />
+            <stat name="companion:hp:max" value="5" level="16" />
+            <stat name="companion:hp:max" value="5" level="17" />
+            <stat name="companion:hp:max" value="5" level="18" />
+            <stat name="companion:hp:max" value="5" level="19" />
+            <stat name="companion:hp:max" value="5" level="20" />
+            <stat name="companion:speed:fly" value="30" level="14" /> 
+        </rules>
+    </element>
+    <element name="Pack Tactics" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_ENVY_PACK_TACTICS">
+        <description>The envy invocation has advantage on an attack roll against a creature if at least one of its allies is within 5 feet of the creature and the ally isn’t incapacitated.</description>
+        <sheet>
+            <description>The envy invocation has advantage on an attack roll against a creature if at least one of its allies is within 5 feet of the creature and the ally isn’t incapacitated.</description>
+        </sheet>
+    </element>
+    <element name="Multiattack" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_ENVY_MULTIATTACK">
+        <description>
+            <p>The envy invocation makes a number of attacks equal to your proficiency bonus.</p>
+        </description>
+        <sheet>
+            <description>The envy invocation makes a number of attacks equal to your proficiency bonus {{proficiency}}.</description>
+        </sheet>
+    </element>
+    <element name="Resentment Bite" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_ENVY_BITE">
+        <description>
+            <p>Ranged Spell Attack: Envy Invocation DEX modifier (4) + your proficiency bonus, range 60 ft., one target. Hit: 1d8 + 4 + your proficiency bonus psychic damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be knocked prone.</p>
+        </description>
+        <sheet>
+            <description>Ranged Spell Attack: Envy Invocation DEX modifier (4) + your proficiency bonus {{proficiency}}, range 60 ft., one target. Hit: 1d8 + 4 + your proficiency bonus {{proficiency}} psychic damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be knocked prone.</description>
+        </sheet>
+    </element>
+</elements>
