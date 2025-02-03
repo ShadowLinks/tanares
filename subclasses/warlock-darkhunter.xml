@@ -1,16 +1,16 @@
 <elements>
     <info>
-        <name>Dark Hunter</name>
+        <name>Pact of the Dark Hunter</name>
         <description>Dark Hunter subclass for the Warlock class from Tanares RPG 5e.</description>
         <author url="">Dragori Games</author>
         <update version="0.0.1">
             <file name="warlock-darkhunter.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/subclasses/warlock-darkhunter.xml" />
         </update>
     </info>
-    <element name="Dark Hunter" type="Archetype" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_WARLOCK_DARK_HUNTER">
+    <element name="Pact of the Dark Hunter" type="Archetype" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_WARLOCK_DARK_HUNTER">
         <supports>Otherworldly Patron</supports>
         <description>
-            <p>ou made a pact with an obscure otherworldly entity that refuses to reveal its true origin, sharing with you only its goal: to destroy all aberrations and unnatural creatures that plague the multiverse. It desires you to act as its hand in your world, eradicating the dark beings hidden in the shadows.</p>
+            <p>You made a pact with an obscure otherworldly entity that refuses to reveal its true origin, sharing with you only its goal: to destroy all aberrations and unnatural creatures that plague the multiverse. It desires you to act as its hand in your world, eradicating the dark beings hidden in the shadows.</p>
             <p class="indent">Different from other warlocks you train your body and mind to exhaustion to fight the creatures of darkness. You learn how to properly use all kinds of weapons to deliver your powerful magic abilities, channeling your powers through blades and bolts alike, becoming the terror of all dark beings.</p>
             <p class="indent">Moved by vengeance, a strange sense of justice, or some other personal goal, your path is often dark, grim, and solitary. One that most common folk would never have the guts to take, but that is the reason most warloks of the Dark Hunter choose this path.</p>
             <p class="indent">The Dark Hunter lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
