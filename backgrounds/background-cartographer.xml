@@ -1,0 +1,78 @@
+
+<elements>
+    <info>
+        <name>Cartographer</name>
+        <description>Cartographer background</description>
+        <author url="">Dragori Games</author>
+        <update version="0.0.1">
+            <file name="background-cartographer.xml" url="https://github.com/ShadowLinks/tanares/raw/refs/heads/main/backgrounds/backgrounds-cartographer.xml" />
+        </update>
+    </info>
+    <element name="Cartographer" type="Background" source="Tanares RPG 5e" id="ID_TRPG_BACKGROUND_CARTOGRAPHER">
+        <description>
+            <p>You are a master in the making and copying of maps, measuring and conveying the geography of various regions through your extensive studies. Whether apprenticed to a master or self-taught, you have made a name for yourself both for your unrivaled understanding of terrain changes and your ability to represent them in beautiful maps.</p>
+            <p class="indent"></p>
+            <ul class="unstyled">
+                <li><strong>Skill Proficiencies:</strong> History, Survival</li>
+                <li><strong>Tool Proficiencies:</strong> Cartographer's tools, Navigator's tools</li>
+                <li><strong>Languages:</strong> </li>
+                <li><strong>Equipment:</strong> a set of cartographer's tools, a set of traveler's clothes and a belt pouch containtin 15 gp.</li>
+            </ul>
+            <div element="ID_TRPG_BACKGROUND_FEATURE_DYNAMIC_MAPS" />
+            <h5>SUGGESTED CHARACTERISTICS</h5>
+            <p>Cartographers are a cross between a scholar and an artist, dedicating themselves painstakingly to record all the wonders of Tanares, and charting the ways to seek and find them. This line of work garners prestige with the authorities and sparks curiosity among hopeful adventurers, and those who follow it have no shortage of imagination, wanderlust and drive fueling their desires.</p>
+        </description>
+        <setters>
+            <set name="short">History, Suvival, Cartographer's tools, Navigator's tools</set>
+        </setters>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVLA"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CARTOGRAPHERS_TOOLS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_NAVIGATORS_TOOLS" />
+            <grant type="Background Feature" id="ID_TRPG_BACKGROUND_FEATURE_DYNAMIC_MAPS" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+            <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+            <select type="List" name="Personality Trait" number="2">
+                <item id="1">I love taking risks, and the more dangerous the job, the more inclined I am to take it.</item>
+                <item id="2">I am considered vain for loving my work, but I can't understand how people are not able to see the beauty and refinement of mapmaking.</item>
+                <item id="3">I have trouble concentrating on matters unrelated to my work.</item>
+                <item id="4">I am very nostalgic, always commenting on places I’ve been to and taking every opportunity to show my notes and maps to others.</item>
+                <item id="5">I collect a very particular thing, maybe stones, dirt samples or ancient maps from lost civilizations. I don’t usually feel the need to talk about my collection, but if someone shows interest about it, I will spend hours talking about it.</item>
+                <item id="6">I consider my craft one of the wonders — and necessities — of the world today, and I feel insulted or shocked if someone has not heard of it.</item>
+            </select>
+            <select type="List" name="Ideal">
+                <item id="1">Community. I believe my gift should be used for society’s common good. (Good)</item>
+                <item id="2">Tradition. Cartography is a timeless and delicate art which survived the greatest disasters, and must be preserved. (Lawful)</item>
+                <item id="3">Greed. I am always after making money in any way I can, and this is the only reason why I dedicate myself to this activity. (Evil)</item>
+                <item id="4">Aspiration. I strive to be the best in what I do, and therefore I will offer the best of my effort at everything. (Any)</item>
+                <item id="5">Beauty. More than geographical consultation, maps should convey the beauty and uniqueness of each place — so that we crave to explore those that are still uncharted. (Good</item>
+                <item id="6">Avant-garde. There are many ways to represent the world, and I will show it to the traditionalists. (Chaotic)</item>
+            </select>
+            <select type="List" name="Bond">
+                <item id="1">I might never be able to repay all the good things someone has done for me.</item>
+                <item id="2">I left my family to pursue my calling, they never understood what it meant for me.</item>
+                <item id="3">I have deep admiration for a famous cartographer, and was accused many times of copying his style.</item>
+                <item id="4">I learned my trade with someone who was first like a brother to me; he then became a rival. To this day, we compete at everything.</item>
+                <item id="5">My tools were stolen and I am set on recovering them. While I can manage with those I’m carrying for the moment, I believe that only with my original tools I might reach my full potential.</item>
+                <item id="6">My journey is meant for me to prove myself and earn a beloved person’s hand in marriage.</item>
+            </select>
+            <select type="List" name="Flaw">
+                <item id="1">I am certain I am destined for greatness, and I will stop at nothing to earn more recognition, and a nobility title.</item>
+                <item id="2">I overindulge in earthly pleasures, and I will often spend my resources recklessly and selfishly if the occasion allows it.</item>
+                <item id="3">Any sense of self-preservation I might have disappears when I am presented with the opportunity to know and explore new sites.</item>
+                <item id="4">I see rivals and obstacles everywhere, and this hampers my personal growth and my ability to trust colleagues and adventurers.</item>
+                <item id="5">I was disgraced for plagiarizing a piece of work. I am deeply ashamed of that and I will try to hide this fact at any cost.</item>
+                <item id="6">I am a ruthless critic of the work of others, both within my field of work as in all other aspects of my life.</item>
+            </select>
+        </rules>
+    </element>
+        <element name="Feature: Dynamic Maps" type="Background Feature" source="Tanares RPG 5e" id="ID_TRPG_BACKGROUND_FEATURE_DYNAMIC_MAPS">
+        <description>
+            <p>You can recall the geographic features of all places you’ve visited, and spend 10 minutes to sketch an accurate map of one of these locations — as long as you have cartographer’s tools available.</p>
+        </description>
+        <sheet alt="Dynamic Maps">
+            <description>You can recall the geographic features of all places you’ve visited, and spend 10 minutes to sketch an accurate map of one of these locations — as long as you have cartographer’s tools available.</description>
+        </sheet>
+    </element>
+    
+</elements>
