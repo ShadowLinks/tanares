@@ -26,7 +26,7 @@
 		</rules>
 	</element>
 
-		<element name="Detective" type="Feat" source="Tanares RPG 5e" id="ID_TRPG_FEAT_DETECTIVE">
+	<element name="Detective" type="Feat" source="Tanares RPG 5e" id="ID_TRPG_FEAT_DETECTIVE">
 		<description>
 			<p>You notice details that few others would take into account. Your training and focus on solving crimes and mysteries have sharpened your perception and reasoning around you beyond normal limits. You gain the following benefits:</p>
 		<ul>
@@ -43,12 +43,89 @@
 		</rules>
 	</element>
 
-		<element name="name" type="Feat" source="Tanares RPG 5e" id="ID_TRPG_FEAT_">
+	<element name="Focus Inclination" type="Feat" source="Tanares RPG 5e" id="ID_TRPG_FEAT_FOCUS_INCLINATION">
+		<requirements>ID_TRPG_RACE_TAIIMAKU</requirements>
 		<description>
-			<p></p>
+			<p><i>Prerequisite: Taii'maku</i></p>
+			<p>You focus on your inclination and gain more advantages from it than other taii’makus.</p>
+			<p class="indent">If you have chosen the Inclination to Philosophy, you gain the following benefits</p>
+			<ul>
+				<li>While in Equilibrium, you also gain +1 bonus to your AC and to the saving throw DCs of your spells and abilities.</li>
+				<li>You can cast spells as if you were using a spell focus, even when you are not. Your own body and mind are considered as your spell focus.</li>
+			</ul>
+			<p>If you have chosen the Inclination to Engineering, you gain the following benefits:</p>
+			<ul>
+				<li>You can have up to four mechanisms linked to you instead of the three granted by the Ingenious Inventors trait.</li>
+				<li>When making Wisdom ability checks and Wisdom saving throws, you can use your Intelligence bonus instead of your Wisdom bonus.</li>
+			</ul>
 		</description>
 		<sheet>
-			<description></description>
+			<description>Philosophy Taii'maku gain +1 to AC and DCs while in equalibrium and your mind and body count as a spell focus. Engineering Taii'maku can link 4 mechanisms and can use INT instead of WIS for checks and saving throws</description>
+		</sheet>
+	</element>
+
+	<element name="Improved Ancestral Kemet Magic" type="Feat" source="Tanares RPG 5e" id="ID_TRPG_FEAT_IMPROVED_ANCESTRAL_KEMET_MAGIC">
+		<requirements>ID_TRPG_SUBRACE_WINTER_ELF</requirements>
+		<description>
+			<p><i>Prerequisite: Winter elf (or kemet)</i></p>
+			<p>You can cast the speak with dead spell as a ritual, as your connection with your ancestors is stronger than what is normally seen in a kemet. In addition, you learn one 1st-level and one 2nd-level necromancy spell of your choice, which you can cast once each, and regain their uses after finishing a long rest. Your spellcasting ability for these spells is the same as the one chosen in Ancestral Kemet Magic.</p>
+		</description>
+		<sheet usage="1/long rest">
+			<description>You can cast the speak with dead spell as a ritual, as your connection with your ancestors is stronger than what is normally seen in a kemet. In addition, you learn one 1st-level and one 2nd-level necromancy spell of your choice, which you can cast once each, and regain their uses after finishing a long rest. Your spellcasting ability for these spells is the same as the one chosen in Ancestral Kemet Magic.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Necromancy Spell 1 (Improved Ancestral Kemet Magic)" support="necromancy,2" />
+			<select type="Spell" name="Necromancy Spell 2 (Improved Ancestral Kemet Magic)" support="necromancy,1" />
+			<grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_DEAD" />
+		</rules>
+	</element>
+
+		<element name="Life Saver" type="Feat" source="Tanares RPG 5e" id="ID_TRPG_FEAT_LIFE_SAVER">
+		<requirements>[type:spell]</requirements>
+		<description>
+			<p><i>Prerequisite: Ability to cast at least one spell that restores hit points to a creature.</i></p>
+			<p class="indent">You have trained to enhance your healing magic, making you able to react quickly when a creature would be struck down. If you know or have prepared a healing spell that has the casting time of 1 action, you can cast it as a reaction when a creature within the spell’s range takes damage that would reduce their hit points to 0. This will reduce the damage that the creature would take by the amount your spell would heal it, plus your spellcasting ability modifier. Any excess reduc tion to the damage is lost, but it can reduce the damage to 0</p>
+			<p class="indent">If the healing spell targets multiple creatures, this benefit applies only to the attacked creature who triggered the ability.</p>
+			<p class="indent">You can use this ability a number of times equal to 1 + your proficiency bonus, and you regain all uses of this ability after finishing a long rest.</p>
+		</description>
+		<sheet usage="{{life-saver}}/long rest">
+			<description>You have trained to enhance your healing magic, making you able to react quickly when a creature would be struck down. If you know or have prepared a healing spell that has the casting time of 1 action, you can cast it as a reaction when a creature within the spell’s range takes damage that would reduce their hit points to 0. This will reduce the damage that the creature would take by the amount your spell would heal it, plus your spellcasting ability modifier. Any excess reduc tion to the damage is lost, but it can reduce the damage to 0. If the healing spell targets multiple creatures, this benefit applies only to the attacked creature who triggered the ability. You can use this ability a number of times equal to 1 + your proficiency bonus {{life-saver}}, and you regain all uses of this ability after finishing a long rest.</description>
+		</sheet>
+		<rules>
+			<stat name="life-saver" value="1" />
+			<stat name="life-saver" value="proficiency" />
+		</rules>
+
+	</element>
+
+	<element name="Lightning Thrower" type="Feat" source="Tanares RPG 5e" id="ID_TRPG_FEAT_LIGHTNING_THROWER">
+		<requirements>dex:13</requirements>
+		<description>
+			<p><i>Prerequisite: Dexterity 13 or higher.</i></p>
+			<p class="indent">You become an expert in throwing weapons. When you make a ranged attack with a thrown weapon, you gain the following benefits:</p>
+			<ul>
+				<li>You can draw a weapon as part of the attack. If you have multiple attacks, you can draw a weapon for each attack.</li>
+				<li>You receive a +1 bonus to your attack and damage rolls, and you can use your Dexterity modifier for attack and damage rolls even if the weapon lacks the finesse property.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You can draw a weapon as part of the attack. If you have multiple attacks, you can draw a weapon for each attack. You receive a +1 bonus to your attack and damage rolls, and you can use your Dexterity modifier for attack and damage rolls even if the weapon lacks the finesse property.</description>
+		</sheet>
+	</element>
+
+	<element name="Lost Magic Studies" type="Feat" source="Tanares RPG 5e" id="ID_TRPG_FEAT_LOST_MAGIC_STUDIES">
+		<requirements>[type:spell]</requirements>
+		<description>
+			<p><i>Prerequisite: Spellcasting feature</i></p>
+			<p class="indent">A number of times equal to half your proficiency bonus (rounded up), you can apply one of the following effects to a spell you cast:</p>
+			<ul>
+				<li>Increase the spell save DC by 1.</li>
+				<li>You can cast the spell as if it were one level higher than the spell slot you used, provided that the spell allows it.</li>
+			</ul>
+			<p>You regain the use of this ability after finishing a long rest</p>
+		</description>
+		<sheet>
+			<description>A number of times equal to half your proficiency bonus (rounded up), you can apply one of the following effects to a spell you cast: Increase the spell save DC by 1. You can cast the spell as if it were one level higher than the spell slot you used, provided that the spell allows it. You regain the use of this ability after finishing a long rest.</description>
 		</sheet>
 	</element>
 
@@ -151,7 +228,7 @@
 		</sheet>
 	</element>
 
-		<element name="name" type="Feat" source="Tanares RPG 5e" id="ID_TRPG_FEAT_">
+	<element name="name" type="Feat" source="Tanares RPG 5e" id="ID_TRPG_FEAT_">
 		<description>
 			<p></p>
 		</description>
@@ -160,7 +237,7 @@
 		</sheet>
 	</element>
 
-		<element name="name" type="Feat" source="Tanares RPG 5e" id="ID_TRPG_FEAT_">
+	<element name="name" type="Feat" source="Tanares RPG 5e" id="ID_TRPG_FEAT_">
 		<description>
 			<p></p>
 		</description>
@@ -168,50 +245,13 @@
 			<description></description>
 		</sheet>
 	</element>
-
-		<element name="name" type="Feat" source="Tanares RPG 5e" id="ID_TRPG_FEAT_">
-		<description>
-			<p></p>
-		</description>
-		<sheet>
-			<description></description>
-		</sheet>
-	</element>
-
-		<element name="name" type="Feat" source="Tanares RPG 5e" id="ID_TRPG_FEAT_">
-		<description>
-			<p></p>
-		</description>
-		<sheet>
-			<description></description>
-		</sheet>
-	</element>
-
-		<element name="name" type="Feat" source="Tanares RPG 5e" id="ID_TRPG_FEAT_">
-		<description>
-			<p></p>
-		</description>
-		<sheet>
-			<description></description>
-		</sheet>
-	</element>
-
-		<element name="name" type="Feat" source="Tanares RPG 5e" id="ID_TRPG_FEAT_">
-		<description>
-			<p></p>
-		</description>
-		<sheet>
-			<description></description>
-		</sheet>
-	</element>
-
-		<element name="name" type="Feat" source="Tanares RPG 5e" id="ID_TRPG_FEAT_">
-		<description>
-			<p></p>
-		</description>
-		<sheet>
-			<description></description>
-		</sheet>
-	</element>
-
 </elements>
+
+<!--
+			<ul>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+
+			-->
