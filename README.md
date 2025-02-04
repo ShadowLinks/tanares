@@ -52,9 +52,9 @@ To Do:
         - Cultist
     - Warlock COMPLETED
         - Pact of the Dark Hunter
-    - Wizard
+    - Wizard COMPLETED
         - Lost Magic Researcher
-- New Backgrounds
+- New Backgrounds COMPLETED
     - Cartographer
     - Community Leader
     - Dragon Hunter
