@@ -1,0 +1,29 @@
+<elements>
+	<info>
+		<name>Tanares Dwarf</name>
+		<description>Optional Dwarf Trait from Tanares RPG 5e</description>
+		<author url="">Tanares RPG 5e</author>
+		<update version="0.0.1">
+			<file name="race-dwarf.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/race-dwarf.xml" />
+		</update>
+	</info>
+	<element name="Crusty Mind" type="Racial Trait" source="Tanares RPG 5e" id="ID_TRPG_RACIAL_TRAIT_CRUSTY_MIND">
+		<supports>optional-dwarf-trait</supports>
+		<description>
+			<p><i>Prerequisite: Dwarf</i></p>
+			<p>Your grumpy nature and natural weariness caused by the tragic past of your people made you careful and dedicated in your work but also distant to most people. You receive a -1 penalty on all your Charisma checks, but gain a +1 bonus on all your Wisdom checks.</p>
+		</description>
+		<sheet>
+			<description>You receive a -1 penalty on all your Charisma checks, but gain a +1 bonus on all your Wisdom checks.</description>
+		</sheet>
+		<rules>
+			<stat name="Charisma" value="-1" type="penalty" />
+			<stat name="Wisdom" value="1" type="bonus" />
+		</rules>
+	</element>
+	<append id="ID_SRD_RACE_DWARF">
+		<rules>
+			<select name="Optional Dwarf Trait" type="Racial Trait" supports="optional-dwarf-trait"/>
+		</rules>
+	</append> 
+</elements>

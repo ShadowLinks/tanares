@@ -4,7 +4,7 @@
 		<name>Tanares</name>
 		<description>Supplements from Tanares RPG 5E to expand your core gaming elements.</description>
 		<author url="https://dragorigames.com/">Dragori Games</author>
-		<update version="0.0.14">
+		<update version="0.0.15">
 			<file name="tanares.index" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/tanares.index" />
 		</update>
 	</info>
@@ -17,6 +17,7 @@
 		<file name="magical-mechanisms.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/magical-mechanisms.xml"/>
 		<file name="spells.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/spells.xml" />
 
+		<file name="race-dwarf.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/race-dwarf.xml" />
 		<file name="race-elf.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/race-elf.xml" />
 		<file name="race-dragonborn.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/race-dragonborn.xml" />
 		<file name="race-cirrus.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/race-cirrus.xml" />
