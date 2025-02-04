@@ -1,0 +1,78 @@
+
+<elements>
+    <info>
+        <name>Community Leader</name>
+        <description>Community Leader background</description>
+        <author urle="">Dragori Games</author>
+        <update version="0.0.1">
+            <file name="background-communityleader.xml" url="https://github.com/ShadowLinks/tanares/raw/refs/heads/main/backgrounds/backgrounds-communityleader.xml" />
+        </update>
+    </info>
+    <element name="Community Leader" type="Background" source="Tanares RPG 5e" id="ID_TRPG_BACKGROUND_COMMUNITY_LEADER">
+        <description>
+            <p>You are a natural leader, possessing a vision that inspires others to follow you. Whether you have built a community from scratch or have taken the helm of an existing one, your charisma and persuasiveness have earned the trust of the people under your care, and your leadership has brought about positive change.</p>
+            <p class="indent">You are a born leader, possessing an unyielding vision that ignites a flame of inspiration within those around you. Whether you have founded a community from the ground up or taken over the reins of an existing one, your determination have earned you the trust and loyalty of those under your guidance, leading to remarkable progress and positive transformation.</p>
+            <p class="indent">Your leadership is not without its challenges, however. Many obstacles and detractors will try to impede your efforts and undermine your influence. Yet, you stand tall, firmly believing in your convictions and knowing that the path to true success requires perseverance and courage. Will you rise to the occasion and guide your people towards a brighter future, or will you falter under the pressure and relinquish your leadership to others?</p>
+            <ul class="unstyled">
+                <li><strong>Skill Proficiencies:</strong> Insight, Persuasion</li>
+                <li><strong>Tool Proficiencies:</strong> </li>
+                <li><strong>Languages:</strong> Two of your choice</li>
+                <li><strong>Equipment:</strong> A quarterstaff, a symbol of your community, a set of common clothes and a pouch containing 15 gp.</li>
+            </ul>
+            <div element="ID_TRPG_BACKGROUND_FEATURE_CHERISHED_BY_THE_PEOPLE" />
+            <h5>SUGGESTED CHARACTERISTICS</h5>
+            <p>As a community leader, you feel a deep sense of responsibility towards those under your care. However, you may also have personal goals and ambitions that conflict with the needs of your community. You may struggle to balance the needs of the many against the desires of the few, but your sense of purpose and determination drive you to do what you believe is right, even in the face of opposition.</p>
+        </description>
+        <setters>
+            <set name="short">Insight, Persuasion, 2 languages</set>
+        </setters>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION"/>
+            <select type="Language" name="Language (Community Leader)" number="2" supports="Standard||Exotic"/>
+            <grant type="Background Feature" id="ID_TRPG_BACKGROUND_FEATURE_CHERISHED_BY_THE_PEOPLE" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+            <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+            <select type="List" name="Personality Trait" number="2">
+                <item id="1">I wish to spread the model I implemented in my community to the whole world and see all peoples thrive.</item>
+                <item id="2">I avoid answering personal questions, deflecting attention with a subtle smile or a sharp change of subject.</item>
+                <item id="3">I despise religious dogma and superstition, knowing they distract people from true potential and stifle progress.</item>
+                <item id="4">I see the world in shades of gray, always searching for balance in the face of opposing forces and clashing ideals.</item>
+                <item id="5">I always keep my word, knowing that trust is the foundation of all good relationships and key to effective leadership.</item>
+                <item id="6">I feel the weight of my past successes, knowing that I must surpass them. I think it is difficult to live up to my own shadow</item>
+            </select>
+            <select type="List" name="Ideal">
+                <item id="1">Equality. I stand up for the weak and the oppressed, fighting against tyranny and injustice. (Good)</item>
+                <item id="2">Charity. I seek out those in need and offer them aid. Any reward I receive from my work is to help them. (Good)</item>
+                <item id="3">Destiny. I am driven by the belief that I am destined for greatness, and nothing can stand in my way. (Any)</item>
+                <item id="4">Ambition. I know that people are like sheep, and I will be the shepherd, or I will be the wolf. (Evil)</item>
+                <item id="5">Revolution. The laws should serve the community, not the other way around. I will unite the people to stand against oppression. (Chaotic)</item>
+                <item id="6">Balance. I believe that good and evil are part of every person, and we must resist our urges and keep our conduct in check. (Neutral)</item>
+            </select>
+            <select type="List" name="Bond">
+                <item id="1">I believe my purpose is to protect the weak, so I ventured into the world, as my home town no longer needed me.</item>
+                <item id="2">I suffered a great injustice and never received any reparation for it. This reflects on who I am and who I choose to associate with.</item>
+                <item id="3">I seek a lost (or fugitive) relative, unfortunately with no idea of his or her whereabouts</item>
+                <item id="4">Helping a community feels great, but it will never compare to the love I felt… and lost.</item>
+                <item id="5">There is a secret reason for me to do all these things. No one must ever learn about it, and the chance that it might surface brings about the worst in me.</item>
+                <item id="6">I admire a great leader from the past and everything I did stemmed from this admiration.</item>
+            </select>
+            <select type="List" name="Flaw">
+                <item id="1">Greed. I'm too focused on counting every penny, and it's hard for me to part with my wealth, even when it's for the greater good.</item>
+                <item id="2">Trusting to a fault. I'm often betrayed or let down because I always assume the best of people and trust them too easily</item>
+                <item id="3">Obsession. I get too fixated on small issues or details, losing sight of the bigger picture and what's truly important.</item>
+                <item id="4">Comparative. I tend to compare everyone's struggles to my own, making it hard for me to understand or empathize with others.</item>
+                <item id="5">Arrogance. I can't help but abuse the gratitude of those I help, letting it go to my head and treating others poorly as a result.</item>
+                <item id="6">Rebel. I don't respect authority and treat everyone as equals, which often gets me in trouble and makes me seem insolent</item>
+            </select>
+        </rules>
+    </element>
+        <element name="Feature: Cherished by the People" type="Background Feature" source="Tanares RPG 5e" id="ID_TRPG_BACKGROUND_FEATURE_CHERISHED_BY_THE_PEOPLE">
+        <description>
+            <p>Your reputation precedes you as a respected leader who has earned the love and admiration of the people you serve. Those who consider you a leader are willing to follow your commands, provided that your actions align with their values and do not put them in harm’s way. Your status as a community leader also grants you access to resources, allies, and information that can aid you in your endeavors.</p>
+        </description>
+        <sheet alt="Cherished by the People">
+            <description>Your reputation precedes you as a respected leader who has earned the love and admiration of the people you serve. Those who consider you a leader are willing to follow your commands, provided that your actions align with their values and do not put them in harm’s way. Your status as a community leader also grants you access to resources, allies, and information that can aid you in your endeavors.</description>
+        </sheet>
+    </element>
+    
+</elements>
