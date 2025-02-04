@@ -63,6 +63,26 @@ To Do:
     - Penumbral Survivor
     - Undercover
 - New Feats
+    - Beyond Worlds
+    - Detective
+    - Focus Inclination
+    - Improved Ancestral Kemet Magic
+    - Life Saver
+    - Lightning Thrower
+    - Lost Magic Studies
+    - Master Defender
+    - Master of Beasts
+    - Mighty Impact
+    - Mighty Marksman
+    - Miraculous Brawler
+    - Potent Poison
+    - Power Shot
+    - Sense of Inspiration
+    - Sky Master
+    - Soul Connection
+    - Soulborn Ancestry
+    - Spycraft Mastery
+    - Swift Polearm
 - New Spells
 
 Additonal Optional features like Heroic Marks TBD
