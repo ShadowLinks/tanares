@@ -4,10 +4,10 @@ Index -  https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/t
 
 To Do:
 - Species
-    - Common Classic Species
-        - Dwarf [FEAT](https://github.com/ShadowLinks/tanares/issues/1)
-        - Elf Summer Spring Autumn Winter COMPLETED
-        - Dragonborn red/blue/white/green/black/gold COMPLETED
+    - Common Classic Species COMPLETED
+        - Dwarf
+        - Elf Summer Spring Autumn Winter
+        - Dragonborn red/blue/white/green/black/gold 
     - New Species
         - Cirrus COMPLETED
         - Soulborn COMPLETED
