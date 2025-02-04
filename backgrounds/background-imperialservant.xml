@@ -3,7 +3,7 @@
     <info>
         <name>Imperial Servant</name>
         <description>Imperial Servant background</description>
-        <author urle="">Dragori Games</author>
+        <author url="">Dragori Games</author>
         <update version="0.0.1">
             <file name="background-imperialservant.xml" url="https://github.com/ShadowLinks/tanares/raw/refs/heads/main/backgrounds/backgrounds-imperialservant.xml" />
         </update>

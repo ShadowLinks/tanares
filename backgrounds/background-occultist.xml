@@ -3,7 +3,7 @@
     <info>
         <name>Occultist</name>
         <description>Occultist background</description>
-        <author urle="">Dragori Games</author>
+        <author url="">Dragori Games</author>
         <update version="0.0.1">
             <file name="background-occultist.xml" url="https://github.com/ShadowLinks/tanares/raw/refs/heads/main/backgrounds/backgrounds-occultist.xml" />
         </update>

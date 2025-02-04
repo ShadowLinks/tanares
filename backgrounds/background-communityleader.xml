@@ -3,7 +3,7 @@
     <info>
         <name>Community Leader</name>
         <description>Community Leader background</description>
-        <author urle="">Dragori Games</author>
+        <author url="">Dragori Games</author>
         <update version="0.0.1">
             <file name="background-communityleader.xml" url="https://github.com/ShadowLinks/tanares/raw/refs/heads/main/backgrounds/backgrounds-communityleader.xml" />
         </update>

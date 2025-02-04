@@ -3,7 +3,7 @@
     <info>
         <name>Dragon Hunter</name>
         <description>Dragon Hunter background</description>
-        <author urle="">Dragori Games</author>
+        <author url="">Dragori Games</author>
         <update version="0.0.1">
             <file name="background-dragonhunter.xml" url="https://github.com/ShadowLinks/tanares/raw/refs/heads/main/backgrounds/backgrounds-dragonhunter.xml" />
         </update>
