@@ -42,13 +42,13 @@
 		<file name="warlock-darkhunter.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/subclasses/warlock-darkhunter.xml" />
 		<file name="wizard-lostmagicresearcher.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/subclasses/wizard-lostmagicresearcher.xml" />
 
-		<file name="background-undercover.xml" url="https://github.com/ShadowLinks/tanares/raw/refs/heads/main/backgrounds/backgrounds-undercover.xml" />
-		<file name="background-penumbralsurvivor.xml" url="https://github.com/ShadowLinks/tanares/raw/refs/heads/main/backgrounds/backgrounds-penumbralsurvivor.xml" />
-		<file name="background-occultist.xml" url="https://github.com/ShadowLinks/tanares/raw/refs/heads/main/backgrounds/backgrounds-occultist.xml" />
-		<file name="background-imperialservant.xml" url="https://github.com/ShadowLinks/tanares/raw/refs/heads/main/backgrounds/backgrounds-imperialservant.xml" />
-		<file name="background-dragonhunter.xml" url="https://github.com/ShadowLinks/tanares/raw/refs/heads/main/backgrounds/backgrounds-dragonhunter.xml" />
-		<file name="background-communityleader.xml" url="https://github.com/ShadowLinks/tanares/raw/refs/heads/main/backgrounds/backgrounds-communityleader.xml" />
-		<file name="background-cartographer.xml" url="https://github.com/ShadowLinks/tanares/raw/refs/heads/main/backgrounds/backgrounds-cartographer.xml" />
+		<file name="background-undercover.xml" url="https://github.com/ShadowLinks/tanares/raw/refs/heads/main/backgrounds/background-undercover.xml" />
+		<file name="background-penumbralsurvivor.xml" url="https://github.com/ShadowLinks/tanares/raw/refs/heads/main/backgrounds/background-penumbralsurvivor.xml" />
+		<file name="background-occultist.xml" url="https://github.com/ShadowLinks/tanares/raw/refs/heads/main/backgrounds/background-occultist.xml" />
+		<file name="background-imperialservant.xml" url="https://github.com/ShadowLinks/tanares/raw/refs/heads/main/backgrounds/background-imperialservant.xml" />
+		<file name="background-dragonhunter.xml" url="https://github.com/ShadowLinks/tanares/raw/refs/heads/main/backgrounds/background-dragonhunter.xml" />
+		<file name="background-communityleader.xml" url="https://github.com/ShadowLinks/tanares/raw/refs/heads/main/backgrounds/background-communityleader.xml" />
+		<file name="background-cartographer.xml" url="https://github.com/ShadowLinks/tanares/raw/refs/heads/main/backgrounds/background-cartographer.xml" />
 
 	</files>
 </index>
