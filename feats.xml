@@ -8,5 +8,210 @@
 			<file name="feats.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/feats.xml" />
 		</update>
 	</info>
+	<element name="Beyond Words" type="Feat" source="Tanares RPG 5e" id="ID_TRPG_FEAT_BEYOND_WORDS">
+		<requirements>ID_PROFICIENCY_SKILL_INSIGHT</requirements>
+		<description>
+			<p>You become a master at reading body language and using that knowledge in social interactions. You gain the following benefits:</p>
+			<ul>
+				<li>Increase your Charisma or Wisdom score by 1, up to a maximum of 20</li>
+				<li>After interacting with a creature for at least 1 minute, you have advantage on all Charisma ability checks when interacting with that creature for the next 24 hours.</li>
+				<li>After interacting with a creature for at least 1 minute, you know its Intelligence, Wisdom, and Charisma scores and what skills, if any, the creature is proficient in for those abilities.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>After interacting with a creature for at least 1 minute, you have advantage on all Charisma ability checks when interacting with that creature for the next 24 hours. After interacting with a creature for at least 1 minute, you know its Intelligence, Wisdom, and Charisma scores and what skills, if any, the creature is proficient in for those abilities.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Beyond Words" supports="ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_CHARISMA"/>
+		</rules>
+	</element>
+
+		<element name="Detective" type="Feat" source="Tanares RPG 5e" id="ID_TRPG_FEAT_DETECTIVE">
+		<description>
+			<p>You notice details that few others would take into account. Your training and focus on solving crimes and mysteries have sharpened your perception and reasoning around you beyond normal limits. You gain the following benefits:</p>
+		<ul>
+			<li>Increase your Intelligence or Wisdom score by 1, up to a maximum of 20</li>
+			<li>You have advantage on Wisdom (Perception), Wisdom (Insight), and Intelligence (Investigation) checks when investigating a crime or mystery.</li>
+			<li>When examining a crime scene with a dead body for at least 10 minutes, you can determine the cause of death and estimate how long the creature has been dead. You can also tell if the creature died in a fight and if the location where the body is found was the site of death.</li>
+		</ul>
+		</description>
+		<sheet>
+			<description>You have advantage on Wisdom (Perception), Wisdom (Insight), and Intelligence (Investigation) checks when investigating a crime or mystery. When examining a crime scene with a dead body for at least 10 minutes, you can determine the cause of death and estimate how long the creature has been dead. You can also tell if the creature died in a fight and if the location where the body is found was the site of death.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Detective" supports="ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_INTELLIGENCE"/>
+		</rules>
+	</element>
+
+		<element name="name" type="Feat" source="Tanares RPG 5e" id="ID_TRPG_FEAT_">
+		<description>
+			<p></p>
+		</description>
+		<sheet>
+			<description></description>
+		</sheet>
+	</element>
+
+		<element name="name" type="Feat" source="Tanares RPG 5e" id="ID_TRPG_FEAT_">
+		<description>
+			<p></p>
+		</description>
+		<sheet>
+			<description></description>
+		</sheet>
+	</element>
+
+		<element name="name" type="Feat" source="Tanares RPG 5e" id="ID_TRPG_FEAT_">
+		<description>
+			<p></p>
+		</description>
+		<sheet>
+			<description></description>
+		</sheet>
+	</element>
+
+		<element name="name" type="Feat" source="Tanares RPG 5e" id="ID_TRPG_FEAT_">
+		<description>
+			<p></p>
+		</description>
+		<sheet>
+			<description></description>
+		</sheet>
+	</element>
+
+		<element name="name" type="Feat" source="Tanares RPG 5e" id="ID_TRPG_FEAT_">
+		<description>
+			<p></p>
+		</description>
+		<sheet>
+			<description></description>
+		</sheet>
+	</element>
+
+		<element name="name" type="Feat" source="Tanares RPG 5e" id="ID_TRPG_FEAT_">
+		<description>
+			<p></p>
+		</description>
+		<sheet>
+			<description></description>
+		</sheet>
+	</element>
+
+		<element name="name" type="Feat" source="Tanares RPG 5e" id="ID_TRPG_FEAT_">
+		<description>
+			<p></p>
+		</description>
+		<sheet>
+			<description></description>
+		</sheet>
+	</element>
+
+		<element name="name" type="Feat" source="Tanares RPG 5e" id="ID_TRPG_FEAT_">
+		<description>
+			<p></p>
+		</description>
+		<sheet>
+			<description></description>
+		</sheet>
+	</element>
+
+		<element name="name" type="Feat" source="Tanares RPG 5e" id="ID_TRPG_FEAT_">
+		<description>
+			<p></p>
+		</description>
+		<sheet>
+			<description></description>
+		</sheet>
+	</element>
+
+		<element name="name" type="Feat" source="Tanares RPG 5e" id="ID_TRPG_FEAT_">
+		<description>
+			<p></p>
+		</description>
+		<sheet>
+			<description></description>
+		</sheet>
+	</element>
+
+		<element name="name" type="Feat" source="Tanares RPG 5e" id="ID_TRPG_FEAT_">
+		<description>
+			<p></p>
+		</description>
+		<sheet>
+			<description></description>
+		</sheet>
+	</element>
+
+		<element name="name" type="Feat" source="Tanares RPG 5e" id="ID_TRPG_FEAT_">
+		<description>
+			<p></p>
+		</description>
+		<sheet>
+			<description></description>
+		</sheet>
+	</element>
+
+		<element name="name" type="Feat" source="Tanares RPG 5e" id="ID_TRPG_FEAT_">
+		<description>
+			<p></p>
+		</description>
+		<sheet>
+			<description></description>
+		</sheet>
+	</element>
+
+		<element name="name" type="Feat" source="Tanares RPG 5e" id="ID_TRPG_FEAT_">
+		<description>
+			<p></p>
+		</description>
+		<sheet>
+			<description></description>
+		</sheet>
+	</element>
+
+		<element name="name" type="Feat" source="Tanares RPG 5e" id="ID_TRPG_FEAT_">
+		<description>
+			<p></p>
+		</description>
+		<sheet>
+			<description></description>
+		</sheet>
+	</element>
+
+		<element name="name" type="Feat" source="Tanares RPG 5e" id="ID_TRPG_FEAT_">
+		<description>
+			<p></p>
+		</description>
+		<sheet>
+			<description></description>
+		</sheet>
+	</element>
+
+		<element name="name" type="Feat" source="Tanares RPG 5e" id="ID_TRPG_FEAT_">
+		<description>
+			<p></p>
+		</description>
+		<sheet>
+			<description></description>
+		</sheet>
+	</element>
+
+		<element name="name" type="Feat" source="Tanares RPG 5e" id="ID_TRPG_FEAT_">
+		<description>
+			<p></p>
+		</description>
+		<sheet>
+			<description></description>
+		</sheet>
+	</element>
+
+		<element name="name" type="Feat" source="Tanares RPG 5e" id="ID_TRPG_FEAT_">
+		<description>
+			<p></p>
+		</description>
+		<sheet>
+			<description></description>
+		</sheet>
+	</element>
 
 </elements>
