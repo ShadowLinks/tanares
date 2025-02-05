@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+    <info>
+        <name></name>
+        <description>Mage Simplified Class from Tanares RPG 5e</description>
+        <author url="">Tanares RPG 5e</author>
+        <update version="0.0.1">
+            <file name="class-mage.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/classes/class-mage.xml" />
+        </update>
+    </info>
+    <element name="Mage" type="Class" source="Tanares RPG 5e" id="ID_TRPG_CLASS_MAGE">
+        <description>
+            <p>Mages are simplified wizards. They are ideal for new players who are looking for less complexity or to create a more straightforward character without sacrificing effectiveness during play.</p>
+            <h4>MAGES</h4>
+            <p>Mages are spellcasters of unparalleled talent, known for their skilled and practical approach to magic. With logical minds and sharp intellects, they focus their efforts on refining a select few incantations, honing their control until each one shines like a work of art. Their mastery of magic allows them to wield their powers with effortless precision, pursuing their individual goals with unwavering determination.</p>
+            <p class="indent">In addition to their exceptional abilities, mages are also down-to-earth in their approach to life. They indulge in life’s finer things, savoring rich cuisine and rare wines, but view the world with a utilitarian perspective, seeking success in all aspects, not just in magical prowess. They have a fondness for order and prefer tidy spaces, well-groomed attire, and everything in its proper place.</p>
+            <p class="indent">Though not naturally charismatic, mages often play the role of hidden masterminds behind successful adventuring parties. Using their strategic thinking and practicality, they guide their companions to victory from behind the scenes, seeing themselves as the driving force behind any enture’s success. They are self-assured, their confidence matched only by their exceptional abilities.</p>
+            <p class="indent">Mages aspire to high-status positions, but prefer roles that require technical and practical work over those that involve more political or theoretical routine. With their practicality, mastery of magic, and appreciation for life’s indulgences, mages are truly one-of-a-kind spellcasters, always turning their knowledge into mastery. Their logical and organized nature only adds to their unparalleled virtuosity in magic.</p>
+            <p class="indent">You can’t multiclass into Simplified Classes, or multiclass if you are a Simplified Class.</p>
+
+            <h4>HOW TO PLAY WITH A MAGE</h4>
+            <p></p>
+            <p class="indent">For those players who relish commanding the battlefield with devastating spells, the mage class emerges as a compelling choice. A streamlined version of the wizard, mages wield arcane power, which they can evolve into awe-inspiring spells as they advance in levels. This arcane mastery empowers mages to turn the tides in various combat situations.</p>
+            <p class="indent">From the first level, mages tap into their magical prowess to deal reliable damage with spells like magic missile—an attack that opponents cannot evade. They can also detect concealed magical elements in their environment using detect magic, providing valuable insights during exploration.</p>
+            <p class="indent">Mages might not boast the sturdiest of defenses, but they flourish in a ranged combat role, dealing devastating damage from a safe distance. This class needs protection from allies, allowing mages to focus on unleashing their potent offensive capabilities. As they progress, mages unlock even more destructive spells like disintegrate and meteor swarm, ontinually enhancing their damage output.</p>
+            <p class="indent">The mage’s arsenal also includes protective and utility spells such as stoneskin and fly, offering resilience in combat and mobility. They can even assist their party during exploration or emergency exits with spells like teleport, making them a boon both in and out of combat scenarios.</p>
+            <p class="indent">Mages excel in providing consistent damage in combat while simultaneously offering valuable defensive and utility abilities.</p>
+            <p class="indent">In conclusion, the mage class is a fantastic choice for players eager to specialize in dealing damage with offensive spells. Their access to a potent spell repertoire, combined with handy utility abilities, makes them a multifaceted and indispensable asset to any adventuring party.</p>
+            <h2>CLASS FEATURES</h2>
+            <p>As an mage, you gain the following class features.</p>
+            <h5 class="caption">HIT POINTS</h5>
+            <ul class="unstyled">
+                <li><strong>Hit Dice:</strong> 1d6 per mage level</li>
+                <li><strong>Hit Points at 1st Level:</strong> 6 + your Constitution modifier</li>
+                <li><strong>Hit Points at Higher Levels:</strong> 1d6 (or 4) + your Constitution modifier per mage level after 1st</li>
+            </ul>
+            <h5 class="caption">PROFICIENCIES</h5>
+            <ul class="unstyled mb">
+                <li><strong>Armor:</strong> None</li>
+                <li><strong>Weapons:</strong> Daggers, darts, slings, staffs, light crossbows</li>
+                <li><strong>Tools:</strong> None</li>
+            </ul>
+            <ul class="unstyled">
+                <li><strong>Saving Throws:</strong> Intelligence, Wisdom</li>
+                <li><strong>Skills:</strong> Choose two from Arcana, History, Insight,
+Investigation, Medicine, and Religion</li>
+            </ul>
+            <h5 class="caption">EQUIPMENT</h5>
+            <p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+            <ul>
+                <li>(a) a quarterstaff or (b) a dagger</li>
+                <li>(a) a component pouch or (b) an arcane focus</li>
+                <li>(a) a scholar’s pack or (b) an explorer’s pack</li>
+               
+            </ul>
+            <!-- class table here -->
+            <h5 class="caption">THE MAGE</h5>
+            <table class="class-features">
+                <thead>
+                    <tr><td class="col-5">Level</td><td class="col-10">Proficiency Bonus</td><td class="col-60 left">Features</td></tr>
+                </thead>
+                <tr><td> 1st</td><td>+2</td><td class="left">Simplified Spellcasting (Detect Magic, Magic Missle), Specific Cantrips (2)14</td></tr>
+                <tr><td> 2nd</td><td>+2</td><td class="left">Experience, Arcane Protection</td></tr>
+                <tr><td> 3rd</td><td>+2</td><td class="left">SS (Invisibility, Scorching Ray), Specific Cantrips (3)</td></tr>
+                <tr><td> 4th</td><td>+2</td><td class="left">Ability Score Improvement</td></tr>
+                <tr><td> 5th</td><td>+3</td><td class="left">SS (Fireball, Fly) </td></tr>
+                <tr><td> 6th</td><td>+3</td><td class="left">Arcane Mastery</td></tr>
+                <tr><td> 7th</td><td>+3</td><td class="left">SS (Dimension Door, Stone Skin) </td></tr>
+                <tr><td> 8th</td><td>+3</td><td class="left">Ability Score Improvement</td></tr>
+                <tr><td> 9th</td><td>+4</td><td class="left">SS (Cone of Cold, Wall of Force) </td></tr>
+                <tr><td>10th</td><td>+4</td><td class="left">Experience</td></tr>
+                <tr><td>11th</td><td>+4</td><td class="left">SS (Chain Lightning, disintegrate)</td></tr>
+                <tr><td>12th</td><td>+4</td><td class="left">Ability Score Improvement</td></tr>
+                <tr><td>13th</td><td>+5</td><td class="left">SS (Teleport)</td></tr>
+                <tr><td>14th</td><td>+5</td><td class="left">Arcane Mastery Improvement</td></tr>
+                <tr><td>15th</td><td>+5</td><td class="left">SS (Antimagic Field) </td></tr>
+                <tr><td>16th</td><td>+5</td><td class="left">Ability Score Improvement</td></tr>
+                <tr><td>17th</td><td>+6</td><td class="left">SS (Meteor Swarm)</td></tr>
+                <tr><td>18th</td><td>+6</td><td class="left">Arcane Protection Improvement, Experience</td></tr>
+                <tr><td>19th</td><td>+6</td><td class="left">Ability Score Improvement</td></tr>
+                <tr><td>20th</td><td>+6</td><td class="left">Signature Spells</td></tr>
+            </table>
+            <div element="ID_TRPG_CLASS_FEATURE_MAGE_SIMPLIFIED_SPELLCASTING" />
+            <div element="ID_TRPG_CLASS_FEATURE_MAGE_SPECIFIC_CANTRIPS" />
+            <div element="ID_TRPG_CLASS_FEATURE_MAGE_EXPERIENCE" />
+            <div element="ID_TRPG_CLASS_FEATURE_MAGE_ARCANE_PROTECTION" />
+            <div element="ID_TRPG_CLASS_FEATURE_MAGE_ASI" />
+            <div element="ID_TRPG_CLASS_FEATURE_MAGE_ARCANE_MASTERY" />
+            <div element="ID_TRPG_CLASS_FEATURE_MAGE_SIGNATURE_SPELLS" />
+        </description>
+        <setters>
+            <set name="hd">d6</set>
+        </setters>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_QUARTERSTAFF" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_DART" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SLING" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_LIGHT" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" />
+            <select type="Proficiency" name="Skill Proficiency (Mage)" number="2" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_RELIGION" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_MAGE_SIMPLIFIED_SPELLCASTING" level="1" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_MAGE_SPECIFIC_CANTRIPS" level="1" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_MAGE_EXPERIENCE" level="2" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_MAGE_ARCANE_PROTECTION" level="2" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_MAGE_ASI" level="4" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_MAGE_ARCANE_MASTERY" level="6" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_MAGE_SIGNATURE_SPELLS" level="20" />
+
+        </rules>
+    </element>
+    <element name="Simplified Spellcasting" type="Class Feature" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_MAGE_SIMPLIFIED_SPELLCASTING">
+        <description>
+            <p>Unlike more complex classes, as a mage, your spells are predetermined by your class and you can cast each of them twice per day. Follow the Mage Spells table to know which spells you know and when you will have access to them.</p>
+            <p class="indent">Intelligence is your spellcasting ability for your mage spells, since you learn your spells through study. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting a saving throw DC for a mage spell you cast and when making an attack roll with one.</p>
+            <center>
+                <p><strong>Spell save DC</strong>= 8 + your proficiency bonus + your Intelligence modifier </p>
+                <p><strong>Spell attack modifier</strong>= your proficiency bonus + your Intelligence modifier</p>
+            </center>
+            <p class="indent">Some spells can be cast using spell slots of a higher level, making their effects more powerful. If you have a spell that can be cast on a higher level, you an use another spell of higher level in place of it to cast that spell on a higher level. The level of the spell you spent will determine the level the spell was effectively cast.</p>
+            <p class="indent">You can use an arcane focus or a component pouch as a focus for your spells.</p>
+        </description>
+        <sheet>
+            <description>You can cast each spell twice per day. Upcasting uses the higher level spell slot from one of your spells. You can use a Component Pouch or Arcane Focus as a focus for your spells.</description>
+        </sheet>
+        <spellcasting name="Mage" ability="Intelligence" prepare="false" />
+        <rules>
+            <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_FULL" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
+            <grant type="Grants" id="ID_INTERNAL_RITUAL_CASTING"/>
+            <grant type="Proficiency" id="ID_INTERNAL_SPELLFOCUS_GROUP_ARCANE_FOCUS"/>
+            <stat name="mage:spellcasting:slots:1" value="4" level="1"/>
+            <stat name="mage:spellcasting:slots:2" value="4" level="3"/>
+            <stat name="mage:spellcasting:slots:3" value="4" level="5"/>
+            <stat name="mage:spellcasting:slots:4" value="4" level="7"/>
+            <stat name="mage:spellcasting:slots:5" value="4" level="9"/>
+            <stat name="mage:spellcasting:slots:6" value="4" level="11"/>
+            <stat name="mage:spellcasting:slots:7" value="2" level="13"/>
+            <stat name="mage:spellcasting:slots:8" value="2" level="15"/>
+            <stat name="mage:spellcasting:slots:9" value="2" level="17"/>
+
+            <grant type="Spell" id="ID_PHB_SPELL_DETECT_MAGIC" level="1" spellcasting="Mage"/>
+            <grant type="Spell" id="ID_PHB_SPELL_MAGIC_MISSILE" level="1" spellcasting="Mage"/>
+            <grant type="Spell" id="ID_PHB_SPELL_INVISIBILITY" level="3" spellcasting="Mage"/>
+            <grant type="Spell" id="ID_PHB_SPELL_SCORCHING_RAY" level="3" spellcasting="Mage"/>
+            <grant type="Spell" id="ID_PHB_SPELL_FIREBALL" level="5" spellcasting="Mage"/>
+            <grant type="Spell" id="ID_PHB_SPELL_FLY" level="5" spellcasting="Mage"/>
+            <grant type="Spell" id="ID_PHB_SPELL_DIMENSION_DOOR" level="7" spellcasting="Mage"/>
+            <grant type="Spell" id="ID_PHB_SPELL_STONESKIN" level="7" spellcasting="Mage"/>
+            <grant type="Spell" id="ID_PHB_SPELL_CONE_OF_COLD" level="9" spellcasting="Mage"/>
+            <grant type="Spell" id="ID_PHB_SPELL_WALL_OF_FORCE" level="9" spellcasting="Mage"/>
+            <grant type="Spell" id="ID_PHB_SPELL_CHAIN_LIGHTNING" level="11" spellcasting="Mage"/>
+            <grant type="Spell" id="ID_PHB_SPELL_DISINTEGRATE" level="11" spellcasting="Mage"/>
+            <grant type="Spell" id="ID_PHB_SPELL_TELEPORT" level="13" spellcasting="Mage"/>
+            <grant type="Spell" id="ID_PHB_SPELL_ANTIMAGIC_FIELD" level="15" spellcasting="Mage"/>
+            <grant type="Spell" id="ID_PHB_SPELL_METEOR_SWARM" level="17" spellcasting="Mage"/>
+        </rules>
+    </element>
+    <element name="Specific Cantrips" type="Class Feature" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_MAGE_SPECIFIC_CANTRIPS">
+        <description>
+            <p>At 1st level, you know two cantrips: fire bolt and light. At 3rd level, you learn one more cantrip, mage hand.</p>
+        </description>
+        <sheet>
+            <description>At 1st level, you know two cantrips: fire bolt and light. At 3rd level, you learn one more cantrip, mage hand.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_FIRE_BOLT" level="1" spellcasting="Mage"/>
+            <grant type="Spell" id="ID_PHB_SPELL_LIGHT" level="1" spellcasting="Mage"/>
+            <grant type="Spell" id="ID_PHB_SPELL_MAGE_HAND" level="3" spellcasting="Mage"/>
+        </rules>
+    </element>
+    <element name="Experience" type="Class Feature" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_MAGE_EXPERIENCE">
+       <description>
+            <p>Your experience grants you certain practical knowledge. At 2nd level, and again when you reach 10th and 18th level, you gain proficiency in a skill of your choice</p>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Proficiency" supports="Skill" level="2" />
+            <select type="Proficiency" supports="Skill" level="10" />
+            <select type="Proficiency" supports="Skill" level="18" />
+        </rules>
+    </element>
+    <element name="Arcane Protection" type="Class Feature" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_MAGE_ARCANE_PROTECTION">
+        <description>
+            <p>The arcane magic that runs around you grants you extra protection. Starting at 2nd level, your AC is 13 + your Dexterity modifier while you are wearing no armor. At 18th level, it becomes 15 + your Dexterity modifier.</p>
+        </description>
+        <sheet>
+            <description>The arcane magic that runs around you grants you extra protection. Starting at 2nd level, your AC is 13 + your Dexterity modifier while you are wearing no armor. At 18th level, it becomes 15 + your Dexterity modifier.</description>
+        </sheet>
+        <rules>
+            <stat name="ac:arcane protection:base" value="13"/>
+            <stat name="ac:arcane protection:dexterity" value="dexterity:modifier"/>
+            <stat name="ac:arcane protection" value="ac:arcane protection:base"/>
+            <stat name="ac:arcane protection" value="ac:arcane protection:dexterity"/>
+            <stat name="ac:calculation" value="ac:arcane protection" bonus="calculation" equipped="[armor:none]" alt="Arcane Protection (Mage)"/>
+            <stat name="ac:arcane protection" value="2" level="18"/>
+        </rules>
+    </element>
+    <element name="Ability Score Improvement" type="Class Feature" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_MAGE_ASI">
+        <description>
+            <p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Improvement Option (Mage 4)" supports="Improvement Option,Mage,4" level="4"/>
+            <select type="Class Feature" name="Improvement Option (Mage 8)" supports="Improvement Option,Mage,8" level="8"/>
+            <select type="Class Feature" name="Improvement Option (Mage 12)" supports="Improvement Option,Mage,12" level="12"/>
+            <select type="Class Feature" name="Improvement Option (Mage 16)" supports="Improvement Option,Mage,16" level="16"/>
+            <select type="Class Feature" name="Improvement Option (Mage 19)" supports="Improvement Option,Mage,19" level="19"/>
+        </rules>
+    </element>
+    <element name="Arcane Mastery" type="Class Feature" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_MAGE_ARCANE_MASTERY">
+        <description>
+            <p>Starting at 6th level, you gain a +1 bonus to your spell attack modifier and your spell save DC. This bonus increases to +2 when you reach the 14th level in this class</p>
+        </description>
+        <sheet>
+            <description>Starting at 6th level, you gain a +1 bonus to your spell attack modifier and your spell save DC. This bonus increases to +2 when you reach the 14th level in this class</description>
+        </sheet>
+        <rules>
+            <stat name="spellcasting:attack" value="1" level="6" />
+            <stat name="spellcasting:dc" value="1" level="6" />
+            <stat name="spellcasting:attack" value="1" level="14" />
+            <stat name="spellcasting:dc" value="1" level="14" />
+        </rules>
+    </element>
+    <element name="Signature Spells" type="Class Feature" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_MAGE_SIGNATURE_SPELLS">
+        <description>
+            <p>When you reach 20th level, you gain mastery over two powerful spells and can cast them with little effort. Choose two of your spells of 3rd level or lower. You have an additional use for each of these spells, and you regain those additional uses after a short or long rest.</p>
+            <p class="indent">You can’t use the extra castings of these spells in any other way except to cast them as normal (you can’t use these spells to cast another spell at a higher level, or to activate any ability, item or effect).</p>
+        </description>
+        <sheet>
+            <description>When you reach 20th level, you gain mastery over two powerful spells and can cast them with little effort. Choose two of your spells of 3rd level or lower. You have an additional use for each of these spells, and you regain those additional uses after a short or long rest. You can’t use the extra castings of these spells in any other way except to cast them as normal (you can’t use these spells to cast another spell at a higher level, or to activate any ability, item or effect).</description>
+        </sheet>
+    </element>
+</elements>

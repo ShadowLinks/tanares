@@ -51,5 +51,6 @@
 		<file name="background-cartographer.xml" url="https://github.com/ShadowLinks/tanares/raw/refs/heads/main/backgrounds/background-cartographer.xml" />
 
 		<file name="class-brawler.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/classes/class-brawler.xml" />
+		<file name="class-mage.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/classes/class-mage.xml" />
 	</files>
 </index>
