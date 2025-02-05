@@ -59,7 +59,7 @@ Investigation, Medicine, and Religion</li>
                 <thead>
                     <tr><td class="col-5">Level</td><td class="col-10">Proficiency Bonus</td><td class="col-60 left">Features</td></tr>
                 </thead>
-                <tr><td> 1st</td><td>+2</td><td class="left">Simplified Spellcasting (Detect Magic, Magic Missle), Specific Cantrips (2)14</td></tr>
+                <tr><td> 1st</td><td>+2</td><td class="left">Simplified Spellcasting (Detect Magic, Magic Missle), Specific Cantrips (2)</td></tr>
                 <tr><td> 2nd</td><td>+2</td><td class="left">Experience, Arcane Protection</td></tr>
                 <tr><td> 3rd</td><td>+2</td><td class="left">SS (Invisibility, Scorching Ray), Specific Cantrips (3)</td></tr>
                 <tr><td> 4th</td><td>+2</td><td class="left">Ability Score Improvement</td></tr>
@@ -126,8 +126,7 @@ Investigation, Medicine, and Religion</li>
         </sheet>
         <spellcasting name="Mage" ability="Intelligence" prepare="false" />
         <rules>
-            <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_FULL" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
-            <grant type="Grants" id="ID_INTERNAL_RITUAL_CASTING"/>
+            
             <grant type="Proficiency" id="ID_INTERNAL_SPELLFOCUS_GROUP_ARCANE_FOCUS"/>
             <stat name="mage:spellcasting:slots:1" value="4" level="1"/>
             <stat name="mage:spellcasting:slots:2" value="4" level="3"/>
