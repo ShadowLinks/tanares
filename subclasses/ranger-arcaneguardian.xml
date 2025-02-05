@@ -46,8 +46,8 @@
             <description>You have access to the wizard spell list and 2 spells specifically from the wizard list, which can be changed on level up.</description>
         </sheet>
         <rules>
-        <!-- currently does not give you the correct spell level selection-->
-            <select type="Spell" name="Spells (Arcane Guardian)" supports="Wizard,$(spellcasting:slots)" level="3" number="2" spellcasting="Ranger"/>
+       
+            <select type="Spell" name="Spells (Arcane Guardian)" supports="Wizard, $(spellcasting:slots)" level="3" number="2" spellcasting="Ranger"/>
         </rules>
     </element>
     <element name="Arcane Education" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_RANGER_ARCANE_GUARDIAN_ARCANE_EDUCATION">
