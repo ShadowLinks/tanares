@@ -62,7 +62,7 @@ To Do:
     - Occultist
     - Penumbral Survivor
     - Undercover
-- New Feats
+- New Feats COMPLETED
     - Beyond Worlds
     - Detective
     - Focus Inclination
