@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+    <info>
+        <name></name>
+        <description>Brawler Simplified Class from Tanares RPG 5e</description>
+        <author url="">Tanares RPG 5e</author>
+        <update version="0.0.1">
+            <file name="class-brawler.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/classes/class-brawler.xml" />
+        </update>
+    </info>
+    <element name="Brawler" type="Class" source="Tanares RPG 5e" id="ID_TRPG_CLASS_BRAWLER">
+        <description>
+            <p>Brawlers are simplified barbarians. They are ideal for new players who are looking for less complexity or to create a more straightforward character without sacrificing effectiveness during play</p>
+            <h4>Brawler</h4>
+            <p>Brawlers are warriors from remote tribal communities renowned for their immense strength and unwavering spirit. Drawing on a connection to the earth and their ancestral heritage, they harness a primal power that fuels their ferocity in combat. Unlike traditional barbarians, brawlers don’t rely on rage, but rather on their raw physicality and brute strength to overcome any obstacle.</p>
+            <p class="indent">Armed with massive two-handed weapons, they unleash devastating blows on their foes, leaving a trail of destruction. Although fearsome, most brawlers have good hearts and hold their tribe and elders in high regard. Proud of their heritage, they will go to great lengths to protect or bring honor to their people. Brawlers often join adventurers to make a name for themselves and defend their tribes from harm. With their indomitable spirit and earth-shattering strength, they are a formidable presence on the battlefield, leaving their mark and making their tribe proud.</p>
+            <p class="indent">You can’t multiclass into Simplified Classes, or multiclass if you are a Simplified Class.</p>
+            <h4>How to play with a Brawler</h4>
+            <p>The brawler class is an excellent choice for players who want to excel in the combats they and their allies will be engaged in, either dealing massive amounts of damage or resisting the damage that would be inflicted on their allies</p>
+            <p class="indent">As a stripped-down version of a barbarian, brawlers possess a unique set of combat-focused skills that become increasingly powerful as they level up, making them some of the best melee combatants in the entire game.</p>
+            <p class="indent">At level one, brawlers’ ability to withstand damage surpasses that of any other class, making them incredibly difficult to take down in a fight.</p>
+            <p class="indent">This allows for a more aggressive approach to combat tactics, as combatants have a greater chance of surviving and emerging victorious from any altercation. Thus, brawlers make excellent tanks or brutes.</p>
+            <p class="indent">As brawlers level up, they gain access to a variety of skills that further increase their ability to deal damage (Extra Attack and Deadly features), accuracy (Hit the Mark feature), and mobility (Powerful Legs feature). This allows them to take down enemies more efficiently while maintaining their consistency, reliability and power in terms of damage, as well as being able to better deal with ranged attacks such as from archers and/or spellcasters.</p>
+            <p class="indent">Additionally, the Resilient feature amplifies their resilience to punishment, making them even harder to take down in combat, granting bonuses to the Constitution saving throws they must make.</p>
+            <p class="indent">It’s worth noting that while brawlers are incredibly proficient in combat, they’re not limited to that aspect of the game. The Experience feature allows players to gain experience in areas beyond combat, allowing them to create more well-rounded characters.</p>
+            <p class="indent">For example, players can choose to develop soft skills such as Deception, Intimidation, Performance, and Persuasion, or opt for intellectual skills such as Arcana, History, and Religion. By doing so, they can improve their characters’ playability without interfering with their strength or resilience.</p>
+            <p class="indent">In summary, the brawler class offers players a unique playstyle that allows them to excel in combat, while also providing the opportunity to develop skills beyond the battlefield. With the right mix of skills and abilities, brawlers can become a formidable force in any gaming scenario.</p>
+            <h2>CLASS FEATURES</h2>
+            <p>As Brawler, you gain the following class features.</p>
+            <h5 class="caption">HIT POINTS</h5>
+            <ul class="unstyled">
+                <li><strong>Hit Dice:</strong> 1d12 per brawler level</li>
+                <li><strong>Hit Points at 1st Level:</strong> 12 + your Constitution modifier</li>
+                <li><strong>Hit Points at Higher Levels:</strong> 1d12 (or 7) + your Constitution modifier per brawler level after 1st</li>
+            </ul>
+            <h5 class="caption">PROFICIENCIES</h5>
+            <ul class="unstyled mb">
+                <li><strong>Armor:</strong> light armor, medium armor, shields</li>
+                <li><strong>Weapons:</strong> simple weapons, martial weapons</li>
+                <li><strong>Tools:</strong> None</li>
+            </ul>
+            <ul class="unstyled">
+                <li><strong>Saving Throws:</strong> Strength, Constitution</li>
+                <li><strong>Skills:</strong> Choose two from Animal Handling, Athletics, Intimidation, Nature, Perception, and Survival</li>
+            </ul>
+            <h5 class="caption">EQUIPMENT</h5>
+            <p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+            <ul>
+                <li>(a) a greataxe or (b) any martial melee weapon</li>
+                <li>(a) two handaxes or (b) any simple weapon</li>
+                <li>An explorer’s pack and four javelins</li>
+            </ul>
+            <!-- class table here -->
+            <h5 class="caption">THE BRAWLER</h5>
+            <table class="class-features">
+                <thead>
+                    <tr><td class="col-5">Level</td><td class="col-10">Proficiency Bonus</td><td class="col-60 left">Features</td></tr>
+                </thead>
+                <tr><td> 1st</td><td>+2</td><td class="left">Tough as Nails</td></tr>
+                <tr><td> 2nd</td><td>+2</td><td class="left">Experience</td></tr>
+                <tr><td> 3rd</td><td>+2</td><td class="left">Hit the Mark</td></tr>
+                <tr><td> 4th</td><td>+2</td><td class="left">Ability Score Improvement</td></tr>
+                <tr><td> 5th</td><td>+3</td><td class="left">Extra Attack</td></tr>
+                <tr><td> 6th</td><td>+3</td><td class="left">Physical Might</td></tr>
+                <tr><td> 7th</td><td>+3</td><td class="left">Powerful Legs</td></tr>
+                <tr><td> 8th</td><td>+3</td><td class="left">Ability Score Improvement</td></tr>
+                <tr><td> 9th</td><td>+4</td><td class="left">Hit the Mark Improvement</td></tr>
+                <tr><td>10th</td><td>+4</td><td class="left">Experience</td></tr>
+                <tr><td>11th</td><td>+4</td><td class="left">Deadly</td></tr>
+                <tr><td>12th</td><td>+4</td><td class="left">Ability Score Improvement</td></tr>
+                <tr><td>13th</td><td>+5</td><td class="left">Hit the Mark Improvement</td></tr>
+                <tr><td>14th</td><td>+5</td><td class="left">Physical Might Improvement</td></tr>
+                <tr><td>15th</td><td>+5</td><td class="left">Powerful Legs Improvement</td></tr>
+                <tr><td>16th</td><td>+5</td><td class="left">Ability Score Improvement</td></tr>
+                <tr><td>17th</td><td>+6</td><td class="left">Deadly Improvement</td></tr>
+                <tr><td>18th</td><td>+6</td><td class="left">Experience</td></tr>
+                <tr><td>19th</td><td>+6</td><td class="left">Ability Score Improvement</td></tr>
+                <tr><td>20th</td><td>+6</td><td class="left">Barbaric Mastery</td></tr>
+            </table>
+            <div element="ID_TRPG_CLASS_FEATURE_BRAWLER_TOUGH_AS_NAILS" />
+            <div element="ID_TRPG_CLASS_FEATURE_BRAWLER_EXPERIENCE" />
+            <div element="ID_TRPG_CLASS_FEATURE_BRAWLER_HIT_THE_MARK" />
+            <div element="ID_TRPG_CLASS_FEATURE_BRAWLER_ASI" />
+            <div element="ID_TRPG_CLASS_FEATURE_BRAWLER_EXTRA_ATTACK" />
+            <div element="ID_TRPG_CLASS_FEATURE_BRAWLER_PHYSICAL_MIGHT" />
+            <div element="ID_TRPG_CLASS_FEATURE_BRAWLER_POWERFUL_LEGS" />
+            <div element="ID_TRPG_CLASS_FEATURE_BRAWLER_DEADLY" />
+            <div element="ID_TRPG_CLASS_FEATURE_BRAWLER_BARBARIC_MASTERY" />
+        </description>
+        <setters>
+            <set name="hd">d12</set>
+        </setters>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" />
+            <select type="Proficiency" name="Skill Proficiency (Brawler)" number="2" supports="ID_PROFICIENCY_SKILL_ANIMALHANDLING|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_SURVIVAL" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_BRAWLER_TOUGH_AS_NAILS" level="1" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_BRAWLER_EXPERIENCE" level="2" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_BRAWLER_HIT_THE_MARK" level="3" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_BRAWLER_ASI" level="4" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_BRAWLER_EXTRA_ATTACK" level="5" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_BRAWLER_PHYSICAL_MIGHT" level="6" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_BRAWLER_POWERFUL_LEGS" level="7" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_BRAWLER_DEADLY" level="11" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_BRAWLER_BARBARIC_MASTERY" level="20" />
+        </rules>
+    </element>
+    <element name="Tough as Nails" type="Class Feature" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_BRAWLER_TOUGH_AS_NAILS">
+        <description>
+            <p>Brawlers are known to be tough as nails and are extremely resilient even when not wearing armor. While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + your Constitution modifier. You can use a shield and still gain this benefit. Additionally, you are resistant to all damage types.</p>
+        </description>
+        <sheet>
+            <description>Your AC = 10 + DEX + CON while not wearing armor. You have this benefit still with a shield. You are resistant to all damage types</description>
+        </sheet>
+        <rules>
+            
+            <stat name="ac:tough as nails:base" value="10"/>
+            <stat name="ac:tough as nails:dexterity" value="dexterity:modifier"/>
+            <stat name="ac:tough as nails:constitution" value="constitution:modifier"/>
+            <stat name="ac:tough as nails" value="ac:tough as nails:base"/>
+            <stat name="ac:tough as nails" value="ac:tough as nails:dexterity"/>
+            <stat name="ac:tough as nails" value="ac:tough as nails:constitution"/>
+            <stat name="ac:calculation" value="ac:tough as nails" bonus="calculation" equipped="[armor:none]" alt="Unarmored Defense (Brawler)"/>
+			<stat name="resistance:bludgeoning" />
+			<stat name="resistance:piercing"  />
+			<stat name="resistance:slashing" />
+            <stat name="resistance:fire" />
+			<stat name="resistance:cold"  />
+			<stat name="resistance:poison" />
+            <stat name="resistance:acid" />
+			<stat name="resistance:thunder"  />
+			<stat name="resistance:lightning" />
+            <stat name="resistance:force" />
+			<stat name="resistance:psychic"  />
+			<stat name="resistance:radiant" />
+            <stat name="resistance:necrotic" />
+		</rules>
+    </element>
+    <element name="Experience" type="Class Feature" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_BRAWLER_EXPERIENCE">
+        <description>
+            <p>Your experience grants you certain practical knowledge. At 2nd level, and again when you reach 10th and 18th level, you gain proficiency in a skill of your choice</p>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Proficiency" supports="Skill" level="2" />
+            <select type="Proficiency" supports="Skill" level="10" />
+            <select type="Proficiency" supports="Skill" level="18" />
+        </rules>
+    </element>
+    <element name="Hit the Mark" type="Class Feature" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_BRAWLER_HIT_THE_MARK">
+        <description>
+            <p>Your attacks are often precise despite appearing reckless. Starting at 3rd level, you receive a +2 bonus to your attack rolls. This bonus becomes +3 at 9th level, and +4 at 13rd level.</p>
+        </description>
+        <sheet>
+            <description>Your attacks are often precise despite appearing reckless. Starting at 3rd level, you receive a +2 bonus to your attack rolls. This bonus becomes +3 at 9th level, and +4 at 13rd level.</description>
+        </sheet>
+        <rules>
+            <stat name="ranged:attack" value="2" level="3" />
+            <stat name="melee:attack" value="2" level="3" />
+            <stat name="ranged:attack" value="1" level="9" />
+            <stat name="melee:attack" value="1" level="0" />
+            <stat name="ranged:attack" value="1" level="13" />
+            <stat name="melee:attack" value="" level="13" />
+        </rules>
+    </element>
+    <element name="Ability Score Improvement" type="Class Feature" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_BRAWLER_ASI">
+        <description>
+            <p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Improvement Option (Brawler 4)" supports="Improvement Option,Brawler,4" level="4"/>
+            <select type="Class Feature" name="Improvement Option (Brawler 8)" supports="Improvement Option,Brawler,8" level="8"/>
+            <select type="Class Feature" name="Improvement Option (Brawler 12)" supports="Improvement Option,Brawler,12" level="12"/>
+            <select type="Class Feature" name="Improvement Option (Brawler 16)" supports="Improvement Option,Brawler,16" level="16"/>
+            <select type="Class Feature" name="Improvement Option (Brawler 19)" supports="Improvement Option,Brawler,19" level="19"/>
+        </rules>
+    </element>
+    <element name="Extra Attack" type="Class Feature" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_BRAWLER_EXTRA_ATTACK">
+        <description>
+            <p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+        </description>
+        <sheet>
+            <description>You can attack twice when you take the attack action on your turn.</description>
+        </sheet>
+        <rules>
+            <stat name="extra attack:count" value="2" level="5" bonus="extra attack"/>
+        </rules>
+    </element>
+    <element name="Physical Might" type="Class Feature" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_BRAWLER_PHYSICAL_MIGHT">
+        <description>
+            <p>You usually fare well when it’s your physical prowess that’s at stake. Starting at 6th level, when you have to make a Strength and Constitution ability checks or saving throw, you receive a +3 bonus on that roll. This bonus becomes +4 at 14th level.</p>
+        </description>
+        <sheet>
+            <description>When you have to make a Strength and Constitution ability checks or saving throw, you receive a +3 bonus on that roll. This bonus becomes +4 at 14th level.</description>
+        </sheet>
+        <rules>
+            <stat name="athletics:misc" value="3" level="6"/>
+            <stat name="strength:save:misc" value="3" level="6"/>
+            <stat name="constitution:save:misc" value="3" level="6"/>
+            <stat name="athletics:misc" value="1" level="14"/>
+            <stat name="strength:save:misc" value="1" level="14"/>
+            <stat name="constitution:save:misc" value="1" level="14"/>
+        </rules>
+    </element>
+    <element name="Powerful Legs" type="Class Feature" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_BRAWLER_POWERFUL_LEGS">
+        <description>
+            <p>Starting at 7th level, your speed increases by 5 feet and another 5 feet at 15th level.</p>
+        </description>
+        <sheet>
+            <description>Starting at 7th level, your speed increases by 5 feet and another 5 feet at 15th level.</description>
+        </sheet>
+        <rules>
+            <stat name="innate speed:misc" value="5" requirements="[innate speed:1]" level="7"/>
+            <stat name="innate speed:misc" value="5" requirements="[innate speed:1]" level="15"/>
+        </rules>
+    </element>
+    <element name="Deadly" type="Class Feature" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_BRAWLER_DEADLY">
+        <description>
+            <p>Your combat experience has taught you the best way to harm your enemies. Starting at 11th level, once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d10 damage of the same type dealt by the weapon to the target. This extra damage increases to 1d12 at 17th level.</p>
+        </description>
+        <sheet>
+            <description>Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d10 damage of the same type dealt by the weapon to the target. This extra damage increases to 1d12 at 17th level.</description>
+        </sheet>
+    </element>
+    <element name="Barbaric Mastery" type="Class Feature" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_BRAWLER_BARBARIC_MASTERY">
+        <description>
+            <p>At 20th level, you embody what true combat power is. Your Strength and Constitution scores increase by 4. The maximum value of these abilities becomes 24</p>
+        </description>
+        <sheet>
+            <description>Your Strength and Constitution scores increase by 4. The maximum value of these abilities becomes 24.</description>
+        </sheet>
+        <rules>
+            <stat name="strength:max" value="4"/>
+            <stat name="constitution:max" value="4"/>
+            <stat name="strength" value="4" />
+            <stat name="constitution" value="4" />
+        </rules>
+    </element>
+
+</elements>
