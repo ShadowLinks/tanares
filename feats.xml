@@ -4,7 +4,7 @@
 		<name>Feats</name>
 		<description>Optional Features from Tanares RPG 5e</description>
 		<author url="">Tanares RPG 5e</author>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="feats.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/feats.xml" />
 		</update>
 	</info>
@@ -99,7 +99,7 @@
 	</element>
 
 	<element name="Lightning Thrower" type="Feat" source="Tanares RPG 5e" id="ID_TRPG_FEAT_LIGHTNING_THROWER">
-		<requirements>dex:13</requirements>
+		<requirements>[dex:13]</requirements>
 		<description>
 			<p><i>Prerequisite: Dexterity 13 or higher.</i></p>
 			<p class="indent">You become an expert in throwing weapons. When you make a ranged attack with a thrown weapon, you gain the following benefits:</p>
@@ -129,129 +129,245 @@
 		</sheet>
 	</element>
 
-		<element name="name" type="Feat" source="Tanares RPG 5e" id="ID_TRPG_FEAT_">
+	<element name="Master Defender" type="Feat" source="Tanares RPG 5e" id="ID_TRPG_FEAT_MASTER_DEFENDER">
+		<requirements>ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD</requirements>
 		<description>
-			<p></p>
+			<p><i>Prerequisite: Proficiency with shields</i></p>
+			<p>You mastered how to hold your ground and your shield became an extension of yourself in combat. You gain the following benefits:</p>			
+			<ul>
+				<li>Increase your Constitution score by 1, up to a maximum of 20.</li>
+				<li>When wielding a shield, on your turn you can choose to forgo your movement, reducing your speed to 0, and gain a +2 bonus to your AC until the start of your next turn or until you move or are moved by any means that would cause you to leave your current space.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>When wielding a shield, on your turn you can choose to forgo your movement, reducing your speed to 0, and gain a +2 bonus to your AC until the start of your next turn or until you move or are moved by any means that would cause you to leave your current space.</description>
+		</sheet>
+		<rules>
+			<stat name="constitution" value="1" />
+		</rules>
+	</element>
+
+	<element name="Master of Beasts" type="Feat" source="Tanares RPG 5e" id="ID_TRPG_FEAT_MASTER_OF_BEASTS">
+		<description>
+			<p>You are a master in dealing with wild creatures. You gain the following benefits:</p>
+			<ul>
+				<li>Increase your Wisdom score by 1, up to a maximum of 20.</li>
+				<li>You become proficient in Animal Handling and Nature, and if you already are, you double your proficiency bonus in these skills.</li>
+				<li>When you make a Wisdom (Animal Handling) check, you can treat any roll of 9 or lower on the d20 as a 10.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>When you make a Wisdom (Animal Handling) check, you can treat any roll of 9 or lower on the d20 as a 10.</description>
+		</sheet>
+		<rules>
+			<stat name="wisdom" value="1" />
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_NATURE" />
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_ANIMALHANDLING" />
+		</rules>
+	</element>
+
+	<element name="Mighty Impact" type="Feat" source="Tanares RPG 5e" id="ID_TRPG_FEAT_MIGHTY_IMPACT">
+		<requirements>[str:15]</requirements>
+		<description>
+			<p><i>Prerequisite: Strength 15 or higher</i></p>
+			<p>You have trained to channel your strength to deliver devastating blows. You gain the following benefits:</p>
+			<ul>
+				<li>Increase your Strength score by 1, up to a maximum of 20.</li>
+				<li>When you make a melee weapon attack with advantage and hit with both dice rolls, you can deliver a powerful blow that deals +1d4 damage of the same type caused by the weapon, and knocks the creature prone. You can only knock down a creature up to two size categories larger than you.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>When you make a melee weapon attack with advantage and hit with both dice rolls, you can deliver a powerful blow that deals +1d4 damage of the same type caused by the weapon, and knocks the creature prone. You can only knock down a creature up to two size categories larger than you.</description>
+		</sheet>
+		<rules>
+			<stat name="strength" value="1" />
+		</rules>
+	</element>
+
+	<element name="Mighty Marksman" type="Feat" source="Tanares RPG 5e" id="ID_TRPG_FEAT_MIGHTY_MARKSMAN">
+		<requirements>[dex:13],[str:13]</requirements>
+		<description>
+			<p><i>Prerequisite: Strength 13 or higher and Dexterity 13 or higher</i></p>
+			<p>Your physical training and strength allow you to make the most of your ranged attacks. You gain the following benefits:</p>
+			<ul>
+				<li>When you use a ranged weapon, its long range is doubled</li>
+				<li>Once per turn, you can also add your Strength modifier to the damage roll of the first ranged weapon attack that you hit on a target within the weapon’s normal range.</li>
+				<li>When you score a critical hit with a ranged weapon attack, you can roll one of the weapon’s damage dice one additional time and add it to the extra damage of the critical hit.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>When you use a ranged weapon, its long range is doubled. Once per turn, you can also add your Strength modifier to the damage roll of the first ranged weapon attack that you hit on a target within the weapon’s normal range. When you score a critical hit with a ranged weapon attack, you can roll one of the weapon’s damage dice one additional time and add it to the extra damage of the critical hit.</description>
+		</sheet>
+	</element>
+
+	<element name="Miraculous Brewer" type="Feat" source="Tanares RPG 5e" id="ID_TRPG_FEAT_MIRACULOUS_BREWER">
+		<description>
+			<p>You have mastered the art of brewing and gain proficiency with brewer’s supplies, if you don’t already have it.
+Additionally, you gain the following benefits:</p>
+			<ul>
+				<li>Increase your Constitution or Wisdom score by 1, up to a maximum of 20.</li>
+				<li>With one hour of work during a short or long rest, you can create a number of doses of a special beer equal to twice your proficiency bonus. A creature can consume one dose of the beer as an action, granting it disadvantage on melee attacks and a bonus of 2d8 damage of the same type as its weapon until the end of its next turn. If a creature drinks more than one dose of the beer before taking a short rest, they must make a Constitution saving throw with a DC equal to 12 plus the number of doses of beer consumed. If it fails, it becomes poisoned until it finishes a short or long rest.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>With one hour of work during a short or long rest, you can create a number of doses of a special beer equal to twice your proficiency bonus. A creature can consume one dose of the beer as an action, granting it disadvantage on melee attacks and a bonus of 2d8 damage of the same type as its weapon until the end of its next turn. If a creature drinks more than one dose of the beer before taking a short rest, they must make a Constitution saving throw with a DC equal to 12 plus the number of doses of beer consumed. If it fails, it becomes poisoned until it finishes a short or long rest.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Miraculous Brewer" supports="ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_CONSTITUTION"/>
+		</rules>
+	</element>
+
+	<element name="Potent Poison" type="Feat" source="Tanares RPG 5e" id="ID_TRPG_FEAT_POTENT_POISON">
+		<requirements>ID_TRPG_RACE_GLOOMFOLK</requirements>
+		<description>
+			<p><i>Prerequisite: Gloomfolk</i></p>
+			<p>You have the ability to potentiate your natural poisons, gaining the following benefits:</p>
+			<ul>
+				<li>Increase your Constitution score by 1, up to a maximum of 20.</li>
+				<li>Enemies have disadvantage on saving throws against your natural gloomfolk poison, and when you hit a creature with your stinger and inject your poison, you can spend a Hit Die and add it to the damage of your stinger as poison damage. Starting at 7th level, you can use 2 Hit Dice, and starting at 14th level, you can use 3.</li>
+				<li>You produce more poison, granting you one extra use of the poison trait before you need of a short or long rest to recover it.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Enemies have disadvantage on saving throws against your natural gloomfolk poison, and when you hit a creature with your stinger and inject your poison, you can spend a Hit Die and add it to the damage of your stinger as poison damage. Starting at 7th level, you can use 2 Hit Dice, and starting at 14th level, you can use 3. You produce more poison, granting you one extra use of the poison trait before you need of a short or long rest to recover it.</description>
+		</sheet>
+		<rules>
+			<stat name="constitution" value="1" />
+		</rules>
+	</element>
+
+	<element name="Power Shot" type="Feat" source="Tanares RPG 5e" id="ID_TRPG_FEAT_POWER_SHOT">
+		<description>
+			<p>You learned to turn your accuracy into deadliness. When you deal damage with a ranged weapon, once per turn, you can reroll the damage dice and choose which result to use.</p>
+		</description>
+		<sheet>
+			<description>You learned to turn your accuracy into deadliness. When you deal damage with a ranged weapon, once per turn, you can reroll the damage dice and choose which result to use.</description>
+		</sheet>
+	</element>
+
+	<element name="Sense of Inspiration" type="Feat" source="Tanares RPG 5e" id="ID_TRPG_FEAT_SENSE_OF_INSPIRATION">
+		<description>
+			<p>You become a source of inspiration, receiving the following benefits:</p>
+			<ul>
+				<li>Increase your Charisma score by 1, up to a maximum of 20</li>
+				<li>You know how to inspire creatures through the use of words. With a bonus action, you grant a Bardic Inspiration die to a creature other than yourself, who is within 60 feet of you and can hear you. This die is always a d6, but if you are a bard, it progresses as your other Bardic Inspiration dice, but can’t be used in any other way besides the one provided above. You can use this feature only once, regaining its use after a long rest. Apply all rules related to Bardic Inspiration to this die.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You know how to inspire creatures through the use of words. With a bonus action, you grant a Bardic Inspiration die to a creature other than yourself, who is within 60 feet of you and can hear you. This die is always a d6, but if you are a bard, it progresses as your other Bardic Inspiration dice, but can’t be used in any other way besides the one provided above. You can use this feature only once, regaining its use after a long rest. Apply all rules related to Bardic Inspiration to this die.</description>
+		</sheet>
+		<rules>
+			<stat name="charisma" value="1" />
+		</rules>
+	</element>
+
+	<element name="Sky Master" type="Feat" source="Tanares RPG 5e" id="ID_TRPG_FEAT_SKY_MASTER">
+		<description>
+			<p>You become a master of the skies. You gain the following benefits:</p>
+			<ul>
+				<li>While flying, you have advantage on saving throws made to avoid the prone condition, or to be moved or pulled from your mount.</li>
+				<li>You gain 2 extra Fly Points when using the aerial mounted combat rules </li>
+			</ul>
+		</description>
+		<sheet>
+			<description>While flying, you have advantage on saving throws made to avoid the prone condition, or to be moved or pulled from your mount. You gain 2 extra Fly Points when using the aerial mounted combat rules.</description>
+		</sheet>
+	</element>
+
+	<element name="Soul Connection" type="Feat" source="Tanares RPG 5e" id="ID_TRPG_FEAT_SOUL_CONNECTION">
+		<requirements>ID_TRPG_RACE_CIRRUS</requirements>
+		<description>
+			<p><i>Prerequisite: Cirrus</i></p>
+			<p>You have a stronger connection with your other side, being able to call upon it in emergency situations. You gain the following benefits:</p>
+			<ul>
+				<li>Increase one ability score of your choice by 1, up to a maximum of 20.</li>
+				<li>When you make an ability check with a skill, you can choose to use the bonus of the same skill from your other side. You can use this once, regaining its use after a short or long rest.</li>
+				<li>When you fail a saving throw, you can attempt the same saving throw with your other side. If your other side succeeds on the saving throw, consider it a success for you as well. You can use this once, regaining its use after a short or long rest.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>When you make an ability check with a skill, you can choose to use the bonus of the same skill from your other side. You can use this once, regaining its use after a short or long rest. When you fail a saving throw, you can attempt the same saving throw with your other side. If your other side succeeds on the saving throw, consider it a success for you as well. You can use this once, regaining its use after a short or long rest.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Soul Connection" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_DEXTERITY|ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_CHARISMA" />
+		</rules>
+	</element>
+
+	<element name="Soulborn Ancestrality (Human)" type="Feat" source="Tanares RPG 5e" id="ID_TRPG_FEAT_SOULBORN_ANCESTRALITY_HUMAN">
+		<description>
+		<requirements>ID_TRPG_RACE_SOULBORN</requirements>
+			<p><i>Prerequisite: Soulborn</i></p>
+			<p>You gain characteristics from the family in which you were born, gaining the following benefits:</p>
+			<ul>
+				<li>If you were born human, you can increase the value of 3 abilities of your choice by 1, up to a maximum of 20.</li>
+				<li>If you were born in a different species, you increase an ability that the species has increased by 1, up to a maximum of 20, and you acquire one of its racial traits.</li>
+			</ul>
 		</description>
 		<sheet>
 			<description></description>
 		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Soulborn Ancestrality" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_DEXTERITY|ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_CHARISMA" number="3" />
+		</rules>
 	</element>
 
-		<element name="name" type="Feat" source="Tanares RPG 5e" id="ID_TRPG_FEAT_">
+	<element name="Soulborn Ancestrality (Other species)" type="Feat" source="Tanares RPG 5e" id="ID_TRPG_FEAT_SOULBORN_ANCESTRALITY_OTHER">
 		<description>
-			<p></p>
+		<requirements>ID_TRPG_RACE_SOULBORN</requirements>
+			<p><i>Prerequisite: Soulborn</i></p>
+			<p>You gain characteristics from the family in which you were born, gaining the following benefits:</p>
+			<ul>
+				<li>If you were born human, you can increase the value of 3 abilities of your choice by 1, up to a maximum of 20.</li>
+				<li>If you were born in a different species, you increase an ability that the species has increased by 1, up to a maximum of 20, and you acquire one of its racial traits.</li>
+			</ul>
 		</description>
 		<sheet>
 			<description></description>
 		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Soulborn Ancestrality" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_DEXTERITY|ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_CHARISMA" number="1" />
+			<select type="Racial Trait" />
+		</rules>
 	</element>
 
-		<element name="name" type="Feat" source="Tanares RPG 5e" id="ID_TRPG_FEAT_">
+	<element name="Spycraft Mastery" type="Feat" source="Tanares RPG 5e" id="ID_TRPG_FEAT_SPYCRAFT_MASTERY">
 		<description>
-			<p></p>
+			<p>You are a specialist in infiltrating other kingdoms and territories and sending reports that only your allies will be able to read. You gain the following benefits:</p>
+			<ul>
+				<li>Increase your Dexterity, Intelligence, or Charisma score by 1, up to a maximum of 20.</li>
+				<li>You become proficient in the Deception skill or with the disguise and forgery kits.</li>
+				<li>You know the ways to enter nearby cities and kingdoms and can create false identities and documents to succeed. You must spend 10 days and 15 gp establishing the details of the new identity, such as documents, history, profession, affiliations, and contacts. You cannot copy the identity of someone else, but you can masterfully create a new identity that everyone will believe in until it is confronted with evidence that obviously reveals it.</li>
+				<li>You know ways to conceal messages, whether in a cipher or encoded language, hidden in another message, or even a mixture of both methods. Only people you spend an hour teaching how to decode specific messages will know how to read them. Other people must succeed on a Wisdom (Insight) check to notice and read a message hidden within another, or on an Intelligence (Investigation) check to crack a cipher or encoded language (both checks must succeed if you used both methods in the same message). The DC is equal to 20 + your proficiency bonus + your Intelligence modifier.</li>
+			</ul>
+			<p class="indent"></p>
 		</description>
 		<sheet>
-			<description></description>
+			<description>You know the ways to enter nearby cities and kingdoms and can create false identities and documents to succeed. You must spend 10 days and 15 gp establishing the details of the new identity, such as documents, history, profession, affiliations, and contacts. You cannot copy the identity of someone else, but you can masterfully create a new identity that everyone will believe in until it is confronted with evidence that obviously reveals it. You know ways to conceal messages, whether in a cipher or encoded language, hidden in another message, or even a mixture of both methods. Only people you spend an hour teaching how to decode specific messages will know how to read them. Other people must succeed on a Wisdom (Insight) check to notice and read a message hidden within another, or on an Intelligence (Investigation) check to crack a cipher or encoded language (both checks must succeed if you used both methods in the same message). The DC is equal to 20 + your proficiency bonus + your Intelligence modifier.</description>
 		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Spycraft Mastery" supports="ID_PHB_FEAT_ASI_DEXTERITY|ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_CHARISMA" />
+			<select type="Proficiency" name="Spycraft Mastery Proficiency" supports="ID_TRPG_PROFICIENCY_DISGUISE_FORGERY|ID_PROFICIENCY_SKILL_DECEPTION" />
+		</rules>
 	</element>
 
-		<element name="name" type="Feat" source="Tanares RPG 5e" id="ID_TRPG_FEAT_">
-		<description>
-			<p></p>
-		</description>
-		<sheet>
-			<description></description>
-		</sheet>
+	<element type="Proficiency" name="Disguise and Forgery Proficiency" source="Tanares RPG 5e" id="ID_TRPG_PROFICIENCY_DISGUISE_FORGERY">
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_DISGUISE_KIT" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_FORGERY_KIT" />
+		</rules>
 	</element>
 
-		<element name="name" type="Feat" source="Tanares RPG 5e" id="ID_TRPG_FEAT_">
+	<element name="Swift Polearm" type="Feat" source="Tanares RPG 5e" id="ID_TRPG_FEAT_SWIFT_POLEARM">
 		<description>
-			<p></p>
+			<p>You have learned to wield polearms with amazing speed and accuracy. When wielding a polearm weapon with the reach property, you can perform the following maneuvers a number of times equal to your proficiency bonus, regaining all uses after finishing a long rest:</p>
+			<ul>
+				<li>When a creature you can see attacks another creature within your weapon’s reach, you can use your reaction to impose disadvantage on that attack.</li>
+				<li>When you hit a creature, you can deal an additional 1d6 damage of the same type as the weapon, and the creature cannot use reactions until the end of its next turn.</li>
+				<li>When you hit a creature with a polearm weapon that has the reach property Large or smaller, you can automatically move the target to any other unoccupied space within the weapon’s reach.</li>
+			</ul>
 		</description>
-		<sheet>
-			<description></description>
-		</sheet>
-	</element>
-
-		<element name="name" type="Feat" source="Tanares RPG 5e" id="ID_TRPG_FEAT_">
-		<description>
-			<p></p>
-		</description>
-		<sheet>
-			<description></description>
-		</sheet>
-	</element>
-
-		<element name="name" type="Feat" source="Tanares RPG 5e" id="ID_TRPG_FEAT_">
-		<description>
-			<p></p>
-		</description>
-		<sheet>
-			<description></description>
-		</sheet>
-	</element>
-
-		<element name="name" type="Feat" source="Tanares RPG 5e" id="ID_TRPG_FEAT_">
-		<description>
-			<p></p>
-		</description>
-		<sheet>
-			<description></description>
-		</sheet>
-	</element>
-
-		<element name="name" type="Feat" source="Tanares RPG 5e" id="ID_TRPG_FEAT_">
-		<description>
-			<p></p>
-		</description>
-		<sheet>
-			<description></description>
-		</sheet>
-	</element>
-
-		<element name="name" type="Feat" source="Tanares RPG 5e" id="ID_TRPG_FEAT_">
-		<description>
-			<p></p>
-		</description>
-		<sheet>
-			<description></description>
-		</sheet>
-	</element>
-
-		<element name="name" type="Feat" source="Tanares RPG 5e" id="ID_TRPG_FEAT_">
-		<description>
-			<p></p>
-		</description>
-		<sheet>
-			<description></description>
-		</sheet>
-	</element>
-
-	<element name="name" type="Feat" source="Tanares RPG 5e" id="ID_TRPG_FEAT_">
-		<description>
-			<p></p>
-		</description>
-		<sheet>
-			<description></description>
-		</sheet>
-	</element>
-
-	<element name="name" type="Feat" source="Tanares RPG 5e" id="ID_TRPG_FEAT_">
-		<description>
-			<p></p>
-		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="{{proficiency}}/long rest">
+			<description>When wielding a polearm weapon with the reach property, you can perform the following maneuvers a number of times equal to your proficiency bonus, regaining all uses after finishing a long rest: When a creature you can see attacks another creature within your weapon’s reach, you can use your reaction to impose disadvantage on that attack. When you hit a creature, you can deal an additional 1d6 damage of the same type as the weapon, and the creature cannot use reactions until the end of its next turn. When you hit a creature with a polearm weapon that has the reach property Large or smaller, you can automatically move the target to any other unoccupied space within the weapon’s reach.</description>
 		</sheet>
 	</element>
 </elements>
-
-<!--
-			<ul>
-				<li></li>
-				<li></li>
-				<li></li>
-			</ul>
-
-			-->
