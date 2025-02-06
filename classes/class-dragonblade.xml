@@ -181,10 +181,20 @@ for wearing armor, and only consider half of its weight towards your carrying ca
             <description>When attacking with melee or ranged weapons you can use you Intelligence Modifier instead of Strength or Dexterity for the attack and damge rolls. Ignore the Strength requirement for wearing armor and you armor weight is halved.</description>
         </sheet>
         <rules>
-            <stat name="ranged:attack" value="intelligence:modifier" bonus="base" />
-			<stat name="melee:attack" value="intelligence:modifier" bonus="base"  />
-			<stat name="ranged:damage" value="intelligence:modifier"  bonus="base" />
-			<stat name="melee:damage" value="intelligence:modifier"  bonus="base" />
+        <!-- removes the ability bonuses for melee and ranged so i can add INT modifier-->
+            <stat name="ranged:attack" value="-dexterity:modifier" />
+			<stat name="melee:attack" value="-strength:modifier"  />
+			<stat name="ranged:damage" value="-dexterity:modifier"  />
+			<stat name="melee:damage" value="-strength:modifier" />
+
+<!-- trying to fix finesse weapons here. Finesse weapons dont get the negative dex mod from above
+            <stat name="melee:attack" value="-dexterity:modifier"  requirements="finesse"/>
+            <stat name="melee:damage" value="-dexterity:modifier"  requirements="ID_INTERNAL_WEAPON_PROPERTY_FINESSE"/>
+ -->
+            <stat name="ranged:attack" value="intelligence:modifier" />
+			<stat name="melee:attack" value="intelligence:modifier"  />
+			<stat name="ranged:damage" value="intelligence:modifier"  />
+			<stat name="melee:damage" value="intelligence:modifier"  />
         </rules>
     </element>
      <element name="Natural Strategist" type="Class Feature" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_DRAGONBLADE_NATURAL_STRATEGIST">
