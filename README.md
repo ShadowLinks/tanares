@@ -43,9 +43,9 @@ To Do:
         - Way of the Animals
     - Paladin COMPLETED
         - Oath of Freedom
-    - Ranger
-        - Shadow Investigator COMPLETED
-        - Arcane Guardian [Partial](https://github.com/ShadowLinks/tanares/issues/4)
+    - Ranger COMPLETED
+        - Shadow Investigator
+        - Arcane Guardian
     - Rogue COMPLETED
         - Ninja
     - Sorcerer COMPLETED
