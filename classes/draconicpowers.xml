@@ -21,61 +21,860 @@
         </setters>
     </element>
 
-        <element name="Force Wave2" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_FORCE_WAVE2">
+        <element name="Elemental Flay" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_ELEMENTAL_FLAY">
         <supports>Draconic Power,Dragonblade</supports>
         <description>
-            <p>Make a weapon attack. Even on a miss, a seismic ripple emanates from you, targeting a creature within 15 feet of you (which could be the same or a different target). This creature must succeed on a Dexterity saving throw or take 1d4 thunder damage and be thrown off balance, landing prone</p>
+            <p>Make a weapon attack. On a hit, deal the usual damage and distress a substantial portion of the target’s skin. The next time the creature takes damage before the end of your next turn, it suffers an extra 1d6 damage.</p>
         </description>
         <setters>
-            <set name="keywords">thunder</set>
+            <set name="keywords"></set>
             <set name="level">1</set>
             <set name="School">Claw</set>
             <set name="time">1 action</set>
             <set name="duration">Instantaneous</set>
-            <set name="range">15 feet</set>
+            <set name="range">5 feet</set>
         </setters>
     </element>
-        <element name="Force Wavewing" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_FORCE_WAVEWING">
+        <element name="Ancestral Blessing" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_ANCESTRAL_BLESSING">
         <supports>Draconic Power,Dragonblade</supports>
         <description>
-            <p>Make a weapon attack. Even on a miss, a seismic ripple emanates from you, targeting a creature within 15 feet of you (which could be the same or a different target). This creature must succeed on a Dexterity saving throw or take 1d4 thunder damage and be thrown off balance, landing prone</p>
+            <p>Make a weapon attack. On a hit, deal your usual damage and bask in a soft luminescence of sacred golden light that bestows upon you 1d6 temporary hit points for 1 minute.</p>
         </description>
         <setters>
-            <set name="keywords">thunder</set>
-            <set name="level">1</set>
-            <set name="School">Wing</set>
-            <set name="time">1 action</set>
-            <set name="duration">Instantaneous</set>
-            <set name="range">15 feet</set>
-        </setters>
-    </element>
-
-        <element name="Force Wavescale" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_FORCE_WAVESCALE">
-        <supports>Draconic Power,Dragonblade</supports>
-        <description>
-            <p>Make a weapon attack. Even on a miss, a seismic ripple emanates from you, targeting a creature within 15 feet of you (which could be the same or a different target). This creature must succeed on a Dexterity saving throw or take 1d4 thunder damage and be thrown off balance, landing prone</p>
-        </description>
-        <setters>
-            <set name="keywords">thunder</set>
+            <set name="keywords"></set>
             <set name="level">1</set>
             <set name="School">Scale</set>
             <set name="time">1 action</set>
             <set name="duration">Instantaneous</set>
-            <set name="range">15 feet</set>
+            <set name="range">5 feet</set>
+        </setters>
+    </element>
+
+        <element name="Draconic Shield" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_DRACONIC_SHIELD">
+        <supports>Draconic Power,Dragonblade</supports>
+        <description>
+            <p>Make a weapon attack. Then, choose either yourself or a willing creature within 30 feet, and generate an unseen barrier for protection. The beneficiary gains a +2 bonus to AC against all attacks, and a +2 bonus on all saving throws until the start of your next turn.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="School">Scale</set>
+            <set name="time">1 action</set>
+            <set name="duration">Instantaneous</set>
+            <set name="range">30 feet</set>
         </setters>
     </element>
     
-    <element name="Inspiring Roar" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_INSPIRING_ROAR">
+    <element name="Distracting Tail" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_DISTRACTING_TAIL">
         <supports>Draconic Power,Dragonblade</supports>
         <description>
-            <p>Your dragon-heartened courage motivates either yourself or an ally. A willing creature of your choice within 15 feet of you gets a +1d6 bonus on its next attack roll. Additionally, any frightened condition on that creature is immediately removed.</p>
+            <p>Make a weapon attack. On a hit, deal the usual damage and destabilize the enemy, causing it to lose the ability to make Opportunity Attacks and suffer a -2 penalty to AC until the end of your next turn .</p>
+        </description>
+        <setters>
+            <set name="duration">Instantaneous</set>
+            <set name="level">1</set>
+            <set name="School">Tail</set>
+            <set name="time">1 action</set>
+            <set name="range">5 feet</set>
+        </setters>
+    </element>
+    
+    <element name="Dashing Rush" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_DASHING_RUSH">
+        <supports>Draconic Power,Dragonblade</supports>
+        <description>
+            <p>Augment your legs to move up to half your base speed, ignoring difficult terrain, before making a weapon attack. If at least 10 feet of this movement is completed in a straight line, your attack deals 1d6 extra damage.</p>
+        </description>
+        <setters>
+            <set name="duration">Instantaneous</set>
+            <set name="level">1</set>
+            <set name="School">Wing</set>
+            <set name="time">1 action</set>
+            <set name="range">10 feet</set>
+        </setters>
+    </element>
+    
+    <element name="name" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_">
+        <supports>Draconic Power,Dragonblade</supports>
+        <description>
+            <p>description</p>
+        </description>
+        <setters>
+            <set name="duration">Instantaneous</set>
+            <set name="level">1</set>
+            <set name="School">Tail</set>
+            <set name="time">1 action</set>
+            <set name="range">5 feet</set>
+        </setters>
+    </element>
+    
+    <element name="name" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_">
+        <supports>Draconic Power,Dragonblade</supports>
+        <description>
+            <p>description</p>
+        </description>
+        <setters>
+            <set name="duration">Instantaneous</set>
+            <set name="level">1</set>
+            <set name="School">Tail</set>
+            <set name="time">1 action</set>
+            <set name="range">5 feet</set>
+        </setters>
+    </element>
+    
+    <element name="name" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_">
+        <supports>Draconic Power,Dragonblade</supports>
+        <description>
+            <p>description</p>
+        </description>
+        <setters>
+            <set name="duration">Instantaneous</set>
+            <set name="level">1</set>
+            <set name="School">Tail</set>
+            <set name="time">1 action</set>
+            <set name="range">5 feet</set>
+        </setters>
+    </element>
+    
+    <element name="name" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_">
+        <supports>Draconic Power,Dragonblade</supports>
+        <description>
+            <p>description</p>
         </description>
         <setters>
             <set name="duration">Instantaneous</set>
             <set name="level">2</set>
-            <set name="School">Claw</set>
-            <set name="time">1 bonus action</set>
-            <set name="range">15 feet</set>
+            <set name="School">Tail</set>
+            <set name="time">1 action</set>
+            <set name="range">5 feet</set>
         </setters>
     </element>
+    
+    <element name="name" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_">
+        <supports>Draconic Power,Dragonblade</supports>
+        <description>
+            <p>description</p>
+        </description>
+        <setters>
+            <set name="duration">Instantaneous</set>
+            <set name="level">2</set>
+            <set name="School">Tail</set>
+            <set name="time">1 action</set>
+            <set name="range">5 feet</set>
+        </setters>
+    </element>
+    
+    <element name="name" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_">
+        <supports>Draconic Power,Dragonblade</supports>
+        <description>
+            <p>description</p>
+        </description>
+        <setters>
+            <set name="duration">Instantaneous</set>
+            <set name="level">2</set>
+            <set name="School">Tail</set>
+            <set name="time">1 action</set>
+            <set name="range">5 feet</set>
+        </setters>
+    </element>
+    
+    <element name="name" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_">
+        <supports>Draconic Power,Dragonblade</supports>
+        <description>
+            <p>description</p>
+        </description>
+        <setters>
+            <set name="duration">Instantaneous</set>
+            <set name="level">2</set>
+            <set name="School">Tail</set>
+            <set name="time">1 action</set>
+            <set name="range">5 feet</set>
+        </setters>
+    </element>
+    
+    <element name="name" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_">
+        <supports>Draconic Power,Dragonblade</supports>
+        <description>
+            <p>description</p>
+        </description>
+        <setters>
+            <set name="duration">Instantaneous</set>
+            <set name="level">2</set>
+            <set name="School">Tail</set>
+            <set name="time">1 action</set>
+            <set name="range">5 feet</set>
+        </setters>
+    </element>
+    
+    <element name="name" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_">
+        <supports>Draconic Power,Dragonblade</supports>
+        <description>
+            <p>description</p>
+        </description>
+        <setters>
+            <set name="duration">Instantaneous</set>
+            <set name="level">2</set>
+            <set name="School">Tail</set>
+            <set name="time">1 action</set>
+            <set name="range">5 feet</set>
+        </setters>
+    </element>
+    
+    <element name="name" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_">
+        <supports>Draconic Power,Dragonblade</supports>
+        <description>
+            <p>description</p>
+        </description>
+        <setters>
+            <set name="duration">Instantaneous</set>
+            <set name="level">2</set>
+            <set name="School">Tail</set>
+            <set name="time">1 action</set>
+            <set name="range">5 feet</set>
+        </setters>
+    </element>
+    
+    <element name="name" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_">
+        <supports>Draconic Power,Dragonblade</supports>
+        <description>
+            <p>description</p>
+        </description>
+        <setters>
+            <set name="duration">Instantaneous</set>
+            <set name="level">2</set>
+            <set name="School">Tail</set>
+            <set name="time">1 action</set>
+            <set name="range">5 feet</set>
+        </setters>
+    </element>
+    
+    <element name="name" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_">
+        <supports>Draconic Power,Dragonblade</supports>
+        <description>
+            <p>description</p>
+        </description>
+        <setters>
+            <set name="duration">Instantaneous</set>
+            <set name="level">2</set>
+            <set name="School">Tail</set>
+            <set name="time">1 action</set>
+            <set name="range">5 feet</set>
+        </setters>
+    </element>
+    
+    <element name="name" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_">
+        <supports>Draconic Power,Dragonblade</supports>
+        <description>
+            <p>description</p>
+        </description>
+        <setters>
+            <set name="duration">Instantaneous</set>
+            <set name="level">3</set>
+            <set name="School">Tail</set>
+            <set name="time">1 action</set>
+            <set name="range">5 feet</set>
+        </setters>
+    </element>
+    
+    <element name="name" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_">
+        <supports>Draconic Power,Dragonblade</supports>
+        <description>
+            <p>description</p>
+        </description>
+        <setters>
+            <set name="duration">Instantaneous</set>
+            <set name="level">3</set>
+            <set name="School">Tail</set>
+            <set name="time">1 action</set>
+            <set name="range">5 feet</set>
+        </setters>
+    </element>
+    
+    <element name="name" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_">
+        <supports>Draconic Power,Dragonblade</supports>
+        <description>
+            <p>description</p>
+        </description>
+        <setters>
+            <set name="duration">Instantaneous</set>
+            <set name="level">3</set>
+            <set name="School">Tail</set>
+            <set name="time">1 action</set>
+            <set name="range">5 feet</set>
+        </setters>
+    </element>
+    
+    <element name="name" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_">
+        <supports>Draconic Power,Dragonblade</supports>
+        <description>
+            <p>description</p>
+        </description>
+        <setters>
+            <set name="duration">Instantaneous</set>
+            <set name="level">3</set>
+            <set name="School">Tail</set>
+            <set name="time">1 action</set>
+            <set name="range">5 feet</set>
+        </setters>
+    </element>
+    
+    <element name="name" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_">
+        <supports>Draconic Power,Dragonblade</supports>
+        <description>
+            <p>description</p>
+        </description>
+        <setters>
+            <set name="duration">Instantaneous</set>
+            <set name="level">3</set>
+            <set name="School">Tail</set>
+            <set name="time">1 action</set>
+            <set name="range">5 feet</set>
+        </setters>
+    </element>
+    
+    <element name="name" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_">
+        <supports>Draconic Power,Dragonblade</supports>
+        <description>
+            <p>description</p>
+        </description>
+        <setters>
+            <set name="duration">Instantaneous</set>
+            <set name="level">3</set>
+            <set name="School">Tail</set>
+            <set name="time">1 action</set>
+            <set name="range">5 feet</set>
+        </setters>
+    </element>
+    
+    <element name="name" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_">
+        <supports>Draconic Power,Dragonblade</supports>
+        <description>
+            <p>description</p>
+        </description>
+        <setters>
+            <set name="duration">Instantaneous</set>
+            <set name="level">3</set>
+            <set name="School">Tail</set>
+            <set name="time">1 action</set>
+            <set name="range">5 feet</set>
+        </setters>
+    </element>
+    
+    <element name="name" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_">
+        <supports>Draconic Power,Dragonblade</supports>
+        <description>
+            <p>description</p>
+        </description>
+        <setters>
+            <set name="duration">Instantaneous</set>
+            <set name="level">3</set>
+            <set name="School">Tail</set>
+            <set name="time">1 action</set>
+            <set name="range">5 feet</set>
+        </setters>
+    </element>
+    
+    <element name="name" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_">
+        <supports>Draconic Power,Dragonblade</supports>
+        <description>
+            <p>description</p>
+        </description>
+        <setters>
+            <set name="duration">Instantaneous</set>
+            <set name="level">3</set>
+            <set name="School">Tail</set>
+            <set name="time">1 action</set>
+            <set name="range">5 feet</set>
+        </setters>
+    </element>
+    
+    <element name="name" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_">
+        <supports>Draconic Power,Dragonblade</supports>
+        <description>
+            <p>description</p>
+        </description>
+        <setters>
+            <set name="duration">Instantaneous</set>
+            <set name="level">4</set>
+            <set name="School">Tail</set>
+            <set name="time">1 action</set>
+            <set name="range">5 feet</set>
+        </setters>
+    </element>
+    
+    <element name="name" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_">
+        <supports>Draconic Power,Dragonblade</supports>
+        <description>
+            <p>description</p>
+        </description>
+        <setters>
+            <set name="duration">Instantaneous</set>
+            <set name="level">4</set>
+            <set name="School">Tail</set>
+            <set name="time">1 action</set>
+            <set name="range">5 feet</set>
+        </setters>
+    </element>
+    
+    <element name="name" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_">
+        <supports>Draconic Power,Dragonblade</supports>
+        <description>
+            <p>description</p>
+        </description>
+        <setters>
+            <set name="duration">Instantaneous</set>
+            <set name="level">4</set>
+            <set name="School">Tail</set>
+            <set name="time">1 action</set>
+            <set name="range">5 feet</set>
+        </setters>
+    </element>
+    
+    <element name="name" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_">
+        <supports>Draconic Power,Dragonblade</supports>
+        <description>
+            <p>description</p>
+        </description>
+        <setters>
+            <set name="duration">Instantaneous</set>
+            <set name="level">4</set>
+            <set name="School">Tail</set>
+            <set name="time">1 action</set>
+            <set name="range">5 feet</set>
+        </setters>
+    </element>
+    
+    <element name="name" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_">
+        <supports>Draconic Power,Dragonblade</supports>
+        <description>
+            <p>description</p>
+        </description>
+        <setters>
+            <set name="duration">Instantaneous</set>
+            <set name="level">4</set>
+            <set name="School">Tail</set>
+            <set name="time">1 action</set>
+            <set name="range">5 feet</set>
+        </setters>
+    </element>
+    
+    <element name="name" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_">
+        <supports>Draconic Power,Dragonblade</supports>
+        <description>
+            <p>description</p>
+        </description>
+        <setters>
+            <set name="duration">Instantaneous</set>
+            <set name="level">4</set>
+            <set name="School">Tail</set>
+            <set name="time">1 action</set>
+            <set name="range">5 feet</set>
+        </setters>
+    </element>
+    
+    <element name="name" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_">
+        <supports>Draconic Power,Dragonblade</supports>
+        <description>
+            <p>description</p>
+        </description>
+        <setters>
+            <set name="duration">Instantaneous</set>
+            <set name="level">4</set>
+            <set name="School">Tail</set>
+            <set name="time">1 action</set>
+            <set name="range">5 feet</set>
+        </setters>
+    </element>
+    
+    <element name="name" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_">
+        <supports>Draconic Power,Dragonblade</supports>
+        <description>
+            <p>description</p>
+        </description>
+        <setters>
+            <set name="duration">Instantaneous</set>
+            <set name="level">4</set>
+            <set name="School">Tail</set>
+            <set name="time">1 action</set>
+            <set name="range">5 feet</set>
+        </setters>
+    </element>
+    
+    <element name="name" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_">
+        <supports>Draconic Power,Dragonblade</supports>
+        <description>
+            <p>description</p>
+        </description>
+        <setters>
+            <set name="duration">Instantaneous</set>
+            <set name="level">5</set>
+            <set name="School">Tail</set>
+            <set name="time">1 action</set>
+            <set name="range">5 feet</set>
+        </setters>
+    </element>
+    
+    <element name="name" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_">
+        <supports>Draconic Power,Dragonblade</supports>
+        <description>
+            <p>description</p>
+        </description>
+        <setters>
+            <set name="duration">Instantaneous</set>
+            <set name="level">5</set>
+            <set name="School">Tail</set>
+            <set name="time">1 action</set>
+            <set name="range">5 feet</set>
+        </setters>
+    </element>
+    
+    <element name="name" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_">
+        <supports>Draconic Power,Dragonblade</supports>
+        <description>
+            <p>description</p>
+        </description>
+        <setters>
+            <set name="duration">Instantaneous</set>
+            <set name="level">5</set>
+            <set name="School">Tail</set>
+            <set name="time">1 action</set>
+            <set name="range">5 feet</set>
+        </setters>
+    </element>
+    
+    <element name="name" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_">
+        <supports>Draconic Power,Dragonblade</supports>
+        <description>
+            <p>description</p>
+        </description>
+        <setters>
+            <set name="duration">Instantaneous</set>
+            <set name="level">5</set>
+            <set name="School">Tail</set>
+            <set name="time">1 action</set>
+            <set name="range">5 feet</set>
+        </setters>
+    </element>
+    
+    <element name="name" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_">
+        <supports>Draconic Power,Dragonblade</supports>
+        <description>
+            <p>description</p>
+        </description>
+        <setters>
+            <set name="duration">Instantaneous</set>
+            <set name="level">5</set>
+            <set name="School">Tail</set>
+            <set name="time">1 action</set>
+            <set name="range">5 feet</set>
+        </setters>
+    </element>
+    
+    <element name="name" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_">
+        <supports>Draconic Power,Dragonblade</supports>
+        <description>
+            <p>description</p>
+        </description>
+        <setters>
+            <set name="duration">Instantaneous</set>
+            <set name="level">5</set>
+            <set name="School">Tail</set>
+            <set name="time">1 action</set>
+            <set name="range">5 feet</set>
+        </setters>
+    </element>
+    
+    <element name="name" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_">
+        <supports>Draconic Power,Dragonblade</supports>
+        <description>
+            <p>description</p>
+        </description>
+        <setters>
+            <set name="duration">Instantaneous</set>
+            <set name="level">5</set>
+            <set name="School">Tail</set>
+            <set name="time">1 action</set>
+            <set name="range">5 feet</set>
+        </setters>
+    </element>
+    
+    <element name="name" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_">
+        <supports>Draconic Power,Dragonblade</supports>
+        <description>
+            <p>description</p>
+        </description>
+        <setters>
+            <set name="duration">Instantaneous</set>
+            <set name="level">5</set>
+            <set name="School">Tail</set>
+            <set name="time">1 action</set>
+            <set name="range">5 feet</set>
+        </setters>
+    </element>
+    
+    <element name="name" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_">
+        <supports>Draconic Power,Dragonblade</supports>
+        <description>
+            <p>description</p>
+        </description>
+        <setters>
+            <set name="duration">Instantaneous</set>
+            <set name="level">5</set>
+            <set name="School">Tail</set>
+            <set name="time">1 action</set>
+            <set name="range">5 feet</set>
+        </setters>
+    </element>
+    
+    <element name="name" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_">
+        <supports>Draconic Power,Dragonblade</supports>
+        <description>
+            <p>description</p>
+        </description>
+        <setters>
+            <set name="duration">Instantaneous</set>
+            <set name="level">6</set>
+            <set name="School">Tail</set>
+            <set name="time">1 action</set>
+            <set name="range">5 feet</set>
+        </setters>
+    </element>
+    
+    <element name="name" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_">
+        <supports>Draconic Power,Dragonblade</supports>
+        <description>
+            <p>description</p>
+        </description>
+        <setters>
+            <set name="duration">Instantaneous</set>
+            <set name="level">6</set>
+            <set name="School">Tail</set>
+            <set name="time">1 action</set>
+            <set name="range">5 feet</set>
+        </setters>
+    </element>
+    
+    <element name="name" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_">
+        <supports>Draconic Power,Dragonblade</supports>
+        <description>
+            <p>description</p>
+        </description>
+        <setters>
+            <set name="duration">Instantaneous</set>
+            <set name="level">6</set>
+            <set name="School">Tail</set>
+            <set name="time">1 action</set>
+            <set name="range">5 feet</set>
+        </setters>
+    </element>
+    
+    <element name="name" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_">
+        <supports>Draconic Power,Dragonblade</supports>
+        <description>
+            <p>description</p>
+        </description>
+        <setters>
+            <set name="duration">Instantaneous</set>
+            <set name="level">6</set>
+            <set name="School">Tail</set>
+            <set name="time">1 action</set>
+            <set name="range">5 feet</set>
+        </setters>
+    </element>
+    
+    <element name="name" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_">
+        <supports>Draconic Power,Dragonblade</supports>
+        <description>
+            <p>description</p>
+        </description>
+        <setters>
+            <set name="duration">Instantaneous</set>
+            <set name="level">6</set>
+            <set name="School">Tail</set>
+            <set name="time">1 action</set>
+            <set name="range">5 feet</set>
+        </setters>
+    </element>
+    
+    <element name="name" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_">
+        <supports>Draconic Power,Dragonblade</supports>
+        <description>
+            <p>description</p>
+        </description>
+        <setters>
+            <set name="duration">Instantaneous</set>
+            <set name="level">6</set>
+            <set name="School">Tail</set>
+            <set name="time">1 action</set>
+            <set name="range">5 feet</set>
+        </setters>
+    </element>
+    
+    <element name="name" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_">
+        <supports>Draconic Power,Dragonblade</supports>
+        <description>
+            <p>description</p>
+        </description>
+        <setters>
+            <set name="duration">Instantaneous</set>
+            <set name="level">6</set>
+            <set name="School">Tail</set>
+            <set name="time">1 action</set>
+            <set name="range">5 feet</set>
+        </setters>
+    </element>
+    
+    <element name="name" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_">
+        <supports>Draconic Power,Dragonblade</supports>
+        <description>
+            <p>description</p>
+        </description>
+        <setters>
+            <set name="duration">Instantaneous</set>
+            <set name="level">6</set>
+            <set name="School">Tail</set>
+            <set name="time">1 action</set>
+            <set name="range">5 feet</set>
+        </setters>
+    </element>
+    
+    <element name="name" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_">
+        <supports>Draconic Power,Dragonblade</supports>
+        <description>
+            <p>description</p>
+        </description>
+        <setters>
+            <set name="duration">Instantaneous</set>
+            <set name="level">6</set>
+            <set name="School">Tail</set>
+            <set name="time">1 action</set>
+            <set name="range">5 feet</set>
+        </setters>
+    </element>
+    
+    <element name="name" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_">
+        <supports>Draconic Power,Dragonblade</supports>
+        <description>
+            <p>description</p>
+        </description>
+        <setters>
+            <set name="duration">Instantaneous</set>
+            <set name="level">7</set>
+            <set name="School">Tail</set>
+            <set name="time">1 action</set>
+            <set name="range">5 feet</set>
+        </setters>
+    </element>
+    
+    <element name="name" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_">
+        <supports>Draconic Power,Dragonblade</supports>
+        <description>
+            <p>description</p>
+        </description>
+        <setters>
+            <set name="duration">Instantaneous</set>
+            <set name="level">7</set>
+            <set name="School">Tail</set>
+            <set name="time">1 action</set>
+            <set name="range">5 feet</set>
+        </setters>
+    </element>
+    
+    <element name="name" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_">
+        <supports>Draconic Power,Dragonblade</supports>
+        <description>
+            <p>description</p>
+        </description>
+        <setters>
+            <set name="duration">Instantaneous</set>
+            <set name="level">7</set>
+            <set name="School">Tail</set>
+            <set name="time">1 action</set>
+            <set name="range">5 feet</set>
+        </setters>
+    </element>
+    
+    <element name="name" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_">
+        <supports>Draconic Power,Dragonblade</supports>
+        <description>
+            <p>description</p>
+        </description>
+        <setters>
+            <set name="duration">Instantaneous</set>
+            <set name="level">7</set>
+            <set name="School">Tail</set>
+            <set name="time">1 action</set>
+            <set name="range">5 feet</set>
+        </setters>
+    </element>
+    
+    <element name="name" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_">
+        <supports>Draconic Power,Dragonblade</supports>
+        <description>
+            <p>description</p>
+        </description>
+        <setters>
+            <set name="duration">Instantaneous</set>
+            <set name="level">7</set>
+            <set name="School">Tail</set>
+            <set name="time">1 action</set>
+            <set name="range">5 feet</set>
+        </setters>
+    </element>
+    
+    <element name="name" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_">
+        <supports>Draconic Power,Dragonblade</supports>
+        <description>
+            <p>description</p>
+        </description>
+        <setters>
+            <set name="duration">Instantaneous</set>
+            <set name="level">7</set>
+            <set name="School">Tail</set>
+            <set name="time">1 action</set>
+            <set name="range">5 feet</set>
+        </setters>
+    </element>
+    
+    <element name="name" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_">
+        <supports>Draconic Power,Dragonblade</supports>
+        <description>
+            <p>description</p>
+        </description>
+        <setters>
+            <set name="duration">Instantaneous</set>
+            <set name="level">7</set>
+            <set name="School">Tail</set>
+            <set name="time">1 action</set>
+            <set name="range">5 feet</set>
+        </setters>
+    </element>
+    
+    <element name="name" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_">
+        <supports>Draconic Power,Dragonblade</supports>
+        <description>
+            <p>description</p>
+        </description>
+        <setters>
+            <set name="duration">Instantaneous</set>
+            <set name="level">7</set>
+            <set name="School">Tail</set>
+            <set name="time">1 action</set>
+            <set name="range">5 feet</set>
+        </setters>
+    </element>
+    
+    <element name="name" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_">
+        <supports>Draconic Power,Dragonblade</supports>
+        <description>
+            <p>description</p>
+        </description>
+        <setters>
+            <set name="duration">Instantaneous</set>
+            <set name="level">7</set>
+            <set name="School">Tail</set>
+            <set name="time">1 action</set>
+            <set name="range">5 feet</set>
+        </setters>
+    </element>
+    
 </elements>
