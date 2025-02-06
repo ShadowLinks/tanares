@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+    <info>
+        <name></name>
+        <description>Scoundrel Simplified Class from Tanares RPG 5e</description>
+        <author url="">Tanares RPG 5e</author>
+        <update version="0.0.1">
+            <file name="class-scoundrel.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/classes/class-scoundrel.xml" />
+        </update>
+    </info>
+    <element name="Scoundrel" type="Class" source="Tanares RPG 5e" id="ID_TRPG_CLASS_SCOUNDREL">
+        <description>
+            <p>Scoundrels are simplified rogues. They are ideal for new players who are looking for less complexity or to create a more straightforward character without sacrificing effectiveness during play.</p>
+            <h4>Scoundrel</h4>
+            <p>Scoundrels are the very embodiment of cunning and guile, renowned for their mischie vous tricks and underhanded dealings. Theirsharp minds and silver tongues deceive with effortless charm, beguiling those around them and manipulating their adversaries to their advantage. With a love for the shadows and a disdain for fame, they are driven by wealth, adventure, or personal causes.</p>
+            <p class="indent">Life on the street has honed the scoundrels into fiercely independent and cynical individuals, with a soul tempered by the harsh realities of survival. They learned to be acrobatic and agile, exploiting the weaknesses of their enemies and delivering devastating blows to their critical points with precision and speed. Wielding light weapons like daggers, they rely on speed and agility over brute force, moving with fluid grace that leaves their foes disoriented and struggling to keep up.</p>
+            <p class="indent">In combat, scoundrels are the ultimate thieves and tricksters, leaving a trail of confusion in their wake. Their cunning, swiftness, and ability to strike from unexpected angles make them formidable opponents, cementing their reputation as masters of the shadows. With a carefree exterior and a quick wit, they are both dangerous and unpredictable, making them a valuable asset to any adventure group. But with their love for wealth and tendency to be motivated by personal gain, they can also be lucky yet unreliable allies. Scoundrels are survivors of the street, and their skills are the result of a lifetime of mischief, sly, and crafty schemes.</p>
+            <p class="indent">You can’t multiclass into Simplified Classes, or multiclass if you are a Simplified Class.</p>
+            <h4>How to play with a Scoundrel</h4>
+            <p>The scoundrel class is a superior pick for players seeking to excel in stealth, disarming traps, unlocking doors, and employing a quick and cunning combat style. As a scoundrel, you’ll enjoy a unique suite of skills, honed to razor-sharp efficiency as you level up, establishing you as a formidable stealth combatant capable of delivering potent damage and evading even the most intricate traps.</p>
+            <p class="indent">At 1st level, your combat prowess is enhanced by the Sneak Attack Simplified feature. This power allows you to deal extra damage when attacking an enemy adjacent to an ally. This additional damage escalates as you progress in levels. Moreover, the Scoundrel’s Agility feature facilitates your movement across the battlefield without provoking opportunity attacks, making you a master of the hit-andrun combat strategy.</p>
+            <p class="indent">This class encourages strategic combat, taking advantage of positioning and allied placements to strike enemies where it hurts most. You might find yourself using the infamous “backstab” tactic often, making scoundrels excellent battlefield tacticians.</p>
+            <p class="indent">As you advance in levels, your problem-solving prowess becomes increasingly prominent. The Adventurer’s Aptitude and Experience features give you a bonus to ability checks and additional proficiencies, making you a versatile asset in many situations. Your inherent agility is further enhanced by the Evasion feature, ensuring your safety in dangerous situations.</p>
+            <p class="indent">The Precise Striker feature significantly improves the accuracy of your attacks, reinforcing the scoundrel’s reputation as a deadly and efficient combatant.</p>
+            <p class="indent">In a nutshell, the scoundrel class offers a comprehensive gaming experience, granting you numerous benefits in stealth, skill proficiencies, and the ability to escape challenging situations unscathed. As a scoundrel, you’ll find yourself perfectly equipped to handle everything from stealth missions to enemy mage fireballs. Pairing with complementary classes in your adventuring party can further enhance the strengths of this versatile class.</p>
+            <h2>CLASS FEATURES</h2>
+            <p>As Scoundrel, you gain the following class features.</p>
+            <h5 class="caption">HIT POINTS</h5>
+            <ul class="unstyled">
+                <li><strong>Hit Dice:</strong> 1d8 per scoundrel level</li>
+                <li><strong>Hit Points at 1st Level:</strong> 8 + your Constitution modifier</li>
+                <li><strong>Hit Points at Higher Levels:</strong> 1d8 (or 5) + your Constitution modifier per scoundrel level after 1st</li>
+            </ul>
+            <h5 class="caption">PROFICIENCIES</h5>
+            <ul class="unstyled mb">
+                <li><strong>Armor:</strong> light armor</li>
+                <li><strong>Weapons:</strong> simple weapons, hand crossbows, longswords, rapiers, shortswords</li>
+                <li><strong>Tools:</strong> thieves Tools</li>
+            </ul>
+            <ul class="unstyled">
+                <li><strong>Saving Throws:</strong> Dexterity, Intelligence</li>
+                <li><strong>Skills:</strong> Choose four from Acrobatics, Athletics, Deception, Insight, Intimidation, Investigation, Perception, Performance, Persuasion, Sleight of Hand, and Stealth</li>
+            </ul>
+            <h5 class="caption">EQUIPMENT</h5>
+            <p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+            <ul>
+                <li>(a) a rapier or (b) a shortsword</li>
+                <li>(a) a shortbow and a quiver of 20 arrows or (b) a shortsword</li>
+                <li>(a) a burglar’s pack, (b) a dungeoneer’s pack, or (c) an adventurer’s pack</li>
+                <li>Leather armor, two daggers, and thieves’ tools</li>
+            </ul>
+            <!-- class table here -->
+            <h5 class="caption">THE SCOUNDREL</h5>
+            <table class="class-features">
+                <thead>
+                    <tr><td class="col-5">Level</td><td class="col-10">Proficiency Bonus</td><td class="col-60 left">Features</td><td>Sneak Attack  Simplified</td></tr>
+                </thead>
+                <tr><td> 1st</td><td>+2</td><td class="left">Sneak Attack Simplified, Scoundrel's Agility</td><td>1d8</td></tr>
+                <tr><td> 2nd</td><td>+2</td><td class="left">Experience</td><td>1d8</td></tr>
+                <tr><td> 3rd</td><td>+2</td><td class="left">Adventurer's Aptitude</td><td>2d8</td></tr>
+                <tr><td> 4th</td><td>+2</td><td class="left">Ability Score Improvement</td><td>2d8</td></tr>
+                <tr><td> 5th</td><td>+3</td><td class="left">Scoundrel's Agility, Precise Striker</td><td>3d8</td></tr>
+                <tr><td> 6th</td><td>+3</td><td class="left">Adventurer's Aptitude</td><td>3d8</td></tr>
+                <tr><td> 7th</td><td>+3</td><td class="left">Evasion</td><td>4d8</td></tr>
+                <tr><td> 8th</td><td>+3</td><td class="left">Ability Score Improvement</td><td>4d8</td></tr>
+                <tr><td> 9th</td><td>+4</td><td class="left">Adventurer's Aptitude</td><td>5d8</td></tr>
+                <tr><td>10th</td><td>+4</td><td class="left">Ability Score Improvement, Experience</td><td>5d8</td></tr>
+                <tr><td>11th</td><td>+4</td><td class="left">Precise Striker Improvement</td><td>6d8</td></tr>
+                <tr><td>12th</td><td>+4</td><td class="left">Ability Score Improvement, Adventurer's Aptitude</td><td>6d8</td></tr>
+                <tr><td>13th</td><td>+5</td><td class="left">-</td><td>7d8</td></tr>
+                <tr><td>14th</td><td>+5</td><td class="left">-</td><td>7d8</td></tr>
+                <tr><td>15th</td><td>+5</td><td class="left">Adventurer's Aptitude</td><td>8d8</td></tr>
+                <tr><td>16th</td><td>+5</td><td class="left">Ability Score Improvement</td><td>8d8</td></tr>
+                <tr><td>17th</td><td>+6</td><td class="left">Precise Striker Improvement</td><td>9d8</td></tr>
+                <tr><td>18th</td><td>+6</td><td class="left">Experience</td><td>9d8</td></tr>
+                <tr><td>19th</td><td>+6</td><td class="left">Ability Score Improvement</td><td>10d8</td></tr>
+                <tr><td>20th</td><td>+6</td><td class="left">Scoundrel's Fortitude</td><td>10d8</td></tr>
+            </table>
+
+            <div element="ID_TRPG_CLASS_FEATURE_SCOUNDREL_SNEAK_ATTACK_SIMPLIFIED" />
+            <div element="ID_TRPG_CLASS_FEATURE_SCOUNDREL_SCOUNDRELS_AGILITY" />
+            <div element="ID_TRPG_CLASS_FEATURE_SCOUNDREL_EXPERIENCE" />
+            <div element="ID_TRPG_CLASS_FEATURE_SCOUNDREL_ADVENTURERS_APTITUDE" />
+            <div element="ID_TRPG_CLASS_FEATURE_SCOUNDREL_ASI" />
+            <div element="ID_TRPG_CLASS_FEATURE_SCOUNDREL_PRECISE_STRIKER" />
+            <div element="ID_TRPG_CLASS_FEATURE_SCOUNDREL_EVASION" />
+            <div element="ID_TRPG_CLASS_FEATURE_SCOUNDREL_SCOUNDRELS_FORTITUDE" />
+        </description>
+        <setters>
+            <set name="hd">d8</set>
+        </setters>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HAND" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_RAPIER" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" />
+            <select type="Proficiency" name="Skill Proficiency (Scoundrel)" number="4" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_PERFORMANCE|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND|ID_PROFICIENCY_SKILL_STEALTH" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_SCOUNDREL_SNEAK_ATTACK_SIMPLIFIED" level="1" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_SCOUNDREL_SCOUNDRELS_AGILITY" level="1" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_SCOUNDREL_EXPERIENCE" level="2" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_SCOUNDREL_ADVENTURERS_APTITUDE" level="3" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_SCOUNDREL_ASI" level="4" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_SCOUNDREL_PRECISE_STRIKER" level="5" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_SCOUNDREL_EVASION" level="7" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_SCOUNDREL_SCOUNDRELS_FORTITUDE" level="20" />
+        </rules>
+    </element>
+
+    <element name="Sneak Attack Simplified" type="Class Feature" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_SCOUNDREL_SNEAK_ATTACK_SIMPLIFIED">
+        <description>
+            <p>Starting at 1st level, you know how to exploit a foe’s distraction to strike a vital blow. The first time on each turn that you hit a creature adjacent to an ally of yours, you deal an extra 1d8 damage. The extra damage increases as you gain levels in this class, as shown in the Sneak Attack Simplified column of the Scoundrel table.</p>
+        </description>
+        <sheet>
+            <description>The first time on each turn that you hit a creature adjacent to an ally of yours, you deal an extra {{sneak-die}}d8 damage.</description>
+        </sheet>
+        <rules>
+            <stat name="sneak-die" value="1" />
+            <stat name="sneak-die" value="1" level="3" />
+            <stat name="sneak-die" value="1" level="5" />
+            <stat name="sneak-die" value="1" level="7" />
+            <stat name="sneak-die" value="1" level="9" />
+            <stat name="sneak-die" value="1" level="11" />
+            <stat name="sneak-die" value="1" level="13" />
+            <stat name="sneak-die" value="1" level="15" />
+            <stat name="sneak-die" value="1" level="17" />
+            <stat name="sneak-die" value="1" level="19" />
+        </rules>
+    </element>
+    <element name="Scoundrel's Agility" type="Class Feature" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_SCOUNDREL_SCOUNDRELS_AGILITY">
+        <description>
+            <p>Scoundrels are known for their agility and difficulty to be hit. Starting at 1st level, your movements don’t provoke opportunity attacks and your speed increases by 10 feet. Starting at 5th level, you also receive a +2 bonus to your AC</p>
+        </description>
+        <sheet>
+            <description>Your movements dont provoke opportunity attacks.</description>
+        </sheet>
+        <rules>
+            <stat name="innate speed:misc" value="10" requirements="[innate speed:1]"/>
+            <stat name="ac:misc" value="2" level="5" />
+        </rules>
+    </element>
+    <element name="Experience" type="Class Feature" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_SCOUNDREL_EXPERIENCE">
+        <description>
+            <p>Your experience grants you certain practical knowledge. At 2nd level, and again when you reach 10th and 18th level, you gain proficiency in a skill of your choice</p>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Proficiency" supports="Skill" level="2" />
+            <select type="Proficiency" supports="Skill" level="10" />
+            <select type="Proficiency" supports="Skill" level="18" />
+        </rules>
+    </element>
+    <element name="Adventurer's Aptitude" type="Class Feature" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_SCOUNDREL_ADVENTURERS_APTITUDE">
+        <description>
+            <p>You are famous for your unmatched ability to handle complicated situations. Starting at 3rd level, you gain a +1 bonus to all ability checks that you are proficient in. This bonus increases to +2 at 6th level, +3 at 9th level, +4 at 12th level, and +5 at 15th level.</p>
+        </description>
+        <sheet>
+            <description>Your proficiency increases at certain levels.</description>
+        </sheet>
+        <rules>
+            <stat name="Proficiency" value="+1" alt="Adventurer's Aptitude 3"/>
+            <stat name="Proficiency" value="+1" alt="Adventurer's Aptitude 6 " level="6" />
+            <stat name="Proficiency" value="+1" alt="Adventurer's Aptitude 9 " level="9" />
+            <stat name="Proficiency" value="+1" alt="Adventurer's Aptitude 12 " level="12" />
+            <stat name="Proficiency" value="+1" alt="Adventurer's Aptitude 15 " level="15" />
+        </rules>
+    </element>
+    <element name="Abilty Score Improvement" type="Class Feature" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_SCOUNDREL_ASI">
+       <description>
+            <p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Improvement Option (Scoundrel 4)" supports="Improvement Option,Scoundrel,4" level="4"/>
+            <select type="Class Feature" name="Improvement Option (Scoundrel 8)" supports="Improvement Option,Scoundrel,8" level="8"/>
+            <select type="Class Feature" name="Improvement Option (Scoundrel 12)" supports="Improvement Option,Scoundrel,12" level="12"/>
+            <select type="Class Feature" name="Improvement Option (Scoundrel 16)" supports="Improvement Option,Scoundrel,16" level="16"/>
+            <select type="Class Feature" name="Improvement Option (Scoundrel 19)" supports="Improvement Option,Scoundrel,19" level="19"/>
+        </rules>
+    </element>
+    <element name="Precise Striker" type="Class Feature" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_SCOUNDREL_PRECISE_STRIKER">
+        <description>
+            <p>Your attacks are often accurate. Starting at 5th level, you receive a +1 bonus to your attack rolls. This bonus increases to +2 at 11th level, and +3 at 17th level.</p>
+        </description>
+        <sheet>
+            <description>You recieve a bonus to your attack rolls.</description>
+        </sheet>
+        <rules>
+            <stat name="ranged:attack" value="1" level="5" />
+            <stat name="melee:attack" value="1" level="5" />
+            <stat name="ranged:attack" value="1" level="11" />
+            <stat name="melee:attack" value="1" level="11" />
+            <stat name="ranged:attack" value="1" level="17" />
+            <stat name="melee:attack" value="1" level="17" />
+        </rules>
+    </element>
+    <element name="Evasion" type="Class Feature" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_SCOUNDREL_EVASION">
+        <description>
+            <p>Beginning at 7th level, you can nimbly dodge out of the way of certain area effects, such as a red dragon’s fiery breath or an ice storm spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</p>
+        </description>
+        <sheet>
+            <description>When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</description>
+        </sheet>
+    </element>
+    <element name="Scoundrel's Fortune" type="Class Feature" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_SCOUNDREL_SCOUNDRELS_FORTITUDE">
+        <description>
+            <p>At 20th level, your luck always seems to be on your side when it matters the most. If an attack of yours misses a target within range, you can turn the miss into a hit. Alternatively, if you fail an ability check, you can treat the d20 roll as a 20. This feature can only be used once per short or long rest.</p>
+        </description>
+        <sheet usage="1/short rest">
+            <description> If an attack of yours misses a target within range, you can turn the miss into a hit. Alternatively, if you fail an ability check, you can treat the d20 roll as a 20. This feature can only be used once per short or long rest.</description>
+        </sheet>
+    </element>
+</elements>
