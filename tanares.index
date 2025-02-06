@@ -52,5 +52,8 @@
 
 		<file name="class-brawler.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/classes/class-brawler.xml" />
 		<file name="class-mage.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/classes/class-mage.xml" />
+		<file name="class-priest.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/classes/class-priest.xml" />
+		<file name="class-scoundrel.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/classes/class-scoundrel.xml" />
+
 	</files>
 </index>

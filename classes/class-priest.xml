@@ -83,7 +83,7 @@
             <div element="ID_TRPG_CLASS_FEATURE_PRIEST_DIVINE_INTERVENTION" />
         </description>
         <setters>
-            <set name="hd">d4</set>
+            <set name="hd">d8</set>
         </setters>
         <sheet display="false" />
         <rules>
@@ -103,7 +103,7 @@
             <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_PRIEST_DIVINE_INTERVENTION" level="20" />
         </rules>
     </element>
-    <element name="name" type="Class Feature" source="source" id="ID_TRPG_CLASS_FEATURE_PRIEST_SIMPLIFIED_SPELLCASTING">
+    <element name="Simplified Spellcasting" type="Class Feature" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_PRIEST_SIMPLIFIED_SPELLCASTING">
         <description>
             <p>Unlike more complex classes, as a priest, your spells are predetermined by your class and you can cast each of them twice per day. Follow the Priest Spells table to know which spells you know and when you will have access to them.</p>
             <p class="indent">Charisma is your spellcasting ability for your priest spells, since you learn your spells through study. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting a saving throw DC for a priest spell you cast and when making an attack roll with one.</p>
@@ -144,47 +144,75 @@
             <grant type="Spell" id="ID_PHB_SPELL_HEAL" level="11" spellcasting="Priest"/>
             <grant type="Spell" id="ID_PHB_SPELL_FIRE_STORM" level="13" spellcasting="Priest"/>
             <grant type="Spell" id="ID_PHB_SPELL_SUNBURST" level="15" spellcasting="Priest"/>
-            <grant type="Spell" id="ID_PHB_SPELL_METEOR_TRUE_RESURRECTION" level="17" spellcasting="Priest"/>
+            <grant type="Spell" id="ID_PHB_SPELL_TRUE_RESURRECTION" level="17" spellcasting="Priest"/>
         </rules>
     </element>
-    <element name="name" type="Class Feature" source="source" id="ID_TRPG_CLASS_FEATURE_PRIEST_SPECIFIC_CANTRIPS">
+    <element name="Specific Cantrips" type="Class Feature" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_PRIEST_SPECIFIC_CANTRIPS">
         <description>
-            <p></p>
+            <p>At 1st level, you know two cantrips: light and sacred flame. At 3rd level you learn an additional cantrip, spare the dying.</p>
         </description>
         <sheet>
+            <description>At 1st level, you know two cantrips: light and sacred flame. At 3rd level you learn an additional cantrip, spare the dying.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_LIGHT" level="1" spellcasting="Priest"/>
+            <grant type="Spell" id="ID_PHB_SPELL_SACRED_FLAME" level="1" spellcasting="Priest"/>
+            <grant type="Spell" id="ID_PHB_SPELL_SPARE_THE_DYING" level="3" spellcasting="Priest"/>
+        </rules>
+    </element>
+    <element name="Experience" type="Class Feature" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_PRIEST_EXPERIENCE">
+        <description>
+            <p>Your experience grants you certain practical knowledge. At 2nd level, and again when you reach 10th and 18th level, you gain proficiency in a skill of your choice</p>
+        </description>
+        <sheet display="false">
             <description></description>
         </sheet>
+        <rules>
+            <select type="Proficiency" supports="Skill" level="2" />
+            <select type="Proficiency" supports="Skill" level="10" />
+            <select type="Proficiency" supports="Skill" level="18" />
+        </rules>
     </element>
-    <element name="name" type="Class Feature" source="source" id="ID_TRPG_CLASS_FEATURE_PRIEST_EXPERIENCE">
+    <element name="Ability Score Improvement" type="Class Feature" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_PRIEST_ASI">
         <description>
-            <p></p>
+            <p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Improvement Option (Priest 4)" supports="Improvement Option,Priest,4" level="4"/>
+            <select type="Class Feature" name="Improvement Option (Priest 8)" supports="Improvement Option,Priest,8" level="8"/>
+            <select type="Class Feature" name="Improvement Option (Priest 12)" supports="Improvement Option,Priest,12" level="12"/>
+            <select type="Class Feature" name="Improvement Option (Priest 16)" supports="Improvement Option,Priest,16" level="16"/>
+            <select type="Class Feature" name="Improvement Option (Priest 19)" supports="Improvement Option,Priest,19" level="19"/>
+        </rules>
+    </element>
+    <element name="Divine Cure" type="Class Feature" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_PRIEST_DIVINE_CURE">
+        <description>
+            <p>Starting at 6th level, every time you heal hit points using one of your spells, the healing is increased by +2d8 hit points. The increase in healing becomes +3d8 when you reach the 14th level in this class.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>Every time you heal hit points using one of your spells, the healing is increased by +2d8 hit points. The increase in healing becomes +3d8 when you reach the 14th level in this class.</description>
         </sheet>
     </element>
-    <element name="name" type="Class Feature" source="source" id="ID_TRPG_CLASS_FEATURE_PRIEST_DIVINE_CURE">
-        <description
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="name" type="Class Feature" source="source" id="ID_TRPG_CLASS_FEATURE_PRIEST_HOLY_SHIELD">
+    <element name="Holy Shield" type="Class Feature" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_PRIEST_HOLY_SHIELD">
         <description>
-            <p></p>
+            <p>The gods seem to smile upon you and protect you. Starting at 10th level, you gain a +2 bonus to your AC.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You gain an AC bonus</description>
         </sheet>
+        <rules>
+            <stat name="ac:misc" value="2" />
+        </rules>
     </element>
-    <element name="name" type="Class Feature" source="source" id="ID_TRPG_CLASS_FEATURE_PRIEST_DIVINE_INTERVENTION">
+    <element name="Divine Intervention" type="Class Feature" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_PRIEST_DIVINE_INTERVENTION">
         <description>
-            <p></p>
+            <p>Starting at 20th level, you can invoke your deity to intervene on your behalf. This requires the use of an action. Describe the help you are seeking and it will occur, but the GM determines how is the nature of the intervention — the effect of any cleric spell or cleric domain spell would be appropriate. After using this ability, you cannot use it again for the next 7 days.</p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet usage="1 per 7 days">
+            <description>
+                <p>Starting at 20th level, you can invoke your deity to intervene on your behalf. This requires the use of an action. Describe the help you are seeking and it will occur, but the GM determines how is the nature of the intervention — the effect of any cleric spell or cleric domain spell would be appropriate. After using this ability, you cannot use it again for the next 7 days.</p>
+        </description>
         </sheet>
     </element>
 </elements>

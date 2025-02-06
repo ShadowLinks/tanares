@@ -20,7 +20,7 @@ To Do:
     - Redeemer
     - Shepherd
     - Doomspeakers
-- Simplified Classes
+- Simplified Classes COMPLETED
     - Brawler
     - Mage
     - Priest
