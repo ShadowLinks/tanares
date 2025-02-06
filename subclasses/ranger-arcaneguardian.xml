@@ -4,7 +4,7 @@
         <name>Arcane Guardian</name>
         <description>Arcane Guardian subclass for the Ranger class from Tanares RPG 5e.</description>
         <author url="">Dragori Games</author>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="ranger-arcaneguardian.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/subclasses/ranger-arcaneguardian.xml" />
         </update>
     </info>
