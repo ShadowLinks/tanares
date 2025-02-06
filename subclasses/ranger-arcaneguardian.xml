@@ -37,16 +37,13 @@
             <p class="indent">Also at 3rd level, you learn two additional spells of your choice from the wizard spell list. These spells must be of a level for which you have spell slots. They do not count towards the number of ranger spells you know.</p>
             <p class="indent">Each time you gain a level in this class, you can replace one of these extra spells with another from the wizard spell list, as long as you have spell slots for the new spell’s level</p>
         </description>
-        <!-- Trying to add the wizard spell list to the Ranger spell selection
-        <spellcasting name="Ranger" ability="Wisdom" prepare="true">
-            <list>Ranger</list>
-        </spellcasting>
-        -->
         <sheet>
             <description>You have access to the wizard spell list and 2 spells specifically from the wizard list, which can be changed on level up.</description>
         </sheet>
+        <spellcasting name="Ranger" extend="true">
+            <extend>Wizard</extend>
+        </spellcasting>
         <rules>
-       
             <select type="Spell" name="Spells (Arcane Guardian)" supports="Wizard, $(spellcasting:slots)" level="3" number="2" spellcasting="Ranger"/>
         </rules>
     </element>
