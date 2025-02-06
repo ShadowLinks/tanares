@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+    <info>
+        <name></name>
+        <description>Dragonblade Class from Tanares RPG 5e</description>
+        <author url="">Tanares RPG 5e</author>
+        <update version="0.0.1">
+            <file name="class-dragonblade.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/classes/class-dragonblade.xml" />
+        </update>
+    </info>
+    <element name="Dragonblade" type="Class" source="Tanares RPG 5e" id="ID_TRPG_CLASS_DRAGONBLADE">
+        <description>
+            <p>Masters of draconic power and strategic thinking, these skilled combatants protect Tanares from penumbral cultists and creatures, serving as defenders, monster hunters, and military leaders for the Draconic Council.</p>
+            <h4>Dragonblade</h4>
+            <p>The dragonblades are elite combatants with a unique fighting
+style, harnessing the ancient and mystic powers of dragons.
+Most of these skilled warriors serve the Draconic Council
+and take on various roles, such as diplomats, gladiators,
+and monster hunters, fighting against the corruptive
+forces that threaten the world.</p>
+<p class="indent">Each dragonblade follows a Draconic Soul path, symbolized by a dragon color that bestows upon them elemental
+powers associated with that dragon. These elemental forces
+augment their martial prowess, enabling them to combat
+the sinister otherworldly forces threatening their world.
+Their cunning also allows them to serve as battle strategists, outwitting enemies and controlling the battlefield with
+strategic prowess.</p>
+<p class="indent">As the Malrokian Curse looms over Tanares, threatening
+to unleash chaos and devastation should large-scale battles
+erupt, dragonblades are required to avert such conflicts and
+hunt the cultists and aberrations that strive to cause them.
+Their missions demand extraordinary courage, tactical expertise, and unwavering dedication to the cause.</p>
+<p class="indent">In their quest, dragonblades often face formidable adversaries such as the Cult of Shadow Wing, which seeks to
+corrupt all creatures, including dragons, turning them into
+penumbral creatures that empower the eldritch Ungods</p>
+<p class="indent">As the dragonblades grapple with their daunting tasks,
+the enigmatic Draconic Council is beset with internal strife,
+casting shadows over the future of Tanares. The Council’s
+divisions stem from contrasting beliefs regarding the potential of mortals. The majestic Gold Avatar Dragon, Isendden,
+champions a faction that fervently trusts in mortal potential
+and destiny. In stark contrast, the formidable Black Avatar
+Dragon, Zaldrus, spearheads a faction that perceives mortals
+as feeble and susceptible to corruption. As this clandestine
+struggle for dominion over the council unfolds, whispers of
+political intrigue echoes in the Draconic Towers</p>
+<p class="indent">Undeterred by these challenges, the dragonblades persevere
+in their mission. They venture into the Penumbral Plane to
+free captured dragons, dismantle the Shadow Wing’s plans,
+and vanquish their foes. As the embodiment of strategic
+combat against the encroaching darkness, the dragonblades
+unleash their intellect, martial skill, and the awe-inspiring
+power of dragons to vanquish their foes.</p>
+            
+       
+            <h4>CREATING A DRAGONBLADE</h4>
+            <p>The first step in creating your dragonblade character is to
+determine whether or not they are affiliated with the Draconic
+Council. Most dragonblades serve the Council, but there
+are many wandering dragonblades who could have served
+as the character’s mentor.</p>
+            <p class="indent">If they are affiliated with the Council, work with your
+Game Master to determine its ranking, who trained it and
+who is currently its superior, as well as the philosophy and
+goals of its group inside the Council.</p>
+            <p class="indent">If they are not affiliated with the Council, work with your
+Game Master to determine the character’s mentor, the mentor’s history, and why they trained the character.</p>
+            <p class="indent">Finally, decide what led your character to a life of adventure. Were they fulfilling a mission given to them by the
+Council? Did their studies make them question some of the
+things taught to them by their master or the Council? Did
+they encounter a group in need of their leadership that could
+help them achieve their personal goals? Did they embark on
+their adventure as part of their training?</p>
+           
+            <h2>CLASS FEATURES</h2>
+            <p>As an dragonblade, you gain the following class features.</p>
+            <h5 class="caption">HIT POINTS</h5>
+            <ul class="unstyled">
+                <li><strong>Hit Dice:</strong> 1d8 per dragonblade level</li>
+                <li><strong>Hit Points at 1st Level:</strong> 8 + your Constitution modifier</li>
+                <li><strong>Hit Points at Higher Levels:</strong> 1d8 (or 5) + your Constitution modifier per dragonblade level after 1st</li>
+            </ul>
+            <h5 class="caption">PROFICIENCIES</h5>
+            <ul class="unstyled mb">
+                <li><strong>Armor:</strong> All armor, shields</li>
+                <li><strong>Weapons:</strong> simple weapons, martial weapons</li>
+                <li><strong>Tools:</strong> blacksmith tools or cartographer tools</li>
+            </ul>
+            <ul class="unstyled">
+                <li><strong>Saving Throws:</strong> Intelligence, Constitution</li>
+                <li><strong>Skills:</strong> Choose two skills from Arcana, History, Investigation, Nature, Perception, and Religion</li>
+            </ul>
+            <h5 class="caption">EQUIPMENT</h5>
+            <p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+            <ul>
+                <li>(a) one-handed martial weapon and a shield or (b) two-handed martial weapon</li>
+                <li>(a) chain mail or (b) chain shirt, longbow and 20 arrows</li>
+                <li>(a) a scholar’s pack or (b) an explorer’s pack</li>
+                
+            </ul>
+
+            <h5 class="caption">THE </h5>
+            <table class="class-features">
+                <thead>
+                    <tr><td class="col-5">Level</td><td class="col-10">Proficiency Bonus</td><td class="col-10">Dragonic Power Level</td><td class="col-10">Draconic Powers Known</td><td class="col-60 left">Features</td></tr>
+                </thead>
+                <tr><td> 1st</td><td>+2</td><td>1st</td><td>3</td><td class="left">Claws and Scales, Natural Strategist, Draconic Power</td></tr>
+                <tr><td> 2nd</td><td>+2</td><td>1st</td><td>4</td><td class="left">Draconic Soul, Empowered Soul</td></tr>
+                <tr><td> 3rd</td><td>+2</td><td>1st</td><td>4</td><td class="left">Investigative Mind</td></tr>
+                <tr><td> 4th</td><td>+2</td><td>2nd</td><td>5</td><td class="left">Ability Score Improvement</td></tr>
+                <tr><td> 5th</td><td>+3</td><td>2nd</td><td>5</td><td class="left">Draconic Knowledge</td></tr>
+                <tr><td> 6th</td><td>+3</td><td>2nd</td><td>5</td><td class="left">Draconic Soul Feature</td></tr>
+                <tr><td> 7th</td><td>+3</td><td>3rd</td><td>6</td><td class="left">-</td></tr>
+                <tr><td> 8th</td><td>+3</td><td>3rd</td><td>6</td><td class="left">Ability Score Improvement</td></tr>
+                <tr><td> 9th</td><td>+4</td><td>3rd</td><td>6</td><td class="left">Dragon Form</td></tr>
+                <tr><td>10th</td><td>+4</td><td>4th</td><td>7</td><td class="left">Draconic Soul Feature</td></tr>
+                <tr><td>11th</td><td>+4</td><td>4th</td><td>7</td><td class="left">Tactical Response</td></tr>
+                <tr><td>12th</td><td>+4</td><td>4th</td><td>7</td><td class="left">Ability Score Improvement, Dragon Form</td></tr>
+                <tr><td>13th</td><td>+5</td><td>5th</td><td>8</td><td class="left">-</td></tr>
+                <tr><td>14th</td><td>+5</td><td>5th</td><td>8</td><td class="left">Draconic Soul Feature</td></tr>
+                <tr><td>15th</td><td>+5</td><td>5th</td><td>8</td><td class="left">Dragon Form</td></tr>
+                <tr><td>16th</td><td>+5</td><td>6th</td><td>9</td><td class="left">Ability Score Improvement</td></tr>
+                <tr><td>17th</td><td>+6</td><td>6th</td><td>9</td><td class="left">Spiritual Wings</td></tr>
+                <tr><td>18th</td><td>+6</td><td>6th</td><td>9</td><td class="left">Draconic Soul Feature, Dragon Form</td></tr>
+                <tr><td>19th</td><td>+6</td><td>7th</td><td>10</td><td class="left">Ability Score Improvement</td></tr>
+                <tr><td>20th</td><td>+6</td><td>7th</td><td>10</td><td class="left">Call of the Dragon</td></tr>
+            </table>
+            <!-- class table here -->
+            <div element="ID_TRPG_CLASS_FEATURE_DRAGONBLADE_CLAWS_AND_SCALES" />
+            <div element="ID_TRPG_CLASS_FEATURE_DRAGONBLADE_NATURAL_STRATEGIST" />
+            <div element="ID_TRPG_CLASS_FEATURE_DRAGONBLADE_DRACONIC_POWER" />
+            <div element="ID_TRPG_CLASS_FEATURE_DRAGONBLADE_EMPOWERED_SOUL" />
+            <div element="ID_TRPG_CLASS_FEATURE_DRAGONBLADE_DRACONIC_SOUL" />
+            <div element="ID_TRPG_CLASS_FEATURE_DRAGONBLADE_INVESTIGATIVE_MIND" />
+            <div element="ID_TRPG_CLASS_FEATURE_DRAGONBLADE_ASI" />
+            <div element="ID_TRPG_CLASS_FEATURE_DRAGONBLADE_DRACONIC_KNOWLEDGE" />
+            <div element="ID_TRPG_CLASS_FEATURE_DRAGONBLADE_DRAGON_FORM" />
+            <div element="ID_TRPG_CLASS_FEATURE_DRAGONBLADE_TACTICAL_RESPONSE" />
+            <div element="ID_TRPG_CLASS_FEATURE_DRAGONBLADE_SPIRITUAL_WINGS" />
+            <div element="ID_TRPG_CLASS_FEATURE_DRAGONBLADE_CALL_OF_THE_DRAGON" />
+        </description>
+        <setters>
+            <set name="hd">d8</set>
+        </setters>
+        <sheet display="false" />
+        <rules>
+
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" />
+            <select type="Proficiency" name="Skill Proficiency (Dragonblade)" number="2" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_RELIGION" />
+
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_DRAGONBLADE_CLAWS_AND_SCALES" level="1" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_DRAGONBLADE_NATURAL_STRATEGIST" level="1" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_DRAGONBLADE_DRACONIC_POWER" level="1" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_DRAGONBLADE_EMPOWERED_SOUL" level="2" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_DRAGONBLADE_DRACONIC_SOUL" level="2" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_DRAGONBLADE_INVESTIGATIVE_MIND" level="3" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_DRAGONBLADE_ASI" level="4" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_DRAGONBLADE_DRACONIC_KNOWLEDGE" level="5" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_DRAGONBLADE_DRAGON_FORM" level="9" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_DRAGONBLADE_TACTICAL_RESPONSE" level="11" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_DRAGONBLADE_SPIRITUAL_WINGS" level="17" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_DRAGONBLADE_CALL_OF_THE_DRAGON" level="20" />
+        </rules>
+    </element>
+    <element name="Claws and Scales" type="Class Feature" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_DRAGONBLADE_CLAWS_AND_SCALES">
+        <description>
+            <p>At 1st level, your mastery allows the draconic energy to
+channel into your armor and weapon, turning them as innate
+to you as scales and claws are to a dragon. When you attack
+with melee or ranged weapons, you can use your Intelligence
+modifier, instead of Strength or Dexterity, for the attack and
+damage rolls. Additionally, ignore the Strength requirement
+for wearing armor, and only consider half of its weight towards your carrying capacity</p>
+        </description>
+        <sheet>
+            <description>When attacking with melee or ranged weapons you can use you Intelligence Modifier instead of Strength or Dexterity for the attack and damge rolls. Ignore the Strength requirement for wearing armor and you armor weight is halved.</description>
+        </sheet>
+        <rules>
+            <stat name="ranged:attack" value="intelligence:modifier" bonus="base" />
+			<stat name="melee:attack" value="intelligence:modifier" bonus="base"  />
+			<stat name="ranged:damage" value="intelligence:modifier"  bonus="base" />
+			<stat name="melee:damage" value="intelligence:modifier"  bonus="base" />
+        </rules>
+    </element>
+     <element name="Natural Strategist" type="Class Feature" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_DRAGONBLADE_NATURAL_STRATEGIST">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+     <element name="Draconic Power" type="Class Feature" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_DRAGONBLADE_DRACONIC_POWER">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <spellcasting name="Dragonblade" ability="Intelligence" prepare="false" />
+        <rules>
+            <select type="Spell" supports="Draconic Power,Claw,$(spellcasting:slots)" spellcasting="Dragonblade" />
+            <select type="Spell" supports="Draconic Power,Scale,$(spellcasting:slots)" spellcasting="Dragonblade" />
+            <select type="Spell" supports="Draconic Power,Wing,$(spellcasting:slots)" spellcasting="Dragonblade" />
+            <select type="Spell" supports="Draconic Power,$(spellcasting:slots)" level="2" spellcasting="Dragonblade"/>
+            <select type="Spell" supports="Draconic Power,$(spellcasting:slots)" level="4" spellcasting="Dragonblade" />
+            <select type="Spell" supports="Draconic Power,$(spellcasting:slots)" level="7" spellcasting="Dragonblade" />
+            <select type="Spell" supports="Draconic Power,$(spellcasting:slots)" level="10" spellcasting="Dragonblade" />
+            <select type="Spell" supports="Draconic Power,$(spellcasting:slots)" level="13" spellcasting="Dragonblade" />
+            <select type="Spell" supports="Draconic Power,$(spellcasting:slots)" level="16" spellcasting="Dragonblade" />
+            <select type="Spell" supports="Draconic Power,$(spellcasting:slots)" level="19" spellcasting="Dragonblade" />
+
+
+            <stat name="dragonblade:spellcasting:slots:1" value="1" level="1"/>
+            <stat name="dragonblade:spellcasting:slots:2" value="1" level="4"/>
+            <stat name="dragonblade:spellcasting:slots:3" value="1" level="7"/>
+            <stat name="dragonblade:spellcasting:slots:4" value="1" level="10"/>
+            <stat name="dragonblade:spellcasting:slots:5" value="1" level="13"/>
+            <stat name="dragonblade:spellcasting:slots:6" value="1" level="16"/>
+            <stat name="dragonblade:spellcasting:slots:7" value="1" level="19"/>
+
+        </rules>
+    </element>
+    <element name="Draconic Soul" type="Class Feature" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_DRAGONBLADE_DRACONIC_SOUL">
+        <description>
+            <p>At 2nd level, you may choose an archetype that represents
+your combat training style: the Fury of the Red Dragon, the
+Integrity of the White Dragon, or the Celerity of the Blue
+Dragon. Each bestows upon you unique Draconic Powers
+and features at the 6th, 10th, 14th, and 18th levels. When a
+power refers to elements associated with your Draconic Soul,
+use fire for the red dragon, cold for the white dragon, and
+lightning for the blue dragon, according to your chosen type.</p>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Archetype" name="Draconic Soul" supports="Dragon Soul"/>
+        </rules>
+    </element>
+    <element name="Empowered Soul" type="Class Feature" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_DRAGONBLADE_EMPOWERED_SOUL">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Investigative Mind" type="Class Feature" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_DRAGONBLADE_INVESTIGATIVE_MIND">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Ability Score Improvement" type="Class Feature" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_DRAGONBLADE_ASI">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Draconic Knowledge" type="Class Feature" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_DRAGONBLADE_DRACONIC_KNOWLEDGE">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Dragon Form" type="Class Feature" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_DRAGONBLADE_DRAGON_FORM">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Tactical Response" type="Class Feature" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_DRAGONBLADE_TACTICAL_RESPONSE">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Spiritual Wings" type="Class Feature" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_DRAGONBLADE_SPIRITUAL_WINGS">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Call of the Dragon" type="Class Feature" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_DRAGONBLADE_CALL_OF_THE_DRAGON">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+</elements>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+    <info>
+        <name>Fury of the Red Dragon</name>
+        <description>Red Dragon Soul for Dragonblade class from Tanares RPG 5e.</description>
+        <author url="">Dragori Games</author>
+        <update version="0.0.1">
+            <file name="dragonblade-furyofthereddragon.xml" url="https://github.com/ShadowLinks/tanares/raw/refs/heads/main/subclasses/dragonblade-furyofthereddragon.xml" />
+        </update>
+    </info>
+    <element name="Fury of the Red Dragon" type="Archetype" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_DRAGONBLADE_RED">
+        <supports>Dragon Soul</supports>
+        <description>
+            <p>Dragonblades are the shock troops of the Draconic Council,
+and the Fury of the Red Dragon is one of the most aggressive
+and intense training styles within their ranks. These warriors
+are forged by dragon fire in the art of war and are trained to
+lead the assault against their enemies. Those who choose this
+path are experts in battle, and their relentless aggression is
+unmatched. Whether it be scorching heat or raging infernos, the Fury of the Red Dragon dragonblades are capable
+of withstanding the harshest scorching conditions, making
+them ideal for missions in South Tanares. They seek to study
+the ways of the red dragon and learn from their mastery of
+the environment. These warriors are the embodiment of
+dragon-like ferocity, and they are feared and respected by
+friends and foes alike.</p>
+            <p class="indent"></p>
+            <h5 class="caption">RED DRAGON DRACONIC POWERS</h5>
+            <table>
+                <thead>
+                    <tr><td>Dragonblade Level</td><td>Draconic Powers</td></tr>
+                </thead>
+                <tr><td>2nd</td><td>Burning Strike</td></tr>
+                <tr><td>4th</td><td>Sundering Strike</td></tr>
+                <tr><td>7th</td><td>Ring of Fire</td></tr>
+                <tr><td>10th</td><td>Boon of Flames</td></tr>
+                <tr><td>13th</td><td>Blades of Wind</td></tr>
+                <tr><td>16th</td><td>Sweltering Heat</td></tr>
+                <tr><td>19th</td><td>Final Destruction</td></tr>
+            </table>
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_RED_EMPOWERED_DRAGONS_FURY" />
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_RED_MARK_OF_THE_REVENGE" />
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_RED_SUPERIOR_MAINTENANCE" />
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_RED_FIRE_IMMUNITY" />
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_RED_DRACONIC_PRESENCE" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_RED_EMPOWERED_DRAGONS_FURY" level="1" />
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_RED_MARK_OF_THE_REVENGE" level="1" />
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_RED_SUPERIOR_MAINTENANCE" level="1" />
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_RED_FIRE_IMMUNITY" level="1" />
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_RED_DRACONIC_PRESENCE" level="1" />
+        </rules>
+    </element>
+    <element name="name" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_RED_EMPOWERED_DRAGONS_FURY">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="name" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_RED_MARK_OF_THE_REVENGE">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="name" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_RED_SUPERIOR_MAINTENANCE">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="name" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_RED_FIRE_IMMUNITY">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="name" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_RED_DRACONIC_PRESENCE">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+</elements>

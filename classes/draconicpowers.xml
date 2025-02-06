@@ -1,0 +1,81 @@
+<elements>
+    <info>
+        <name>Draconic Power,Dragonblades</name>
+        <update version="0.0.1">
+            <file name="draconicpowers.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/classes/draconicpowers.xml"/>
+        </update>
+    </info>
+
+    <element name="Force Wave" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_FORCE_WAVE">
+        <supports>Draconic Power,Dragonblade</supports>
+        <description>
+            <p>Make a weapon attack. Even on a miss, a seismic ripple emanates from you, targeting a creature within 15 feet of you (which could be the same or a different target). This creature must succeed on a Dexterity saving throw or take 1d4 thunder damage and be thrown off balance, landing prone</p>
+        </description>
+        <setters>
+            <set name="keywords">thunder</set>
+            <set name="level">1</set>
+            <set name="School">Claw</set>
+            <set name="time">1 action</set>
+            <set name="duration">Instantaneous</set>
+            <set name="range">15 feet</set>
+        </setters>
+    </element>
+
+        <element name="Force Wave2" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_FORCE_WAVE2">
+        <supports>Draconic Power,Dragonblade</supports>
+        <description>
+            <p>Make a weapon attack. Even on a miss, a seismic ripple emanates from you, targeting a creature within 15 feet of you (which could be the same or a different target). This creature must succeed on a Dexterity saving throw or take 1d4 thunder damage and be thrown off balance, landing prone</p>
+        </description>
+        <setters>
+            <set name="keywords">thunder</set>
+            <set name="level">1</set>
+            <set name="School">Claw</set>
+            <set name="time">1 action</set>
+            <set name="duration">Instantaneous</set>
+            <set name="range">15 feet</set>
+        </setters>
+    </element>
+        <element name="Force Wavewing" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_FORCE_WAVEWING">
+        <supports>Draconic Power,Dragonblade</supports>
+        <description>
+            <p>Make a weapon attack. Even on a miss, a seismic ripple emanates from you, targeting a creature within 15 feet of you (which could be the same or a different target). This creature must succeed on a Dexterity saving throw or take 1d4 thunder damage and be thrown off balance, landing prone</p>
+        </description>
+        <setters>
+            <set name="keywords">thunder</set>
+            <set name="level">1</set>
+            <set name="School">Wing</set>
+            <set name="time">1 action</set>
+            <set name="duration">Instantaneous</set>
+            <set name="range">15 feet</set>
+        </setters>
+    </element>
+
+        <element name="Force Wavescale" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_FORCE_WAVESCALE">
+        <supports>Draconic Power,Dragonblade</supports>
+        <description>
+            <p>Make a weapon attack. Even on a miss, a seismic ripple emanates from you, targeting a creature within 15 feet of you (which could be the same or a different target). This creature must succeed on a Dexterity saving throw or take 1d4 thunder damage and be thrown off balance, landing prone</p>
+        </description>
+        <setters>
+            <set name="keywords">thunder</set>
+            <set name="level">1</set>
+            <set name="School">Scale</set>
+            <set name="time">1 action</set>
+            <set name="duration">Instantaneous</set>
+            <set name="range">15 feet</set>
+        </setters>
+    </element>
+    
+    <element name="Inspiring Roar" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_INSPIRING_ROAR">
+        <supports>Draconic Power,Dragonblade</supports>
+        <description>
+            <p>Your dragon-heartened courage motivates either yourself or an ally. A willing creature of your choice within 15 feet of you gets a +1d6 bonus on its next attack roll. Additionally, any frightened condition on that creature is immediately removed.</p>
+        </description>
+        <setters>
+            <set name="duration">Instantaneous</set>
+            <set name="level">2</set>
+            <set name="School">Claw</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">15 feet</set>
+        </setters>
+    </element>
+</elements>
