@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+    <info>
+        <name></name>
+        <description>Priest Simplified Class from Tanares RPG 5e</description>
+        <author url="">Tanares RPG 5e</author>
+        <update version="0.0.1">
+            <file name="class-priest.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/classes/class-priest.xml" />
+        </update>
+    </info>
+    <element name="Priest" type="Class" source="Tanares RPG 5e" id="ID_TRPG_CLASS_PRIEST">
+        <description>
+            <p>riests are simplified clerics. They are ideal for new players who are looking for less complexity or to create a more straightforward character without sacrificing effectiveness during play.</p>
+            <h4>PRIEST</h4>
+            <p>Priests are faithful servants of the gods, shining beacons of devotion who spread the word of their deity to all who will listen. Most priests serve Tamera, the radiant goddess of sun and life, while others follow Bauron, the enigmatic deity of moon and punishment. Dwarves offer their prayers to Dorsi, the god of guardianship and virtues, and among the elves, there are those who worship the Cuibhle pantheon, the gods of elements and seasons. Acting as guides to the common people and trusted advisors to their closest allies, priests are known for their exceptional healing powers and their ability to protect those around them with sacred magic. They serve as shining lights, illuminating the path for their companions and offering hope in even the darkest of moments.</p>
+            <p class="indent">Although not trained in traditional combat, priests are equipped with the basics of armor and shield usage, allowing them to face danger with bravery. However, their true power lies in their unwavering faith and their divine magic, making them a formidable force on the battlefield and a source of inspiration to their allies. Whether ministering in small temples or venturing out into the world as adventurers, priests are a shining example of the power of the divine.</p>
+            <p class="indent">You can’t multiclass into Simplified Classes, or multiclass if you are a Simplified Class.</p>
+            <h4>HOW TO PLAY WITH A PRIEST</h4>
+            <p>The priest class is a streamlined variation of the cleric. Unlike the clerics with their wide range of domains and vast spell options, priests specialize predominantly in support spells, geared towards healing and empowering their allies. From level one, priests wield spells capable of significantly influencing the course of a battle.</p>
+            <p class="indent">Priests are uniquely versatile, adept at functioning as both robust tanks and reliable support units. While they rely on their allies for protection, they possess access to armor and weapons for direct combat, providing a balanced role in the party. As they advance in levels, priests acquire even more potent spells, bolstering their supportive capabilities. Spells like revivify and greater restoration ensure that their comrades are perpetually ready for the fray, while offensive spells like spiritual weapon and fire storm offer a formidable attack repertoire.</p>
+            <p class="indent">Priests are deeply rooted in religious beliefs in Tanares. They serve as crucial intermediaries, shedding light on the intricate and profound topics that permeate the continent’s discourse. This allows players to delve into the persona of the wise, scholarly priest, making this class a valuable asset in both combat and narrative scenarios.</p>
+            <p class="indent">In conclusion, priests offer the dual appeal of being potent allies in combat and insightful advisors outside of it. With their balance of support spells, tanking capabilities, and offensive magic, priests are an exceptional addition to any campaign. Whether you’re enthralled by the concept of bestowing blessings or directly engaging in combat, priests cater to a broad spectrum of your preferences.</p>
+            <h2>CLASS FEATURES</h2>
+            <p>As an priest, you gain the following class features.</p>
+            <h5 class="caption">HIT POINTS</h5>
+            <ul class="unstyled">
+                <li><strong>Hit Dice:</strong> 1d8 per priest level</li>
+                <li><strong>Hit Points at 1st Level:</strong> 8 + your Constitution modifier</li>
+                <li><strong>Hit Points at Higher Levels:</strong> 1d8 (or 5) + your Constitution modifier per priest level after 1st</li>
+            </ul>
+            <h5 class="caption">PROFICIENCIES</h5>
+            <ul class="unstyled mb">
+                <li><strong>Armor:</strong> light armor, medium order, and shields </li>
+                <li><strong>Weapons:</strong> simple weapons </li>
+                <li><strong>Tools:</strong> none</li>
+            </ul>
+            <ul class="unstyled">
+                <li><strong>Saving Throws:</strong> Wisdom, Charisma</li>
+                <li><strong>Skills:</strong> Choose two from History, Insight, Medicine, Persuasion, and Religion</li>
+            </ul>
+            <h5 class="caption">EQUIPMENT</h5>
+            <p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+            <ul>
+                <li>(a) a mace or (b) a warhammer (if proficient)</li>
+                <li>(a) scale mail, (b) leather armor, or (c) chain mail (if proficient)</li>
+                <li>(a) a light crossbow and 20 bolts or (b) any simple weapon</li>
+                <li>(a) a priest’s pack or (b) an explorer’s pack</li>
+                <li>A shield and a holy symbol</li>
+            </ul>
+            <!-- class table here -->
+             <h5 class="caption">THE PRIEST</h5>
+            <table class="class-features">
+                <thead>
+                    <tr><td class="col-5">Level</td><td class="col-10">Proficiency Bonus</td><td class="col-60 left">Features</td></tr>
+                </thead>
+                <tr><td> 1st</td><td>+2</td><td class="left">Simplified Spellcasting (Bless, Cure Wounds), Specific Cantrips (2)</td></tr>
+                <tr><td> 2nd</td><td>+2</td><td class="left">Experience,</td></tr>
+                <tr><td> 3rd</td><td>+2</td><td class="left">SS (Lesser Restoration, Spiritual Weapon), Specific Cantrips (3)</td></tr>
+                <tr><td> 4th</td><td>+2</td><td class="left">Ability Score Improvement</td></tr>
+                <tr><td> 5th</td><td>+3</td><td class="left">SS (Daylight, Revivify) </td></tr>
+                <tr><td> 6th</td><td>+3</td><td class="left">Divine Cure</td></tr>
+                <tr><td> 7th</td><td>+3</td><td class="left">SS (Banishment, Freedom of Movement) </td></tr>
+                <tr><td> 8th</td><td>+3</td><td class="left">Ability Score Improvement</td></tr>
+                <tr><td> 9th</td><td>+4</td><td class="left">SS (Greater Restoration, Mass Cure Wounds) </td></tr>
+                <tr><td>10th</td><td>+4</td><td class="left">Experience, Holy Shield</td></tr>
+                <tr><td>11th</td><td>+4</td><td class="left">SS (Harm, Heal)</td></tr>
+                <tr><td>12th</td><td>+4</td><td class="left">Ability Score Improvement</td></tr>
+                <tr><td>13th</td><td>+5</td><td class="left">SS (Fire Storm)</td></tr>
+                <tr><td>14th</td><td>+5</td><td class="left">Divine Cure Improvement</td></tr>
+                <tr><td>15th</td><td>+5</td><td class="left">SS (Sunburst) </td></tr>
+                <tr><td>16th</td><td>+5</td><td class="left">Ability Score Improvement</td></tr>
+                <tr><td>17th</td><td>+6</td><td class="left">SS (True Resurrection)</td></tr>
+                <tr><td>18th</td><td>+6</td><td class="left">Experience</td></tr>
+                <tr><td>19th</td><td>+6</td><td class="left">Ability Score Improvement</td></tr>
+                <tr><td>20th</td><td>+6</td><td class="left">Divine Intervention</td></tr>
+            </table>
+            <div element="ID_TRPG_CLASS_FEATURE_PRIEST_SIMPLIFIED_SPELLCASTING" />
+            <div element="ID_TRPG_CLASS_FEATURE_PRIEST_SPECIFIC_CANTRIPS" />
+            <div element="ID_TRPG_CLASS_FEATURE_PRIEST_EXPERIENCE" />
+            <div element="ID_TRPG_CLASS_FEATURE_PRIEST_ASI" />
+            <div element="ID_TRPG_CLASS_FEATURE_PRIEST_DIVINE_CURE" />
+            <div element="ID_TRPG_CLASS_FEATURE_PRIEST_HOLY_SHIELD" />
+            <div element="ID_TRPG_CLASS_FEATURE_PRIEST_DIVINE_INTERVENTION" />
+        </description>
+        <setters>
+            <set name="hd">d4</set>
+        </setters>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" />
+            <select type="Proficiency" name="Skill Proficiency (Priest)" number="2" supports="ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_RELIGION" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_PRIEST_SIMPLIFIED_SPELLCASTING" level="1" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_PRIEST_SPECIFIC_CANTRIPS" level="1" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_PRIEST_EXPERIENCE" level="2" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_PRIEST_ASI" level="4" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_PRIEST_DIVINE_CURE" level="6" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_PRIEST_HOLY_SHIELD" level="10" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_PRIEST_DIVINE_INTERVENTION" level="20" />
+        </rules>
+    </element>
+    <element name="name" type="Class Feature" source="source" id="ID_TRPG_CLASS_FEATURE_PRIEST_SIMPLIFIED_SPELLCASTING">
+        <description>
+            <p>Unlike more complex classes, as a priest, your spells are predetermined by your class and you can cast each of them twice per day. Follow the Priest Spells table to know which spells you know and when you will have access to them.</p>
+            <p class="indent">Charisma is your spellcasting ability for your priest spells, since you learn your spells through study. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting a saving throw DC for a priest spell you cast and when making an attack roll with one.</p>
+            <center>
+                <p><strong>Spell save DC</strong>= 8 + your proficiency bonus + your Charisma modifier </p>
+                <p><strong>Spell attack modifier</strong>= your proficiency bonus + your Charisma modifier</p>
+            </center>
+            <p class="indent">Some spells can be cast using spell slots of a higher level, making their effects more powerful. If you have a spell that can be cast on a higher level, you an use another spell of higher level in place of it to cast that spell on a higher level. The level of the spell you spent will determine the level the spell was effectively cast.</p>
+            <p class="indent">You can use a holy symbol as a focus for your spells.</p>
+        </description>
+        <sheet>
+            <description>You can cast each spell twice per day. Upcasting uses the higher level spell slot from one of your spells. You can use a Component Pouch or Arcane Focus as a focus for your spells.</description>
+        </sheet>
+        <spellcasting name="Priest" ability="Charisma" prepare="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_INTERNAL_SPELLFOCUS_GROUP_HOLY_SYMBOL"/>
+            <stat name="priest:spellcasting:slots:1" value="4" level="1"/>
+            <stat name="priest:spellcasting:slots:2" value="4" level="3"/>
+            <stat name="priest:spellcasting:slots:3" value="4" level="5"/>
+            <stat name="priest:spellcasting:slots:4" value="4" level="7"/>
+            <stat name="priest:spellcasting:slots:5" value="4" level="9"/>
+            <stat name="priest:spellcasting:slots:6" value="4" level="11"/>
+            <stat name="priest:spellcasting:slots:7" value="2" level="13"/>
+            <stat name="priest:spellcasting:slots:8" value="2" level="15"/>
+            <stat name="priest:spellcasting:slots:9" value="2" level="17"/>
+
+            <grant type="Spell" id="ID_PHB_SPELL_BLESS" level="1" spellcasting="Priest"/>
+            <grant type="Spell" id="ID_PHB_SPELL_CURE_WOUNDS" level="1" spellcasting="Priest"/>
+            <grant type="Spell" id="ID_PHB_SPELL_LESSER_RESTORATION" level="3" spellcasting="Priest"/>
+            <grant type="Spell" id="ID_PHB_SPELL_SPIRITUAL_WEAPON" level="3" spellcasting="Priest"/>
+            <grant type="Spell" id="ID_PHB_SPELL_DAYLIGHT" level="5" spellcasting="Priest"/>
+            <grant type="Spell" id="ID_PHB_SPELL_REVIVIFY" level="5" spellcasting="Priest"/>
+            <grant type="Spell" id="ID_PHB_SPELL_BANISHMENT" level="7" spellcasting="Priest"/>
+            <grant type="Spell" id="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT" level="7" spellcasting="Priest"/>
+            <grant type="Spell" id="ID_PHB_SPELL_GREATER_RESTORATION" level="9" spellcasting="Priest"/>
+            <grant type="Spell" id="ID_PHB_SPELL_MASS_CURE_WOUNDS" level="9" spellcasting="Priest"/>
+            <grant type="Spell" id="ID_PHB_SPELL_HARM" level="11" spellcasting="Priest"/>
+            <grant type="Spell" id="ID_PHB_SPELL_HEAL" level="11" spellcasting="Priest"/>
+            <grant type="Spell" id="ID_PHB_SPELL_FIRE_STORM" level="13" spellcasting="Priest"/>
+            <grant type="Spell" id="ID_PHB_SPELL_SUNBURST" level="15" spellcasting="Priest"/>
+            <grant type="Spell" id="ID_PHB_SPELL_METEOR_TRUE_RESURRECTION" level="17" spellcasting="Priest"/>
+        </rules>
+    </element>
+    <element name="name" type="Class Feature" source="source" id="ID_TRPG_CLASS_FEATURE_PRIEST_SPECIFIC_CANTRIPS">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="name" type="Class Feature" source="source" id="ID_TRPG_CLASS_FEATURE_PRIEST_EXPERIENCE">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="name" type="Class Feature" source="source" id="ID_TRPG_CLASS_FEATURE_PRIEST_DIVINE_CURE">
+        <description
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="name" type="Class Feature" source="source" id="ID_TRPG_CLASS_FEATURE_PRIEST_HOLY_SHIELD">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="name" type="Class Feature" source="source" id="ID_TRPG_CLASS_FEATURE_PRIEST_DIVINE_INTERVENTION">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+</elements>
