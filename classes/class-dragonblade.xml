@@ -181,10 +181,10 @@ for wearing armor, and only consider half of its weight towards your carrying ca
             <description>When attacking with melee or ranged weapons you can use you Intelligence Modifier instead of Strength or Dexterity for the attack and damge rolls. Ignore the Strength requirement for wearing armor and you armor weight is halved.</description>
         </sheet>
         <rules>
-            <stat name="ranged:attack" value="intelligence:modifier" bonus="none" />
-			<stat name="melee:attack" value="intelligence:modifier" bonus="none"  />
-			<stat name="ranged:damage" value="intelligence:modifier"  bonus="none" />
-			<stat name="melee:damage" value="intelligence:modifier"  bonus="none" />
+            <stat name="ranged:attack" value="intelligence:modifier" bonus="base" />
+			<stat name="melee:attack" value="intelligence:modifier" bonus="base"  />
+			<stat name="ranged:damage" value="intelligence:modifier"  bonus="base" />
+			<stat name="melee:damage" value="intelligence:modifier"  bonus="base" />
         </rules>
     </element>
      <element name="Natural Strategist" type="Class Feature" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_DRAGONBLADE_NATURAL_STRATEGIST">

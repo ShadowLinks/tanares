@@ -263,59 +263,60 @@
         </setters>
     </element>
     
-    <element name="name" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_">
+    <element name="Spiritual Retribution" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_">
         <supports>Draconic Power</supports>
         <description>
-            <p>description</p>
+            <p> Curse those who attack your comrades while in your vicinity. Make a weapon attack. On a hit, deal its damage, and the target must succeed a Wisdom saving throw or bear your draconic energy curse until the end of your next turn. </p>
+            <p class="indent">If the cursed target is within 20 feet of you and strikes a creature other than you, it takes damage equal to half the damage dealt to the other creature. The damage matches the type of your Draconic Soul.</p>
         </description>
         <setters>
             <set name="duration">Instantaneous</set>
             <set name="level">3</set>
-            <set name="School">Tail</set>
+            <set name="School">Claw</set>
             <set name="time">1 action</set>
             <set name="range"></set>
         </setters>
     </element>
     
-    <element name="name" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_">
+    <element name="Destructive Claws" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_DESTRUCTIVE_CLAWS">
         <supports>Draconic Power</supports>
         <description>
-            <p>description</p>
+            <p> Imbue your weapon with draconic elemental powers for a forceful strike. Make a weapon attack. On a hit, deal its damage and an extra 2d12 of one of these types at your choice: Fire, Ice, Lightning, Acid, or Poison.</p>
         </description>
         <setters>
             <set name="duration">Instantaneous</set>
             <set name="level">3</set>
-            <set name="School">Tail</set>
+            <set name="School">Claw</set>
             <set name="time">1 action</set>
             <set name="range"></set>
         </setters>
     </element>
     
-    <element name="name" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_">
+    <element name="Draconic Challenge" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_DRACONIC_CHALLENGE">
         <supports>Draconic Power</supports>
         <description>
-            <p>description</p>
+            <p>Compel your adversaries to focus their attacks on you. Make a weapon attack. On a hit, deal its damage, and until the end of your next turn, the target is compelled to attack you. Gain a +2 bonus to your AC against the target, and if the target is within 30 feet of you and targets another creature with an offensive attack or spell, it takes 4d8 psychic damage.</p>
         </description>
         <setters>
             <set name="duration">Instantaneous</set>
             <set name="level">3</set>
-            <set name="School">Tail</set>
+            <set name="School">Scale</set>
             <set name="time">1 action</set>
             <set name="range"></set>
         </setters>
     </element>
     
-    <element name="name" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_">
+    <element name="Martyr's Schield" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_DRACONIC_POWER_MARTYRS_SHIELD">
         <supports>Draconic Power</supports>
         <description>
-            <p>description</p>
+            <p>Forfeit your defense to shield your comrades. Until your next turn’s start, suffer a -2 penalty to your AC, and all willing creatures you choose within 30 feet of you gain a +4 bonus to their AC.</p>
         </description>
         <setters>
             <set name="duration">Instantaneous</set>
             <set name="level">3</set>
-            <set name="School">Tail</set>
-            <set name="time">1 action</set>
-            <set name="range"></set>
+            <set name="School">Scale</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">30 feet</set>
         </setters>
     </element>
     
