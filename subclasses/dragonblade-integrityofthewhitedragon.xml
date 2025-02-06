@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+    <info>
+        <name>Integrity of the White Dragon</name>
+        <description>White Dragon Soul for Dragonblade class from Tanares RPG 5e.</description>
+        <author url="">Dragori Games</author>
+        <update version="0.0.1">
+            <file name="dragonblade-integrityofthewhitedragon.xml" url="https://github.com/ShadowLinks/tanares/raw/refs/heads/main/subclasses/dragonblade-integrityofthewhitedragon.xml" />
+        </update>
+    </info>
+    <element name="Integrity of the White Dragon" type="Archetype" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_DRAGONBLADE_WHITE" >
+        <supports>Dragon Soul</supports>
+    </element>
+</elements>

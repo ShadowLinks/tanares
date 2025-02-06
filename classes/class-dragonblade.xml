@@ -181,10 +181,10 @@ for wearing armor, and only consider half of its weight towards your carrying ca
             <description>When attacking with melee or ranged weapons you can use you Intelligence Modifier instead of Strength or Dexterity for the attack and damge rolls. Ignore the Strength requirement for wearing armor and you armor weight is halved.</description>
         </sheet>
         <rules>
-            <stat name="ranged:attack" value="intelligence:modifier" bonus="base" />
-			<stat name="melee:attack" value="intelligence:modifier" bonus="base"  />
-			<stat name="ranged:damage" value="intelligence:modifier"  bonus="base" />
-			<stat name="melee:damage" value="intelligence:modifier"  bonus="base" />
+            <stat name="ranged:attack" value="intelligence:modifier" bonus="none" />
+			<stat name="melee:attack" value="intelligence:modifier" bonus="none"  />
+			<stat name="ranged:damage" value="intelligence:modifier"  bonus="none" />
+			<stat name="melee:damage" value="intelligence:modifier"  bonus="none" />
         </rules>
     </element>
      <element name="Natural Strategist" type="Class Feature" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_DRAGONBLADE_NATURAL_STRATEGIST">
@@ -204,9 +204,9 @@ for wearing armor, and only consider half of its weight towards your carrying ca
         </sheet>
         <spellcasting name="Dragonblade" ability="Intelligence" prepare="false" />
         <rules>
-            <select type="Spell" supports="Draconic Power,Claw,$(spellcasting:slots)" spellcasting="Dragonblade" />
-            <select type="Spell" supports="Draconic Power,Scale,$(spellcasting:slots)" spellcasting="Dragonblade" />
-            <select type="Spell" supports="Draconic Power,Wing,$(spellcasting:slots)" spellcasting="Dragonblade" />
+            <select type="Spell" name="Draconic Power (Claw)" supports="Draconic Power,Claw,$(spellcasting:slots)" spellcasting="Dragonblade" />
+            <select type="Spell" name="Draconic Power (Scale)" supports="Draconic Power,Scale,$(spellcasting:slots)" spellcasting="Dragonblade" />
+            <select type="Spell" name="Draconic Power (Wing)" supports="Draconic Power,Wing,$(spellcasting:slots)" spellcasting="Dragonblade" />
             <select type="Spell" supports="Draconic Power,$(spellcasting:slots)" level="2" spellcasting="Dragonblade"/>
             <select type="Spell" supports="Draconic Power,$(spellcasting:slots)" level="4" spellcasting="Dragonblade" />
             <select type="Spell" supports="Draconic Power,$(spellcasting:slots)" level="7" spellcasting="Dragonblade" />

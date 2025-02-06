@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+    <info>
+        <name>Celerity of the Blue Dragon</name>
+        <description>Blue Dragon Soul for Dragonblade class from Tanares RPG 5e.</description>
+        <author url="">Dragori Games</author>
+        <update version="0.0.1">
+            <file name="dragonblade-celerityofthebluedragon.xml" url="https://github.com/ShadowLinks/tanares/raw/refs/heads/main/subclasses/dragonblade-celerityofthebluedragon.xml" />
+        </update>
+    </info>
+    <element name="Celerity of the Blue Dragon" type="Archetype" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_DRAGONBLADE_BLUE">
+        <supports>Dragon Soul</supports>
+    </element>
+</elements>

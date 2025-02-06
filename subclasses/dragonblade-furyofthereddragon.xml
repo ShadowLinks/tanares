@@ -48,6 +48,15 @@ friends and foes alike.</p>
             <description></description>
         </sheet>
         <rules>
+            <grant type="Spell" id="ID_TRPG_DRACONIC_POWER_BURNING_STRIKE" level="2" />
+            <grant type="Spell" id="ID_TRPG_DRACONIC_POWER_SUNDERING_STRIKE" level="4" />
+            <grant type="Spell" id="ID_TRPG_DRACONIC_POWER_RING_OF_FIRE" level="7" />
+            <grant type="Spell" id="ID_TRPG_DRACONIC_POWER_BOON_OF_FLAMES" level="10" />
+            <grant type="Spell" id="ID_TRPG_DRACONIC_POWER_BLADES_OF_WIND" level="13" />
+            <grant type="Spell" id="ID_TRPG_DRACONIC_POWER_SWELTERING_HEAT" level="16" />
+            <grant type="Spell" id="ID_TRPG_DRACONIC_POWER_FINAL_DESTRUCTION" level="19" />
+
+            
             <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_RED_EMPOWERED_DRAGONS_FURY" level="1" />
             <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_RED_MARK_OF_THE_REVENGE" level="1" />
             <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_RED_SUPERIOR_MAINTENANCE" level="1" />
