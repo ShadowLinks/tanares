@@ -166,9 +166,9 @@
             <stat name="ranged:attack" value="2" level="3" />
             <stat name="melee:attack" value="2" level="3" />
             <stat name="ranged:attack" value="1" level="9" />
-            <stat name="melee:attack" value="1" level="0" />
+            <stat name="melee:attack" value="1" level="9" />
             <stat name="ranged:attack" value="1" level="13" />
-            <stat name="melee:attack" value="" level="13" />
+            <stat name="melee:attack" value="1" level="13" />
         </rules>
     </element>
     <element name="Ability Score Improvement" type="Class Feature" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_BRAWLER_ASI">
