@@ -10,5 +10,91 @@
     </info>
     <element name="Integrity of the White Dragon" type="Archetype" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_DRAGONBLADE_WHITE" >
         <supports>Dragon Soul</supports>
+        <description>
+            <p>Dragonblades trained in the Soul of the White Dragon are the sentinels of the frozen tundra, their bodies honed to withstand the freezing winds of the North. They are the guardians of sacred places, their forms standing like bastions of ice and steel against all who would dare threaten the Draconic Council’s interests.</p>
+            <p class="indent">Embodying the resilience and cunning of the white dragon, these warriors venture deep into the heart of the frosty wilds, braving blizzards that rage like a tempest, scaling icy cliffs as if they were steps to the heavens. Every step they take is a testament to their unwavering determination, every breath a reminder of their fierce loyalty.</p>
+            <p class="indent">With each battle, they hone their bodies to be more attuned to the ways of the white dragon, drawing upon its mastery of the environment to survive where others would perish. Their movements are graceful, yet deadly, like the flow of ice upon a frozen river. They are the protectors of dragon lairs, their eyes constantly scanning the horizon, their senses alert for any sign of danger.</p>
+            <p class="indent">The sight of a Dragonblade trained in the Soul of the White Dragon is both fearsome and awe-inspiring. Their determination shines like diamonds in the snow, their resolve shields its allies in the bleakest of environments. These warriors are the guardians of the Draconic Council, their unwavering spirit a reminder that even in the face of the coldest winter, the fire of protection and defense burns bright.</p>
+            <h5 class="caption">WHITE DRAGON DRACONIC POWERS</h5>
+            <table>
+                <thead>
+                    <tr><td>Dragonblade Level</td><td>Draconic Powers</td></tr>
+                </thead>
+                <tr><td>2nd</td><td>Shield of Scales</td></tr>
+                <tr><td>4th</td><td>Enduring Scales</td></tr>
+                <tr><td>7th</td><td>Frozen Spikes</td></tr>
+                <tr><td>10th</td><td>Frost Burst</td></tr>
+                <tr><td>13th</td><td>Protecting Mists</td></tr>
+                <tr><td>16th</td><td>Aura of the Scales</td></tr>
+                <tr><td>19th</td><td>Ice Fortress</td></tr>
+            </table>
+            
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_WHITE_EMPOWERED_DRAGONS_PROTECTION" />
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_WHITE_ICE_VEINS" />
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_WHITE_WINTER_MANTLE" />
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_WHITE_COLD_IMMUNITY" />
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_WHITE_PRESERVATION" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_TRPG_DRACONIC_POWER_SHIELD_OF_SCALES" level="2" />
+            <grant type="Spell" id="ID_TRPG_DRACONIC_POWER_ENDURING_SCALES" level="4" />
+            <grant type="Spell" id="ID_TRPG_DRACONIC_POWER_FROZEN_SPIKES" level="7" />
+            <grant type="Spell" id="ID_TRPG_DRACONIC_POWER_FROST_BURST" level="10" />
+            <grant type="Spell" id="ID_TRPG_DRACONIC_POWER_PROTECTING_MISTS" level="13" />
+            <grant type="Spell" id="ID_TRPG_DRACONIC_POWER_AURA_OF_THE_SCALES" level="16" />
+            <grant type="Spell" id="ID_TRPG_DRACONIC_POWER_ICE_FORTRESS" level="19" />
+
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_WHITE_EMPOWERED_DRAGONS_PROTECTION" level="2" />
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_WHITE_ICE_VEINS" level="6" />
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_WHITE_WINTER_MANTLE" level="10" />
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_WHITE_COLD_IMMUNITY" level="14" />
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_WHITE_PRESERVATION" level="18" />
+        </rules>
+    </element>
+    <element name="Empowered Dragon's Protection" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_WHITE_EMPOWERED_DRAGONS_PROTECTION">
+        <description>
+            <p>At 2nd level, you can channel a portion of your Empowered Soul energy to form an icy shield, protecting you from an enemy’s attack. The first time you sustain damage after your soul becomes Empowered, you may choose to reduce the damage by 1d8 for every two Dragonblade levels you possess to a minimum of 0).</p>
+        </description>
+        <sheet>
+            <description>The first time you sustain damage after your soul becomes Empowered, you may choose to reduce the damage by {{level:dragonblade:half}}d8.</description>
+        </sheet>
+    </element>
+    <element name="Ice Veins" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_WHITE_ICE_VEINS">
+        <description>
+            <p>At 6th level, when you expend your Empowered Soul to execute a second Draconic Power in a turn, a creature of your choice that you can see within a 30-foot radius suffers a 1d4 penalty to all its attack rolls until the end of its next turn.</p>
+        </description>
+        <sheet>
+            <description>When you expend your Empowered Soul to execute a second Draconic Power in a turn, a creature of your choice that you can see within a 30-foot radius suffers a 1d4 penalty to all its attack rolls until the end of its next turn.</description>
+        </sheet>
+    </element>
+    <element name="Winter Mantle" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_WHITE_WINTER_MANTLE">
+        <description>
+            <p>At 10th level, your soul extends its protection to your allies. All creatures of your choice (including yourself) within a 30-foot radius of you gain resistance to cold, acid, and poison damage.</p>
+        </description>
+        <sheet>
+            <description>AURA: All creatures of your choice (including yourself) within a 30-foot radius of you gain resistance to cold, acid, and poison damage.</description>
+        </sheet>
+    </element>
+    <element name="Cold Immunity" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_WHITE_COLD_IMMUNITY">
+        <description>
+            <p>At 14th level, the icy power coursing through you grants you immunity to cold damage.</p>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_COLD"/>
+        </rules>
+    </element>
+    <element name="Preservation" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_WHITE_PRESERVATION">
+        <description>
+            <p>At 18th level, all willing creatures of your choice within a 30-foot radius have advantage in death saving throws. Additionally, at the start of each of your turns, all creatures of your choice within a 30-foot radius that are at 0 hit points regain 1d4 hit points.</p>
+        </description>
+        <sheet>
+            <description>AURA: All willing creatures of your choice within a 30-foot radius have advantage in death saving throws. Additionally, at the start of each of your turns, all creatures of your choice within a 30-foot radius that are at 0 hit points regain 1d4 hit points.</description>
+        </sheet>
     </element>
 </elements>

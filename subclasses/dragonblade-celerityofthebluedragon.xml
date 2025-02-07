@@ -10,5 +10,90 @@
     </info>
     <element name="Celerity of the Blue Dragon" type="Archetype" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_DRAGONBLADE_BLUE">
         <supports>Dragon Soul</supports>
+        <description>
+            <p>Dragonblades who have mastered the Soul of the Blue Dragon soar through the skies like fearless tempests, their bodies crackling with the power of lightning and thunder. These daring wanderers travel the world, driven by a thirst for adventure and the thrill of exploring uncharted territories.</p>
+            <p class="indent">The winds that sweep across the open skies still sing with the echoes of the once-mighty Eternal Storm, a testament to the incredible power that once raged in the west of Tanares. But for the Dragonblades who have embraced this path, the elemental force that courses through the air is a call to adventure, a siren’s song to be explored and harnessed.</p>
+            <p class="indent">These untamed wanderers are graceful as a summer breeze, their movements as fluid and precise as the winds they control. They are drawn to the untamed energy of the storms, seeking to understand its secrets and bend it to their will. Despite the disappearance of Thyra, the Blue Dragon-Avatar, these Dragonblades pay homage to their legacy with each daring leap into the unknown, their courage, determination, and mastery of the elements, making them the true masters of the skies and the embodiment of freedom.</p>
+            <h5 class="caption">BLUE DRAGON DRACONIC POWERS</h5>
+            <table>
+                <thead>
+                    <tr><td>Dragonblade Level</td><td>Draconic Powers</td></tr>
+                </thead>
+                <tr><td>2nd</td><td>Lightning Dash</td></tr>
+                <tr><td>4th</td><td>Tail Slam</td></tr>
+                <tr><td>7th</td><td>Binding Lightning</td></tr>
+                <tr><td>10th</td><td>Lagging Thunder</td></tr>
+                <tr><td>13th</td><td>Thundering Translocation</td></tr>
+                <tr><td>16th</td><td>Shocking Trap</td></tr>
+                <tr><td>19th</td><td>Energy Surge</td></tr>
+            </table>
+            
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_BLUE_EMPOWERED_WIND_BLAST" />
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_BLUE_THUNDEROUS_ASSAULT" />
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_BLUE_WINGS_OF_CELERITY" />
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_BLUE_LIGHTNING_IMMUNITY" />
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_BLUE_WINGED_FURY" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_TRPG_DRACONIC_POWER_LIGHTNING_DASH" level="2" />
+            <grant type="Spell" id="ID_TRPG_DRACONIC_POWER_TAIL_SLAM" level="4" />
+            <grant type="Spell" id="ID_TRPG_DRACONIC_POWER_BINDING_LIGHTNING" level="7" />
+            <grant type="Spell" id="ID_TRPG_DRACONIC_POWER_LAGGING_THUNDER" level="10" />
+            <grant type="Spell" id="ID_TRPG_DRACONIC_POWER_THUNDERING_TRANSLOCATION" level="13" />
+            <grant type="Spell" id="ID_TRPG_DRACONIC_POWER_SHOCKING_TRAP" level="16" />
+            <grant type="Spell" id="ID_TRPG_DRACONIC_POWER_ENERGY_SURGE" level="19" />
+
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_BLUE_EMPOWERED_WIND_BLAST" level="2" />
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_BLUE_THUNDEROUS_ASSAULT" level="6" />
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_BLUE_WINGS_OF_CELERITY" level="10" />
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_BLUE_LIGHTNING_IMMUNITY" level="14" />
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_BLUE_WINGED_FURY" level="18" />
+        </rules>
+    </element>
+    <element name="Empowered Wind Blast" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_BLUE_EMPOWERED_WIND_BLAST">
+        <description>
+            <p>At 2nd level, each time your soul becomes Empowered, you can channel a portion of its energy to unleash a gust of wind against a creature you can see within a 30-foot radius. The creature’s speed is reduced by 10 feet for one minute, and it must make a Dexterity saving throw with a DC equivalent to Draconic Power. On a failing, the creature falls prone. In addition, while the creature’s movement is impeded by this effect, it cannot benefit from any magic or item that amplifies its speed.</p>
+        </description>
+        <sheet>
+            <description>Each time your soul becomes Empowered, you can channel a portion of its energy to unleash a gust of wind against a creature you can see within a 30-foot radius. The creature’s speed is reduced by 10 feet for one minute, and it must make a Dexterity saving throw with a DC equivalent to Draconic Power. On a failing, the creature falls prone. In addition, while the creature’s movement is impeded by this effect, it cannot benefit from any magic or item that amplifies its speed.</description>
+        </sheet>
+    </element>
+    <element name="Thunderous Assault" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_BLUE_THUNDEROUS_ASSAULT">
+        <description>
+            <p>At 6th level, you allow your allies to capitalize on your enemies’ vulnerabilities. When a creature is knocked prone as a result of failing its save against your Empowered Wind Blast, one willing creature within a 30-foot radius that you can see is allowed to use its reaction to move up to 30 feet and make a weapon attack against the prone creature.</p>
+        </description>
+        <sheet>
+            <description>When a creature is knocked prone as a result of failing its save against your Empowered Wind Blast, one willing creature within a 30-foot radius that you can see is allowed to use its reaction to move up to 30 feet and make a weapon attack against the prone creature.</description>
+        </sheet>
+    </element>
+    <element name="Wings of Celerity" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_BLUE_WINGS_OF_CELERITY">
+        <description>
+            <p>At 10th level, you enhance your allies’ dexterity to bolster their defenses. You and all willing creatures of your choice within 30 feet of you have an advantage on all Dexterity saving throws.</p>
+        </description>
+        <sheet>
+            <description>AURA: You and all willing creatures of your choice within 30 feet of you have an advantage on all Dexterity saving throws.</description>
+        </sheet>
+    </element>
+    <element name="Lightning Immunity" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_BLUE_LIGHTNING_IMMUNITY">
+        <description>
+            <p>At 14th level, the electric power coursing through you grants you immunity to electric damage.</p>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_LIGHTNING"/>
+        </rules>
+    </element>
+    <element name="Winged Fury" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_BLUE_WINGED_FURY">
+        <description>
+            <p>At 18th level, your flying speed derived from the Spiritual Wings feature increases to 90 feet. In addition, you acquire the Wing Attack Legendary Action of an Ancient Blue Dragon, which you can use as an action when your Spiritual Wings are activated.</p>
+        </description>
+        <sheet>
+            <description>Your flying speed derived from the Spiritual Wings feature increases to 90 feet. In addition, you acquire the Wing Attack Legendary Action of an Ancient Blue Dragon, which you can use as an action when your Spiritual Wings are activated.</description>
+        </sheet>
     </element>
 </elements>

@@ -4,7 +4,7 @@
 		<name>Tanares</name>
 		<description>Supplements from Tanares RPG 5E to expand your core gaming elements.</description>
 		<author url="https://dragorigames.com/">Dragori Games</author>
-		<update version="0.0.16">
+		<update version="0.0.17">
 			<file name="tanares.index" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/tanares.index" />
 		</update>
 	</info>
@@ -54,6 +54,11 @@
 		<file name="class-mage.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/classes/class-mage.xml" />
 		<file name="class-priest.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/classes/class-priest.xml" />
 		<file name="class-scoundrel.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/classes/class-scoundrel.xml" />
-
+		
+		<file name="class-dragonblade.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/classes/class-dragonblade.xml" />
+		<file name="dragonblade-furyofthereddragon.xml" url="https://github.com/ShadowLinks/tanares/raw/refs/heads/main/subclasses/dragonblade-furyofthereddragon.xml" />
+		<file name="dragonblade-celerityofthebluedragon.xml" url="https://github.com/ShadowLinks/tanares/raw/refs/heads/main/subclasses/dragonblade-celerityofthebluedragon.xml" />
+		<file name="dragonblade-integrityofthewhitedragon.xml" url="https://github.com/ShadowLinks/tanares/raw/refs/heads/main/subclasses/dragonblade-integrityofthewhitedragon.xml" />
+		<file name="draconicpowers.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/classes/draconicpowers.xml"/>
 	</files>
 </index>
