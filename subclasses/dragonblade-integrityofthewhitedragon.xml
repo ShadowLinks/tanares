@@ -39,13 +39,13 @@
             <description></description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_TRPG_DRACONIC_POWER_SHIELD_OF_SCALES" level="2" />
-            <grant type="Spell" id="ID_TRPG_DRACONIC_POWER_ENDURING_SCALES" level="4" />
-            <grant type="Spell" id="ID_TRPG_DRACONIC_POWER_FROZEN_SPIKES" level="7" />
-            <grant type="Spell" id="ID_TRPG_DRACONIC_POWER_FROST_BURST" level="10" />
-            <grant type="Spell" id="ID_TRPG_DRACONIC_POWER_PROTECTING_MISTS" level="13" />
-            <grant type="Spell" id="ID_TRPG_DRACONIC_POWER_AURA_OF_THE_SCALES" level="16" />
-            <grant type="Spell" id="ID_TRPG_DRACONIC_POWER_ICE_FORTRESS" level="19" />
+            <grant type="Spell" id="ID_TRPG_DRACONIC_POWER_SHIELD_OF_SCALES" level="2" spellcasting="Dragonblade" />
+            <grant type="Spell" id="ID_TRPG_DRACONIC_POWER_ENDURING_SCALES" level="4" spellcasting="Dragonblade" />
+            <grant type="Spell" id="ID_TRPG_DRACONIC_POWER_FROZEN_SPIKES" level="7" spellcasting="Dragonblade" />
+            <grant type="Spell" id="ID_TRPG_DRACONIC_POWER_FROST_BURST" level="10" spellcasting="Dragonblade" />
+            <grant type="Spell" id="ID_TRPG_DRACONIC_POWER_PROTECTING_MISTS" level="13" spellcasting="Dragonblade" />
+            <grant type="Spell" id="ID_TRPG_DRACONIC_POWER_AURA_OF_THE_SCALES" level="16" spellcasting="Dragonblade" />
+            <grant type="Spell" id="ID_TRPG_DRACONIC_POWER_ICE_FORTRESS" level="19" spellcasting="Dragonblade" />
 
             <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_WHITE_EMPOWERED_DRAGONS_PROTECTION" level="2" />
             <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_WHITE_ICE_VEINS" level="6" />

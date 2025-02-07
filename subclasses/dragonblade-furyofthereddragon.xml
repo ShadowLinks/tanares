@@ -36,13 +36,13 @@
             <description></description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_TRPG_DRACONIC_POWER_BURNING_STRIKE" level="2" />
-            <grant type="Spell" id="ID_TRPG_DRACONIC_POWER_SUNDERING_STRIKE" level="4" />
-            <grant type="Spell" id="ID_TRPG_DRACONIC_POWER_RING_OF_FIRE" level="7" />
-            <grant type="Spell" id="ID_TRPG_DRACONIC_POWER_BOON_OF_FLAMES" level="10" />
-            <grant type="Spell" id="ID_TRPG_DRACONIC_POWER_BLADES_OF_WIND" level="13" />
-            <grant type="Spell" id="ID_TRPG_DRACONIC_POWER_DESERTBLADE_HEAT" level="16" />
-            <grant type="Spell" id="ID_TRPG_DRACONIC_POWER_FINAL_DESTRUCTION" level="19" />
+            <grant type="Spell" id="ID_TRPG_DRACONIC_POWER_BURNING_STRIKE" level="2" spellcasting="Dragonblade" />
+            <grant type="Spell" id="ID_TRPG_DRACONIC_POWER_SUNDERING_STRIKE" level="4" spellcasting="Dragonblade" />
+            <grant type="Spell" id="ID_TRPG_DRACONIC_POWER_RING_OF_FIRE" level="7" spellcasting="Dragonblade" />
+            <grant type="Spell" id="ID_TRPG_DRACONIC_POWER_BOON_OF_FLAMES" level="10" spellcasting="Dragonblade" />
+            <grant type="Spell" id="ID_TRPG_DRACONIC_POWER_BLADES_OF_WIND" level="13" spellcasting="Dragonblade" />
+            <grant type="Spell" id="ID_TRPG_DRACONIC_POWER_DESERTBLADE_HEAT" level="16" spellcasting="Dragonblade" />
+            <grant type="Spell" id="ID_TRPG_DRACONIC_POWER_FINAL_DESTRUCTION" level="19" spellcasting="Dragonblade" />
 
             
             <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_RED_EMPOWERED_DRAGONS_FURY" level="2" />

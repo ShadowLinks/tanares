@@ -38,13 +38,13 @@
             <description></description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_TRPG_DRACONIC_POWER_LIGHTNING_DASH" level="2" />
-            <grant type="Spell" id="ID_TRPG_DRACONIC_POWER_TAIL_SLAM" level="4" />
-            <grant type="Spell" id="ID_TRPG_DRACONIC_POWER_BINDING_LIGHTNING" level="7" />
-            <grant type="Spell" id="ID_TRPG_DRACONIC_POWER_LAGGING_THUNDER" level="10" />
-            <grant type="Spell" id="ID_TRPG_DRACONIC_POWER_THUNDERING_TRANSLOCATION" level="13" />
-            <grant type="Spell" id="ID_TRPG_DRACONIC_POWER_SHOCKING_TRAP" level="16" />
-            <grant type="Spell" id="ID_TRPG_DRACONIC_POWER_ENERGY_SURGE" level="19" />
+            <grant type="Spell" id="ID_TRPG_DRACONIC_POWER_LIGHTNING_DASH" level="2" spellcasting="Dragonblade"/>
+            <grant type="Spell" id="ID_TRPG_DRACONIC_POWER_TAIL_SLAM" level="4" spellcasting="Dragonblade" />
+            <grant type="Spell" id="ID_TRPG_DRACONIC_POWER_BINDING_LIGHTNING" level="7" spellcasting="Dragonblade" />
+            <grant type="Spell" id="ID_TRPG_DRACONIC_POWER_LAGGING_THUNDER" level="10" spellcasting="Dragonblade" />
+            <grant type="Spell" id="ID_TRPG_DRACONIC_POWER_THUNDERING_TRANSLOCATION" level="13" spellcasting="Dragonblade" />
+            <grant type="Spell" id="ID_TRPG_DRACONIC_POWER_SHOCKING_TRAP" level="16" spellcasting="Dragonblade" />
+            <grant type="Spell" id="ID_TRPG_DRACONIC_POWER_ENERGY_SURGE" level="19" spellcasting="Dragonblade" />
 
             <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_BLUE_EMPOWERED_WIND_BLAST" level="2" />
             <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_BLUE_THUNDEROUS_ASSAULT" level="6" />
