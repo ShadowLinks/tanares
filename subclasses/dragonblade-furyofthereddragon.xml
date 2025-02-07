@@ -4,7 +4,7 @@
         <name>Fury of the Red Dragon</name>
         <description>Red Dragon Soul for Dragonblade class from Tanares RPG 5e.</description>
         <author url="">Dragori Games</author>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="dragonblade-furyofthereddragon.xml" url="https://github.com/ShadowLinks/tanares/raw/refs/heads/main/subclasses/dragonblade-furyofthereddragon.xml" />
         </update>
     </info>
@@ -45,11 +45,11 @@
             <grant type="Spell" id="ID_TRPG_DRACONIC_POWER_FINAL_DESTRUCTION" level="19" />
 
             
-            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_RED_EMPOWERED_DRAGONS_FURY" level="1" />
-            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_RED_MARK_OF_THE_REVENGE" level="1" />
-            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_RED_SUPERIOR_MAINTENANCE" level="1" />
-            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_RED_FIRE_IMMUNITY" level="1" />
-            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_RED_DRACONIC_PRESENCE" level="1" />
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_RED_EMPOWERED_DRAGONS_FURY" level="2" />
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_RED_MARK_OF_THE_REVENGE" level="6" />
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_RED_SUPERIOR_MAINTENANCE" level="10" />
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_RED_FIRE_IMMUNITY" level="14" />
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_RED_DRACONIC_PRESENCE" level="18" />
         </rules>
     </element>
     <element name="Empowered Dragon's Fury" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_RED_EMPOWERED_DRAGONS_FURY">
