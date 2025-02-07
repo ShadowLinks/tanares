@@ -14,7 +14,7 @@ To Do:
         - Gloomfolk COMPLETED
         - Taii'Maku [PARTIAL](https://github.com/ShadowLinks/tanares/issues/2) (balance mechanic not implemented)
 - New Classes
-    - Dragonblade
+    - Dragonblade [Minor issue with finesse](https://github.com/ShadowLinks/tanares/issues/5)
     - Elementalist
     - Madwalker
     - Redeemer
