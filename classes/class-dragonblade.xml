@@ -178,7 +178,7 @@ damage rolls. Additionally, ignore the Strength requirement
 for wearing armor, and only consider half of its weight towards your carrying capacity</p>
         </description>
         <sheet>
-            <description>When attacking with melee or ranged weapons you can use you Intelligence Modifier instead of Strength or Dexterity for the attack and damge rolls. Ignore the Strength requirement for wearing armor and you armor weight is halved.</description>
+            <description>When attacking with melee or ranged weapons you can use you Intelligence Modifier instead of Strength or Dexterity for the attack and damge rolls. Ignore the Strength requirement for wearing armor and you armor weight is halved. NOTE: FINESSE WEAPONS CALCULATIONS ARE BROKEN.</description>
         </sheet>
         <rules>
         <!-- removes the ability bonuses for melee and ranged so i can add INT modifier-->
