@@ -12,63 +12,19 @@
         <description>
             <p>Masters of draconic power and strategic thinking, these skilled combatants protect Tanares from penumbral cultists and creatures, serving as defenders, monster hunters, and military leaders for the Draconic Council.</p>
             <h4>Dragonblade</h4>
-            <p>The dragonblades are elite combatants with a unique fighting
-style, harnessing the ancient and mystic powers of dragons.
-Most of these skilled warriors serve the Draconic Council
-and take on various roles, such as diplomats, gladiators,
-and monster hunters, fighting against the corruptive
-forces that threaten the world.</p>
-<p class="indent">Each dragonblade follows a Draconic Soul path, symbolized by a dragon color that bestows upon them elemental
-powers associated with that dragon. These elemental forces
-augment their martial prowess, enabling them to combat
-the sinister otherworldly forces threatening their world.
-Their cunning also allows them to serve as battle strategists, outwitting enemies and controlling the battlefield with
-strategic prowess.</p>
-<p class="indent">As the Malrokian Curse looms over Tanares, threatening
-to unleash chaos and devastation should large-scale battles
-erupt, dragonblades are required to avert such conflicts and
-hunt the cultists and aberrations that strive to cause them.
-Their missions demand extraordinary courage, tactical expertise, and unwavering dedication to the cause.</p>
-<p class="indent">In their quest, dragonblades often face formidable adversaries such as the Cult of Shadow Wing, which seeks to
-corrupt all creatures, including dragons, turning them into
-penumbral creatures that empower the eldritch Ungods</p>
-<p class="indent">As the dragonblades grapple with their daunting tasks,
-the enigmatic Draconic Council is beset with internal strife,
-casting shadows over the future of Tanares. The Council’s
-divisions stem from contrasting beliefs regarding the potential of mortals. The majestic Gold Avatar Dragon, Isendden,
-champions a faction that fervently trusts in mortal potential
-and destiny. In stark contrast, the formidable Black Avatar
-Dragon, Zaldrus, spearheads a faction that perceives mortals
-as feeble and susceptible to corruption. As this clandestine
-struggle for dominion over the council unfolds, whispers of
-political intrigue echoes in the Draconic Towers</p>
-<p class="indent">Undeterred by these challenges, the dragonblades persevere
-in their mission. They venture into the Penumbral Plane to
-free captured dragons, dismantle the Shadow Wing’s plans,
-and vanquish their foes. As the embodiment of strategic
-combat against the encroaching darkness, the dragonblades
-unleash their intellect, martial skill, and the awe-inspiring
-power of dragons to vanquish their foes.</p>
+            <p>The dragonblades are elite combatants with a unique fighting style, harnessing the ancient and mystic powers of dragons. Most of these skilled warriors serve the Draconic Council and take on various roles, such as diplomats, gladiators, and monster hunters, fighting against the corruptive forces that threaten the world.</p>
+            <p class="indent">Each dragonblade follows a Draconic Soul path, symbolized by a dragon color that bestows upon them elemental powers associated with that dragon. These elemental forces augment their martial prowess, enabling them to combat the sinister otherworldly forces threatening their world. Their cunning also allows them to serve as battle strategists, outwitting enemies and controlling the battlefield with strategic prowess.</p>
+            <p class="indent">As the Malrokian Curse looms over Tanares, threatening to unleash chaos and devastation should large-scale battles erupt, dragonblades are required to avert such conflicts and hunt the cultists and aberrations that strive to cause them. Their missions demand extraordinary courage, tactical expertise, and unwavering dedication to the cause.</p>
+            <p class="indent">In their quest, dragonblades often face formidable adversaries such as the Cult of Shadow Wing, which seeks to corrupt all creatures, including dragons, turning them into penumbral creatures that empower the eldritch Ungods</p>
+            <p class="indent">As the dragonblades grapple with their daunting tasks, the enigmatic Draconic Council is beset with internal strife, casting shadows over the future of Tanares. The Council’s divisions stem from contrasting beliefs regarding the potential of mortals. The majestic Gold Avatar Dragon, Isendden, champions a faction that fervently trusts in mortal potential and destiny. In stark contrast, the formidable Black Avatar Dragon, Zaldrus, spearheads a faction that perceives mortals as feeble and susceptible to corruption. As this clandestine struggle for dominion over the council unfolds, whispers of political intrigue echoes in the Draconic Towers</p>
+            <p class="indent">Undeterred by these challenges, the dragonblades persevere in their mission. They venture into the Penumbral Plane to free captured dragons, dismantle the Shadow Wing’s plans, and vanquish their foes. As the embodiment of strategic combat against the encroaching darkness, the dragonblades unleash their intellect, martial skill, and the awe-inspiring power of dragons to vanquish their foes.</p>
             
        
             <h4>CREATING A DRAGONBLADE</h4>
-            <p>The first step in creating your dragonblade character is to
-determine whether or not they are affiliated with the Draconic
-Council. Most dragonblades serve the Council, but there
-are many wandering dragonblades who could have served
-as the character’s mentor.</p>
-            <p class="indent">If they are affiliated with the Council, work with your
-Game Master to determine its ranking, who trained it and
-who is currently its superior, as well as the philosophy and
-goals of its group inside the Council.</p>
-            <p class="indent">If they are not affiliated with the Council, work with your
-Game Master to determine the character’s mentor, the mentor’s history, and why they trained the character.</p>
-            <p class="indent">Finally, decide what led your character to a life of adventure. Were they fulfilling a mission given to them by the
-Council? Did their studies make them question some of the
-things taught to them by their master or the Council? Did
-they encounter a group in need of their leadership that could
-help them achieve their personal goals? Did they embark on
-their adventure as part of their training?</p>
+            <p>The first step in creating your dragonblade character is to determine whether or not they are affiliated with the Draconic Council. Most dragonblades serve the Council, but there are many wandering dragonblades who could have served as the character’s mentor.</p>
+            <p class="indent">If they are affiliated with the Council, work with your Game Master to determine its ranking, who trained it and who is currently its superior, as well as the philosophy and goals of its group inside the Council.</p>
+            <p class="indent">If they are not affiliated with the Council, work with your Game Master to determine the character’s mentor, the mentor’s history, and why they trained the character.</p>
+            <p class="indent">Finally, decide what led your character to a life of adventure. Were they fulfilling a mission given to them by the Council? Did their studies make them question some of the things taught to them by their master or the Council? Did they encounter a group in need of their leadership that could help them achieve their personal goals? Did they embark on their adventure as part of their training?</p>
            
             <h2>CLASS FEATURES</h2>
             <p>As an dragonblade, you gain the following class features.</p>
@@ -169,13 +125,7 @@ their adventure as part of their training?</p>
     </element>
     <element name="Claws and Scales" type="Class Feature" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_DRAGONBLADE_CLAWS_AND_SCALES">
         <description>
-            <p>At 1st level, your mastery allows the draconic energy to
-channel into your armor and weapon, turning them as innate
-to you as scales and claws are to a dragon. When you attack
-with melee or ranged weapons, you can use your Intelligence
-modifier, instead of Strength or Dexterity, for the attack and
-damage rolls. Additionally, ignore the Strength requirement
-for wearing armor, and only consider half of its weight towards your carrying capacity</p>
+            <p>At 1st level, your mastery allows the draconic energy to channel into your armor and weapon, turning them as innate to you as scales and claws are to a dragon. When you attack with melee or ranged weapons, you can use your Intelligence modifier, instead of Strength or Dexterity, for the attack and damage rolls. Additionally, ignore the Strength requirement for wearing armor, and only consider half of its weight towards your carrying capacity</p>
         </description>
         <sheet>
             <description>When attacking with melee or ranged weapons you can use you Intelligence Modifier instead of Strength or Dexterity for the attack and damge rolls. Ignore the Strength requirement for wearing armor and you armor weight is halved. NOTE: FINESSE WEAPONS CALCULATIONS ARE BROKEN.</description>
@@ -199,18 +149,36 @@ for wearing armor, and only consider half of its weight towards your carrying ca
     </element>
      <element name="Natural Strategist" type="Class Feature" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_DRAGONBLADE_NATURAL_STRATEGIST">
         <description>
-            <p></p>
+            <p>At 1st level, you can of tactically guiding your allies. Whenever you roll for initiative at the start of a battle, prior to any combatant’s first turn, and assuming you are not taken by surprise, you can use your reaction to maneuver your allies across the battlefield. If you do so, both you and all your allies within a 30-feet radius, who can hear your command, can instantly move up to 15 feet without provoking attacks of opportunity.</p>
+            <p class="indent">You can use this feature a number of times equal to your Intelligence modifier (at a minimum of once). You regain any spent use after completing a long rest.</p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet usage="{{Intelligence:modifier}}/long rest">
+            <description>Whenever you roll for initiative at the start of a battle, prior to any combatant’s first turn, and assuming you are not taken by surprise, you can use your reaction to maneuver your allies across the battlefield. If you do so, both you and all your allies within a 30-feet radius, who can hear your command, can instantly move up to 15 feet without provoking attacks of opportunity.</description>
         </sheet>
     </element>
      <element name="Draconic Power" type="Class Feature" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_DRAGONBLADE_DRACONIC_POWER">
         <description>
-            <p></p>
+            <p>Your deep study and immersion made you able to comprehend the secret martial techniques known as Draconic Powers. They are divided into three types, each possessing one of these marks: Claw, Scale, and Wing.</p>
+            <p class="indent">You can only use ONE Draconic Power per round unless you trigger Empowered Soul or the Draconic Power specifically permits it.</p>
+            <p class="indent">Empowered Soul. From the 2nd level, whenever you use a Draconic Power, note down its mark, and once you have accumulated all three different marks, your soul becomes empowered.</p>
+            <ul>
+                <li>You can spend its empowerment to execute a Draconic Power that requires an action as a bonus action. When doing so, ignore the limitation of using only one Draconic Power per round.</li>
+                <li>After using your Empowered status, you immediately delete all annotated marks and you can begin collecting them anew.</li>
+                <li>You can conserve your Empowered Soul for a later turn.</li>
+                <li>Every time you roll for initiative at the onset of a battle or finish a short or long rest, all previous marks are erased, and the Soul empowerment, if not already used, is lost.</li>
+            </ul>
+            <p class="indent">Saving Throw or Spell Attack. Some Draconic Powers require the target to make a saving throw to resist the effects, or you may need to perform a spell attack to hit. The DC for the saving throw and the spell attack is calculated as follows</p>
+            <center>
+                <p><strong>Draconic Power DC</strong>= 8 + your proficiency bonus + your Intelligence modifier </p>
+                <p><strong>Draconic Power attack modifier</strong>= your proficiency bonus + your Intelligence modifier</p>
+            </center>
+            <p class="indent">At 1st level, choose two 1st-level Draconic Power from the list of powers. They must be of different types (claw, scale or wings).</p>
+            <p class="indent">The Dragonblade table shows the total number and levels of Draconic Powers known, according to your level. At 2nd level onward when you gain new powers or change your list of powers you must always have at least one power of each different type (claw, scale and wing).</p>
+            <p class="indent">Starting at 8th level, whenever you gain a new level in this class, you can replace a Draconic Power you already know with a different power of a level that you can use, so that you don’t exceed the maximum number of Draconic Powers.</p>
+            <p class="indent">Additionally, at the 2nd level and onward your chosen Draconic Soul will grant special Draconic Powers, according to the list in the Draconic Soul section. They do not count toward the number of Draconic Powers that you can learn, and you can’t replace them with other Draconic Powers later.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You can only use ONE Draconic Power per round unless you trigger Empowered Soul or the Draconic Power specifically permits it.</description>
         </sheet>
         <spellcasting name="Dragonblade" ability="Intelligence" prepare="false" />
         <rules>
@@ -238,14 +206,7 @@ for wearing armor, and only consider half of its weight towards your carrying ca
     </element>
     <element name="Draconic Soul" type="Class Feature" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_DRAGONBLADE_DRACONIC_SOUL">
         <description>
-            <p>At 2nd level, you may choose an archetype that represents
-your combat training style: the Fury of the Red Dragon, the
-Integrity of the White Dragon, or the Celerity of the Blue
-Dragon. Each bestows upon you unique Draconic Powers
-and features at the 6th, 10th, 14th, and 18th levels. When a
-power refers to elements associated with your Draconic Soul,
-use fire for the red dragon, cold for the white dragon, and
-lightning for the blue dragon, according to your chosen type.</p>
+            <p>At 2nd level, you may choose an archetype that represents your combat training style: the Fury of the Red Dragon, the Integrity of the White Dragon, or the Celerity of the Blue Dragon. Each bestows upon you unique Draconic Powers and features at the 6th, 10th, 14th, and 18th levels. When a power refers to elements associated with your Draconic Soul, use fire for the red dragon, cold for the white dragon, and lightning for the blue dragon, according to your chosen type.</p>
         </description>
         <sheet display="false">
             <description></description>
@@ -259,63 +220,378 @@ lightning for the blue dragon, according to your chosen type.</p>
             <p></p>
         </description>
         <sheet>
-            <description></description>
+            <description>From the 2nd level, whenever you use a Draconic Power, note down its mark, and once you have accumulated all three different marks, your soul becomes empowered. You can spend its empowerment to execute a Draconic Power that requires an action as a bonus action. When doing so, ignore the limitation of using only one Draconic Power per round. After using your Empowered status, you immediately delete all annotated marks and you can begin collecting them anew. You can conserve your Empowered Soul for a later turn. Every time you roll for initiative at the onset of a battle or finish a short or long rest, all previous marks are erased, and the Soul empowerment, if not already used, is lost.</description>
         </sheet>
     </element>
     <element name="Investigative Mind" type="Class Feature" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_DRAGONBLADE_INVESTIGATIVE_MIND">
         <description>
-            <p></p>
+            <p>Your abilities in research and study advance. At the 3rd level, you acquire the Draconic language and gain proficiency in the Investigation skill. If you are alredy proficient, your proficiency bonus is doubled for any ability checks you make that uses this skill.</p>
         </description>
-        <sheet>
+        <sheet display="false">
             <description></description>
         </sheet>
+        <rules>
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_INVESTIGATION" />
+            <grant type="Language" id="ID_LANGUAGE_DRACONIC" />
+        </rules>
     </element>
     <element name="Ability Score Improvement" type="Class Feature" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_DRAGONBLADE_ASI">
         <description>
-            <p></p>
+            <p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
         </description>
-        <sheet>
-            <description></description>
-        </sheet>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Improvement Option (Dragonblade 4)" supports="Improvement Option,Dragonblade,4" level="4"/>
+            <select type="Class Feature" name="Improvement Option (Dragonblade 8)" supports="Improvement Option,Dragonblade,8" level="8"/>
+            <select type="Class Feature" name="Improvement Option (Dragonblade 12)" supports="Improvement Option,Dragonblade,12" level="12"/>
+            <select type="Class Feature" name="Improvement Option (Dragonblade 16)" supports="Improvement Option,Dragonblade,16" level="16"/>
+            <select type="Class Feature" name="Improvement Option (Dragonblade 19)" supports="Improvement Option,Dragonblade,19" level="19"/>
+        </rules>
     </element>
     <element name="Draconic Knowledge" type="Class Feature" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_DRAGONBLADE_DRACONIC_KNOWLEDGE">
         <description>
-            <p></p>
+            <p>Your understanding of dragons intensifies. At the 5th level, whenever you perform an ability check related to Dragons, you apply your proficiency bonus to the check, even if you are not proficient in that skill.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>Whenever you perform an ability check related to Dragons, you apply your proficiency bonus to the check, even if you are not proficient in that skill.</description>
         </sheet>
     </element>
     <element name="Dragon Form" type="Class Feature" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_DRAGONBLADE_DRAGON_FORM">
         <description>
-            <p></p>
+            <p>Starting at 9th level, you can use your action to magically transform into a dragon form. After the transformation, you can only use this feature again after a long rest. </p>
+            <p class="indent">Your dragonblade level determines the power of the dragon you can transform into, as shown in the Dragon Form table. Your draconic form’s aspect matches your Draconic Soul.</p>
+            <table>
+                <thead>
+                    <tr><td>Dragonblade Level</td><td>Dragon Form</td></tr>
+                </thead>
+                <tr><td>9th</td><td>Juvenile Dragon Form</td></tr>
+                <tr><td>12th</td><td>Mature Dragon Form</td></tr>
+                <tr><td>15th</td><td>Adult Dragon Form</td></tr>
+                <tr><td>18th</td><td>Old Dragon Form</td></tr>
+            </table>
+            <p class="indent">You can stay in the dragon shape for 10 minutes then revert to your normal form. You can revert to your normal form earlier by using a bonus action on your turn. You automatically revert if you fall unconscious, drop to 0 hit points, or die. While you are transformed, the following rules apply:Your game statistics are replaced by the statistics of the dragon, but you retain your alignment, personality, and Intelligence, Wisdom, and Charisma scores. You also retain all of your skill and saving throw proficiencies, in addition to gaining those of the dragon. If the dragon has the same proficiency as you and the bonus in its stat block is higher than yours, use the dragon’s bonus instead of yours.</p>
+            <ul>
+                <li>When you transform, you assume the dragons’ hit points and Hit Dice. When you revert to your normal form, you return to the number of hit points you had before you transformed. However, if you revert as a result of dropping to 0 hit points, any excess damage carries over to your normal form. For example, if you take 10 damage in dragon form and have only 1 hit point left, you revert and take 9 damage. As long as the excess damage doesn’t reduce your normal form to 0 hit points, you aren’t knocked unconscious.</li>
+                <li>You can’t perform Draconic Powers or cast spells, and your ability to take any action is limited to the capabilities of a dragon’s body. Transforming doesn’t break your concentration on a spell you’ve already cast.</li>
+                <li>You retain the benefit of any features from your class, species, or other source and can use them if the new form is physically capable of doing so. However, you can’t use any of your special senses, such as darkvision, unless your new form also has that sense.</li>
+                <li>You choose whether your equipment falls to the ground in your space, merges into your new form, or is worn by it. Worn equipment functions as normal, but the GM decides whether it is practical for the new form to wear a piece of equipment. Your equipment doesn’t change size or shape to match the new form, and any equipment that the new form can’t wear must either fall to the ground or merge with it. Equipment that merges with the form has no effect until you leave the form.</li>
+            </ul>
         </description>
         <sheet>
-            <description></description>
+            <description>You have a dragon form (companion tab) you can stay in for 10 minutes and revert using a bonus action, falling unconcious, dropping to 0 HP, or dying. Uses the same rules as wild shape. </description>
         </sheet>
+        <rules>
+            <select type="Companion" name="Dragon Form" supports="dragon-form"/>   
+        </rules>
     </element>
     <element name="Tactical Response" type="Class Feature" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_DRAGONBLADE_TACTICAL_RESPONSE">
         <description>
-            <p></p>
+            <p>Your precise instructions enable your allies to execute actions beyond their regular capability. At the 11th level, at any moment, you can use your reaction to bestow an extra reaction upon an ally within a 30-foot radius from you. They must use it immediately to perform any reaction they’re capable of.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>At any moment, you can use your reaction to bestow an extra reaction upon an ally within a 30-foot radius from you. They must use it immediately to perform any reaction they’re capable of.</description>
         </sheet>
     </element>
     <element name="Spiritual Wings" type="Class Feature" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_DRAGONBLADE_SPIRITUAL_WINGS">
         <description>
-            <p></p>
+            <p>You’re able to manipulate the draconic energy to fly. At 17th level, with a bonus action, you can generate a pair of spectral dragon wings on your back. These wings endow you with a flying speed of 60 feet. They last until you dismiss them, also with a bonus action.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>With a bonus action, you can generate a pair of spectral dragon wings on your back. These wings endow you with a flying speed of 60 feet. They last until you dismiss them, also with a bonus action.</description>
         </sheet>
     </element>
     <element name="Call of the Dragon" type="Class Feature" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_DRAGONBLADE_CALL_OF_THE_DRAGON">
         <description>
-            <p></p>
+            <p>At 20th level, your bond with draconic power is so potent that these majestic creatures respond to your call for combat. You can summon an adult dragon to assist you in a fight. The dragon takes 1d4 rounds to reach you, but it can only be called if its arrival is feasible. The dragon’s color matches that of your Draconic Soul and it aids you in the most effective manner possible. It remains until the conflict or the cause of its summoning ends (as per the GM’s discretion) and no longer than 30 days. Once used, this ability cannot be invoked again until a 30-day period has passed.</p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet usage="Once per 30 days">
+            <description>You can summon an adult dragon to assist you in a fight. The dragon takes 1d4 rounds to reach you, but it can only be called if its arrival is feasible. The dragon’s color matches that of your Draconic Soul and it aids you in the most effective manner possible. It remains until the conflict or the cause of its summoning ends (as per the GM’s discretion) and no longer than 30 days. Once used, this ability cannot be invoked again until a 30-day period has passed.</description>
         </sheet>
     </element>
+
+
+    <element name="Juveline Dragon Form" type="Companion" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_FORM_JUVELINE">
+        <supports>dragon-form</supports>
+        <description>
+            <p>Juveline Dragon Form - use your own INT, WIS, CHA</p>
+        </description>
+        <setters>
+            <set name="strength">16</set>
+            <set name="dexterity">12</set>
+            <set name="constitution">16</set>
+            <set name="intelligence">10</set>
+            <set name="wisdom">10</set>
+            <set name="charisma">10</set>
+            <set name="ac">16</set>
+            <set name="hp">57 (6d12+18)</set>
+            <set name="speed">40 ft., fly 60 ft.</set>
+            <set name="senses">blindsight 30 ft., darkvision 120 ft. (Use your own INT/WIS/CHA)</set>
+            <set name="languages">by dragonblade</set>
+            <set name="resistances"></set>
+            <set name="vulnerabilites"></set>
+            <set name="immunities">By Dragon Soul. Fire, Lightning, or Cold</set>
+            <set name="type">Dragon</set>
+            <set name="size">Huge</set>
+            <set name="alignment">unaligned</set>
+            <set name="challenge"></set>
+            <set name="actions">ID_TRPG_COMPANION_ACTION_JUVELINE_MULTIATTACK,ID_TRPG_COMPANION_ACTION_JUVELINE_BITE,ID_TRPG_COMPANION_ACTION_JUVELINE_CLAW,ID_TRPG_COMPANION_ACTION_JUVELINE_BREATH</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="16"/>
+            <stat name="companion:hp:max" value="57" bonus="base"/>
+            <stat name="companion:speed" value="40" bonus="base"/>
+            <stat name="companion:speed:fly" value="60" bonus="base"/>
+        </rules>
+            
+    </element>
+
+    <element name="Multiattack" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_JUVELINE_MULTIATTACK">
+        <description>
+            <p>The juvenile dragon form makes three attacks: one with its bite and two with its claws.</p>
+        </description>
+        <sheet>
+            <description>The juvenile dragon form makes three attacks: one with its bite and two with its claws.</description>
+        </sheet>
+    </element>
+
+    <element name="Bite" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_JUVELINE_BITE">
+        <description>
+            <p>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d10 + 3) piercing damage plus 4 (1d8) energy damage by Dragon Soul.</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d10 + 3) piercing damage plus 4 (1d8) energy damage by Dragon Soul.</description>
+        </sheet>
+    </element>
+    <element name="Claw" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_JUVELINE_CLAW">
+        <description>
+            <p> Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) slashing damage.</p>
+        </description>
+        <sheet>
+            <description> Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) slashing damage.</description>
+        </sheet>
+    </element>
+    <element name="Breath Weapon (Recahrge 5-6)" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_JUVELINE_BREATH">
+        <description>
+            <p>The juvenile dragon form exhales energy in a 30-foot cone. Each creature in that area must make a DC 13 Dexterity saving throw, taking 21 (6d6) energy damage on a failed save, or half as much damage on a successful one. The energy is the same as the Dragonblade’s Dragon Soul.</p>
+        </description>
+        <sheet>
+            <description>The juvenile dragon form exhales energy in a 30-foot cone. Each creature in that area must make a DC 13 Dexterity saving throw, taking 21 (6d6) energy damage on a failed save, or half as much damage on a successful one. The energy is the same as the Dragonblade’s Dragon Soul.</description>
+        </sheet>
+    </element>
+
+    <element name="Mature Dragon Form" type="Companion" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_FORM_MATURE">
+        <supports>dragon-form</supports>
+        <description>
+            <p>Mature Dragon Form - use your own INT, WIS, CHA</p>
+        </description>
+        <setters>
+            <set name="strength">18</set>
+            <set name="dexterity">12</set>
+            <set name="constitution">16</set>
+            <set name="intelligence">10</set>
+            <set name="wisdom">10</set>
+            <set name="charisma">10</set>
+            <set name="ac">17</set>
+            <set name="hp">66 (7d12+21)</set>
+            <set name="speed">40 ft., fly 80 ft.</set>
+            <set name="senses">blindsight 30 ft., darkvision 120 ft. (Use your own INT/WIS/CHA)</set>
+            <set name="languages">by dragonblade</set>
+            <set name="resistances"></set>
+            <set name="vulnerabilites"></set>
+            <set name="immunities">By Dragon Soul. Fire, Lightning, or Cold</set>
+            <set name="type">Dragon</set>
+            <set name="size">Huge</set>
+            <set name="alignment">unaligned</set>
+            <set name="challenge"></set>
+            <set name="actions">ID_TRPG_COMPANION_ACTION_MATURE_MULTIATTACK,ID_TRPG_COMPANION_ACTION_MATURE_BITE,ID_TRPG_COMPANION_ACTION_MATURE_CLAW,ID_TRPG_COMPANION_ACTION_MATURE_BREATH</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="17"/>
+            <stat name="companion:hp:max" value="66" bonus="base"/>
+            <stat name="companion:speed" value="40" bonus="base"/>
+            <stat name="companion:speed:fly" value="80" bonus="base"/>
+        </rules>
+            
+    </element>
+
+    <element name="Multiattack" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MATURE_MULTIATTACK">
+        <description>
+            <p>The mature dragon form makes three attacks: one with its bite and two with its claws.</p>
+        </description>
+        <sheet>
+            <description>The mature dragon form makes three attacks: one with its bite and two with its claws.</description>
+        </sheet>
+    </element>
+
+    <element name="Bite" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MATURE_BITE">
+        <description>
+            <p>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 9 (1d10 + 4) piercing damage plus 4 (1d8) energy damage by Dragon Soul.</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 9 (1d10 + 4) piercing damage plus 4 (1d8) energy damage by Dragon Soul.</description>
+        </sheet>
+    </element>
+    <element name="Claw" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MATURE_CLAW">
+        <description>
+            <p> Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage.</p>
+        </description>
+        <sheet>
+            <description> Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage.</description>
+        </sheet>
+    </element>
+    <element name="Breath Weapon (Recahrge 5-6)" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MATURE_BREATH">
+        <description>
+            <p>The mature dragon form exhales energy in a 30-foot cone. Each creature in that area must make a DC 14 Dexterity saving throw, taking 31 (9d6) energy damage on a failed save, or half as much damage on a successful one. The energy is the same as the Dragonblade’s Dragon Soul.</p>
+        </description>
+        <sheet>
+            <description>The mature dragon form exhales energy in a 30-foot cone. Each creature in that area must make a DC 14 Dexterity saving throw, taking 31 (9d6) energy damage on a failed save, or half as much damage on a successful one. The energy is the same as the Dragonblade’s Dragon Soul.</description>
+        </sheet>
+    </element>
+
+    <element name="Adult Dragon Form" type="Companion" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_FORM_ADULT">
+        <supports>dragon-form</supports>
+        <description>
+            <p>Adult Dragon Form - use your own INT, WIS, CHA</p>
+        </description>
+        <setters>
+            <set name="strength">20</set>
+            <set name="dexterity">12</set>
+            <set name="constitution">17</set>
+            <set name="intelligence">10</set>
+            <set name="wisdom">10</set>
+            <set name="charisma">10</set>
+            <set name="ac">18</set>
+            <set name="hp">76 (8d12+24)</set>
+            <set name="speed">40 ft., fly 80 ft.</set>
+            <set name="senses">blindsight 30 ft., darkvision 120 ft. (Use your own INT/WIS/CHA)</set>
+            <set name="languages">by dragonblade</set>
+            <set name="resistances"></set>
+            <set name="vulnerabilites"></set>
+            <set name="immunities">By Dragon Soul. Fire, Lightning, or Cold</set>
+            <set name="type">Dragon</set>
+            <set name="size">Huge</set>
+            <set name="alignment">unaligned</set>
+            <set name="challenge"></set>
+            <set name="actions">ID_TRPG_COMPANION_ACTION_ADULT_MULTIATTACK,ID_TRPG_COMPANION_ACTION_ADULT_BITE,ID_TRPG_COMPANION_ACTION_ADULT_CLAW,ID_TRPG_COMPANION_ACTION_ADULT_BREATH</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="18"/>
+            <stat name="companion:hp:max" value="76" bonus="base"/>
+            <stat name="companion:speed" value="40" bonus="base"/>
+            <stat name="companion:speed:fly" value="80" bonus="base"/>
+        </rules>
+            
+    </element>
+
+    <element name="Multiattack" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_ADULT_MULTIATTACK">
+        <description>
+            <p>The adult dragon form makes three attacks: one with its bite and two with its claws.</p>
+        </description>
+        <sheet>
+            <description>The adult dragon form makes three attacks: one with its bite and two with its claws.</description>
+        </sheet>
+    </element>
+
+    <element name="Bite" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_ADULT_BITE">
+        <description>
+            <p>Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 16 (2d10 + 5) piercing damage plus 4 (1d8) energy damage by Dragon Soul.</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 16 (2d10 + 5) piercing damage plus 4 (1d8) energy damage by Dragon Soul.</description>
+        </sheet>
+    </element>
+    <element name="Claw" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_ADULT_CLAW">
+        <description>
+            <p> Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage.</p>
+        </description>
+        <sheet>
+            <description> Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage.</description>
+        </sheet>
+    </element>
+    <element name="Breath Weapon (Recahrge 5-6)" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_ADULT_BREATH">
+        <description>
+            <p>The adult dragon form exhales energy in a 30-foot cone. Each creature in that area must make a DC 15 Dexterity saving throw, taking 35 (10d6) energy damage on a failed save, or half as much damage on a successful one. The energy is the same as the Dragonblade’s Dragon Soul.</p>
+        </description>
+        <sheet>
+            <description>The mature dragon form exhales energy in a 30-foot cone. Each creature in that area must make a DC 15 Dexterity saving throw, taking 35 (10d6) energy damage on a failed save, or half as much damage on a successful one. The energy is the same as the Dragonblade’s Dragon Soul.</description>
+        </sheet>
+    </element>
+
+    <element name="Old Dragon Form" type="Companion" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_FORM_OLD">
+        <supports>dragon-form</supports>
+        <description>
+            <p>Old Dragon Form - use your own INT, WIS, CHA</p>
+        </description>
+        <setters>
+            <set name="strength">20</set>
+            <set name="dexterity">12</set>
+            <set name="constitution">18</set>
+            <set name="intelligence">10</set>
+            <set name="wisdom">10</set>
+            <set name="charisma">10</set>
+            <set name="ac">19</set>
+            <set name="hp">94 (9d12+36)</set>
+            <set name="speed">40 ft., fly 80 ft.</set>
+            <set name="senses">blindsight 30 ft., darkvision 120 ft. (Use your own INT/WIS/CHA)</set>
+            <set name="languages">by dragonblade</set>
+            <set name="resistances"></set>
+            <set name="vulnerabilites"></set>
+            <set name="immunities">By Dragon Soul. Fire, Lightning, or Cold</set>
+            <set name="type">Dragon</set>
+            <set name="size">Huge</set>
+            <set name="alignment">unaligned</set>
+            <set name="challenge"></set>
+            <set name="actions">ID_TRPG_COMPANION_ACTION_OLD_MULTIATTACK,ID_TRPG_COMPANION_ACTION_OLD_BITE,ID_TRPG_COMPANION_ACTION_OLD_CLAW,ID_TRPG_COMPANION_ACTION_OLD_FRIGHTFUL_PRESENCE,ID_TRPG_COMPANION_ACTION_OLD_BREATH</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="19"/>
+            <stat name="companion:hp:max" value="94" bonus="base"/>
+            <stat name="companion:speed" value="40" bonus="base"/>
+            <stat name="companion:speed:fly" value="80" bonus="base"/>
+        </rules>
+            
+    </element>
+
+    <element name="Multiattack" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_OLD_MULTIATTACK">
+        <description>
+            <p>The old dragon form makes three attacks: one with its bite and two with its claws.</p>
+        </description>
+        <sheet>
+            <description>The old dragon form makes three attacks: one with its bite and two with its claws.</description>
+        </sheet>
+    </element>
+
+    <element name="Bite" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_OLD_BITE">
+        <description>
+            <p>Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 16 (2d10 + 5) piercing damage plus 9 (2d8) energy damage by Dragon Soul.</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 16 (2d10 + 5) piercing damage plus 9 (2d8) energy damage by Dragon Soul.</description>
+        </sheet>
+    </element>
+    <element name="Claw" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_OLD_CLAW">
+        <description>
+            <p> Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage.</p>
+        </description>
+        <sheet>
+            <description> Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage.</description>
+        </sheet>
+    </element>
+    <element name="Frightful Presence" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_OLD_FRIGHTFUL_PRESENCE">
+        <description>
+            <p>Each creature of the dragon’s choice that is within 120 feet of the dragon and aware of it must succeed on a DC 16 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature’s saving throw is successful or the effect ends for it, the creature is immune to the dragon’s Frightful Presence for the next 24 hours.</p>
+        </description>
+        <sheet>
+            <description>Each creature of the dragon’s choice that is within 120 feet of the dragon and aware of it must succeed on a DC 16 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature’s saving throw is successful or the effect ends for it, the creature is immune to the dragon’s Frightful Presence for the next 24 hours.</description>
+        </sheet>
+    </element>
+    <element name="Breath Weapon (Recahrge 5-6)" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_OLD_BREATH">
+        <description>
+            <p>The old dragon form exhales energy in a 30-foot cone. Each creature in that area must make a DC 16 Dexterity saving throw, taking 42 (12d6) energy damage on a failed save, or half as much damage on a successful one. The energy is the same as the Dragonblade’s Dragon Soul.</p>
+        </description>
+        <sheet>
+            <description>The mature dragon form exhales energy in a 30-foot cone. Each creature in that area must make a DC 16 Dexterity saving throw, taking 42 (12d6) energy damage on a failed save, or half as much damage on a successful one. The energy is the same as the Dragonblade’s Dragon Soul.</description>
+        </sheet>
+    </element>
+    
 </elements>

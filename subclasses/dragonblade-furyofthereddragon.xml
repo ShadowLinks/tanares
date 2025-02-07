@@ -11,19 +11,7 @@
     <element name="Fury of the Red Dragon" type="Archetype" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_DRAGONBLADE_RED">
         <supports>Dragon Soul</supports>
         <description>
-            <p>Dragonblades are the shock troops of the Draconic Council,
-and the Fury of the Red Dragon is one of the most aggressive
-and intense training styles within their ranks. These warriors
-are forged by dragon fire in the art of war and are trained to
-lead the assault against their enemies. Those who choose this
-path are experts in battle, and their relentless aggression is
-unmatched. Whether it be scorching heat or raging infernos, the Fury of the Red Dragon dragonblades are capable
-of withstanding the harshest scorching conditions, making
-them ideal for missions in South Tanares. They seek to study
-the ways of the red dragon and learn from their mastery of
-the environment. These warriors are the embodiment of
-dragon-like ferocity, and they are feared and respected by
-friends and foes alike.</p>
+            <p>Dragonblades are the shock troops of the Draconic Council, and the Fury of the Red Dragon is one of the most aggressive and intense training styles within their ranks. These warriors are forged by dragon fire in the art of war and are trained to lead the assault against their enemies. Those who choose this path are experts in battle, and their relentless aggression is unmatched. Whether it be scorching heat or raging infernos, the Fury of the Red Dragon dragonblades are capable of withstanding the harshest scorching conditions, making them ideal for missions in South Tanares. They seek to study the ways of the red dragon and learn from their mastery of the environment. These warriors are the embodiment of dragon-like ferocity, and they are feared and respected by friends and foes alike.</p>
             <p class="indent"></p>
             <h5 class="caption">RED DRAGON DRACONIC POWERS</h5>
             <table>
@@ -35,7 +23,7 @@ friends and foes alike.</p>
                 <tr><td>7th</td><td>Ring of Fire</td></tr>
                 <tr><td>10th</td><td>Boon of Flames</td></tr>
                 <tr><td>13th</td><td>Blades of Wind</td></tr>
-                <tr><td>16th</td><td>Sweltering Heat</td></tr>
+                <tr><td>16th</td><td>Desertblade Heat</td></tr>
                 <tr><td>19th</td><td>Final Destruction</td></tr>
             </table>
             <div element="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_RED_EMPOWERED_DRAGONS_FURY" />
@@ -53,7 +41,7 @@ friends and foes alike.</p>
             <grant type="Spell" id="ID_TRPG_DRACONIC_POWER_RING_OF_FIRE" level="7" />
             <grant type="Spell" id="ID_TRPG_DRACONIC_POWER_BOON_OF_FLAMES" level="10" />
             <grant type="Spell" id="ID_TRPG_DRACONIC_POWER_BLADES_OF_WIND" level="13" />
-            <grant type="Spell" id="ID_TRPG_DRACONIC_POWER_SWELTERING_HEAT" level="16" />
+            <grant type="Spell" id="ID_TRPG_DRACONIC_POWER_DESERTBLADE_HEAT" level="16" />
             <grant type="Spell" id="ID_TRPG_DRACONIC_POWER_FINAL_DESTRUCTION" level="19" />
 
             
@@ -64,44 +52,47 @@ friends and foes alike.</p>
             <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_RED_DRACONIC_PRESENCE" level="1" />
         </rules>
     </element>
-    <element name="name" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_RED_EMPOWERED_DRAGONS_FURY">
+    <element name="Empowered Dragon's Fury" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_RED_EMPOWERED_DRAGONS_FURY">
         <description>
-            <p></p>
+            <p>At 2nd level, you can channel a portion of your Empowered Soul energy to unleash your fiery fury. Each time your soul becomes Empowered by Draconic Power, you can immediately release fire on a creature you can see within a 30-feet radius. Make a ranged attack roll against it; if you hit, the creature takes 1d6 fire damage for every two Dragonblade levels you possess, rounded down.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When you become Empowered, you can immediately release fire on a creature you can see within a 30-feet radius. Make a ranged attack roll against it; if you hit, the creature takes {{level:dragonblade:half}}d6 fire damage.</description>
         </sheet>
     </element>
-    <element name="name" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_RED_MARK_OF_THE_REVENGE">
+    <element name="Mark of the Revenge" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_RED_MARK_OF_THE_REVENGE">
         <description>
-            <p></p>
+            <p>At the 6th level, when you expend your Empowered Soul to execute a second Draconic Power in a single turn, you may retain a Mark (Claw, Scale, or Wing) of your choice instead of erasing all of them.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When you expend your Empowered Soul to execute a second Draconic Power in a single turn, you may retain a Mark (Claw, Scale, or Wing) of your choice instead of erasing all of them.</description>
         </sheet>
     </element>
-    <element name="name" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_RED_SUPERIOR_MAINTENANCE">
+    <element name="Superior Maintenance" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_RED_SUPERIOR_MAINTENANCE">
         <description>
-            <p></p>
+            <p>At 10th level, your aura ignites the resilience of your allies. Any creatures of your choice within a 30-foot radius, when targeted by a spell that requires a saving throw, may choose to replace the ability modifier of their saving throw with your Intelligence modifier (the target still uses its proficiency and any other applicable bonuses, effects, and conditions for this roll).</p>
         </description>
         <sheet>
-            <description></description>
+            <description>AURA: Any creatures of your choice within a 30-foot radius, when targeted by a spell that requires a saving throw, may choose to replace the ability modifier of their saving throw with your Intelligence modifier (the target still uses its proficiency and any other applicable bonuses, effects, and conditions for this roll).</description>
         </sheet>
     </element>
-    <element name="name" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_RED_FIRE_IMMUNITY">
+    <element name="Fire Immunity" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_RED_FIRE_IMMUNITY">
         <description>
-            <p></p>
+            <p>At 14th level, the flame power coursing through you renders you immune to fire damage.</p>
         </description>
-        <sheet>
+        <sheet display="false">
             <description></description>
         </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_FIRE"/>
+        </rules>
     </element>
-    <element name="name" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_RED_DRACONIC_PRESENCE">
+    <element name="Draconic Presence" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_DRAGONBLADE_RED_DRACONIC_PRESENCE">
         <description>
-            <p></p>
+            <p>At the 18th level, you acquire the “Frightful Presence” ability of an Ancient Red Dragon, which you can use as an action.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>At the 18th level, you acquire the “Frightful Presence” ability of an Ancient Red Dragon, which you can use as an action.</description>
         </sheet>
     </element>
 </elements>
