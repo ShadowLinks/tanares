@@ -354,7 +354,7 @@ as a flower or fruit, extracting clear, potable water.</li>
         </setters>
     </element>
     <element name="Fusion plant" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_8">
-        <supports>lava-element</supports>
+        <supports>plant-element</supports>
         <description>
             <p></p>
         </description>
