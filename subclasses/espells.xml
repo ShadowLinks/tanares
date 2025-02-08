@@ -1,0 +1,396 @@
+<elements>
+    <info>
+        <name>Elemental Spells</name>
+        <update version="0.0.2">
+            <file name="espells.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/classes/espells.xml"/>
+        </update>
+    </info>
+
+    <element name="Elemental Surge (Air)" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_ELEMENTAL_SURGE_AIR">
+        <supports></supports>
+        <description>
+            <p>With an action, you release pure elemental energy from your hands in a 15-foot cone. You deal 1d6 thunder damage, as shown on the table below. All creatures within the area must make a Dexterity saving throw, taking only half damage on a successful save</p>
+            <p class="indent">You can also focus all energy on a ray. In this case, you make a ranged spell attack with a range of 60 feet and deal the same damage that it would deal in a cone (or other shapes), even if empowered by Elemental Flux.</p>
+            <p class="indent">This spell’s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).</p>
+            <p class="indent">At Higher Levels. With this special cantrip, you can expend one of your spell slots to increase the damage it deals. The extra damage added depends on the level of the spell slot used, as shown on the table below. If you use a spell slot of 4th-level or higher, the range of the spell’s area of effect doubles (30-foot cone) and if you use a 7th-level or higher spell slot, the range triples (45-foot cone).</p>
+            <table>
+                <thead>
+                    <tr><td>Spell Level</td><td>extra damage</td></tr>
+                </thead>
+                <tr><td>1</td><td>1d6</td></tr>
+                <tr><td>2</td><td>2d6</td></tr>
+                <tr><td>3</td><td>3d6</td></tr>
+                <tr><td>4</td><td>5d6</td></tr>
+                <tr><td>5</td><td>6d6</td></tr>
+                <tr><td>6</td><td>7d6</td></tr>
+                <tr><td>7</td><td>9d6</td></tr>
+                <tr><td>8</td><td>10d6</td></tr>
+                <tr><td>9</td><td>11d6</td></tr>
+            </table>
+        </description>
+        <setters>
+            <set name="keywords">thunder</set>
+            <set name="level">0</set>
+            <set name="School">Air</set>
+            <set name="time">1 action</set>
+            <set name="duration">Instantaneous</set>
+            <set name="range"></set>
+            <set name="hasSomaticComponent">true</set>
+        </setters>
+    </element>
+    <element name="Elemental Surge (Earth)" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_ELEMENTAL_SURGE_EARTH">
+        <supports></supports>
+        <description>
+            <p>With an action, you release pure elemental energy from your hands in a 15-foot cone. You deal 1d6 acid damage, as shown on the table below. All creatures within the area must make a Dexterity saving throw, taking only half damage on a successful save</p>
+            <p class="indent">You can also focus all energy on a ray. In this case, you make a ranged spell attack with a range of 60 feet and deal the same damage that it would deal in a cone (or other shapes), even if empowered by Elemental Flux.</p>
+            <p class="indent">This spell’s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).</p>
+            <p class="indent">At Higher Levels. With this special cantrip, you can expend one of your spell slots to increase the damage it deals. The extra damage added depends on the level of the spell slot used, as shown on the table below. If you use a spell slot of 4th-level or higher, the range of the spell’s area of effect doubles (30-foot cone) and if you use a 7th-level or higher spell slot, the range triples (45-foot cone).</p>
+            <table>
+                <thead>
+                    <tr><td>Spell Level</td><td>extra damage</td></tr>
+                </thead>
+                <tr><td>1</td><td>1d6</td></tr>
+                <tr><td>2</td><td>2d6</td></tr>
+                <tr><td>3</td><td>3d6</td></tr>
+                <tr><td>4</td><td>5d6</td></tr>
+                <tr><td>5</td><td>6d6</td></tr>
+                <tr><td>6</td><td>7d6</td></tr>
+                <tr><td>7</td><td>9d6</td></tr>
+                <tr><td>8</td><td>10d6</td></tr>
+                <tr><td>9</td><td>11d6</td></tr>
+            </table>
+        </description>
+        <setters>
+            <set name="keywords">acid</set>
+            <set name="level">0</set>
+            <set name="School">Air</set>
+            <set name="time">1 action</set>
+            <set name="duration">Instantaneous</set>
+            <set name="range"></set>
+            <set name="hasSomaticComponent">true</set>
+        </setters>
+    </element>
+    <element name="Elemental Surge (Fire)" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_ELEMENTAL_SURGE_FIRE">
+        <supports></supports>
+        <description>
+            <p>With an action, you release pure elemental energy from your hands in a 15-foot cone. You deal 1d6 fire damage, as shown on the table below. All creatures within the area must make a Dexterity saving throw, taking only half damage on a successful save</p>
+            <p class="indent">You can also focus all energy on a ray. In this case, you make a ranged spell attack with a range of 60 feet and deal the same damage that it would deal in a cone (or other shapes), even if empowered by Elemental Flux.</p>
+            <p class="indent">This spell’s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).</p>
+            <p class="indent">At Higher Levels. With this special cantrip, you can expend one of your spell slots to increase the damage it deals. The extra damage added depends on the level of the spell slot used, as shown on the table below. If you use a spell slot of 4th-level or higher, the range of the spell’s area of effect doubles (30-foot cone) and if you use a 7th-level or higher spell slot, the range triples (45-foot cone).</p>
+            <table>
+                <thead>
+                    <tr><td>Spell Level</td><td>extra damage</td></tr>
+                </thead>
+                <tr><td>1</td><td>1d6</td></tr>
+                <tr><td>2</td><td>2d6</td></tr>
+                <tr><td>3</td><td>3d6</td></tr>
+                <tr><td>4</td><td>5d6</td></tr>
+                <tr><td>5</td><td>6d6</td></tr>
+                <tr><td>6</td><td>7d6</td></tr>
+                <tr><td>7</td><td>9d6</td></tr>
+                <tr><td>8</td><td>10d6</td></tr>
+                <tr><td>9</td><td>11d6</td></tr>
+            </table>
+        </description>
+        <setters>
+            <set name="keywords">fire</set>
+            <set name="level">0</set>
+            <set name="School">Air</set>
+            <set name="time">1 action</set>
+            <set name="duration">Instantaneous</set>
+            <set name="range"></set>
+            <set name="hasSomaticComponent">true</set>
+        </setters>
+    </element>
+    <element name="Elemental Surge (Water)" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_ELEMENTAL_SURGE_WATER">
+        <supports></supports>
+        <description>
+            <p>With an action, you release pure elemental energy from your hands in a 15-foot cone. You deal 1d6 cold damage, as shown on the table below. All creatures within the area must make a Dexterity saving throw, taking only half damage on a successful save</p>
+            <p class="indent">You can also focus all energy on a ray. In this case, you make a ranged spell attack with a range of 60 feet and deal the same damage that it would deal in a cone (or other shapes), even if empowered by Elemental Flux.</p>
+            <p class="indent">This spell’s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).</p>
+            <p class="indent">At Higher Levels. With this special cantrip, you can expend one of your spell slots to increase the damage it deals. The extra damage added depends on the level of the spell slot used, as shown on the table below. If you use a spell slot of 4th-level or higher, the range of the spell’s area of effect doubles (30-foot cone) and if you use a 7th-level or higher spell slot, the range triples (45-foot cone).</p>
+            <table>
+                <thead>
+                    <tr><td>Spell Level</td><td>extra damage</td></tr>
+                </thead>
+                <tr><td>1</td><td>1d6</td></tr>
+                <tr><td>2</td><td>2d6</td></tr>
+                <tr><td>3</td><td>3d6</td></tr>
+                <tr><td>4</td><td>5d6</td></tr>
+                <tr><td>5</td><td>6d6</td></tr>
+                <tr><td>6</td><td>7d6</td></tr>
+                <tr><td>7</td><td>9d6</td></tr>
+                <tr><td>8</td><td>10d6</td></tr>
+                <tr><td>9</td><td>11d6</td></tr>
+            </table>
+        </description>
+        <setters>
+            <set name="keywords">cold</set>
+            <set name="level">0</set>
+            <set name="School">Air</set>
+            <set name="time">1 action</set>
+            <set name="duration">Instantaneous</set>
+            <set name="range"></set>
+            <set name="hasSomaticComponent">true</set>
+        </setters>
+    </element>
+    <element name="Air Essence" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_AIR_ESSENCE">
+        <supports></supports>
+        <description>
+            <p>You can modify the air near you to create one the following effects:</p>
+            <ul>
+                <li>Emulate sounds, from a whisper to a scream, including your voice, someone else’s voice, or any other sound. The sound continues throughout the duration, or you can make discrete sounds at different times before the spell ends. A creature can discern the illusion with a successful Intelligence (Investigation) check against your spell save DC.</li>
+                <li>Move an object (up to 20 pounds) up to 30 feet through the air.</li>
+                <li>Conceal shallow tracks or footprints by moving dirt around.</li>
+            </ul>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">0</set>
+            <set name="School">Air</set>
+            <set name="time">1 action</set>
+            <set name="duration">Instantaneous</set>
+            <set name="range">120 feet</set>
+            <set name="hasVerbalComponent">true</set>
+        </setters>
+    </element>
+    <element name="Earth Essence" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_EARTH_ESSENCE">
+        <supports></supports>
+        <description>
+            <p>You tap into the energy of the earth and are able to perform the following tricks. For this spell, the term earth includes sand, soil, stone, and similar terrains.</p>
+            <ul>
+                <li>You can create a small, harmless tremor that extends up to 15 feet in radius and lasts for 1 minute. This can be useful for creating distractions or triggering traps.</li>
+                <li>You can move the earth underneath an object that weighs up to 15 pounds, causing it to move up to 5 feet in any unoccupied direction. This can be helpful for moving small objects or creating obstacles.</li>
+                <li>You can create a small earth construct with an AC of 11, 10 hit points, and 15 feet of movement, up to 25 feet away from you. You can telepathically command the construct to perform simple tasks, such as carrying an object weighing up to 20 pounds. Note that the construct cannot make attacks and will dissolve after 10 minutes or when its hit points are reduced to 0.</li>
+            </ul>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">0</set>
+            <set name="School">Earth</set>
+            <set name="time">1 action</set>
+            <set name="duration">Instantaneous</set>
+            <set name="range"></set>
+            <set name="hasSomaticComponent">true</set>
+        </setters>
+    </element>
+    <element name="Fire Essence" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_FIRE_ESSENCE">
+        <supports></supports>
+        <description>
+            <p>You can create or manipulate fire to produce one of the following effects:</p>
+            <ul>
+                <li>You create a magic flame in your hand, which can take
+any form but can’t be larger than 1 cubic foot. You can
+absorb non-magical flames within a range of 60 feet, extinguishing 5 feet of them, and transforming the flame in
+your hand into a magical and harmless source of light that
+sheds bright light in a 10-foot radius and dim light for an
+additional 10 feet.</li>
+                <li>You can ignite an object or space up to 5 cubic feet in size,
+illuminating your surroundings. The flames can only be
+extinguished if you command them to do so or if they are
+covered by at least 1 liter of water from a magical source.
+You can create as many magic flames as you wish.</li>
+                <li>You can make the flames take on simple shapes, such as the
+vague form of a creature or object, and animate them as
+desired, providing a fun and useful way to create illusions
+or entertain others.</li>
+            </ul>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">0</set>
+            <set name="School">Fire</set>
+            <set name="time">1 action</set>
+            <set name="duration">1 hour</set>
+            <set name="range">60 feet</set>
+            <set name="hasSomaticComponent">true</set>
+        </setters>
+    </element>
+    <element name="Water Essence" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_WATER_ESSENCE">
+        <supports></supports>
+        <description>
+            <p>You have the power to control water in all its forms within range, creating a variety of magical effects and dismiss with an action.</p>
+            <ul>
+                <li>You can alter the color and scent of up to 1 cubic foot of water, making it seem clean or dirty</li>
+                <li>You can instantly chill, heat, evaporate, or freeze any liquid
+with a volume of up to 1 cubic foot, as long as no creatures
+are inside it.</li>
+                <li>You can create an instant and harmless sensory effect, such
+as the sound of rushing water, crashing waves, falling rain,
+a light mist, or even dampening or drying a surface. The
+effect must fit within a cube with a side length of 1 foot.</li>
+                <li>You can drain moisture from a small object or plants, such
+as a flower or fruit, extracting clear, potable water.</li>
+            </ul>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">0</set>
+            <set name="School">Water</set>
+            <set name="time">1 action</set>
+            <set name="duration">Instantaneous</set>
+            <set name="range">30 feet</set>
+            <set name="hasSomaticComponent">true</set>
+        </setters>
+    </element>
+    <element name="air" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_1">
+        <supports>air-element</supports>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Air</set>
+            <set name="time">time</set>
+            <set name="range">range</set>
+            <set name="duration">duration</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="fire" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_2">
+        <supports>fire-element</supports>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Fire</set>
+            <set name="time">time</set>
+            <set name="range">range</set>
+            <set name="duration">duration</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="water" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_3">
+        <supports>water-element</supports>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Water</set>
+            <set name="time">time</set>
+            <set name="range">range</set>
+            <set name="duration">duration</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Fusion lightning" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_4">
+        <supports>lightning-element</supports>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Lightning</set>
+            <set name="time">time</set>
+            <set name="range">range</set>
+            <set name="duration">duration</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="fusion spirit" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_5">
+        <supports>spirit-element</supports>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Spirit</set>
+            <set name="time">time</set>
+            <set name="range">range</set>
+            <set name="duration">duration</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Fusion lava" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_6">
+        <supports>lava-element</supports>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Lava</set>
+            <set name="time">time</set>
+            <set name="range">range</set>
+            <set name="duration">duration</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Fusion plant" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_8">
+        <supports>lava-element</supports>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Plant</set>
+            <set name="time">time</set>
+            <set name="range">range</set>
+            <set name="duration">duration</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Fusion lightning2" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_7">
+        <supports>lightning-element</supports>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Lightning</set>
+            <set name="time">time</set>
+            <set name="range">range</set>
+            <set name="duration">duration</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+</elements>
