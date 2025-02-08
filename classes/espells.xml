@@ -233,164 +233,76 @@ as a flower or fruit, extracting clear, potable water.</li>
             <set name="hasSomaticComponent">true</set>
         </setters>
     </element>
-    <element name="air" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_1">
-        <supports>air-element</supports>
-        <description>
-            <p></p>
-        </description>
-        <setters>
-            <set name="keywords"></set>
-            <set name="level">1</set>
-            <set name="school">Air</set>
-            <set name="time">time</set>
-            <set name="range">range</set>
-            <set name="duration">duration</set>
-            <set name="hasVerbalComponent">true</set>
-            <set name="hasSomaticComponent">true</set>
-            <set name="hasMaterialComponent">true</set>
-            <set name="materialComponent">component</set>
-            <set name="isConcentration">false</set>
-            <set name="isRitual">false</set>
-        </setters>
-    </element>
-    <element name="fire" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_2">
+    <element name="Ability Boost" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_ABILITY_BOOST">
         <supports>fire-element</supports>
         <description>
-            <p></p>
-        </description>
-        <setters>
-            <set name="keywords"></set>
-            <set name="level">1</set>
-            <set name="school">Fire</set>
-            <set name="time">time</set>
-            <set name="range">range</set>
-            <set name="duration">duration</set>
-            <set name="hasVerbalComponent">true</set>
-            <set name="hasSomaticComponent">true</set>
-            <set name="hasMaterialComponent">true</set>
-            <set name="materialComponent">component</set>
-            <set name="isConcentration">false</set>
-            <set name="isRitual">false</set>
-        </setters>
-    </element>
-    <element name="water" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_3">
-        <supports>water-element</supports>
-        <description>
-            <p></p>
-        </description>
-        <setters>
-            <set name="keywords"></set>
-            <set name="level">1</set>
-            <set name="school">Water</set>
-            <set name="time">time</set>
-            <set name="range">range</set>
-            <set name="duration">duration</set>
-            <set name="hasVerbalComponent">true</set>
-            <set name="hasSomaticComponent">true</set>
-            <set name="hasMaterialComponent">true</set>
-            <set name="materialComponent">component</set>
-            <set name="isConcentration">false</set>
-            <set name="isRitual">false</set>
-        </setters>
-    </element>
-    <element name="Fusion lightning" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_4">
-        <supports>lightning-element</supports>
-        <description>
-            <p></p>
-        </description>
-        <setters>
-            <set name="keywords"></set>
-            <set name="level">1</set>
-            <set name="school">Lightning</set>
-            <set name="time">time</set>
-            <set name="range">range</set>
-            <set name="duration">duration</set>
-            <set name="hasVerbalComponent">true</set>
-            <set name="hasSomaticComponent">true</set>
-            <set name="hasMaterialComponent">true</set>
-            <set name="materialComponent">component</set>
-            <set name="isConcentration">false</set>
-            <set name="isRitual">false</set>
-        </setters>
-    </element>
-    <element name="fusion spirit" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_5">
-        <supports>spirit-element</supports>
-        <description>
-            <p></p>
-        </description>
-        <setters>
-            <set name="keywords"></set>
-            <set name="level">1</set>
-            <set name="school">Spirit</set>
-            <set name="time">time</set>
-            <set name="range">range</set>
-            <set name="duration">duration</set>
-            <set name="hasVerbalComponent">true</set>
-            <set name="hasSomaticComponent">true</set>
-            <set name="hasMaterialComponent">true</set>
-            <set name="materialComponent">component</set>
-            <set name="isConcentration">false</set>
-            <set name="isRitual">false</set>
-        </setters>
-    </element>
-    <element name="Fusion lava" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_6">
-        <supports>lava-element</supports>
-        <description>
-            <p></p>
-        </description>
-        <setters>
-            <set name="keywords"></set>
-            <set name="level">1</set>
-            <set name="school">Lava</set>
-            <set name="time">time</set>
-            <set name="range">range</set>
-            <set name="duration">duration</set>
-            <set name="hasVerbalComponent">true</set>
-            <set name="hasSomaticComponent">true</set>
-            <set name="hasMaterialComponent">true</set>
-            <set name="materialComponent">component</set>
-            <set name="isConcentration">false</set>
-            <set name="isRitual">false</set>
-        </setters>
-    </element>
-    <element name="Fusion plant" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_8">
-        <supports>plant-element</supports>
-        <description>
-            <p></p>
-        </description>
-        <setters>
-            <set name="keywords"></set>
-            <set name="level">1</set>
-            <set name="school">Plant</set>
-            <set name="time">time</set>
-            <set name="range">range</set>
-            <set name="duration">duration</set>
-            <set name="hasVerbalComponent">true</set>
-            <set name="hasSomaticComponent">true</set>
-            <set name="hasMaterialComponent">true</set>
-            <set name="materialComponent">component</set>
-            <set name="isConcentration">false</set>
-            <set name="isRitual">false</set>
-        </setters>
-    </element>
-    <element name="Fusion lightning2" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_7">
-        <supports>lightning-element</supports>
-        <description>
-            <p></p>
+            <p>You grant an elemental enhancement to a willing creature within range of the spell, giving it advantage on all ability checks of a single ability of your choice. As a bonus action, if the target is within range of the spell, you can switch the chosen ability or switch the target of the spell to another willing creature, if both are within range of the spell and within 30 feet of each other.</p>
+            <p class="indent">At Higher Levels. When you cast this spell using a 3rd-level spell slot or higher, you can choose an additional target for each level above 2nd. When using the bonus action to change the chosen ability, you change the ability bonus for all creatures and you can only use the bonus action to switch a single target at a time</p>
+            <p class="indent">Elemental Flux. Your next elemental surge affects a 20-foot line that is 5 feet wide and deals 2d6 fire damage plus 1d6 fire damage for each slot level above 2nd.</p>
         </description>
         <setters>
             <set name="keywords"></set>
             <set name="level">2</set>
-            <set name="school">Lightning</set>
-            <set name="time">time</set>
-            <set name="range">range</set>
-            <set name="duration">duration</set>
+            <set name="school">Fire</set>
+            <set name="time">1 action</set>
+            <set name="range">30 feet</set>
+            <set name="duration">Concentration, up to 1 hour</set>
             <set name="hasVerbalComponent">true</set>
             <set name="hasSomaticComponent">true</set>
-            <set name="hasMaterialComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Absorb Spell" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_ABSORB_SPELL">
+        <supports>water-element</supports>
+        <description>
+            <p>You attempt to disrupt a creature in the process of casting a spell, converting its magical power into healing droplets. If the spell being cast is 5th level or lower, it fails and has no effect. If it is 6th level or higher, you must make a spellcasting ability check. The DC equals 10 plus the level of the spell being cast. On a successful check, the spell fails.</p>
+            <p class="indent">If the target’s spell fails, you can choose to absorb the energy from the interrupted spell, gaining temporary hit points equal to the spell’s level that lasts for 1 minute, or copy it, casting the spell immediately as if you were the original caster, and without requiring any material components.</p>
+            <p class="indent">Elemental Flux. Your next elemental surge affects a 45-foot cone and deals 12d6 cold damage.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">8</set>
+            <set name="school">Water</set>
+            <set name="time">1 reaction</set>
+            <set name="range">60 feet</set>
+            <set name="duration">instantaneous</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
             <set name="materialComponent">component</set>
             <set name="isConcentration">false</set>
             <set name="isRitual">false</set>
         </setters>
     </element>
+
+
+
 </elements>
+
+<!--
+    <element name="name" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_">
+        <supports>supports</supports>
+        <description>
+            <p></p>
+            <p class="indent"></p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">level</set>
+            <set name="school">Evocation</set>
+            <set name="time">time</set>
+            <set name="range">range</set>
+            <set name="duration">duration</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    -->
