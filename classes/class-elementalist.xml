@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+    <info>
+        <name></name>
+        <description>Elementalist Class from Tanares RPG 5e</description>
+        <author url="">Tanares RPG 5e</author>
+        <update version="0.0.1">
+            <file name="class-elementalist.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/classes/class-elementalist.xml" />
+        </update>
+    </info>
+    <element name="Elementalist" type="Class" source="Tanares RPG 5e" id="ID_TRPG_CLASS_ELEMENTALIST">
+        <description>
+            <p>Elementalists are versatile and wise spellcasters who serve as advisors, sages, spiritual guides, and teachers. According to prophecies, they hold the power to stop Gullog and his undead armies.</p>
+            <p class="indent">Born from an ancestral elven tradition, elementalists stand
+as a distinct group of spellcasters. Their mastery diverges
+from conventional arcane practices, delving into the harmonization of elements, energy flow, meditation, and spiritual
+enlightenment. These wise practitioners dedicate their lives
+to attuning with one of the four elements, each of which
+grants distinctive abilities and purpose. Fire elementalists
+command martial prowess and emotional control, earth elementalists foster unwavering resilience and deep moral
+compass, air elementalists exhibit cunning, guile, and grace
+of movement, while the scarce water elementalists practice
+healing arts, nurturing both body and soul, and advocating
+temperance and non-attachment. Despite mastering one
+element, elementalists can manipulate the other two elements that do not directly conflict with their chosen one,
+enabling combinations of elements to cast spells of magma,
+plant, lightning, and spiritual magic, and augmenting their
+vast repertoire.</p>
+            <p class="indent"></p>
+            <p class="indent"></p>
+            <p class="indent"></p>
+            <p class="indent"></p>
+           
+            <p class="indent"></p>
+            <h4>CREATING AN ELEMENTALIST</h4>
+            <p>When creating an elementalist, you must define how do you
+belong in Elementalism. What is your role? Which element
+represents you? Do you agree with its precepts? Are you
+an ally of a group or hermit elementalist? Why are you an
+adventurer? What do you seek in the world?</p>
+            <p class="indent">After that, you must also define which characteristics (if
+any) from your element you carry in your behavior and
+personality. Are you a passional, fiery person, or are you
+stubborn like a rock? Or, even if you are connected to a certain element, is your personality more aligned to a different
+one? These questions define your character’s goals, and how
+it will work to achieve them.</p>
+            
+            <h2>CLASS FEATURES</h2>
+            <p>As an elementalist, you gain the following class features.</p>
+            <h5 class="caption">HIT POINTS</h5>
+            <ul class="unstyled">
+                <li><strong>Hit Dice:</strong> 1d6 per elementalist level</li>
+                <li><strong>Hit Points at 1st Level:</strong> 6 + your Constitution modifier</li>
+                <li><strong>Hit Points at Higher Levels:</strong> 1d6 (or 4) + your Constitution modifier per elementalist level after 1st</li>
+            </ul>
+            <h5 class="caption">PROFICIENCIES</h5>
+            <ul class="unstyled mb">
+                <li><strong>Armor:</strong> none</li>
+                <li><strong>Weapons:</strong> Clubs, daggers, quarterstaffs, shortbows, longbows</li>
+                <li><strong>Tools:</strong> None</li>
+            </ul>
+            <ul class="unstyled">
+                <li><strong>Saving Throws:</strong> Intelligence, Wisdom</li>
+                <li><strong>Skills:</strong> Choose two from Arcana, History, Insight,
+Nature, Perception, Persuasion, and Religion</li>
+            </ul>
+            <h5 class="caption">EQUIPMENT</h5>
+            <p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+            <ul>
+                <li>(a) A quarterstaff or (b) a dagger or (c) a longsword and shield (only Primordial Element of Fire)</li>
+                <li>(a) a component pouch or (b) an elemental focus</li>
+                <li>(a) a diplomat’s pack or (b) an explorer pack</li>
+                <li>A shortbow and 20 arrows.</li>
+            </ul>
+            <!-- class table here -->
+            <h5 class="caption">THE ELEMENTALIST</h5>
+            <table class="class-features">
+                <thead>
+                    <tr><td class="col-5">Level</td><td class="col-10">Proficiency Bonus</td><td class="left">Features</td><td class="col-10">Primary Element Spells Known</td><td class="col-10">Secondary Element Spells Known</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td><td>5th</td><td>6th</td><td>7th</td><td>8th</td><td>9th</td></tr>
+                </thead>
+                <tr><td> 1st</td><td>+2</td><td class="left">Primordial Element, Spellcasting, Fusion Spells</td><td>2</td><td>2</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td> 2nd</td><td>+2</td><td class="left">Primordial Bond</td><td>2</td><td>2</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td> 3rd</td><td>+2</td><td class="left">-</td><td>4</td><td>4</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td> 4th</td><td>+2</td><td class="left">Ability Score Improvement</td><td>4</td><td>4</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td> 5th</td><td>+3</td><td class="left">-</td><td>6</td><td>6</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td> 6th</td><td>+3</td><td class="left">Primordial Element Trait</td><td>6</td><td>6</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td> 7th</td><td>+3</td><td class="left">-</td><td>8</td><td>8</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td> 8th</td><td>+3</td><td class="left">Ability Score Improvement</td><td>8</td><td>8</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td> 9th</td><td>+4</td><td class="left">-</td><td>10</td><td>10</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td>10th</td><td>+4</td><td class="left">Primordial Element Trait</td><td>10</td><td>10</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td>11th</td><td>+4</td><td class="left">-</td><td>12</td><td>12</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td>12th</td><td>+4</td><td class="left">Ability Score Improvement</td><td>12</td><td>12</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td>13th</td><td>+5</td><td class="left">-</td><td>14</td><td>14</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>—</td><td>—</td></tr>
+                <tr><td>14th</td><td>+5</td><td class="left">Primordial Element Trait</td><td>14</td><td>14</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>—</td><td>—</td></tr>
+                <tr><td>15th</td><td>+5</td><td class="left">-</td><td>16</td><td>16</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>—</td></tr>
+                <tr><td>16th</td><td>+5</td><td class="left">Ability Score Improvement</td><td>16</td><td>16</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>—</td></tr>
+                <tr><td>17th</td><td>+6</td><td class="left">-</td><td>18</td><td>18</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+                <tr><td>18th</td><td>+6</td><td class="left">Fusion Master</td><td>18</td><td>18</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+                <tr><td>19th</td><td>+6</td><td class="left">Ability Score Improvement</td><td>18</td><td>18</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td></tr>
+                <tr><td>20th</td><td>+6</td><td class="left">Elemental Pinnacle</td><td>18</td><td>18</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>2</td><td>1</td><td>1</td></tr>
+            </table>
+            <div element="ID_TRPG_CLASS_FEATURE_PRIMORDIAL_ELEMENT" />
+            <div element="ID_TRPG_CLASS_FEATURE_SPELLCASTING" />
+            <div element="ID_TRPG_CLASS_FEATURE_ELEMENTAL_FLUX" />
+            <div element="ID_TRPG_CLASS_FEATURE_FUSION_SPELLS" />
+            <div element="ID_TRPG_CLASS_FEATURE_PRIMODIAL_BOND" />
+            <div element="ID_TRPG_CLASS_FEATURE_ELEMENTALIST_ASI" />
+            <div element="ID_TRPG_CLASS_FEATURE_ELEMENTALIST_FUSION_MASTER" />
+            <div element="ID_TRPG_CLASS_FEATURE_ELEMENTALIST_ELEMENTAL_PINNACLE" />
+
+        </description>
+        <setters>
+            <set name="hd">d6</set>
+        </setters>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CLUB" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_QUARTERSTAFF" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTBOW" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGBOW" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" />
+            <select type="Proficiency" name="Skill Proficiency (Elementalist)" number="2" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT" />
+
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_PRIMORDIAL_ELEMENT" level="1" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_SPELLCASTING" level="1" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_ELEMENTAL_FLUX" level="1" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_FUSION_SPELLS" level="1" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_PRIMODIAL_BOND" level="2" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_ELEMENTALIST_ASI" level="4" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_ELEMENTALIST_FUSION_MASTER" level="18" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_ELEMENTALIST_ELEMENTAL_PINNACLE" level="20" />
+        </rules>
+    </element>
+    <element name="Primordial Element" type="Class Feature" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_PRIMORDIAL_ELEMENT">
+        <description>
+            <p>Every elementalist has a primary element they are connected
+to. At 1st level, you must choose your Primordial Element
+from the following options: Air, Earth, Fire, and Water. Your
+Primordial Element determines which spells you have access
+to, your Primary Element, your Secondary Elements, your
+Opposing Element, and a variety of features at 6th level,
+10th level, and 14th level. You have access to spells from
+your Primary Element, your Secondary Elements, and the
+fusion of the two, choosing spells from their respective lists,
+as explained below, but never from your Opposing Element
+or its fusions. To find out what your Secondary Elements and
+Opposing Element are, refer to the Primordial Element table.</p>
+            <table>
+                <thead>
+                    <tr><td>Primary Element</td><td>Secondary Elements</td><td>Opposite Element</td></tr>
+                </thead>
+                <tr><td>Air</td><td>Fire and Water</td><td>Earth</td></tr>
+                <tr><td>Earth</td><td>Fire and Water</td><td>Air</td></tr>
+                <tr><td>Fire</td><td>Air and Earth</td><td>Water</td></tr>
+                <tr><td>Water</td><td>Air And Earth</td><td>Fire</td></tr>
+            </table>
+            <p></p>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Archetype" name="Primordial Element" supports="Primordial-Element"/>
+        </rules>
+    </element>
+    <element name="Spellcasting" type="Class Feature" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_SPELLCASTING">
+        <description>
+            <p>Your studies and practices of the elementalism teachings
+have granted you the ability to cast spells by channeling
+the power of the elemental planes through the force of will
+over the elements.</p>
+            <h4>Cantrips</h4>
+            <p>Starting at 1st level, you know 3 cantrips determined by
+your primary element. You also know the special cantrip
+elemental surge, which has characteristics determined by
+your primary element, as well as the essential cantrip of
+your primary element and one essential cantrip of one of
+your secondary elements.</p>
+            <h4>Spell Slots</h4>
+            <p>The elementalist table shows how many spell slots you have
+to cast your elemental spells of 1st level and higher. To cast
+one of these elemental spells, you must expend a slot of the
+spell’s level or higher. You regain all expended spell slots
+when you finish a long rest.</p>
+            <p class="indent">For example, if you know the 1st-level elemental spell
+air beneath your feet and have a 1st-level and a 2nd-level
+spell slots available, you can cast air beneath your feet using either slot.</p>
+            <h4>Spells Known of 1st Level and Higher</h4>
+            <p>You know two 1st-level spells of your primary element and
+two 1st-level spells of your secondary elements of your choice
+from the elemental spell list</p>
+            <p class="indent">You learn two spells of your primary element and two of
+your secondary elements every time you gain access to a new
+spell level. Each of these spells must be of a level for which
+you have spell slots. For instance, when you reach 3rd level
+in this class, you can learn two new spells of 1st or 2nd level.
+You can never learn to cast spells of your opposite element.</p>
+            <p class="indent">Additionally, when you gain a level in this class, you can
+choose one of the elemental spells you know and replace it
+with another spell from the elemental spell list, which also
+must be of a level for which you have spell slots.</p>
+            <h4>Spellcasting Ability</h4>
+            <p>Wisdom is your spellcasting ability for your elementalist
+spells, since the power of your magic depends on your willpower over the elements. You use your Wisdom whenever
+a spell refers to your spellcasting ability. In addition, you
+use your Wisdom modifier when setting the saving throw
+DC for an elementalist spell you cast and when making an
+attack roll with one.</p>            
+            <center>
+                <p><strong>Spell save DC</strong>= 8 + your proficiency bonus + your Wisdom modifier </p>
+                <p><strong>Spell attack modifier</strong>= your proficiency bonus + your Wisdom modifier</p>
+            </center>
+            <h4>Spellcasting Focus</h4>
+                <p>You can use an elemental focus as a spellcasting focus for your elemental spells</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Elemental Flux" type="Class Feature" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_ELEMENTAL_FLUX">
+        <description>
+            <p>Starting at 1st level, when you cast an elemental spell, it
+generates a magical energy flow that allows you to enhance
+or modify your elemental surge cantrip. Each spell has in
+its description how to modify the elemental surge in the
+Elemental Flux field. This modification only applies to your
+next elemental surge cast and is lost if you finish a long rest.</p>
+        </description>
+        <sheet>
+            <description>When you cast an elemental spell, it
+generates a magical energy flow that allows you to enhance
+or modify your elemental surge cantrip. Each spell has in
+its description how to modify the elemental surge in the
+Elemental Flux field. This modification only applies to your
+next elemental surge cast and is lost if you finish a long rest.</description>
+        </sheet>
+    </element>
+    <element name="Fusion Spells" type="Class Feature" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_FUSION_SPELLS">
+        <description>
+            <p>Starting at 1st level, you know all the fusion spells related to your primary and secondary elements, and of the same spell levels your elementalist class level has given you access to (two fusion spells per spell level). However, you can only cast them in a specific way. These fusion spells do not count against the number of your known spells.</p>
+            <table>
+                <thead>
+                    <tr><td>Fused Elements</td><td>Fusion Element</td></tr>
+                </thead>
+                <tr><td>Air and Fire</td><td>Lightning</td></tr>
+                <tr><td>Air and Water</td><td>Spirit</td></tr>
+                <tr><td>Earth and Fire</td><td>Lava</td></tr>
+                <tr><td>Earth and Water</td><td>Plant</td></tr>
+            </table>
+            <h4>Casting Fusion Spells</h4>
+            <p>When you cast an elementalist spell of 1st level or higher, write down the spell’s element. If the last two spells you cast have different elements, you can use a spell slot to cast a fusion spell that combines those two elements. When you do this, erase any previous spell notes. If you cast a spell that’s not a fusion spell when you already have two spell notes, write down the new spell’s element and keep only the last two spell notes, erasing the oldest one. Your spell notes disappear when you finish a short or long rest.</p> 
+        </description>
+        <sheet>
+            <description>When the last 2 spells you cast have different type, you can cast a fusion spell of those last 2 spell elements. Casting a fusion spell clears the elements and casting another elemental spell overwrite the oldest element. </description>
+        </sheet>
+    </element>
+    <element name="Primordial Bond" type="Class Feature" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_PRIMODIAL_BOND">
+        <description>
+            <p>At 2nd level, you gain the ability to cast an elemental spell from your primary element, regardless of whether it’s part of your known spells or not, as an action and without using a spell slot. The level of the spell cast with this feature cannot exceed one-third of your elementalist level (rounded up). After using this feature, you must complete a long rest before you can use it again.</p>
+        </description>
+        <sheet usage="1/long rest">
+            <description>You gain the ability to cast an elemental spell from your primary element, regardless of whether it’s part of your known spells or not, as an action and without using a spell slot. The level of the spell cast with this feature cannot exceed one-third of your elementalist level (rounded up). After using this feature, you must complete a long rest before you can use it again.</description>
+        </sheet>
+    </element>
+    <element name="Ability Score Improvement" type="Class Feature" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_ELEMENTALIST_ASI">
+        <description>
+            <p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Improvement Option (Elementalist 4)" supports="Improvement Option,Elementalist,4" level="4"/>
+            <select type="Class Feature" name="Improvement Option (Elementalist 8)" supports="Improvement Option,Elementalist,8" level="8"/>
+            <select type="Class Feature" name="Improvement Option (Elementalist 12)" supports="Improvement Option,Elementalist,12" level="12"/>
+            <select type="Class Feature" name="Improvement Option (Elementalist 16)" supports="Improvement Option,Elementalist,16" level="16"/>
+            <select type="Class Feature" name="Improvement Option (Elementalist 19)" supports="Improvement Option,Elementalist,19" level="19"/>
+        </rules>
+    </element>
+    <element name="Fusion Master" type="Class Feature" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_ELEMENTALIST_FUSION_MASTER">
+        <description>
+            <p>Starting at 18th level, you no longer need to have cast an elemental spell before casting a fusion spell, and you don’t need to keep track of the elements of the spells you cast.</p>
+        </description>
+        <sheet>
+            <description>You no longer need to have cast an elemental spell before casting a fusion spell, and you don’t need to keep track of the elements of the spells you cast.</description>
+        </sheet>
+    </element>
+    <element name="Elemental Pinnacle" type="Class Feature" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_ELEMENTALIST_ELEMENTAL_PINNACLE">
+        <description>
+            <p>At 20th level, for the next minute after casting a spell, you become immune to a type of damage based on the last spell you cast according to the next table.</p>
+            <table>
+                <thead>
+                    <tr><td>Elements</td><td>Damage Immunity</td></tr>
+                </thead>
+                <tr><td>Air or Lightning</td><td>Lightning</td></tr>
+                <tr><td>Earth or Plant</td><td>Acid</td></tr>
+                <tr><td>Fire or Lava</td><td>Fire</td></tr>
+                <tr><td>Water or Spirit</td><td>Cold</td></tr>
+            </table>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+</elements>

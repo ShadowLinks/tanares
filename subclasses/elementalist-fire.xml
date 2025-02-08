@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+    <info>
+        <name>Fire Primordial Element</name>
+        <description>Fire Primordial Element for the Elementalist class from Tanares RPG 5e.</description>
+        <author url="">Dragori Games</author>
+        <update version="0.0.1">
+            <file name="elementalist-fire.xml" url="https://github.com/ShadowLinks/tanares/raw/refs/heads/main/subclasses/elementalist-fire.xml" />
+        </update>
+    </info>
+    <element name="Fire Primordial Element" type="Archetype" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_ELEMENTALIST_FIRE">
+        <supports>Primordial-Element</supports>
+        <description>
+            <p></p>
+            <p class="indent"></p>
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_ELEMENTALIST_FIRE_PRIMARY" />
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_ELEMENTALIST_FIRE_FLAME_BRILLIANCE" />
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_ELEMENTALIST_FIRE_FIERY_REPRISAL" />
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_ELEMENTALIST_FIRE_BURNING_INSPIRATION" />
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_ELEMENTALIST_FIRE_SECOND_SURGE" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_ELEMENTALIST_FIRE_PRIMARY" level="1" />
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_ELEMENTALIST_FIRE_FLAME_BRILLIANCE" level="1" />
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_ELEMENTALIST_FIRE_FIERY_REPRISAL" level="6" />
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_ELEMENTALIST_FIRE_BURNING_INSPIRATION" level="10" />
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_ELEMENTALIST_FIRE_SECOND_SURGE" level="14" />
+        </rules>
+    </element>
+    <element name="Primary Element" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_ELEMENTALIST_FIRE_PRIMARY">
+        <description>
+            <p>Elementalists who choose this Primordial Element are strongly linked to battles, creativity, destruction, and intelligence.
+By choosing Fire as your Primordial Element, you can learn
+Fire, Air, and Earth spells, the latter two being your secondary elements, and you will know the fusion element spells
+of Lava and Lightning.</p>
+        </description>
+        <sheet>
+            <description>Your Primary element is Fire. Earth and Air elements are your secondary elements. Lightning and Lava are your fusion elements.</description>
+        </sheet>
+        <spellcasting name="Fire Elementalist" ability="Wisdom" prepare="false">
+            <list known="true">lava-element|lightning-element</list>            
+        </spellcasting>
+        <rules>
+            <stat name="fire elementalist:spellcasting:slots:1" value="2" level="1"/>
+            <stat name="fire elementalist:spellcasting:slots:1" value="1" level="2"/>
+            <stat name="fire elementalist:spellcasting:slots:1" value="1" level="3"/>
+            <stat name="fire elementalist:spellcasting:slots:2" value="2" level="3"/>
+            <stat name="fire elementalist:spellcasting:slots:2" value="1" level="4"/>
+            <stat name="fire elementalist:spellcasting:slots:3" value="2" level="5"/>
+            <stat name="fire elementalist:spellcasting:slots:3" value="1" level="6"/>
+            <stat name="fire elementalist:spellcasting:slots:4" value="1" level="7"/>
+            <stat name="fire elementalist:spellcasting:slots:4" value="1" level="8"/>
+            <stat name="fire elementalist:spellcasting:slots:4" value="1" level="9"/>
+            <stat name="fire elementalist:spellcasting:slots:5" value="1" level="9"/>
+            <stat name="fire elementalist:spellcasting:slots:5" value="1" level="10"/>
+            <stat name="fire elementalist:spellcasting:slots:5" value="1" level="18"/>
+            <stat name="fire elementalist:spellcasting:slots:6" value="1" level="11"/>
+            <stat name="fire elementalist:spellcasting:slots:6" value="1" level="19"/>
+            <stat name="fire elementalist:spellcasting:slots:7" value="1" level="13"/>
+            <stat name="fire elementalist:spellcasting:slots:7" value="1" level="20"/>
+            <stat name="fire elementalist:spellcasting:slots:8" value="1" level="15"/>
+            <stat name="fire elementalist:spellcasting:slots:9" value="1" level="17"/>
+        
+
+            <grant type="Spell" id="ID_TRPG_ESPELL_ELEMENTAL_SURGE_FIRE" level="1" spellcasting="Fire Elementalist" />
+            <grant type="Spell" id="ID_TRPG_ESPELL_FIRE_ESSENCE" level="1" spellcasting="Fire Elementalist" />
+            <select type="Spell" name="Primary Element Spell" supports="fire-element,$(spellcasting:slots)" number="2" level="1"  spellcasting="Fire Elementalist"/>
+            <select type="Spell" name="Secondary Element Spell"  supports="earth-element||air-element,$(spellcasting:slots)" number="2" level="1"  spellcasting="Fire Elementalist"/>
+            <select type="Spell" name="Primary Element Spell" supports="fire-element,$(spellcasting:slots)" number="2" level="3" spellcasting="Fire Elementalist" />
+            <select type="Spell" name="Secondary Element Spell" supports="earth-element||air-element,$(spellcasting:slots)" number="2" level="3"  spellcasting="Fire Elementalist"/>
+            <select type="Spell" name="Primary Element Spell" supports="fire-element,$(spellcasting:slots)" number="2" level="5" spellcasting="Fire Elementalist" />
+            <select type="Spell" name="Secondary Element Spell" supports="earth-element||air-element,$(spellcasting:slots)" number="2" level="5"  spellcasting="Fire Elementalist"/>
+            <select type="Spell" name="Primary Element Spell" supports="fire-element,$(spellcasting:slots)" number="2" level="7"  spellcasting="Fire Elementalist"/>
+            <select type="Spell" name="Secondary Element Spell" supports="earth-element||air-element,$(spellcasting:slots)" number="2" level="7"  spellcasting="Fire Elementalist"/>
+            <select type="Spell" name="Primary Element Spell" supports="fire-element,$(spellcasting:slots)" number="2" level="9"  spellcasting="Fire Elementalist"/>
+            <select type="Spell" name="Secondary Element Spell" supports="earth-element||air-element,$(spellcasting:slots)" number="2" level="9"  spellcasting="Fire Elementalist"/>
+            <select type="Spell" name="Primary Element Spell" supports="fire-element,$(spellcasting:slots)" number="2" level="11"  spellcasting="Fire Elementalist"/>
+            <select type="Spell" name="Secondary Element Spell" supports="earth-element||air-element,$(spellcasting:slots)" number="2" level="11" spellcasting="Fire Elementalist" />
+            <select type="Spell" name="Primary Element Spell" supports="fire-element,$(spellcasting:slots)" number="2" level="13" spellcasting="Fire Elementalist" />
+            <select type="Spell" name="Secondary Element Spell" supports="earth-element||air-element,$(spellcasting:slots)" number="2" level="13"  spellcasting="Fire Elementalist"/>
+            <select type="Spell" name="Primary Element Spell" supports="fire-element,$(spellcasting:slots)" number="2" level="15"  spellcasting="Fire Elementalist"/>
+            <select type="Spell" name="Secondary Element Spell" supports="earth-element||air-element,$(spellcasting:slots)" number="2" level="15"  spellcasting="Fire Elementalist"/>
+            <select type="Spell" name="Primary Element Spell" supports="fire-element,$(spellcasting:slots)" number="2" level="17"  spellcasting="Fire Elementalist"/>
+            <select type="Spell" name="Secondary Element Spell" supports="earth-element||air-element,$(spellcasting:slots)" number="2" level="17" spellcasting="Fire Elementalist" />
+
+        </rules>
+    </element>
+    <element name="Flame Brilliance" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_ELEMENTALIST_FIRE_FLAME_BRILLIANCE">
+        <description>
+            <p>At 1st level, the creativity and cunning of fire afford you
+new abilities. You gain proficiency with two skills of your
+choice from Intimidation, Investigation, and Performance.
+You also gain proficiency with light armor, shields, and simple
+weapons. You can cast your elementalist spells even when
+your hands are holding weapons or shields, performing the
+necessary gestures to cast them.</p>
+            <p class="indent">When wielding a weapon, your melee weapon attack
+rolls can use your Wisdom modifier instead of Strength
+or Dexterity. This modifier also applies to damage rolls
+from the 6th level.</p>
+        </description>
+        <sheet>
+            <description>You can cast your elementalist spells even when
+your hands are holding weapons or shields, performing the
+necessary gestures to cast them. When wielding a weapon, your melee weapon attack
+rolls can use your Wisdom modifier instead of Strength
+or Dexterity. This modifier also applies to damage rolls
+from the 6th level.</description>
+        </sheet>
+        <rules>
+            <select type="Proficiency" name="Skill Proficiency (Flame Brilliance)" number="2" supports="ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_PERFORMANCE" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+        </rules>
+    </element>
+    <element name="Fiery Reprisal" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_ELEMENTALIST_FIRE_FIERY_REPRISAL">
+        <description>
+            <p>Starting at 6th level, when you are the target of an attack, you
+can take a reaction to make a melee weapon attack against
+an enemy within range.</p>
+        </description>
+        <sheet usage="Reaction">
+            <description>when you are the target of an attack, you can take a reaction to make a melee weapon attack against an enemy within range.</description>
+        </sheet>
+    </element>
+    <element name="Burning Inspiration" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_ELEMENTALIST_FIRE_BURNING_INSPIRATION">
+        <description>
+            <p>Starting at 10th level, you can use your connection with
+Fire to inspire your allies. As a bonus action, you can imbue
+yourself and all allies within 30 feet of you with the power
+of flames, granting them an extra 1d6 fire damage to all
+unarmed, weapon, or spell attacks. This effect lasts for 1
+minute. After using this ability, you can’t use it again until
+you complete a long rest.</p>
+            <p class="indent"></p>
+        </description>
+        <sheet usage="1/long rest">
+            <description>As a bonus action, you can imbue
+yourself and all allies within 30 feet of you with the power
+of flames, granting them an extra 1d6 fire damage to all
+unarmed, weapon, or spell attacks. This effect lasts for 1
+minute. After using this ability, you can’t use it again until
+you complete a long rest.</description>
+        </sheet>
+    </element>
+    <element name="Second Surge" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_ELEMENTALIST_FIRE_SECOND_SURGE">
+        <description>
+            <p>At 14th level, when using a spell slot to augment your elemental surge cantrip, you can use this cantrip again on the
+next turn, as an action, as if you had spent a spell slot one
+level lower.</p>
+        </description>
+        <sheet>
+            <description>when using a spell slot to augment your elemental surge cantrip, you can use this cantrip again on the
+next turn, as an action, as if you had spent a spell slot one
+level lower.</description>
+        </sheet>
+    </element>
+</elements>
