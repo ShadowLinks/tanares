@@ -277,6 +277,340 @@ as a flower or fruit, extracting clear, potable water.</li>
             <set name="isRitual">false</set>
         </setters>
     </element>
+    <element name="Accelerate" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_ACCELERATE">
+        <supports>air-element</supports>
+        <description>
+            <p>You make the winds aid the movements of a willing creature you can see, doubling its speed, and granting a +2 bonus to AC and advantage on Dexterity saving throws.</p>
+            <p class="indent">Elemental Flux. Your next elemental surge affects a 20-foot
+line that is 5 feet wide and deals 2d6 thunder damage.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Air</set>
+            <set name="time">1 action</set>
+            <set name="range">30 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Adamantine Skin" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_ADAMANTINE_SKIN">
+        <supports>earth-element</supports>
+        <description>
+            <p></p>
+            <p class="indent">The entire surface of your body, including your armor, is covered in adamantine, becoming immune to all damage, except lightining and psychic, for the duration. Additionally, your unarmed and armed melee attacks are considered magical and made of adamantite for the purpose of overcoming resistances or immunities of your enemies.</p>
+            <p class="indent">Elemental Flux. Your next elemental surge affects a 45-foot cone and deals 14d6 acid damage.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">9</set>
+            <set name="school">Earth</set>
+            <set name="time">1 action</set>
+            <set name="range">Self</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">an adamantine piece or item with a minimum value of 1,000 gp</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Adaptive Ear" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_ADAPTIVE_EAR">
+        <supports>water-element</supports>
+        <description>
+            <p>You magically enhance your hearing by altering the properties of water. For the next hour, you can understand any spoken language or sound-based communication from creatures with an Intelligence of 5 or higher, and you have advantage on any Wisdom (Perception) checks related to listening.</p>
+            <p class="indent">Elemental Flux. Your next elemental surge deals cold damage, and on the damage roll, any result of 1 or 2 counts as 3.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Water</set>
+            <set name="time">1 action</set>
+            <set name="range">self</set>
+            <set name="duration">1 hour</set>
+            <set name="hasVerbalComponent">ture</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">true</set>
+        </setters>
+    </element>
+    <element name="Air Beneath Your Feet" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_AIR_BENEATH_YOUR_FEET">
+        <supports>air-element</supports>
+        <description>
+            <p>You envelop the legs of a willing creature you touch in wind, and for the duration, the target can jump twice as far as its normal maximum distance and can fall from heights of up to 30 feet without taking any damage from the fall. If falling from greater heights, the target takes damage only for the distance beyond the initial 30 feet.</p>
+            <p class="indent">Elemental Flux. Your next elemental surge deals thunder damage, and on the damage roll, consider every 1 or 2 as a 3.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Air</set>
+            <set name="time">1 action</set>
+            <set name="range">touch</set>
+            <set name="duration">1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a feather</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Air Body" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_AIR_BODY">
+        <supports>air-element</supports>
+        <description>
+            <p>Your body changes its composition to become a cloud of whirling air, gaining the following features:</p>
+            <ul>
+                <li>You can move through enemy spaces and 1-inch spaces or larger without squeezing;</li>
+                <li>You become immune to poison and lightning damage, as well as non-magical bludgeoning, piercing, and slashing damage. You become resistant to thunder damage and magical bludgeoning, piercing, and slashing damage, and immune to the grappled, poisoned, paralyzed, petrified, restrained, and prone conditions;</li>
+                <li> You gain a flying speed of 60 feet and the ability to hover;</li>
+                <li>With an action, you can calm the winds within you, becoming invisible. If you attack or cast a spell, you reappear;</li>
+                <li>You can perform a melee or ranged (60 feet) slashing wind attack by making a spell attack roll. On a hit, you deal magical slashing damage equal to 2d10 plus your Wisdom modifier;</li>
+                <li>Creatures that you pass through or that enter your space must make a Strength saving throw. On a failure, they are thrown 20 feet in a random direction, take bludgeoning damage equal to 2d10 plus your Wisdom modifier, and are knocked prone;</li>
+                <li>You have advantage on Dexterity and Charisma saving throws and ability checks.</li>
+            </ul>
+            <p>Elemental Flux. Your next elemental surge affects a 30-foot cone and deals 10d6 thunder damage.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">6</set>
+            <set name="school">Air</set>
+            <set name="time">1 action</set>
+            <set name="range">Self</set>
+            <set name="duration">Concentration up to an hour</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">A drop of myrrh essence</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Air Double" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_AIR_DOUBLE">
+        <supports>air-element</supports>
+        <description>
+            <p>You create a gaseous copy of yourself in an empty space beside you. This copy is indistinguishable from you, even by magical means or abilities such as true sight. The copy has the same stats as you, except for its hit points, as the copy disappears and the spell immediately ends if it takes any damage. The copy has its own turn, which can be immediately before or after your turn. You command what it does (actions, bonus actions, reactions, movement, etc.). It has no resources of its own, such as ammunition, ability uses, or spell slots, so every time it uses something that costs a resource, it uses the resources that you have. For example, if the copy casts a spell, it consumes one of your spell slots as though you had cast the spell yourself. The same principle applies to the use of potions, scrolls, and similar items. </p>
+            <p class="indent">When you are targeted by an attack, spell, or ability that would damage you, you can instantly switch positions with the copy, which must be within 120 feet of you, so it takes the damage and other effects in your place, causing this spell to end automatically. If the damage dealt to the copy comes from a melee attack, the attacker must make a Wisdom saving throw, becoming stunned for 1 minute on a failure. A creature stunned in this way can make the save again at the end of each of its turns, ending the condition on a success. You and your copy cannot be more than 120 feet apart, if that happens the spell ends automatically and the copy disappears.</p>
+            <p class="indent">Elemental Flux. Your next elemental surge affects a 60-foot line that is 5 feet wide and deals 12d6 thunder damage.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">8</set>
+            <set name="school">Air</set>
+            <set name="time">1 action</set>
+            <set name="range">120 feet</set>
+            <set name="duration">Concentration up to 10 minutes</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Ancestral Retraining" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_ANCESTRAL_RETRAINING">
+        <supports>water-element</supports>
+        <description>
+            <p>As you cast the spell, the gem used as a material component is consumed to bring visions of the target’s ancestors, blending them with the target’s memories and unlocking new potential within the individual. However, some of the target’s memories are lost in the process. The target may choose to change any or all of their subclass, feats, or features, provided they meet the prerequisites for the chosen options. Certain abilities that require additional resources, such as gold, experience points, or training, cannot be chosen unless the target possesses the necessary resources at the time of casting.</p>
+            <p class="indent">Once the spell is complete, the chosen options are permanent, and they cannot be altered by this spell or similar effects again. The GM may impose restrictions or penalties to reflect the significant impact of the decision.</p>
+            <p class="indent">Elemental Flux. Your next elemental surge can create a thin layer of water around the creature, granting it 9d6 temporary hit points for 10 minutes.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">6</set>
+            <set name="school">Water</set>
+            <set name="time">1 hour</set>
+            <set name="range">touch</set>
+            <set name="duration">instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">A gem worth 1000gp, which the spell consumes</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">true</set>
+        </setters>
+    </element>
+    <element name="Aquatic Form" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_AQUATIC_FORM">
+        <supports>water-element</supports>
+        <description>
+            <p>You modify the bodies of up to six creatures, allowing them to survive underwater. They can breathe underwater and gain a swimming speed equal to their walking speed.</p>
+            <p class="indent">At Higher Levels. When cast as a spell of 4th level or higher, you affect an additional 3 creatures for each level above 3rd.</p>
+            <p class="indent">Elemental Flux. Your next elemental surge affects a 20-foot line that is 5 feet wide and deals 5d6 cold damage.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">Water</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">10 minutes</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">true</set>
+        </setters>
+    </element>
+    <element name="Beryl Slabs" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_BERYL_SLABS">
+        <supports>earth-element</supports>
+        <description>
+            <p>You create eight plates of pure beryl at points within range of the spell. Each beryl plate is 6 inches thick and 10 feet tall by 10 feet wide. You can distribute the plates in any way you choose within range.</p>
+            <p class="indent">The plates are perfect squares and can be placed in any position (horizontal or vertical). Any adjacent slabs merge with each other, and each plate can act as a foundation for another, allowing for continuous constructions in any direction, such as bridges or ramps, as long as at least one of the plates is anchored to the earth to be stable.</p>
+            <p class="indent">A plate cannot occupy the space of a creature or object. If a plate appears in a location occupied by a creature, it is pushed to any side of your choice. If you try to trap a creature between the plates, the creature can make a Dexterity saving throw and position itself outside on a success.</p>
+            <p class="indent">Each plate has an AC of 16 and 180 hit points, disappearing magically if reduced to 0, possibly causing the collapse of adjacent plates at the GM’s discretion.</p>
+            <p class="indent">As a bonus action, you can dispense the plates at any time during the spell. If you maintain concentration for the entire duration of the spell, you can choose to keep the plates permanently, but they will turn into plates of slightly greenish rock, without any value other than stone. If you choose not to keep the plates permanently or lose concentration before the end of the spell, the plates disappear magically without a trace.</p>
+            <p class="indent">At Higher Levels. When you cast this spell using a spell slot of 6th level or higher, you can create two more slabs for each slot level above 5th.</p>
+            <p class="indent">Elemental Flux. Your next elemental surge affects a 40-foot line that is 5 feet wide and deals 8d6 acid damage plus 1d6 acid damage for each slot level above 5th.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">5</set>
+            <set name="school">Earth</set>
+            <set name="time">1 action</set>
+            <set name="range">90 feet</set>
+            <set name="duration">COncentration up to 10 minutes</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">an emerald shard</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Blaze Light" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_BLAZE_LIGHT">
+        <supports>fire-element</supports>
+        <description>
+            <p><You cast a small spark at a point within range and then it explodes into a wave of confusion in a 10-foot-radius sphere. All creatures in the area must make a Wisdom saving throw or become extremely disoriented on a failure./p>
+            <p class="indent">An affected target can’t take reactions and must roll a d10 at the start of each of its turns to determine its behavior for that turn.</p>
+            <p class="indent">At the end of each of its turns, an affected target can make a Wisdom saving throw. If it succeeds, this effect ends for that target.</p>
+            <table>
+                <thead>
+                    <tr><td>D10</td><td>Behavior</td></tr>
+                </thead>
+                <tr><td>1</td><td>The creature uses all its movement to move in a random direction. To determine the direction, roll a d8 and assign a direction to each die face. The creature doesn't take an action this turn</td></tr>
+                <tr><td>2-6</td><td>The creature doesn't move or take actions this turn</td></tr>
+                <tr><td>7-8</td><td>The creature uses its action to make a melee attack against a randomly determined creature within its reach. If there is no creature within its reach, the creature does nothing this turn</td></tr>
+                <tr><td>9-10</td><td>The creature can act and move normally</td></tr>
+            </table>
+            <p>At Higher Levels. When you cast this spell using a spell slot of 5th level or higher, the radius of the confusion wave increases by 5 feet for each slot level above 4th.</p>
+            <p class="indent">Elemental Flux. Your next elemental surge deals 7d6 fire damage plus 1d6 fire damage for for each slot level above 4th.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">Fire</set>
+            <set name="time">1 action</set>
+            <set name="range">90 feet</set>
+            <set name="duration">Concentration up to 10 minutes</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">an obsidian worth at least 50gp</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Blazing Army" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_BLAZING_ARMY">
+        <supports>fire-element</supports>
+        <description>
+            <p>You ignite all weapons of all allied creatures within a 30-foot radius sphere within range. For the duration of the spell, all natural and wielded weapons are considered magical and deal an extra 2d6 fire damage.</p>
+            <p class="indent">Elemental Flux. Your next elemental surge affects a 20-foot radius sphere centered on you and deals 11d6 fire damage.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">7</set>
+            <set name="school">Fire</set>
+            <set name="time">1 action</set>
+            <set name="range">120 feet</set>
+            <set name="duration">Concetration up to 1 hour</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a ruby worth at least 500gp</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Blessing of the Earth" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_BLESSING_OF_THE_EARTH">
+        <supports>earth-element</supports>
+        <description>
+            <p>You create a square area immune to dispel magic, with a side of 60 feet, having one of the vertices at a point within the range of the spell.</p>
+            <p class="indent">While within the area of the spell, all allied creatures, when making attack rolls and saving throws, can roll 1d4 and add the result to their roll, have advantage on saving throws against being charmed or frightened, and any healing they receive within the area will consider results of 1 or 2 on the dice as 3. Hostile creatures within the area that make an attack or saving throw must roll 1d4 and subtract the value from the roll</p>
+            <p class="indent">Creatures within the area cannot be targeted by divination spells. The blessing also crosses planes, preventing any ethereal travel within the area and preventing extraplanar creatures from being summoned or conjured within the area.</p>
+            <p class="indent">Elemental Flux. Your next elemental surge affects a 30-foot cone and deals 11d6 acid damage.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">7</set>
+            <set name="school">Earth</set>
+            <set name="time">1 action</set>
+            <set name="range">90 feet</set>
+            <set name="duration">1 hour</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">treu</set>
+            <set name="materialComponent">a handful of sacred soil</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Blossom" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_BLOSSOM">
+        <supports>plant-element</supports>
+        <description>
+            <p>You manifest a series of flowers in the space you occupy, which immediately grow and bloom, releasing their pollen in a circular area with a 20-foot radius centered on you. Any charm or frightening effect affecting a creature in the area ends immediately. Additionally, any creature hostile towards you or your allies within the area must make a Charisma saving throw, and on a failure, they become indifferent to you and your allies until the end of the spell or until you or your companions do anything harmful to it.</p>
+            <p class="indent">Elemental Flux. Your next elemental surge deals 2d6 poison damage and requires a Constitution saving throw instead of Dexterity.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Plant</set>
+            <set name="time">1 action</set>
+            <set name="range">self</set>
+            <set name="duration">1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Burning Dash" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_BURNING_DASH">
+        <supports>fire-element</supports>
+        <description>
+            <p>When you cast this spell, a flame that rises from your feet covers your entire body, increasing your speed and strength momentarily. As part of this spell, you can immediately move 40 feet in any direction you choose. During this movement, you can push objects up to five times your normal capacity (or 150 times your Strength score in pounds). If you collide with a creature, the movement ends, and the creature must succeed on a Strength saving throw or be pushed 40 feet back and fall prone. If the creature’s movement is interrupted by obstacles, it will fall prone and suffer 4d6 bludgeoning damage in addition. If the path is blocked by another creature, that creature must succeed on a Dexterity saving throw, suffering the same damage and falling prone on a failure.</p>
+            <p class="indent">Elemental Flux. Your next elemental surge affects a 20-foot radius sphere centered on you and deals 10d6 fire damage.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">6</set>
+            <set name="school">Fire</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">self</set>
+            <set name="duration">instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
 
 
 
