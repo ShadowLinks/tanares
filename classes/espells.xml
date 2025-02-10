@@ -316,7 +316,7 @@
             <set name="time">1 action</set>
             <set name="range">self</set>
             <set name="duration">1 hour</set>
-            <set name="hasVerbalComponent">ture</set>
+            <set name="hasVerbalComponent">true</set>
             <set name="hasSomaticComponent">true</set>
             <set name="hasMaterialComponent">false</set>
             <set name="materialComponent">component</set>
@@ -472,7 +472,7 @@
     <element name="Blaze Light" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_BLAZE_LIGHT">
         <supports>fire-element</supports>
         <description>
-            <p><You cast a small spark at a point within range and then it explodes into a wave of confusion in a 10-foot-radius sphere. All creatures in the area must make a Wisdom saving throw or become extremely disoriented on a failure./p>
+            <p>You cast a small spark at a point within range and then it explodes into a wave of confusion in a 10-foot-radius sphere. All creatures in the area must make a Wisdom saving throw or become extremely disoriented on a failure.</p>
             <p class="indent">An affected target can’t take reactions and must roll a d10 at the start of each of its turns to determine its behavior for that turn.</p>
             <p class="indent">At the end of each of its turns, an affected target can make a Wisdom saving throw. If it succeeds, this effect ends for that target.</p>
             <table>
@@ -541,7 +541,7 @@
             <set name="duration">1 hour</set>
             <set name="hasVerbalComponent">true</set>
             <set name="hasSomaticComponent">true</set>
-            <set name="hasMaterialComponent">treu</set>
+            <set name="hasMaterialComponent">true</set>
             <set name="materialComponent">a handful of sacred soil</set>
             <set name="isConcentration">false</set>
             <set name="isRitual">false</set>
@@ -702,12 +702,12 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-
+<!--verified to this point-->
 
 
 </elements>
-
 <!--
+
     <element name="name" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_">
         <supports>supports</supports>
         <description>
