@@ -5,7 +5,6 @@
             <file name="espells.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/classes/espells.xml"/>
         </update>
     </info>
-
     <element name="Elemental Surge (Air)" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_ELEMENTAL_SURGE_AIR">
         <supports></supports>
         <description>
@@ -179,21 +178,9 @@
         <description>
             <p>You can create or manipulate fire to produce one of the following effects:</p>
             <ul>
-                <li>You create a magic flame in your hand, which can take
-any form but can’t be larger than 1 cubic foot. You can
-absorb non-magical flames within a range of 60 feet, extinguishing 5 feet of them, and transforming the flame in
-your hand into a magical and harmless source of light that
-sheds bright light in a 10-foot radius and dim light for an
-additional 10 feet.</li>
-                <li>You can ignite an object or space up to 5 cubic feet in size,
-illuminating your surroundings. The flames can only be
-extinguished if you command them to do so or if they are
-covered by at least 1 liter of water from a magical source.
-You can create as many magic flames as you wish.</li>
-                <li>You can make the flames take on simple shapes, such as the
-vague form of a creature or object, and animate them as
-desired, providing a fun and useful way to create illusions
-or entertain others.</li>
+                <li>You create a magic flame in your hand, which can take any form but can’t be larger than 1 cubic foot. You can absorb non-magical flames within a range of 60 feet, extinguishing 5 feet of them, and transforming the flame in your hand into a magical and harmless source of light that sheds bright light in a 10-foot radius and dim light for an additional 10 feet.</li>
+                <li>You can ignite an object or space up to 5 cubic feet in size, illuminating your surroundings. The flames can only be extinguished if you command them to do so or if they are covered by at least 1 liter of water from a magical source. You can create as many magic flames as you wish.</li>
+                <li>You can make the flames take on simple shapes, such as the vague form of a creature or object, and animate them as desired, providing a fun and useful way to create illusions or entertain others.</li>
             </ul>
         </description>
         <setters>
@@ -212,15 +199,9 @@ or entertain others.</li>
             <p>You have the power to control water in all its forms within range, creating a variety of magical effects and dismiss with an action.</p>
             <ul>
                 <li>You can alter the color and scent of up to 1 cubic foot of water, making it seem clean or dirty</li>
-                <li>You can instantly chill, heat, evaporate, or freeze any liquid
-with a volume of up to 1 cubic foot, as long as no creatures
-are inside it.</li>
-                <li>You can create an instant and harmless sensory effect, such
-as the sound of rushing water, crashing waves, falling rain,
-a light mist, or even dampening or drying a surface. The
-effect must fit within a cube with a side length of 1 foot.</li>
-                <li>You can drain moisture from a small object or plants, such
-as a flower or fruit, extracting clear, potable water.</li>
+                <li>You can instantly chill, heat, evaporate, or freeze any liquid with a volume of up to 1 cubic foot, as long as no creatures are inside it.</li>
+                <li>You can create an instant and harmless sensory effect, such as the sound of rushing water, crashing waves, falling rain, a light mist, or even dampening or drying a surface. The effect must fit within a cube with a side length of 1 foot.</li>
+                <li>You can drain moisture from a small object or plants, such as a flower or fruit, extracting clear, potable water.</li>
             </ul>
         </description>
         <setters>
@@ -281,8 +262,7 @@ as a flower or fruit, extracting clear, potable water.</li>
         <supports>air-element</supports>
         <description>
             <p>You make the winds aid the movements of a willing creature you can see, doubling its speed, and granting a +2 bonus to AC and advantage on Dexterity saving throws.</p>
-            <p class="indent">Elemental Flux. Your next elemental surge affects a 20-foot
-line that is 5 feet wide and deals 2d6 thunder damage.</p>
+            <p class="indent">Elemental Flux. Your next elemental surge affects a 20-foot line that is 5 feet wide and deals 2d6 thunder damage.</p>
             <p class="indent"></p>
         </description>
         <setters>
@@ -608,6 +588,117 @@ line that is 5 feet wide and deals 2d6 thunder damage.</p>
             <set name="hasMaterialComponent">false</set>
             <set name="materialComponent">component</set>
             <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Burning Eyes" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_BURNING_EYES">
+        <supports>fire-element</supports>
+        <description>
+            <p>You cause the eyes of a creature within range to glow like blazing embers. During the spell’s duration, the target gains proficiency with Charisma (Intimidation). If it already has this proficiency, the target doubles its proficiency bonus on Charisma (Intimidation) checks, and those checks are made with advantage. Additionally, any creature that the target damages has disadvantage on its next attack roll against the target until the start of the target’s next turn.</p>
+            <p class="indent">Elemental Flux. Your next elemental surge deals fire damage, and on the damage roll, consider any result of 1 or 2 as a 3.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Fire</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">COncentration up to 10 minutes</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Burst of Embers" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_BURST_OF_EMBERS">
+        <supports>fire-element</supports>
+        <description>
+            <p>You cause the eyes of a creature within range to glow like blazing embers. During the spell’s duration, the target gains proficiency with Charisma (Intimidation). If it already has this proficiency, the target doubles its proficiency bonus on Charisma (Intimidation) checks, and those checks are made with advantage. Additionally, any creature that the target damages has disadvantage on its next attack roll against the target until the start of the target’s next turn.</p>
+            <p class="indent">Elemental Flux. Your next elemental surge deals fire damage, and on the damage roll, consider any result of 1 or 2 as a 3.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Fire</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration up to 10 minutes</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Call Allies" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_CALL_ALLIES">
+        <supports>aire-element</supports>
+        <description>
+            <p>You can bring your allies to assist you. When casting the spell, choose up to four willing creatures. As long as they are within 1 mile of you, each of these creatures can be teleported from their locations to an unoccupied space closest to you. If there isn’t enough free space for the creature to be within 10 feet of you, or if you are somehow unreachable, the creatures will know they were called but won’t be able to teleport.</p>
+            <p class="indent">Objects carried by the creatures are teleported along with them, but other creatures that were being carried are not.</p>
+            <p class="indent">Elemental Flux. Your next elemental surge affects a 30-foot cone and deals 11d6 thunder damage</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">7</set>
+            <set name="school">Air</set>
+            <set name="time">1 action</set>
+            <set name="range">self</set>
+            <set name="duration">instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Calm Mind" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_CALM_MIND">
+        <supports>water-element</supports>
+        <description>
+            <p>You fill your mind with the calm that only water can achieve. For the duration, you become immune to psychic damage, any effect that may sense emotions or read thoughts, divination spells and the charmed and frightened conditions. Optionally, you can transform the effect into an aura, affecting willing creatures of your choice within 20 feet of you, but you must concentrate to maintain the spell in this way. In this option, the spell will last only until the start of your next turn, ending sooner if you lose concentration.</p>
+            <p class="indent">Elemental Flux. Your next elemental surge affects a 30-foot radius sphere centered on you and deals 12d6 cold damage.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">8</set>
+            <set name="school">Water</set>
+            <set name="time">1 action</set>
+            <set name="range">Selef or 20 foot radius aura</set>
+            <set name="duration">24 hours</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Circle of Protection" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_CIRCLE_OF_PROTECTION">
+        <supports>earth-element</supports>
+        <description>
+            <p>You choose a point on the ground within range and then a large rune appears there, emitting a cylindrical mystical barrier with a 10-foot radius and 30 feet in height. No spell of 5th level or lower cast outside the barrier affects creatures or objects within it, even if cast at higher levels. Creatures within the area can be targeted by spells, but do not suffer their effects, and area spells have their effects suppressed within the cylinder.</p>
+            <p class="indent">ithin the cylinder. You can also, as a reaction, deflect a spell of 3rd level or lower cast against a target within the barrier. Then you choose another creature within range but outside the area to be the target. If you do so, the spell ends.</p>
+            <p class="indent">At Higher Levels. When you cast this spell using a slot of 7th level or higher, you block spells of up to 6th level and can deflect a spell of up to 4th level.</p>
+            <p class="indent">Elemental Flux. Your next elemental surge affects a 30-foot cone and deals 10d6 acid damage plus 1d6 acid damage for each slot level above 6th.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">6</set>
+            <set name="school">Earth</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a hand sized glass or crystal that shatters when the spell ends</set>
+            <set name="isConcentration">true</set>
             <set name="isRitual">false</set>
         </setters>
     </element>
