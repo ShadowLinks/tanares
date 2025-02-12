@@ -65,23 +65,23 @@
             <grant type="Spell" id="ID_TRPG_ESPELL_ELEMENTAL_SURGE_AIR" level="1" spellcasting="Air Elementalist" />
             <grant type="Spell" id="ID_TRPG_ESPELL_AIR_ESSENCE" level="1" spellcasting="Air Elementalist" />
             <select type="Spell" name="Primary Element Spell" supports="air-element,$(spellcasting:slots)" number="2" level="1"  spellcasting="Air Elementalist"/>
-            <select type="Spell" name="Secondary Element Spell"  supports="fire-element||water-element,$(spellcasting:slots)" number="2" level="1"  spellcasting="Air Elementalist"/>
+            <select type="Spell" name="Secondary Element Spell"  supports="fire-element,$(spellcasting:slots)||water-element,$(spellcasting:slots)" number="2" level="1"  spellcasting="Air Elementalist"/>
             <select type="Spell" name="Primary Element Spell" supports="air-element,$(spellcasting:slots)" number="2" level="3" spellcasting="Air Elementalist" />
-            <select type="Spell" name="Secondary Element Spell" supports="fire-element||water-element,$(spellcasting:slots)" number="2" level="3"  spellcasting="Air Elementalist"/>
+            <select type="Spell" name="Secondary Element Spell" supports="fire-element,$(spellcasting:slots)||water-element,$(spellcasting:slots)" number="2" level="3"  spellcasting="Air Elementalist"/>
             <select type="Spell" name="Primary Element Spell" supports="air-element,$(spellcasting:slots)" number="2" level="5" spellcasting="Air Elementalist" />
-            <select type="Spell" name="Secondary Element Spell" supports="fire-element||water-element,$(spellcasting:slots)" number="2" level="5"  spellcasting="Air Elementalist"/>
+            <select type="Spell" name="Secondary Element Spell" supports="fire-element,$(spellcasting:slots)||water-element,$(spellcasting:slots)" number="2" level="5"  spellcasting="Air Elementalist"/>
             <select type="Spell" name="Primary Element Spell" supports="air-element,$(spellcasting:slots)" number="2" level="7"  spellcasting="Air Elementalist"/>
-            <select type="Spell" name="Secondary Element Spell" supports="fire-element||water-element,$(spellcasting:slots)" number="2" level="7"  spellcasting="Air Elementalist"/>
+            <select type="Spell" name="Secondary Element Spell" supports="fire-element,$(spellcasting:slots)||water-element,$(spellcasting:slots)" number="2" level="7"  spellcasting="Air Elementalist"/>
             <select type="Spell" name="Primary Element Spell" supports="air-element,$(spellcasting:slots)" number="2" level="9"  spellcasting="Air Elementalist"/>
-            <select type="Spell" name="Secondary Element Spell" supports="fire-element||water-element,$(spellcasting:slots)" number="2" level="9"  spellcasting="Air Elementalist"/>
+            <select type="Spell" name="Secondary Element Spell" supports="fire-element,$(spellcasting:slots)||water-element,$(spellcasting:slots)" number="2" level="9"  spellcasting="Air Elementalist"/>
             <select type="Spell" name="Primary Element Spell" supports="air-element,$(spellcasting:slots)" number="2" level="11"  spellcasting="Air Elementalist"/>
-            <select type="Spell" name="Secondary Element Spell" supports="fire-element||water-element,$(spellcasting:slots)" number="2" level="11" spellcasting="Air Elementalist" />
+            <select type="Spell" name="Secondary Element Spell" supports="fire-element,$(spellcasting:slots)||water-element,$(spellcasting:slots)" number="2" level="11" spellcasting="Air Elementalist" />
             <select type="Spell" name="Primary Element Spell" supports="air-element,$(spellcasting:slots)" number="2" level="13" spellcasting="Air Elementalist" />
-            <select type="Spell" name="Secondary Element Spell" supports="fire-element||water-element,$(spellcasting:slots)" number="2" level="13"  spellcasting="Air Elementalist"/>
+            <select type="Spell" name="Secondary Element Spell" supports="fire-element,$(spellcasting:slots)||water-element,$(spellcasting:slots)" number="2" level="13"  spellcasting="Air Elementalist"/>
             <select type="Spell" name="Primary Element Spell" supports="air-element,$(spellcasting:slots)" number="2" level="15"  spellcasting="Air Elementalist"/>
-            <select type="Spell" name="Secondary Element Spell" supports="fire-element||water-element,$(spellcasting:slots)" number="2" level="15"  spellcasting="Air Elementalist"/>
+            <select type="Spell" name="Secondary Element Spell" supports="fire-element,$(spellcasting:slots)||water-element,$(spellcasting:slots)" number="2" level="15"  spellcasting="Air Elementalist"/>
             <select type="Spell" name="Primary Element Spell" supports="air-element,$(spellcasting:slots)" number="2" level="17"  spellcasting="Air Elementalist"/>
-            <select type="Spell" name="Secondary Element Spell" supports="fire-element||water-element,$(spellcasting:slots)" number="2" level="17" spellcasting="Air Elementalist" />
+            <select type="Spell" name="Secondary Element Spell" supports="fire-element,$(spellcasting:slots)||water-element,$(spellcasting:slots)" number="2" level="17" spellcasting="Air Elementalist" />
 
         </rules>
     </element>
