@@ -284,7 +284,7 @@
         <supports>earth-element</supports>
         <description>
             <p></p>
-            <p class="indent">The entire surface of your body, including your armor, is covered in adamantine, becoming immune to all damage, except lightining and psychic, for the duration. Additionally, your unarmed and armed melee attacks are considered magical and made of adamantite for the purpose of overcoming resistances or immunities of your enemies.</p>
+            <p class="indent">The entire surface of your body, including your armor, is covered in adamantine, becoming immune to all damage, except lightning and psychic, for the duration. Additionally, your unarmed and armed melee attacks are considered magical and made of adamantite for the purpose of overcoming resistances or immunities of your enemies.</p>
             <p class="indent">Elemental Flux. Your next elemental surge affects a 45-foot cone and deals 14d6 acid damage.</p>
         </description>
         <setters>
@@ -2270,6 +2270,898 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
+    <element name="Life Synchronization" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_LIFE_SYNCHRONIZATION">
+        <supports>water-element</supports>
+        <description>
+            <p>You synchronize the energy fluids of 4 willing creatures, which you can see within range, to heal them. You can transfer any amount of hit points between them, as long as each one has at least 1 hit point and does not exceed their maximum hit points. At the end of the synchronization (hit point transfer), you heal an additional 2d8 hit points from each of the creatures that have transferred hit points (taken damage or regained hit points). Undead and constructs are not affected by this spell.</p>
+            <p class="indent">Elemental Flux. Your next elemental surge affects a 30-foot cone and deals 8d6 cold damage.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">5</set>
+            <set name="school">Water</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Lightning Arrester" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_LIGHTNING_ARRESTER">
+        <supports>lightning-element</supports>
+        <description>
+            <p>You energize a target creature, forcing it to make a Constitution saving throw. On a failed save, the creature becomes restrained and vulnerable to lightning damage for the duration of the spell. The restrained creature can use an action to make another Constitution saving throw, and if it succeeds, it breaks free from the restraint.</p>
+            <p class="indent">Elemental Flux. Your next elemental surge deals lightning damage and affects a 30-foot line that is 5 feet wide.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Lightning</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Lightning Burst" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_LIGHTNING_BURST">
+        <supports>lightning-element</supports>
+        <description>
+            <p>You empower up to six willing creatures within range, imbuing them with the power of lightning. Until the spell ends, the targets gain the following benefits:</p>
+            <ul>
+                <li>Their speed is doubled.</li>
+                <li>They gain a +2 bonus to their AC.</li>
+                <li>They have advantage on Dexterity and Strength saving throws.</li>
+                <li>Their melee attacks deal an extra 1d8 lightning damage.</li>
+                <li>They gain an additional action on each of their turns, which can only be used to take the Attack action (one weapon attack only), Dash, Disengage, Hide, or Use an Object action.</li>
+            </ul>
+            <p>Elemental Flux. Your next elemental surge affects a 50-foot line that is 5 feet wide and deals 11d6 lightning damage.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">7</set>
+            <set name="school">Lightning</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a pair of magnets</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Lightning Displacement" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_LIGHTNING_DISPLACEMENT">
+        <supports>lightning-element</supports>
+        <description>
+            <p>You gain the ability to teleport up to your speed, but every 5 feet of distance teleported spends 5 feet of your speed for the current turn (you must have at least 10 feet of movement remaining for the spell to work). You must teleport to a destination within your line of sight. For example, you could teleport to the top of a wall, but not to a point in mid-air unless you have a means of flight. When you teleport, you leave behind a trail of lightning that damages any creatures in its path.</p>
+            <p class="indent">All creatures in a line between your starting point and your destination must make a Dexterity saving throw. On a failed save, they take 5d8 lightning damage. On a successful save, they take half as much damage.</p>
+            <p class="indent">Elemental Flux. Your next elemental surge affects a 50-foot line that is 5 feet wide and deals 8d6 lightning damage.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">5</set>
+            <set name="school">Lightning</set>
+            <set name="time">1 action</set>
+            <set name="range">self</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Lightning Tunnel" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_LIGHTNING_TUNNEL">
+        <supports>lightning-element</supports>
+        <description>
+            <p>You weave together strands of lightning into an invisible tunnel that can be up to 120 feet long and 5 feet in diameter. The tunnel remains stationary once created and lasts for the duration of the spell.</p>
+            <p class="indent">Each round, the first creature or object that enters one end of the tunnel becomes an invisible and silent electrical charge that instantly travels through the tunnel to the other end, reforming in its original form. Creatures and objects that pass through the sides of the tunnel take no damage and are unaffected by the spell.</p>
+            <p class="indent">d are unaffected by the spell. However, when a creature is transported through the tunnel, any other creatures standing inside the tunnel’s area take 2d6 lightning damage as the energy arcs through them. This damage has no visible source, and creatures that are transported through the tunnel are immune to it.</p>
+            <p class="indent">At Higher Levels. When you cast this spell using a spell slot of 4th level or higher, the length of the tunnel increases by 30 feet and the diameter increases by 5 feet for each slot level above 3rd.</p>
+            <p class="indent">Elemental Flux. Your next elemental surge affects a 30-foot line that is 5 feet wide and deals 5d6 acid damage plus 1d6 acid damage for each slot level above 3rd.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">Lightning</set>
+            <set name="time">1 action</set>
+            <set name="range">30 feet</set>
+            <set name="duration">Concentration up to 1 hour</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a piece of light fabric</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Lightning Wall" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_LIGHTNING_WALL">
+        <supports>lightning-element</supports>
+        <description>
+            <p>You create a barrier that looks like a net of pure energy. The barrier does not need to be sustained and can float in the air. It occupies an area of 60 feet in length, 20 feet in height, and one inch in thickness. Any creature within the area where the barrier was created must make a Strength saving throw, suffering 3d8 lightning damage on a failure and being thrown 10 feet in a direction of your choice. On a successful save, the target takes only half the damage and is expelled into the nearest free space, as chosen by the affected creature.</p>
+            <p class="indent">The barrier magnetically affects an area of 15 feet around it. Inside this area, attacks made with metal weapons have disadvantage, and creatures made of metal or wearing metal armor move at half speed (moving 1 foot costs 2 feet of speed).</p>
+            <p class="indent">A creature can attempt to pass through the barrier but must succeed on a Strength saving throw. On a failure, it takes 3d8 lightning damage and is thrown back 10 feet in a prone condition. On a success, it takes half damage and passes through the barrier.</p>
+            <p class="indent">asses through the barrier. Elemental Flux. Your next elemental surge affects a 50-foot line that is 5 feet wide and deals 10d6 lightning damage.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">6</set>
+            <set name="school">Lightning</set>
+            <set name="time">1 action</set>
+            <set name="range">120 feet</set>
+            <set name="duration">Concentration up to 10 minutes</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a copper wand worth at least 30 gp</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Made of Lava" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_MADE_OF_LAVA">
+        <supports>lava-element</supports>
+        <description>
+            <p>You encase a touched creature with a barrier of lava, shielding it from attacks. For the duration, the creature is resistant to fire and cold damage. If the creature takes bludgeoning, slashing, or piercing damage from a creature adjacent to it, the barrier spews lava at the attacking creature, which must succeed on a Dexterity saving throw or take 3d8 fire damage.</p>
+            <p class="indent">Optionally, the creature protected by the barrier can take a reaction upon being hit by a melee attack to make the barrier explode, causing every creature within 15 feet, except itself, to make a Dexterity saving throw. On a failure, creatures hit by the barrier take 6d8 fire damage. After using this reaction, the spell ends.</p>
+            <p class="indent">Elemental Flux. Your next elemental surge affects a 30-foot cone and deals 11d6 fire damage.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">7</set>
+            <set name="school">Lava</set>
+            <set name="time">1 action</set>
+            <set name="range">Touch</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Magic Precipitation" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_MAGIC_PRECIPITATION">
+        <supports>water-element</supports>
+        <description>
+            <p>You create a magical precipitation area in a 20-foot-radius, 30-foot-high cylinder centered on a point within range that you can see. Creatures within the rain area gain advantage on saving throws against spells and resistance to magical damage. Additionally, any spells that are in effect on the area or on creatures of your choice that are in or enter the area are dispelled.</p>
+            <p class="indent">Furthermore, when a spell is cast within the area or affects any space within it, you can choose to absorb the magic to fuel the precipitation. The absorbed magic has no effect, and the precipitation then heals your chosen allied creatures within the rain for an amount of hit points equal to twice the level of the spell slot used to cast the absorbed spell. The healing effect of this magic does not affect undead or constructs.</p>
+            <p class="indent">Elemental Flux. Your next elemental surge affects a 45-foot cone and deals 14d6 cold damage.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">9</set>
+            <set name="school">Water</set>
+            <set name="time">1 action</set>
+            <set name="range">180 feet</set>
+            <set name="duration">Concentration up to 10 minutes</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Magma Armor" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_MAGMA_ARMOR">
+        <supports>lava-element</supports>
+        <description>
+            <p>You touch a willing creature wearing medium or heavy armor and enchant their armor with the heat of magma. For the duration, every time another creature hits the target of the spell with a melee attack, it must make a Dexterity saving throw or take 1d10 fire damage.</p>
+            <p class="indent">Elemental Flux. Your next elemental surge deals 2d6 fire damage.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Lava</set>
+            <set name="time">1 action</set>
+            <set name="range">Touch</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Magma Chamber Heat" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_MAGMA_CHAMBER_HEAT">
+        <supports>lava-element</supports>
+        <description>
+            <p>You heat up a circular area with a 100-foot radius centered on a point within range. The temperature in this area becomes unbearable. Creatures that enter or start their turn within it must make a Constitution saving throw or take 4d8 fire damage, or half as much on a success. Flammable materials not carried or held burn up in an instant.</p>
+            <p class="indent">In addition, creatures that start and end their turn within the area must make another Constitution saving throw or suffer a level of exhaustion. Creatures wearing heavy armor make this saving throw with disadvantage.</p>
+            <p class="indent">Creatures immune to fire are immune to the effects of this spell, and creatures resistant to fire automatically pass the saving throws.</p>
+            <p class="indent">Elemental Flux. Your next elemental surge affects a 45-foot cone and deals 12d6 fire damage.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">8</set>
+            <set name="school">Lava</set>
+            <set name="time">1 action</set>
+            <set name="range">500 feet</set>
+            <set name="duration">Concentration up to 10 minutes</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">an obsidian worth at least 1000 gp</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Magma Glow" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_MAGMA_GLOW">
+        <supports>lava-element</supports>
+        <description>
+            <p>You touch an object, causing it to emit a faint glow that is imperceptible in bright light and difficult to notice in dim light conditions. The object can be any item (magical or not) of your choosing, weighing no more than 10 pounds.</p>
+            <p class="indent">While the spell is active, you can sense the location of the object as long as it is within 240 feet of you, even if it is behind walls, doors, or other barriers. The location is communicated to you as a general sense of direction (e.g., “northwest”) and distance (e.g., “close”, “very far”).</p>
+            <p class="indent">You can dismiss the spell at any time as a bonus action, causing the glow to fade immediately.</p>
+            <p class="indent">The DC to notice the glow is equal to your spell save DC. Only a creature specifically looking for the glow can use its action to make a Wisdom (Perception) check against this DC to notice the glow. The object can be hidden inside fabrics or other objects, making it impossible to directly see the glow, without hindering your ability to sense its location.</p>
+            <p class="indent">At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, the weight limit of the object increases by 10 pounds for each slot level above 1st.</p>
+            <p class="indent">Elemental Flux. Your next elemental surge deals fire damage and gains an extra 1d6 fire for each slot level above 1st.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Lava</set>
+            <set name="time">1 action</set>
+            <set name="range">Touch</set>
+            <set name="duration">1 hour</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a piece of charcoal</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Magma Servant" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_MAGMA_SERVANT">
+        <supports>lava-element</supports>
+        <description>
+            <p>You summon a lava spirit that appears in an unoccupied space within range. It takes physical form to serve you, using the stat block of an azer, but appearing as a humanoid creature made of magma.</p>
+            <p class="indent">The magma servant is an ally and recognizes your allies as allies. It shares your initiative, acting immediately after you, but has its own turn. The magma servant will obey your commands to the best of its ability. You can give simple course of action commands, such as attacking a target or running in a direction, as a free action. If you want to give a command that requires a longer phrase, you must use a bonus action. If the creature completes the action and cannot hear or receive new commands, it will take the Dodge action to preserve itself to the best of its ability.</p>
+            <p class="indent">Elemental Flux. Your next elemental surge deals 5d6 fire damage.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">Lava</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration up to 1 hour</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a pinch of obsidian dust</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Mantle of Water" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_MANTLE_OF_WATER">
+        <supports>water-element</supports>
+        <description>
+            <p>You surround a target creature within range with a thin layer of clean water, granting it the ability to breathe underwater and a swimming speed of 40 feet. While the spell lasts, the creature gains the following benefits:</p>
+            <ul>
+                <li>Immunity to the effects of non-magical fire, gasses and liquids, including harmful acids, poisons and smokes.</li>
+                <li>You have advantage on saving throws made against harmful magic gasses (such as cloudkill and stinking cloud effects, and the breath weapons of some dragons).</li>
+                <li>Resistance to fire and acid damage.</li>
+                <li>Immunity to being grappled and restrained.</li>
+            </ul>
+            <p class="indent">The water mantle continuously replenishes the water the creature breathes and is covered in, filtering out harmful substances.</p>
+            <p class="indent">In addition, the creature can use a bonus action to end the spell and unleash a water gust attack against a creature within 60 feet. The water gust requires a ranged spell attack roll and deals 3d10 bludgeoning damage on a hit.</p>
+            <p class="indent">Elemental Flux. Your next elemental surge deals 7d6 cold damage.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">Water</set>
+            <set name="time">1 action</set>
+            <set name="range">30 feet</set>
+            <set name="duration">1 hour</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a drop of water</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Marble Skin" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_MARBLE_SKIN">
+        <supports>earth-element</supports>
+        <description>
+            <p>You touch a creature and a seismic wave emanates from your fingers, enveloping it and imposing a Constitution saving throw. On a failure, the creature is restrained and its skin begins to turn to marble. On a success, the creature is unaffected. A creature with its skin turned to marble must make a Constitution saving throw at the end of each of its turns. If the creature accumulates three successes, it is free from the condition and the spell ends. If it accumulates three failures (including the initial one), the creature becomes petrified.</p>
+            <p class="indent">Elemental Flux. Your next elemental surge affects a 30-foot cone and deals 10d6 acid damage.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">6</set>
+            <set name="school">Earth</set>
+            <set name="time">1 action</set>
+            <set name="range">Touch</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Mass Curse of Flames" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_MASS_CURSE_OF_FLAMES">
+        <supports>fire-element</supports>
+        <description>
+            <p>All creatures that you can see within range must make a Wisdom saving throw or be affected as if they were targets of the curse of flames spell cast with a 9th-level slot.</p>
+            <p class="indent">Elemental Flux. Your next elemental surge affects a 30-foot radius circle centered on you and deals 14d6 fire damage.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">9</set>
+            <set name="school">Fire</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration up to 10 minutes</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Massive Inflammation" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_MASSIVE_INFLAMMATION">
+        <supports>fire-element</supports>
+        <description>
+            <p>You ignite the spirit of a group of people by suggesting a course of action (limited to up to two sentences). You magically influence, at your discretion, a number of people equal to up to three times your proficiency bonus. The creatures must be able to see and hear you clearly and the suggestion must be phrased in a way that makes the course of action reasonable. Igniting them to do something against themselves, such as self-flagellation, negates the effects of the magic. Creatures that can’t be charmed are immune to this effect.</p>
+            <p class="indent">Each target must make a Wisdom saving throw. On a failed save, they pursue the course of action you described to the best of their ability.</p>
+            <p class="indent">For the duration of the spell, the inflamed creatures are immune to the frightened condition and will continue to carry out the proposed course of action. If the activity can be completed in a shorter time, the spell ends when the target finishes what was requested.</p>
+            <p class="indent">At Higher Levels. When you cast this spell using a 7th-level spell slot, the duration is 10 days. When you use an 8th-level spell slot, the duration is 30 days. When you use a 9th-level spell slot, the duration is a year and a day.</p>
+            <p class="indent">Elemental Flux. Your next elemental surge creates a burst around you, which affects a 20-foot radius circle centered on you and deals 10d6 fire damage plus 1d6 fire damage for each slot level above 6th.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">6</set>
+            <set name="school">Fire</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">24 hours</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">bee's wings or a drop of honey</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Material Illusion" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_MATERIAL_ILLUSION">
+        <supports>air-element</supports>
+        <description>
+            <p>You choose the stat block of a non-spellcaster creature with a CR of up to 12, then you create a dense air replica of that creature, within an unoccupied space that you can see within the spell’s range. The replica uses all the statistics of the creature it duplicates, except that any damage dealt by the replica is psychic damage. However, the replica can only damage or affect in other ways creatures that failed the saving throw. It acts on its own turn and on its own initiative, but you can control its course of action. If the replica’s hit points are reduced to 0, the spell ends, and it immediately dissipates.</p>
+            <p class="indent">Elemental Flux. Your next elemental surge affects a 45-foot cone and deals 14d6 thunder damage.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">9</set>
+            <set name="school">Air</set>
+            <set name="time">1 action</set>
+            <set name="range">120 feet</set>
+            <set name="duration">10 minutes</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Melt Rock" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_MELT_ROCK">
+        <supports>lava-element</supports>
+        <description>
+            <p>You choose an area of rock and change its internal heat, melting it into lava. You affect a 40-foot cube of rock within range. The lava flows and ignites any flammable materials it touches. A creature that touches the lava takes 2d8 fire damage.</p>
+            <p class="indent">If a creature has a limb or body part covered by lava, it takes this damage at the end of its turns for the next minute or until it takes an action to remove the lava. A creature that is partially covered by lava has its speed halved and takes 4d8 fire damage for the next minute or until it takes an action to remove the lava. A creature that is completely covered by the lava is restrained, takes 8d8 fire damage, and requires 2 actions to completely remove the lava, but if it spends only 1 action, it is still considered to be partially covered by lava.</p>
+            <p class="indent">At Higher Levels. When you use a spell slot of 6th level or higher, you melt an extra 20-foot cube of rock per level above 5th.</p>
+            <p class="indent">Elemental Flux. Your next elemental surge affects a 30-foot cone and deals 8d6 fire damage plus 1d6 fire damage for each slot level above 5th.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">5</set>
+            <set name="school">Lava</set>
+            <set name="time">1 action</set>
+            <set name="range">120 feet</set>
+            <set name="duration">Until dispelled</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a drop of mercury</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Metal Barrier" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_METAL_BARRIER">
+        <supports>earth-element</supports>
+        <description>
+            <p>You hold the piece of metal used in this spell and it disintegrates into metallic sand, swirling around a willing creature within range of the spell, granting them protection. A creature enveloped in this protection gains resistance to bludgeoning, piercing, and slashing damage, is considered to have half cover, and when subjected to a Dexterity saving throw to take half damage from an effect, they take no damage on a success.</p>
+            <p class="indent">Once during the duration, as a bonus action, you can change the target of the spell to another willing creature within range and at least 30 feet from the original target.</p>
+            <p class="indent">Elemental Flux. Your next elemental surge affects a 40-foot line that is 5 feet wide and deals 10d6 acid damage.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">6</set>
+            <set name="school">Earth</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a pure metal ingot worth at least 100 gp</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Mirage Mirror" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_MIRAGE_MIRROR">
+        <supports>air-element</supports>
+        <description>
+            <p>You conjure a duplicate of yourself from the energy of the wind, which appears in an unoccupied space within the spell’s range. The duplicate has an AC equal to yours and one hit point, and it performs saving throws and ability checks as it were you. The duplicate does not move, but any action you take can also be simulated by the duplicate at your choice. A creature can make a Wisdom (Perception) check against your spell save DC to realize that the duplicate is not real. The duplicate disappears if you use a bonus action to dismiss it, if you move more than 60 feet away from it, or when its hit points are reduced to 0.</p>
+            <p class="indent">Elemental Flux. Your next elemental surge deals thunder damage, and on the damage roll, consider every 1 or 2 as a 3.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Air</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">20 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Mineral Sculpt" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_MINERAL_SCULPT">
+        <supports>earth-element</supports>
+        <description>
+            <p>You manipulate earth and rocks to create objects within range. If using fresh earth (sand, clay, and general soils), you can create a large or smaller object (contained within a 10-foot cube, or eight connected 5-foot cubes), such as statues, bridges, passages, pillars, doors, etc., as long as there is enough earth to do so. If using metal or solid rock, .you can create only a medium or smaller object (contained within a single 5-foot cube), such as a weapon, idol, crown, etc. The objects are usually solid, without gears or hinges, and generally of good quality. However, the quality of objects, such as jewelry, statues, or any that require artistic or professional knowledge, may vary depending on your proficiency or the availability of the right tools.</p>
+            <p class="indent">At Higher Levels. When you use a spell slot of 5th or 6th level, you can make a huge object of fresh earth (contained within a 15-foot cube, or twenty seven connected 5-foot cubes) or a large object of solid material (contained within a 10-foot cube, or eight connected 5-foot cubes). When you use a spell slot of 7th level or higher, you can mold a gargantuan object of fresh earth (contained within a 20-foot cube, or four connected 10-foot cubes, or sixty-four connected 5-foot cubes).</p>
+            <p class="indent">Elemental Flux. Your next elemental surge affects a 20-foot line that is 5 feet wide and deals 7d6 acid damage plus 1d6 acid damage for each slot level above 4th.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">Earth</set>
+            <set name="time">1 action</set>
+            <set name="range">120 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Mirror Object" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_MIRROR_OBJECT">
+        <supports>water-element</supports>
+        <description>
+            <p>You touch a non-magical object weighing no more than 5 pounds, causing its surface to become reflective like a mirror. During the spell’s duration, the object captures all images and sounds within a 30-foot radius, as long as they are reflected on its mirrored surface.</p>
+            <p class="indent">When the spell ends, the object reverts to its original state, and the captured images and sounds are retained, hidden within it. To access the captured images and sounds, the object must be submerged in any body of water large enough to completely cover it. Once the object is submerged, the captured images and sounds are displayed on the surface of the water and can be viewed as if you were on the location. The size of the water surface determines the size of the image, with a larger surface allowing for more details to be seen.</p>
+            <p class="indent">The object can store the captured images and sounds for up to 1 year. However, once the object is submerged and the images and sounds are accessed, or if it is removed from the water before the end of it, the information is lost and cannot be recovered.</p>
+            <p class="indent">The quality of the captured images and sounds depends on the quality of the object used as a mirror. Polished and well-maintained objects capture clearer and sharper images and sounds, while dirty and worn objects can produce blurred and distorted images and sounds.</p>
+            <p class="indent">At Higher Levels. When you cast this spell using a spell slot of 3rd level or higher, the weight limit of the object increases by 5 pounds for each slot level above 2nd.</p>
+            <p class="indent">Elemental Flux. Your next elemental surge affects a 20-foot line that is 5 feet wide and deals 2d6 cold damage plus 1d6 cold damage for each slot level above 2nd.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Water</set>
+            <set name="time">1 action</set>
+            <set name="range">Touch</set>
+            <set name="duration">1 hour</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a small polished gemstone</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Mountain Crush" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_MOUNTAIN_CRUSH">
+        <supports>earth-element</supports>
+        <description>
+            <p>You deliver a powerful shoulder strike to your target. Make a melee spell attack against it. On a hit, the creature becomes stunned for 1 minute. On a critical hit, the primary target is violently pushed back 15 feet and can hit a creature of your choice as a secondary target, provided it’s in the same direction and range as the primary target was pushed. In this case, the secondary target is also stunned. Oozes are immune to this spell.</p>
+            <p class="indent">Each stunned target must make a Constitution saving throw at the end of its turns. If they succeed, the stunned condition ends.</p>
+            <p class="indent">Elemental Flux. Your next elemental surge affects a 45-foot cone and deals 12d6 acid damage.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">8</set>
+            <set name="school">Earth</set>
+            <set name="time">1 action</set>
+            <set name="range">Touch</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Move Like Air" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_MOVE_LIKE_AIR">
+        <supports>air-element</supports>
+        <description>
+            <p>You and a number of willing creatures equal to your Wisdom modifier that you can see within the spell’s range have their speed doubled, gain a +2 bonus to their AC, have advantage on Dexterity saving throws, and gain an additional action on each of their turns. The action can only be used to take the Attack (one weapon attack only), Dash, Disengage, Hide, or Use an Object action.</p>
+            <p class="indent">Elemental Flux. Your next elemental surge affects a 40-foot line that is 5 feet wide and deals 11d6 thunder damage.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">7</set>
+            <set name="school">Air</set>
+            <set name="time">1 action</set>
+            <set name="range">30 feet</set>
+            <set name="duration">10 minutes</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Move Like Water" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_MOVE_LIKE_WATER">
+        <supports>water-element</supports>
+        <description>
+            <p>You shield a willing creature of your choice that you can see within range, with the energy of the water element. For the duration, the creature does not provoke opportunity attacks, regardless of the action or movement they perform. Additionally, it gains a +1 bonus to AC.</p>
+            <p class="indent">Elemental Flux. Your next elemental surge deals cold damage, and on the damage roll, consider any result of 1 or 2 as 3.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Water</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">30 feet</set>
+            <set name="duration">Concentration up to 10 minutes</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Mystical Flux" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_MYSTICAL_FLUX">
+        <supports>water-element</supports>
+        <description>
+            <p>You touch another creature and send a wave of mystical energy to it, causing it to instantly recover a spell slot of the same level as this spell or lower. You can’t use this spell on yourself.</p>
+            <p class="indent">At Higher Levels. When casting this spell using a spell slot of 3rd level or higher, it equally increases the spell slot level that can be recovered by the target.</p>
+            <p class="indent">Elemental Flux. Your next elemental surge affects a 20-foot line that is 5 feet wide and deals 2d6 cold damage plus 1d6 cold damage for each slot level above 2nd.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Water</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">Touch</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a drop of water</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Natural Stream" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_NATURAL_STREAM">
+        <supports>water-element</supports>
+        <description>
+            <p>A stream of water purifies the creature touched by it. You can remove one condition afflicting the target between blinded, charmed, deafened, paralyzed and poisoned.</p>
+            <p class="indent">Elemental Flux. Your next elemental surge deals 2d6 cold damage.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Water</set>
+            <set name="time">1 action</set>
+            <set name="range">30 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a drop of holy water</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Overcharge Lightning" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_OVERCHARGE_LIGHTNING">
+        <supports>lightning-element</supports>
+        <description>
+            <p>You discharge energy that affects the nervous system of all creatures of your choice in a 20-foot square within range. A creature in the area must make a Constitution saving throw, becoming paralyzed on a failure. On a successful save, the creature’s nervous system is fatigued and on its next turn, it cannot use one of its actions, be it an action, bonus action, or movement. A paralyzed creature can make another saving throw at the end of its turns, ending the condition on a success but still being affected by the action restriction on its next turn. If your concentration is broken, paralyzed creatures are released but still suffer from the action restriction. A creature that has passed the action restriction is freed from the effects of the spell.</p>
+            <p class="indent">Elemental Flux. Your next elemental surge affects a 80-foot line that is 5 feet wide and deals 12d6 lightning damage.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">8</set>
+            <set name="school">Lightning</set>
+            <set name="time">1 action</set>
+            <set name="range">90 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a pair of magnets</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Overgrow" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_OVERGROW">
+        <supports>plant-element</supports>
+        <description>
+            <p>You energize all your allies within a 30-foot-radius circle from a point of your choice within range with an aura of vitality. The aura grants each ally 4d8 temporary hit points, a bonus of +1 to their AC, and advantage on Strength and Constitution checks and saving throws for the next minute.</p>
+            <p class="indent">If creatures are grappled, restrained, or poisoned and need to make a roll to escape the condition, they can use their reaction to make the check or saving throw at the moment you cast this spell.</p>
+            <p class="indent">Elemental Flux. Your next elemental surge deals 7d6 poison damage and requires a Constitution saving throw.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">Plant</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Petrify Nerves" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_PETRIFY_NERVES">
+        <supports>earth-element</supports>
+        <description>
+            <p>You freeze the nerves of a creature of your choice within range of the spell. The creature must succeed on a Constitution saving throw or be paralyzed for the duration. This spell does not affect undead or constructs. An affected creature can make a saving throw at the end of each of its turns, ending the effect on a success.</p>
+            <p class="indent">At Higher Levels. When you cast this spell using a spell slot of 6th level or higher, you can target one additional creature for each slot level above 5th. The creatures must be within 30 feet of each other when you target them.</p>
+            <p class="indent">Elemental Flux. Your next elemental surge affects a 30-foot cone and deals 8d6 acid damage plus 1d6 acid damage for each slot level above 5th.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">5</set>
+            <set name="school">Earth</set>
+            <set name="time">1 action</set>
+            <set name="range">90 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a small, straight piece of iron</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Pour the Past" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_POUR_THE_PAST">
+        <supports>water-element</supports>
+        <description>
+            <p>You use the energy of the water to make it swirl counterclockwise and see the events that occurred in the location where you cast the spell. The manifested image shows the events that occurred within a 30-foot radius of the location where you cast the spell. You see all the events as if you were above the location observing them. You can quickly observe all events that occurred up to 1 year ago or choose a specific moment to observe and follow it for the duration of the spell. Talk to your GM to define what details are perceptible from your point of view and the way you witnessed the events unfold.</p>
+            <p class="indent">Elemental Flux. After the spell’s duration, you can create an ice statue of a creature or object of up to medium size that you saw with your next elemental surge. The statue lasts 1 minute and then melts into snowflakes that disappear.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">5</set>
+            <set name="school">Water</set>
+            <set name="time">1 minute</set>
+            <set name="range">Self(30-foot radius)</set>
+            <set name="duration">Concentration up to 10 minutes</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Primordial Pass" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_PRIMORDIAL_PASS">
+        <supports>air-element</supports>
+        <description>
+            <p>You create a bridge made of air that connects one point to another, provided there is no object obstructing the path between these points. When a creature enters this point, the winds carry them from one point to the other on gentle breezes. The crossing lasts only 1 minute and is completely safe, with air currents protecting creatures during the journey.</p>
+            <p class="indent">The path can be used by both sides, but the path is only open in one direction at a time while the crossing is taking place.</p>
+            <p class="indent">Elemental Flux. Your next elemental surge affects a 45-foot cone and deals 10d6 thunder damage.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">6</set>
+            <set name="school">Air</set>
+            <set name="time">1 minute</set>
+            <set name="range">2 miles</set>
+            <set name="duration">24 hours</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a feather</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">true</set>
+        </setters>
+    </element>
+    <element name="Prodigium Duplication" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_PRODIGIUM_DUPLICATION">
+        <supports>earth-element</supports>
+        <description>
+            <p>You touch a non-magical object weighing up to 10 pounds, causing it to briefly glow with an earthy light before splitting into a number of identical copies equal to twice your proficiency bonus (minimum of 4). Each copy has the same appearance, weight, and physical properties as the original object, including any markings or inscriptions.</p>
+            <p class="indent">However, the copies created by his spell bear an unnatural aura that makes them immediately identifiable as magical constructs to anyone who inspects them closely. As a result, it is very difficult to use these copies to deceive others or pass them off as genuine items.</p>
+            <p class="indent">The copies created by this spell last for 1 hour or until they are destroyed, at which point they crumble into a pile of dust. You can end the spell prematurely by using a bonus action to cause one or more copies to disappear.</p>
+            <p class="indent">The copies created by this spell are mundane objects and do not possess any magical properties. Additionally, they cannot be used to create copies of items made of precious metals or gems, as their unique physical properties cannot be replicated by this spell.</p>
+            <p class="indent">At Higher Levels. When you cast this spell using a spell slot of 3rd level or higher, the weight limit of the object increases by 10 pounds for each slot level above 2nd.</p>
+            <p class="indent">Elemental Flux. Your next elemental surge affects a 20-foot line that is 5 feet wide and deals 2d6 acid damage plus 1d6 acid damage for each slot level above 2nd.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Earth</set>
+            <set name="time">1 action</set>
+            <set name="range">Touch</set>
+            <set name="duration">1 hour</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a small piece of clay</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Purging Flames" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_PURGING_FLAMES">
+        <supports>fire-element</supports>
+        <description>
+            <p>You immolate a hostile undead or extraplanar creature (devil, demon, penumbral, etc.) that you can see within the range of the spell. The target creature must make a Charisma saving throw. On a success, nothing happens, but on a failure, it is consumed by flames and it is destroyed, leaving only ashes behind. If the target is an undead whose soul is trapped elsewhere (such as a lich and its phylactery or an undead created from a body whose soul was trapped), it must make a second Charisma saving throw. On a failure, it is immolated and destroyed. If the target is extraplanar, it returns to its home plane and must make another Charisma saving throw. On a failure, it is immolated and destroyed.</p>
+            <p class="indent">Elemental Flux. Your next elemental surge affects a 60-foot line that is 5 feet wide and deals 14d6 fire damage.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">9</set>
+            <set name="school">Fire</set>
+            <set name="time">1 action</set>
+            <set name="range">200 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a drop of oil</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Quicksand" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_QUICKSAND">
+        <supports>earth-element</supports>
+        <description>
+            <p>You transform a 30-foot-radius circular area, centered on a point within range, into quicksand. The area becomes difficult terrain and every creature within it at the time of casting, or that starts its turn or enters the area, must make a Strength saving throw. On the first failure, the creature begins to sink in the sand and becomes restrained. On the second failure, the restrained creature sinks even further, becoming incapacitated. On a third failure, the incapacitated creature sinks completely into the sand and becomes stunned. Each time a creature succeeds on a Strength saving throw, it regresses one step in the number of failures, becoming unburied if it reaches 0 failures.</p>
+            <p class="indent">A creature that is completely buried by this spell cannot breathe, is under total cover, has disadvantage on Strength saving throws, and suffers 3d10 bludgeoning damage for each failure it has on Strength saving throws. Failures beyond the third are added to the number of failures.</p>
+            <p class="indent">Another creature that is adjacent to a buried creature and is not under any effect of the spell can use an action to help dig out the buried creature. The creature must make a Strength ability check against your spell save DC. On a success, it frees the creature from the spell’s effects, but on a failure, it is pulled into the area of effect and counts as having failed a Strength saving throw against the spell. A creature within the area of effect that tries to help another does so with disadvantage on the Strength check.</p>
+            <p class="indent">When the spell ends, all creatures that are restrained suffer 3d10 bludgeoning damage, all creatures that are incapacitated suffer 6d10 bludgeoning damage, and all creatures that are stunned suffer 10d10 bludgeoning damage. Objects and creatures that are dead or die from the final damage remain buried, while surviving creatures are expelled from the ground.</p>
+            <p class="indent">Objects that are not being held are automatically buried, and structures within the area suffer 30 bludgeoning damage when the spell is cast, and at the beginning of each turn that you maintain the spell.</p>
+            <p class="indent">Elemental Flux. With your next elemental surge, you stomp the ground. All creatures in a 30-foot-radius circle centered on you must succeed on a Dexterity saving throw, taking 14d6 bludgeoning damage and being knocked prone on a failed save. Each creature within the quicksand area that is hit by this elemental surge fails in the saving throw automatically, counting as a failure for the spell too.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">9</set>
+            <set name="school">Earth</set>
+            <set name="time">1 action</set>
+            <set name="range">120 feet</set>
+            <set name="duration">Concentration up to 10 minutes</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Rally of Agility" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_RALLY_OF_AGILITY">
+        <supports>air-element</supports>
+        <description>
+            <p>Up to four willing creatures are surrounded by strong winds that assist their movements. While under this effect, the affected creatures have their Dexterity scores increased by 6 (up to a maximum of 26), and they have advantage on any attacks or ability checks that involve Dexterity.</p>
+            <p class="indent">A creature under the effect of the spell is immune to the grappled, restrained, prone and paralyzed conditions. Additionally, attacks against the target are made with disadvantage.</p>
+            <p class="indent">Elemental Flux. Your next elemental surge affects a 45-foot cone and deals 10d6 thunder damage.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">6</set>
+            <set name="school">Air</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">1 round</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Regenerating Cocoon" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_REGENERATING_COCOON">
+        <supports>plant-element</supports>
+        <description>
+            <p>You create a large flower at a location of your choice within range that can envelop a willing creature, up to Huge size, that is within 15 feet of it. The creature is immune to damage, has its movement reduced to 0, and is incapacitated while inside the flower. The creature can leave the flower at any time. While inside the flower, the creature is healed for 2d8 + its Wisdom modifier at the start of each of its turns. The creature also removes 1 level of exhaustion every 2 turns spent inside the flower and gets rid of one curse, disease, or poison for every 4 turns spent inside it. If the creature remains inside the flower for the full duration of the spell, it regains any lost limbs.</p>
+            <p class="indent">The flower automatically dissipates, ending the spell’s effects if the creature exits it, you lose concentration, or the flower’s hit points are reduced to 0. The flower has an AC of 15, 80 hit points, is resistant to non-magical damage, and immune to poison damage.</p>
+            <p class="indent">Elemental Flux. Your next elemental surge affects a 30-foot cone and deals 11d6 poison damage and requires a Constitution saving throw.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">7</set>
+            <set name="school">Plant</set>
+            <set name="time">1 action</set>
+            <set name="range">30 feet</set>
+            <set name="duration">Concentration, 1 hour</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Regrowth" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_REGROWTH">
+        <supports>plant-element</supports>
+        <description>
+            <p>You touch a body or a body part that still exists of a creature that has been dead for no more than 500 years. The part of the creature and any material components turn into a seed that automatically sprouts into a plant, generating a bulb where the body of the creature is recreated and restored. After 8 hours, the bulb opens, and the creature is revived, healed of all wounds, any poisons removed, all diseases cured, and freed from any curses that afflicted it when it died. The spell fully restores the body, replacing missing parts.</p>
+            <p class="indent">If the body of the creature no longer exists, the casting time doubles, and you must speak the creature’s name, take an object that belonged to it, and, as part of this spell, bring its spirit, which will be mixed with the material components when forming the seed. If the spirit is not available, the spell fails, and no components are expended.</p>
+            <p class="indent">The spell can even provide a new body if the original no longer exists. The creature then appears in an unoccupied space you choose within 5 feet of the plant.</p>
+            <p class="indent">Elemental Flux. Your next elemental surge, instead of dealing damage, imbues the creature’s body with an elemental soul, leaving it immune to diseases and curses for a number of days equal to 10d6 days.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">9</set>
+            <set name="school">Plant</set>
+            <set name="time">8 hours</set>
+            <set name="range">Touch</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">fruits, flowers, seeds, rare herbs, dragon parts and jewelry that weigh more than the target and are worth at least 25,000 gp, which the spell consumes</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Revert Life Flux" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_REVERT_LIFE_FLUX">
+        <supports>water-element</supports>
+        <description>
+            <p>You harness a sacred water flow to reverse a loss of life in a body, resurrecting the creature. The creature cannot have been dead for more than 100 years, cannot be an undead or construct, must have a soul available for return to the body, and cannot have died of old age.</p>
+            <p class="indent">At the end of the spell, the target creature returns to life with all wounds healed, regaining any lost limbs and free of any conditions, but it receives 4 levels of exhaustion. Additionally, the resurrected creature returns free of any non-magical diseases or curses. Magical diseases and curses will resume their effects if they are not removed beforehand.</p>
+            <p class="indent">The flow of magic is very heavy and until a long rest is finished, you will receive two levels of exhaustion and have a -4 reduction to all attack rolls, ability checks, and saving throws.</p>
+            <p class="indent">Elemental Flux. With your next elemental surge, you imbue the creature targeted by this spell and yourself with elemental energy, granting both 6d8 temporary hit points that last for 10 hours.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">8</set>
+            <set name="school">Water</set>
+            <set name="time">1 hour</set>
+            <set name="range">Touch</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a large bowl of holy water</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
 
 
 </elements>
@@ -2285,7 +3177,7 @@
         <setters>
             <set name="keywords"></set>
             <set name="level">level</set>
-            <set name="school">ElementSchool</set>
+            <set name="school">SCHOOL</set>
             <set name="time">1 action</set>
             <set name="range">range</set>
             <set name="duration">duration</set>
