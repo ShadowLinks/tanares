@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+    <info>
+        <name></name>
+        <description>Madwalker Class from Tanares RPG 5e</description>
+        <author url="">Tanares RPG 5e</author>
+        <update version="0.0.1">
+            <file name="class-madwalker.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/classes/class-madwalker.xml" />
+        </update>
+    </info>
+    <element name="Madwalker" type="Class" source="Tanares RPG 5e" id="ID_TRPG_CLASS_MADWALKER">
+        <description>
+            <p>Shadowy and agile guides and hunters of the Penumbral Plane who hate penumbral creatures. They wield aberrant powers, but at the cost of their sanity, a thin line between power and madness.</p>
+            <h4>MADWALKER</h4>
+            <p>The madwalkers, survivors of the Penumbral Plane’s malevolent embrace, are individuals forever marked by their terrifying experiences with abominations spawned by the vile influence of the Ungods. Their fractured minds bear the scars of unspeakable horrors, yet they have harnessed the dark energies of the Penumbra to exact retribution upon the loathsome progeny of the Ungods. Their mastery of this mysterious force and the resilience forged in the depths of their insanity makes them formidable champions in the eternal struggle against the encroaching darkness.</p>
+            <p class="indent">To earn the powers of a madwalker, an initiate must undergo a terrifying rite of passage, confronting and vanquishing either Watchers or arachnes, before attuning to their essence by absorbing their power. Occasionally, this transformation transpires spontaneously when individuals seeking vengeance become trapped within the Penumbral Plane, fighting for their lives and slaying aberrant creatures to survive. However, a knowledgeable mentor can shepherd the initiate through this process, enabling them to deliberately overcome their monstrous adversaries, assimilate their energy, and assume the mantle of a madwalker.</p>
+            <p class="indent">The source of a madwalker’s power determines their abilities and the path they tread. The Nightmare’s Augury Trail, achieved by hunting and assimilating the essence of a servant of Golgöggoth, the Augur and master of the Watchers, grants madwalkers foresight and exceptional mental fortitude, as well as daunting defensive prowess. Conversely, the Aberrant Arachinid Trail, obtained by hunting and assimilating the essence of an arachnid servant of Bellera, the Ungods’ progeny, bestows upon madwalkers unmatched hunting expertise, empowering them to orchestrate lethal ambushes and wield potent toxins against their prey.</p>
+            <p class="indent">Ostracized by society as deranged and tainted, madwalkers dwell on the fringes of civilization. Yet their unique ability to withstand the Penumbra’s insidious corruption, navigate its treacherous landscapes, and confront its dark horrors with lethal precision make them invaluable allies to mighty kingdoms and influential organizations.</p>
+            <p class="indent">Delving into the abyss of their own madness, madwalkers manifest their innermost nightmares in corporeal form. At the zenith of their insanity, they can temporarily assume the guise of a penumbral monstrosity, granting them immense power. However, this metamorphosis demands a terrible price, leaving them enfeebled in its aftermath.</p>
+            <p class="indent">The madwalker’s journey is a precarious balancing act between their humanity and the source of their power — the insanity that threatens to consume them. They navigate a treacherous path fraught with daunting challenges as they trive to maintain their sanity while wielding the unfettered power of their nightmares. Those who master this power can unleash a force beyond the comprehension of mere mortals.</p>
+            <h4>Fighting madness with madness</h4>
+            <p>The madwalkers hold the ability to harness the chaotic essence of their fragmented psyche, channeling the eldritch terrors of the Penumbra as potent weapons. These tainted warriors stand unbowed in the relentless battle against the festering malignancy that lurks deep within the world’s core. Bound to the Penumbra by the torment of their shattered minds, madwalkers possess an innate sense for detecting penumbral beings, portals, and rifts, allowing them to relentlessly pursue their prey through the darkest recesses of existence.</p>
+            <p class="indent">Masterful madwalkers wield the power to conjure temporary penumbral rifts—interdimensional gateways that forge a tenuous connection between the nightmarish realm and the Material Plane. This unparalleled mastery makes them invaluable allies in the age-old struggle against the dreaded Ungods, as they can skillfully enter or exit the Penumbral Plane to confront the eldritch horrors that lie hidden within.</p>
+            <p class="indent">However, the Penumbra’s power demands a dire sacrifice. Madwalkers teeter precariously on the brink between the fragile bounds of sanity and the unfathomable abyss of madness. In moments of utmost desperation, a madwalker may choose to embrace their darkest nightmares, undergoing a horrifying transfiguration into a fearsome penumbral monstrosity. This metamorphosis allows them to assume the form of one of the many penumbral creatures, such as emoguns, Watchers, or even arachnes, depending on their source of power. In doing so, they gain immense strength and resilience, but at the perilous cost of potentially succumbing to the Penumbra’s all-consuming lunacy</p>
+            <h4>CREATING A MADWALKER</h4>
+            <p>To create a madwalker character, start by deciding how you became a madwalker. What brought you to the plane of nightmares? How you acquired your powers, you had a mentor or you survived alone the horrors of the plane of nightmares? Did you seek out its power, or were you pulled in by accident? How your newfound abilities and your changed mental state affected your daily life, and what sort of relationship do you have with the people from your past?</p>
+            <p class="indent">In addition to backstory, it’s important to consider your madwalker’s personality. Are they playful and mischievous, or dark and brooding? Do they revel in their powers or feel a sense of guilt and responsibility for what they can do?</p>
+            <p class="indent">Finally, think about how your madwalker fits into the larger world. Do they have allies or enemies who know about their powers? Are they hunted by those who fear their abilities, or sought after by those who desire their power? Why are you adventuring? Vengeance against an evil being, desire for power and wealth, or for some other personal reason?</p>
+            <h2>CLASS FEATURES</h2>
+            <p>As an lowercaseclassname, you gain the following class features.</p>
+            <h5 class="caption">HIT POINTS</h5>
+            <ul class="unstyled">
+                <li><strong>Hit Dice:</strong> 1d8 per lowercaseclassname level</li>
+                <li><strong>Hit Points at 1st Level:</strong> 8 + your Constitution modifier</li>
+                <li><strong>Hit Points at Higher Levels:</strong> 1d8 (or 5) + your Constitution modifier per lowercaseclassname level after 1st</li>
+            </ul>
+            <h5 class="caption">PROFICIENCIES</h5>
+            <ul class="unstyled mb">
+                <li><strong>Armor:</strong> Light armor</li>
+                <li><strong>Weapons:</strong> Simple Weapons, Martial Weapons</li>
+                <li><strong>Tools:</strong> Thieves' tools</li>
+            </ul>
+            <ul class="unstyled">
+                <li><strong>Saving Throws:</strong> Dexterity, Charisma</li>
+                <li><strong>Skills:</strong> Choose three from Acrobatics, Athletics, Insight, Intimidation, Investigation, Perception, Stealth, and Survival</li>
+            </ul>
+            <h5 class="caption">EQUIPMENT</h5>
+            <p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+            <ul>
+                <li>(a) a rapier or (b) a longsword</li>
+                <li>(a) a longbow and a quiver with 20 arrows or (b) a shortsword</li>
+                <li>(a) an adventurer’s pack or (b) an explorer’s pack</li>
+                <li>Two daggers and thieves’ tools</li>
+            </ul>
+            <!-- class table here -->
+            <h5 class="caption">THE MADWALKER</h5>
+            <table class="class-features">
+                <thead>
+                    <tr><td class="col-5">Level</td><td class="col-10">Proficiency Bonus</td><td class="col-10">Mutation Level</td><td class="col-10">Mutations Known</td><td class="col-60 left">Features</td></tr>
+                </thead>
+                <tr><td> 1st</td><td>+2</td><td>1st</td><td>2</td><td class="left">Averrant Mutation, Penumbral Shape</td></tr>
+                <tr><td> 2nd</td><td>+2</td><td>1st</td><td>2</td><td class="left">Trail of Madness</td></tr>
+                <tr><td> 3rd</td><td>+2</td><td>1st</td><td>3</td><td class="left">Blades of Madness, Shadow Sense</td></tr>
+                <tr><td> 4th</td><td>+2</td><td>1st</td><td>3</td><td class="left">Ability Score Increase</td></tr>
+                <tr><td> 5th</td><td>+3</td><td>2nd</td><td>4</td><td class="left">Extra Attack</td></tr>
+                <tr><td> 6th</td><td>+3</td><td>2nd</td><td>4</td><td class="left">Aberrant Mind</td></tr>
+                <tr><td> 7th</td><td>+3</td><td>2nd</td><td>5</td><td class="left">Trail of Madness Feature</td></tr>
+                <tr><td> 8th</td><td>+3</td><td>2nd</td><td>5</td><td class="left">Ability Score Increase</td></tr>
+                <tr><td> 9th</td><td>+4</td><td>3rd</td><td>6</td><td class="left">-</td></tr>
+                <tr><td>10th</td><td>+4</td><td>3rd</td><td>6</td><td class="left">Warped Morphology</td></tr>
+                <tr><td>11th</td><td>+4</td><td>3rd</td><td>7</td><td class="left">Penumbral Shift</td></tr>
+                <tr><td>12th</td><td>+4</td><td>3rd</td><td>7</td><td class="left">Ability Score Increase</td></tr>
+                <tr><td>13th</td><td>+5</td><td>4th</td><td>8</td><td class="left">-</td></tr>
+                <tr><td>14th</td><td>+5</td><td>4th</td><td>8</td><td class="left">Trail of Madness Feature</td></tr>
+                <tr><td>15th</td><td>+5</td><td>4th</td><td>9</td><td class="left">Penumbral Portal</td></tr>
+                <tr><td>16th</td><td>+5</td><td>4th</td><td>9</td><td class="left">Ability Score Increase</td></tr>
+                <tr><td>17th</td><td>+6</td><td>5th</td><td>10</td><td class="left">-</td></tr>
+                <tr><td>18th</td><td>+6</td><td>5th</td><td>10</td><td class="left">Trail of Madness Feature</td></tr>
+                <tr><td>19th</td><td>+6</td><td>5th</td><td>11</td><td class="left">Ability Score Increase</td></tr>
+                <tr><td>20th</td><td>+6</td><td>5th</td><td>11</td><td class="left">Waking Nightmare</td></tr>
+            </table>
+            <div element="ID_TRPG_CLASS_FEATURE_MADWALKER_ABERRANT_MUTATION" />
+            <div element="ID_TRPG_CLASS_FEATURE_MADWALKER_PENUMBRAL_SHAPE" />
+            <div element="ID_TRPG_CLASS_FEATURE_MADWALKER_TRAILS_OF_MADNESS" />
+            <div element="ID_TRPG_CLASS_FEATURE_MADWALKER_SHADOW_SENSE" />
+            <div element="ID_TRPG_CLASS_FEATURE_MADWALKER_BLADES_OF_MADNESS" />
+            <div element="ID_TRPG_CLASS_FEATURE_MADWALKER_ASI" />
+            <div element="ID_TRPG_CLASS_FEATURE_MADWALKER_EXTRA_ATTACK" />
+            <div element="ID_TRPG_CLASS_FEATURE_MADWALKER_ABERRANT_MIND" />
+            <div element="ID_TRPG_CLASS_FEATURE_MADWALKER_WARPED_MORPHOLOGY" />
+            <div element="ID_TRPG_CLASS_FEATURE_MADWALKER_PENUMBRAL_SHIFT" />
+            <div element="ID_TRPG_CLASS_FEATURE_MADWALKER_PENUMBRAL_PORTAL" />
+            <div element="ID_TRPG_CLASS_FEATURE_MADWALKER_WAKING_NIGHTMARE" />
+        </description>
+        <setters>
+            <set name="hd">d8</set>
+        </setters>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" />
+            <select type="Proficiency" name="Skill Proficiency (Madwalker)" number="3" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_SURVIVAL" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_MADWALKER_ABERRANT_MUTATION" level="level" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_MADWALKER_PENUMBRAL_SHAPE" level="level" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_MADWALKER_TRAILS_OF_MADNESS" level="level" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_MADWALKER_SHADOW_SENSE" level="level" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_MADWALKER_BLADES_OF_MADNESS" level="level" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_MADWALKER_ASI" level="level" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_MADWALKER_EXTRA_ATTACK" level="level" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_MADWALKER_ABERRANT_MIND" level="level" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_MADWALKER_WARPED_MORPHOLOGY" level="level" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_MADWALKER_PENUMBRAL_SHIFT" level="level" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_MADWALKER_PENUMBRAL_PORTAL" level="level" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_MADWALKER_WAKING_NIGHTMARE" level="level" />
+        </rules>
+    </element>
+    <element name="Aberrant Mutation" type="Class Feature" source="source" id="ID_TRPG_CLASS_FEATURE_MADWALKER_ABERRANT_MUTATION">
+        <description>
+            <p>You can produce unimaginable temporary modifications to your body, known as Aberrant Mutations. Some of them require the target(s) to roll a saving throw to resist their effects.</p>
+            <center>
+                <p><strong>Aberrant Mutation save DC</strong>= 8 + your proficiency bonus + your Wisdom modifier </p>
+            </center>
+            <p>At 1st level, you know the Dark Energy 1st-level Aberrant Mutation and two other 1st-level Aberrant Mutations of your choice from the list later in this section. You may learn a new Aberrant Mutation at every odd level in the madwalker class, as shown in the madwalker table on page 139. If you wish, when you gain a madwalker level, you may choose one Aberrant Mutation that you already know and replace it with another.</p>
+            <p class="indent">Each of your Aberrant Mutations must be of a level no higher than your madwalker level allows. For example, when you reach 5th level of the class,you can learn a new Aberrant Mutation of 1st or 2nd level, but you cannot know more than four Aberrant Mutations</p>
+            <p class="indent">You can use only one Aberrant Mutation per round, but you can have more than one of them active.</p>
+            <p class="indent">Madwalkers delve deeper and deeper into the realms of madness as they use their powers. After activating an Aberrant Mutation, at the end of your turn you acquire the number of Insanity Points stated in its description.</p>
+            <p class="indent">Once you amass a specified number of Insanity Points, you receive a penalty to your AC and all attacks and saving throws, as shown in the Insanity Steps table. When you reach maximum Insanity, you transform into a Penumbral Shape. After the transformation ends, you remain at maximum Insanity and stop gaining points (keeping the penalties).</p>
+            <p class="indent">You lose all Insanity Points after finishing a long rest.</p>
+            <table>
+                <thead>
+                    <tr><td>Total Penalty to attacks, AC, and saves</td><td>Insanity Points 1st-4th</td><td>Insanity Points 5th-8th</td><td>Insanity Points 9th-12th</td><td>Insanity Points 13th-16th</td><td>Insanity Points 16th-20th</td></tr>
+                </thead>
+                <tr><td>-1</td><td>3-5</td><td>6-11</td><td>9-17</td><td>12-23</td><td>15-29</td></tr>
+                <tr><td>-2</td><td>6-8</td><td>12-17</td><td>18-26</td><td>24-35</td><td>30-44</td></tr>
+                <tr><td>-3</td><td>9+</td><td>18+</td><td>27+</td><td>36+</td><td>45+</td></tr>
+                <tr><td>Penumbral Shape</td><td>12 max</td><td>24 max</td><td>36 max</td><td>48 max</td><td>60 max</td></tr>
+            </table>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Penumbral Shape" type="Class Feature" source="source" id="ID_TRPG_CLASS_FEATURE_MADWALKER_PENUMBRAL_SHAPE">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Trail of Madness" type="Class Feature" source="source" id="ID_TRPG_CLASS_FEATURE_MADWALKER_TRAILS_OF_MADNESS">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Shadow Sense" type="Class Feature" source="source" id="ID_TRPG_CLASS_FEATURE_MADWALKER_SHADOW_SENSE">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Blades of Madness" type="Class Feature" source="source" id="ID_TRPG_CLASS_FEATURE_MADWALKER_BLADES_OF_MADNESS">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Ability Score Improvement" type="Class Feature" source="source" id="ID_TRPG_CLASS_FEATURE_MADWALKER_ASI">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Extra Attack" type="Class Feature" source="source" id="ID_TRPG_CLASS_FEATURE_MADWALKER_EXTRA_ATTACK">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Aberrant Mind" type="Class Feature" source="source" id="ID_TRPG_CLASS_FEATURE_MADWALKER_ABERRANT_MIND">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Warped Morphology" type="Class Feature" source="source" id="ID_TRPG_CLASS_FEATURE_MADWALKER_WARPED_MORPHOLOGY">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Penumbral Shift" type="Class Feature" source="source" id="ID_TRPG_CLASS_FEATURE_MADWALKER_PENUMBRAL_SHIFT">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Penumbral Portal" type="Class Feature" source="source" id="ID_TRPG_CLASS_FEATURE_MADWALKER_PENUMBRAL_PORTAL">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Waking Nightmare" type="Class Feature" source="source" id="ID_TRPG_CLASS_FEATURE_MADWALKER_WAKING_NIGHTMARE">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+</elements>

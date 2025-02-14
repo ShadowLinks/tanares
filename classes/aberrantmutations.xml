@@ -1,0 +1,20 @@
+<elements>
+    <info>
+        <name>Aberrant Mutations</name>
+        <update version="0.0.1">
+            <file name="aberrantmutations.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/classes/aberrantmutations.xml"/>
+        </update>
+    </info>
+    <element name="Bioluminescent Secretion" type="Class Features" source="Tanares RPG 5e" id="ID_TRPG_ABERRANT_MUTATION_BIOLUMINESCENT_SECRETION">
+        <supports>Aberrant-mutation</supports>
+        <prerequisite>1st level</prerequisite>
+        <requirements>[level:1]</requirements>
+        <description>
+            <p>1 Insanity Point + 1 point per 5 feet added to cone size</p>
+            <p class="indent">As a bonus action, you can generate a glowing, bioluminescent substance. This secretion illuminates an area within 5 feet with dim light and leaves a luminous trail wherever you move. After 8 hours, the mutation ends, and the emission fades entirely.</p>
+            <p class="indent">You can prematurely end this mutation to discharge a larger, slick amount of secretion over a 15-foot cone on the ground, rendering it as difficult terrain. All creatures within this area must pass a Dexterity saving throw or fall prone. A creature that either enters or ends its turn in this area must also make the Dexterity saving throw. The area stays illuminated and slippery for 8 hours.</p>
+            <p class="indent">You can augment the size of the cone, up to a maximum of +25 feet, gaining 1 extra Insanity Point for every additional 5 feet. Your total Insanity Points cannot exceed the limit when enlarging the area. Also, you cannot use this power if you are at your Insanity Point maximum.</p>
+        </description>
+    </element>
+
+</elements>
