@@ -3,7 +3,7 @@
         <name>Cultist</name>
         <description>Cultist subclass for the Sorcerer class from Tanares RPG 5e.</description>
         <author url="">Dragori Games</author>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="sorcerer-cultist.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/subclasses/sorcerer-cultist.xml" />
         </update>
     </info>
@@ -94,8 +94,8 @@
             <set name="size">Medium</set>
             <set name="alignment">neutral evil</set>
             <set name="challenge"></set>
-            <set name="traits">ID_TRPG_COMPANION_TRAIT_SLOTH_AURA</set>
-            <set name="actions">ID_TRPG_COMPANION_ACTION_SLOTH_MULTIATTACK,ID_TRPG_COMPANION_ACTION_SLOTH_BITE</set>
+            <set name="traits">ID_TRPG_COMPANION_TRAIT_CULTIST_SLOTH_AURA</set>
+            <set name="actions">ID_TRPG_COMPANION_ACTION_CULTIST_SLOTH_MULTIATTACK,ID_TRPG_COMPANION_ACTION_CULTIST_SLOTH_BITE</set>
         </setters>
         <rules>
             <stat name="companion:ac" value="15"/>
@@ -125,13 +125,13 @@
             <stat name="companion:speed:fly" value="30" level="14" />
         </rules>
     </element>
-    <element name="Aura of Laziness 15ft" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_SLOTH_AURA">
+    <element name="Aura of Laziness 15ft" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_CULTIST_SLOTH_AURA">
         <description> Any creature that enters or starts its turn in the aura must make a DC 13 Wisdom saving throw. If it fails, its speed is halved for the next minute. An affected creature that leaves the aura can repeat the saving throw at the end of its turns, ending the effect on a success.</description>
         <sheet>
             <description>15 foot Aura and any creature that enters or starts its turn in it must make a DC 13 Wisdom saving throw. If it fails, its speed is halved for the next minute. An affected creature that leaves the aura can repeat the saving throw at the end of its turns, ending the effect on a success.</description>
         </sheet>
         </element>
-    <element name="Multiattack" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_SLOTH_MULTIATTACK">
+    <element name="Multiattack" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_CULTIST_SLOTH_MULTIATTACK">
         <description>
             <p>The sloth invocation makes a number of attacks equal to your proficiency bonus.</p>
         </description>
@@ -139,7 +139,7 @@
             <description>The sloth invocation makes a number of attacks equal to your proficiency bonus {{proficiency}}.</description>
         </sheet>
     </element>
-    <element name="Bite" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_SLOTH_BITE">
+    <element name="Bite" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_CULTIST_SLOTH_BITE">
         <description>
             <p> Melee Weapon Attack: sloth invocation STR modifier (4) + your proficiency bonus, reach 5 ft., one target. Hit: 1d10 + 4 + your proficiency bonus piercing damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be knocked prone</p>
         </description>
@@ -170,8 +170,8 @@
             <set name="size">Medium</set>
             <set name="alignment">neutral evil</set>
             <set name="challenge"></set>
-            <set name="traits">ID_TRPG_COMPANION_TRAIT_GLUTTONY_BLOOD_FRENZY</set>
-            <set name="actions">ID_TRPG_COMPANION_ACTION_GLUTTONY_MULTIATTACK,ID_TRPG_COMPANION_ACTION_GLUTTONY_BITE</set>
+            <set name="traits">ID_TRPG_COMPANION_TRAIT_CULTIST_GLUTTONY_BLOOD_FRENZY</set>
+            <set name="actions">ID_TRPG_COMPANION_ACTION_CULTIST_GLUTTONY_MULTIATTACK,ID_TRPG_COMPANION_ACTION_CULTIST_GLUTTONY_BITE</set>
         </setters>
         <rules>
             <stat name="companion:ac" value="13"/>
@@ -203,13 +203,13 @@
  
         </rules>
     </element>
-    <element name="Blood Frency" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_GLUTTONY_BLOOD_FRENZYT">
+    <element name="Blood Frency" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_CULTIST_GLUTTONY_BLOOD_FRENZYT">
         <description>The gluttony invocation has advantage on melee attack rolls against creatures that don’t have all hit points.</description>
         <sheet>
             <description>Advantage on melee attack rolls against creatures missing hit points</description>
         </sheet>
     </element>
-    <element name="Multiattack" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_GLUTTONY_MULTIATTACK">
+    <element name="Multiattack" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_CULTIST_GLUTTONY_MULTIATTACK">
         <description>
             <p>The gluttony invocation makes a number of attacks equal to your proficiency bonus.</p>
         </description>
@@ -217,7 +217,7 @@
             <description>The gluttony invocation makes a number of attacks equal to your proficiency bonus {{proficiency}}.</description>
         </sheet>
     </element>
-    <element name="Bite" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_GLUTTONY_BITE">
+    <element name="Bite" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_CULTIST_GLUTTONY_BITE">
         <description>
             <p> Melee Weapon Attack: gluttony invocation STR modifier (4) + your proficiency bonus, reach 5 ft., one target. Hit: 1d10 + 4 + your proficiency bonus piercing damage. The Gluttony Invocation gains half of damage in temporary hit points. If the target is a living creature it must succeed on a DC 12 Wisdom saving throw or be cursed. A cursed creature has disadvantage on attack rolls until eating during a short or long rest, being targeted by a remove curse spell, or eating a berry created by a goodberry spell.</p>
         </description>
@@ -248,8 +248,8 @@
             <set name="size">Medium</set>
             <set name="alignment">neutral evil</set>
             <set name="challenge"></set>
-            <set name="traits">ID_TRPG_COMPANION_TRAIT_ENVY_PACK_TACTICS</set>
-            <set name="actions">ID_TRPG_COMPANION_ACTION_ENVY_MULTIATTACK,ID_TRPG_COMPANION_ACTION_ENVY_BITE</set>
+            <set name="traits">ID_TRPG_COMPANION_TRAIT_CULTIST_ENVY_PACK_TACTICS</set>
+            <set name="actions">ID_TRPG_COMPANION_ACTION_CULTIST_ENVY_MULTIATTACK,ID_TRPG_COMPANION_ACTION_CULTIST_ENVY_BITE</set>
         </setters>
         <rules>
             <stat name="companion:ac" value="13"/>
@@ -279,13 +279,13 @@
             <stat name="companion:speed:fly" value="30" level="14" /> 
         </rules>
     </element>
-    <element name="Pack Tactics" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_ENVY_PACK_TACTICS">
+    <element name="Pack Tactics" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_CULTIST_ENVY_PACK_TACTICS">
         <description>The envy invocation has advantage on an attack roll against a creature if at least one of its allies is within 5 feet of the creature and the ally isn’t incapacitated.</description>
         <sheet>
             <description>The envy invocation has advantage on an attack roll against a creature if at least one of its allies is within 5 feet of the creature and the ally isn’t incapacitated.</description>
         </sheet>
     </element>
-    <element name="Multiattack" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_ENVY_MULTIATTACK">
+    <element name="Multiattack" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_CULTIST_ENVY_MULTIATTACK">
         <description>
             <p>The envy invocation makes a number of attacks equal to your proficiency bonus.</p>
         </description>
@@ -293,7 +293,7 @@
             <description>The envy invocation makes a number of attacks equal to your proficiency bonus {{proficiency}}.</description>
         </sheet>
     </element>
-    <element name="Resentment Bite" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_ENVY_BITE">
+    <element name="Resentment Bite" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_CULTIST_ENVY_BITE">
         <description>
             <p>Ranged Spell Attack: Envy Invocation DEX modifier (4) + your proficiency bonus, range 60 ft., one target. Hit: 1d8 + 4 + your proficiency bonus psychic damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be knocked prone.</p>
         </description>
