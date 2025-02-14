@@ -3,7 +3,7 @@
         <name>Ninja</name>
         <description>Ninja subclass for the Rogue class from Tanares RPG 5e.</description>
         <author url="">Dragori Games</author>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="rogue-ninja.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/subclasses/rogue-ninja.xml" />
         </update>
     </info>
@@ -74,7 +74,7 @@
             <stat name="smokebomb" value="1" level="13"/>
             <stat name="smokebomb" value="1" level="17"/>
         </rules>
-    </element>-
+    </element>
     <element name="Ninjutsu" type="Archetype Feature" source="Tanares RPG 5e" id="ID_ARCHETYPE_FEATURE_ROGUE_NINJA_NINJUTSU">
         <description>
             <p>At 3rd level, your training in ninja martial arts grants you mastery of ninja fighting styles involving unarmed and armed strikes. You gain the following benefits while you are not wearing medium or heavy armor or wielding a shield:</p>
