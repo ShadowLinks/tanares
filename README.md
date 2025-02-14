@@ -15,7 +15,7 @@ To Do:
         - Taii'Maku [PARTIAL](https://github.com/ShadowLinks/tanares/issues/2) (balance mechanic not implemented)
 - New Classes
     - Dragonblade [Minor issue with finesse](https://github.com/ShadowLinks/tanares/issues/5)
-    - Elementalist
+    - Elementalist COMPLETED
     - Madwalker
     - Redeemer
     - Shepherd
@@ -33,7 +33,7 @@ To Do:
         - College of Life
     - Cleric
         - Chaos Domain - [Breaks PDF export](https://github.com/ShadowLinks/tanares/issues/3)
-        - Courage Domain
+        - Courage Domain COMPLETED
     - Druid COMPLETED
         - Circle of the Bloom
     - Fighter COMPLETED
