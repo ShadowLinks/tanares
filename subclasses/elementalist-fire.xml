@@ -32,10 +32,7 @@
     </element>
     <element name="Primary Element" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_ELEMENTALIST_FIRE_PRIMARY">
         <description>
-            <p>Elementalists who choose this Primordial Element are strongly linked to battles, creativity, destruction, and intelligence.
-By choosing Fire as your Primordial Element, you can learn
-Fire, Air, and Earth spells, the latter two being your secondary elements, and you will know the fusion element spells
-of Lava and Lightning.</p>
+            <p>Elementalists who choose this Primordial Element are strongly linked to battles, creativity, destruction, and intelligence. By choosing Fire as your Primordial Element, you can learn Fire, Air, and Earth spells, the latter two being your secondary elements, and you will know the fusion element spells of Lava and Lightning.</p>
         </description>
         <sheet>
             <description>Your Primary element is Fire. Earth and Air elements are your secondary elements. Lightning and Lava are your fusion elements.</description>
@@ -90,25 +87,11 @@ of Lava and Lightning.</p>
     </element>
     <element name="Flame Brilliance" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_ELEMENTALIST_FIRE_FLAME_BRILLIANCE">
         <description>
-            <p>At 1st level, the creativity and cunning of fire afford you
-new abilities. You gain proficiency with two skills of your
-choice from Intimidation, Investigation, and Performance.
-You also gain proficiency with light armor, shields, and simple
-weapons. You can cast your elementalist spells even when
-your hands are holding weapons or shields, performing the
-necessary gestures to cast them.</p>
-            <p class="indent">When wielding a weapon, your melee weapon attack
-rolls can use your Wisdom modifier instead of Strength
-or Dexterity. This modifier also applies to damage rolls
-from the 6th level.</p>
+            <p>At 1st level, the creativity and cunning of fire afford you new abilities. You gain proficiency with two skills of your choice from Intimidation, Investigation, and Performance. You also gain proficiency with light armor, shields, and simple weapons. You can cast your elementalist spells even when your hands are holding weapons or shields, performing the necessary gestures to cast them.</p>
+            <p class="indent">When wielding a weapon, your melee weapon attack rolls can use your Wisdom modifier instead of Strength or Dexterity. This modifier also applies to damage rolls from the 6th level.</p>
         </description>
         <sheet>
-            <description>You can cast your elementalist spells even when
-your hands are holding weapons or shields, performing the
-necessary gestures to cast them. When wielding a weapon, your melee weapon attack
-rolls can use your Wisdom modifier instead of Strength
-or Dexterity. This modifier also applies to damage rolls
-from the 6th level.</description>
+            <description>You can cast your elementalist spells even when your hands are holding weapons or shields, performing the necessary gestures to cast them. When wielding a weapon, your melee weapon attack rolls can use your Wisdom modifier instead of Strength or Dexterity. This modifier also applies to damage rolls from the 6th level.</description>
         </sheet>
         <rules>
             <select type="Proficiency" name="Skill Proficiency (Flame Brilliance)" number="2" supports="ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_PERFORMANCE" />
@@ -119,9 +102,7 @@ from the 6th level.</description>
     </element>
     <element name="Fiery Reprisal" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_ELEMENTALIST_FIRE_FIERY_REPRISAL">
         <description>
-            <p>Starting at 6th level, when you are the target of an attack, you
-can take a reaction to make a melee weapon attack against
-an enemy within range.</p>
+            <p>Starting at 6th level, when you are the target of an attack, you can take a reaction to make a melee weapon attack against an enemy within range.</p>
         </description>
         <sheet usage="Reaction">
             <description>when you are the target of an attack, you can take a reaction to make a melee weapon attack against an enemy within range.</description>
@@ -129,34 +110,19 @@ an enemy within range.</p>
     </element>
     <element name="Burning Inspiration" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_ELEMENTALIST_FIRE_BURNING_INSPIRATION">
         <description>
-            <p>Starting at 10th level, you can use your connection with
-Fire to inspire your allies. As a bonus action, you can imbue
-yourself and all allies within 30 feet of you with the power
-of flames, granting them an extra 1d6 fire damage to all
-unarmed, weapon, or spell attacks. This effect lasts for 1
-minute. After using this ability, you can’t use it again until
-you complete a long rest.</p>
+            <p>Starting at 10th level, you can use your connection with Fire to inspire your allies. As a bonus action, you can imbue yourself and all allies within 30 feet of you with the power of flames, granting them an extra 1d6 fire damage to all unarmed, weapon, or spell attacks. This effect lasts for 1 minute. After using this ability, you can’t use it again until you complete a long rest.</p>
             <p class="indent"></p>
         </description>
         <sheet usage="1/long rest">
-            <description>As a bonus action, you can imbue
-yourself and all allies within 30 feet of you with the power
-of flames, granting them an extra 1d6 fire damage to all
-unarmed, weapon, or spell attacks. This effect lasts for 1
-minute. After using this ability, you can’t use it again until
-you complete a long rest.</description>
+            <description>As a bonus action, you can imbue yourself and all allies within 30 feet of you with the power of flames, granting them an extra 1d6 fire damage to all unarmed, weapon, or spell attacks. This effect lasts for 1 minute. After using this ability, you can’t use it again until you complete a long rest.</description>
         </sheet>
     </element>
     <element name="Second Surge" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_ELEMENTALIST_FIRE_SECOND_SURGE">
         <description>
-            <p>At 14th level, when using a spell slot to augment your elemental surge cantrip, you can use this cantrip again on the
-next turn, as an action, as if you had spent a spell slot one
-level lower.</p>
+            <p>At 14th level, when using a spell slot to augment your elemental surge cantrip, you can use this cantrip again on the next turn, as an action, as if you had spent a spell slot one level lower.</p>
         </description>
         <sheet>
-            <description>when using a spell slot to augment your elemental surge cantrip, you can use this cantrip again on the
-next turn, as an action, as if you had spent a spell slot one
-level lower.</description>
+            <description>when using a spell slot to augment your elemental surge cantrip, you can use this cantrip again on the next turn, as an action, as if you had spent a spell slot one level lower.</description>
         </sheet>
     </element>
 </elements>

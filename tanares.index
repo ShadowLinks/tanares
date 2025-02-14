@@ -4,7 +4,7 @@
 		<name>Tanares</name>
 		<description>Supplements from Tanares RPG 5E to expand your core gaming elements.</description>
 		<author url="https://dragorigames.com/">Dragori Games</author>
-		<update version="0.0.17">
+		<update version="0.0.18">
 			<file name="tanares.index" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/tanares.index" />
 		</update>
 	</info>
@@ -60,5 +60,12 @@
 		<file name="dragonblade-celerityofthebluedragon.xml" url="https://github.com/ShadowLinks/tanares/raw/refs/heads/main/subclasses/dragonblade-celerityofthebluedragon.xml" />
 		<file name="dragonblade-integrityofthewhitedragon.xml" url="https://github.com/ShadowLinks/tanares/raw/refs/heads/main/subclasses/dragonblade-integrityofthewhitedragon.xml" />
 		<file name="draconicpowers.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/classes/draconicpowers.xml"/>
+
+		<file name="class-elementalist.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/classes/class-elementalist.xml" />
+		<file name="elementalist-air.xml" url="https://github.com/ShadowLinks/tanares/raw/refs/heads/main/subclasses/elementalist-air.xml" />
+		<file name="elementalist-earth.xml" url="https://github.com/ShadowLinks/tanares/raw/refs/heads/main/subclasses/elementalist-earth.xml" />
+		<file name="elementalist-fire.xml" url="https://github.com/ShadowLinks/tanares/raw/refs/heads/main/subclasses/elementalist-fire.xml" />
+		<file name="elementalist-water.xml" url="https://github.com/ShadowLinks/tanares/raw/refs/heads/main/subclasses/elementalist-water.xml" />
+		<file name="espells.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/classes/espells.xml"/>
 	</files>
 </index>

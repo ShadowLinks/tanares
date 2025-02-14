@@ -32,12 +32,7 @@
     </element>
     <element name="Primary Element" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_ELEMENTALIST_EARTH_PRIMARY">
         <description>
-            <p>Elementalists who choose this Primordial Element are
-strongly linked to law, resolution, stability, and strength.
-By choosing Earth as your Primordial Element, you can learn
-Earth, Water, and Fire spells, with the latter two being your
-secondary elements, and you will know the fusion element
-spells of Lava and Plant.</p>
+            <p>Elementalists who choose this Primordial Element are strongly linked to law, resolution, stability, and strength. By choosing Earth as your Primordial Element, you can learn Earth, Water, and Fire spells, with the latter two being your secondary elements, and you will know the fusion element spells of Lava and Plant.</p>
         </description>
         <sheet>
             <description>Your Primary element is Earth. Water and Fire elements are your secondary elements. Plant and Lava are your fusion elements.</description>
@@ -92,20 +87,10 @@ spells of Lava and Plant.</p>
     </element>
     <element name="Grounded Learnings" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_ELEMENTALIST_EARTH_GROUNDED_LEARNINGS">
         <description>
-            <p>At 1st level, the endurance and stability of Earth grant you
-new abilities. You gain proficiency with two skills of your
-choice from Athletics, History, and Survival. Your hit point
-maximum increases by 1 at the first level, and by an additional 1 each time you gain an elementalist level. When not
-wearing any armor or shield, your Armor Class is determined
-as 10 + your Constitution modifier + your Wisdom modifier,
-replacing the usual Dexterity modifier.</p>
+            <p>At 1st level, the endurance and stability of Earth grant you new abilities. You gain proficiency with two skills of your choice from Athletics, History, and Survival. Your hit point maximum increases by 1 at the first level, and by an additional 1 each time you gain an elementalist level. When not wearing any armor or shield, your Armor Class is determined as 10 + your Constitution modifier + your Wisdom modifier, replacing the usual Dexterity modifier.</p>
         </description>
         <sheet>
-            <description>Your hit point
-maximum increases by 1 at the first level, and by an additional 1 each time you gain an elementalist level. When not
-wearing any armor or shield, your Armor Class is determined
-as 10 + your Constitution modifier + your Wisdom modifier,
-replacing the usual Dexterity modifier.</description>
+            <description>Your hit point maximum increases by 1 at the first level, and by an additional 1 each time you gain an elementalist level. When not wearing any armor or shield, your Armor Class is determined as 10 + your Constitution modifier + your Wisdom modifier, replacing the usual Dexterity modifier.</description>
         </sheet>
         <rules>
             <select type="Proficiency" name="Skill Proficiency (Grounded Learnings)" number="2" supports="ID_PROFICIENCY_SKILL_ATHELETICS|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_SURVIVAL" />
@@ -122,20 +107,10 @@ replacing the usual Dexterity modifier.</description>
     </element>
     <element name="Earth Sense" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_ELEMENTALIST_EARTH_EARTH_SENSE">
         <description>
-            <p>At 6th level, your bond with the earth allows you to sense its
-shapes and forms. You gain a tremorsense with a range of 30
-feet. Aditionally, as a bonus action, you can emit a harmless
-shockwave, identifying all terrains, walls, doors, passages,
-objects, and creatures within a 90-foot radius and pinpointing their exact locations. This ability can be used a number
-of times equal to your proficiency bonus plus your Wisdom
-modifier, regaining all when you finish after a long rest.</p>
+            <p>At 6th level, your bond with the earth allows you to sense its shapes and forms. You gain a tremorsense with a range of 30 feet. Aditionally, as a bonus action, you can emit a harmlessshockwave, identifying all terrains, walls, doors, passages, objects, and creatures within a 90-foot radius and pinpointing their exact locations. This ability can be used a number of times equal to your proficiency bonus plus your Wisdom modifier, regaining all when you finish after a long rest.</p>
         </description>
         <sheet usage="{{earthsensecount}}/long rest">
-            <description>As a bonus action, you can emit a harmless
-shockwave, identifying all terrains, walls, doors, passages,
-objects, and creatures within a 90-foot radius and pinpointing their exact locations. This ability can be used a number
-of times equal to your proficiency bonus plus your Wisdom
-modifier, regaining all when you finish after a long rest.</description>
+            <description>As a bonus action, you can emit a harmless shockwave, identifying all terrains, walls, doors, passages, objects, and creatures within a 90-foot radius and pinpointing their exact locations. This ability can be used a number of times equal to your proficiency bonus plus your Wisdom modifier, regaining all when you finish after a long rest.</description>
         </sheet>
         <rules>
             <stat name="tremorsense:range" value="30" bonus="base" />
@@ -145,22 +120,11 @@ modifier, regaining all when you finish after a long rest.</description>
     </element>
     <element name="Earth Shield" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_ELEMENTALIST_EARTH_EARTH_SHIELD">
         <description>
-            <p>Starting at 10th level, if you are not surprised, you can take
-a reaction to form a rock shield in response to an attack or a
-Strength, Dexterity, or Constitution saving throw. This stone
-shield provides a bonus to your AC and saves equal to your
-Wisdom modifier, lasting until the start of your next turn.
-This ability can be used twice, regaining all uses when you
-finish a short or long rest.</p>
+            <p>Starting at 10th level, if you are not surprised, you can take a reaction to form a rock shield in response to an attack or a Strength, Dexterity, or Constitution saving throw. This stone shield provides a bonus to your AC and saves equal to your Wisdom modifier, lasting until the start of your next turn. This ability can be used twice, regaining all uses when you finish a short or long rest.</p>
             <p class="indent"></p>
         </description>
         <sheet usage="2/short rest">
-            <description>if you are not surprised, you can take
-a reaction to form a rock shield in response to an attack or a
-Strength, Dexterity, or Constitution saving throw. This stone
-shield provides a bonus to your AC {{wisdom:modifier}}, lasting until the start of your next turn.
-This ability can be used twice, regaining all uses when you
-finish a short or long rest.</description>
+            <description>if you are not surprised, you can take a reaction to form a rock shield in response to an attack or a Strength, Dexterity, or Constitution saving throw. This stone shield provides a bonus to your AC {{wisdom:modifier}}, lasting until the start of your next turn. This ability can be used twice, regaining all uses when you finish a short or long rest.</description>
         </sheet>
         <rules>
             
@@ -168,52 +132,10 @@ finish a short or long rest.</description>
     </element>
     <element name="Tomb of Invulnerablity" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_ELEMENTALIST_EARTH_TOMB_OF_INVULNERABLITY">
         <description>
-            <p>At 14th level, when targeted or affected by an attack, spell,
-or any effect except divine intervention, you can use your
-reaction to manifest an invincible stone tomb for protection.
-Weighing 12,000 pounds, this tomb is impervious to
-all but divine intervention. Inside the tomb, you
-are immune to all damage and any physical,
-mental, or magical effects. However, you
-also become incapacitated, unable to perform actions, reactions, bonus actions,
-speak, or issue mental commands. No
-communication can penetrate the tomb,
-but you retain your tremorsense, with its
-range extended to 120 feet within the tomb.
-You can choose to end this effect at the
-start of each turn, causing the tomb to
-dematerialize instantly. Any effects or
-conditions affecting you prior to entering the tomb are suspended while inside,
-nullifying their effects but also halting
-their duration. Inside the tomb, you are
-unaffected by hunger, thirst, and don’t need
-to breathe, but you continue aging normally.
-It is not possible to take rests within the tomb.
-This feature can’t be used again until you complete a long rest.</p>
+            <p>At 14th level, when targeted or affected by an attack, spell, or any effect except divine intervention, you can use your reaction to manifest an invincible stone tomb for protection. Weighing 12,000 pounds, this tomb is impervious to all but divine intervention. Inside the tomb, you are immune to all damage and any physical, mental, or magical effects. However, you also become incapacitated, unable to perform actions, reactions, bonus actions, speak, or issue mental commands. No communication can penetrate the tomb, but you retain your tremorsense, with its range extended to 120 feet within the tomb. You can choose to end this effect at the start of each turn, causing the tomb to dematerialize instantly. Any effects or conditions affecting you prior to entering the tomb are suspended while inside, nullifying their effects but also halting their duration. Inside the tomb, you are unaffected by hunger, thirst, and don’t need  to breathe, but you continue aging normally. It is not possible to take rests within the tomb. This feature can’t be used again until you complete a long rest.</p>
         </description>
         <sheet usage="1/long rest">
-            <description>When targeted or affected by an attack, spell,
-or any effect except divine intervention, you can use your
-reaction to manifest an invincible stone tomb for protection.
-Weighing 12,000 pounds, this tomb is impervious to
-all but divine intervention. Inside the tomb, you
-are immune to all damage and any physical,
-mental, or magical effects. However, you
-also become incapacitated, unable to perform actions, reactions, bonus actions,
-speak, or issue mental commands. No
-communication can penetrate the tomb,
-but you retain your tremorsense, with its
-range extended to 120 feet within the tomb.
-You can choose to end this effect at the
-start of each turn, causing the tomb to
-dematerialize instantly. Any effects or
-conditions affecting you prior to entering the tomb are suspended while inside,
-nullifying their effects but also halting
-their duration. Inside the tomb, you are
-unaffected by hunger, thirst, and don’t need
-to breathe, but you continue aging normally.
-It is not possible to take rests within the tomb.
-This feature can’t be used again until you complete a long rest.</description>
+            <description>When targeted or affected by an attack, spell, or any effect except divine intervention, you can use your reaction to manifest an invincible stone tomb for protection. Weighing 12,000 pounds, this tomb is impervious to all but divine intervention. Inside the tomb, you are immune to all damage and any physical, mental, or magical effects. However, you also become incapacitated, unable to perform actions, reactions, bonus actions, speak, or issue mental commands. No communication can penetrate the tomb, but you retain your tremorsense, with its range extended to 120 feet within the tomb. You can choose to end this effect at the start of each turn, causing the tomb to dematerialize instantly. Any effects or conditions affecting you prior to entering the tomb are suspended while inside, nullifying their effects but also halting their duration. Inside the tomb, you are unaffected by hunger, thirst, and don’t need to breathe, but you continue aging normally. It is not possible to take rests within the tomb. This feature can’t be used again until you complete a long rest.</description>
         </sheet>
     </element>
 </elements>

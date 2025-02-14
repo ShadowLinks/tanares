@@ -87,19 +87,10 @@
     </element>
     <element name="Wind Wisdom" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_ELEMENTALIST_AIR_WIND_WISDOM">
         <description>
-            <p>Starting at 1st level, the liberty and adaptability of the
-air bestow you with new
-skills. You gain proficiency with two skills of your
-choice from Acrobatics,
-Deception, Persuasion, and
-Stealth. Additionally, you gain
-the ability to use the Disengage and
-Hide actions as a bonus action, and reduce the height of any fall by 30 feet when calculating falling damage.</p>
+            <p>Starting at 1st level, the liberty and adaptability of the air bestow you with new skills. You gain proficiency with two skills of your choice from Acrobatics, Deception, Persuasion, and Stealth. Additionally, you gain the ability to use the Disengage and Hide actions as a bonus action, and reduce the height of any fall by 30 feet when calculating falling damage.</p>
         </description>
         <sheet>
-            <description>you gain
-the ability to use the Disengage and
-Hide actions as a bonus action, and reduce the height of any fall by 30 feet when calculating falling damage.</description>
+            <description>you gain the ability to use the Disengage and Hide actions as a bonus action, and reduce the height of any fall by 30 feet when calculating falling damage.</description>
         </sheet>
         <rules>
             <select type="Proficiency" name="Skill Proficiency (Wind Wisdom)" number="2" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_STEALTH" />
@@ -107,13 +98,10 @@ Hide actions as a bonus action, and reduce the height of any fall by 30 feet whe
     </element>
     <element name="Swift and Graceful" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_ELEMENTALIST_AIR_SWIFT_AND_GRACEFUL">
         <description>
-            <p>At 6th level, you gain proficiency in Dexterity saving
-throws, have advantage on initiative rolls, and your ranged
-spell attacks ignore half cover and three-quarter cover.</p>
+            <p>At 6th level, you gain proficiency in Dexterity saving throws, have advantage on initiative rolls, and your ranged spell attacks ignore half cover and three-quarter cover.</p>
         </description>
         <sheet>
-            <description>You have advantage on initiative rolls, and your ranged
-spell attacks ignore half cover and three-quarter cover.</description>
+            <description>You have advantage on initiative rolls, and your ranged spell attacks ignore half cover and three-quarter cover.</description>
         </sheet>
         <rules>
             <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" />
@@ -121,11 +109,8 @@ spell attacks ignore half cover and three-quarter cover.</description>
     </element>
     <element name="Soul of the Wind" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_ELEMENTALIST_AIR_SOUL_OF_THE_WIND">
         <description>
-            <p>At 10th level, your bond with air allows you to fly. You
-gain a flying speed that equals your walking speed.</p>
-            <p class="indent">Additionally, as a bonus action, you can become invisible for a minute or until you make an attack or cast
-a spell. You can use this ability once, regaining its use
-after a short or long rest.</p>
+            <p>At 10th level, your bond with air allows you to fly. You gain a flying speed that equals your walking speed.</p>
+            <p class="indent">Additionally, as a bonus action, you can become invisible for a minute or until you make an attack or cast a spell. You can use this ability once, regaining its use after a short or long rest.</p>
         </description>
         <sheet usage="1/short rest">
             <description>As a bonus action, you can become invisible for a minute or until you make an attack or cast a spell. You can use this ability once, regaining its use after a short or long rest.</description>
@@ -136,22 +121,10 @@ after a short or long rest.</p>
     </element>
     <element name="Air Body" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_ELEMENTALIST_AIR_AIR_BODY">
         <description>
-            <p>Starting at 14th level, you can use your bonus action to
-channel the energy of air and become ethereal for 1 minute.
-This enables you to move through spaces occupied by obstructions and creatures without penalty, and move without
-provoking attacks of opportunity. For the duration, you also
-gain resistance to all non-magical bludgeoning, piercing,
-or slashing damage, and immunity to the grappled condition. You cannot use this feature again until you complete
-a long rest.</p>
+            <p>Starting at 14th level, you can use your bonus action to channel the energy of air and become ethereal for 1 minute. This enables you to move through spaces occupied by obstructions and creatures without penalty, and move without provoking attacks of opportunity. For the duration, you also gain resistance to all non-magical bludgeoning, piercing, or slashing damage, and immunity to the grappled condition. You cannot use this feature again until you complete a long rest.</p>
         </description>
         <sheet usage="1/long rest">
-            <description>You can use your bonus action to
-channel the energy of air and become ethereal for 1 minute.
-This enables you to move through spaces occupied by obstructions and creatures without penalty, and move without
-provoking attacks of opportunity. For the duration, you also
-gain resistance to all non-magical bludgeoning, piercing,
-or slashing damage, and immunity to the grappled condition. You cannot use this feature again until you complete
-a long rest.</description>
+            <description>You can use your bonus action to channel the energy of air and become ethereal for 1 minute. This enables you to move through spaces occupied by obstructions and creatures without penalty, and move without provoking attacks of opportunity. For the duration, you also gain resistance to all non-magical bludgeoning, piercing, or slashing damage, and immunity to the grappled condition. You cannot use this feature again until you complete a long rest.</description>
         </sheet>
     </element>
 </elements>
