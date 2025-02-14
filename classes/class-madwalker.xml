@@ -18,7 +18,7 @@
             <p class="indent">Ostracized by society as deranged and tainted, madwalkers dwell on the fringes of civilization. Yet their unique ability to withstand the Penumbra’s insidious corruption, navigate its treacherous landscapes, and confront its dark horrors with lethal precision make them invaluable allies to mighty kingdoms and influential organizations.</p>
             <p class="indent">Delving into the abyss of their own madness, madwalkers manifest their innermost nightmares in corporeal form. At the zenith of their insanity, they can temporarily assume the guise of a penumbral monstrosity, granting them immense power. However, this metamorphosis demands a terrible price, leaving them enfeebled in its aftermath.</p>
             <p class="indent">The madwalker’s journey is a precarious balancing act between their humanity and the source of their power — the insanity that threatens to consume them. They navigate a treacherous path fraught with daunting challenges as they trive to maintain their sanity while wielding the unfettered power of their nightmares. Those who master this power can unleash a force beyond the comprehension of mere mortals.</p>
-            <h4>Fighting madness with madness</h4>
+            <h4>FIGHTING MADNESS WITH MADNESS</h4>
             <p>The madwalkers hold the ability to harness the chaotic essence of their fragmented psyche, channeling the eldritch terrors of the Penumbra as potent weapons. These tainted warriors stand unbowed in the relentless battle against the festering malignancy that lurks deep within the world’s core. Bound to the Penumbra by the torment of their shattered minds, madwalkers possess an innate sense for detecting penumbral beings, portals, and rifts, allowing them to relentlessly pursue their prey through the darkest recesses of existence.</p>
             <p class="indent">Masterful madwalkers wield the power to conjure temporary penumbral rifts—interdimensional gateways that forge a tenuous connection between the nightmarish realm and the Material Plane. This unparalleled mastery makes them invaluable allies in the age-old struggle against the dreaded Ungods, as they can skillfully enter or exit the Penumbral Plane to confront the eldritch horrors that lie hidden within.</p>
             <p class="indent">However, the Penumbra’s power demands a dire sacrifice. Madwalkers teeter precariously on the brink between the fragile bounds of sanity and the unfathomable abyss of madness. In moments of utmost desperation, a madwalker may choose to embrace their darkest nightmares, undergoing a horrifying transfiguration into a fearsome penumbral monstrosity. This metamorphosis allows them to assume the form of one of the many penumbral creatures, such as emoguns, Watchers, or even arachnes, depending on their source of power. In doing so, they gain immense strength and resilience, but at the perilous cost of potentially succumbing to the Penumbra’s all-consuming lunacy</p>
@@ -103,18 +103,18 @@
             <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" />
             <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" />
             <select type="Proficiency" name="Skill Proficiency (Madwalker)" number="3" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_SURVIVAL" />
-            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_MADWALKER_ABERRANT_MUTATION" level="level" />
-            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_MADWALKER_PENUMBRAL_SHAPE" level="level" />
-            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_MADWALKER_TRAILS_OF_MADNESS" level="level" />
-            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_MADWALKER_SHADOW_SENSE" level="level" />
-            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_MADWALKER_BLADES_OF_MADNESS" level="level" />
-            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_MADWALKER_ASI" level="level" />
-            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_MADWALKER_EXTRA_ATTACK" level="level" />
-            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_MADWALKER_ABERRANT_MIND" level="level" />
-            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_MADWALKER_WARPED_MORPHOLOGY" level="level" />
-            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_MADWALKER_PENUMBRAL_SHIFT" level="level" />
-            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_MADWALKER_PENUMBRAL_PORTAL" level="level" />
-            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_MADWALKER_WAKING_NIGHTMARE" level="level" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_MADWALKER_ABERRANT_MUTATION" level="1" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_MADWALKER_PENUMBRAL_SHAPE" level="1" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_MADWALKER_TRAILS_OF_MADNESS" level="2" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_MADWALKER_SHADOW_SENSE" level="3" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_MADWALKER_BLADES_OF_MADNESS" level="3" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_MADWALKER_ASI" level="4" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_MADWALKER_EXTRA_ATTACK" level="5" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_MADWALKER_ABERRANT_MIND" level="6" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_MADWALKER_WARPED_MORPHOLOGY" level="10" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_MADWALKER_PENUMBRAL_SHIFT" level="11" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_MADWALKER_PENUMBRAL_PORTAL" level="15" />
+            <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_MADWALKER_WAKING_NIGHTMARE" level="20" />
         </rules>
     </element>
     <element name="Aberrant Mutation" type="Class Feature" source="source" id="ID_TRPG_CLASS_FEATURE_MADWALKER_ABERRANT_MUTATION">
@@ -140,95 +140,623 @@
             </table>
         </description>
         <sheet>
-            <description></description>
+            <description>You may only use 1 Aberrant Mutation per round, but you can have more than 1 active. Your Insanity point max is {{insanity-points}}. You have a -1  Attack/AC/Save penalty at every 25% of your max insanity points.When you reach maximum Insanity, you transform into a Penumbral Shape. After the transformation ends, you remain at maximum Insanity and stop gaining points (keeping the penalties). You lose all Insanity Points after finishing a long rest.</description>
         </sheet>
+        <rules>
+            <stat name="Madwalker:spellcasting:slots:1" value="1" level="1"/>
+            <stat name="Madwalker:spellcasting:slots:2" value="1" level="5"/>
+            <stat name="Madwalker:spellcasting:slots:3" value="1" level="9"/>
+            <stat name="Madwalker:spellcasting:slots:4" value="1" level="13"/>
+            <stat name="Madwalker:spellcasting:slots:5" value="1" level="17"/>
+            <stat name="insanity-points" value="12" />
+            <stat name="insanity-points" value="12" level="5"/>
+            <stat name="insanity-points" value="12" level="9"/>
+            <stat name="insanity-points" value="12" level="13"/>
+            <stat name="insanity-points" value="12" level="17"/>
+            <grant type="Spell" id="ID_TRPG_ABERRANT_MUTATION_DARK_ENERGY" spellcasting="Madwalker" />
+            <select type="Spell" supports="aberrant-mutation,$(spellcasting:slots)" spellcasting="Madwalker" />
+        </rules>
+        <spellcasting name="Madwalker" ability="Wisdom" prepare="false" />
     </element>
     <element name="Penumbral Shape" type="Class Feature" source="source" id="ID_TRPG_CLASS_FEATURE_MADWALKER_PENUMBRAL_SHAPE">
         <description>
-            <p></p>
+            <p>When you reach the maximum number of Insanity Points indicated on the table, your shape becomes that of a penumbral creature for as many minutes as your madwalker level. You automatically revert to your normal form if you fall unconscious, drop to 0 hit points, or die.</p>
+            <p class="indent">Each level grants you access to new Penumbral Shapes, according to the following table:</p>
+            <table>
+                <thead>
+                    <tr><td>Level</td><td>Basic(Aspect)</td><td>Aberrant Arachnid Trail</td><td>Nightmare's Augury Trail</td></tr>
+                </thead>
+                <tr><td>1</td><td>Gluttony</td><td>-</td><td>-</td></tr>
+                <tr><td>2</td><td>-</td><td>Arachne Serf</td><td>Nightmare Lurker</td></tr>
+                <tr><td>3</td><td>Envy</td><td>Arachne Scout</td><td>Nightmare Keeper</td></tr>
+                <tr><td>4</td><td>Disgust</td><td>Arachne Soldier</td><td>Nightmare Guardian</td></tr>
+                <tr><td>5</td><td>Sloth</td><td>Arachne Ambusher</td><td>Nightmare Warrior</td></tr>
+                <tr><td>6</td><td>Pain</td><td>Arachne Hunter</td><td>Nightmare Overseer</td></tr>
+                <tr><td>7</td><td>Lust</td><td>Arachne Sorcerer</td><td>Nightmare Eye</td></tr>
+                <tr><td>8</td><td>Sadness</td><td>Arachne Noble</td><td>Nightmare Oppressor</td></tr>
+                <tr><td>9</td><td>Pride</td><td>Arachne Commander</td><td>Nightmare Lord</td></tr>
+                <tr><td>10</td><td>Greed</td><td>Arachne Overlord</td><td>Nightmare Vizir</td></tr>
+                <tr><td>11</td><td>Fear</td><td>Arachne Matriarch</td><td>Nightmare Tyrant</td></tr>
+            </table>
+            <p class="indent">You have access to the basic shapes and, starting at 2nd level, you also have access to the shapes from your Trail of Madness, as shown in the table. When this ability activates, choose and transform into one of the basic or trail shapes available. If there is not enough space for your chosen shape to fit, the transformation fails and you lose its use.</p>
+            <p class="indent">While you are transformed, the following rules apply:</p>
+            <ul>
+                <li>All attacks, damaging spells, and effects from your shape deal 1d4 extra damage, increasing to 2d4 at 6th level, 3d4 at 12th level, and 4d4 at 18th level</li>
+                <li>Your game statistics are replaced by those of the penumbral creature, but you retain your alignment, personality, Intelligence, Wisdom, and Charisma scores. You also retain all of your skill and saving throw proficiencies, in addition to gaining the creature’s Intelligence, Wisdom, and Charisma saving throw proficiencies, and all other proficiencies it may have. If the penumbral creature has the same proficiency as you and the bonus in its stat block is higher than yours, use the creature’s bonus instead of yours.</li>
+                <li>While in your Penumbral Shape, you may not activate Aberrant Mutations, cast spells, or use any of your original form’s skills. Any active Aberrant Mutation ends immediately. Except for your proficiencies, mental abilities, and Blades of Madness feature, you only have access to the skills and features of your Penumbral Shape.</li>
+                <li>The Insanity Steps table penalties do not apply while in this form.</li>
+                <li>The transformation automatically interrupts your concentration in spells and features you may have already cast or activated.</li>
+                <li>When you transform, you assume the creature’s maximum hit points and Hit Dice. When you revert to your normal form, you return to the number of hit points you had before you transformed. However, if you revert as a result of dropping to 0 hit points, any excess damage carries over to your normal form. For example, if your Penumbral Shape has 1 hit point left and you take 10 damage, you revert and your normal form takes 9 damage. As long as the excess damage doesn’t reduce your normal form to 0 hit points, you aren’t knocked unconscious</li>
+                <li>When you transform, you choose whether your equipment falls to the ground in your space, merges into your new form, or is worn by it. Worn equipment functions as normal, but the GM decides whether it is practical for the new form to wear a piece of equipment based on the creature’s shape and size. The equipment doesn’t change size or shape to match the new form, and any equipment that the new form can’t wear must either fall to the ground or merge with it. Equipment that merges with the form has no effect until you leave the form.</li>
+            </ul>
         </description>
         <sheet>
-            <description></description>
+            <description>You have access to the basic Penumbral Shapes and can transform for {{level}} minutes. If you transform without enough space the transformation fails. Your shapes do {{shapedmg}}d4 extra damage. You retain your alignment, personality, Intelligence, Wisdom, and Charisma scores. You also retain all of your skill and saving throw proficiencies, in addition to gaining the creature’s Intelligence, Wisdom, and Charisma saving throw proficiencies, and all other proficiencies it may have. If the penumbral creature has the same proficiency as you and the bonus in its stat block is higher than yours, use the creature’s bonus instead of yours. you may not activate Aberrant Mutations, cast spells, or use any of your original form’s skills. Any active Aberrant Mutation ends immediately. Except for your proficiencies, mental abilities, and Blades of Madness feature, you only have access to the skills and features of your Penumbral Shape. The Insanity Steps table penalties do not apply while in this form. The transformation automatically interrupts your concentration in spells and features you may have already cast or activated.</description>
         </sheet>
+        <rules>
+            <select type="Companion" name="Penumbral Shape " supports="penumbral-shape"/>
+            <stat name="shapedmg" value="1" />
+            <stat name="shapedmg" value="1" level="6" />
+            <stat name="shapedmg" value="1" level="12" />
+            <stat name="shapedmg" value="1" level="18" /> 
+             
+        </rules>
     </element>
     <element name="Trail of Madness" type="Class Feature" source="source" id="ID_TRPG_CLASS_FEATURE_MADWALKER_TRAILS_OF_MADNESS">
         <description>
-            <p></p>
+            <p>At 2nd level, you are able to manifest one of the powerful creatures of the Penumbral Plane. Choose between the Nightmare Augury Trail or the Aberrant Arachnid Trail. Each trail offers unique Aberrant Mutations, Penumbral Shapes, and features at the 2nd, 7th, 14th, and 18th levels.</p>
         </description>
-        <sheet>
+        <sheet display="false">
             <description></description>
         </sheet>
+        <rules>
+            <select type="Archetype" name="Trail of Madness" supports="trail-of-madness"/>
+        </rules>
     </element>
     <element name="Shadow Sense" type="Class Feature" source="source" id="ID_TRPG_CLASS_FEATURE_MADWALKER_SHADOW_SENSE">
         <description>
-            <p></p>
+            <p>At 3rd level, your mental bond with the realm of nightmares deepens, enhancing your sense of reality. You gain advantage on all Wisdom checks and saving throws against environmental effects in the Penumbral Plane. However, while interacting with beings from the Material Plane, excluding other madwalkers, you suffer disadvantage on all Charisma checks, except Intimidation.</p>
+            <p class="indent">In addition, you are adept at locating portals and rifts leading to and from the Penumbral Plane, being aware of their distance, direction, and size within a 1-mile radius.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You gain advantage on all Wisdom checks and saving throws against environmental effects in the Penumbral Plane. However, while interacting with beings from the Material Plane, excluding other madwalkers, you suffer disadvantage on all Charisma checks, except Intimidation. You are adept at locating portals and rifts leading to and from the Penumbral Plane, being aware of their distance, direction, and size within a 1-mile radius.</description>
         </sheet>
     </element>
     <element name="Blades of Madness" type="Class Feature" source="source" id="ID_TRPG_CLASS_FEATURE_MADWALKER_BLADES_OF_MADNESS">
         <description>
-            <p></p>
+            <p>At 3rd level, you can materialize your nightmares and distort reality. When you use an Aberrant Mutation, you may reroll any number of damage dice until the end of your turn, using the second result. Even in your Penumbral Shape, you can apply this ability to all damage dice.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When you use an Aberrant Mutation, you may reroll any number of damage dice until the end of your turn, using the second result. Even in your Penumbral Shape, you can apply this ability to all damage dice.</description>
         </sheet>
     </element>
     <element name="Ability Score Improvement" type="Class Feature" source="source" id="ID_TRPG_CLASS_FEATURE_MADWALKER_ASI">
         <description>
-            <p></p>
+            <p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
         </description>
-        <sheet>
-            <description></description>
-        </sheet>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Improvement Option (Madwalker 4)" supports="Improvement Option,Madwalker,4" level="4"/>
+            <select type="Class Feature" name="Improvement Option (Madwalker 8)" supports="Improvement Option,Madwalker,8" level="8"/>
+            <select type="Class Feature" name="Improvement Option (Madwalker 12)" supports="Improvement Option,Madwalker,12" level="12"/>
+            <select type="Class Feature" name="Improvement Option (Madwalker 16)" supports="Improvement Option,Madwalker,16" level="16"/>
+            <select type="Class Feature" name="Improvement Option (Madwalker 19)" supports="Improvement Option,Madwalker,19" level="19"/>
+        </rules>
+    
     </element>
     <element name="Extra Attack" type="Class Feature" source="source" id="ID_TRPG_CLASS_FEATURE_MADWALKER_EXTRA_ATTACK">
         <description>
-            <p></p>
+            <p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+            
         </description>
         <sheet>
-            <description></description>
+            <description>You can attack twice, instead of once, whenever you take the Attack action on your turn.</description>
         </sheet>
     </element>
     <element name="Aberrant Mind" type="Class Feature" source="source" id="ID_TRPG_CLASS_FEATURE_MADWALKER_ABERRANT_MIND">
         <description>
-            <p></p>
+            <p>Starting at the 6th level, your proficiency bonus is doubled for saving throws against effects that manipulate your emotions, read your thoughts, cause the charmed condition, or belong to the enchantment or illusion schools. This bonus also applies to saves against spells or effects from aberration creatures or natural creatures of the Penumbral Plane.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>Your proficiency bonus is doubled for saving throws against effects that manipulate your emotions, read your thoughts, cause the charmed condition, or belong to the enchantment or illusion schools. This bonus also applies to saves against spells or effects from aberration creatures or natural creatures of the Penumbral Plane.</description>
         </sheet>
     </element>
     <element name="Warped Morphology" type="Class Feature" source="source" id="ID_TRPG_CLASS_FEATURE_MADWALKER_WARPED_MORPHOLOGY">
         <description>
-            <p></p>
+            <p>Your proximity to the Penumbral Plane energies causes your physiology to become bizarre. Starting at the 10th level, when an enemy scores a critical hit on you, they must re-roll the attack. You can use this ability once, regaining its use after a short or long rest.</p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet usage="1/Long rest">
+            <description>When an enemy scores a critical hit on you, they must re-roll the attack. You can use this ability once, regaining its use after a short or long rest.</description>
         </sheet>
     </element>
     <element name="Penumbral Shift" type="Class Feature" source="source" id="ID_TRPG_CLASS_FEATURE_MADWALKER_PENUMBRAL_SHIFT">
         <description>
-            <p></p>
+            <p>From the 11th level, you can, once per long rest, use an action to transport yourself and your allies to the Penumbral Plane or back to the Material Plane. This feature works similarly to the plane shift spell, but exclusively between the Material Plane and the Penumbral Plane.</p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet usage="1/Long rest">
+            <description>Once per long rest, use an action to transport yourself and your allies to the Penumbral Plane or back to the Material Plane. This feature works similarly to the plane shift spell, but exclusively between the Material Plane and the Penumbral Plane.</description>
         </sheet>
     </element>
     <element name="Penumbral Portal" type="Class Feature" source="source" id="ID_TRPG_CLASS_FEATURE_MADWALKER_PENUMBRAL_PORTAL">
         <description>
-            <p></p>
+            <p>At 15th level, when using your Penumbral Shift ability, you can choose to create a portal from the Penumbral Plane to the Material Plane or vice versa. This 10-foot portal remains open for 1 minute or until you close it using a bonus action. For all other purposes, it functions like the gate spell.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When using your Penumbral Shift ability, you can choose to create a portal from the Penumbral Plane to the Material Plane or vice versa. This 10-foot portal remains open for 1 minute or until you close it using a bonus action. For all other purposes, it functions like the gate spell.</description>
         </sheet>
     </element>
     <element name="Waking Nightmare" type="Class Feature" source="source" id="ID_TRPG_CLASS_FEATURE_MADWALKER_WAKING_NIGHTMARE">
         <description>
-            <p></p>
+            <p>Starting at 20th level, once per long rest, with an action, you can transform into your Penumbral Shape, regardless of how many Madness Points you have. This transformation does not interfere with the transformation resulting from your accumulated Madness Points.</p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet usage="1/Long rest">
+            <description>Once per long rest, with an action, you can transform into your Penumbral Shape, regardless of how many Madness Points you have. This transformation does not interfere with the transformation resulting from your accumulated Madness Points.</description>
         </sheet>
     </element>
+    <element name="Aspect of Gluttony" type="Companion" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_MADWALKER_GLUTTONY">
+        <supports>penumbral-shape</supports>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="strength">14</set>
+            <set name="dexterity">10</set>
+            <set name="constitution">19</set>
+            <set name="intelligence">8</set>
+            <set name="wisdom">12</set>
+            <set name="charisma">5</set>
+            <set name="ac">14</set>
+            <set name="hp">17 (2d8+4)</set>
+            <set name="speed">30 ft.</set>
+            <set name="senses">darkvision 60 ft., passive Perception 11</set>
+            <set name="languages">Deep Speech (understand)</set>
+            <set name="saves">Con +6</set>
+            <set name="resistances">psychic</set>
+            <set name="type">aberration</set>
+            <set name="size">medium</set>
+            <set name="alignment">neutral</set>
+            <set name="challenge">1/2</set>
+            <set name="proficiency">2</set>
+            <set name="actions">ID_TRPG_COMPANION_ACTION_GLUTTONY_RAVENOUS_BITE,ID_TRPG_COMPANION_ACTION_GLUTTONY_DEVOUR</set>
+            <set name="traits">ID_TRPG_COMPANION_TRAIT_GLUTTONY_BLOOD_FRENZY,ID_TRPG_COMPANION_TRAIT_GLUTTONY_SHAPECHANGER,ID_TRPG_COMPANION_TRAIT_GLUTTONY_FALSE_APPEARANCE,ID_TRPG_COMPANION_TRAIT_GLUTTONY_UNWIELDY</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="14"/>
+            <stat name="companion:hp:max" value="17" bonus="base"/>
+            <stat name="companion:speed" value="30" bonus="base"/>
+            <stat name="companion:constitution:save:proficiency" value="companion:proficiency" bonus="base"/>
+              
+        </rules>
+    </element>
+    <element name="Ravenous Bite" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_GLUTTONY_RAVENOUS_BITE">
+        <description>
+            <p>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 9 (2d6 + 2) piercing damage. The Gluttony regains hit points equal to half the damage dealt. If the target is a creature, it must succeed on a DC 11 Constitution saving throw or be cursed with an insatiable hunger. Each curse bestows a level of exhaustion, and multiple curses accumulate. The exhaustion persists until the cursed creature consumes food during a short or long rest, is targeted by a remove curse spell, or consumes a goodberry. Regardless of how many curses have accumulated, fulfilling any of these conditions removes all hunger curses at once.</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 9 (2d6 + 2) piercing damage. The Gluttony regains hit points equal to half the damage dealt. If the target is a creature, it must succeed on a DC 11 Constitution saving throw or be cursed with an insatiable hunger. Each curse bestows a level of exhaustion, and multiple curses accumulate. The exhaustion persists until the cursed creature consumes food during a short or long rest, is targeted by a remove curse spell, or consumes a goodberry. Regardless of how many curses have accumulated, fulfilling any of these conditions removes all hunger curses at once.</description>
+        </sheet>
+    </element>
+    <element name="Devour" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_GLUTTONY_DEVOUR">
+        <description>
+            <p>Gluttony can devour an unconscious or dead creature of medium or small size. If the creature was alive it immediately dies. The Gluttony gains 9 (1d10+4) temporary hit points and resistance against all damage until the start of its next turn.</p>
+        </description>
+        <sheet>
+            <description>Gluttony can devour an unconscious or dead creature of medium or small size. If the creature was alive it immediately dies. The Gluttony gains 9 (1d10+4) temporary hit points and resistance against all damage until the start of its next turn.</description>
+        </sheet>
+    </element>
+    <element name="Blood Frenzy" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_GLUTTONY_BLOOD_FRENZY">
+        <description>
+            <p>The Gluttony has advantage on melee attack rolls against any creature that doesn’t have all its hit points.</p>
+        </description>
+        <sheet>
+            <description>The Gluttony has advantage on melee attack rolls against any creature that doesn’t have all its hit points.</description>
+        </sheet>
+    </element>
+    <element name="Shapechanger" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_GLUTTONY_SHAPECHANGER">
+        <description>
+            <p>The Gluttony can use its action to polymorph in the last thing that it fed upon of huge size or smaller, or back into its true form. Its statistics, other than its size and special move, are the same in each form. Any equipment it is wearing or carrying isn’t transformed. It reverts to its true form if it dies.</p>
+        </description>
+        <sheet>
+            <description>The Gluttony can use its action to polymorph in the last thing that it fed upon of huge size or smaller, or back into its true form. Its statistics, other than its size and special move, are the same in each form. Any equipment it is wearing or carrying isn’t transformed. It reverts to its true form if it dies.</description>
+        </sheet>
+    </element>
+    <element name="False Appearance" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_GLUTTONY_FALSE_APPEARANCE">
+        <description>
+            <p>When the Gluttony assumes the form of a creature it has devoured, it becomes indistinguishable from a normal specimen of that creature’s species. Only a spell such as True Seeing or similar spell of 6th level or higher can reveal the Gluttony’s true form.</p>
+        </description>
+        <sheet>
+            <description>When the Gluttony assumes the form of a creature it has devoured, it becomes indistinguishable from a normal specimen of that creature’s species. Only a spell such as True Seeing or similar spell of 6th level or higher can reveal the Gluttony’s true form.</description>
+        </sheet>
+    </element>
+    <element name="Unwieldy" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_GLUTTONY_UNWIELDY">
+        <description>
+            <p>Other creatures must use 15 feet of movement to try to move the Gluttony 5 feet.</p>
+        </description>
+        <sheet>
+            <description>Other creatures must use 15 feet of movement to try to move the Gluttony 5 feet.</description>
+        </sheet>
+    </element>
+    <element name="Aspect of Envy" type="Companion" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_MADWALKER_ENVY">
+        <supports>penumbral-shape</supports>
+        <requirements>[level:3]</requirements>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="strength">11</set>
+            <set name="dexterity">15</set>
+            <set name="constitution">16</set>
+            <set name="intelligence">4</set>
+            <set name="wisdom">18</set>
+            <set name="charisma">7</set>
+            <set name="ac">15</set>
+            <set name="hp">30 (4d8+12)</set>
+            <set name="speed">30 ft., swim 20 ft.</set>
+            <set name="senses">darkvision 60 ft., passive Perception 16</set>
+            <set name="languages">-</set>
+            <set name="skills">Perception +8</set>
+            <set name="saves">Wis +6</set>
+            <set name="resistances">psychic</set>
+            <set name="type">aberration</set>
+            <set name="size">medium</set>
+            <set name="alignment">neutral evil</set>
+            <set name="challenge">1</set>
+            <set name="proficiency">2</set>
+            <set name="actions">ID_TRPG_COMPANION_ACTION_MADWALKER_ENVY_MULTIATTACK,ID_TRPG_COMPANION_ACTION_MADWALKER_ENVY_BITE,ID_TRPG_COMPANION_ACTION_MADWALKER_ENVY_EYE_OF_ENVY</set>
+            <set name="traits">ID_TRPG_COMPANION_TRAIT_MADWALKER_ENVY_AMPHIBIOUS,ID_TRPG_COMPANION_TRAIT_MADWALKER_ENVY_MAGIC_ENVY,ID_TRPG_COMPANION_TRAIT_MADWALKER_ENVY_PACK_TACTICS</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="15"/>
+            <stat name="companion:hp:max" value="30" bonus="base"/>
+            <stat name="companion:speed" value="30" bonus="base"/>
+            <stat name="companion:speed:swim" value="20" bonus="base"/>
+            <stat name="companion:perception:proficiency" value="companion:proficiency" bonus="double"/>
+            <stat name="companion:wisdom:save:proficiency" value="companion:proficiency" bonus="base"/>
+            
+        </rules>
+    </element>
+    <element name="Multiattack" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_ENVY_MULTIATTACK">
+        <description>
+            <p>The Envy makes two attacks, either two bites or two Eye of Envy attacks.</p>
+        </description>
+        <sheet>
+            <description>The Envy makes two attacks, either two bites or two Eye of Envy attacks.</description>
+        </sheet>
+    </element>
+    <element name="Bite" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_ENVY_BITE">
+        <description>
+            <p>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (1d10 + 2) piercing damage.</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (1d10 + 2) piercing damage.</description>
+        </sheet>
+    </element>
+    <element name="Eye of Envy" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_ENVY_EYE_OF_ENVY">
+        <description>
+            <p>Ranged Spell Attack: +6 to hit, range 60 ft., one target. Hit: 6 (1d4 + 4) psychic damage, and until the start of the Envy’s next turn, whenever the target regains hit points, the Envy regains the same amount.</p>
+        </description>
+        <sheet>
+            <description>Ranged Spell Attack: +6 to hit, range 60 ft., one target. Hit: 6 (1d4 + 4) psychic damage, and until the start of the Envy’s next turn, whenever the target regains hit points, the Envy regains the same amount.</description>
+        </sheet>
+    </element>
+    <element name="Amphibious" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_ENVY_AMPHIBIOUS">
+        <description>
+            <p>The Envy can breathe both air and water.</p>
+        </description>
+        <sheet>
+            <description>The Envy can breathe both air and water.</description>
+        </sheet>
+    </element>
+    <element name="Magic Envy (Recharge 6)" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_ENVY_MAGIC_ENVY">
+        <description>
+            <p> If a 1st or 2nd level spell is cast within the Envy’s line of sight, it can immediately use its reaction to cast the same spell without requiring any components, against a valid target of Envy’s choice. </p>
+        </description>
+        <sheet>
+            <description> If a 1st or 2nd level spell is cast within the Envy’s line of sight, it can immediately use its reaction to cast the same spell without requiring any components, against a valid target of Envy’s choice. </description>
+        </sheet>
+    </element>
+    <element name="Pack Tactics" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_ENVY_PACK_TACTICS">
+        <description>
+            <p>The Envy has advantage on an attack roll against a creature if at least one of the Envy’s allies is within 5 feet of the creature and the ally isn’t incapacitated.</p>
+        </description>
+        <sheet>
+            <description>The Envy has advantage on an attack roll against a creature if at least one of the Envy’s allies is within 5 feet of the creature and the ally isn’t incapacitated.</description>
+        </sheet>
+    </element>
+    <element name="Aspect of Disgust" type="Companion" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_MADWALKER_DISGUST">
+        <supports>penumbral-shape</supports>
+        <requirements>[level:5]</requirements>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="strength">14</set>
+            <set name="dexterity">14</set>
+            <set name="constitution">16</set>
+            <set name="intelligence">10</set>
+            <set name="wisdom">14</set>
+            <set name="charisma">8</set>
+            <set name="ac">15</set>
+            <set name="hp">37 (5d815)</set>
+            <set name="speed">30 ft.</set>
+            <set name="senses">darkvision 60 ft., passive Perception 12</set>
+            <set name="languages">Deep Speech, Common</set>
+            <set name="saves">Wis +6</set>
+            <set name="resistances">psychic</set>
+            <set name="immunities">acid</set>
+            <set name="type">aberration</set>
+            <set name="size">medium</set>
+            <set name="alignment">neutral evil</set>
+            <set name="challenge">2</set>
+            <set name="proficiency">2</set>
+            <set name="actions">ID_TRPG_COMPANION_ACTION_MADWALKER_DISGUST_MULTIATTACK,ID_TRPG_COMPANION_ACTION_MADWALKER_DISGUST_GASTRIC_SPIT,ID_TRPG_COMPANION_ACTION_MADWALKER_DISGUST_DISGUSTING_VOMIT</set>
+            <set name="traits">ID_TRPG_COMPANION_TRAIT_MADWALKER_DISGUST_ACID_SKIN,ID_TRPG_COMPANION_TRAIT_MADWALKER_DISGUST_STENCH</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="15"/>
+            <stat name="companion:hp:max" value="13" bonus="base"/>
+            <stat name="companion:speed" value="30" bonus="base"/>
+            <stat name="companion:wisdom:save:proficiency" value="companion:proficiency" bonus="base"/>
+        </rules>
+    </element>
+    <element name="Multiattack" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_DISGUST_MULTIATTACK">
+        <description>
+            <p>The Aspect of Disgust makes three Gastric Spit attacks.</p>
+        </description>
+        <sheet>
+            <description>The Aspect of Disgust makes three Gastric Spit attacks.</description>
+        </sheet>
+    </element>
+    <element name="Gastric Spit" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_DISGUST_GASTRIC_SPIT">
+        <description>
+            <p>Ranged Weapon Attack: +4 to hit, range 30/60 ft., one target. Hit: 7 (1d8 + 2) acid damage.</p>
+        </description>
+        <sheet>
+            <description>Ranged Weapon Attack: +4 to hit, range 30/60 ft., one target. Hit: 7 (1d8 + 2) acid damage.</description>
+        </sheet>
+    </element>
+    <element name="Disgusting Vomit (Recharges 5-6)" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_DISGUST_DISGUSTING_VOMIT">
+        <description>
+            <p>The Aspect of Disgust expels acid in a 15-foot cone. Each creature in that area must make a DC 13 Dexterity saving throw, taking 13 (3d8) acid damage on a failed save, or half as much damage on a successful one. After this initial effect, all creatures within 20 feet of the Aspect of Disgust (whether they were in the cone or not) must succeed on a DC 13 Constitution saving throw or be poisoned until the end of their next turn due to the nauseating sight. On a successful save, the creature is immune to the Aspect of Disgust’s Disgusting Vomit for 24 hours.</p>
+        </description>
+        <sheet>
+            <description>The Aspect of Disgust expels acid in a 15-foot cone. Each creature in that area must make a DC 13 Dexterity saving throw, taking 13 (3d8) acid damage on a failed save, or half as much damage on a successful one. After this initial effect, all creatures within 20 feet of the Aspect of Disgust (whether they were in the cone or not) must succeed on a DC 13 Constitution saving throw or be poisoned until the end of their next turn due to the nauseating sight. On a successful save, the creature is immune to the Aspect of Disgust’s Disgusting Vomit for 24 hours.</description>
+        </sheet>
+    </element>
+    <element name="Acid Skin" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_DISGUST_ACID_SKIN">
+        <description>
+            <p>A creature that touches the Aspect of Disgust or hits it with a melee attack while within 5 feet takes 3 (1d6) acid damage. Each hit on the Aspect of Disgust with a nonmagical weapon made of metal or wood induces corrosion. After dealing damage, the weapon suffers a permanent and cumulative -1 penalty to damage rolls. The weapon is destroyed if the penalty reaches -5. Nonmagical ammunition made of metal or wood that hits the Aspect of Disgust is destroyed after dealing damage.</p>
+        </description>
+        <sheet>
+            <description>A creature that touches the Aspect of Disgust or hits it with a melee attack while within 5 feet takes 3 (1d6) acid damage. Each hit on the Aspect of Disgust with a nonmagical weapon made of metal or wood induces corrosion. After dealing damage, the weapon suffers a permanent and cumulative -1 penalty to damage rolls. The weapon is destroyed if the penalty reaches -5. Nonmagical ammunition made of metal or wood that hits the Aspect of Disgust is destroyed after dealing damage.</description>
+        </sheet>
+    </element>
+    <element name="Stench" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_DISGUST_STENCH">
+        <description>
+            <p>Any creature that starts its turn within 10 feet of the Aspect of Disgust must succeed on a DC 12 Constitution saving throw or be poisoned until the start of its next turn. A creature that successfully saves is immune to the Aspect of Disgust’s stench for the next 24 hours.</p>
+        </description>
+        <sheet>
+            <description>Any creature that starts its turn within 10 feet of the Aspect of Disgust must succeed on a DC 12 Constitution saving throw or be poisoned until the start of its next turn. A creature that successfully saves is immune to the Aspect of Disgust’s stench for the next 24 hours.</description>
+        </sheet>
+    </element>
+    <element name="Aspect of Sloth" type="Companion" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_MADWALKER_SLOTH">
+        <supports>penumbral-shape</supports>
+        <requirements>[level:7]</requirements>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="strength">18</set>
+            <set name="dexterity">14</set>
+            <set name="constitution">16</set>
+            <set name="intelligence">2</set>
+            <set name="wisdom">13</set>
+            <set name="charisma">7</set>
+            <set name="ac">15</set>
+            <set name="hp">52 (7d8+21)</set>
+            <set name="speed">20 ft., burrow 10 ft.</set>
+            <set name="senses">darkvision 60 ft., tremorsense 60 ft., passive Perception 11</set>
+            <set name="saves">Con +5</set>
+            <set name="immunities">psychic</set>
+            <set name="type">aberration</set>
+            <set name="size">medium</set>
+            <set name="alignment">neutral evil</set>
+            <set name="challenge">3</set>
+            <set name="proficiency">2</set>
+            <set name="actions">ID_TRPG_COMPANION_ACTION_MADWALKER_SLOTH_BITE,ID_TRPG_COMPANION_ACTION_MADWALKER_SLOTH_CLAW</set>
+            <set name="traits">ID_TRPG_COMPANION_TRAIT_MADWALKER_SLOTH_SURGE_OF_ACTION,ID_TRPG_COMPANION_TRAIT_MADWALKER_SLOTH_AURA_OF_LAZINESS,ID_TRPG_COMPANION_TRAIT_MADWALKER_SLOTH_REGENERATION</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="15"/>
+            <stat name="companion:hp:max" value="52" bonus="base"/>
+            <stat name="companion:speed" value="20" bonus="base"/>
+            <stat name="companion:speed:burrow" value="10" bonus="base"/>
+            <stat name="companion:constitution:save:proficiency" value="companion:proficiency" bonus="base"/>
+        </rules>
+    </element>
+    <element name="Bite" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_SLOTH_BITE">
+        <description>
+            <p>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 14 (2d6 + 4) piercing damage. The target must make a DC 13 Constitution saving throw, taking 3 (1d6) poison damage, and can’t take reactions until the end of its next turn, with its speed halved until the end of the Sloth’s next turn on a failed save, or half as much damage on a successful one.</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 14 (2d6 + 4) piercing damage. The target must make a DC 13 Constitution saving throw, taking 3 (1d6) poison damage, and can’t take reactions until the end of its next turn, with its speed halved until the end of the Sloth’s next turn on a failed save, or half as much damage on a successful one.</description>
+        </sheet>
+    </element>
+    <element name="Claw" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_SLOTH_CLAW">
+        <description>
+            <p>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8+4) slashing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8+4) slashing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.</description>
+        </sheet>
+    </element>
+    <element name="Surge of Action" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_SLOTH_SURGE_OF_ACTION">
+        <description>
+            <p>As a bonus action, the Sloth can move up to its speed toward a hostile creature that it can see.</p>
+        </description>
+        <sheet>
+            <description>As a bonus action, the Sloth can move up to its speed toward a hostile creature that it can see.</description>
+        </sheet>
+    </element>
+    <element name="Aura of Laziness" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_SLOTH_AURA_OF_LAZINESS">
+        <description>
+            <p>Creatures that start their turn within 15 feet of the Sloths have their movement speed halved for that turn. If the creature ends its turn inside the aura, it must succeed on a DC 11 Wisdom saving throw or become restrained until the end of its next turn</p>
+        </description>
+        <sheet>
+            <description>Creatures that start their turn within 15 feet of the Sloths have their movement speed halved for that turn. If the creature ends its turn inside the aura, it must succeed on a DC 11 Wisdom saving throw or become restrained until the end of its next turn</description>
+        </sheet>
+    </element>
+    <element name="Regeneration" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_SLOTH_REGENERATION">
+        <description>
+            <p>The sloth regains 5 hit points at the start of its turn if it has at least 1 hit point.</p>
+        </description>
+        <sheet>
+            <description>The sloth regains 5 hit points at the start of its turn if it has at least 1 hit point.</description>
+        </sheet>
+    </element>
+    <element name="Aspect of Pain" type="Companion" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_MADWALKER_PAIN">
+        <supports>penumbral-shape</supports>
+        <requirements>[level:9]</requirements>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="strength">14</set>
+            <set name="dexterity">19</set>
+            <set name="constitution">16</set>
+            <set name="intelligence">6</set>
+            <set name="wisdom">14</set>
+            <set name="charisma">7</set>
+            <set name="ac">16</set>
+            <set name="hp">58 (9d8+18)</set>
+            <set name="speed">30 ft.</set>
+            <set name="senses">darkvision 60 ft., passive Perception 12</set>
+            <set name="languages">Deep Speech, Common</set>
+            <set name="saves">Dex +7</set>
+            <set name="immunities">psychic</set>
+            <set name="type">aberration</set>
+            <set name="size">medium</set>
+            <set name="alignment">neutral evil</set>
+            <set name="challenge">3</set>
+            <set name="proficiency">2</set>
+            <set name="actions">ID_TRPG_COMPANION_ACTION_MADWALKER_PAIN_MULTIATTACK,ID_TRPG_COMPANION_ACTION_MADWALKER_PAIN_PAINFUL_CLAWS,ID_TRPG_COMPANION_ACTION_MADWALKER_PAIN_EXCRUCIATING_PAIN,ID_TRPG_COMPANION_ACTION_MADWALKER_PAIN_THORN_RAIN</set>
+            <set name="traits">ID_TRPG_COMPANION_TRAIT_MADWALKER_PAIN_THORNS,ID_TRPG_COMPANION_TRAIT_MADWALKER_PAIN_SUFFERING</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="16"/>
+            <stat name="companion:hp:max" value="58" bonus="base"/>
+            <stat name="companion:speed" value="30" bonus="base"/>
+            <stat name="companion:dexterity:save:proficiency" value="companion:proficiency" bonus="base"/>
+        </rules>
+    </element>
+    <element name="Multiattack" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_PAIN_MULTIATTACK">
+        <description>
+            <p> The Pain makes three attacks with its Painful Claws</p>
+        </description>
+        <sheet>
+            <description> The Pain makes three attacks with its Painful Claws</description>
+        </sheet>
+    </element>
+    <element name="Painful Clasws" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_PAIN_PAINFUL_CLAWS">
+        <description>
+            <p> Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 9 (1d10+4) slashing damage and the target must succeed on a DC 13 Constitution saving throw or have disadvantage on its next attack roll or ability check due to intense pain.</p>
+        </description>
+        <sheet>
+            <description> Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 9 (1d10+4) slashing damage and the target must succeed on a DC 13 Constitution saving throw or have disadvantage on its next attack roll or ability check due to intense pain.</description>
+        </sheet>
+    </element>
+    <element name="Excruciating Pain" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_PAIN_EXCRUCIATING_PAIN">
+        <description>
+            <p>The Pain targets one creature it can see within 30 feet of it. The target creature must succeed on a DC 13 Wisdom saving throw. On a failed save, the target creature takes 13 (3d6+3) psychic damage, falls prone, and drops any held equipment.</p>
+        </description>
+        <sheet>
+            <description>The Pain targets one creature it can see within 30 feet of it. The target creature must succeed on a DC 13 Wisdom saving throw. On a failed save, the target creature takes 13 (3d6+3) psychic damage, falls prone, and drops any held equipment.</description>
+        </sheet>
+    </element>
+    <element name="Thorn Rain (recharge 5-6)" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_PAIN_THORN_RAIN">
+        <description>
+            <p>The Pain launches a volley of thorns in a 20-foot radius around it. Each creature in that area must make a DC 15 Dexterity saving throw, taking 18 (4d8) piercing damage and becoming impaled with thorns on a failed save, or half as much damage without impaling on a successful one. A creature impaled with thorns takes an extra 7 (2d6) psychic damage each time it takes damage until it completes a long rest or is targeted by a lesser restoration spell or greater. A creature can only be affected by one thorn impaling at a time.</p>
+        </description>
+        <sheet>
+            <description>The Pain launches a volley of thorns in a 20-foot radius around it. Each creature in that area must make a DC 15 Dexterity saving throw, taking 18 (4d8) piercing damage and becoming impaled with thorns on a failed save, or half as much damage without impaling on a successful one. A creature impaled with thorns takes an extra 7 (2d6) psychic damage each time it takes damage until it completes a long rest or is targeted by a lesser restoration spell or greater. A creature can only be affected by one thorn impaling at a time.</description>
+        </sheet>
+    </element>
+    <element name="Thorns" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_PAIN_THORNS">
+        <description>
+            <p>The Pain is covered in thorns. A creature that touches the Pain or hits it with a melee attack while within 5 feet takes 4 (1d8) piercing damage.</p>
+        </description>
+        <sheet>
+            <description>The Pain is covered in thorns. A creature that touches the Pain or hits it with a melee attack while within 5 feet takes 4 (1d8) piercing damage.</description>
+        </sheet>
+    </element>
+    <element name="Suffering" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_PAIN_SUFFERING">
+        <description>
+            <p> Damage caused by the Penumbral Pain ignores temporary hit points and resistances. If pain reduces a creature to 0 HP while it has temporary hit points it falls unconscious and is dying as normal.</p>
+        </description>
+        <sheet>
+            <description>Damage caused by the Penumbral Pain ignores temporary hit points and resistances. If pain reduces a creature to 0 HP while it has temporary hit points it falls unconscious and is dying as normal.</description>
+        </sheet>
+    </element>
+    
+
+
 </elements>
+
+<!-- 
+    <element name="Aspect of " type="Companion" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_MADWALKER_">
+        <supports>penumbral-shape</supports>
+        <requirements>[level:3]</requirements>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="strength">14</set>
+            <set name="dexterity">10</set>
+            <set name="constitution">19</set>
+            <set name="intelligence">8</set>
+            <set name="wisdom">12</set>
+            <set name="charisma">5</set>
+            <set name="ac">14</set>
+            <set name="hp">17 (2d8+4)</set>
+            <set name="speed">30 ft.</set>
+            <set name="senses">darkvision 60 ft., passive Perception 11</set>
+            <set name="languages">Deep Speech (understand)</set>
+            <set name="skills">Perception +8</set>
+            <set name="saves">Wis +6</set>
+            <set name="resistances">psychic</set>
+            <set name="type">aberration</set>
+            <set name="size">medium</set>
+            <set name="alignment">neutral</set>
+            <set name="challenge">1/2</set>
+            <set name="proficiency">2</set>
+            <set name="actions"></set>
+            <set name="traits"></set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="14"/>
+            <stat name="companion:hp:max" value="17" bonus="base"/>
+            <stat name="companion:speed" value="30" bonus="base"/>
+            <stat name="companion:perception:proficiency" value="companion:proficiency" bonus="double"/>
+            <stat name="companion:wisdom:save:proficiency" value="companion:proficiency" bonus="base"/>
+        </rules>
+    </element>
+    <element name="attackname" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_">
+        <description>
+            <p>attack</p>
+        </description>
+        <sheet>
+            <description>attack</description>
+        </sheet>
+    </element>
+    <element name="traitname" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_">
+        <description>
+            <p>trait</p>
+        </description>
+        <sheet>
+            <description>trait</description>
+        </sheet>
+    </element>
+
+    
+
+-->

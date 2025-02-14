@@ -1,0 +1,88 @@
+<elements>
+    <info>
+        <name>Nightmare's Augury Trail</name>
+        <description>Nightmare's Augury Trail (Nightmare Predator's) for Madwalker class from Tanares RPG</description>
+        <author url="">Dragori Games</author>
+        <update version="0.0.1">
+            <file name="madwalker-augury.xml" url="https://github.com/ShadowLinks/tanares/raw/refs/heads/main/subclasses/madwalker-arachnid.xml"/>
+        </update>
+    </info>
+    <element name="Nightmare's Augury Trail" type="Archetype" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_MADWALKER_AUGURY">
+        <supports>trail-of-madness</supports>
+        <description>
+            <p>Madwalkers that follow this path have delved into darkness, seeking the strength of the Watchers, natural enemies of all other Penumbral creatures, so they can gain power to destroy them. By taking the heart of one of Augur’s Watchers, they have unlocked the energies of the Penumbral Plane, transforming themselves into twisted beings of immense power. Though the Watchers regard them as mere nuisances, these Madwalkers relish their newfound might.</p>
+            <p class="indent">With their senses attuned to Augur’s powers of vision and dark prophecy, these Madwalkers move through the shadows with sinister intent. Their intuition predicts future events with eerie accuracy, and they can see what no other mortal can perceive.</p>
+            <p class="indent">Their transformation is a grotesque and horrifying spectacle, turning them into floating creatures of writhing tentacles and spikes, covered in sinister scales, with a massive mouth filled with serrated teeth that feed on the pain and suffering of their victims. Their minds become even more twisted and focused in this state, consumed by thoughts of domination and control.</p>
+            <p class="indent">Some of these Madwalkers struggle against their nature, seeking to use their power for good, but others succumb to their darkest desires, using their might to oppress and dominate others. Nevertheless, many of these dark beings have turned their eyes towards heroism, using their fearsome abilities to fight against the very darkness that empowers them.</p>
+            <p class="indent">Their very presence strikes fear in the hearts of their enemies, and their power is unmatched. They pay a terrible price for it, but they do not regret their path, as they continue to grow stronger, becoming even more powerful as they move through the penumbra with their newfound abilities.</p>
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_AUGURY_MUTATIONS" />
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_AUGURY_NIGHTMARISH_AUGURS" />
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_AUGURY_PENUMBRAL_SHAPE" />
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_AUGURY_PSYCHIC_SHIELD" />
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_AUGURY_MENTAL_POWER" />
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_AUGURY_NOCTURNAL_PRELUDE" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_AUGURY_MUTATIONS" level="2" />
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_AUGURY_NIGHTMARISH_AUGURS" level="2" />
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_AUGURY_PENUMBRAL_SHAPE" level="2" />
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_AUGURY_PSYCHIC_SHIELD" level="7" />
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_AUGURY_MENTAL_POWER" level="14" />
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_AUGURY_NOCTURNAL_PRELUDE" level="18" />
+        </rules>
+    </element>
+    <element name="name" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_AUGURY_MUTATIONS">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Spell" supports="augury-trail-mutation,1" spellcasting="Madwalker" />
+        </rules>
+    </element>
+    <element name="name" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_AUGURY_NIGHTMARISH_AUGURS">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="name" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_AUGURY_PENUMBRAL_SHAPE">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="name" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_AUGURY_PSYCHIC_SHIELD">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="name" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_AUGURY_MENTAL_POWER">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="name" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_AUGURY_NOCTURNAL_PRELUDE">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+</elements>

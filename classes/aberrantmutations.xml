@@ -5,16 +5,290 @@
             <file name="aberrantmutations.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/classes/aberrantmutations.xml"/>
         </update>
     </info>
-    <element name="Bioluminescent Secretion" type="Class Features" source="Tanares RPG 5e" id="ID_TRPG_ABERRANT_MUTATION_BIOLUMINESCENT_SECRETION">
-        <supports>Aberrant-mutation</supports>
-        <prerequisite>1st level</prerequisite>
-        <requirements>[level:1]</requirements>
+    <element name="Bioluminescent Secretion" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ABERRANT_MUTATION_BIOLUMINESCENT_SECRETION">
+        <supports>aberrant-mutation</supports>
         <description>
             <p>1 Insanity Point + 1 point per 5 feet added to cone size</p>
             <p class="indent">As a bonus action, you can generate a glowing, bioluminescent substance. This secretion illuminates an area within 5 feet with dim light and leaves a luminous trail wherever you move. After 8 hours, the mutation ends, and the emission fades entirely.</p>
             <p class="indent">You can prematurely end this mutation to discharge a larger, slick amount of secretion over a 15-foot cone on the ground, rendering it as difficult terrain. All creatures within this area must pass a Dexterity saving throw or fall prone. A creature that either enters or ends its turn in this area must also make the Dexterity saving throw. The area stays illuminated and slippery for 8 hours.</p>
             <p class="indent">You can augment the size of the cone, up to a maximum of +25 feet, gaining 1 extra Insanity Point for every additional 5 feet. Your total Insanity Points cannot exceed the limit when enlarging the area. Also, you cannot use this power if you are at your Insanity Point maximum.</p>
         </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school"></set>
+            <set name="time">1 bonus action</set>
+            <set name="range"></set>
+            <set name="duration"></set>
+            <set name="hasVerbalComponent"></set>
+            <set name="hasSomaticComponent"></set>
+            <set name="hasMaterialComponent"></set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration"></set>
+            <set name="isRitual"></set>
+        </setters>
+    </element>
+    <element name="Dark Energy" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ABERRANT_MUTATION_DARK_ENERGY">
+        <supports>aberrant-mutation</supports>
+        <description>
+            <p>1 Insanity Point, +1 per extra point of damage </p>
+            <p class="indent">Before rolling for an attack, you can, as a free action, infuse your weapons with dark energy. Until the start of your next turn, your next successful attack deals an additional 1d6 necrotic damage. Before the attack roll, you can choose to gain extra Insanity Points to bolster this damage, with a maximum total insanity accumulated equal to your level each time you utilize this power. For each extra Insanity Point you gain, add 1 to the necrotic damage roll. The total Insanity Points gained cannot exceed your current Insanity Point limit.</p>
+            <p class="indent">Note: This ability enables a Madwalker to rapidly elevate her insanity level if she wishes to reach the Penumbral Shape sooner.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school"></set>
+            <set name="time">free action</set>
+            <set name="range"></set>
+            <set name="duration"></set>
+            <set name="hasVerbalComponent"></set>
+            <set name="hasSomaticComponent"></set>
+            <set name="hasMaterialComponent"></set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration"></set>
+            <set name="isRitual"></set>
+        </setters>
+    </element>
+    <element name="Elastic Limbs" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ABERRANT_MUTATION_ELASTIC_LIMBS">
+        <supports>aberrant-mutation</supports>
+        <description>
+            <p>1 Insanity Point</p>
+            <p class="indent">With a bonus action, you can distort your limbs, elongating them. For the next 10 minutes, your melee attack reach increases by 5 feet, and your base walking speed increases by 10 feet. If you take bludgeoning damage, you may use your reaction to end this effect and reduce the damage by 2d8.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school"></set>
+            <set name="time">1 bonus action</set>
+            <set name="range"></set>
+            <set name="duration"></set>
+            <set name="hasVerbalComponent"></set>
+            <set name="hasSomaticComponent"></set>
+            <set name="hasMaterialComponent"></set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration"></set>
+            <set name="isRitual"></set>
+        </setters>
+    </element>
+    <element name="Horrid Tentacle" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ABERRANT_MUTATION_HORRID_TENTACLE">
+        <supports>aberrant-mutation</supports>
+        <description>
+            <p>1 Insanity Point</p>
+            <p class="indent">With a bonus action, you can conjure a grotesque tentacle from your back, extending up to 10 feet. This aberrant limb persists for 1 minute. The tentacle can execute only the following tasks:</p>
+            <ul>
+                <li>Using an action, you can pull, drag, or lift an object or willing creature, or cling onto something. When performing these actions, you can carry twice the weight your Strength normally allows.</li>
+                <li>Through a bonus action, the tentacle can interact with objects. For instance, it can open or shut containers and doors, utilize keys, activate levers, push buttons, grasp small objects, and other similar tasks, subject to the GM’s discretion.</li>
+                <li>The tentacle can function as an auxiliary limb, granting you advantage on Dexterity (Acrobatics) or Strength (Athletics) checks.</li>
+                <li>The tentacle can be used as a melee weapon endowed with light and finesse properties. It has a reach of 10 feet and deals 1d10 bludgeoning damage. If you’re wielding a weapon in one hand, the tentacle can serve as a second light weapon for two-weapon combat.</li>
+                <li>The tentacle cannot wield a shield.</li>
+            </ul>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school"></set>
+            <set name="time">1 bonus action</set>
+            <set name="range"></set>
+            <set name="duration"></set>
+            <set name="hasVerbalComponent"></set>
+            <set name="hasSomaticComponent"></set>
+            <set name="hasMaterialComponent"></set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration"></set>
+            <set name="isRitual"></set>
+        </setters>
+    </element>
+    <element name="Penumbral Echoes" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ABERRANT_MUTATION_PENUMBRAL_ECHOES">
+        <supports>aberrant-mutation</supports>
+        <description>
+            <p>1 Insanity Point</p>
+            <p class="indent">With a bonus action, you can manipulate your vocal cords for 1 minute, granting you the ability to emit sounds otherwise impossible to replicate. You can mimic any sound you’ve heard, be it from creatures (voices, grunts, growls) or objects (hammer clang, door creak, drops falling). A creature hearing the sound can attempt a DC 20 Wisdom (Insight) check to identify it as an imitation. With an action, you can end this Mutation and release a frightful roar that resonates across a 10-foot radius. Each creature within range must succeed a Wisdom save or suffer 2d4 thunder damage and be frightened for 1 minute. An affected creature must attempt a new Wisdom saving throw at the end of each of its turns. Upon success, the effect ceases and the creature becomes immune to it for the next 24 hours.</p>
+            <p class="indent"></p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school"></set>
+            <set name="time">1 bonus action</set>
+            <set name="range"></set>
+            <set name="duration"></set>
+            <set name="hasVerbalComponent"></set>
+            <set name="hasSomaticComponent"></set>
+            <set name="hasMaterialComponent"></set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration"></set>
+            <set name="isRitual"></set>
+        </setters>
+    </element>
+    <element name="Penumbral Gaze" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ABERRANT_MUTATION_PENUMBRAL_GAZE">
+        <supports>aberrant-mutation</supports>
+        <description>
+            <p>1 Insanity Point</p>
+            <p class="indent">With a bonus action, you can channel shadow energy through your eyes, causing them to appear large and ghostly white. For 1 hour, you have the advantage on Wisdom (Perception) checks that rely on vision. Additionally, you gain darkvision with a range of 60 feet, or double the range if you already have darkvision.</p>
+            <p class="indent">With an action, you can end these effects and direct a force blast toward a creature. Make a ranged attack roll against a target within 60 feet using your Dexterity modifier and proficiency bonus. On a hit, the target takes 3d6 force damage</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school"></set>
+            <set name="time">1 bonus action and 1 action</set>
+            <set name="range"></set>
+            <set name="duration"></set>
+            <set name="hasVerbalComponent"></set>
+            <set name="hasSomaticComponent"></set>
+            <set name="hasMaterialComponent"></set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration"></set>
+            <set name="isRitual"></set>
+        </setters>
+    </element>
+    <element name="Space Distortion" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ABERRANT_MUTATION_SPACE_DISTORTION">
+        <supports>aberrant-mutation</supports>
+        <description>
+            <p>1 Insanity Point</p>
+            <p class="indent">With a bonus action, you can bend shadow energy to conjure a small portal, enabling your hands to interact with distant locations. Until the end of your turn, you can manipulate objects or creatures up to 30 feet away and transport small items.</p>
+            <p class="indent">While this Mutation is active, you can make melee attacks against targets within 30 feet. These attacks ignore cover, and you add your Wisdom modifier to the attack rolls.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school"></set>
+            <set name="time">1 bonus action</set>
+            <set name="range"></set>
+            <set name="duration"></set>
+            <set name="hasVerbalComponent"></set>
+            <set name="hasSomaticComponent"></set>
+            <set name="hasMaterialComponent"></set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration"></set>
+            <set name="isRitual"></set>
+        </setters>
+    </element>
+    <element name="Noxious Attack" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ABERRANT_MUTATION_NOXIOUS_ATTACK">
+        <supports>arachnid-trail-mutation</supports>
+        <description>
+            <p>1 Insanity Point</p>
+            <p class="indent">With a bonus action, you sprout glands in your hands that generate a venom coating your weapon for 1 minute. Each successful weapon attack deals an extra 2 poison damage and bestows a poison marker on the target (maximum of four markers). Creatures with at least one poison marker must attempt a Constitution saving throw at the beginning of their turns. On a successful save, they remove all poison markers. On a failure, they suffer 2 poison damage per poison marker.</p>
+            <p class="indent"></p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school"></set>
+            <set name="time">1 action</set>
+            <set name="range"></set>
+            <set name="duration"></set>
+            <set name="hasVerbalComponent"></set>
+            <set name="hasSomaticComponent"></set>
+            <set name="hasMaterialComponent"></set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration"></set>
+            <set name="isRitual"></set>
+        </setters>
+    </element>
+    <element name="Shadow Web" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ABERRANT_MUTATION_SHADOW_WEB">
+        <supports>arachnid-trail-mutation</supports>
+        <description>
+            <p>1 Insanity Point</p>
+            <ul>
+                <li>You can launch a web at an object and pull it towards you. If it is heavier than 10 pounds, you must pull it using your own strength.</li>
+                <li>You can affix the web to objects or solid surfaces, granting an advantage on Strength (Athletics) or Dexterity (Acrobatics) checks when climbing.</li>
+                <li>You can use the web to obstruct an area up to 20 feet in diameter between two solid objects; a creature entering the blocked area must pass a Strength check or become immobilized until the end of its next turn.</li>
+                <li>You can aim a web at a creature within range. If the creature fails a Dexterity saving throw, it is restrained for the duration of the effect. It can attempt a Strength saving throw at the end of each of its turns to end the condition.</li>
+            </ul>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school"></set>
+            <set name="time">1 bonus action</set>
+            <set name="range"></set>
+            <set name="duration"></set>
+            <set name="hasVerbalComponent"></set>
+            <set name="hasSomaticComponent"></set>
+            <set name="hasMaterialComponent"></set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration"></set>
+            <set name="isRitual"></set>
+        </setters>
+    </element>
+    <element name="Mind Slash" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ABERRANT_MUTATION_MIND_SLASH">
+        <supports>augury-trail-mutation</supports>
+        <description>
+            <p>1 Insanity Point</p>
+            <p class="indent">With your action, you unleash a surge of psychic power against a creature you can see, within a 60-feet range, dealing 3d8 psychic damage. The target makes an Intelligence saving throw to reduce the damage by half. On a fail, the target has disadvantage on the next saving throw it makes until the end of your next turn.</p>
+            <p class="indent"></p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school"></set>
+            <set name="time">1 action</set>
+            <set name="range"></set>
+            <set name="duration"></set>
+            <set name="hasVerbalComponent"></set>
+            <set name="hasSomaticComponent"></set>
+            <set name="hasMaterialComponent"></set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration"></set>
+            <set name="isRitual"></set>
+        </setters>
+    </element>
+    <element name="Psychic Bond" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ABERRANT_MUTATION_PSYCHIC_BOND">
+        <supports>augury-trail-mutation</supports>
+        <description>
+            <p>1 Insanity Point</p>
+            <p class="indent">As a bonus action, you can establish a telepathic bond with an ally within a 120-feet range. The link lasts for 1 hour or until the creature moves beyond your range. This bond allows you to communicate with the chosen creature as though engaged in normal conversation. Furthermore, for the duration of the link, both can use the Help action on Intelligence checks made even at a distance.</p>
+            <p class="indent">Alternatively, this mutation can be used against a hostile creature to access its surface thoughts. The target must succeed a Wisdom saving throw; otherwise, you discern its emotional state, and it suffers disadvantage on all attacks against you until your next turn.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school"></set>
+            <set name="time">1 bonus action</set>
+            <set name="range"></set>
+            <set name="duration"></set>
+            <set name="hasVerbalComponent"></set>
+            <set name="hasSomaticComponent"></set>
+            <set name="hasMaterialComponent"></set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration"></set>
+            <set name="isRitual"></set>
+        </setters>
     </element>
 
 </elements>
+
+<!--
+    <element name="Name" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ABERRANT_MUTATION_">
+        <supports>aberrant-mutation</supports>
+        <description>
+            <p>1 Insanity Point</p>
+            <p class="indent"></p>
+            <p class="indent"></p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school"></set>
+            <set name="time">1 action</set>
+            <set name="range"></set>
+            <set name="duration"></set>
+            <set name="hasVerbalComponent"></set>
+            <set name="hasSomaticComponent"></set>
+            <set name="hasMaterialComponent"></set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration"></set>
+            <set name="isRitual"></set>
+        </setters>
+    </element>
+    -->

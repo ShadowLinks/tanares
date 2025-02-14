@@ -1,0 +1,87 @@
+<elements>
+    <info>
+        <name>Aberrant Arachnid Trail</name>
+        <description>Aberrant Arachnid Trail (Arachnid Hunter’s) for Madwalker class from Tanares RPG</description>
+        <author url="">Dragori Games</author>
+        <update version="0.0.1">
+            <file name="madwalker-arachnid.xml" url="https://github.com/ShadowLinks/tanares/raw/refs/heads/main/subclasses/madwalker-arachnid.xml"/>
+        </update>
+    </info>
+    <element name="Aberrant Arachnid Trail" type="Archetype" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_MADWALKER_ARACHNID">
+        <supports>trail-of-madness</supports>
+        <description>
+            <p>Madwalkers that follow this path are not only feared but also hated by the Arachness. The gruesome ritual they undergo attunes them to the energies of Ungods and the Arachnees, harnessing their vicious powers by taking the heart of an Arachne, a price paid willingly for power.</p>
+            <p class="indent">These Madwalkers move through the shadows, sensing and manipulating the chaotic vibrations of the Penumbral Plane, blades dripping with deadly poison, and hands weaving sticky webs that ensnare prey. They feed off their victim’s fear, savoring the scent of terror that fills the air before they strike with unmatched intensity and aggression.</p>
+            <p class="indent">Their transformations are an affront to all that is natural, becoming horrid, fearsome exemplars of cunning and viciousness. The resulting humanoid-spider hybrids are chaotic deadly creatures that send shivers down the spine of even the bravest warriors, their presence alone an omen of a horrible fate. These Madwalkers revel in their sinister powers, embracing their chaos and savoring the taste of their prey’s terror as they move through the shadows, always aware of the price they pay for their power.</p>
+            <p class="indent">With their senses attuned to the deep hunger of the spiders, the Madwalkers that follow this path move through the Penumbral Plane as deadly predators, always on the hunt for their next victim.</p>
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_ARACHNID_ARACHNID_MUTATIONS" />
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_ARACHNID_CUNNING_PREDATOR" />
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_ARACHNID_ARACHNID_PENUMBRAL_SHAPE" />
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_ARACHNID_ARACHNID_NATURE" />
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_ARACHNID_BLACK_WIDOWS_WEB" />
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_ARACHNID_ARACHNID_CAMO" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_ARACHNID_ARACHNID_MUTATIONS" level="2" />
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_ARACHNID_CUNNING_PREDATOR" level="2" />
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_ARACHNID_ARACHNID_PENUMBRAL_SHAPE" level="2" />
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_ARACHNID_ARACHNID_NATURE" level="7" />
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_ARACHNID_BLACK_WIDOWS_WEB" level="14" />
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_ARACHNID_ARACHNID_CAMO" level="18" />
+        </rules>
+    </element>
+    <element name="name" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_ARACHNID_ARACHNID_MUTATIONS">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Spell" supports="arachnid-trail-mutation,1" spellcasting="Madwalker" />
+        </rules>
+    </element>
+    <element name="name" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_ARACHNID_CUNNING_PREDATOR">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="name" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_ARACHNID_ARACHNID_PENUMBRAL_SHAPE">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="name" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_ARACHNID_ARACHNID_NATURE">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="name" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_ARACHNID_BLACK_WIDOWS_WEB">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="name" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_ARACHNID_ARACHNID_CAMO">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+</elements>
