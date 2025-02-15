@@ -697,7 +697,318 @@
             <description>Damage caused by the Penumbral Pain ignores temporary hit points and resistances. If pain reduces a creature to 0 HP while it has temporary hit points it falls unconscious and is dying as normal.</description>
         </sheet>
     </element>
-    
+    <element name="Aspect of Lust" type="Companion" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_MADWALKER_LUST">
+        <supports>penumbral-shape</supports>
+        <requirements>[level:11]</requirements>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="strength">12</set>
+            <set name="dexterity">18</set>
+            <set name="constitution">14</set>
+            <set name="intelligence">14</set>
+            <set name="wisdom">12</set>
+            <set name="charisma">19</set>
+            <set name="ac">17</set>
+            <set name="hp">71 (13d8+13)</set>
+            <set name="speed">30 ft.</set>
+            <set name="senses">darkvision 60 ft., passive Perception 11</set>
+            <set name="languages">Common, Deep Speech</set>
+            <set name="skills">Persuasion +6</set>
+            <set name="saves">Cha +6</set>
+            <set name="immunities">psychic, charmed</set>
+            <set name="type">aberration</set>
+            <set name="size">medium</set>
+            <set name="alignment">neutral</set>
+            <set name="challenge">4</set>
+            <set name="proficiency">2</set>
+            <set name="actions"></set>
+            <set name="traits">ID_TRPG_COMPANION_TRAIT_MADWALKER_LUST_SHAPECHANGER,ID_TRPG_COMPANION_TRAIT_MADWALKER_LUST_CHARM_OPPORTUNIST</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="17"/>
+            <stat name="companion:hp:max" value="71" bonus="base"/>
+            <stat name="companion:speed" value="30" bonus="base"/>
+            <stat name="companion:persuasion:proficiency" value="companion:proficiency" bonus="base"/>
+            <stat name="companion:charisma:save:proficiency" value="companion:proficiency" bonus="base"/>
+        </rules>
+    </element>
+    <element name="Multiattack" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_LUST_MULTIATTACK">
+        <description>
+            <p>Lust makes three melee attacks.</p>
+        </description>
+        <sheet>
+            <description>Lust makes three melee attacks.</description>
+        </sheet>
+    </element>
+    <element name="Creepy Slam" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_LUST_CREEPY_SLAM">
+        <description>
+            <p>Melee Weapon Attack: +6 to hit, reach 30 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage, and if the target is Large or smaller, it is grappled (escape DC 16). Until this grapple ends, the creature is restrained, and lust can’t attack another target with a tentacle</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack: +6 to hit, reach 30 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage, and if the target is Large or smaller, it is grappled (escape DC 16). Until this grapple ends, the creature is restrained, and lust can’t attack another target with a tentacle</description>
+        </sheet>
+    </element>
+    <element name="Tentacle" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_LUST_TENTACLE">
+        <description>
+            <p>Melee Weapon Attack: +6 to hit, reach 30 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage, and if the target is Large or smaller, it is grappled (escape DC 16). Until this grapple ends, the creature is restrained, and lust can’t attack another target with a tentacle</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack: +6 to hit, reach 30 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage, and if the target is Large or smaller, it is grappled (escape DC 16). Until this grapple ends, the creature is restrained, and lust can’t attack another target with a tentacle</description>
+        </sheet>
+    </element>
+    <element name="Mind Overload" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_LUST_MIND_OVERLOAD">
+        <description>
+            <p>The lust targets one charmed creature it can see within 30 feet of it. The target must succeed on a DC 14 Charisma saving throw, taking 5d10 psychic damage on a failed save, or half as much damage on a successful one. This attack doesn’t end the charmed condition on a creature.</p>
+        </description>
+        <sheet>
+            <description>The lust targets one charmed creature it can see within 30 feet of it. The target must succeed on a DC 14 Charisma saving throw, taking 5d10 psychic damage on a failed save, or half as much damage on a successful one. This attack doesn’t end the charmed condition on a creature.</description>
+        </sheet>
+    </element>
+    <element name="Spellcasting" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_LUST_SPELLCASTING">
+        <description>
+            <p>The lust casts one of the following spells, using Charisma as the spellcasting ability (spell save DC 18, +10 to hit with spell attacks). </p>
+            <ul>
+                <li>At will: command</li>
+                <li>3/day each: charm person, hold person</li>
+                <li>1/day each: charm monster, dominate beast, hypnotic pattern</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Charisma caster. 18 DC. +10 to hit. At will: command - 3/day each: charm person, hold person - 1/day each: charm monster, dominate beast, hypnotic pattern </description>
+        </sheet>
+    </element>
+    <element name="Fascinating Presence" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_LUST_FASCINATING_PRESENCE">
+        <description>
+            <p>Each creature of lust’s choice that is within 60 feet of it and aware of it must succeed on a DC 14 Wisdom saving throw or become charmed for 1 minute or until lust or its allies harm the target. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
+        </description>
+        <sheet>
+            <description>Each creature of lust’s choice that is within 60 feet of it and aware of it must succeed on a DC 14 Wisdom saving throw or become charmed for 1 minute or until lust or its allies harm the target. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</description>
+        </sheet>
+    </element>
+    <element name="Shapechanger" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_LUST_SHAPECHANGER">
+        <description>
+            <p>The lust can use its action to polymorph into a Small or Medium humanoid, or back into its true form. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn’t transformed. It reverts to its true form if it dies.</p>
+        </description>
+        <sheet>
+            <description>The lust can use its action to polymorph into a Small or Medium humanoid, or back into its true form. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn’t transformed. It reverts to its true form if it dies.</description>
+        </sheet>
+    </element>
+    <element name="Charm Opportunist" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_LUST_CHARM_OPPORTUNIST">
+        <description>
+            <p>Attacks made by lust that hit a charmed creature are automatically considered critical hits.</p>
+        </description>
+        <sheet>
+            <description>Attacks made by lust that hit a charmed creature are automatically considered critical hits.</description>
+        </sheet>
+    </element>
+    <element name="Aspect of Sadness" type="Companion" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_MADWALKER_SADNESS">
+        <supports>penumbral-shape</supports>
+        <requirements>[level:13]</requirements>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="strength">12</set>
+            <set name="dexterity">14</set>
+            <set name="constitution">15</set>
+            <set name="intelligence">20</set>
+            <set name="wisdom">15</set>
+            <set name="charisma">9</set>
+            <set name="ac">17</set>
+            <set name="hp">84 (13d8+26)</set>
+            <set name="speed">40 ft.</set>
+            <set name="senses">darkvision 60 ft., passive Perception 12</set>
+            <set name="languages">Common, Deep Speech</set>
+            <set name="skills">arcana +8</set>
+            <set name="saves">Int +6</set>
+            <set name="immunities">psychic</set>
+            <set name="type">aberration</set>
+            <set name="size">medium</set>
+            <set name="alignment">neutral evil</set>
+            <set name="challenge">5</set>
+            <set name="proficiency">3</set>
+            <set name="actions">ID_TRPG_COMPANION_ACTION_MADWALKER_SADNESS_MULTIATTACK,ID_TRPG_COMPANION_ACTION_MADWALKER_SADNESS_CREEPY_SLAM,ID_TRPG_COMPANION_ACTION_MADWALKER_SADNESS_PLANAR_SHIFT,ID_TRPG_COMPANION_ACTION_MADWALKER_SADNESS_SPELLCASTING</set>
+            <set name="traits">ID_TRPG_COMPANION_TRAIT_MADWALKER_SADNESS_DISPEL_MASTER,ID_TRPG_COMPANION_TRAIT_MADWALKER_SADNESS_MAGIC_RESISTANCE,ID_TRPG_COMPANION_TRAIT_MADWALKER_SADNESS_MELANCHOLOY_MAGIC,ID_TRPG_COMPANION_TRAIT_MADWALKER_SADNESS_SAD_BUT_TRUE</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="17"/>
+            <stat name="companion:hp:max" value="84" bonus="base"/>
+            <stat name="companion:speed" value="40" bonus="base"/>
+            <stat name="companion:arcana:proficiency" value="companion:proficiency" bonus="base"/>
+            <stat name="companion:intelligence:save:proficiency" value="companion:proficiency" bonus="base"/>
+        </rules>
+    </element>
+    <element name="Multiattack" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_SADNESS_MULTIATTACK">
+        <description>
+            <p>The sadness makes two Creepy Slam attacks.</p>
+        </description>
+        <sheet>
+            <description>The sadness makes two Creepy Slam attacks.</description>
+        </sheet>
+    </element>
+    <element name="Creepy Slam" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_SADNESS_CREEPY_SLAM">
+        <description>
+            <p>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) bludgeoning damage plus 3 (1d6) psychic damage.</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) bludgeoning damage plus 3 (1d6) psychic damage.</description>
+        </sheet>
+    </element>
+    <element name="Planar Shift (2/day)" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_SADNESS_PLANAR_SHIFT">
+        <description>
+            <p>attacThe sadness can cast plane shift (self only) twice per day to shift from the Material Plane to the Penumbral Plane, or vice versa.k</p>
+        </description>
+        <sheet>
+            <description>The sadness can cast plane shift (self only) twice per day to shift from the Material Plane to the Penumbral Plane, or vice versa.</description>
+        </sheet>
+    </element>
+    <element name="Spellcasting" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_SADNESS_SPELLCASTING">
+        <description>
+            <p>The sadness casts one of the following spells, using Intelligence as the spellcasting ability (spell save DC 16, +8 hit with spell attacks):</p>
+            <ul>
+                <li>At will: detect magic, dispel magic, fire bolt, shocking grasp</li>
+                <li>3/day each: faerie fire, identify, counterspell, detect thoughts, fireball, misty step</li>
+                <li>1/day each: banishment, cloud kill, globe of invulnerability, stoneskin, wall of force</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Intelligence caster DC 16 and +8 to hit. At will: detect magic, dispel magic, fire bolt, shocking grasp - 3/day each: faerie fire, identify, counterspell, detect thoughts, fireball, misty step - 1/day each: banishment, cloud kill, globe of invulnerability, stoneskin, wall of force</description>
+        </sheet>
+    </element>
+    <element name="Dispel Master" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_SADNESS_DISPEL_MASTER">
+        <description>
+            <p>The sadness can cast dispel magic as a bonus action and it is always considered as if it was cast using a 5th level spell slot</p>
+        </description>
+        <sheet>
+            <description>The sadness can cast dispel magic as a bonus action and it is always considered as if it was cast using a 5th level spell slot</description>
+        </sheet>
+    </element>
+    <element name="Magic Resistance" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_SADNESS_MAGIC_RESISTANCE">
+        <description>
+            <p>The sadness has advantage on saving throws against spells and other magical effects.</p>
+        </description>
+        <sheet>
+            <description>The sadness has advantage on saving throws against spells and other magical effects.</description>
+        </sheet>
+    </element>
+    <element name="Melancholy Magic" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_SADNESS_MELANCHOLOY_MAGIC">
+        <description>
+            <p>When a creature fails a saving throw against a spell cast by the sadness, it has disadvantage on all saving throws until it finishes a short or long rest</p>
+        </description>
+        <sheet>
+            <description>When a creature fails a saving throw against a spell cast by the sadness, it has disadvantage on all saving throws until it finishes a short or long rest</description>
+        </sheet>
+    </element>
+    <element name="Sad But True" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_SADNESS_SAD_BUT_TRUE">
+        <description>
+            <p>When the sadness dies, it explodes in a burst of psychic energy. Each creature within 15 feet of it must make a DC 16 Wisdom saving throw, taking 13 (3d8) psychic damage on a failed save, or half as much damage on a successful one.</p>
+        </description>
+        <sheet>
+            <description>When the sadness dies, it explodes in a burst of psychic energy. Each creature within 15 feet of it must make a DC 16 Wisdom saving throw, taking 13 (3d8) psychic damage on a failed save, or half as much damage on a successful one.</description>
+        </sheet>
+    </element>
+    <element name="Aspect of Pride" type="Companion" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_MADWALKER_PRIDE">
+        <supports>penumbral-shape</supports>
+        <requirements>[level:15]</requirements>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="strength">20</set>
+            <set name="dexterity">15</set>
+            <set name="constitution">18</set>
+            <set name="intelligence">10</set>
+            <set name="wisdom">14</set>
+            <set name="charisma">22</set>
+            <set name="ac">17</set>
+            <set name="hp">127 (15d8+60)</set>
+            <set name="speed">30 ft.</set>
+            <set name="senses">darkvision 60 ft., passive Perception 12</set>
+            <set name="languages">Common, Deep Speech, telepathy 120 ft.</set>
+            <set name="skills">Athletics +8, Intimidation +9</set>
+            <set name="saves">Cha +6</set>
+            <set name="immunities">psychic</set>
+            <set name="type">aberration</set>
+            <set name="size">medium</set>
+            <set name="alignment">neutral evil</set>
+            <set name="challenge">6</set>
+            <set name="proficiency">3</set>
+            <set name="actions">ID_TRPG_COMPANION_ACTION_MADWALKER_PRIDE_MULTIATTACK,ID_TRPG_COMPANION_ACTION_MADWALKER_PRIDE_FORCE_BLAST,ID_TRPG_COMPANION_ACTION_MADWALKER_PRIDE_CLAWS,ID_TRPG_COMPANION_ACTION_MADWALKER_PRIDE_GRAB,ID_TRPG_COMPANION_ACTION_MADWALKER_PRIDE_SPELLCASTING</set>
+            <set name="traits">ID_TRPG_COMPANION_TRAIT_MADWALKER_PRIDE_PRIDEFUL_GRAPPLER,ID_TRPG_COMPANION_TRAIT_MADWALKER_PRIDE_ARMOR_OF_PRIDE</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="17"/>
+            <stat name="companion:hp:max" value="127" bonus="base"/>
+            <stat name="companion:speed" value="30" bonus="base"/>
+            <stat name="companion:athletics:proficiency" value="companion:proficiency" bonus="base"/>
+            <stat name="companion:intimidation:proficiency" value="companion:proficiency" bonus="base"/>
+            <stat name="companion:charisma:save:proficiency" value="companion:proficiency" bonus="base"/>
+        </rules>
+    </element>
+    <element name="Multiattack" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_PRIDE_MULTIATTACK">
+        <description>
+            <p>The pride makes three Claws or three Force Blast attacks. If the pride hits at least one attack with its Claws, it can make a Grab with its remaining attacks against the target hit.</p>
+        </description>
+        <sheet>
+            <description>The pride makes three Claws or three Force Blast attacks. If the pride hits at least one attack with its Claws, it can make a Grab with its remaining attacks against the target hit.</description>
+        </sheet>
+    </element>
+    <element name="Force Blast" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_PRIDE_FORCE_BLAST">
+        <description>
+            <p>Ranged Spell Attack: +9 to hit, range 60 ft., one target. Hit: 11 (1d10 + 6) force damage.</p>
+        </description>
+        <sheet>
+            <description>Ranged Spell Attack: +9 to hit, range 60 ft., one target. Hit: 11 (1d10 + 6) force damage.</description>
+        </sheet>
+    </element>
+    <element name="Claws" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_PRIDE_CLAWS">
+        <description>
+            <p>Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 5) slashing damage.</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 5) slashing damage.</description>
+        </sheet>
+    </element>
+    <element name="Grab" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_PRIDE_GRAB">
+        <description>
+            <p> Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: the target is grappled (escape DC 17). Targets that are Huge or larger are immune.</p>
+        </description>
+        <sheet>
+            <description> Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: the target is grappled (escape DC 17). Targets that are Huge or larger are immune.</description>
+        </sheet>
+    </element>
+    <element name="Spellcasting" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_PRIDE_SPELLCASTING">
+        <description>
+            <p>The pride casts one of the following spells, using Charisma as the spellcasting ability (spell save DC 17, +9 to hit with spell attacks)</p>
+            <ul>
+                <li>At will: detect magic, expeditious retreat, false life, feather fall</li>
+                <li>3/day each: enhance ability, invisibility, levitate, misty step</li>
+                <li>2/day each: counterspell, fly, haste, slow</li>
+                <li>1/day: blight</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Charisma caster with DC 17 and +9 to hit. At will: detect magic, expeditious retreat, false life, feather fall - 3/day each: enhance ability, invisibility, levitate, misty step - 2/day each: counterspell, fly, haste, slow - 1/day: blight</description>
+        </sheet>
+    </element>
+    <element name="Prideful Grappler" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_PRIDE_PRIDEFUL_GRAPPLER">
+        <description>
+            <p>The pride has advantage on attack rolls against creatures it is grappling.</p>
+        </description>
+        <sheet>
+            <description>The pride has advantage on attack rolls against creatures it is grappling.</description>
+        </sheet>
+    </element>
+    <element name="Armor of Pride" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_PRIDE_ARMOR_OF_PRIDE">
+        <description>
+            <p>Whenever an enemy attack misses the pride it gains a cumulative +1 to AC until the start of its next turn (up to +5).</p>
+        </description>
+        <sheet>
+            <description>Whenever an enemy attack misses the pride it gains a cumulative +1 to AC until the start of its next turn (up to +5).</description>
+        </sheet>
+    </element>
 
 
 </elements>
