@@ -717,7 +717,8 @@
             <set name="languages">Common, Deep Speech</set>
             <set name="skills">Persuasion +6</set>
             <set name="saves">Cha +6</set>
-            <set name="immunities">psychic, charmed</set>
+            <set name="immunities">psychic</set>
+            <set name="conditionimmunities">charmed</set>
             <set name="type">aberration</set>
             <set name="size">medium</set>
             <set name="alignment">neutral</set>
@@ -1009,65 +1010,226 @@
             <description>Whenever an enemy attack misses the pride it gains a cumulative +1 to AC until the start of its next turn (up to +5).</description>
         </sheet>
     </element>
-
-
-</elements>
-
-<!-- 
-    <element name="Aspect of " type="Companion" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_MADWALKER_">
+    <element name="Aspect of Greed" type="Companion" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_MADWALKER_GREED">
         <supports>penumbral-shape</supports>
-        <requirements>[level:3]</requirements>
+        <requirements>[level:17]</requirements>
         <description>
             <p></p>
         </description>
         <setters>
             <set name="strength">14</set>
-            <set name="dexterity">10</set>
-            <set name="constitution">19</set>
-            <set name="intelligence">8</set>
-            <set name="wisdom">12</set>
-            <set name="charisma">5</set>
-            <set name="ac">14</set>
-            <set name="hp">17 (2d8+4)</set>
+            <set name="dexterity">16</set>
+            <set name="constitution">14</set>
+            <set name="intelligence">22</set>
+            <set name="wisdom">15</set>
+            <set name="charisma">9</set>
+            <set name="ac">18</set>
+            <set name="hp">110 (17d8+34)</set>
             <set name="speed">30 ft.</set>
-            <set name="senses">darkvision 60 ft., passive Perception 11</set>
-            <set name="languages">Deep Speech (understand)</set>
-            <set name="skills">Perception +8</set>
-            <set name="saves">Wis +6</set>
-            <set name="resistances">psychic</set>
+            <set name="senses">darkvision 60 ft., passive Perception 12</set>
+            <set name="languages">Common, Deep Speech</set>
+            <set name="skills">Stealth +6</set>
+            <set name="saves">Int +9</set>
+            <set name="immunities">psychic</set>
             <set name="type">aberration</set>
             <set name="size">medium</set>
-            <set name="alignment">neutral</set>
-            <set name="challenge">1/2</set>
-            <set name="proficiency">2</set>
-            <set name="actions"></set>
-            <set name="traits"></set>
+            <set name="alignment">neutral evil</set>
+            <set name="challenge">7</set>
+            <set name="proficiency">3</set>
+            <set name="actions">ID_TRPG_COMPANION_ACTION_MADWALKER_GREED_MULTIATTACK,ID_TRPG_COMPANION_ACTION_MADWALKER_GREED_CLAWS,ID_TRPG_COMPANION_ACTION_MADWALKER_GREED_DRAINING_TOUCH,ID_TRPG_COMPANION_ACTION_MADWALKER_GREED_COVETOUS_GLOBES,ID_TRPG_COMPANION_ACTION_MADWALKER_GREED_PLANAR_SHIFT</set>
+            <set name="traits">ID_TRPG_COMPANION_TRAIT_MADWALKER_GREED_COVETOUS_GLOBES,ID_TRPG_COMPANION_TRAIT_MADWALKER_GREED_CURSE_OF_GREED,ID_TRPG_COMPANION_TRAIT_MADWALKER_GREED_MASK_OF_SCRYING</set>
         </setters>
         <rules>
-            <stat name="companion:ac" value="14"/>
-            <stat name="companion:hp:max" value="17" bonus="base"/>
+            <stat name="companion:ac" value="18"/>
+            <stat name="companion:hp:max" value="110" bonus="base"/>
             <stat name="companion:speed" value="30" bonus="base"/>
-            <stat name="companion:perception:proficiency" value="companion:proficiency" bonus="double"/>
-            <stat name="companion:wisdom:save:proficiency" value="companion:proficiency" bonus="base"/>
+            <stat name="companion:stealth:proficiency" value="companion:proficiency" bonus="base"/>
+            <stat name="companion:intelligence:save:proficiency" value="companion:proficiency" bonus="base"/>
         </rules>
     </element>
-    <element name="attackname" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_">
+    <element name="Multiattack" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_GREED_MULTIATTACK">
         <description>
-            <p>attack</p>
+            <p>The greed makes two attacks with its Claws and two with its Covetous Globes.</p>
         </description>
         <sheet>
-            <description>attack</description>
+            <description>The greed makes two attacks with its Claws and two with its Covetous Globes.</description>
         </sheet>
     </element>
-    <element name="traitname" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_">
+    <element name="Claws" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_GREED_CLAWS">
         <description>
-            <p>trait</p>
+            <p>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 3) slashing damage.</p>
         </description>
         <sheet>
-            <description>trait</description>
+            <description>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 3) slashing damage.</description>
+        </sheet>
+    </element>
+    <element name="Draining Touch" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_GREED_DRAINING_TOUCH">
+        <description>
+            <p>Melee Spell Attack: +9 to hit, reach 5 ft., one target. Hit: 15 (2d8 + 6) necrotic damage, and the greed regains hit points equal to half the damage dealt.</p>
+        </description>
+        <sheet>
+            <description>Melee Spell Attack: +9 to hit, reach 5 ft., one target. Hit: 15 (2d8 + 6) necrotic damage, and the greed regains hit points equal to half the damage dealt.</description>
+        </sheet>
+    </element>
+    <element name="Covetous Globes" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_GREED_COVETOUS_GLOBES">
+        <description>
+            <p>Ranged Spell Attack: +9 to hit, range 20/60 ft., one target. Hit: 17 (2d10 + 6) necrotic damage. Each creature struck by a globe must make a Wisdom saving throw (DC 17) or be afflicted by the Curse of Greed</p>
+        </description>
+        <sheet>
+            <description>Ranged Spell Attack: +9 to hit, range 20/60 ft., one target. Hit: 17 (2d10 + 6) necrotic damage. Each creature struck by a globe must make a Wisdom saving throw (DC 17) or be afflicted by the Curse of Greed</description>
+        </sheet>
+    </element>
+    <element name="Planar Shift" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_GREED_PLANAR_SHIFT">
+        <description>
+            <p> The greed can cast plane shift (self only) to enter the Material Plane, cause mischief or attack with its covetous globes, then return to the penumbra to savor its victim’s fate.</p>
+        </description>
+        <sheet>
+            <description> The greed can cast plane shift (self only) to enter the Material Plane, cause mischief or attack with its covetous globes, then return to the penumbra to savor its victim’s fate.</description>
+        </sheet>
+    </element>
+    <element name="Covetous Globes" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_GREED_COVETOUS_GLOBES">
+        <description>
+            <p>Greed watches over the material world from the Penumbral Plane via its magical Mask of Scrying. When they spy an appropriate target, usually some crusading do-gooder or powerful noble, they shift to the Material Plane and attack with their covetous globes. The globes cause enough damage to seem like a real threat, but this is a ruse. Their real power lies in the transmission of the Curse of Greed.</p>
+        </description>
+        <sheet>
+            <description>Greed watches over the material world from the Penumbral Plane via its magical Mask of Scrying. When they spy an appropriate target, usually some crusading do-gooder or powerful noble, they shift to the Material Plane and attack with their covetous globes. The globes cause enough damage to seem like a real threat, but this is a ruse. Their real power lies in the transmission of the Curse of Greed.</description>
+        </sheet>
+    </element>
+    <element name="Curse of Greed" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_GREED_CURSE_OF_GREED">
+        <description>
+            <p>Every day at dusk, in which a victim of this terrible curse fails to accumulate at least 500 gp in gold, goods, or treasures, their maximum hit points are reduced by 2 (1d4) points. The curse cannot be lifted by a simple remove curse spell, but it does grant the recipient the knowledge of how to end the curse. To remove a Curse of Greed, the victim must permanently sacrifice at least 10,000 gold pieces in valuable items, such as useful magic items, family heirlooms of great sentimental value, or other treasures.</p>
+        </description>
+        <sheet>
+            <description>Every day at dusk, in which a victim of this terrible curse fails to accumulate at least 500 gp in gold, goods, or treasures, their maximum hit points are reduced by 2 (1d4) points. The curse cannot be lifted by a simple remove curse spell, but it does grant the recipient the knowledge of how to end the curse. To remove a Curse of Greed, the victim must permanently sacrifice at least 10,000 gold pieces in valuable items, such as useful magic items, family heirlooms of great sentimental value, or other treasures.</description>
+        </sheet>
+    </element>
+    <element name="Mask of Scrying" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_GREED_MASK_OF_SCRYING">
+        <description>
+            <p>Greed wears enchanted, bird like masks of bone covered in magical runes over their grotesque faces. The masks allow them to peer into the Material Plane at will, as if using the scrying spell, even if they are not currently on that plane. The mask crumbles to dust if removed from the emogun’s person or if it dies.</p>
+        </description>
+        <sheet>
+            <description>Greed wears enchanted, bird like masks of bone covered in magical runes over their grotesque faces. The masks allow them to peer into the Material Plane at will, as if using the scrying spell, even if they are not currently on that plane. The mask crumbles to dust if removed from the emogun’s person or if it dies.</description>
+        </sheet>
+    </element>
+    <element name="Aspect of Fear" type="Companion" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_MADWALKER_FEAR">
+        <supports>penumbral-shape</supports>
+        <requirements>[level:19]</requirements>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="strength">14</set>
+            <set name="dexterity">16</set>
+            <set name="constitution">16</set>
+            <set name="intelligence">13</set>
+            <set name="wisdom">18</set>
+            <set name="charisma">24</set>
+            <set name="ac">19</set>
+            <set name="hp">142 (19d8+57)</set>
+            <set name="speed">40 ft., fly 60 ft. (hover)</set>
+            <set name="senses">darkvision 60 ft., blindsight 30 ft., passive Perception 15</set>
+            <set name="languages">Common, Deep Speech</set>
+            <set name="skills">Intimidation +13, Perception +7</set>
+            <set name="saves">Wis +7, Cha +10</set>
+            <set name="immunities">necrotic, psychic</set>
+            <set name="conditionimmunities">frightened, prone</set>
+            <set name="type">aberration</set>
+            <set name="size">medium</set>
+            <set name="alignment">neutral evil</set>
+            <set name="challenge">8</set>
+            <set name="proficiency">3</set>
+            <set name="actions">ID_TRPG_COMPANION_ACTION_MADWALKER_FEAR_MULTIATTACK,ID_TRPG_COMPANION_ACTION_MADWALKER_FEAR_FEAR_STAB,ID_TRPG_COMPANION_ACTION_MADWALKER_FEAR_PSYCHIC_BLAST,ID_TRPG_COMPANION_ACTION_MADWALKER_FEAR_SPELLCASTING,ID_TRPG_COMPANION_ACTION_MADWALKER_FEAR_TERROR_WAVE,ID_TRPG_COMPANION_ACTION_MADWALKER_FEAR_PLANAR_SHIFT</set>
+            <set name="traits">ID_TRPG_COMPANION_TRAIT_MADWALKER_FEAR_GUIDED_BY_FEAR,ID_TRPG_COMPANION_TRAIT_MADWALKER_FEAR_SHAPECHANGER,ID_TRPG_COMPANION_TRAIT_MADWALKER_FEAR_TERROR_AURA</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="19"/>
+            <stat name="companion:hp:max" value="142" bonus="base"/>
+            <stat name="companion:speed" value="40" bonus="base"/>
+            <stat name="companion:speed:fly" value="60" bonus="base"/>
+            <stat name="companion:intimidation:proficiency" value="companion:proficiency" bonus="double"/>
+            <stat name="companion:perception:proficiency" value="companion:proficiency" bonus="base"/>
+            <stat name="companion:wisdom:save:proficiency" value="companion:proficiency" bonus="base"/>
+            <stat name="companion:charisma:save:proficiency" value="companion:proficiency" bonus="base"/>
+        </rules>
+    </element>
+    <element name="Multiattack" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_FEAR_MULTIATTACK">
+        <description>
+            <p>The fear makes three Fear Stab or three Psychic Blast attacks.</p>
+        </description>
+        <sheet>
+            <description>The fear makes three Fear Stab or three Psychic Blast attacks.</description>
+        </sheet>
+    </element>
+    <element name="Fear Stab" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_FEAR_FEAR_STAB">
+        <description>
+            <p>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) piercing damage plus 9 (2d8) psychic damage. The target must succeed on a DC 18 Wisdom saving throw or become frightened for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on a success.</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) piercing damage plus 9 (2d8) psychic damage. The target must succeed on a DC 18 Wisdom saving throw or become frightened for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on a success.</description>
+        </sheet>
+    </element>
+    <element name="Psychic Blast" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_FEAR_PSYCHIC_BLAST">
+        <description>
+            <p>Ranged Spell Attack: +10 to hit, range 60 ft., one target. Hit: 18 (2d10 + 7) psychic damage.</p>
+        </description>
+        <sheet>
+            <description>Ranged Spell Attack: +10 to hit, range 60 ft., one target. Hit: 18 (2d10 + 7) psychic damage.</description>
+        </sheet>
+    </element>
+    <element name="Spellcasting" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_FEAR_SPELLCASTING">
+        <description>
+            <p>The fear casts one of the following spells, using Charisma as the spellcasting ability (spell save DC 18, +10 to hit with spell attacks)</p>
+            <ul>
+                <li>At will: darkness, detect magic, silent image</li>
+                <li>3/day each: fear, major image</li>
+                <li>1/day each: dream, phantasmal killer</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Charisma caster with DC 18 and +10 to hit. - At will: darkness, detect magic, silent image - 3/day each: fear, major image - 1/day each: dream, phantasmal killer</description>
+        </sheet>
+    </element>
+    <element name="Terror Wave (Recharge 5-6)" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_FEAR_TERROR_WAVE">
+        <description>
+            <p>The fear emits psychic energy in a 40-foot cone. Each creature in that area must make a DC 18 Wisdom saving throw, taking 27 (6d8) psychic damage on a failed save, or half as much damage on a successful one. On a failed save, the creature also becomes frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on a success. On a success, the creature becomes immune to the fear’s Terror Wave for the next 24 hours.</p>
+        </description>
+        <sheet>
+            <description>The fear emits psychic energy in a 40-foot cone. Each creature in that area must make a DC 18 Wisdom saving throw, taking 27 (6d8) psychic damage on a failed save, or half as much damage on a successful one. On a failed save, the creature also becomes frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on a success. On a success, the creature becomes immune to the fear’s Terror Wave for the next 24 hours.</description>
+        </sheet>
+    </element>
+    <element name="Planar Shift" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_FEAR_PLANAR_SHIFT">
+        <description>
+            <p>The fear magically shifts from the Material Plane to the Penumbral Plane, or vice versa.</p>
+        </description>
+        <sheet>
+            <description>The fear magically shifts from the Material Plane to the Penumbral Plane, or vice versa.</description>
+        </sheet>
+    </element>
+    <element name="Guided by Fear" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_FEAR_GUIDED_BY_FEAR">
+        <description>
+            <p>The fear has advantage on attack rolls against creatures that are frightened.</p>
+        </description>
+        <sheet>
+            <description>The fear has advantage on attack rolls against creatures that are frightened.</description>
+        </sheet>
+    </element>
+    <element name="Shapechanger" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_FEAR_SHAPECHANGER">
+        <description>
+            <p>The fear can use its action to polymorph into a Small, Medium, or Large humanoid, or back into its true form. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn’t transformed. It reverts to its true form if it dies.</p>
+        </description>
+        <sheet>
+            <description>The fear can use its action to polymorph into a Small, Medium, or Large humanoid, or back into its true form. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn’t transformed. It reverts to its true form if it dies.</description>
+        </sheet>
+    </element>
+    <element name="Terror Aura" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_FEAR_TERROR_AURA">
+        <description>
+            <p>At the start of each of its turns, the fear gains 1d6 temporary hit points for each frightened creature within 30 feet of it.</p>
+        </description>
+        <sheet>
+            <description>At the start of each of its turns, the fear gains 1d6 temporary hit points for each frightened creature within 30 feet of it.</description>
         </sheet>
     </element>
 
-    
 
--->
+
+</elements>

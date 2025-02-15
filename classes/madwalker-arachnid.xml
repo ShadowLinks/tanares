@@ -16,7 +16,7 @@
             <p class="indent">With their senses attuned to the deep hunger of the spiders, the Madwalkers that follow this path move through the Penumbral Plane as deadly predators, always on the hunt for their next victim.</p>
             <div element="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_ARACHNID_ARACHNID_MUTATIONS" />
             <div element="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_ARACHNID_CUNNING_PREDATOR" />
-            <div element="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_ARACHNID_ARACHNID_PENUMBRAL_SHAPE" />
+            <div element="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_ARACHNID_ARACHNE_PENUMBRAL_SHAPE" />
             <div element="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_ARACHNID_ARACHNID_NATURE" />
             <div element="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_ARACHNID_BLACK_WIDOWS_WEB" />
             <div element="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_ARACHNID_ARACHNID_CAMO" />
@@ -27,61 +27,1162 @@
         <rules>
             <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_ARACHNID_ARACHNID_MUTATIONS" level="2" />
             <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_ARACHNID_CUNNING_PREDATOR" level="2" />
-            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_ARACHNID_ARACHNID_PENUMBRAL_SHAPE" level="2" />
+            <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_ARACHNID_ARACHNE_PENUMBRAL_SHAPE" level="2" />
             <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_ARACHNID_ARACHNID_NATURE" level="7" />
             <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_ARACHNID_BLACK_WIDOWS_WEB" level="14" />
             <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_ARACHNID_ARACHNID_CAMO" level="18" />
         </rules>
     </element>
-    <element name="name" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_ARACHNID_ARACHNID_MUTATIONS">
+    <element name="Aberrant Arachnid Mutations" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_ARACHNID_ARACHNID_MUTATIONS">
         <description>
-            <p></p>
+            <p>As an Aberrant Arachnid Trail madwalker, you have access to various exclusive Aberrant Mutations acquired at 2nd, 5th, 9th, 13th, and 17th madwalker levels. Upon gaining each of these levels, you may choose one of the available Aberrant Mutations, and it does not count toward the number of Aberrant Mutations known.</p>
+            <table>
+                <thead>
+                    <tr><td>Madwalker Level</td><td>Available Aberrant Mutations</td></tr>
+                </thead>
+                <tr><td>2nd</td><td>Noxious Attack, Shadow Web</td></tr>
+                <tr><td>5th</td><td>Venom Splash, Nauseating Spray</td></tr>
+                <tr><td>9th</td><td>Arachnid Legs, Venomous Saliva</td></tr>
+                <tr><td>13th</td><td>Allergic Spores, Pheromone Spray</td></tr>
+                <tr><td>17th</td><td>Web Cocoon, Exoskeleton</td></tr>
+            </table>
         </description>
-        <sheet>
+        <sheet display="false">
             <description></description>
         </sheet>
         <rules>
             <select type="Spell" supports="arachnid-trail-mutation,1" spellcasting="Madwalker" />
+            <select type="Spell" supports="arachnid-trail-mutation,2" spellcasting="Madwalker" level="5" />
+            <select type="Spell" supports="arachnid-trail-mutation,3" spellcasting="Madwalker" level="9" />
+            <select type="Spell" supports="arachnid-trail-mutation,4" spellcasting="Madwalker" level="13" />
+            <select type="Spell" supports="arachnid-trail-mutation,5" spellcasting="Madwalker" level="17" />
         </rules>
     </element>
-    <element name="name" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_ARACHNID_CUNNING_PREDATOR">
+    <element name="Cunning Predator" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_ARACHNID_CUNNING_PREDATOR">
         <description>
-            <p></p>
+            <p>You embody the agility and predatory instincts of a spider.</p>
+            <p class="indent">At 2nd level, while wearing light or no armor and without a shield, your Armor Class (AC) increases by 1. In addition, every time you engage in a melee attack against a creature with no allies within a 5-foot radius, you gain temporary hit points equal to your madwalker level. These hit points last for a minute and are granted even if the attack fails. They don’t stack. Starting from the 5th level, you add your proficiency bonus to your level when obtaining these temporary hit points.</p>
         </description>
         <sheet>
+            <description>While wearing light or no armor and without a shield, your Armor Class (AC) increases by 1. In addition, every time you engage in a melee attack against a creature with no allies within a 5-foot radius, you gain temporary hit points equal to your madwalker level. These hit points last for a minute and are granted even if the attack fails. They don’t stack. Starting from the 5th level, you add your proficiency bonus to your level when obtaining these temporary hit points.</description>
+        </sheet>
+        <rules>
+            <stat name="ac:cunning-predator:base" value="10"/>
+            <stat name="ac:cunning-predator:dexterity" value="dexterity:modifier"/>
+            <stat name="ac:cunning-predator" value="ac:cunning-predator:base"/>
+            <stat name="ac:cunning-predator" value="ac:cunning-predator:dexterity"/>
+            <stat name="ac:cunning-predator" value="1"/>
+            <stat name="ac:calculation" value="ac:cunning-predator" bonus="calculation" equipped="[armor:none]" alt="Cunning Predator (Aberrant Arachnid)"/>
+        </rules>
+    </element>
+    <element name="Arachne Penmbral Shape" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_ARACHNID_ARACHNE_PENUMBRAL_SHAPE">
+        <description>
+            <p>Starting at 2nd level, you have access to penumbral shapes exclusive to the Aberrant Arachnid Trail.</p>
+            <table>
+                <thead>
+                    <tr><td>Madwalker Level</td><td>Arachne Penumbral Shape</td></tr>
+                </thead>
+                <tr><td>2nd</td><td>Arachne Serf</td></tr>
+                <tr><td>3rd</td><td>Arachne Scout</td></tr>
+                <tr><td>5th</td><td>Arachne Soldier</td></tr>
+                <tr><td>7th</td><td>Arachne Ambusher</td></tr>
+                <tr><td>9th</td><td>Arachne Hunter</td></tr>
+                <tr><td>11th</td><td>Arachne Sorcerer</td></tr>
+                <tr><td>13th</td><td>Arachne Noble</td></tr>
+                <tr><td>15th</td><td>Arachne Commander</td></tr>
+                <tr><td>17th</td><td>Arachne Overlord</td></tr>
+                <tr><td>19th</td><td>Arachne Matriarch</td></tr>
+            </table>
+        </description>
+        <sheet display="false">
             <description></description>
         </sheet>
     </element>
-    <element name="name" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_ARACHNID_ARACHNID_PENUMBRAL_SHAPE">
+    <element name="Arachnid Nature" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_ARACHNID_ARACHNID_NATURE">
+        <description>
+            <p>Starting at 7th level, you gain poison immunity and a climbing speed equal to your walking speed. This allows you to traverse walls and ceilings hands-free.</p>
+            <p class="indent">Additionally, when you suffer damage from an attack, you can react by moving up to 20 feet. If you end your movement in an area that offers total cover or is heavily obscured, you can hide as part of this reaction.</p>
+        </description>
+        <sheet usage="Reaction">
+            <description>When you suffer damage from an attack, you can react by moving up to 20 feet. If you end your movement in an area that offers total cover or is heavily obscured, you can hide as part of this reaction.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_POISON"/>
+            <stat name="speed:climb" value="speed" bonus="base" />
+        </rules>
+    </element>
+    <element name="Black Widow's Web" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_ARACHNID_BLACK_WIDOWS_WEB">
+        <description>
+            <p>Starting at the 14th level, once per long rest, you can spend 10 minutes to weave a mystical web around you. This creates a up to 50-foot radius circular area that must be anchored between at least two solid masses as the web spell. Creatures oblivious to the web must make a Wisdom (Perception) check against your Dexterity (Stealth) check to spot it before entering its area.</p>
+            <p class="indent">You have advantage on Dexterity (Stealth) checks within this area. Furthermore, if you’re in contact with the web, you can sense all creatures that touch or move through it, thus, they can’t surprise you.</p>
+            <p class="indent">For all other creatures, the web is difficult terrain. If they move or end their turn on the web, they must succeed on a Dexterity saving throw (DC 20) once per turn. If they fail, they become restrained and stuck in the web. At the end of each turn, the restrained creature can attempt a Strength saving throw (DC 20) to break free from the web. The web lasts for 8 hours.</p>
+        </description>
+        <sheet usage="1/long rest">
+            <description>Once per long rest, you can spend 10 minutes to weave a mystical web around you. This creates a up to 50-foot radius circular area that must be anchored between at least two solid masses as the web spell. Creatures oblivious to the web must make a Wisdom (Perception) check against your Dexterity (Stealth) check to spot it before entering its area. You have advantage on Dexterity (Stealth) checks within this area. Furthermore, if you’re in contact with the web, you can sense all creatures that touch or move through it, thus, they can’t surprise you. For all other creatures, the web is difficult terrain. If they move or end their turn on the web, they must succeed on a Dexterity saving throw (DC 20) once per turn. If they fail, they become restrained and stuck in the web. At the end of each turn, the restrained creature can attempt a Strength saving throw (DC 20) to break free from the web. The web lasts for 8 hours.</description>
+        </sheet>
+    </element>
+    <element name="Arachnid Camoflage" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_ARACHNID_ARACHNID_CAMO">
+        <description>
+            <p>Starting at the 18th level, once per short rest, you can use an action to become invisible for a minute or until you decide to reveal yourself. Any creature trying to detect you while you’re invisible in this way have disadvantage on Wisdom (Perception) check. This invisibility isn’t interrupted by attacking.</p>
+        </description>
+        <sheet usage="1/short rest">
+            <description>Once per short rest, you can use an action to become invisible for a minute or until you decide to reveal yourself. Any creature trying to detect you while you’re invisible in this way have disadvantage on Wisdom (Perception) check. This invisibility isn’t interrupted by attacking.</description>
+        </sheet>
+    </element>
+    <element name="Arachne Serf" type="Companion" source="Tanares RPG 5e" id="ID_TRPG_ARCHTYPE_FEATURE_MADWALKER_ARACHNE_SERF">
+        <supports>penumbral-shape</supports>
+        <requirements>[level:2],ID_TRPG_ARCHETYPE_MADWALKER_ARACHNID</requirements>
         <description>
             <p></p>
         </description>
+        <setters>
+            <set name="strength">14</set>
+            <set name="dexterity">14</set>
+            <set name="constitution">14</set>
+            <set name="intelligence">9</set>
+            <set name="wisdom">11</set>
+            <set name="charisma">13</set>
+            <set name="ac">14</set>
+            <set name="hp">15 (2d10+2)</set>
+            <set name="speed">30 ft., climb 30 ft.</set>
+            <set name="senses">darkvision 60 ft., passive Perception 10</set>
+            <set name="languages">Common, Deep Speech</set>
+            <set name="skills">Stealth +6</set>
+            <set name="immunities">poison</set>
+            <set name="conditionimmunities">poisoned</set>
+            <set name="type">aberration</set>
+            <set name="size">medium</set>
+            <set name="alignment">neutral</set>
+            <set name="challenge">1/2</set>
+            <set name="proficiency">2</set>
+            <set name="actions">ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_MULTIATTACK,ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_CLAW</set>
+            <set name="traits">ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_PROWLERS,ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_SPIDER_CLIMB,ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_WEB_SENSE,ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_WEB_WALKER</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="14"/>
+            <stat name="companion:hp:max" value="15" bonus="base"/>
+            <stat name="companion:speed" value="30" bonus="base"/>
+            <stat name="companion:speed:climb" value="30" bonus="base"/>
+            <stat name="companion:stealth:proficiency" value="companion:proficiency" bonus="double"/>
+        </rules>
+    </element>
+    <element name="Multiattack" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_MULTIATTACK">
+        <description>
+            <p> The arachne serf makes two Claw attacks.</p>
+        </description>
         <sheet>
-            <description></description>
+            <description> The arachne serf makes two Claw attacks.</description>
         </sheet>
     </element>
-    <element name="name" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_ARACHNID_ARACHNID_NATURE">
+    <element name="Claw" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_CLAW">
+        <description>
+            <p>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) slashing damage.</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) slashing damage.</description>
+        </sheet>
+    </element>
+    <element name="Prowlers" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_PROWLERS">
+        <description>
+            <p>The creature has advantage on Dexterity (Stealth) checks made to hide.</p>
+        </description>
+        <sheet>
+            <description>The creature has advantage on Dexterity (Stealth) checks made to hide.</description>
+        </sheet>
+    </element>
+    <element name="Spider Climb" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_SPIDER_CLIMB">
+        <description>
+            <p> The creature can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</p>
+        </description>
+        <sheet>
+            <description> The creature can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</description>
+        </sheet>
+    </element>
+    <element name="Web Sense" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_WEB_SENSE">
+        <description>
+            <p>While in contact with a web, the creature knows the exact location of any other creature in contact with the same web.</p>
+        </description>
+        <sheet>
+            <description>While in contact with a web, the creature knows the exact location of any other creature in contact with the same web.</description>
+        </sheet>
+    </element>
+    <element name="Web Walker" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_WEB_WALKER">
+        <description>
+            <p>The creature ignores movement restrictions caused by webbing</p>
+        </description>
+        <sheet>
+            <description>The creature ignores movement restrictions caused by webbing</description>
+        </sheet>
+    </element>
+    <element name="Arachne Scout" type="Companion" source="Tanares RPG 5e" id="ID_TRPG_ARCHTYPE_FEATURE_MADWALKER_ARACHNE_SCOUT">
+        <supports>penumbral-shape</supports>
+        <requirements>[level:3],ID_TRPG_ARCHETYPE_MADWALKER_ARACHNID</requirements>
         <description>
             <p></p>
         </description>
+        <setters>
+            <set name="strength">14</set>
+            <set name="dexterity">16</set>
+            <set name="constitution">14</set>
+            <set name="intelligence">9</set>
+            <set name="wisdom">12</set>
+            <set name="charisma">13</set>
+            <set name="ac">15</set>
+            <set name="hp">22 (3d10+6)</set>
+            <set name="speed">30 ft., climb 30 ft</set>
+            <set name="senses">darkvision 60 ft., passive Perception 11</set>
+            <set name="languages">Common, Deep Speech</set>
+            <set name="skills">Stealth +7</set>
+            <set name="saves">Dex +5, Cha +3</set>
+            <set name="immunities">poison</set>            
+            <set name="conditionimmunities">poisoned</set>
+            <set name="type">aberration</set>
+            <set name="size">large</set>
+            <set name="alignment">neutral evil</set>
+            <set name="challenge">1</set>
+            <set name="proficiency">2</set>
+            <set name="actions">ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_SCOUT_MULTIATTACK,ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_SCOUT_CLAW,ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_SCOUT_WEB</set>
+            <set name="traits">ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_SCOUT_PROWLERS,ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_SCOUT_SPIDER_CLIMB,ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_SCOUT_WEB_SENSE,ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_SCOUT_WEB_WALKER</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="15"/>
+            <stat name="companion:hp:max" value="22" bonus="base"/>
+            <stat name="companion:speed" value="30" bonus="base"/>            
+            <stat name="companion:speed:climb" value="30" bonus="base"/>
+            <stat name="companion:stealth:proficiency" value="companion:proficiency" bonus="double"/>
+            <stat name="companion:dexterity:save:proficiency" value="companion:proficiency" bonus="base"/>
+            <stat name="companion:charisma:save:proficiency" value="companion:proficiency" bonus="base"/>
+        </rules>
+    </element>
+    <element name="Multiattack" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_SCOUT_MULTIATTACK">
+        <description>
+            <p>The arachne scout makes two Claw attacks.</p>
+        </description>
         <sheet>
-            <description></description>
+            <description>The arachne scout makes two Claw attacks.</description>
         </sheet>
     </element>
-    <element name="name" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_ARACHNID_BLACK_WIDOWS_WEB">
+    <element name="Claw" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_SCOUT_CLAW">
+        <description>
+            <p>Melee Weapon Attack: +5 to hit, reach 10 ft., one target. Hit: 6 (1d6 + 3) slashing damage.</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack: +5 to hit, reach 10 ft., one target. Hit: 6 (1d6 + 3) slashing damage.</description>
+        </sheet>
+    </element>
+    <element name="Web (Recharge 5-6)" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_SCOUT_WEB">
+        <description>
+            <p>Ranged Weapon Attack: +5 to hit, range 30/60 ft., one creature. Hit: The target is restrained by webbing. As an action, the restrained target can make a DC 12 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 5; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage).</p>
+        </description>
+        <sheet>
+            <description>Ranged Weapon Attack: +5 to hit, range 30/60 ft., one creature. Hit: The target is restrained by webbing. As an action, the restrained target can make a DC 12 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 5; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage).</description>
+        </sheet>
+    </element>
+    <element name="Prowlers" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_SCOUT_PROWLERS">
+        <description>
+            <p>The creature has advantage on Dexterity (Stealth) checks made to hide.</p>
+        </description>
+        <sheet>
+            <description>The creature has advantage on Dexterity (Stealth) checks made to hide.</description>
+        </sheet>
+    </element>
+    <element name="Spider Climb" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_SCOUT_SPIDER_CLIMB">
+        <description>
+            <p>The creature can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</p>
+        </description>
+        <sheet>
+            <description>The creature can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</description>
+        </sheet>
+    </element>
+    <element name="Web Sense" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_SCOUT_WEB_SENSE">
+        <description>
+            <p>While in contact with a web, the creature knows the exact location of any other creature in contact with the same web.</p>
+        </description>
+        <sheet>
+            <description>While in contact with a web, the creature knows the exact location of any other creature in contact with the same web.</description>
+        </sheet>
+    </element>
+    <element name="Web Walker" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_SCOUT_WEB_WALKER">
+        <description>
+            <p>The creature ignores movement restrictions caused by webbing</p>
+        </description>
+        <sheet>
+            <description>The creature ignores movement restrictions caused by webbing</description>
+        </sheet>
+    </element>
+    <element name="Arachne Soldier" type="Companion" source="Tanares RPG 5e" id="ID_TRPG_ARCHTYPE_FEATURE_MADWALKER_ARACHNE_SOLDIER">
+        <supports>penumbral-shape</supports>
+        <requirements>[level:5],ID_TRPG_ARCHETYPE_MADWALKER_ARACHNID</requirements>
         <description>
             <p></p>
         </description>
+        <setters>
+            <set name="strength">14</set>
+            <set name="dexterity">18</set>
+            <set name="constitution">14</set>
+            <set name="intelligence">10</set>
+            <set name="wisdom">12</set>
+            <set name="charisma">14</set>
+            <set name="ac">15</set>
+            <set name="hp">37 (5d10+10)</set>
+            <set name="speed">30 ft., climb 30 ft</set>
+            <set name="senses">darkvision 60 ft., passive Perception 11</set>
+            <set name="languages">Common, Deep Speech</set>
+            <set name="skills">Stealth +8</set>
+            <set name="saves">Dex +6, Cha +4</set>
+            <set name="immunities">poison</set>            
+            <set name="conditionimmunities">poisoned</set>
+            <set name="type">aberration</set>
+            <set name="size">large</set>
+            <set name="alignment">neutral evil</set>
+            <set name="challenge">2</set>
+            <set name="proficiency">2</set>
+            <set name="actions">ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_SOLDIER_MULTIATTACK,ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_SOLDIER_POISONOUS_CLAW,ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_SOLDIER_WEB</set>
+            <set name="traits">ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_SOLDIER_PROWLERS,ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_SOLDIER_SPIDER_CLIMB,ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_SOLDIER_WEB_SENSE,ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_SOLDIER_WEB_WALKER</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="15"/>
+            <stat name="companion:hp:max" value="37" bonus="base"/>
+            <stat name="companion:speed" value="30" bonus="base"/>            
+            <stat name="companion:speed:climb" value="30" bonus="base"/>
+            <stat name="companion:stealth:proficiency" value="companion:proficiency" bonus="double"/>
+            <stat name="companion:charisma:save:proficiency" value="companion:proficiency" bonus="base"/>
+            <stat name="companion:dexterity:save:proficiency" value="companion:proficiency" bonus="base"/>
+        </rules>
+    </element>
+    <element name="Multiattack" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_SOLDIER_MULTIATTACK">
+        <description>
+            <p>The arachne soldier makes three Poisonous Claw attacks.</p>
+        </description>
         <sheet>
-            <description></description>
+            <description>The arachne soldier makes three Poisonous Claw attacks.</description>
         </sheet>
     </element>
-    <element name="name" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_ARACHNID_ARACHNID_CAMO">
+    <element name="Poisonous Claw" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_SOLDIER_POISONOUS_CLAW">
+        <description>
+            <p>Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 7 (1d6 + 4) slashing damage plus 2 (1d4) poison damage.</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 7 (1d6 + 4) slashing damage plus 2 (1d4) poison damage.</description>
+        </sheet>
+    </element>
+    <element name="Web (Recharge 5-6)" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_SOLDIER_WEB">
+        <description>
+            <p>Ranged Weapon Attack: +6 to hit, range 30/60 ft., one creature. Hit: The target is restrained by webbing. As an action, the target can make a DC 12 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 5; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage).</p>
+        </description>
+        <sheet>
+            <description>Ranged Weapon Attack: +6 to hit, range 30/60 ft., one creature. Hit: The target is restrained by webbing. As an action, the target can make a DC 12 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 5; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage).</description>
+        </sheet>
+    </element>
+    <element name="Prowlers" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_SOLDIER_PROWLERS">
+        <description>
+            <p>The creature has advantage on Dexterity (Stealth) checks made to hide.</p>
+        </description>
+        <sheet>
+            <description>The creature has advantage on Dexterity (Stealth) checks made to hide.</description>
+        </sheet>
+    </element>
+    <element name="Spider Climb" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_SOLDIER_SPIDER_CLIMB">
+        <description>
+            <p>The creature can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</p>
+        </description>
+        <sheet>
+            <description>The creature can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</description>
+        </sheet>
+    </element>
+    <element name="Web Sense" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_SOLDIER_WEB_SENSE">
+        <description>
+            <p>While in contact with a web, the creature knows the exact location of any other creature in contact with the same web.</p>
+        </description>
+        <sheet>
+            <description>While in contact with a web, the creature knows the exact location of any other creature in contact with the same web.</description>
+        </sheet>
+    </element>
+    <element name="Web Walker" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_SOLDIER_WEB_WALKER">
+        <description>
+            <p>The creature ignores movement restrictions caused by webbing</p>
+        </description>
+        <sheet>
+            <description>The creature ignores movement restrictions caused by webbing</description>
+        </sheet>
+    </element>
+    <element name="Arachne Ambusher" type="Companion" source="Tanares RPG 5e" id="ID_TRPG_ARCHTYPE_FEATURE_MADWALKER_ARACHNE_HUNTER">
+        <supports>penumbral-shape</supports>
+        <requirements>[level:7],ID_TRPG_ARCHETYPE_MADWALKER_ARACHNID</requirements>
         <description>
             <p></p>
         </description>
+        <setters>
+            <set name="strength">14</set>
+            <set name="dexterity">20</set>
+            <set name="constitution">15</set>
+            <set name="intelligence">11</set>
+            <set name="wisdom">12</set>
+            <set name="charisma">15</set>
+            <set name="ac">16</set>
+            <set name="hp">59 (7d10+14)</set>
+            <set name="speed">30 ft., climb 30 ft</set>
+            <set name="senses">darkvision 60 ft., passive Perception 11</set>
+            <set name="languages">Common, Deep Speech</set>
+            <set name="skills">Stealth +9</set>
+            <set name="saves">Dex +7, Cha +4</set>            
+            <set name="resistances">psychic</set> 
+            <set name="immunities">poison</set>            
+            <set name="conditionimmunities">poisoned</set>
+            <set name="type">aberration</set>
+            <set name="size">huge</set>
+            <set name="alignment">neutral evil</set>
+            <set name="challenge">3</set>
+            <set name="proficiency">2</set>
+            <set name="actions">ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_HUNTER_MULTIATTACK,ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_HUNTER_POISONOUS_CLAW,ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_HUNTER_WEB</set>
+            <set name="traits">ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_HUNTER_PROWLERS,ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_HUNTER_SPIDER_CLIMB,ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_HUNTER_WEB_SENSE,ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_HUNTER_WEB_WALKER</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="16"/>
+            <stat name="companion:hp:max" value="59" bonus="base"/>
+            <stat name="companion:speed" value="30" bonus="base"/>            
+            <stat name="companion:speed:climb" value="30" bonus="base"/>
+            <stat name="companion:stealth:proficiency" value="companion:proficiency" bonus="double"/>
+            <stat name="companion:charisma:save:proficiency" value="companion:proficiency" bonus="base"/>
+            <stat name="companion:dexterity:save:proficiency" value="companion:proficiency" bonus="base"/>
+        </rules>
+    </element>
+    <element name="Multiattack" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_HUNTER_MULTIATTACK">
+        <description>
+            <p>The arachne soldier makes three Poisonous Claw attacks.</p>
+        </description>
         <sheet>
-            <description></description>
+            <description>The arachne soldier makes three Poisonous Claw attacks.</description>
         </sheet>
     </element>
+    <element name="Poisonous Claw" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_HUNTER_POISONOUS_CLAW">
+        <description>
+            <p>Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 8 (1d6 + 5) slashing damage plus 2 (1d4) poison damage.</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 8 (1d6 + 5) slashing damage plus 2 (1d4) poison damage.</description>
+        </sheet>
+    </element>
+    <element name="Web (Recharge 5-6)" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_HUNTER_WEB">
+        <description>
+            <p>Ranged Weapon Attack: +7 to hit, range 30/60 ft., one creature. Hit: The target is restrained by webbing. As an action, the restrained target can make a DC 12 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 5; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage).</p>
+        </description>
+        <sheet>
+            <description>Ranged Weapon Attack: +7 to hit, range 30/60 ft., one creature. Hit: The target is restrained by webbing. As an action, the restrained target can make a DC 12 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 5; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage).</description>
+        </sheet>
+    </element>
+    <element name="Prowlers" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_HUNTER_PROWLERS">
+        <description>
+            <p>The creature has advantage on Dexterity (Stealth) checks made to hide.</p>
+        </description>
+        <sheet>
+            <description>The creature has advantage on Dexterity (Stealth) checks made to hide.</description>
+        </sheet>
+    </element>
+    <element name="Spider Climb" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_HUNTER_SPIDER_CLIMB">
+        <description>
+            <p>The creature can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</p>
+        </description>
+        <sheet>
+            <description>The creature can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</description>
+        </sheet>
+    </element>
+    <element name="Web Sense" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_HUNTER_WEB_SENSE">
+        <description>
+            <p>While in contact with a web, the creature knows the exact location of any other creature in contact with the same web.</p>
+        </description>
+        <sheet>
+            <description>While in contact with a web, the creature knows the exact location of any other creature in contact with the same web.</description>
+        </sheet>
+    </element>
+    <element name="Web Walker" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_HUNTER_WEB_WALKER">
+        <description>
+            <p>The creature ignores movement restrictions caused by webbing</p>
+        </description>
+        <sheet>
+            <description>The creature ignores movement restrictions caused by webbing</description>
+        </sheet>
+    </element>
+    <element name="Arachne Hunter" type="Companion" source="Tanares RPG 5e" id="ID_TRPG_ARCHTYPE_FEATURE_MADWALKER_ARACHNE_HUNTER">
+        <supports>penumbral-shape</supports>
+        <requirements>[level:9],ID_TRPG_ARCHETYPE_MADWALKER_ARACHNID</requirements>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="strength">14</set>
+            <set name="dexterity">20</set>
+            <set name="constitution">15</set>
+            <set name="intelligence">11</set>
+            <set name="wisdom">13</set>
+            <set name="charisma">16</set>
+            <set name="ac">16</set>
+            <set name="hp">76 (7d10+18)</set>
+            <set name="speed">30 ft., climb 30 ft</set>
+            <set name="senses">darkvision 60 ft., passive Perception 11</set>
+            <set name="languages">Common, Deep Speech</set>
+            <set name="skills">Stealth +9</set>
+            <set name="saves">Dex +7, Cha +5</set>            
+            <set name="resistances">psychic</set> 
+            <set name="immunities">poison</set>            
+            <set name="conditionimmunities">poisoned</set>
+            <set name="type">aberration</set>
+            <set name="size">huge</set>
+            <set name="alignment">neutral evil</set>
+            <set name="challenge">4</set>
+            <set name="proficiency">2</set>
+            <set name="actions">ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_AMBUSHER_MULTIATTACK,ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_AMBUSHER_POISONOUS_CLAW,ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_AMBUSHER_WEB</set>
+            <set name="traits">ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_AMBUSHER_PROWLERS,ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_AMBUSHER_SPIDER_CLIMB,ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_AMBUSHER_WEB_SENSE,ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_AMBUSHER_WEB_WALKER</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="16"/>
+            <stat name="companion:hp:max" value="76" bonus="base"/>
+            <stat name="companion:speed" value="30" bonus="base"/>            
+            <stat name="companion:speed:climb" value="30" bonus="base"/>
+            <stat name="companion:stealth:proficiency" value="companion:proficiency" bonus="double"/>
+            <stat name="companion:charisma:save:proficiency" value="companion:proficiency" bonus="base"/>
+            <stat name="companion:dexterity:save:proficiency" value="companion:proficiency" bonus="base"/>
+        </rules>
+    </element>
+    <element name="Multiattack" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_AMBUSHER_MULTIATTACK">
+        <description>
+            <p>The arachne hunter makes three Poisonous Claw attacks.</p>
+        </description>
+        <sheet>
+            <description>The arachne hunter makes three Poisonous Claw attacks.</description>
+        </sheet>
+    </element>
+    <element name="Poisonous Claw" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_AMBUSHER_POISONOUS_CLAW">
+        <description>
+            <p>Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 8 (1d6 + 5) slashing damage plus 2 (1d4) poison damage. The target must make a DC 13 Constitution saving throw or be poisoned for 1 minute.</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 8 (1d6 + 5) slashing damage plus 2 (1d4) poison damage. The target must make a DC 13 Constitution saving throw or be poisoned for 1 minute.</description>
+        </sheet>
+    </element>
+    <element name="Web (Recharge 5-6)" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_AMBUSHER_WEB">
+        <description>
+            <p>Ranged Weapon Attack: +7 to hit, range 30/60 ft., one creature. Hit: The target is restrained by webbing. As an action, the restrained target can make a DC 12 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 8; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage)</p>
+        </description>
+        <sheet>
+            <description>Ranged Weapon Attack: +7 to hit, range 30/60 ft., one creature. Hit: The target is restrained by webbing. As an action, the restrained target can make a DC 12 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 8; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage)</description>
+        </sheet>
+    </element>
+    <element name="Prowlers" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_AMBUSHER_PROWLERS">
+        <description>
+            <p>The creature has advantage on Dexterity (Stealth) checks made to hide.</p>
+        </description>
+        <sheet>
+            <description>The creature has advantage on Dexterity (Stealth) checks made to hide.</description>
+        </sheet>
+    </element>
+    <element name="Spider Climb" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_AMBUSHER_SPIDER_CLIMB">
+        <description>
+            <p>The creature can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</p>
+        </description>
+        <sheet>
+            <description>The creature can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</description>
+        </sheet>
+    </element>
+    <element name="Web Sense" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_AMBUSHER_WEB_SENSE">
+        <description>
+            <p>While in contact with a web, the creature knows the exact location of any other creature in contact with the same web.</p>
+        </description>
+        <sheet>
+            <description>While in contact with a web, the creature knows the exact location of any other creature in contact with the same web.</description>
+        </sheet>
+    </element>
+    <element name="Web Walker" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_AMBUSHER_WEB_WALKER">
+        <description>
+            <p>The creature ignores movement restrictions caused by webbing</p>
+        </description>
+        <sheet>
+            <description>The creature ignores movement restrictions caused by webbing</description>
+        </sheet>
+    </element>
+    <element name="Arachne Sorcerer" type="Companion" source="Tanares RPG 5e" id="ID_TRPG_ARCHTYPE_FEATURE_MADWALKER_ARACHNE_SORCERER">
+        <supports>penumbral-shape</supports>
+        <requirements>[level:11],ID_TRPG_ARCHETYPE_MADWALKER_ARACHNID</requirements>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="strength">14</set>
+            <set name="dexterity">20</set>
+            <set name="constitution">15</set>
+            <set name="intelligence">12</set>
+            <set name="wisdom">13</set>
+            <set name="charisma">17</set>
+            <set name="ac">17</set>
+            <set name="hp">93 (11d10+22)</set>
+            <set name="speed">30 ft., climb 30 ft</set>
+            <set name="senses">darkvision 60 ft., passive Perception 11</set>
+            <set name="languages">Common, Deep Speech</set>
+            <set name="skills">Stealth +11</set>
+            <set name="saves">Dex +8, Cha +6</set>            
+            <set name="resistances">psychic</set> 
+            <set name="immunities">poison</set>            
+            <set name="conditionimmunities">poisoned</set>
+            <set name="type">aberration</set>
+            <set name="size">huge</set>
+            <set name="alignment">neutral evil</set>
+            <set name="challenge">5</set>
+            <set name="proficiency">3</set>
+            <set name="actions">ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_SORCERER_MULTIATTACK,ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_SORCERER_POISONOUS_CLAW,ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_SORCERER_SPELLCASTING,ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_SORCERER_WEB</set>
+            <set name="traits">ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_SORCERER_PROWLERS,ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_SORCERER_SPIDER_CLIMB,ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_SORCERER_WEB_SENSE,ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_SORCERER_WEB_WALKER</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="17"/>
+            <stat name="companion:hp:max" value="93" bonus="base"/>
+            <stat name="companion:speed" value="30" bonus="base"/>            
+            <stat name="companion:speed:climb" value="30" bonus="base"/>
+            <stat name="companion:stealth:proficiency" value="companion:proficiency" bonus="double"/>
+            <stat name="companion:charisma:save:proficiency" value="companion:proficiency" bonus="base"/>
+            <stat name="companion:dexterity:save:proficiency" value="companion:proficiency" bonus="base"/>
+        </rules>
+    </element>
+    <element name="Multiattack" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_SORCERER_MULTIATTACK">
+        <description>
+            <p>The arachne sorcerer makes three Poisonous Claw attacks.</p>
+        </description>
+        <sheet>
+            <description>The arachne sorcerer makes three Poisonous Claw attacks.</description>
+        </sheet>
+    </element>
+    <element name="Poisonous Claw" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_SORCERER_POISONOUS_CLAW">
+        <description>
+            <p>Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 9 (1d8 + 5) slashing damage plus 3 (1d6) poison damage. A creature hit must make a DC 14 Constitution saving throw or become poisoned for 1 minute.</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 9 (1d8 + 5) slashing damage plus 3 (1d6) poison damage. A creature hit must make a DC 14 Constitution saving throw or become poisoned for 1 minute.</description>
+        </sheet>
+    </element>
+    <element name="Spellcasting" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_SORCERER_SPELLCASTING">
+        <description>
+            <p>The arachne sorcerer casts one of the following spells, using Charisma as the spellcasting ability (spell save DC 14, +6 to hit with spell attacks):</p>
+            <ul>
+                <li>At will: charm person, mage hand, poison spray </li>
+                <li>3/day each: sleep, fear, invisibility, see invisibility</li>
+                <li>1/day each: dimensional door</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Charisma caster with DC 14 and +6 to hit. - At will: charm person, mage hand, poison spray - 3/day each: sleep, fear, invisibility, see invisibility - 1/day each: dimensional door</description>
+        </sheet>
+    </element>
+    <element name="Web (Recharge 5-6)" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_SORCERER_WEB">
+        <description>
+            <p>Ranged Weapon Attack: +8 to hit, range 30/60 ft., one creature. Hit: The target is restrained by webbing. As an action, the restrained target can make a DC 13 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 8; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage).</p>
+        </description>
+        <sheet>
+            <description>Ranged Weapon Attack: +8 to hit, range 30/60 ft., one creature. Hit: The target is restrained by webbing. As an action, the restrained target can make a DC 13 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 8; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage).</description>
+        </sheet>
+    </element>
+    <element name="Prowlers" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_SORCERER_PROWLERS">
+        <description>
+            <p>The creature has advantage on Dexterity (Stealth) checks made to hide.</p>
+        </description>
+        <sheet>
+            <description>The creature has advantage on Dexterity (Stealth) checks made to hide.</description>
+        </sheet>
+    </element>
+    <element name="Spider Climb" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_SORCERER_SPIDER_CLIMB">
+        <description>
+            <p>The creature can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</p>
+        </description>
+        <sheet>
+            <description>The creature can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</description>
+        </sheet>
+    </element>
+    <element name="Web Sense" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_SORCERER_WEB_SENSE">
+        <description>
+            <p>While in contact with a web, the creature knows the exact location of any other creature in contact with the same web.</p>
+        </description>
+        <sheet>
+            <description>While in contact with a web, the creature knows the exact location of any other creature in contact with the same web.</description>
+        </sheet>
+    </element>
+    <element name="Web Walker" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_SORCERER_WEB_WALKER">
+        <description>
+            <p>The creature ignores movement restrictions caused by webbing</p>
+        </description>
+        <sheet>
+            <description>The creature ignores movement restrictions caused by webbing</description>
+        </sheet>
+    </element>
+    <element name="Arachne Noble" type="Companion" source="Tanares RPG 5e" id="ID_TRPG_ARCHTYPE_FEATURE_MADWALKER_ARACHNE_NOBLE">
+        <supports>penumbral-shape</supports>
+        <requirements>[level:13],ID_TRPG_ARCHETYPE_MADWALKER_ARACHNID</requirements>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="strength">14</set>
+            <set name="dexterity">21</set>
+            <set name="constitution">15</set>
+            <set name="intelligence">12</set>
+            <set name="wisdom">14</set>
+            <set name="charisma">17</set>
+            <set name="ac">17</set>
+            <set name="hp">119 (13d10+26)</set>
+            <set name="speed">30 ft., climb 30 ft</set>
+            <set name="senses">darkvision 60 ft., passive Perception 12</set>
+            <set name="languages">Common, Deep Speech</set>
+            <set name="skills">Stealth +11</set>
+            <set name="saves">Dex +8, Cha +6</set>            
+            <set name="resistances">psychic</set> 
+            <set name="immunities">poison</set>            
+            <set name="conditionimmunities">poisoned</set>
+            <set name="type">aberration</set>
+            <set name="size">huge</set>
+            <set name="alignment">neutral evil</set>
+            <set name="challenge">6</set>
+            <set name="proficiency">3</set>
+            <set name="actions">ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_NOBLE_MULTIATTACK,ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_NOBLE_POISONOUS_CLAW,ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_NOBLE_POISON_JET,ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_NOBLE_SPELLCASTING,ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_NOBLE_WEB</set>
+            <set name="traits">ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_NOBLE_PROWLERS,ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_NOBLE_SPIDER_CLIMB,ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_NOBLE_WEB_SENSE,ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_NOBLE_WEB_WALKER</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="17"/>
+            <stat name="companion:hp:max" value="110" bonus="base"/>
+            <stat name="companion:speed" value="30" bonus="base"/>            
+            <stat name="companion:speed:climb" value="30" bonus="base"/>
+            <stat name="companion:stealth:proficiency" value="companion:proficiency" bonus="double"/>
+            <stat name="companion:charisma:save:proficiency" value="companion:proficiency" bonus="base"/>
+            <stat name="companion:dexterity:save:proficiency" value="companion:proficiency" bonus="base"/>
+        </rules>
+    </element>
+    <element name="Multiattack" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_NOBLE_MULTIATTACK">
+        <description>
+            <p>The arachne noble makes three Poisonous Claw attacks.</p>
+        </description>
+        <sheet>
+            <description>The arachne noble makes three Poisonous Claw attacks.</description>
+        </sheet>
+    </element>
+    <element name="Poisonous Claw" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_NOBLE_POISONOUS_CLAW">
+        <description>
+            <p>Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 9 (1d8 + 5) slashing damage plus 3 (1d6) poison damage. A creature hit must make a DC 14 Constitution saving throw or become poisoned for 1 minute.</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 9 (1d8 + 5) slashing damage plus 3 (1d6) poison damage. A creature hit must make a DC 14 Constitution saving throw or become poisoned for 1 minute.</description>
+        </sheet>
+    </element>
+    <element name="Poison Jet" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_NOBLE_POISON_JET">
+        <description>
+            <p>The arachne noble sprays magic poison gas in a 40-foot cone. Each creature in that area must make a DC 14 Constitution saving throw, taking 45 (10d8) poison damage and being poisoned on a failed save, or half as much damage and not getting poisoned on a successful one. At the end of each of its turns, a poisoned target can make a Constitution saving throw, ending the effect on a success.</p>
+        </description>
+        <sheet>
+            <description>The arachne noble sprays magic poison gas in a 40-foot cone. Each creature in that area must make a DC 14 Constitution saving throw, taking 45 (10d8) poison damage and being poisoned on a failed save, or half as much damage and not getting poisoned on a successful one. At the end of each of its turns, a poisoned target can make a Constitution saving throw, ending the effect on a success.</description>
+        </sheet>
+    </element>
+    <element name="Spellcasting" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_NOBLE_SPELLCASTING">
+        <description>
+            <p>The arachne noble casts one of the following spells, using Charisma as the spellcasting ability (spell save DC 14, +6 to hit with spell attacks):</p>
+            <ul>
+                <li>At will: charm person, mage hand, poison spray </li>
+                <li>3/day each: sleep, fear, invisibility, see invisibility</li>
+                <li>1/day each: dimensional door</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Charisma caster with DC 14 and +6 to hit. - At will: charm person, mage hand, poison spray - 3/day each: sleep, fear, invisibility, see invisibility - 1/day each: dimensional door</description>
+        </sheet>
+    </element>
+    <element name="Web (Recharge 5-6)" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_NOBLE_WEB">
+        <description>
+            <p>Ranged Weapon Attack: +8 to hit, range 30/60 ft., one creature. Hit: The target is restrained by webbing. As an action, the restrained target can make a DC 13 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 8; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage).</p>
+        </description>
+        <sheet>
+            <description>Ranged Weapon Attack: +8 to hit, range 30/60 ft., one creature. Hit: The target is restrained by webbing. As an action, the restrained target can make a DC 13 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 8; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage).</description>
+        </sheet>
+    </element>
+    <element name="Prowlers" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_NOBLE_PROWLERS">
+        <description>
+            <p>The creature has advantage on Dexterity (Stealth) checks made to hide.</p>
+        </description>
+        <sheet>
+            <description>The creature has advantage on Dexterity (Stealth) checks made to hide.</description>
+        </sheet>
+    </element>
+    <element name="Spider Climb" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_NOBLE_SPIDER_CLIMB">
+        <description>
+            <p>The creature can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</p>
+        </description>
+        <sheet>
+            <description>The creature can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</description>
+        </sheet>
+    </element>
+    <element name="Web Sense" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_NOBLE_WEB_SENSE">
+        <description>
+            <p>While in contact with a web, the creature knows the exact location of any other creature in contact with the same web.</p>
+        </description>
+        <sheet>
+            <description>While in contact with a web, the creature knows the exact location of any other creature in contact with the same web.</description>
+        </sheet>
+    </element>
+    <element name="Web Walker" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_NOBLE_WEB_WALKER">
+        <description>
+            <p>The creature ignores movement restrictions caused by webbing</p>
+        </description>
+        <sheet>
+            <description>The creature ignores movement restrictions caused by webbing</description>
+        </sheet>
+    </element>
+    <element name="Arachne Commander" type="Companion" source="Tanares RPG 5e" id="ID_TRPG_ARCHTYPE_FEATURE_MADWALKER_ARACHNE_COMMANDER">
+        <supports>penumbral-shape</supports>
+        <requirements>[level:15],ID_TRPG_ARCHETYPE_MADWALKER_ARACHNID</requirements>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="strength">14</set>
+            <set name="dexterity">21</set>
+            <set name="constitution">15</set>
+            <set name="intelligence">12</set>
+            <set name="wisdom">14</set>
+            <set name="charisma">18</set>
+            <set name="ac">18</set>
+            <set name="hp">127 (15d10+30)</set>
+            <set name="speed">30 ft., climb 30 ft</set>
+            <set name="senses">darkvision 60 ft., passive Perception 15</set>
+            <set name="languages">Common, Deep Speech</set>
+            <set name="skills">Stealth +11, Perception +5</set>
+            <set name="saves">Dex +8, Cha +7</set>            
+            <set name="resistances">psychic</set> 
+            <set name="immunities">poison</set>            
+            <set name="conditionimmunities">poisoned</set>
+            <set name="type">aberration</set>
+            <set name="size">huge</set>
+            <set name="alignment">neutral evil</set>
+            <set name="challenge">7</set>
+            <set name="proficiency">3</set>
+            <set name="actions">ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_COMMANDER_MULTIATTACK,ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_COMMANDER_POISONOUS_CLAW,ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_COMMANDER_POISON_JET,ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_COMMANDER_SPELLCASTING,ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_COMMANDER_WEB</set>
+            <set name="traits">ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_COMMANDER_PROWLERS,ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_COMMANDER_SPIDER_CLIMB,ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_COMMANDER_WEB_SENSE,ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_COMMANDER_WEB_WALKER</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="18"/>
+            <stat name="companion:hp:max" value="127" bonus="base"/>
+            <stat name="companion:speed" value="30" bonus="base"/>            
+            <stat name="companion:speed:climb" value="30" bonus="base"/>
+            <stat name="companion:stealth:proficiency" value="companion:proficiency" bonus="double"/>
+            <stat name="companion:perception:proficiency" value="companion:proficiency" bonus="base"/>
+            <stat name="companion:charisma:save:proficiency" value="companion:proficiency" bonus="base"/>
+            <stat name="companion:dexterity:save:proficiency" value="companion:proficiency" bonus="base"/>
+        </rules>
+    </element>
+    <element name="Multiattack" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_COMMANDER_MULTIATTACK">
+        <description>
+            <p>The arachne commander makes three Poisonous Claw attacks.</p>
+        </description>
+        <sheet>
+            <description>The arachne commander makes three Poisonous Claw attacks.</description>
+        </sheet>
+    </element>
+    <element name="Poisonous Claw" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_COMMANDER_POISONOUS_CLAW">
+        <description>
+            <p> Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 10 (1d10 + 5) slashing damage plus 7 (2d6) poison damage. A hit creature must make a DC 15 Constitution saving throw or be poisoned for 1 minute.</p>
+        </description>
+        <sheet>
+            <description> Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 10 (1d10 + 5) slashing damage plus 7 (2d6) poison damage. A hit creature must make a DC 15 Constitution saving throw or be poisoned for 1 minute.</description>
+        </sheet>
+    </element>
+    <element name="Poison Jet" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_COMMANDER_POISON_JET">
+        <description>
+            <p>The arachne commander sprays magic poison gas in a 40-foot cone. Each creature in that area must make a DC 15 Constitution saving throw, taking 45 (10d8) poison damage and being poisoned on a failed save, or half as much damage and not getting poisoned on a successful one. At the end of each of its turns, a poisoned target can make a Constitution saving throw, ending the effect on a success.</p>
+        </description>
+        <sheet>
+            <description>The arachne commander sprays magic poison gas in a 40-foot cone. Each creature in that area must make a DC 15 Constitution saving throw, taking 45 (10d8) poison damage and being poisoned on a failed save, or half as much damage and not getting poisoned on a successful one. At the end of each of its turns, a poisoned target can make a Constitution saving throw, ending the effect on a success.</description>
+        </sheet>
+    </element>
+    <element name="Spellcasting" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_COMMANDER_SPELLCASTING">
+        <description>
+            <p>The Arachne casts one of the following spells, using Charisma as the spellcasting ability (spell save DC 15, +7 to hit with spell attacks):</p>
+            <ul>
+                <li>At will: charm person, mage hand, poison spray </li>
+                <li>3/day each: sleep, fear, invisibility, see invisibility</li>
+                <li>1/day each: dimensional door, dominate person, greater invisibility</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Charisma caster with DC 15 and +7 to hit. - At will: charm person, mage hand, poison spray - 3/day each: sleep, fear, invisibility, see invisibility - 1/day each: dimensional door, dominate person, greater invisibility</description>
+        </sheet>
+    </element>
+    <element name="Web (Recharge 5-6)" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_COMMANDER_WEB">
+        <description>
+            <p>Ranged Weapon Attack: +8 to hit, range 30/60 ft., one creature. Hit: The target is restrained by webbing. As an action, the restrained target can make a DC 13 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 10; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage).</p>
+        </description>
+        <sheet>
+            <description>Ranged Weapon Attack: +8 to hit, range 30/60 ft., one creature. Hit: The target is restrained by webbing. As an action, the restrained target can make a DC 13 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 10; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage).</description>
+        </sheet>
+    </element>
+    <element name="Prowlers" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_COMMANDER_PROWLERS">
+        <description>
+            <p>The creature has advantage on Dexterity (Stealth) checks made to hide.</p>
+        </description>
+        <sheet>
+            <description>The creature has advantage on Dexterity (Stealth) checks made to hide.</description>
+        </sheet>
+    </element>
+    <element name="Spider Climb" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_COMMANDER_SPIDER_CLIMB">
+        <description>
+            <p>The creature can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</p>
+        </description>
+        <sheet>
+            <description>The creature can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</description>
+        </sheet>
+    </element>
+    <element name="Web Sense" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_COMMANDER_WEB_SENSE">
+        <description>
+            <p>While in contact with a web, the creature knows the exact location of any other creature in contact with the same web.</p>
+        </description>
+        <sheet>
+            <description>While in contact with a web, the creature knows the exact location of any other creature in contact with the same web.</description>
+        </sheet>
+    </element>
+    <element name="Web Walker" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_COMMANDER_WEB_WALKER">
+        <description>
+            <p>The creature ignores movement restrictions caused by webbing</p>
+        </description>
+        <sheet>
+            <description>The creature ignores movement restrictions caused by webbing</description>
+        </sheet>
+    </element>
+    <element name="Arachne Overlord" type="Companion" source="Tanares RPG 5e" id="ID_TRPG_ARCHTYPE_FEATURE_MADWALKER_ARACHNE_OVERLORD">
+        <supports>penumbral-shape</supports>
+        <requirements>[level:17],ID_TRPG_ARCHETYPE_MADWALKER_ARACHNID</requirements>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="strength">14</set>
+            <set name="dexterity">21</set>
+            <set name="constitution">15</set>
+            <set name="intelligence">13</set>
+            <set name="wisdom">15</set>
+            <set name="charisma">19</set>
+            <set name="ac">18</set>
+            <set name="hp">144 (17d10+34)</set>
+            <set name="speed">30 ft., climb 30 ft</set>
+            <set name="senses">darkvision 60 ft., passive Perception 15</set>
+            <set name="languages">Common, Deep Speech</set>
+            <set name="skills">Stealth +11, Perception +5</set>
+            <set name="saves">Dex +8, Cha +7</set>            
+            <set name="resistances">psychic</set> 
+            <set name="immunities">poison</set>            
+            <set name="conditionimmunities">poisoned</set>
+            <set name="type">aberration</set>
+            <set name="size">huge</set>
+            <set name="alignment">neutral evil</set>
+            <set name="challenge">8</set>
+            <set name="proficiency">3</set>
+            <set name="actions">ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_OVERLORD_MULTIATTACK,ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_OVERLORD_POISONOUS_CLAW,ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_OVERLORD_POISON_JET,ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_OVERLORD_SPELLCASTING,ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_OVERLORD_WEB</set>
+            <set name="traits">ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_OVERLORD_PROWLERS,ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_OVERLORD_SPIDER_CLIMB,ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_OVERLORD_WEB_SENSE,ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_OVERLORD_WEB_WALKER</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="18"/>
+            <stat name="companion:hp:max" value="144" bonus="base"/>
+            <stat name="companion:speed" value="30" bonus="base"/>            
+            <stat name="companion:speed:climb" value="30" bonus="base"/>
+            <stat name="companion:stealth:proficiency" value="companion:proficiency" bonus="double"/>
+            <stat name="companion:perception:proficiency" value="companion:proficiency" bonus="base"/>
+            <stat name="companion:charisma:save:proficiency" value="companion:proficiency" bonus="base"/>
+            <stat name="companion:dexterity:save:proficiency" value="companion:proficiency" bonus="base"/>
+        </rules>
+    </element>
+    <element name="Multiattack" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_OVERLORD_MULTIATTACK">
+        <description>
+            <p>The arachne overlord makes four Poisonous Claw attacks.</p>
+        </description>
+        <sheet>
+            <description>The arachne overlord makes four Poisonous Claw attacks.</description>
+        </sheet>
+    </element>
+    <element name="Poisonous Claw" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_OVERLORD_POISONOUS_CLAW">
+        <description>
+            <p> Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 10 (1d10 + 5) slashing damage plus 7 (2d6) poison damage. A hit creature must make a DC 15 Constitution saving throw or be poisoned for 1 minute.</p>
+        </description>
+        <sheet>
+            <description> Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 10 (1d10 + 5) slashing damage plus 7 (2d6) poison damage. A hit creature must make a DC 15 Constitution saving throw or be poisoned for 1 minute.</description>
+        </sheet>
+    </element>
+    <element name="Poison Jet" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_OVERLORD_POISON_JET">
+        <description>
+            <p>The arachne overlord sprays magic poison gas in a 40-foot cone. Each creature in that area must make a DC 15 Constitution saving throw, taking 45 (10d8) poison damage and being poisoned on a failed save, or half as much damage and not getting poisoned on a successful one. At the end of each of its turns, a poisoned target can make a Constitution saving throw, ending the effect on a success.</p>
+        </description>
+        <sheet>
+            <description>The arachne overlord sprays magic poison gas in a 40-foot cone. Each creature in that area must make a DC 15 Constitution saving throw, taking 45 (10d8) poison damage and being poisoned on a failed save, or half as much damage and not getting poisoned on a successful one. At the end of each of its turns, a poisoned target can make a Constitution saving throw, ending the effect on a success.</description>
+        </sheet>
+    </element>
+    <element name="Spellcasting" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_OVERLORD_SPELLCASTING">
+        <description>
+            <p>The Arachne casts one of the following spells, using Charisma as the spellcasting ability (spell save DC 15, +7 to hit with spell attacks):</p>
+            <ul>
+                <li>At will: charm person, mage hand, poison spray </li>
+                <li>3/day each: sleep, fear, invisibility, see invisibility</li>
+                <li>1/day each: dimensional door, dominate person, greater invisibility</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Charisma caster with DC 15 and +7 to hit. - At will: charm person, mage hand, poison spray - 3/day each: sleep, fear, invisibility, see invisibility - 1/day each: dimensional door, dominate person, greater invisibility</description>
+        </sheet>
+    </element>
+    <element name="Web (Recharge 5-6)" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_OVERLORD_WEB">
+        <description>
+            <p>Ranged Weapon Attack: +8 to hit, range 30/60 ft., one creature. Hit: The target is restrained by webbing. As an action, the restrained target can make a DC 13 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 10; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage).</p>
+        </description>
+        <sheet>
+            <description>Ranged Weapon Attack: +8 to hit, range 30/60 ft., one creature. Hit: The target is restrained by webbing. As an action, the restrained target can make a DC 13 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 10; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage).</description>
+        </sheet>
+    </element>
+    <element name="Prowlers" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_OVERLORD_PROWLERS">
+        <description>
+            <p>The creature has advantage on Dexterity (Stealth) checks made to hide.</p>
+        </description>
+        <sheet>
+            <description>The creature has advantage on Dexterity (Stealth) checks made to hide.</description>
+        </sheet>
+    </element>
+    <element name="Spider Climb" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_OVERLORD_SPIDER_CLIMB">
+        <description>
+            <p>The creature can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</p>
+        </description>
+        <sheet>
+            <description>The creature can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</description>
+        </sheet>
+    </element>
+    <element name="Web Sense" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_OVERLORD_WEB_SENSE">
+        <description>
+            <p>While in contact with a web, the creature knows the exact location of any other creature in contact with the same web.</p>
+        </description>
+        <sheet>
+            <description>While in contact with a web, the creature knows the exact location of any other creature in contact with the same web.</description>
+        </sheet>
+    </element>
+    <element name="Web Walker" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_OVERLORD_WEB_WALKER">
+        <description>
+            <p>The creature ignores movement restrictions caused by webbing</p>
+        </description>
+        <sheet>
+            <description>The creature ignores movement restrictions caused by webbing</description>
+        </sheet>
+    </element>
+    <element name="Arachne Matriarch" type="Companion" source="Tanares RPG 5e" id="ID_TRPG_ARCHTYPE_FEATURE_MADWALKER_ARACHNE_MATRIARCH">
+        <supports>penumbral-shape</supports>
+        <requirements>[level:19],ID_TRPG_ARCHETYPE_MADWALKER_ARACHNID</requirements>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="strength">17</set>
+            <set name="dexterity">22</set>
+            <set name="constitution">17</set>
+            <set name="intelligence">14</set>
+            <set name="wisdom">16</set>
+            <set name="charisma">120</set>
+            <set name="ac">19</set>
+            <set name="hp">180 (19d10+57)</set>
+            <set name="speed">30 ft., climb 30 ft</set>
+            <set name="senses">darkvision 60 ft., passive Perception 21</set>
+            <set name="languages">Common, Deep Speech</set>
+            <set name="skills">Stealth +14, Perception +11</set>
+            <set name="saves">Dex +10, Cha +9</set>            
+            <set name="resistances">psychic</set> 
+            <set name="immunities">poison</set>            
+            <set name="conditionimmunities">poisoned</set>
+            <set name="type">aberration</set>
+            <set name="size">huge</set>
+            <set name="alignment">neutral evil</set>
+            <set name="challenge">10</set>
+            <set name="proficiency">4</set>
+            <set name="actions">ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_MATRIARCH_MULTIATTACK,ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_MATRIARCH_POISONOUS_CLAW,ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_MATRIARCH_POISON_JET,ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_MATRIARCH_SPELLCASTING,ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_MATRIARCH_WEB</set>
+            <set name="traits">ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_MATRIARCH_PROWLERS,ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_MATRIARCH_SPIDER_CLIMB,ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_MATRIARCH_WEB_SENSE,ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_MATRIARCH_WEB_WALKER</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="19"/>
+            <stat name="companion:hp:max" value="180" bonus="base"/>
+            <stat name="companion:speed" value="30" bonus="base"/>            
+            <stat name="companion:speed:climb" value="30" bonus="base"/>
+            <stat name="companion:stealth:proficiency" value="companion:proficiency" bonus="double"/>
+            <stat name="companion:perception:proficiency" value="companion:proficiency" bonus="double"/>
+            <stat name="companion:charisma:save:proficiency" value="companion:proficiency" bonus="base"/>
+            <stat name="companion:dexterity:save:proficiency" value="companion:proficiency" bonus="base"/>
+        </rules>
+    </element>
+    <element name="Multiattack" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_MATRIARCH_MULTIATTACK">
+        <description>
+            <p>The arachne matriarch makes four Poisonous Claw attacks.</p>
+        </description>
+        <sheet>
+            <description>The arachne matriarch makes four Poisonous Claw attacks.</description>
+        </sheet>
+    </element>
+    <element name="Poisonous Claw" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_MATRIARCH_POISONOUS_CLAW">
+        <description>
+            <p>Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 10 (1d10 + 6) slashing damage plus 7 (2d6) poison damage. A hit creature must make a DC 17 Constitution saving throw or become poisoned for 1 minute.</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 10 (1d10 + 6) slashing damage plus 7 (2d6) poison damage. A hit creature must make a DC 17 Constitution saving throw or become poisoned for 1 minute.</description>
+        </sheet>
+    </element>
+    <element name="Poison Jet" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_MATRIARCH_POISON_JET">
+        <description>
+            <p>The arachne matriarch sprays magic poison gas in a 40-foot cone. Each creature in that area must make a DC 17 Constitution saving throw, taking 45 (10d8) poison damage and being poisoned on a failed save, or half as much damage and not getting poisoned on a successful one. At the end of each of its turns, a poisoned target can make a Constitution saving throw, ending the effect on a success.</p>
+        </description>
+        <sheet>
+            <description>The arachne matriarch sprays magic poison gas in a 40-foot cone. Each creature in that area must make a DC 17 Constitution saving throw, taking 45 (10d8) poison damage and being poisoned on a failed save, or half as much damage and not getting poisoned on a successful one. At the end of each of its turns, a poisoned target can make a Constitution saving throw, ending the effect on a success.</description>
+        </sheet>
+    </element>
+    <element name="Spellcasting" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_MATRIARCH_SPELLCASTING">
+        <description>
+            <p>The Arachne casts one of the following spells, using Charisma as the spellcasting ability (spell save DC 17, +9 to hit with spell attacks):</p>
+            <ul>
+                <li>At will: charm person, mage hand, poison spray </li>
+                <li>3/day each: dispel magic, sleep, fear, invisibility, see invisibility</li>
+                <li>1/day each: dimensional door, dominate person, greater invisibility, mass suggestion, teleportation circle</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Charisma caster with DC 15 and +7 to hit. - At will: charm person, mage hand, poison spray - 3/day each: dispel magic, sleep, fear, invisibility, see invisibility - 1/day each: dimensional door, dominate person, greater invisibility mass suggestion, teleportation circle</description>
+        </sheet>
+    </element>
+    <element name="Web (Recharge 5-6)" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_ARACHNE_MATRIARCH_WEB">
+        <description>
+            <p>Ranged Weapon Attack: +9 to hit, range 30/60 ft., one creature. Hit: The target is restrained by webbing. As an action, the restrained target can make a DC 15 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 10; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage).</p>
+        </description>
+        <sheet>
+            <description>Ranged Weapon Attack: +9 to hit, range 30/60 ft., one creature. Hit: The target is restrained by webbing. As an action, the restrained target can make a DC 15 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 10; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage).</description>
+        </sheet>
+    </element>
+    <element name="Prowlers" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_MATRIARCH_PROWLERS">
+        <description>
+            <p>The creature has advantage on Dexterity (Stealth) checks made to hide.</p>
+        </description>
+        <sheet>
+            <description>The creature has advantage on Dexterity (Stealth) checks made to hide.</description>
+        </sheet>
+    </element>
+    <element name="Spider Climb" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_MATRIARCH_SPIDER_CLIMB">
+        <description>
+            <p>The creature can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</p>
+        </description>
+        <sheet>
+            <description>The creature can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</description>
+        </sheet>
+    </element>
+    <element name="Web Sense" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_MATRIARCH_WEB_SENSE">
+        <description>
+            <p>While in contact with a web, the creature knows the exact location of any other creature in contact with the same web.</p>
+        </description>
+        <sheet>
+            <description>While in contact with a web, the creature knows the exact location of any other creature in contact with the same web.</description>
+        </sheet>
+    </element>
+    <element name="Web Walker" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_ARACHNE_MATRIARCH_WEB_WALKER">
+        <description>
+            <p>The creature ignores movement restrictions caused by webbing</p>
+        </description>
+        <sheet>
+            <description>The creature ignores movement restrictions caused by webbing</description>
+        </sheet>
+    </element>    
 </elements>
