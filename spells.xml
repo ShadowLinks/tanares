@@ -5,6 +5,147 @@
             <file name="spells.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/spells.xml" />
         </update>
     </info>
+    <element name="Ammunition Eyes" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_AMMUNITION_EYES">
+        <supports>druid, ranger</supports>
+        <description>
+            <p>When you cast this spell, you can make 1 to 20 arrows magically enchanted for the duration, making a special magical bond with each of them. You make any ranged attack using these arrows with advantage, as well as ignoring half cover and ¾ cover that protects the target of this attack. Also, for the duration of the spell, you always know where your enchanted arrows are, as well as you can use your action to magically see through one of those arrows of your choice, and continue to do so until you use your action to return to your normal senses. As long as you are seeing through the arrow, you are blind to your own senses. You will not be able to see through one of its arrows if it is more than 1 mile away from you. If one of these arrows breaks, the enchantment no longer affects it.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">Self</set>
+            <set name="duration">Concentration up to 1 hour</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">up to 20 arrows</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Amplify the Pain" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_AMPLIFY_THE_PAIN">
+        <supports>cleric, sorcerer, warlock, wizard, Spell Saving Throw</supports>
+        <description>
+            <p>You concentrate and gaze upon a creature within range, causing all of the pain it receives to be amplified for the duration of the spell. Whenever the target takes damage, it must make a Constitution saving throw or take an additional 1d8 necrotic damage. If this additional damage reduces the target’s hit points to 10 or fewer, it must make a Strength saving throw or drop anything it is holding on a failed save.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">Necromancy</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Arena's Fervor" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_ARENAS_FERVOR">
+        <supports>cleric</supports>
+        <description>
+            <p>When you cast this spell, you instill in you and your allies the spirit of the arena. You and every willing ally within 20 feet of you has advantage on Strength ability checks, Strength saving throws and all saving throws against effects that cause the frightened condition. While a creature has this effect active, it deals +2 on all damage rolls it makes, including attacks and spells. The bonus is applied to each damage caused individually before any other modifier.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Enchantment</set>
+            <set name="time">1 action</set>
+            <set name="range">20 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Aurora Heal" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_AURORA_HEAL">
+        <supports>cleric, druid, paladin</supports>
+        <description>
+            <p>When you cast this spell, .you create a 20-foot radius aura around you. Allied creatures that start their turns within the area regain hit points equal to 1d6 + your proficiency bonus. Also, it supresses all magical effects that are causing a condition affecting allied creatures within the area. Lasting effects or conditions do not cease to affect the creature, but are only suspended for the duration of the spell.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">Self(20-foot radius)</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Avelum's Force Spheres" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_AVELUMS_FORCE_SPHERES">
+        <supports>wizard, Spell Saving Throw</supports>
+        <description>
+            <p>You conjure five small energy spheres in range, each about 2 feet in diameter, spinning at high speed and affecting a spherical area with a diameter of 10 feet. Any creature that starts its turn or enters the area takes 3d6 force damage, or half damage with a successful Dexterity saving throw. As a bonus action, you can move each sphere up to 20 feet in any direction within the spell’s rang</p>
+        </description>
+        <setters>
+            <set name="keywords">force</set>
+            <set name="level">3</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">120 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Banner of Inspiration" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_BANNER_OF_INSPIRATION">
+        <supports>bard</supports>
+        <description>
+            <p>You create a fixed, 10 feet high, spiritual banner in a place within range, with a symbol you are currently defendeing. Allies within a 60-foot radius area around the banner and who can see it are inspired, and for the next 10 minutes, can add 1d6 to one ability check, attack roll, or saving throw. Each ally can only use this extra die once, ending this effect for them after it is used. For all purposes, this die counts as a Bardic Inspiration die. This spell can only be cast once every 8 hours.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Enchantment</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">10 minutes</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Beacon of Envy" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_BEACON_OF_ENVY">
+        <supports>bard, sorcerer, warlock, wizard</supports>
+        <description>
+            <p>You become a catalyst of envy, pulling the luck of an enemy towards you. When an enemy you can see makes a roll, such as an attack or a saving throw, the target must succeed on a Charisma check. If it fails, you steal that result and store it. If you do so, the target must reroll the dice that was stolen.</p>
+            <p class="indent">While maintaining concentration, you can spend the stolen value as one of your own rolls, thus ending the effect of the spell.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">Abjuration</set>
+            <set name="time">1 reaction</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
     <element name="Shadow Noose" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_SHADOW_NOOSE">
         <supports>druid, ranger, warlock, Spell Saving Throw</supports>
         <description>
@@ -113,3 +254,27 @@
         </setters>
     </element>
 </elements>
+
+<!--
+<element name="name" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_">
+        <supports>supports</supports>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">level</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">range</set>
+            <set name="duration">duration</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+-->
