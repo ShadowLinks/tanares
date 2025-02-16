@@ -1,11 +1,12 @@
 <elements>
     <info>
         <name>Elemental Spells</name>
-        <update version="0.0.3">
+        <update version="0.0.4">
             <file name="espells.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/classes/espells.xml"/>
         </update>
     </info>
     <element name="Elemental Surge (Air)" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_ELEMENTAL_SURGE_AIR">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports></supports>
         <description>
             <p>With an action, you release pure elemental energy from your hands in a 15-foot cone. You deal 1d6 thunder damage, as shown on the table below. All creatures within the area must make a Dexterity saving throw, taking only half damage on a successful save</p>
@@ -38,6 +39,7 @@
         </setters>
     </element>
     <element name="Elemental Surge (Earth)" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_ELEMENTAL_SURGE_EARTH">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports></supports>
         <description>
             <p>With an action, you release pure elemental energy from your hands in a 15-foot cone. You deal 1d6 acid damage, as shown on the table below. All creatures within the area must make a Dexterity saving throw, taking only half damage on a successful save</p>
@@ -70,6 +72,7 @@
         </setters>
     </element>
     <element name="Elemental Surge (Fire)" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_ELEMENTAL_SURGE_FIRE">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports></supports>
         <description>
             <p>With an action, you release pure elemental energy from your hands in a 15-foot cone. You deal 1d6 fire damage, as shown on the table below. All creatures within the area must make a Dexterity saving throw, taking only half damage on a successful save</p>
@@ -102,6 +105,7 @@
         </setters>
     </element>
     <element name="Elemental Surge (Water)" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_ELEMENTAL_SURGE_WATER">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports></supports>
         <description>
             <p>With an action, you release pure elemental energy from your hands in a 15-foot cone. You deal 1d6 cold damage, as shown on the table below. All creatures within the area must make a Dexterity saving throw, taking only half damage on a successful save</p>
@@ -134,6 +138,7 @@
         </setters>
     </element>
     <element name="Air Essence" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_AIR_ESSENCE">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports></supports>
         <description>
             <p>You can modify the air near you to create one the following effects:</p>
@@ -154,6 +159,7 @@
         </setters>
     </element>
     <element name="Earth Essence" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_EARTH_ESSENCE">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports></supports>
         <description>
             <p>You tap into the energy of the earth and are able to perform the following tricks. For this spell, the term earth includes sand, soil, stone, and similar terrains.</p>
@@ -174,6 +180,7 @@
         </setters>
     </element>
     <element name="Fire Essence" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_FIRE_ESSENCE">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports></supports>
         <description>
             <p>You can create or manipulate fire to produce one of the following effects:</p>
@@ -194,6 +201,7 @@
         </setters>
     </element>
     <element name="Water Essence" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_WATER_ESSENCE">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports></supports>
         <description>
             <p>You have the power to control water in all its forms within range, creating a variety of magical effects and dismiss with an action.</p>
@@ -215,6 +223,7 @@
         </setters>
     </element>
     <element name="Ability Boost" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_ABILITY_BOOST">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>fire-element</supports>
         <description>
             <p>You grant an elemental enhancement to a willing creature within range of the spell, giving it advantage on all ability checks of a single ability of your choice. As a bonus action, if the target is within range of the spell, you can switch the chosen ability or switch the target of the spell to another willing creature, if both are within range of the spell and within 30 feet of each other.</p>
@@ -237,6 +246,7 @@
         </setters>
     </element>
     <element name="Absorb Spell" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_ABSORB_SPELL">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>water-element</supports>
         <description>
             <p>You attempt to disrupt a creature in the process of casting a spell, converting its magical power into healing droplets. If the spell being cast is 5th level or lower, it fails and has no effect. If it is 6th level or higher, you must make a spellcasting ability check. The DC equals 10 plus the level of the spell being cast. On a successful check, the spell fails.</p>
@@ -259,6 +269,7 @@
         </setters>
     </element>
     <element name="Accelerate" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_ACCELERATE">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>air-element</supports>
         <description>
             <p>You make the winds aid the movements of a willing creature you can see, doubling its speed, and granting a +2 bonus to AC and advantage on Dexterity saving throws.</p>
@@ -281,6 +292,7 @@
         </setters>
     </element>
     <element name="Adamantine Skin" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_ADAMANTINE_SKIN">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>earth-element</supports>
         <description>
             <p></p>
@@ -303,6 +315,7 @@
         </setters>
     </element>
     <element name="Adaptive Ear" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_ADAPTIVE_EAR">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>water-element</supports>
         <description>
             <p>You magically enhance your hearing by altering the properties of water. For the next hour, you can understand any spoken language or sound-based communication from creatures with an Intelligence of 5 or higher, and you have advantage on any Wisdom (Perception) checks related to listening.</p>
@@ -325,6 +338,7 @@
         </setters>
     </element>
     <element name="Air Beneath Your Feet" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_AIR_BENEATH_YOUR_FEET">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>air-element</supports>
         <description>
             <p>You envelop the legs of a willing creature you touch in wind, and for the duration, the target can jump twice as far as its normal maximum distance and can fall from heights of up to 30 feet without taking any damage from the fall. If falling from greater heights, the target takes damage only for the distance beyond the initial 30 feet.</p>
@@ -347,6 +361,7 @@
         </setters>
     </element>
     <element name="Air Body" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_AIR_BODY">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>air-element</supports>
         <description>
             <p>Your body changes its composition to become a cloud of whirling air, gaining the following features:</p>
@@ -378,6 +393,7 @@
         </setters>
     </element>
     <element name="Air Double" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_AIR_DOUBLE">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>air-element</supports>
         <description>
             <p>You create a gaseous copy of yourself in an empty space beside you. This copy is indistinguishable from you, even by magical means or abilities such as true sight. The copy has the same stats as you, except for its hit points, as the copy disappears and the spell immediately ends if it takes any damage. The copy has its own turn, which can be immediately before or after your turn. You command what it does (actions, bonus actions, reactions, movement, etc.). It has no resources of its own, such as ammunition, ability uses, or spell slots, so every time it uses something that costs a resource, it uses the resources that you have. For example, if the copy casts a spell, it consumes one of your spell slots as though you had cast the spell yourself. The same principle applies to the use of potions, scrolls, and similar items. </p>
@@ -400,6 +416,7 @@
         </setters>
     </element>
     <element name="Ancestral Retraining" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_ANCESTRAL_RETRAINING">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>water-element</supports>
         <description>
             <p>As you cast the spell, the gem used as a material component is consumed to bring visions of the target’s ancestors, blending them with the target’s memories and unlocking new potential within the individual. However, some of the target’s memories are lost in the process. The target may choose to change any or all of their subclass, feats, or features, provided they meet the prerequisites for the chosen options. Certain abilities that require additional resources, such as gold, experience points, or training, cannot be chosen unless the target possesses the necessary resources at the time of casting.</p>
@@ -422,6 +439,7 @@
         </setters>
     </element>
     <element name="Aquatic Form" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_AQUATIC_FORM">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>water-element</supports>
         <description>
             <p>You modify the bodies of up to six creatures, allowing them to survive underwater. They can breathe underwater and gain a swimming speed equal to their walking speed.</p>
@@ -444,6 +462,7 @@
         </setters>
     </element>
     <element name="Beryl Slabs" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_BERYL_SLABS">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>earth-element</supports>
         <description>
             <p>You create eight plates of pure beryl at points within range of the spell. Each beryl plate is 6 inches thick and 10 feet tall by 10 feet wide. You can distribute the plates in any way you choose within range.</p>
@@ -470,6 +489,7 @@
         </setters>
     </element>
     <element name="Blaze Light" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_BLAZE_LIGHT">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>fire-element</supports>
         <description>
             <p>You cast a small spark at a point within range and then it explodes into a wave of confusion in a 10-foot-radius sphere. All creatures in the area must make a Wisdom saving throw or become extremely disoriented on a failure.</p>
@@ -503,6 +523,7 @@
         </setters>
     </element>
     <element name="Blazing Army" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_BLAZING_ARMY">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>fire-element</supports>
         <description>
             <p>You ignite all weapons of all allied creatures within a 30-foot radius sphere within range. For the duration of the spell, all natural and wielded weapons are considered magical and deal an extra 2d6 fire damage.</p>
@@ -525,6 +546,7 @@
         </setters>
     </element>
     <element name="Blessing of the Earth" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_BLESSING_OF_THE_EARTH">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>earth-element</supports>
         <description>
             <p>You create a square area immune to dispel magic, with a side of 60 feet, having one of the vertices at a point within the range of the spell.</p>
@@ -548,6 +570,7 @@
         </setters>
     </element>
     <element name="Blossom" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_BLOSSOM">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>plant-element</supports>
         <description>
             <p>You manifest a series of flowers in the space you occupy, which immediately grow and bloom, releasing their pollen in a circular area with a 20-foot radius centered on you. Any charm or frightening effect affecting a creature in the area ends immediately. Additionally, any creature hostile towards you or your allies within the area must make a Charisma saving throw, and on a failure, they become indifferent to you and your allies until the end of the spell or until you or your companions do anything harmful to it.</p>
@@ -570,6 +593,7 @@
         </setters>
     </element>
     <element name="Burning Dash" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_BURNING_DASH">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>fire-element</supports>
         <description>
             <p>When you cast this spell, a flame that rises from your feet covers your entire body, increasing your speed and strength momentarily. As part of this spell, you can immediately move 40 feet in any direction you choose. During this movement, you can push objects up to five times your normal capacity (or 150 times your Strength score in pounds). If you collide with a creature, the movement ends, and the creature must succeed on a Strength saving throw or be pushed 40 feet back and fall prone. If the creature’s movement is interrupted by obstacles, it will fall prone and suffer 4d6 bludgeoning damage in addition. If the path is blocked by another creature, that creature must succeed on a Dexterity saving throw, suffering the same damage and falling prone on a failure.</p>
@@ -592,6 +616,7 @@
         </setters>
     </element>
     <element name="Burning Eyes" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_BURNING_EYES">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>fire-element</supports>
         <description>
             <p>You cause the eyes of a creature within range to glow like blazing embers. During the spell’s duration, the target gains proficiency with Charisma (Intimidation). If it already has this proficiency, the target doubles its proficiency bonus on Charisma (Intimidation) checks, and those checks are made with advantage. Additionally, any creature that the target damages has disadvantage on its next attack roll against the target until the start of the target’s next turn.</p>
@@ -614,6 +639,7 @@
         </setters>
     </element>
     <element name="Burst of Embers" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_BURST_OF_EMBERS">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>fire-element</supports>
         <description>
             <p>You cause the eyes of a creature within range to glow like blazing embers. During the spell’s duration, the target gains proficiency with Charisma (Intimidation). If it already has this proficiency, the target doubles its proficiency bonus on Charisma (Intimidation) checks, and those checks are made with advantage. Additionally, any creature that the target damages has disadvantage on its next attack roll against the target until the start of the target’s next turn.</p>
@@ -636,6 +662,7 @@
         </setters>
     </element>
     <element name="Call Allies" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_CALL_ALLIES">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>air-element</supports>
         <description>
             <p>You can bring your allies to assist you. When casting the spell, choose up to four willing creatures. As long as they are within 1 mile of you, each of these creatures can be teleported from their locations to an unoccupied space closest to you. If there isn’t enough free space for the creature to be within 10 feet of you, or if you are somehow unreachable, the creatures will know they were called but won’t be able to teleport.</p>
@@ -658,6 +685,7 @@
         </setters>
     </element>
     <element name="Calm Mind" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_CALM_MIND">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>water-element</supports>
         <description>
             <p>You fill your mind with the calm that only water can achieve. For the duration, you become immune to psychic damage, any effect that may sense emotions or read thoughts, divination spells and the charmed and frightened conditions. Optionally, you can transform the effect into an aura, affecting willing creatures of your choice within 20 feet of you, but you must concentrate to maintain the spell in this way. In this option, the spell will last only until the start of your next turn, ending sooner if you lose concentration.</p>
@@ -680,6 +708,7 @@
         </setters>
     </element>
     <element name="Circle of Protection" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_CIRCLE_OF_PROTECTION">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>earth-element</supports>
         <description>
             <p>You choose a point on the ground within range and then a large rune appears there, emitting a cylindrical mystical barrier with a 10-foot radius and 30 feet in height. No spell of 5th level or lower cast outside the barrier affects creatures or objects within it, even if cast at higher levels. Creatures within the area can be targeted by spells, but do not suffer their effects, and area spells have their effects suppressed within the cylinder.</p>
@@ -704,6 +733,7 @@
     </element>
 <!--verified to this point-->
     <element name="Commandment of Fire" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_COMMANDMENT_OF_FIRE">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>fire-element</supports>
         <description>
             <p>You point to a creature within range and place a magical command in its mind. The command forces the creature to perform some task or abstain from some action or to take a course of activity as you decide. The creature must understand you to be affected, and if it does, it must succeed on a Wisdom saving throw or be charmed by you for the duration. Whenever the charmed creature takes actions against its will, it takes 1 level of exhaustion, but no more than 1 level per day. A creature that doesn’t understand you is immune to this spell.</p>
@@ -728,6 +758,7 @@
         </setters>
     </element>
     <element name="Compressed Air Image" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_COMPRESS_AIR_IMAGE">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>air-element</supports>
         <description>
             <p>You create an illusion of an object, creature, or other visible phenomenon as if you had cast the Major Image spell. But when the image is attacked or comes into contact with a creature, it explodes into a burst of air affecting a 20-foot radius area. Creatures in the area must make a Constitution saving throw. On a failed save, they take 3d8 thunder damage, are deafened, and are thrown 80 feet in the opposite direction of the explosion. A creature that succeeds on the saving throw takes half damage, is not deafened, and is thrown 20 feet.</p>
@@ -750,6 +781,7 @@
         </setters>
     </element>
     <element name="Conjure Earth Guardian" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_CONJURE_EARTH_GUARDIAN">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>earth-element</supports>
         <description>
             <p>You conjure an earth guardian, with the same appearance as the figurine used, that emerges from the ground in an empty 10-foot cube. Use the stat block of an earth elemental to characterize the guardian, which will remain for the duration of the spell or until reduced to 0 hit points, disappearing magically when the spell ends.</p>
@@ -773,6 +805,7 @@
         </setters>
     </element>
     <element name="Counter Flood" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_COUNTER_FLOOD">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>water-element</supports>
         <description>
             <p>You attempt to interrupt a creature in the process of casting a spell, turning the magic power into healing droplets. If the creature is casting a spell of 4rd level or lower, its spell fails and has no effect. If it is casting a spell of 5th level or higher, make an ability check using your spellcasting ability. The DC equals 10 + the spell’s level.</p>
@@ -796,6 +829,7 @@
         </setters>
     </element>
     <element name="Crown of the Sirocco" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_CROWN_OF_THE_SIROCCO">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>air-element</supports>
         <description>
             <p>Circles of hot and dry winds surround the target of the spell, creating a strong wind area with a 10ft radius around them, granting them a +2 bonus to AC and imposing disadvantage on ranged attack rolls made against them. Hostile creatures that start their turn or enter the area must make a strength saving throw or be pushed out of the area on a failed save.</p>
@@ -819,6 +853,7 @@
         </setters>
     </element>
     <element name="Curse of Flames" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_CURSE_OF_FLAMES">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>fire-element</supports>
         <description>
             <p>You touch a creature, and that creature must succeed on a Wisdom saving throw or become cursed for the duration of the spell. The cursed creature feels terrible pain as if it were being burned. Every time you deal damage to the cursed creature, it takes an extra 1d6 fire damage. Additionally, at the start of its turns, the cursed creature must make a Constitution saving throw, and on a failure, the creature feels intense pain and wastes its action of that turn doing nothing.</p>
@@ -841,6 +876,7 @@
         </setters>
     </element>
     <element name="Deflection Air" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_DEFLECTION_AIR">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>air-element</supports>
         <description>
             <p>The caster summons the power of wind to protect themselves, preventing damage and even reflecting attacks. For the duration, damage from ranged attacks against you is reduced by an amount equal to 5 + your proficiency bonus + your Wisdom modifier. If the damage is reduced to 0, you can use a reaction action to deflect the attack toward another target within the original range of the attack. When deflecting, you make a magic ranged attack against the new target, applying the original damage to it on a hit.</p>
@@ -863,6 +899,7 @@
         </setters>
     </element>
     <element name="Diamond Sword" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_DIAMOND_SWORD">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>earth-element</supports>
         <description>
             <p>You create a magical sword made of pure sapphire that rises from the ground. You and any creature who wields the sword are considered proficient with it. The sword’s blade is incredibly sharp and is considered to be made of adamantine for damage reduction. In addition, it grants the creature who wields it a +3 bonus to attack and damage rolls, and any natural roll of 19 or 20 is considered a critical hit. The sword is versatile, able to be used with one hand dealing 2d8 slashing damage or with two hands dealing 2d10 slashing damage, and its damage cannot be healed by any means other than a rest. After the duration, the sword magically disappears.</p>
@@ -885,6 +922,7 @@
         </setters>
     </element>
     <element name="Disarray Terrain" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_DISARRAY_TERRAIN">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>earth-element</supports>
         <description>
             <p>You disarrange the terrain in a 20-foot-radius area centered on a point within range. All creatures within the area at the time of its creation must succeed on a Dexterity saving throw or fall prone. After that, the area becomes difficult terrain for the spell’s duration. During the spell’s duration, you can use your bonus action to shake the disarranged area again, forcing all creatures within it to make a Dexterity saving throw or fall prone.</p>
@@ -907,6 +945,7 @@
         </setters>
     </element>
     <element name="Disk of Dust" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_DISK_OF_DUST">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>earth-element</supports>
         <description>
             <p>With Disk of Dust, you create a protective barrier in a point of your choice, forming a 10 by 5-foot shield with 2 inches of thickness, made of dust and shimmering energy. The shield has 1d10+10 hit points and provides cover to you and any creatures directly behind it. If the shield HP reaches 0 it is destroyed, ending the spell. You can also end the spell at any time by dismissing it as a bonus action.</p>
@@ -931,6 +970,7 @@
         </setters>
     </element>
     <element name="Dragon Breath" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_DRAGON_BREATH">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>fire-element</supports>
         <description>
             <p>You are imbued with the breath of a bronze dragon, releasing this breath upon casting and choosing one of the two breaths below:</p>
@@ -954,6 +994,7 @@
         </setters>
     </element>
     <element name="Earth Absorbtion" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_EARTH_ABSORBTION">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>earth-element</supports>
         <description>
             <p>You transfer some of the damage that would be caused to you to the earth. When you take damage from any source, you gain resistance to the type of damage that triggered the spell until the end of your next turn.</p>
@@ -976,6 +1017,7 @@
         </setters>
     </element>
     <element name="Earth Armor" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_EARTH_ARMOR">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>earth-element</supports>
         <description>
             <p>You create a thin layer of earth around the target and can choose to have one of the two effects below:</p>
@@ -1002,6 +1044,7 @@
         </setters>
     </element>
     <element name="Earth Embrace" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_EARTH_EMBRACE">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>earth-element</supports>
         <description>
             <p>You alter the gravity around up to six creatures of your choice within a 40-foot square within range. Each creature must succeed on a Constitution saving throw or be affected by the spell for the duration.</p>
@@ -1025,6 +1068,7 @@
         </setters>
     </element>
     <element name="Earth Imprison" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_EARTH_IMPRISON">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>earth-element</supports>
         <description>
             <p>You choose a creature that you can see and that is not native to the prime plane and trap it within the earth. The chosen creature must make a Charisma saving throw or be swallowed by the earth, becoming trapped in a state of suspended animation underground until released.</p>
@@ -1048,6 +1092,7 @@
         </setters>
     </element>
     <element name="Earth Maze" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_EARTH_MAZE">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>earth-element</supports>
         <description>
             <p>You make the entire ground tremble in a 60ft radius centered on you. A number of creatures, of your choice, equal to your Wisdom modifier, that you can see within the area, are swallowed by the ground, falling into a huge earth maze. Each of the creatures is sent to a different maze, so they can’t find each other. To escape the maze, the creature must accumulate 3 successes in Wisdom checks, each of which must be made with their action at the beginning of their next turns. The DC of the Wisdom checks is equal to your spell save DC. For each failure, the creature takes 5d6 bludgeoning damage from small cave-ins in the tunnels. A minotaur or other creature with the Labyrinthine Recall ability automatically succeeds on this check.</p>
@@ -1070,6 +1115,7 @@
         </setters>
     </element>
     <element name="Earth Scales" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_EARTH_SCALES">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>earth-element</supports>
         <description>
             <p>This spell transforms the skin of a creature into stone-like scales. Upon casting, you can choose to grant the target resistance to two of the following damage types: acid, cold, fire, lightning, thunder, or nonmagical bludgeoning, piercing, and slashing damage.</p>
@@ -1092,6 +1138,7 @@
         </setters>
     </element>
     <element name="Earth Shelter" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_EARTH_SHELTER">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>earth-element</supports>
         <description>
             <p>When you touch a silk scarf to a wall of rock or earth, you create a shelter for up to eight people. The entrance marked by the scarf can only be seen by those you designate and is invisible to others. Inside the shelter it is dry, has a comfortable climate, and a small crystal provides illumination that can be turned on or off with a word from anyone chosen. At the end of the spell, you can cast it again to maintain the same shelter, otherwise the spell ends. You can use an action to end the spell at any time, and when the spell ends, the void created fills and expels anything inside it out of the wall. The volume of rock in the wall must be compatible with the size of the shelter created, otherwise the spell fails.</p>
@@ -1114,6 +1161,7 @@
         </setters>
     </element>
     <element name="Ether Confluence" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_ETHER_CONFLUENCE">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>air-element</supports>
         <description>
             <p>You commune with the element of air, and it answers your call. You can determine how the winds of up to 5 miles will behave, accelerating or stopping them. Each round that you accelerate or stop the winds, the winds in the area increase or decrease one stage on the Wind table:</p>
@@ -1146,6 +1194,7 @@
         </setters>
     </element>
     <element name="Elemental Frenzy" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_ELEMENTAL_FRENZY">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>fire-element</supports>
         <description>
             <p>You ignite the flames of rage in a creature you can see within range, forcing the creature to make a Wisdom saving throw. On a failure, for the duration of the spell, the creature becomes frenzied and will always attack its nearest creature. If there are no creatures within reach, the affected creature will spend its entire turn moving to the nearest creature. The affected creature is also immune to frightened and charmed and cannot use spells or any spellcasting abilities, only making armed and unarmed attacks. Additionally, all of its attack rolls will have advantage, but all attack rolls against the affected creature will also have advantage.</p>
@@ -1168,6 +1217,7 @@
         </setters>
     </element>
     <element name="Evanescence of Sue'en" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_EVANCESCENCE_OF_SUEEN">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>air-element</supports>
         <description>
             <p>You connect your essence with that of the air. For the duration, your movement speed is doubled, you have advantage on any Dexterity checks, and you don’t provoke opportunity attacks for moving.</p>
@@ -1190,6 +1240,7 @@
         </setters>
     </element>
     <element name="Fairy Dance" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_FAIRY_DANCE">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>air-element</supports>
         <description>
             <p>You cast this spell and begin to dance, affecting an area of 30ft around you. You can choose a number of creatures equal to your Wisdom modifier to be immune to the effects of this spell, while all other creatures that start their turn or enter the area and can see you must make a Wisdom saving throw. On a failed save, they are charmed. A creature charmed by this spell begins to replicate your dance.</p>
@@ -1212,6 +1263,7 @@
         </setters>
     </element>
     <element name="Fields of Wind" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_FIELDS_OF_WIND">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>air-element</supports>
         <description>
             <p>The caster can force the wind to obey their command, lifting any number of willing creatures within 100 feet. While maintaining concentration, all affected creatures are under the effect of the Fly spell</p>
@@ -1234,6 +1286,7 @@
         </setters>
     </element>
     <element name="Fire Collar" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_FIRE_COLLAR">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>fire-element</supports>
         <description>
             <p>You attempt to create a magical, non-burning collar of flames around the neck of a beast you can see within range. It must succeed on a Wisdom saving throw, or the collar forms around its neck and it is charmed for the duration. If you or creatures friendly to you are fighting it, it has advantage on the saving throw.</p>
@@ -1258,6 +1311,7 @@
         </setters>
     </element>
     <element name="Fire Crown" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_FIRE_CROWN">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>fire-element</supports>
         <description>
             <p>You attempt to create a magical, non-burning crown of flames on the head of a humanoid creature you can see within range. It must make a Wisdom saving throw, and if it fails, the crown forms on its head and it is charmed for the duration. If any ally or friendly creature is fighting against the target, it has advantage on the saving throw.</p>
@@ -1282,6 +1336,7 @@
         </setters>
     </element>
     <element name="Fire Dragon Transformation" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_FIRE_DRAGON_TRANSFORMATION">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>fire-element</supports>
         <description>
             <p>You infuse flames into your body, transforming into a humanoid creature with draconic features. For the duration of the spell, your scales grant you an AC that cannot be less than 14 + your Constitution modifier, your senses grant you blindsight of 30 feet, your wings grant you a flying speed of 60 feet, and you become immune to fire damage but vulnerable to cold damage.</p>
@@ -1304,6 +1359,7 @@
         </setters>
     </element>
     <element name="Fire Lobotomization" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_FIRE_LOBOTOMIZATION">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>fire-element</supports>
         <description>
             <p>You point the gem at a creature you can see within range and cast a fiery-looking ray from your forehead, which pierces through obstacles and reaches the creature’s mind. The creature must make an Intelligence saving throw. On a success, the creature falls unconscious and wakes up if it takes damage or if another creature uses an action to wake it. On a failure, the creature’s Intelligence and Wisdom are reduced to 1. The affected creature can’t cast spells, activate magic items, understand language, or communicate in any intelligible way, but it can still identify its friends, follow them, and protect them. The creature can repeat the saving throw at the end of its turns, and if it succeeds three times, it will overcome the effects of the spell. However, if it fails three times, including the first, it will be permanently affected by the spell.</p>
@@ -1326,6 +1382,7 @@
         </setters>
     </element>
     <element name="Fire Shackles" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_FIRE_SHACKLES">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>fire-element</supports>
         <description>
             <p>You attempt to create magical, non-burning chains around the limbs of a creature of your choice that you can see within range. It must make a Wisdom saving throw, and if it fails, the shackles form and it will be charmed for the duration. If an ally or friendly creature is fighting against the target, it has advantage on the saving throw.</p>
@@ -1350,6 +1407,7 @@
         </setters>
     </element>
     <element name="Fireheart Bond" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_FIREHEART_BOND">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>fire-element</supports>
         <description>
             <p>You try to awaken the warmth of friendship within another person. Choose a humanoid that you can see within range and that can clearly see and hear you. It must make a Wisdom saving throw, and does so with advantage if you or your companions are fighting it. If it fails the saving throw, it is charmed by you until the spell ends or until you or your companions do anything harmful to it. The charmed creature regards you as a friendly acquaintance. When the spell ends, the creature knows it was charmed by you.</p>
@@ -1372,6 +1430,7 @@
         </setters>
     </element>
     <element name="Fissure" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_FISSURE">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>earth-element</supports>
         <description>
             <p>You manipulate the earth, opening a fissure within range, starting at a point you can see. The fissure occupies a line 50 feet long and 10 feet wide. Within the line, a chasm opens up to a depth of 20 feet, and creatures within the area must make a Dexterity saving throw. On a failure, they fall into the chasm. The terrain inside the fissure is considered difficult, and its walls are sandy, making any Strength (Athletics) check to climb it to be rolled against your Spell Save DC</p>
@@ -1394,6 +1453,7 @@
         </setters>
     </element>
     <element name="Flame Body" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_FLAME_BODY">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>fire-element</supports>
         <description>
             <p>You cause your body to alter its composition, becoming a flaming form, but without changing your AC. Anything you are carrying, of your choice, shifts along with your body and you gain the following characteristics:</p>
@@ -1424,6 +1484,7 @@
         </setters>
     </element>
     <element name="Flame Hammer" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_FLAME_HAMMER">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>fire-element</supports>
         <description>
             <p>You infuse your hands, or the hands of a willing creature you touch, with a mystical blue flame, creating a magical hammer that deals 3d10 fire damage per attack. The creature wielding the hammer is considered proficient with it and can use their Strength, Dexterity, or Wisdom modifier for attack and damage rolls. As a bonus action, the creature can suppress or release the weapon at any time for the duration of the spell.</p>
@@ -1445,6 +1506,7 @@
         </setters>
     </element>
     <element name="Flame Weapon" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_FLAME_WEAPON">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>fire-element</supports>
         <description>
             <p>You touch a willing creature and for the duration of the spell, all of the creature’s natural and wielded weapons are considered magical and deal an extra 1d6 fire damage.</p>
@@ -1467,6 +1529,7 @@
         </setters>
     </element>
     <element name="Flames of Adoration and Fear" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_FLAMES_OF_ADORATION_AND_FEAR">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>fire-element</supports>
         <description>
             <p>You ignite your spirit with flames, emitting an aura that generates adoration or fear in a specific type of creature around you. You choose a type of intelligent creature as the target of this spell, and all of those within range are affected according to the chosen aura as follows:</p>
@@ -1490,6 +1553,7 @@
         </setters>
     </element>
     <element name="Flames of Fear" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>fire-element</supports>
         <description>
             <p>All creatures you choose within the spell’s range and that can see you must make a Charisma saving throw. A target automatically succeeds the saving throw if it is immune to the frightened condition. On a failure, the target is affected by the spell. Until the end of the spell’s duration, you can, as a bonus action, specify a location that is not occupied by a creature where the creatures will believe that blazing flames are erupting, emitting extreme heat. At the start of their turns, each affected target within 30 feet of the chosen point must move away from the heat source at all its speed before taking any other actions. A creature that is forced to move by this effect may repeat the saving throw at the end of its turn, freeing itself from the effect on a success. A creature that does not move for any reason remains frightened until it moves away. A creature will not walk to a location that is obviously a mortal danger, such as a cliff, but it may provoke opportunity attacks during its movements.</p>
@@ -1512,6 +1576,7 @@
         </setters>
     </element>
     <element name="Flames of Heart" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_FLAMES_OF_HEART">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>fire-element</supports>
         <description>
             <p>You kindle the flames of courage in the hearts of all willing creatures that you can see and that can see you within the spell’s range. For the duration, affected creatures have resistance to psychic damage, are immune to being charmed or frightened, and have advantage on Intelligence, Wisdom, and Charisma saving throws. It also dispels any ongoing effects of being charmed or frightened.</p>
@@ -1534,6 +1599,7 @@
         </setters>
     </element>
     <element name="Flames of Heroism" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_FLAMES_OF_HEROISM">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>fire-element</supports>
         <description>
             <p>You ignite the fighting spirit of up to five willing creatures within the spell’s range. An affected creature becomes immune to be frightened, gains a bonus of 1d4 on its attack rolls, and its armed and unarmed attacks become magical and cause an extra 1d6 fire damage.</p>
@@ -1556,6 +1622,7 @@
         </setters>
     </element>
     <element name="Flames of Leadership" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_FLAMES_OF_LEADERSHIP">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>fire-element</supports>
         <description>
             <p>You amplify the flames of leadership within you. For the duration of the spell, you have advantage on Charisma (Persuasion, Deception, and Intimidation) checks. Once during the spell’s duration, you can give a one-word simple command to a creature within 60 feet, which must make a Wisdom saving throw, following the command on a failure. The command has no effect if the target is undead, if it doesn’t understand your language, or if your command is directly harmful to it. After following the command, all other effects of the spell end. Some typical commands andtheir effects follow. You might issue a command other than one described here. If you do so, the GM determines how the target behaves. If the target can’t follow your command, the spell ends.</p>
@@ -1583,6 +1650,7 @@
         </setters>
     </element>
     <element name="Flash" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_FLASH">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>fire-element</supports>
         <description>
             <p>You swiftly clap your hands together, producing a strong flash of light with a 15-foot radius. All creatures within the spell’s range and that can see the light must make a Constitution saving throw. On a failure, the creature will be blinded until the end of its next turn.</p>
@@ -1605,6 +1673,7 @@
         </setters>
     </element>
     <element name="Fluid Sense" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_FLUID_SENSE">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>water-element</supports>
         <description>
             <p>By invoking the power of water, you are able to sense all living creatures and water elementals. You know the exact location of these creatures within range, and you can determine its species and if the creature is losing liquid (such as from bleeding, for example).</p>
@@ -1627,6 +1696,7 @@
         </setters>
     </element>
     <element name="Focused Blast" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_FOCUSED_BLAST">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>fire-element</supports>
         <description>
             <p>You focus the energy of an area spell or effect that deals damage onto a single creature of your choice that was originally targeted by that spell or effect. The chosen creature must be within range of the spell or effect, and you must have a clear line of sight to it.</p>
@@ -1651,6 +1721,7 @@
         </setters>
     </element>
     <element name="Focused Image" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_FOCUSED_IMAGE">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>air-element</supports>
         <description>
             <p>You create the image of an object, a creature, or some other visible phenomenon that is no larger than a 5-foot cube. This image appears at a spot that you can see within range and lasts for the duration. Only one chosen creature can sense this image and it seems completely real, including sounds, smells, and temperature appropriate to the thing depicted. You can’t create sufficient heat or cold to cause damage, a sound loud enough to deal thunder damage or deafen a creature, or a smell that might sicken a creature.</p>
@@ -1675,6 +1746,7 @@
         </setters>
     </element>
     <element name="Force of Wind" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_FORCE_OF_WIND">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>air-element</supports>
         <description>
             <p>You create a strong wind from a point of your choice within range, forming a 60-foot long, 10-foot wide, and 20-foot tall line that blows in the direction of your choice for the duration. Each creature that starts its turn in the line must make a Strength saving throw or be pushed 15 feet in the direction of the wind and be knocked prone. Any creature standing in the line must spend an extra 2 feet of movement for every 1 foot it moves in the direction against the wind.</p>
@@ -1698,6 +1770,7 @@
         </setters>
     </element>
     <element name="Gale Gate" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_GALE_GATE">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>air-element</supports>
         <description>
             <p>You control the winds to create a protective barrier of up to 20-foot radius at a point within the spell’s range. Creatures inside the barrier receive the following benefits:</p>
@@ -1725,6 +1798,7 @@
         </setters>
     </element>
     <element name="Granite Body" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_GRANITE_BODY">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>earth-element</supports>
         <description>
             <p>You alter the target’s body composition, turning it into a living granite statue. The shape of the granite body is similar to the original form, being composed purely of granite and gaining the following characteristics:</p>
@@ -1755,6 +1829,7 @@
         </setters>
     </element>
     <element name="Gravity Seal" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_GRAVITY_SEAL">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>earth-element</supports>
         <description>
             <p>You greatly increase the effect of gravity on a creature that you can see within range. The target creature is not prevented from taking actions, but using its movement, an action, or a bonus action requires a herculean effort, causing the creature to take 2d12 force damage and suffer one level of exhaustion for each action taken. In addition, attacks that deal bludgeoning, piercing, and slashing damage deal double damage to the creature.</p>
@@ -1777,6 +1852,7 @@
         </setters>
     </element>
     <element name="Gravity Wave" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_GRAVITY_WAVE">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>earth-element</supports>
         <description>
             <p>You stomp the ground with incredible force, creating a massive shockwave that travels through the earth. Each creature in contact with the ground and within a 90-foot cone from you is pushed back in the opposite direction from you. They are pushed away until they leave the area of the spell.</p>
@@ -1799,6 +1875,7 @@
         </setters>
     </element>
     <element name="Gust Fantasy" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_GUST_FANTASY">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>air-element</supports>
         <description>
             <p>You alter the appearance of a number of willing creatures equal to your Wisdom modifier, all of which must be within a 30-foot-radius sphere centered on a point of your choice within range. You decide how they look, including height, weight, facial features, tone of voice, hair length, coloring, and distinctive features, if any. They can resemble a member of another species, although none of their statistics change, but you can choose one racial trait to grant to the transformed creatures. They also cannot resemble a creature of a different size, and their basic shape remains the same; if you are bipedal, you cannot use this spell to become quadrupedal, for example. At any time during the spell’s duration, the affected creature can use its action to revert its appearance to normal, ending the effect on it.</p>
@@ -1821,6 +1898,7 @@
         </setters>
     </element>
     <element name="Harm Liberation" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_HARM_LIBERATION">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>water-element</supports>
         <description>
             <p>You purify a creature you touch, removing all afflictions upon it. If the creature is asleep, it awakens, and all wounds are removed, restoring the target to full hit points. The water also removes any diseases, curses, or conditions of charmed, frightened, paralyzed, or stunned. In addition, if the target is in the prone condition, it may use its reaction to stand up. Also, the creature gains 70 temporary hit points for 1 minute.</p>
@@ -1843,6 +1921,7 @@
         </setters>
     </element>
     <element name="Healing Blast" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_HEALING_BLAST">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>water-element</supports>
         <description>
             <p>You unleash a burst of pure water at an allied creature, restoring 9d8 hit points and removing the charmed, blinded, or deafened conditions.</p>
@@ -1865,6 +1944,7 @@
         </setters>
     </element>
     <element name="Healing Drops" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_HEALING_DROPS">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>water-element</supports>
         <description>
             <p>You harness the regenerative properties of the water element to restore 1d6 + Wisdom modifier hit points to a creature that you can see within range. If the amount healed exceeds the creature’s maximum hit points, the excess value can be converted into temporary hit points for the next minute.</p>
@@ -1887,6 +1967,7 @@
         </setters>
     </element>
     <element name="Healing Rain" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_HEALING_RAIN">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>water-element</supports>
         <description>
             <p>You create a magical rain at a point of your choice within range, healing all creatures of your choice in a 20-foot cube centered on that point. You heal 4d8 hit points, which you can distribute as you see fit among the creatures in the area (minimum of 0 hit points per creature). This spell has no effect on undead or constructs.</p>
@@ -1910,6 +1991,7 @@
         </setters>
     </element>
     <element name="Healing Storm" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_HEALING_STORM">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>water-element</supports>
         <description>
             <p>You manifest a large storm infused with the healing energy of water essence, covering an area of 20-foot cube. This storm heals up to 50 hit points, distributed as you wish among creatures within the area. Creatures healed by this spell are also cured of non-magical diseases and the blinded, deafened, and poisoned conditions at the cost of 5 hit points per effect from the storm’s healing limit.</p>
@@ -1932,6 +2014,7 @@
         </setters>
     </element>
     <element name="Healing Tempest" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_HEALING_TEMPEST">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>water-element</supports>
         <description>
             <p>You conjure a great storm imbued with the healing power of water essence, covering a 20-foot cube area. When you cast the spell and at the beginning of each turn for the duration, the storm heals up to 100 hit points, distributed as you choose among creatures within the area. Creatures healed by this spell can also be cured of non-magical diseases and the blinded, deafened, and poisoned conditions at the cost of 10 hit points from the healing limit of the storm per effect. This magic does not affect undead or constructs. Each of your turns, the amount of healing power of the tempest returns to 100 during the spell’s duration.</p>
@@ -1954,6 +2037,7 @@
         </setters>
     </element>
     <element name="Heat Vision" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_HEAT_VISION">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>fire-element</supports>
         <description>
             <p>You touch a willing creature to grant it the ability to see heat and discern objects and creatures through this vision.  For the duration, that creature has darkvision out to a range of 90 feet.</p>
@@ -1976,6 +2060,7 @@
         </setters>
     </element>
     <element name="Hell Dragon Eye" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_HELL_DRAGON_EYE">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>fire-element</supports>
         <description>
             <p>Upon casting this spell, your eyes glow with an eerie light. At the start of each of your turns, you may choose any number of creatures you can see. Each one must succeed on a Wisdom saving throw or become frightened of you. A creature frightened in this way must use its actions to move as far away from you as possible via the safest available route, unless it can’t move. If it moves to a spot that is at least 60 feet away from you, it is no longer frightened. If the creature can’t move, it must make another Wisdom saving throw at the end of its turn. On a failed save, it falls unconscious until it takes damage or until someone uses an action to awake it. A creature that was already frightened by this spell and is targeted again, it makes the saving throw with advantage.</p>
@@ -1998,6 +2083,7 @@
         </setters>
     </element>
     <element name="Hellfire Gaze" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_HELL_FIRE_GAZE">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>fire-element</supports>
         <description>
             <p>Your eyes convey the horrors of the the creatures’ worst nightmares. Each creature in a 30-foot cone must succeed on a Wisdom saving throw or drop whatever it is holding and become frightened for the duration.</p>
@@ -2020,6 +2106,7 @@
         </setters>
     </element>
     <element name="Holy Stream" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_HOLY_STREAM">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>water-element</supports>
         <description>
             <p>You choose a creature within range and create a blessed water current from your hands that purifies it. You can remove up to four of the following afflictions that may be affecting the target: one level of exhaustion, blinded, charmed, deafened, paralyzed, petrified, poisoned, one curse (including the target’s attunement to a cursed magic item), any reduction in one of the target’s ability scores, and an effect that reduces the target’s maximum hit points.</p>
@@ -2042,6 +2129,7 @@
         </setters>
     </element>
     <element name="Homing Spark" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_HOMING_SPARK">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>lightning-element</supports>
         <description>
             <p>You condense the energy of lightning in your hand and gain the ability to shoot lightning bolts at your enemies. With a bonus action, you can make a ranged spell attack and shoot a bolt of lightning at a creature within range. On a hit, the creature takes 10d8 lightning damage and must make a Constitution saving throw, becoming stunned for the next minute on a failed save. A stunned creature can repeat the Constitution saving throw at the end of each of its turns to end the condition. Attacks against a creature wearing metal armor, wielding metal weapons, or carrying large metal objects are made with advantage.</p>
@@ -2064,6 +2152,7 @@
         </setters>
     </element>
     <element name="Hurricane" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_HURRICANE">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>air-element</supports>
         <description>
             <p>You can accelerate the wind to create a tornado that affects a cylinder with a 60-foot radius and 200-foot height centered on a point of your choice within range. Creatures that start their turn or enter the area, except for the caster and three creatures of their choice, must make a Strength saving throw or be sucked into the tornado.</p>
@@ -2089,6 +2178,7 @@
         </setters>
     </element>
     <element name="Ignite Seal" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_IGNITE_SEAL">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>fire-element</supports>
         <description>
             <p>You carefully create a powerful glyph on a surface, which can be a wall, table, throne, book cover, shield, etc., as long as it has a surface area of 1 foot in diameter. If you choose a surface that conceals the glyph, the spell will not take effect. The glyph is apparent and bright and clearly magical. While you cast the spell, you must set a trigger that you desire for the glyph’s effect, such as touching or stepping on the glyph or the approach of a certain type of creature within 5 feet of it</p>
@@ -2114,6 +2204,7 @@
         </setters>
     </element>
     <element name="Inner Fire" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_INNER_FIRE">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>fire-element</supports>
         <description>
             <p>You ignite the inner flames of a number of willing creatures within range, up to your Wisdom modifier. The affected creatures, which may include yourself, become immune to the frightened condition and any unarmed or melee weapon attacks they make deal an additional 1d4 fire damage.</p>
@@ -2136,6 +2227,7 @@
         </setters>
     </element>
     <element name="Intertwining Roots" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_INTERTWINING_ROOTS">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>plant-element</supports>
         <description>
             <p>Roots sprout from the ground, grabbing onto creatures within a 20-foot square centered on a point within range. For the duration, these roots turn the area into difficult terrain.</p>
@@ -2158,6 +2250,7 @@
         </setters>
     </element>
     <element name="Lava Floor" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_LAVA_FLOOR">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>lava-element</supports>
         <description>
             <p>You unleash a dangerous spell that covers a 30-foot square area with a thin layer of lava, making it difficult terrain. Any creature that enters or starts its turn in the area must make a Constitution saving throw or suffer the consequences.</p>
@@ -2180,6 +2273,7 @@
         </setters>
     </element>
     <element name="Leaf in the Wind" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_LEAF_IN_THE_WIND">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>air-element</supports>
         <description>
             <p>With a whisper, you surround yourself with the energy of Air, becoming one with the wind. For the spell’s duration, you can move with incredible speed and agility, allowing you to use the Dash or Disengage action as a bonus action.</p>
@@ -2202,6 +2296,7 @@
         </setters>
     </element>
     <element name="Lesser Link" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_LESSER_LINK">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>spirit-element</supports>
         <description>
             <p>You create a spiritual connection with up to 3 willing creatures within range. For the duration of the spell, while a connected creature is within 15 feet of another, they have telepathic communication and you can use a reaction to grant advantage on an attack roll or saving throw of a connected creature within range.</p>
@@ -2224,6 +2319,7 @@
         </setters>
     </element>
     <element name="Life Back" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_LIFE_BACK">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>water-element</supports>
         <description>
             <p>You purify the body of a dead creature with sacred waters, resurrecting the creature. The creature cannot have been dead for more than 10 days and revives with 1 hit point, free of any curses or conditions (except for exhaustion, which only recovers 1 level) that affected it at the time of its death. This spell does not restore lost parts and does not affect undead or constructs, or creatures whose soul does not want to resurrect, or creatures that have died from old age.</p>
@@ -2246,6 +2342,7 @@
         </setters>
     </element>
     <element name="Life Swap" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_LIFE_SWAP">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>water-element</supports>
         <description>
             <p>You forge a powerful connection between two willing creatures of your choice within range, causing them to instantly swap their current hit points and maximum hit points. If a creature’s hit points drop to 0 as a result of the swap, that creature falls unconscious and begins dying.</p>
@@ -2271,6 +2368,7 @@
         </setters>
     </element>
     <element name="Life Synchronization" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_LIFE_SYNCHRONIZATION">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>water-element</supports>
         <description>
             <p>You synchronize the energy fluids of 4 willing creatures, which you can see within range, to heal them. You can transfer any amount of hit points between them, as long as each one has at least 1 hit point and does not exceed their maximum hit points. At the end of the synchronization (hit point transfer), you heal an additional 2d8 hit points from each of the creatures that have transferred hit points (taken damage or regained hit points). Undead and constructs are not affected by this spell.</p>
@@ -2293,6 +2391,7 @@
         </setters>
     </element>
     <element name="Lightning Arrester" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_LIGHTNING_ARRESTER">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>lightning-element</supports>
         <description>
             <p>You energize a target creature, forcing it to make a Constitution saving throw. On a failed save, the creature becomes restrained and vulnerable to lightning damage for the duration of the spell. The restrained creature can use an action to make another Constitution saving throw, and if it succeeds, it breaks free from the restraint.</p>
@@ -2315,6 +2414,7 @@
         </setters>
     </element>
     <element name="Lightning Burst" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_LIGHTNING_BURST">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>lightning-element</supports>
         <description>
             <p>You empower up to six willing creatures within range, imbuing them with the power of lightning. Until the spell ends, the targets gain the following benefits:</p>
@@ -2343,6 +2443,7 @@
         </setters>
     </element>
     <element name="Lightning Displacement" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_LIGHTNING_DISPLACEMENT">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>lightning-element</supports>
         <description>
             <p>You gain the ability to teleport up to your speed, but every 5 feet of distance teleported spends 5 feet of your speed for the current turn (you must have at least 10 feet of movement remaining for the spell to work). You must teleport to a destination within your line of sight. For example, you could teleport to the top of a wall, but not to a point in mid-air unless you have a means of flight. When you teleport, you leave behind a trail of lightning that damages any creatures in its path.</p>
@@ -2365,6 +2466,7 @@
         </setters>
     </element>
     <element name="Lightning Tunnel" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_LIGHTNING_TUNNEL">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>lightning-element</supports>
         <description>
             <p>You weave together strands of lightning into an invisible tunnel that can be up to 120 feet long and 5 feet in diameter. The tunnel remains stationary once created and lasts for the duration of the spell.</p>
@@ -2389,6 +2491,7 @@
         </setters>
     </element>
     <element name="Lightning Wall" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_LIGHTNING_WALL">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>lightning-element</supports>
         <description>
             <p>You create a barrier that looks like a net of pure energy. The barrier does not need to be sustained and can float in the air. It occupies an area of 60 feet in length, 20 feet in height, and one inch in thickness. Any creature within the area where the barrier was created must make a Strength saving throw, suffering 3d8 lightning damage on a failure and being thrown 10 feet in a direction of your choice. On a successful save, the target takes only half the damage and is expelled into the nearest free space, as chosen by the affected creature.</p>
@@ -2412,6 +2515,7 @@
         </setters>
     </element>
     <element name="Made of Lava" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_MADE_OF_LAVA">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>lava-element</supports>
         <description>
             <p>You encase a touched creature with a barrier of lava, shielding it from attacks. For the duration, the creature is resistant to fire and cold damage. If the creature takes bludgeoning, slashing, or piercing damage from a creature adjacent to it, the barrier spews lava at the attacking creature, which must succeed on a Dexterity saving throw or take 3d8 fire damage.</p>
@@ -2434,6 +2538,7 @@
         </setters>
     </element>
     <element name="Magic Precipitation" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_MAGIC_PRECIPITATION">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>water-element</supports>
         <description>
             <p>You create a magical precipitation area in a 20-foot-radius, 30-foot-high cylinder centered on a point within range that you can see. Creatures within the rain area gain advantage on saving throws against spells and resistance to magical damage. Additionally, any spells that are in effect on the area or on creatures of your choice that are in or enter the area are dispelled.</p>
@@ -2456,6 +2561,7 @@
         </setters>
     </element>
     <element name="Magma Armor" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_MAGMA_ARMOR">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>lava-element</supports>
         <description>
             <p>You touch a willing creature wearing medium or heavy armor and enchant their armor with the heat of magma. For the duration, every time another creature hits the target of the spell with a melee attack, it must make a Dexterity saving throw or take 1d10 fire damage.</p>
@@ -2478,6 +2584,7 @@
         </setters>
     </element>
     <element name="Magma Chamber Heat" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_MAGMA_CHAMBER_HEAT">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>lava-element</supports>
         <description>
             <p>You heat up a circular area with a 100-foot radius centered on a point within range. The temperature in this area becomes unbearable. Creatures that enter or start their turn within it must make a Constitution saving throw or take 4d8 fire damage, or half as much on a success. Flammable materials not carried or held burn up in an instant.</p>
@@ -2501,6 +2608,7 @@
         </setters>
     </element>
     <element name="Magma Glow" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_MAGMA_GLOW">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>lava-element</supports>
         <description>
             <p>You touch an object, causing it to emit a faint glow that is imperceptible in bright light and difficult to notice in dim light conditions. The object can be any item (magical or not) of your choosing, weighing no more than 10 pounds.</p>
@@ -2526,6 +2634,7 @@
         </setters>
     </element>
     <element name="Magma Servant" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_MAGMA_SERVANT">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>lava-element</supports>
         <description>
             <p>You summon a lava spirit that appears in an unoccupied space within range. It takes physical form to serve you, using the stat block of an azer, but appearing as a humanoid creature made of magma.</p>
@@ -2548,6 +2657,7 @@
         </setters>
     </element>
     <element name="Mantle of Water" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_MANTLE_OF_WATER">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>water-element</supports>
         <description>
             <p>You surround a target creature within range with a thin layer of clean water, granting it the ability to breathe underwater and a swimming speed of 40 feet. While the spell lasts, the creature gains the following benefits:</p>
@@ -2577,6 +2687,7 @@
         </setters>
     </element>
     <element name="Marble Skin" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_MARBLE_SKIN">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>earth-element</supports>
         <description>
             <p>You touch a creature and a seismic wave emanates from your fingers, enveloping it and imposing a Constitution saving throw. On a failure, the creature is restrained and its skin begins to turn to marble. On a success, the creature is unaffected. A creature with its skin turned to marble must make a Constitution saving throw at the end of each of its turns. If the creature accumulates three successes, it is free from the condition and the spell ends. If it accumulates three failures (including the initial one), the creature becomes petrified.</p>
@@ -2599,6 +2710,7 @@
         </setters>
     </element>
     <element name="Mass Curse of Flames" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_MASS_CURSE_OF_FLAMES">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>fire-element</supports>
         <description>
             <p>All creatures that you can see within range must make a Wisdom saving throw or be affected as if they were targets of the curse of flames spell cast with a 9th-level slot.</p>
@@ -2621,6 +2733,7 @@
         </setters>
     </element>
     <element name="Massive Inflammation" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_MASSIVE_INFLAMMATION">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>fire-element</supports>
         <description>
             <p>You ignite the spirit of a group of people by suggesting a course of action (limited to up to two sentences). You magically influence, at your discretion, a number of people equal to up to three times your proficiency bonus. The creatures must be able to see and hear you clearly and the suggestion must be phrased in a way that makes the course of action reasonable. Igniting them to do something against themselves, such as self-flagellation, negates the effects of the magic. Creatures that can’t be charmed are immune to this effect.</p>
@@ -2645,6 +2758,7 @@
         </setters>
     </element>
     <element name="Material Illusion" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_MATERIAL_ILLUSION">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>air-element</supports>
         <description>
             <p>You choose the stat block of a non-spellcaster creature with a CR of up to 12, then you create a dense air replica of that creature, within an unoccupied space that you can see within the spell’s range. The replica uses all the statistics of the creature it duplicates, except that any damage dealt by the replica is psychic damage. However, the replica can only damage or affect in other ways creatures that failed the saving throw. It acts on its own turn and on its own initiative, but you can control its course of action. If the replica’s hit points are reduced to 0, the spell ends, and it immediately dissipates.</p>
@@ -2667,6 +2781,7 @@
         </setters>
     </element>
     <element name="Melt Rock" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_MELT_ROCK">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>lava-element</supports>
         <description>
             <p>You choose an area of rock and change its internal heat, melting it into lava. You affect a 40-foot cube of rock within range. The lava flows and ignites any flammable materials it touches. A creature that touches the lava takes 2d8 fire damage.</p>
@@ -2690,6 +2805,7 @@
         </setters>
     </element>
     <element name="Metal Barrier" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_METAL_BARRIER">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>earth-element</supports>
         <description>
             <p>You hold the piece of metal used in this spell and it disintegrates into metallic sand, swirling around a willing creature within range of the spell, granting them protection. A creature enveloped in this protection gains resistance to bludgeoning, piercing, and slashing damage, is considered to have half cover, and when subjected to a Dexterity saving throw to take half damage from an effect, they take no damage on a success.</p>
@@ -2712,6 +2828,7 @@
         </setters>
     </element>
     <element name="Mirage Mirror" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_MIRAGE_MIRROR">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>air-element</supports>
         <description>
             <p>You conjure a duplicate of yourself from the energy of the wind, which appears in an unoccupied space within the spell’s range. The duplicate has an AC equal to yours and one hit point, and it performs saving throws and ability checks as it were you. The duplicate does not move, but any action you take can also be simulated by the duplicate at your choice. A creature can make a Wisdom (Perception) check against your spell save DC to realize that the duplicate is not real. The duplicate disappears if you use a bonus action to dismiss it, if you move more than 60 feet away from it, or when its hit points are reduced to 0.</p>
@@ -2734,6 +2851,7 @@
         </setters>
     </element>
     <element name="Mineral Sculpt" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_MINERAL_SCULPT">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>earth-element</supports>
         <description>
             <p>You manipulate earth and rocks to create objects within range. If using fresh earth (sand, clay, and general soils), you can create a large or smaller object (contained within a 10-foot cube, or eight connected 5-foot cubes), such as statues, bridges, passages, pillars, doors, etc., as long as there is enough earth to do so. If using metal or solid rock, .you can create only a medium or smaller object (contained within a single 5-foot cube), such as a weapon, idol, crown, etc. The objects are usually solid, without gears or hinges, and generally of good quality. However, the quality of objects, such as jewelry, statues, or any that require artistic or professional knowledge, may vary depending on your proficiency or the availability of the right tools.</p>
@@ -2756,6 +2874,7 @@
         </setters>
     </element>
     <element name="Mirror Object" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_MIRROR_OBJECT">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>water-element</supports>
         <description>
             <p>You touch a non-magical object weighing no more than 5 pounds, causing its surface to become reflective like a mirror. During the spell’s duration, the object captures all images and sounds within a 30-foot radius, as long as they are reflected on its mirrored surface.</p>
@@ -2781,6 +2900,7 @@
         </setters>
     </element>
     <element name="Mountain Crush" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_MOUNTAIN_CRUSH">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>earth-element</supports>
         <description>
             <p>You deliver a powerful shoulder strike to your target. Make a melee spell attack against it. On a hit, the creature becomes stunned for 1 minute. On a critical hit, the primary target is violently pushed back 15 feet and can hit a creature of your choice as a secondary target, provided it’s in the same direction and range as the primary target was pushed. In this case, the secondary target is also stunned. Oozes are immune to this spell.</p>
@@ -2803,6 +2923,7 @@
         </setters>
     </element>
     <element name="Move Like Air" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_MOVE_LIKE_AIR">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>air-element</supports>
         <description>
             <p>You and a number of willing creatures equal to your Wisdom modifier that you can see within the spell’s range have their speed doubled, gain a +2 bonus to their AC, have advantage on Dexterity saving throws, and gain an additional action on each of their turns. The action can only be used to take the Attack (one weapon attack only), Dash, Disengage, Hide, or Use an Object action.</p>
@@ -2825,6 +2946,7 @@
         </setters>
     </element>
     <element name="Move Like Water" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_MOVE_LIKE_WATER">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>water-element</supports>
         <description>
             <p>You shield a willing creature of your choice that you can see within range, with the energy of the water element. For the duration, the creature does not provoke opportunity attacks, regardless of the action or movement they perform. Additionally, it gains a +1 bonus to AC.</p>
@@ -2847,6 +2969,7 @@
         </setters>
     </element>
     <element name="Mystical Flux" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_MYSTICAL_FLUX">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>water-element</supports>
         <description>
             <p>You touch another creature and send a wave of mystical energy to it, causing it to instantly recover a spell slot of the same level as this spell or lower. You can’t use this spell on yourself.</p>
@@ -2869,6 +2992,7 @@
         </setters>
     </element>
     <element name="Natural Stream" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_NATURAL_STREAM">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>water-element</supports>
         <description>
             <p>A stream of water purifies the creature touched by it. You can remove one condition afflicting the target between blinded, charmed, deafened, paralyzed and poisoned.</p>
@@ -2891,6 +3015,7 @@
         </setters>
     </element>
     <element name="Overcharge Lightning" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_OVERCHARGE_LIGHTNING">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>lightning-element</supports>
         <description>
             <p>You discharge energy that affects the nervous system of all creatures of your choice in a 20-foot square within range. A creature in the area must make a Constitution saving throw, becoming paralyzed on a failure. On a successful save, the creature’s nervous system is fatigued and on its next turn, it cannot use one of its actions, be it an action, bonus action, or movement. A paralyzed creature can make another saving throw at the end of its turns, ending the condition on a success but still being affected by the action restriction on its next turn. If your concentration is broken, paralyzed creatures are released but still suffer from the action restriction. A creature that has passed the action restriction is freed from the effects of the spell.</p>
@@ -2913,6 +3038,7 @@
         </setters>
     </element>
     <element name="Overgrow" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_OVERGROW">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>plant-element</supports>
         <description>
             <p>You energize all your allies within a 30-foot-radius circle from a point of your choice within range with an aura of vitality. The aura grants each ally 4d8 temporary hit points, a bonus of +1 to their AC, and advantage on Strength and Constitution checks and saving throws for the next minute.</p>
@@ -2935,6 +3061,7 @@
         </setters>
     </element>
     <element name="Petrify Nerves" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_PETRIFY_NERVES">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>earth-element</supports>
         <description>
             <p>You freeze the nerves of a creature of your choice within range of the spell. The creature must succeed on a Constitution saving throw or be paralyzed for the duration. This spell does not affect undead or constructs. An affected creature can make a saving throw at the end of each of its turns, ending the effect on a success.</p>
@@ -2957,6 +3084,7 @@
         </setters>
     </element>
     <element name="Pour the Past" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_POUR_THE_PAST">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>water-element</supports>
         <description>
             <p>You use the energy of the water to make it swirl counterclockwise and see the events that occurred in the location where you cast the spell. The manifested image shows the events that occurred within a 30-foot radius of the location where you cast the spell. You see all the events as if you were above the location observing them. You can quickly observe all events that occurred up to 1 year ago or choose a specific moment to observe and follow it for the duration of the spell. Talk to your GM to define what details are perceptible from your point of view and the way you witnessed the events unfold.</p>
@@ -2979,6 +3107,7 @@
         </setters>
     </element>
     <element name="Primordial Pass" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_PRIMORDIAL_PASS">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>air-element</supports>
         <description>
             <p>You create a bridge made of air that connects one point to another, provided there is no object obstructing the path between these points. When a creature enters this point, the winds carry them from one point to the other on gentle breezes. The crossing lasts only 1 minute and is completely safe, with air currents protecting creatures during the journey.</p>
@@ -3001,6 +3130,7 @@
         </setters>
     </element>
     <element name="Prodigium Duplication" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_PRODIGIUM_DUPLICATION">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>earth-element</supports>
         <description>
             <p>You touch a non-magical object weighing up to 10 pounds, causing it to briefly glow with an earthy light before splitting into a number of identical copies equal to twice your proficiency bonus (minimum of 4). Each copy has the same appearance, weight, and physical properties as the original object, including any markings or inscriptions.</p>
@@ -3026,6 +3156,7 @@
         </setters>
     </element>
     <element name="Purging Flames" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_PURGING_FLAMES">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>fire-element</supports>
         <description>
             <p>You immolate a hostile undead or extraplanar creature (devil, demon, penumbral, etc.) that you can see within the range of the spell. The target creature must make a Charisma saving throw. On a success, nothing happens, but on a failure, it is consumed by flames and it is destroyed, leaving only ashes behind. If the target is an undead whose soul is trapped elsewhere (such as a lich and its phylactery or an undead created from a body whose soul was trapped), it must make a second Charisma saving throw. On a failure, it is immolated and destroyed. If the target is extraplanar, it returns to its home plane and must make another Charisma saving throw. On a failure, it is immolated and destroyed.</p>
@@ -3048,6 +3179,7 @@
         </setters>
     </element>
     <element name="Quicksand" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_QUICKSAND">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>earth-element</supports>
         <description>
             <p>You transform a 30-foot-radius circular area, centered on a point within range, into quicksand. The area becomes difficult terrain and every creature within it at the time of casting, or that starts its turn or enters the area, must make a Strength saving throw. On the first failure, the creature begins to sink in the sand and becomes restrained. On the second failure, the restrained creature sinks even further, becoming incapacitated. On a third failure, the incapacitated creature sinks completely into the sand and becomes stunned. Each time a creature succeeds on a Strength saving throw, it regresses one step in the number of failures, becoming unburied if it reaches 0 failures.</p>
@@ -3073,6 +3205,7 @@
         </setters>
     </element>
     <element name="Rally of Agility" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_RALLY_OF_AGILITY">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>air-element</supports>
         <description>
             <p>Up to four willing creatures are surrounded by strong winds that assist their movements. While under this effect, the affected creatures have their Dexterity scores increased by 6 (up to a maximum of 26), and they have advantage on any attacks or ability checks that involve Dexterity.</p>
@@ -3095,6 +3228,7 @@
         </setters>
     </element>
     <element name="Regenerating Cocoon" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_REGENERATING_COCOON">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>plant-element</supports>
         <description>
             <p>You create a large flower at a location of your choice within range that can envelop a willing creature, up to Huge size, that is within 15 feet of it. The creature is immune to damage, has its movement reduced to 0, and is incapacitated while inside the flower. The creature can leave the flower at any time. While inside the flower, the creature is healed for 2d8 + its Wisdom modifier at the start of each of its turns. The creature also removes 1 level of exhaustion every 2 turns spent inside the flower and gets rid of one curse, disease, or poison for every 4 turns spent inside it. If the creature remains inside the flower for the full duration of the spell, it regains any lost limbs.</p>
@@ -3117,6 +3251,7 @@
         </setters>
     </element>
     <element name="Regrowth" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_REGROWTH">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>plant-element</supports>
         <description>
             <p>You touch a body or a body part that still exists of a creature that has been dead for no more than 500 years. The part of the creature and any material components turn into a seed that automatically sprouts into a plant, generating a bulb where the body of the creature is recreated and restored. After 8 hours, the bulb opens, and the creature is revived, healed of all wounds, any poisons removed, all diseases cured, and freed from any curses that afflicted it when it died. The spell fully restores the body, replacing missing parts.</p>
@@ -3140,6 +3275,7 @@
         </setters>
     </element>
     <element name="Revert Life Flux" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_REVERT_LIFE_FLUX">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>water-element</supports>
         <description>
             <p>You harness a sacred water flow to reverse a loss of life in a body, resurrecting the creature. The creature cannot have been dead for more than 100 years, cannot be an undead or construct, must have a soul available for return to the body, and cannot have died of old age.</p>
@@ -3163,6 +3299,7 @@
         </setters>
     </element>
     <element name="River Protection" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_RIVER_PROTECTION">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>water-element</supports>
         <description>
             <p></p>
@@ -3185,6 +3322,7 @@
         </setters>
     </element>
     <element name="Rock Stubborn" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_ROCK_STUBBORN">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>earth-element</supports>
         <description>
             <p>For the duration, a willing creature that you can see within range and while in contact with the earth, gains resistance to lightning and psychic damage, and has advantage on Intelligence, Wisdom, and Charisma saving throws.</p>
@@ -3207,6 +3345,7 @@
         </setters>
     </element>
     <element name="Sacred Fruits" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_SACRED_FRUITS">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>plant-element</supports>
         <description>
             <p>You plant the seeds and grow a small, glowing plant that produces four fruits. If not harvested within 1 hour, the fruits wither and disappear. Once harvested, the fruits last for 24 hours before also disappearing.</p>
@@ -3230,6 +3369,7 @@
         </setters>
     </element>
     <element name="Saving Seed" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_SAVING_SEED">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>plant-element</supports>
         <description>
             <p>You create a small plant that bears a single fruit the size of a cherry. If eaten as a bonus action, the fruit serves as a full meal, instantly restores all of your hit points, and cures any disease, blindness, deafness, poisoning, and all levels of exhaustion. The magical fruit lasts for 3 days and disintegrates after this time.</p>
@@ -3252,6 +3392,7 @@
         </setters>
     </element>
     <element name="Scrape the Sky" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_SCRAPE_THE_SKY">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>earth-element</supports>
         <description>
             <p>You create up to 4 pillars of 30 feet in height occupying a 5-foot square space within the spell’s range. A creature in the space where the pillar appears must make a Dexterity saving throw or be thrown 30 feet into the air, landing prone in an adjacent space to the pillar. Creatures that pass by the area do not take damage but must choose an adjacent space to position themselves.</p>
@@ -3274,6 +3415,7 @@
         </setters>
     </element>
     <element name="Seismic Quake" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_SEISMIC_QUAKE">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>earth-element</supports>
         <description>
             <p>You take a gem in your hand that crumbles when using the magic. When its fragments touch the ground, you generate an earthquake with a radius of 120 feet and an epicenter of your choice within range, causing the entire area of effect to become difficult terrain. At the time of casting and at the beginning of each turn of a creature within the area, they must make a Dexterity saving throw, becoming prone on a failure. Creatures that are concentrating on other spells must also make a Constitution saving throw, losing concentration on a failure.</p>
@@ -3297,6 +3439,7 @@
         </setters>
     </element>
     <element name="Shield of Overlife" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_SHIELD_OF_OVERLIFE">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>water-element</supports>
         <description>
             <p>You create a thin layer of water over your body, making it impossible for a creature to perceive you except through magical means. This magical layer provides you with 60 temporary hit points.</p>
@@ -3321,6 +3464,7 @@
         </setters>
     </element>
     <element name="Skin of Embers" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_SKIN_OF_EMBERS">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>fire-element</supports>
         <description>
             <p>You attempt to ignite the skin of a creature you can see within range of the spell into live coals. The target creature must have some type of skin or leather covering its body and, if so, must make a Constitution saving throw. On a failure, its skin or leather transforms into incandescent material like live coals. On a success, nothing happens.</p>
@@ -3344,6 +3488,7 @@
         </setters>
     </element>
     <element name="Sky Blessing" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_SKY_BLESSING">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>air-element</supports>
         <description>
             <p>A touched willing creature receives the Blessing of Winds, acquiring inhuman speed. The creature gains a flying speed of 180 feet, becomes immune to being prone, has advantage on Dexterity checks and saving throws, is targeted with ranged attacks at a disadvantage, does not provoke opportunity attacks when moving, and is not affected by any gas-related effects.</p>
@@ -3367,6 +3512,7 @@
         </setters>
     </element>
     <element name="Sky Walker" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_SKY_WALKER">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>air-element</supports>
         <description>
             <p>By casting this spell, you grant the ability to walk on the winds to a creature you touch, giving it a flying speed equal to its walking speed. At the end of the spell, a creature that is still in the air descends safely to the ground.</p>
@@ -3389,6 +3535,7 @@
         </setters>
     </element>
     <element name="Spectral Vision" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_SPECTRAL_VISION">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>spirit-element</supports>
         <description>
             <p>For the duration of the spell, you are able to see the spiritual aura of all creatures within your field of vision, even when they are invisible. Each type of creature has a specific type of aura that you can see, but you cannot differentiate between them (an orc and a human have the same aura because they are both humanoids). Additionally, as a bonus action, you can focus on seeing the Ethereal Plane, gaining vision of it until the end of your next turn.</p>
@@ -3411,6 +3558,7 @@
         </setters>
     </element>
     <element name="Speed Waltz" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_SPEED_WALTZ">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>air-element</supports>
         <description>
             <p>Three willing creatures you can see within range are propelled by the wind. You can move them up to 30 feet in any direction you choose. This movement is unimpeded and does not provoke opportunity attacks, but if a creature is stopped in mid-air, it falls as normal and takes falling damage.</p>
@@ -3433,6 +3581,7 @@
         </setters>
     </element>
     <element name="Sphere of M'Cel" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_SPHERE_OF_MCEL">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>air-element</supports>
         <description>
             <p>You expel all the air from a 30-foot radius sphere centered on a point within range, and the area remains airless for the duration. All creatures within the area at the time of casting who require air to breathe must make a Constitution saving throw. On a failed save, they suffer one level of exhaustion, as the air is sucked out of their lungs.</p>
@@ -3458,6 +3607,7 @@
         </setters>
     </element>
     <element name="Spirit Form" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_SPIRIT_FORM">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>spirit-element</supports>
         <description>
             <p>You and up to five other willing creatures within range take a step on the border of the Ethereal Plane, entering the region that overlaps with the current plane. While on the border, you can move in any direction as if you had a flying speed equal to your walking speed. You can still see and hear the original plane, but everything appears grayed out and muffled, and you can’t see anything beyond 60 feet.</p>
@@ -3484,6 +3634,7 @@
         </setters>
     </element>
     <element name="Spiritual Air Beasts" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_SPIRITUAL_AIR_BEASTS">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>air-element</supports>
         <description>
             <p>You summon up to five air spirits that take the form of beasts with a challenge rating of 1 or lower. They appear in an unoccupied space that you can see, within range of the spell. A spirit disappears when it reaches 0 hit points or when the spell ends. They are friendly to you and your companions. Roll initiative for each of them, which act on their own turns. They obey any verbal commands that you issue to them (no action required by you). If you issue no commands, they defend themselves against hostile creatures, but they take no other actions. The GM can provide the statistics of the beast.</p>
@@ -3506,6 +3657,7 @@
         </setters>
     </element>
     <element name="Spiritual Fading" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_SPIRITUAL_FADING">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>spirit-element</supports>
         <description>
             <p>For the next minute, at the end of your turns, if you are not grappled, you can choose to enter the Ethereal Plane, or when already there, return to the Material Plane. When you return to the Material Plane, you choose an unoccupied space within 20 feet of where you disappeared to reappear. You cannot choose to go to the Ethereal Plane for two turns in a row.</p>
@@ -3528,6 +3680,7 @@
         </setters>
     </element>
     <element name="Spiritual Flame" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_SPRITUAL_FLAME">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>fire-element</supports>
         <description>
             <p>A dark, blue or red translucent flame, equivalent in brightness to a torch, springs forth from an object that you touch. The flame is clearly magic and creates no heat and doesn’t use oxygen. A spiritual flame can be covered or hidden but not smothered or quenched.</p>
@@ -3551,6 +3704,7 @@
         </setters>
     </element>
     <element name="Spiritual Hex" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_SPIRITUAL_HEX">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>spirit-element</supports>
         <description>
             <p>You curse a creature within range, causing malevolent spirits to jinx its actions and turn its failures into catastrophes. For the duration of the spell, any time the target misses an attack, fails a saving throw, or fails an ability check, it suffers additional harm or negative effects. Whenever the target misses an attack roll or saving throw, it takes 3d8 necrotic damage. If the target fails an ability check, it suffers the worst possible negative consequence appropriate to the situation, as determined by the GM.</p>
@@ -3573,6 +3727,7 @@
         </setters>
     </element>
     <element name="Spiritual Immunity" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_SPIRITUAL_IMMUNITY">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>spirit-element</supports>
         <description>
             <p>For the duration, a willing creature you touch becomes immune to acid, cold, fire, lightning, necrotic, psychic, poison, and thunder damage.</p>
@@ -3595,6 +3750,7 @@
         </setters>
     </element>
     <element name="Spiritual Travel" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_SPIRITUAL_TRAVEL">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>spirit-element</supports>
         <description>
             <p>You and up to six willing creatures within the range of the spell are transported to another plane of existence. You must have an object that is linked to the destination plane, have previously been to the plane, or have one of the willing creatures have been to the plane. If you do not meet at least one of these requirements, all of you vanish for one round and then reappear in the same location in a stunned condition until the end of your next turn.</p>
@@ -3618,6 +3774,7 @@
         </setters>
     </element>
     <element name="Spiritual Vision" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_SPIRITUAL_VISION">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>spirit-element</supports>
         <description>
             <p>You touch a willing creature that gains truesight for the duration of the spell. In addition, it can see the ethereal plane and secret doors with a range of 120 feet.</p>
@@ -3639,6 +3796,7 @@
         </setters>
     </element>
     <element name="Static Field" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_STATIC_FIELD">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>lightning-element</supports>
         <description>
             <p>You create a circular area with a 20-foot radius centered on a point within range, charged with static electricity. Creatures that move within the area take 1d4 electrical damage for every 5 feet they move.</p>
@@ -3661,6 +3819,7 @@
         </setters>
     </element>
     <element name="Steal Oxygen" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_STEAL_OXYGEN">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>air-element</supports>
         <description>
             <p>You suppress the air from the lungs of a creature within range that you can see. The creature must make a Constitution saving throw, receiving 3 levels of exhaustion and becoming paralyzed on a failed save. For the duration, at the start of each of its turns, the creature must make a Constitution saving throw, suffering an additional 3 levels of exhaustion on a failed save or ending the effects on itself on a success. This spell has no effect on creatures that do not need to breathe, such as constructs or undead.</p>
@@ -3683,6 +3842,7 @@
         </setters>
     </element>
     <element name="Stone Hand" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_STONE_HAND">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>earth-element</supports>
         <description>
             <p>You touch a creature, causing a collection of stones to gather and form an arm of stone that connects with the target’s torso. The stone hand can hold and manipulate objects just like a regular hand, but it is not capable of attacking or performing somatic components for spells.</p>
@@ -3712,6 +3872,7 @@
         </setters>
     </element>
     <element name="Stone Heart" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_STONE_HEART">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>earth-element</supports>
         <description>
             <p>You touch a creature and grant it protection against death effects for the duration of the spell. When casting the spell, you can use one to four gems, each worth at least 50 gp, which will fuse with the target. For each gem used at the time of casting, the target has one use of the following effects:</p>
@@ -3737,6 +3898,7 @@
         </setters>
     </element>
     <element name="Stone Imprisonment" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_STONE_IMPRISONMENT">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>earth-element</supports>
         <description>
             <p>You create hands of stone on the ground that grasp anyone within a 10-foot-radius area within range. Creatures of your choice in the area must succeed on a Strength saving throw or be restrained by the hands. A restrained creature remains restrained for the duration of the spell. The hands have an AC of 16, 5 HP, are resistant to slashing and piercing damage, and immune to poison damage. If they reach 0 hit points, the concentration is broken, or the spell ends, the hands disappear.</p>
@@ -3758,6 +3920,7 @@
         </setters>
     </element>
     <element name="Stone Shield" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_STONE_SHIELD">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>earth-element</supports>
         <description>
             <p>When you are hit by an attack or forced to make a Dexterity saving throw, as a reaction you raise a shield of stone from the ground that protects you from attacks. Until the beginning of your next turn, you gain a +4 bonus to your AC and Dexterity saving throws, including against the triggering attack.</p>
@@ -3779,6 +3942,7 @@
         </setters>
     </element>
     <element name="Stone Sphere" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_STONE_SPHERE">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>earth-element</supports>
         <description>
             <p>A sphere of stone envelops a creature or object of Large size or smaller within range of the spell. A non-voluntary creature must make a Dexterity saving throw, becoming trapped within the sphere on a failure.</p>
@@ -3802,6 +3966,7 @@
         </setters>
     </element>
     <element name="Subtle Influence" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_SUBTLE_INFLUENCE">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>fire-element</supports>
         <description>
             <p>You manipulate the mind of a creature within range, subtly influencing their emotions and behaviors. Choose one effect from the following list to apply to the target:</p>
@@ -3831,6 +3996,7 @@
         </setters>
     </element>
     <element name="Summon Flame Dragon" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_SUMMON_FLAME_DRAGON">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>fire-element</supports>
         <description>
             <p>You summon a dragon spirit that manifests in the form of a dragon. The spirit’s physical form uses the stat block of a Young Copper Dragon, but its breath attack will be a cone and deal fire damage. It has its own turn and place in initiative, and will assist you to the best of its ability for the duration. When you cast this spell, choose between red, bronze, and gold, and the spirit will take on the appearance of that type of dragon. If the dragon is reduced to 0 hit points or you lose concentration, the spell ends and the dragon disappears.</p>
@@ -3853,6 +4019,7 @@
         </setters>
     </element>
     <element name="Summon Mound" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_SUMMON_MOUND">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>plant-element</supports>
         <description>
             <p>You conjure a plant servant. You choose an area rich in vegetation that fills a 10-foot cube within range. The vegetation joins together and forms a plant creature of CR 5 or lower in a space up to 10 feet from the point of origin. The plant obeys you to the best of its ability and acts after you in the initiative order. You can give simple action commands, such as attacking a target or running in a direction, as a free action. If you want to give a longer command, you must spend a bonus action. If you lose concentration, the plant servant will continue to follow the last command until it completes it. If the plant servant completes its action and cannot hear or receive new commands, it will take the Dodge action and protect itself as best it can.</p>
@@ -3875,6 +4042,7 @@
         </setters>
     </element>
     <element name="Sweet Dreams" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_SWEET_DREAMS">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>water-element</supports>
         <description>
             <p>You cause a creature within your line of sight to immediately fall asleep and have wonderful dreams. The creature can make a Wisdom saving throw to resist. If failed, it falls asleep. If the creature sleeps until the end of the spell’s duration, the sleeping creature recovers as if it had taken a long rest. A creature affected by the effects of this spell can only be targeted again after completing a normal long rest. If cast before this condition is met, the spell has no effect. You can have only benefit from another Long Rest after 24 hours.</p>
@@ -3897,6 +4065,7 @@
         </setters>
     </element>
     <element name="Symbiosis" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_SYMBIOSIS">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>plant-element</supports>
         <description>
             <p>You touch a willing creature and create a symbiotic plant that intertwines with it. When the plant attaches to the target, it nullifies any poisoned condition it had before the spell. While attached to the plant, the touched creature is immune to the poisoned condition and poison damage, and if it takes a short rest in a location illuminated by sunlight, all hit dice it spends during the rest heal the maximum value, and each die also adds the target’s proficiency bonus to it. If the target takes any fire damage, the plant dies automatically.</p>
@@ -3919,6 +4088,7 @@
         </setters>
     </element>
     <element name="Terracotta Army" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_TERRACOTTA_ARMY">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>earth-element</supports>
         <description>
             <p>You conjure spirits of the earth that take the physical form of terracotta soldiers. You can conjure up to 16 soldiers and each one uses the stat block of an animated armor. You have a telepathic link and all soldiers listen to your orders mentally.</p>
@@ -3941,6 +4111,7 @@
         </setters>
     </element>
     <element name="Through the Water" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_THROUGH_THE_WATER">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>water-element</supports>
         <description>
             <p>You join your hands and focus, enveloping up to six willing creatures within 5 feet of you in a brilliant purple water. When the creatures in range are fully submerged in any liquid, they are teleported to another water source within 1 mile, into which the target submerges. The destination point is chosen by the caster when casting the spell and must be a known location to the caster.</p>
@@ -3963,6 +4134,7 @@
         </setters>
     </element>
     <element name="Thunderclap" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_THUNDERCLAP">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>air-element</supports>
         <description>
             <p>You clap your hands, generating a 30-foot cone of thunderous shock. All creatures in the area must make a Constitution saving throw or become deafened. A creature deafened by this spell is also incapacitated. At the beginning of each turn, a deafened creature can make a Constitution saving throw to end the spell’s effect on itself on a success. Undead, constructs, and creatures naturally deafened or already under the deafened condition before this spell are immune to its effects.</p>
@@ -3985,6 +4157,7 @@
         </setters>
     </element>
     <element name="Tidal Investigation" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_TIDAL_INVESTIGATION">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>water-element</supports>
         <description>
             <p>During the spell duration, you can use a Bonus Action to analyze an area within 60 feet of you, detecting any blood drops, small objects, and weapons within the area. Once you have detected blood drops, make a Wisdom (Investigation) check to determine what you have uncovered. You learn the following information based on the results of your check:</p>
@@ -4012,6 +4185,7 @@
         </setters>
     </element>
     <element name="Tide of Bubbles" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_TIDE_OF_BUBBLES">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>water-element</supports>
         <description>
             <p>You unleash a burst of bubbles in a 30-foot wide, 80-foot long line, affecting all enemies within. Creatures in the area must make a Dexterity saving throw or be engulfed in a bubble. Once trapped, a creature is considered underwater, incapacitated, and vulnerable to lightning damage. Its movement speed is reduced to 0, except for swimming. At the start of each of its turns, the trapped creature can make a Strength or Dexterity saving throw (its choice). On a successful save, it is no longer incapacitated but remains trapped inside the bubble. A creature can escape the bubble by destroying it. Each bubble has an AC of 17 and 30 hit points, is immune to bludgeoning, fire, lightning, poison, acid, and cold damage, and has resistance to non-magical slashing and piercing damage.</p>
@@ -4035,6 +4209,7 @@
         </setters>
     </element>
     <element name="Torrential Rain" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_TORRENTIAL_RAIN">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>water-element</supports>
         <description>
             <p>The caster is able to control the water element around them, harnessing the clouds to create a downpour in an area, affecting the entire spell area.</p>
@@ -4059,6 +4234,7 @@
         </setters>
     </element>
     <element name="Tracing Thunder" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_TRACING_THUNDER">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>lightning-element</supports>
         <description>
             <p>When you cast this spell, you channel electricity into your feet. Until the end of your turn, you can use the Dash action as a bonus action, and your speed is doubled. When you move, you do not provoke opportunity attacks and leave a trail of electrical energy in the spaces you pass through until the end of your next turn. A creature that enters one of the spaces through which you left a trail of energy must make a Constitution saving throw. On a failure, the creature takes 3d6 electrical damage and is restrained until the end of its turn.</p>
@@ -4081,6 +4257,7 @@
         </setters>
     </element>
     <element name="Tread Tremor" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_TREAD_TREMOR">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>earth-element</supports>
         <description>
             <p>You stomp the ground, creating a directed seismic wave in a cone, turning the entire affected area into difficult terrain. Each creature in the cone must make a strength saving throw or be pushed 10 feet back, take 2d4 damage, and fall prone. Walls and structures in the area, depending on how well-built they are, may be weakened or destroyed at the GM’s discretion.</p>
@@ -4103,6 +4280,7 @@
         </setters>
     </element>
     <element name="True Levitation" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_TRUE_LEVITATION">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>air-element</supports>
         <description>
             <p>You concentrate all your control over the force of the element, causing the power of the wind to lift entire locations and relocate them to another place. The spell affects a circular area of land with a half-mile radius and 100 feet in thickness, lifting the block of land, including everything it carries above it, and an equal volume of earth below it.</p>
@@ -4127,6 +4305,7 @@
         </setters>
     </element>
     <element name="Tunneling Arms" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_TUNNELING_ARMS">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>earth-element</supports>
         <description>
             <p>Your limbs morph into powerful claws. For the duration of the spell, you gain a burrowing speed equal to your normal speed. If you come across pure rock terrain, you can burrow at half your speed. When you burrow, you leave behind a tunnel that can only be passed through by a creature of your size at a time.</p>
@@ -4149,6 +4328,7 @@
         </setters>
     </element>
     <element name="Unflinching Stream" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_UNFLINCHING_STREAM">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>water-element</supports>
         <description>
             <p>You imbue a willing creature of your choice with the essence of water. For the duration, the target gains 2d6 temporary hit points and advantage on Intelligence, Wisdom, and Charisma saving throws. If the target loses all of the temporary hit points, they still retain the advantage on their saving throws for the duration.</p>
@@ -4171,6 +4351,7 @@
         </setters>
     </element>
     <element name="Veil of Invisibility" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_VEIL_OF_INVISIBILITY">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>air-element</supports>
         <description>
             <p>You wrap the air around a creature you touch, making it invisible to one other creature within 60 feet. Anything the target is wearing or carrying is also invisible as long as it remains on their person. If the target attacks or casts a spell, the spell ends.</p>
@@ -4193,6 +4374,7 @@
         </setters>
     </element>
     <element name="Visions from the Image" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_VISIONS_FROM_THE_IMAGE">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>air-element</supports>
         <description>
             <p></p>
@@ -4215,6 +4397,7 @@
         </setters>
     </element>
     <element name="Volcano" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_VOLCANO">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>lava-element</supports>
         <description>
             <p>You create a volcano from a point on the ground within range. From the moment you cast the spell, a volcano begins to rise from the ground, growing in four distinct stages. Each round you maintain concentration on this spell, it produces additional effects of the next stage.</p>
@@ -4241,6 +4424,7 @@
         </setters>
     </element>
     <element name="Waive Magic" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_WAIVE_MAGIC">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>water-element</supports>
         <description>
             <p>You use water to neutralize spells. With an action, you can target a creature, an object, or a magical effect within range. Any spell of 3rd level or lower on the target ends. Each spell of 4th level or higher requires you to make a Wisdom ability check (DC 10 + spell level), ending the spell on a success.</p>
@@ -4264,6 +4448,7 @@
         </setters>
     </element>
     <element name="Wall of Lava" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_WALL_OF_LAVA">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>lava-element</supports>
         <description>
             <p>You sprinkle ruby dust over the flames, causing a barrier of pure magma to rise from the ground. You can choose the shape of the barrier to be either a straight line with a length of 60 feet, a height of 15 feet, and a width of 5 feet, or a circle with a diameter of 20 feet, a height of 15 feet, and a width of 5 feet. The barrier blocks the line of sight.</p>
@@ -4288,6 +4473,7 @@
         </setters>
     </element>
     <element name="Wall of Spirits" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_WALL_OF_SPIRITS">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>spirit-element</supports>W
         <description>
             <p>You create a translucent barrier at a point within range, for the duration. The barrier floats in the air and does not require support, appearing in any position you choose, either horizontal, vertical, or angled. It has a thickness of 1 inch and you can make it semi-spherical or spherical with a radius of up to 15 feet, or flat, creating up to ten panels of 10-fot by 10-foot, which must be contiguous. If the barrier appears in a creature’s space that cannot pass through it (see below), the creature is pushed to one side of your choice.</p>
@@ -4310,6 +4496,7 @@
         </setters>
     </element>
     <element name="Water Blessing" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_WATER_BLESSING">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>water-element</supports>
         <description>
             <p>You aid a willing creature. Whenever the target makes an attack roll or a saving throw before the spell ends, the target can roll a d4 and add the number rolled to the attack roll or saving throw. Additionally, once during the spell’s duration, the target can choose to roll another d20 for an attack or saving throw and use the new result, ending the spell.</p>
@@ -4332,6 +4519,7 @@
         </setters>
     </element>
     <element name="Water Body" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_WATER_BODY">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>water-element</supports>
         <description>
             <p>You alter your body’s composition and form to take on the appearance of a water elemental, gaining the following characteristics:</p>
@@ -4361,6 +4549,7 @@
         </setters>
     </element>
     <element name="Water Restoration" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_WATER_RESTORATION">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>water-element</supports>
         <description>
             <p>A creature absorbs the ambient water to restore itself. The creature regains 50 hit points at the moment of casting and an additional 50 hit points at the start of its turns until the spell ends. Additionally, if the target remains under the effect of the spell for an entire hour, the water can permanently regrow lost limbs and body parts, exactly as the original.</p>
@@ -4383,6 +4572,7 @@
         </setters>
     </element>
     <element name="Water Tentacle" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_WATER_TENTACLE">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>water-element</supports>
         <description>
             <p>Your arms are enveloped in water, forming semi-solid tentacles. While the spell remains in effect, you can freely control the tentacles, increasing your reach by 15 feet, including for touch spells, and you are able to manipulate and drag objects as if they were your own hands.</p>
@@ -4405,6 +4595,7 @@
         </setters>
     </element>
     <element name="Whiff" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_WHIFF">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>air-element</supports>
         <description>
             <p>You blow air and create a whirlwind that travels in a 30-foot long, 5-foot wide, and 15-foot high line, stopping at walls or solid structures. All creatures in the area, Large or smaller, must make a Strength saving throw. On a failure, the creatures are pushed 20 feet in a direction of your choice. If their movement is obstructed by an obstacle, they suffer 1d6 bludgeoning damage for every 10 feet moved.</p>
@@ -4427,6 +4618,7 @@
         </setters>
     </element>
     <element name="Wind Cover" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_WIND_COVER">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>air-element</supports>
         <description>
             <p>A creature you touch becomes invisible until the start of the next turn. Anything the target is wearing or carrying is invisible as long as it is on the target’s person and the target can act normally.</p>
@@ -4449,6 +4641,7 @@
         </setters>
     </element>
     <element name="Winds of Time" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_WINDS_OF_TIME">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>air-element</supports>
         <description>
             <p>You breathe the winds of time over a creature or object, altering the temporal flow by accelerating its natural processes.</p>
@@ -4472,6 +4665,7 @@
         </setters>
     </element>
     <element name="Windstorm Point" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ESPELL_WINDSTORM_POINT">
+        <requirements>ID_TRPG_CLASS_ELEMENTALIST</requirements>
         <supports>air-element</supports>
         <description>
             <p>You create a whirlwind at a location of your choice. The point remains stationary for the duration. Whenever a creature other than you comes within 5 feet of it, that creature must make a Strength saving throw or be flung away in the direction established by you when the spell was cast. The creature is thrown 40 feet high and 20 feet away in that direction.</p>

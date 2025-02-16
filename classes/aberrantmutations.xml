@@ -1,12 +1,13 @@
 <elements>
     <info>
         <name>Aberrant Mutations</name>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="aberrantmutations.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/classes/aberrantmutations.xml"/>
         </update>
     </info>
     <element name="Bioluminescent Secretion" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ABERRANT_MUTATION_BIOLUMINESCENT_SECRETION">
         <supports>aberrant-mutation</supports>
+        <requirements>ID_TRPG_CLASS_MADWALKER</requirements>
         <description>
             <p>1 Insanity Point + 1 point per 5 feet added to cone size</p>
             <p class="indent">As a bonus action, you can generate a glowing, bioluminescent substance. This secretion illuminates an area within 5 feet with dim light and leaves a luminous trail wherever you move. After 8 hours, the mutation ends, and the emission fades entirely.</p>
@@ -30,6 +31,7 @@
     </element>
     <element name="Dark Energy" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ABERRANT_MUTATION_DARK_ENERGY">
         <supports>aberrant-mutation</supports>
+        <requirements>ID_TRPG_CLASS_MADWALKER</requirements>
         <description>
             <p>1 Insanity Point, +1 per extra point of damage </p>
             <p class="indent">Before rolling for an attack, you can, as a free action, infuse your weapons with dark energy. Until the start of your next turn, your next successful attack deals an additional 1d6 necrotic damage. Before the attack roll, you can choose to gain extra Insanity Points to bolster this damage, with a maximum total insanity accumulated equal to your level each time you utilize this power. For each extra Insanity Point you gain, add 1 to the necrotic damage roll. The total Insanity Points gained cannot exceed your current Insanity Point limit.</p>
@@ -53,6 +55,7 @@
     </element>
     <element name="Elastic Limbs" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ABERRANT_MUTATION_ELASTIC_LIMBS">
         <supports>aberrant-mutation</supports>
+        <requirements>ID_TRPG_CLASS_MADWALKER</requirements>
         <description>
             <p>1 Insanity Point</p>
             <p class="indent">With a bonus action, you can distort your limbs, elongating them. For the next 10 minutes, your melee attack reach increases by 5 feet, and your base walking speed increases by 10 feet. If you take bludgeoning damage, you may use your reaction to end this effect and reduce the damage by 2d8.</p>
@@ -74,6 +77,7 @@
     </element>
     <element name="Horrid Tentacle" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ABERRANT_MUTATION_HORRID_TENTACLE">
         <supports>aberrant-mutation</supports>
+        <requirements>ID_TRPG_CLASS_MADWALKER</requirements>
         <description>
             <p>1 Insanity Point</p>
             <p class="indent">With a bonus action, you can conjure a grotesque tentacle from your back, extending up to 10 feet. This aberrant limb persists for 1 minute. The tentacle can execute only the following tasks:</p>
@@ -102,6 +106,7 @@
     </element>
     <element name="Penumbral Echoes" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ABERRANT_MUTATION_PENUMBRAL_ECHOES">
         <supports>aberrant-mutation</supports>
+        <requirements>ID_TRPG_CLASS_MADWALKER</requirements>
         <description>
             <p>1 Insanity Point</p>
             <p class="indent">With a bonus action, you can manipulate your vocal cords for 1 minute, granting you the ability to emit sounds otherwise impossible to replicate. You can mimic any sound you’ve heard, be it from creatures (voices, grunts, growls) or objects (hammer clang, door creak, drops falling). A creature hearing the sound can attempt a DC 20 Wisdom (Insight) check to identify it as an imitation. With an action, you can end this Mutation and release a frightful roar that resonates across a 10-foot radius. Each creature within range must succeed a Wisdom save or suffer 2d4 thunder damage and be frightened for 1 minute. An affected creature must attempt a new Wisdom saving throw at the end of each of its turns. Upon success, the effect ceases and the creature becomes immune to it for the next 24 hours.</p>
@@ -125,6 +130,7 @@
     </element>
     <element name="Penumbral Gaze" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ABERRANT_MUTATION_PENUMBRAL_GAZE">
         <supports>aberrant-mutation</supports>
+        <requirements>ID_TRPG_CLASS_MADWALKER</requirements>
         <description>
             <p>1 Insanity Point</p>
             <p class="indent">With a bonus action, you can channel shadow energy through your eyes, causing them to appear large and ghostly white. For 1 hour, you have the advantage on Wisdom (Perception) checks that rely on vision. Additionally, you gain darkvision with a range of 60 feet, or double the range if you already have darkvision.</p>
@@ -148,6 +154,7 @@
     </element>
     <element name="Space Distortion" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ABERRANT_MUTATION_SPACE_DISTORTION">
         <supports>aberrant-mutation</supports>
+        <requirements>ID_TRPG_CLASS_MADWALKER</requirements>
         <description>
             <p>1 Insanity Point</p>
             <p class="indent">With a bonus action, you can bend shadow energy to conjure a small portal, enabling your hands to interact with distant locations. Until the end of your turn, you can manipulate objects or creatures up to 30 feet away and transport small items.</p>
@@ -171,6 +178,7 @@
     </element>
     <element name="Noxious Attack" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ABERRANT_MUTATION_NOXIOUS_ATTACK">
         <supports>arachnid-trail-mutation</supports>
+        <requirements>ID_TRPG_CLASS_MADWALKER</requirements>
         <description>
             <p>1 Insanity Point</p>
             <p class="indent">With a bonus action, you sprout glands in your hands that generate a venom coating your weapon for 1 minute. Each successful weapon attack deals an extra 2 poison damage and bestows a poison marker on the target (maximum of four markers). Creatures with at least one poison marker must attempt a Constitution saving throw at the beginning of their turns. On a successful save, they remove all poison markers. On a failure, they suffer 2 poison damage per poison marker.</p>
@@ -194,6 +202,7 @@
     </element>
     <element name="Shadow Web" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ABERRANT_MUTATION_SHADOW_WEB">
         <supports>arachnid-trail-mutation</supports>
+        <requirements>ID_TRPG_CLASS_MADWALKER</requirements>
         <description>
             <p>1 Insanity Point</p>
             <ul>
@@ -220,6 +229,7 @@
     </element>
     <element name="Mind Slash" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ABERRANT_MUTATION_MIND_SLASH">
         <supports>augury-trail-mutation</supports>
+        <requirements>ID_TRPG_CLASS_MADWALKER</requirements>
         <description>
             <p>1 Insanity Point</p>
             <p class="indent">With your action, you unleash a surge of psychic power against a creature you can see, within a 60-feet range, dealing 3d8 psychic damage. The target makes an Intelligence saving throw to reduce the damage by half. On a fail, the target has disadvantage on the next saving throw it makes until the end of your next turn.</p>
@@ -243,6 +253,7 @@
     </element>
     <element name="Psychic Bond" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ABERRANT_MUTATION_PSYCHIC_BOND">
         <supports>augury-trail-mutation</supports>
+        <requirements>ID_TRPG_CLASS_MADWALKER</requirements>
         <description>
             <p>1 Insanity Point</p>
             <p class="indent">As a bonus action, you can establish a telepathic bond with an ally within a 120-feet range. The link lasts for 1 hour or until the creature moves beyond your range. This bond allows you to communicate with the chosen creature as though engaged in normal conversation. Furthermore, for the duration of the link, both can use the Help action on Intelligence checks made even at a distance.</p>
@@ -266,6 +277,7 @@
     </element>
     <element name="Amphibious Skin" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ABERRANT_MUTATION_AMPHIBIOUS_SKIN">
         <supports>aberrant-mutation</supports>
+        <requirements>ID_TRPG_CLASS_MADWALKER</requirements>
         <description>
             <p>2 Insanity Point</p>
             <p class="indent">With an action, you can modify your skin to make it slippery, changing your base AC to 13 + your Dexterity modifier. This grants you advantage on ability checks and saving throws to escape the grappled condition.</p>
@@ -289,6 +301,7 @@
     </element>
     <element name="Body Shaping" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ABERRANT_MUTATION_BODY_SHAPING">
         <supports>aberrant-mutation</supports>
+        <requirements>ID_TRPG_CLASS_MADWALKER</requirements>
         <description>
             <p>2 Insanity Point</p>
             <p class="indent">With an action, you can alter your physical appearance for the next 8 hours. You can assume the form of any humanoid creature within your size category. Other attributes, such as your voice, scent, and mannerisms, remain the same. A creature must succeed on a DC 18 Intelligence (Investigation) check to discern that your appearance is a disguise.</p>
@@ -312,6 +325,7 @@
     </element>
     <element name="Penumbral Leap" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ABERRANT_MUTATION_PENUMBRAL_LEAP">
         <supports>aberrant-mutation</supports>
+        <requirements>ID_TRPG_CLASS_MADWALKER</requirements>
         <description>
             <p>2 Insanity Point</p>
             <p class="indent">As a bonus action, you can disappear into the Penumbral Plane and move instantly, reappearing in a space you can see up to 30 feet away.</p>
@@ -335,6 +349,7 @@
     </element>
     <element name="Shadow Clones" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ABERRANT_MUTATION_SHADOW_CLONES">
         <supports>aberrant-mutation</supports>
+        <requirements>ID_TRPG_CLASS_MADWALKER</requirements>
         <description>
             <p>2 Insanity Point</p>
             <p class="indent">As an action, you can create two illusionary copies of yourself made of penumbral energy. They occupy the same space as you and move with you for 1 minute, mirroring your every action and randomly shifting positions around your body, making them indistinguishable from you. For the duration of this mutation, each time a creature targets you with an attack, roll a d20 to determine whether the attack instead targets one of your clones. With two clones, you must roll an 8 or higher. With one clone, you must roll an 11 or higher.</p>
@@ -359,6 +374,7 @@
     </element>
     <element name="Warped Physique" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ABERRANT_MUTATION_WARPED_PHYSIQUE">
         <supports>aberrant-mutation</supports>
+        <requirements>ID_TRPG_CLASS_MADWALKER</requirements>
         <description>
             <p>2 Insanity Point</p>
             <p class="indent">With a bonus action, for the next 1 minute, you can distort and enhance your muscles and tendons, giving your legs exceptional strength and flexibility. Your long jump covers a distance equal to your walking speed, and your high jump covers a distance equal to half your walking speed. While this mutation is active, you have advantage on Dexterity (Acrobatics) and Strength (Athletics) checks involving jumps.</p>
@@ -382,6 +398,7 @@
     </element>
     <element name="Pain Toxin" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ABERRANT_MUTATION_PAIN_TOXIN">
         <supports>arachnid-trail-mutation</supports>
+        <requirements>ID_TRPG_CLASS_MADWALKER</requirements>
         <description>
             <p>2 Insanity Point</p>
             <p class="indent">As an action, you emit a toxic blast in a 20-foot cone. Every creature within this cone must make a Dexterity saving throw. On a failure, the creature is afflicted by the poison. At the start of each of its turns, an affected creature must succeed on a Constitution saving throw or spend its action writhing in pain. The effect ends when an affected creature succeeds on three (nonconsecutive) Constitution saving throws or uses an action to cleanse itself with fresh water. Creatures immune to poison are unaffected by this mutation. After succeeding on three Constitution saving throws, the creature becomes immune to the effect for 24 hours.</p>
@@ -405,6 +422,7 @@
     </element>
     <element name="Venom Splash" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ABERRANT_MUTATION_VENOM_SPLASH">
         <supports>arachnid-trail-mutation</supports>
+        <requirements>ID_TRPG_CLASS_MADWALKER</requirements>
         <description>
             <p>2 Insanity Point</p>
             <p class="indent">As an action, you unleash a blast of venom in a 20-foot cone. Any creature within the cone must make a Constitution saving throw, suffering 3d10 poison damage on a failed save, or half as much damage on a successful one.</p>
@@ -428,6 +446,7 @@
     </element>
     <element name="Mind Drain" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ABERRANT_MUTATION_MIND_DRAIN">
         <supports>augury-trail-mutation</supports>
+        <requirements>ID_TRPG_CLASS_MADWALKER</requirements>
         <description>
             <p>2 Insanity Point</p>
             <p class="indent">As an action, you try to touch a creature, making a melee attack roll. On a hit, you deal 5d8 psychic damage and regain hit points equal to half the damage dealt. If your target is grappled, your touch attack automatically hits.</p>
@@ -451,6 +470,7 @@
     </element>
     <element name="Psychic Weapon" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ABERRANT_MUTATION_PSYCHIC_WEAPON">
         <supports>augury-trail-mutation</supports>
+        <requirements>ID_TRPG_CLASS_MADWALKER</requirements>
         <description>
             <p>2 Insanity Point</p>
             <p class="indent">When you hit a target with a melee attack, you can activate this mutation to deal an extra 2d6 psychic damage to it. Additionally, until the end of your next turn, the affected creature has disadvantage on any saving throw against the charmed or frightened conditions.</p>
@@ -474,6 +494,7 @@
     </element>
     <element name="Aberrant Gaze" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ABERRANT_MUTATION_ABERRANT_GAZE">
         <supports>aberrant-mutation</supports>
+        <requirements>ID_TRPG_CLASS_MADWALKER</requirements>
         <description>
             <p>3 Insanity Point</p>
             <p class="indent">As a bonus action, multiple eyes sprout all over your body, enhancing your vision for 1 minute. During this time, you see in all directions, cannot be surprised, gain advantage on Wisdom (Perception) checks related to sight, and receive a +2 bonus to your AC. Additionally, you can use an action to focus your eyes on a creature within 30 feet of you. The target must succeed on a Wisdom saving throw or be restrained for 1 minute. An affected creature can repeat the saving throw at the end of its turns, ending the effect on a success. Using this action ends the mutation.</p>
@@ -497,6 +518,7 @@
     </element>
     <element name="Aberrant Spines" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ABERRANT_MUTATION_ABERRANT_SPINES">
         <supports>aberrant-mutation</supports>
+        <requirements>ID_TRPG_CLASS_MADWALKER</requirements>
         <description>
             <p>3 Insanity Point</p>
             <p class="indent">As a bonus action, you manipulate your bone structure to sprout spikes from your skin. For 1 minute, these spines can be used as light weapons, with the finesse and thrown properties (range 20/60), dealing 1d10 piercing damage. Upon hitting a creature, it must succeed on a Constitution saving throw or its speed is halved. At the start of each turn, the creature can attempt another saving throw to negate this effect for that turn.</p>
@@ -520,6 +542,7 @@
     </element>
     <element name="Interplanar Vortex" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ABERRANT_MUTATION_INTERPLANAR_VORTEX">
         <supports>aberrant-mutation</supports>
+        <requirements>ID_TRPG_CLASS_MADWALKER</requirements>
         <description>
             <p>3 Insanity Point</p>
             <p class="indent">As an action, you form a void portal under a creature within 60 feet of you. The creature must make a Dexterity saving throw. If it fails, it plummets into the portal and suffers 6d10 necrotic damage from the penumbral energies within before being ejected against the ground by another portal that appears 30 feet above a chosen point on the ground within range, taking falling damage and landing prone. Any other creature at the landing point must also make a Dexterity saving throw or suffer the same falling damage and prone condition. If successful, it avoids the damage and become prone. Alternatively, you can control the harmful energies to allow an ally to pass through the portal to another one you create within 60 feet. In this case, the ally must succeed on a Constitution saving throw to avoid the necrotic damage, halving it on a failed save.</p>
@@ -543,6 +566,7 @@
     </element>
     <element name="Shadow Control" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ABERRANT_MUTATION_SHADOW_CONTROL">
         <supports>aberrant-mutation</supports>
+        <requirements>ID_TRPG_CLASS_MADWALKER</requirements>
         <description>
             <p>3 Insanity Point</p>
             <p class="indent">With a bonus action, you can use your shadow to attempt to paralyze a creature up to 30 feet away. The creature must succeed on a Dexterity saving throw or be paralyzed for 1 minute. To maintain this effect, you must forfeit your actions, reactions, and movement, and can only use bonus actions. You cannot take damage, or the effect ends immediately. At the start of each turn, the paralyzed creature can make a Wisdom saving throw to end the effect. During this time, you can use your bonus action to create a shadowy tentacle that extends up to 5 feet from the paralyzed creature and attacks. The tentacle deals 2d6 necrotic damage on a hit, reducing the creature’s maximum hit points until it finishes a long rest.</p>
@@ -566,6 +590,7 @@
     </element>
     <element name="Volatile Mutation" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ABERRANT_MUTATION_VOLATILE_MUTATION">
         <supports>aberrant-mutation</supports>
+        <requirements>ID_TRPG_CLASS_MADWALKER</requirements>
         <description>
             <p>3 Insanity Point</p>
             <p class="indent">As a bonus action, you can alter your body, causing your muscles to swell and acid-filled pustules to form on your skin. For 1 minute, every attack you suffer triggers a 10-foot cone of acid in the direction of the attack. Each creature within this cone takes 1d6 acid damage. Additionally, during this period, you gain resistance to acid damage and have advantage on Charisma (Intimidation) checks.</p>
@@ -589,6 +614,7 @@
     </element>
     <element name="Arachnid Legs" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ABERRANT_MUTATION_ARACHNID_LEGS">
         <supports>arachnid-trail-mutation</supports>
+        <requirements>ID_TRPG_CLASS_MADWALKER</requirements>
         <description>
             <p>3 Insanity Point</p>
             <p class="indent">You sprout four spider-like legs from your back that last for 1 minute, enhancing your speed by 10 feet. Their sharp and durable nature allows you to use them as weapons that deal 1d8 slashing damage. On a hit, the target must make a Constitution saving throw. On a failure, the target takes an extra 1d8 poison damage and becomes poisoned. In addition, you can use your bonus action to make an extra attack with one of the spider legs</p>
@@ -612,6 +638,7 @@
     </element>
     <element name="Venomous Saliva" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ABERRANT_MUTATION_VENOMOUS_SALIVA">
         <supports>arachnid-trail-mutation</supports>
+        <requirements>ID_TRPG_CLASS_MADWALKER</requirements>
         <description>
             <p>3 Insanity Point</p>
             <p class="indent">As a bonus action, you can spit venom at a creature within 15 feet of you. The creature must succeed on a Constitution saving throw or take 3d12 poison damage.</p>
@@ -635,6 +662,7 @@
     </element>
     <element name="Telepathic Mindlink" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ABERRANT_MUTATION_TELEPATHIC_MINDLINK">
         <supports>augury-trail-mutation</supports>
+        <requirements>ID_TRPG_CLASS_MADWALKER</requirements>
         <description>
             <p>3 Insanity Point</p>
             <p class="indent">With a bonus action, you establish a mental link between yourself and a willing creature. The connection lasts for 1 hour or until you choose to end it or fall unconscious. During this time, you can telepathically communicate with the creature within your line of sight over any distance or up to 40 feet away when out of sight. If the creature is familiar to you, the communication range increases to 120 feet when out of sight. This ability is affected by effects that prevent magic or magical communication. You can maintain a bond with up to 3 creatures simultaneously; establishing a new link with a fourth creature breaks the connection with the first.</p>
@@ -658,6 +686,7 @@
     </element>
     <element name="Waves of Headache" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ABERRANT_MUTATION_WAVES_OF_HEADACHE">
         <supports>augury-trail-mutation</supports>
+        <requirements>ID_TRPG_CLASS_MADWALKER</requirements>
         <description>
             <p>3 Insanity Point</p>
             <p class="indent">Using your action, you emit mental pulses that affect all creatures within 15 feet of you. Each affected creature must make a Wisdom saving throw. On a failure, it suffers severe headaches, taking 6d6 psychic damage and falling prone from the pain. On a successful save, it takes half damage and remains upright.</p>
@@ -681,6 +710,7 @@
     </element>
     <element name="Assassin's Stain" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ABERRANT_MUTATION_ASSASSINS_STAIN">
         <supports>aberrant-mutation</supports>
+        <requirements>ID_TRPG_CLASS_MADWALKER</requirements>
         <description>
             <p>4 Insanity Point</p>
             <p class="indent">Using your bonus action, you can mark an enemy up to 30 feet away with penumbral energy, causing an extra 1d8 necrotic damage each time you hit this enemy with an attack over the next minute. Only one enemy can bear this mark at a time.</p>
@@ -704,6 +734,7 @@
     </element>
     <element name="Bat Parts" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ABERRANT_MUTATION_BAT_PARTS">
         <supports>aberrant-mutation</supports>
+        <requirements>ID_TRPG_CLASS_MADWALKER</requirements>
         <description>
             <p>4 Insanity Point</p>
             <p class="indent">As an action, you can take on the qualities of a penumbral bat, gaining a set of distortive wings that provide a flying speed of 30 feet, blindsight within a 60-foot radius, and clawed feet capable of grabbing objects and creatures up to one size larger than yours.</p>
@@ -727,6 +758,7 @@
     </element>
     <element name="Charge of Shadows" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ABERRANT_MUTATION_CHARGE_OF_SHADOWS">
         <supports>aberrant-mutation</supports>
+        <requirements>ID_TRPG_CLASS_MADWALKER</requirements>
         <description>
             <p>4 Insanity Point</p>
             <p class="indent">With a bonus action, you charge your held weapons with penumbral energy. For the following minute, your next successful attack deals an extra 2d8 necrotic damage. Additionally, the target must succeed on a Constitution saving throw or become incapacitated for 1 minute, being able to make a new saving throw at the end of each of its turns to end this condition.</p>
@@ -750,6 +782,7 @@
     </element>
     <element name="Penumbral Eruption" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ABERRANT_MUTATION_PENUMBRAL_ERUPTION">
         <supports>aberrant-mutation</supports>
+        <requirements>ID_TRPG_CLASS_MADWALKER</requirements>
         <description>
             <p>4 Insanity Point</p>
             <p class="indent">As an action, you manipulate penumbral energies to create two portals up to 30 feet apart. An eruption of penumbral energy streaks between these portals, forcing any creature within a 10-foot wide line extending the distance between the portals to make a Dexterity saving throw. On a failure, they suffer 4d8 necrotic damage and 4d8 force damage, taking half as much damage on a successful save. The portals vanish at the end of the turn.</p>
@@ -773,6 +806,7 @@
     </element>
     <element name="Penumbral Fog" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ABERRANT_MUTATION_PENUMBRAL_FOG">
         <supports>aberrant-mutation</supports>
+        <requirements>ID_TRPG_CLASS_MADWALKER</requirements>
         <description>
             <p>4 Insanity Point</p>
             <p class="indent">With an action, you can amplify the effects of the Penumbral Plane on the material world, creating a 20-foot radius sphere of fog centered on a point up to 60 feet away from you. All creatures within this zone, except you, must make a Constitution saving throw or suffer 3d6 psychic damage. The area remains heavily obscured to all creatures except you for 10 minutes.</p>
@@ -796,6 +830,7 @@
     </element>
     <element name="Allergenic Spores" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ABERRANT_MUTATION_ALLERGENIC_SPORES">
         <supports>arachnid-trail-mutation</supports>
+        <requirements>ID_TRPG_CLASS_MADWALKER</requirements>
         <description>
             <p>4 Insanity Point</p>
             <p class="indent">As a bonus action, you emit a cloud of toxic spores, extending up to 10 feet in all directions. Any creature within the area must succeed on a Constitution saving throw or suffer 2d6 poison damage and become poisoned, taking half damage and avoiding the poisoned condition on a successful save.</p>
@@ -819,6 +854,7 @@
     </element>
     <element name="Pheromone Spray" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ABERRANT_MUTATION_PHEROMONE_SPRAY">
         <supports>arachnid-trail-mutation</supports>
+        <requirements>ID_TRPG_CLASS_MADWALKER</requirements>
         <description>
             <p>4 Insanity Point</p>
             <p class="indent">As an action, you alter your glands to produce potent pheromones that radiate up to 60 feet around you for the next hour. Any humanoid creature that enters or starts its turn in this area must make a Constitution saving throw. Creatures engaged in combat with you have advantage on
@@ -843,6 +879,7 @@ this saving throw.</p>
     </element>
     <element name="Minor Telekinesis" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ABERRANT_MUTATION_MINOR_TELEKINESIS">
         <supports>augury-trail-mutation</supports>
+        <requirements>ID_TRPG_CLASS_MADWALKER</requirements>
         <description>
             <p>4 Insanity Point</p>
             <p class="indent">As a bonus action, you can manipulate objects up to 30 feet away from you, provided their total weight doesn’t exceed 30 times your Wisdom score. If an object isn’t worn or carried, you can move it up to 30 feet in any direction. Worn or carried items require the owner to fail a Strength saving throw for you to move them. Your telekinetic control also allows you to handle small objects delicately, open containers, retrieve or store items, or pour out the contents of a vial. This control lasts up to 10 minutes.</p>
@@ -866,6 +903,7 @@ this saving throw.</p>
     </element>
     <element name="Penumbral Attraction" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ABERRANT_MUTATION_PENUMBRAL_ATTRACTION">
         <supports>augury-trail-mutation</supports>
+        <requirements>ID_TRPG_CLASS_MADWALKER</requirements>
         <description>
             <p>4 Insanity Point</p>
             <p class="indent">With an action, you can hypnotize a humanoid creature within 60 feet of you, subjecting them to the effects of the dominate person spell for the next minute.</p>
@@ -889,6 +927,7 @@ this saving throw.</p>
     </element>
     <element name="Deadly Tentacles" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ABERRANT_MUTATION_DEADLY_TENTACLES">
         <supports>aberrant-mutation</supports>
+        <requirements>ID_TRPG_CLASS_MADWALKER</requirements>
         <description>
             <p>5 Insanity Point</p>
             <p class="indent">As a bonus action, you can sprout four tentacles from your back that last for 1 minute or until you retract them with another bonus action. You can use your action to attack with them, making four attacks, one with each tentacle. They have a 10-foot reach, use either your Strength or Dexterity for the attack and damage rolls, and deal 3d4 bludgeoning damage per hit.</p>
@@ -912,6 +951,7 @@ this saving throw.</p>
     </element>
     <element name="In a Blink of an Eye" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ABERRANT_MUTATION_IN_A_BLINK_OF_AN_EYE">
         <supports>aberrant-mutation</supports>
+        <requirements>ID_TRPG_CLASS_MADWALKER</requirements>
         <description>
             <p>5 Insanity Point</p>
             <p class="indent">With a bonus action, you can forsake your movement to teleport adjacent to a visible enemy within 40 feet of you. Your attacks against this enemy have advantage until the end of your turn. When your turn ends, you can immediately teleport yourself to any other space within 40 feet of your current position.</p>
@@ -935,6 +975,7 @@ this saving throw.</p>
     </element>
     <element name="Nefarious Dinner" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ABERRANT_MUTATION_NEFARIOUS_DINNER">
         <supports>aberrant-mutation</supports>
+        <requirements>ID_TRPG_CLASS_MADWALKER</requirements>
         <description>
             <p>5 Insanity Point</p>
             <p class="indent">You contort your facial muscles grotesquely, your jaw reconfiguring into a fanged maw capable of tearing a creature apart. Upon invoking this mutation, make a proficient melee weapon attack against a creature. On a hit, you bite the creature, dealing 7d8 slashing damage and 7d8 necrotic damage, and causing a bleeding effect.</p>
@@ -958,6 +999,7 @@ this saving throw.</p>
     </element>
     <element name="Nightmare Whirlpool" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ABERRANT_MUTATION_NIGHTMARE_WHIRLPOOL">
         <supports>aberrant-mutation</supports>
+        <requirements>ID_TRPG_CLASS_MADWALKER</requirements>
         <description>
             <p>5 Insanity Point</p>
             <p class="indent">By activating this power, you invade the minds of all creatures within 15 feet of you, creating a mental link with them that persists for 1 minute. Each targeted creature must succeed on a Wisdom saving throw, or suffer 6d8 psychic damage and perceive you and your allies as incarnations of their deepest fears due to memories you implant. They remain frightened of you and your allies for the duration.</p>
@@ -981,6 +1023,7 @@ this saving throw.</p>
     </element>
     <element name="Parasitism" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ABERRANT_MUTATION_PARASITISM">
         <supports>aberrant-mutation</supports>
+        <requirements>ID_TRPG_CLASS_MADWALKER</requirements>
         <description>
             <p>5 Insanity Point</p>
             <p class="indent">With a bonus action, you attempt to attach yourself onto a nearby creature, forcing it to make a Constitution saving throw. If it fails, you transform and graft yourself onto them, draining their vitality. The afflicted creature suffers 10d10 necrotic damage at the start of each of its turns, and you recover hit points equal to half the inflicted damage. The target’s speed is reduced by 10 feet, and it can use an action to try to pry you off, making a Strength saving throw. On a success, you are dislodged and fall prone in an adjacent space. While leeching, you are unable to take actions, bonus actions, or reactions, and you are immobile, sticking to your host. Should the creature’s hit points reach zero, your parasitic grip ceases, and you appear in an unoccupied adjacent space. At the start of your turn, while leeching, you can gain an extra Insanity Point to voluntarily detach and stand in a nearby unoccupied space.</p>
@@ -1004,6 +1047,7 @@ this saving throw.</p>
     </element>
     <element name="Penumbra Blade" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ABERRANT_MUTATION_">
         <supports>aberrant-mutation</supports>
+        <requirements>ID_TRPG_CLASS_MADWALKER</requirements>
         <description>
             <p>5 Insanity Point</p>
             <p class="indent">While making an attack, you can invoke this mutation to infuse your weapon with potent necrotic energy drawn from the Penumbral Plane. All attacks you make until the end of your turn deal an extra 4d6 necrotic damage.</p>
@@ -1027,6 +1071,7 @@ this saving throw.</p>
     </element>
     <element name="Exoskeleton" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ABERRANT_MUTATION_EXOSKELETON">
         <supports>arachnid-trail-mutation</supports>
+        <requirements>ID_TRPG_CLASS_MADWALKER</requirements>
         <description>
             <p>5 Insanity Point</p>
             <p class="indent">You use your action to create a penumbral energy exoskeleton that covers your body. For the next 10 minutes, all incoming damage (except psychic) is dealt to the exoskeleton’s hit points first. It has 80 hit points and shares your damage resistances and immunities.</p>
@@ -1050,6 +1095,7 @@ this saving throw.</p>
     </element>
     <element name="Web Cocoon" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ABERRANT_MUTATION_WEB_COCOON">
         <supports>arachnid-trail-mutation</supports>
+        <requirements>ID_TRPG_CLASS_MADWALKER</requirements>
         <description>
             <p>5 Insanity Point</p>
             <p class="indent">As an action, you adapt your body to emit a flood of webs at a creature up to one size larger than you within 20 feet of you. The creature must succeed on a Dexterity saving throw or become restrained in the web cocoon, taking 3d8 bludgeoning damage at the end of each of its turns. The creature can be attacked as usual, with no effects on the cocoon.</p>
@@ -1073,6 +1119,7 @@ this saving throw.</p>
     </element>
     <element name="Eye of Augury" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ABERRANT_MUTATION_EYE_OF_AUGURY">
         <supports>augury-trail-mutation</supports>
+        <requirements>ID_TRPG_CLASS_MADWALKER</requirements>
         <description>
             <p>5 Insanity Point</p>
             <p class="indent">As an action, you close your eyes, which merge into a singular, large eye in the center of your face. For 1 minute, you gain truesight and can use your bonus action to take the Dodge or Disengage action. During this time, you can use an action to focus your eye on a creature within 40 feet of you, imposing a Wisdom saving throw. On a failure, they suffer the effects of the confusion spell. Using this ability ends the mutation.</p>
@@ -1096,6 +1143,7 @@ this saving throw.</p>
     </element>
     <element name="Phantom of Penumbra" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ABERRANT_MUTATION_PHANTOM_OF_PENUMBRA">
         <supports>augury-trail-mutation</supports>
+        <requirements>ID_TRPG_CLASS_MADWALKER</requirements>
         <description>
             <p>5 Insanity Point</p>
             <p class="indent">As an action, you create a penumbral projection of yourself and launch it at a target within 30 feet of you. The target must succeed on a Wisdom saving throw or take 4d6 psychic damage and become stunned for 1 minute. The projection then moves to another creature within 20 feet of you and imposes the same conditions, repeating up to 4 times. If a creature succeeds on the saving throw, the effect ends.</p>
@@ -1121,6 +1169,7 @@ this saving throw.</p>
 <!--
     <element name="Name" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_ABERRANT_MUTATION_">
         <supports>aberrant-mutation</supports>
+        <requirements>ID_TRPG_CLASS_MADWALKER</requirements>
         <description>
             <p>5 Insanity Point</p>
             <p class="indent"></p>
