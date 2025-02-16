@@ -4,7 +4,7 @@
         <name></name>
         <description>Madwalker Class from Tanares RPG 5e</description>
         <author url="">Tanares RPG 5e</author>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="class-madwalker.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/classes/class-madwalker.xml" />
         </update>
     </info>
@@ -117,7 +117,7 @@
             <grant type="Class Feature" id="ID_TRPG_CLASS_FEATURE_MADWALKER_WAKING_NIGHTMARE" level="20" />
         </rules>
     </element>
-    <element name="Aberrant Mutation" type="Class Feature" source="source" id="ID_TRPG_CLASS_FEATURE_MADWALKER_ABERRANT_MUTATION">
+    <element name="Aberrant Mutation" type="Class Feature" source="tanares rpg 5e" id="ID_TRPG_CLASS_FEATURE_MADWALKER_ABERRANT_MUTATION">
         <description>
             <p>You can produce unimaginable temporary modifications to your body, known as Aberrant Mutations. Some of them require the target(s) to roll a saving throw to resist their effects.</p>
             <center>
@@ -167,7 +167,7 @@
         </rules>
         <spellcasting name="Madwalker" ability="Wisdom" prepare="false" />
     </element>
-    <element name="Penumbral Shape" type="Class Feature" source="source" id="ID_TRPG_CLASS_FEATURE_MADWALKER_PENUMBRAL_SHAPE">
+    <element name="Penumbral Shape" type="Class Feature" source="tanares rpg 5e" id="ID_TRPG_CLASS_FEATURE_MADWALKER_PENUMBRAL_SHAPE">
         <description>
             <p>When you reach the maximum number of Insanity Points indicated on the table, your shape becomes that of a penumbral creature for as many minutes as your madwalker level. You automatically revert to your normal form if you fall unconscious, drop to 0 hit points, or die.</p>
             <p class="indent">Each level grants you access to new Penumbral Shapes, according to the following table:</p>
@@ -211,7 +211,7 @@
              
         </rules>
     </element>
-    <element name="Trail of Madness" type="Class Feature" source="source" id="ID_TRPG_CLASS_FEATURE_MADWALKER_TRAILS_OF_MADNESS">
+    <element name="Trail of Madness" type="Class Feature" source="tanares rpg 5e" id="ID_TRPG_CLASS_FEATURE_MADWALKER_TRAILS_OF_MADNESS">
         <description>
             <p>At 2nd level, you are able to manifest one of the powerful creatures of the Penumbral Plane. Choose between the Nightmare Augury Trail or the Aberrant Arachnid Trail. Each trail offers unique Aberrant Mutations, Penumbral Shapes, and features at the 2nd, 7th, 14th, and 18th levels.</p>
         </description>
@@ -222,7 +222,7 @@
             <select type="Archetype" name="Trail of Madness" supports="trail-of-madness"/>
         </rules>
     </element>
-    <element name="Shadow Sense" type="Class Feature" source="source" id="ID_TRPG_CLASS_FEATURE_MADWALKER_SHADOW_SENSE">
+    <element name="Shadow Sense" type="Class Feature" source="tanares rpg 5e" id="ID_TRPG_CLASS_FEATURE_MADWALKER_SHADOW_SENSE">
         <description>
             <p>At 3rd level, your mental bond with the realm of nightmares deepens, enhancing your sense of reality. You gain advantage on all Wisdom checks and saving throws against environmental effects in the Penumbral Plane. However, while interacting with beings from the Material Plane, excluding other madwalkers, you suffer disadvantage on all Charisma checks, except Intimidation.</p>
             <p class="indent">In addition, you are adept at locating portals and rifts leading to and from the Penumbral Plane, being aware of their distance, direction, and size within a 1-mile radius.</p>
@@ -231,7 +231,7 @@
             <description>You gain advantage on all Wisdom checks and saving throws against environmental effects in the Penumbral Plane. However, while interacting with beings from the Material Plane, excluding other madwalkers, you suffer disadvantage on all Charisma checks, except Intimidation. You are adept at locating portals and rifts leading to and from the Penumbral Plane, being aware of their distance, direction, and size within a 1-mile radius.</description>
         </sheet>
     </element>
-    <element name="Blades of Madness" type="Class Feature" source="source" id="ID_TRPG_CLASS_FEATURE_MADWALKER_BLADES_OF_MADNESS">
+    <element name="Blades of Madness" type="Class Feature" source="tanares rpg 5e" id="ID_TRPG_CLASS_FEATURE_MADWALKER_BLADES_OF_MADNESS">
         <description>
             <p>At 3rd level, you can materialize your nightmares and distort reality. When you use an Aberrant Mutation, you may reroll any number of damage dice until the end of your turn, using the second result. Even in your Penumbral Shape, you can apply this ability to all damage dice.</p>
         </description>
@@ -239,7 +239,7 @@
             <description>When you use an Aberrant Mutation, you may reroll any number of damage dice until the end of your turn, using the second result. Even in your Penumbral Shape, you can apply this ability to all damage dice.</description>
         </sheet>
     </element>
-    <element name="Ability Score Improvement" type="Class Feature" source="source" id="ID_TRPG_CLASS_FEATURE_MADWALKER_ASI">
+    <element name="Ability Score Improvement" type="Class Feature" source="tanares rpg 5e" id="ID_TRPG_CLASS_FEATURE_MADWALKER_ASI">
         <description>
             <p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
         </description>
@@ -253,7 +253,7 @@
         </rules>
     
     </element>
-    <element name="Extra Attack" type="Class Feature" source="source" id="ID_TRPG_CLASS_FEATURE_MADWALKER_EXTRA_ATTACK">
+    <element name="Extra Attack" type="Class Feature" source="tanares rpg 5e" id="ID_TRPG_CLASS_FEATURE_MADWALKER_EXTRA_ATTACK">
         <description>
             <p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
             
@@ -262,7 +262,7 @@
             <description>You can attack twice, instead of once, whenever you take the Attack action on your turn.</description>
         </sheet>
     </element>
-    <element name="Aberrant Mind" type="Class Feature" source="source" id="ID_TRPG_CLASS_FEATURE_MADWALKER_ABERRANT_MIND">
+    <element name="Aberrant Mind" type="Class Feature" source="tanares rpg 5e" id="ID_TRPG_CLASS_FEATURE_MADWALKER_ABERRANT_MIND">
         <description>
             <p>Starting at the 6th level, your proficiency bonus is doubled for saving throws against effects that manipulate your emotions, read your thoughts, cause the charmed condition, or belong to the enchantment or illusion schools. This bonus also applies to saves against spells or effects from aberration creatures or natural creatures of the Penumbral Plane.</p>
         </description>
@@ -270,7 +270,7 @@
             <description>Your proficiency bonus is doubled for saving throws against effects that manipulate your emotions, read your thoughts, cause the charmed condition, or belong to the enchantment or illusion schools. This bonus also applies to saves against spells or effects from aberration creatures or natural creatures of the Penumbral Plane.</description>
         </sheet>
     </element>
-    <element name="Warped Morphology" type="Class Feature" source="source" id="ID_TRPG_CLASS_FEATURE_MADWALKER_WARPED_MORPHOLOGY">
+    <element name="Warped Morphology" type="Class Feature" source="tanares rpg 5e" id="ID_TRPG_CLASS_FEATURE_MADWALKER_WARPED_MORPHOLOGY">
         <description>
             <p>Your proximity to the Penumbral Plane energies causes your physiology to become bizarre. Starting at the 10th level, when an enemy scores a critical hit on you, they must re-roll the attack. You can use this ability once, regaining its use after a short or long rest.</p>
         </description>
@@ -278,7 +278,7 @@
             <description>When an enemy scores a critical hit on you, they must re-roll the attack. You can use this ability once, regaining its use after a short or long rest.</description>
         </sheet>
     </element>
-    <element name="Penumbral Shift" type="Class Feature" source="source" id="ID_TRPG_CLASS_FEATURE_MADWALKER_PENUMBRAL_SHIFT">
+    <element name="Penumbral Shift" type="Class Feature" source="tanares rpg 5e" id="ID_TRPG_CLASS_FEATURE_MADWALKER_PENUMBRAL_SHIFT">
         <description>
             <p>From the 11th level, you can, once per long rest, use an action to transport yourself and your allies to the Penumbral Plane or back to the Material Plane. This feature works similarly to the plane shift spell, but exclusively between the Material Plane and the Penumbral Plane.</p>
         </description>
@@ -286,7 +286,7 @@
             <description>Once per long rest, use an action to transport yourself and your allies to the Penumbral Plane or back to the Material Plane. This feature works similarly to the plane shift spell, but exclusively between the Material Plane and the Penumbral Plane.</description>
         </sheet>
     </element>
-    <element name="Penumbral Portal" type="Class Feature" source="source" id="ID_TRPG_CLASS_FEATURE_MADWALKER_PENUMBRAL_PORTAL">
+    <element name="Penumbral Portal" type="Class Feature" source="tanares rpg 5e" id="ID_TRPG_CLASS_FEATURE_MADWALKER_PENUMBRAL_PORTAL">
         <description>
             <p>At 15th level, when using your Penumbral Shift ability, you can choose to create a portal from the Penumbral Plane to the Material Plane or vice versa. This 10-foot portal remains open for 1 minute or until you close it using a bonus action. For all other purposes, it functions like the gate spell.</p>
         </description>
@@ -294,7 +294,7 @@
             <description>When using your Penumbral Shift ability, you can choose to create a portal from the Penumbral Plane to the Material Plane or vice versa. This 10-foot portal remains open for 1 minute or until you close it using a bonus action. For all other purposes, it functions like the gate spell.</description>
         </sheet>
     </element>
-    <element name="Waking Nightmare" type="Class Feature" source="source" id="ID_TRPG_CLASS_FEATURE_MADWALKER_WAKING_NIGHTMARE">
+    <element name="Waking Nightmare" type="Class Feature" source="tanares rpg 5e" id="ID_TRPG_CLASS_FEATURE_MADWALKER_WAKING_NIGHTMARE">
         <description>
             <p>Starting at 20th level, once per long rest, with an action, you can transform into your Penumbral Shape, regardless of how many Madness Points you have. This transformation does not interfere with the transformation resulting from your accumulated Madness Points.</p>
         </description>
