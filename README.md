@@ -16,7 +16,7 @@ To Do:
 - New Classes
     - Dragonblade [Minor issue with finesse](https://github.com/ShadowLinks/tanares/issues/5)
     - Elementalist COMPLETED
-    - Madwalker
+    - Madwalker COMPLETED
     - Redeemer
     - Shepherd
     - Doomspeakers

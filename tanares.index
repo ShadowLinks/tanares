@@ -4,7 +4,7 @@
 		<name>Tanares</name>
 		<description>Supplements from Tanares RPG 5E to expand your core gaming elements.</description>
 		<author url="https://dragorigames.com/">Dragori Games</author>
-		<update version="0.0.18">
+		<update version="0.0.19">
 			<file name="tanares.index" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/tanares.index" />
 		</update>
 	</info>
@@ -67,5 +67,10 @@
 		<file name="elementalist-fire.xml" url="https://github.com/ShadowLinks/tanares/raw/refs/heads/main/subclasses/elementalist-fire.xml" />
 		<file name="elementalist-water.xml" url="https://github.com/ShadowLinks/tanares/raw/refs/heads/main/subclasses/elementalist-water.xml" />
 		<file name="espells.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/classes/espells.xml"/>
+
+		<file name="class-madwalker.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/classes/class-madwalker.xml" />
+		<file name="madwalker-arachnid.xml" url="https://github.com/ShadowLinks/tanares/raw/refs/heads/main/subclasses/madwalker-arachnid.xml"/>
+		<file name="madwalker-augury.xml" url="https://github.com/ShadowLinks/tanares/raw/refs/heads/main/subclasses/madwalker-arachnid.xml"/>
+		<file name="aberrantmutations.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/classes/aberrantmutations.xml"/>
 	</files>
 </index>
