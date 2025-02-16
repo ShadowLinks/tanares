@@ -285,6 +285,7 @@
         </sheet>
     </element>
     <element name="Positive Ray" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_REDEEMER_POSITIVE_RAY" >
+        <requirements>ID_TRPG_CLASS_REDEEMER</requirements>
         <description>
             <p>Must target a willing creature. Grants 1d4 temporary hit points, which last for 1 minute. Note that temporary hit points don’t stack, but instead replace each other, as per the general rule for temporary hit points.</p>
             <p class="indent">The temporary hit points granted by the ray change to 2d4 at 5th level in this class, 3d4 at 11th level, and 4d4 at 17th level.</p>
@@ -301,6 +302,7 @@
         </setters>
     </element>
     <element name="Negative Ray" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_REDEEMER_NEGATIVE_RAY" >
+        <requirements>ID_TRPG_CLASS_REDEEMER</requirements>
         <description>
             <p> Make a ranged spell attack against the target creature, dealing 1d6 necrotic damage on a hit. This damage ignores any immunity or resistance the creature has if it’s an unnatural creature. In Tanares, unnatural creatures are those not created by Tamera and/or Bauron, such as penumbral creatures, Ungods, undead, and aberrations. If you’re playing in another setting, talk to your GM to decide what types of creatures fit this definition.</p>
             <p class="indent">The damage caused by your ray changes to 2d6 at 5th level in this class, 3d6 at 11th level, and 4d6 at 17th level.</p>
