@@ -34,55 +34,824 @@
             <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_AUGURY_NOCTURNAL_PRELUDE" level="18" />
         </rules>
     </element>
-    <element name="name" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_AUGURY_MUTATIONS">
+    <element name="Nightmare Augury Mutations" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_AUGURY_MUTATIONS">
         <description>
-            <p></p>
+            <p>As a madwalker of the Nightmare’s Augury Trail, you have access to a range of Aberrant Mutations unique to this subclass, acquired at 2nd, 5th, 9th, 13rd, and 17th levels of madwalker. Upon gaining each of these levels, you may choose one of the available Aberrant Mutations, and it does not count toward the number of Aberrant Mutations known.</p>
+            <table>
+                <thead>
+                    <tr><td>Madwalker Level</td><td>Available Aberrant Mutations</td></tr>
+                </thead>
+                <tr><td>2nd</td><td>Mind Slash, Psychic Bond</td></tr>
+                <tr><td>5th</td><td>Mind Drain, Psychic Weapon</td></tr>
+                <tr><td>9th</td><td>Telepathic Mindlink, Waves of Headache</td></tr>
+                <tr><td>13th</td><td>Minor Telekinesis, Penumbral Attraction</td></tr>
+                <tr><td>17th</td><td>Eye of Augury, Phantom of Penumbra</td></tr>
+            </table>
         </description>
-        <sheet>
+        <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <select type="Spell" supports="augury-trail-mutation,1" spellcasting="Madwalker" />
+            <select name="Nightmare Augury Trail Mutation 1" type="Spell" supports="augury-trail-mutation,1" spellcasting="Madwalker" />
+            <select name="Nightmare Augury Trail Mutation 2" type="Spell" supports="augury-trail-mutation,2" spellcasting="Madwalker" level="5"/>
+            <select name="Nightmare Augury Trail Mutation 3" type="Spell" supports="augury-trail-mutation,3" spellcasting="Madwalker" level="9"/>
+            <select name="Nightmare Augury Trail Mutation 4" type="Spell" supports="augury-trail-mutation,4" spellcasting="Madwalker" level="13"/>
+            <select name="Nightmare Augury Trail Mutation 5" type="Spell" supports="augury-trail-mutation,5" spellcasting="Madwalker" level="17"/>
         </rules>
     </element>
-    <element name="name" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_AUGURY_NIGHTMARISH_AUGURS">
+    <element name="Nightmarish Augurs" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_AUGURY_NIGHTMARISH_AUGURS">
         <description>
-            <p></p>
+            <p>At the 2nd level, your terrifying dreams reveal twisted pieces of your future, enabling you to brace for impending dangers. After completing a long rest, you can select ‘even’ or ‘odd’. Until your next long rest, whenever you receive damage from an attack and the attack roll’s natural result matches your selection, you have resistance to all damage from that attack, except in case of a critical hit.</p>
+            <p class="indent">Additionally, at 5th level, you gain the ability to foresee your potential demise. If you take damage substantial enough to drop you to 0 hit points, you can use your reaction to spend any number of Hit Dice, instantly regaining hit points before the damage is applied, potentialy preventing your hit points from dropping to 0.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>After completing a long rest, you can select ‘even’ or ‘odd’. Until your next long rest, whenever you receive damage from an attack and the attack roll’s natural result matches your selection, you have resistance to all damage from that attack, except in case of a critical hit. At 5th level if you take damage substantial enough to drop you to 0 hit points, you can use your reaction to spend any number of Hit Dice, instantly regaining hit points before the damage is applied, potentialy preventing your hit points from dropping to 0.</description>
         </sheet>
     </element>
-    <element name="name" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_AUGURY_PENUMBRAL_SHAPE">
+    <element name="Nightmare's Augury Penumbral Shape" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_AUGURY_PENUMBRAL_SHAPE">
         <description>
-            <p></p>
+            <p>Starting at 2nd level, you have access to penumbral shapes exclusive to the Nightmare’s Augury Trail (see madwalker’s penumbral shapes). Additionally, when you assume a Penumbral Shape exclusive to the Nightmare’s Augury Trail, you also replace your Wisdom with the Wisdom of the Penumbral Shape.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When you assume a Penumbral Shape exclusive to the Nightmare’s Augury Trail, you also replace your Wisdom with the Wisdom of the Penumbral Shape.</description>
         </sheet>
     </element>
-    <element name="name" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_AUGURY_PSYCHIC_SHIELD">
+    <element name="Psychic Shield " type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_AUGURY_PSYCHIC_SHIELD">
         <description>
-            <p></p>
+            <p>At 7th level, while conscious, you can uphold a psychic protective shield. As long as this shield is active, any damage you sustain from an attack is reduced by an amount equal to your Wisdom modifier (before applying any resistances, vulnerabilities, and other effects).</p>
+            <p class="indent">In addition, when you make a saving throw, you can use your reaction to augment the roll with your Wisdom modifier.</p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet usage="reaction">
+            <description>While conscious, you can uphold a psychic protective shield. As long as this shield is active, any damage you sustain from an attack is reduced by an amount equal to your Wisdom modifier (before applying any resistances, vulnerabilities, and other effects). When you make a saving throw, you can your reaction to augment the roll with your Wisdom modifier.</description>
         </sheet>
     </element>
-    <element name="name" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_AUGURY_MENTAL_POWER">
+    <element name="Mental Power" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_AUGURY_MENTAL_POWER">
         <description>
-            <p></p>
+            <p>At the 14th level, you gain immunity to psychic damage and a flying speed equivalent to your walking speed, along with the hover property.</p>
+            <p class="indent">In addition, you can telepathically speak to any creatures within 90 feet of you that can understand at least one language, even if you do not share a common language.</p>
+            <p class="indent">As a bonus action, you can employ this ability to mimic the effects of the detect thoughts spell. If the creature is unwilling, it must succeed on a Wisdom saving throw against your Aberrant Mutation’s save DC to resist both the communication and the thought-reading ability.</p>
+        </description>
+        <sheet usage="bonus action">
+            <description>You can hover. You can telepathically speak to any creatures within 90 feet of you that can understand at least one language, even if you do not share a common language. As a bonus action, you can employ this ability to mimic the effects of the detect thoughts spell. If the creature is unwilling, it must succeed on a Wisdom saving throw against your Aberrant Mutation’s save DC to resist both the communication and the thought-reading ability.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_PSYCHIC" />
+            <stat name="speed:fly" value="speed" bonus="base"/>
+        </rules>
+    </element>
+    <element name="Nocturnal Prelude" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_AUGURY_NOCTURNAL_PRELUDE">
+        <description>
+            <p>At 18th level, you can predict the near future and modify it. You can impose advantage or disadvantage on any roll you make, or that an ally or enemy in your line of sight makes, a number of times equal to your Wisdom modifier, regaining all uses after a long rest.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You can impose advantage or disadvantage on any roll you make, or that an ally or enemy in your line of sight makes, {{wisdom:modifier}} times, regaining all uses after a long rest.</description>
         </sheet>
     </element>
-    <element name="name" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_AUGURY_NOCTURNAL_PRELUDE">
+    <element name="Nightmare Lurker" type="Companion" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_MADWALKER_AUGURY_LURKER">
+        <supports>penumbral-shape</supports>
+        <requirements>[level:2],ID_TRPG_ARCHETYPE_MADWALKER_AUGURY</requirements>
         <description>
             <p></p>
         </description>
+        <setters>
+            <set name="strength">14</set>
+            <set name="dexterity">12</set>
+            <set name="constitution">16</set>
+            <set name="intelligence">12</set>
+            <set name="wisdom">17</set>
+            <set name="charisma">11</set>
+            <set name="ac">16</set>
+            <set name="hp">17 (2d10+6)</set>
+            <set name="speed">0 ft., fly 20 ft. (hover)</set>
+            <set name="senses">darkvision 90 ft., truesight 30 ft., passive Perception 17</set>
+            <set name="languages">Common, Deep Speech, telepathy 60 ft.</set>
+            <set name="skills">Perception +7</set>
+            <set name="saves">Int +3, Wis +5</set>
+            <set name="resistances">psychic</set>
+            <set name="conditionimmunities">prone</set>
+            <set name="type">aberration</set>
+            <set name="size">large</set>
+            <set name="alignment">neutral evil</set>
+            <set name="challenge">1/2</set>
+            <set name="proficiency">2</set>
+            <set name="actions">ID_TRPG_COMPANION_ACTION_MADWALKER_AUGURY_LURKER_MULTIATTACK,ID_TRPG_COMPANION_ACTION_MADWALKER_AUGURY_LURKER_FORCE_BLAST</set>
+            <set name="traits">ID_TRPG_COMPANION_TRAIT_MADWALKER_FUTURE_OMEN,ID_TRPG_COMPANION_TRAIT_MADWALKER_SIXTH_SENSE,ID_TRPG_COMPANION_TRAIT_MADWALKER_PRECOGNITION,ID_TRPG_COMPANION_TRAIT_MADWALKER_FUTURE_GUARD</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="16"/>
+            <stat name="companion:hp:max" value="17" bonus="base"/>
+            <stat name="companion:speed" value="0" bonus="base"/>
+            <stat name="companion:speed:fly" value="20" bonus="base"/>
+            <stat name="companion:perception:proficiency" value="companion:proficiency" bonus="double"/>
+            <stat name="companion:wisdom:save:proficiency" value="companion:proficiency" bonus="base"/>
+            <stat name="companion:intelligence:save:proficiency" value="companion:proficiency" bonus="base"/>
+        </rules>
+    </element>
+    <element name="Multiattack" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_AUGURY_LURKER_MULTIATTACK">
+        <description>
+            <p>The nightmare lurker makes two Force Blast attacks.</p>
+        </description>
         <sheet>
-            <description></description>
+            <description>The nightmare lurker makes two Force Blast attacks.</description>
+        </sheet>
+    </element>
+    <element name="Force Blast" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_AUGURY_LURKER_FORCE_BLAST">
+        <description>
+            <p>Ranged Spell Attack: +5 to hit, range 60 ft., one target. Hit: 6 (1d6 + 3) force damage.</p>
+        </description>
+        <sheet>
+            <description>Ranged Spell Attack: +5 to hit, range 60 ft., one target. Hit: 6 (1d6 + 3) force damage.</description>
+        </sheet>
+    </element>
+    <element name="Future Omen (1/day)" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_FUTURE_OMEN">
+        <description>
+            <p>Due to its ability to see the future, the creature can better the odds of fate. As a free action, the creature can re-roll a single saving throw, skill check, or attack roll made by any creature, either an ally or an enemy.</p>
+        </description>
+        <sheet>
+            <description>Due to its ability to see the future, the creature can better the odds of fate. As a free action, the creature can re-roll a single saving throw, skill check, or attack roll made by any creature, either an ally or an enemy.</description>
+        </sheet>
+    </element>
+    <element name="Sixth Sense" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_SIXTH_SENSE">
+        <description>
+            <p>The creature uses double its proficiency bonus for Wisdom (Perception) checks.</p>
+        </description>
+        <sheet>
+            <description>The creature uses double its proficiency bonus for Wisdom (Perception) checks.</description>
+        </sheet>
+    </element>
+    <element name="Precognition" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_PRECOGNITION">
+        <description>
+            <p>The creature can see into the future and react to it, never being surprised.</p>
+        </description>
+        <sheet>
+            <description>The creature can see into the future and react to it, never being surprised.</description>
+        </sheet>
+    </element>
+    <element name="Future Guard (3/day)" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_FUTURE_GUARD">
+        <description>
+            <p>Due to its foresight, the creature can better dodge attacks. Using its reaction, the creature can add 2 to its AC against an attack made against it, after seeing the result of the roll.</p>
+        </description>
+        <sheet usage="Reaction">
+            <description>Due to its foresight, the creature can better dodge attacks. Using its reaction, the creature can add 2 to its AC against an attack made against it, after seeing the result of the roll.</description>
+        </sheet>
+    </element>
+    <element name="Nightmare Keeper" type="Companion" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_MADWALKER_AUGURY_KEEPER">
+        <supports>penumbral-shape</supports>
+        <requirements>[level:3],ID_TRPG_ARCHETYPE_MADWALKER_AUGURY</requirements>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="strength">14</set>
+            <set name="dexterity">12</set>
+            <set name="constitution">16</set>
+            <set name="intelligence">12</set>
+            <set name="wisdom">18</set>
+            <set name="charisma">13</set>
+            <set name="ac">16</set>
+            <set name="hp">25 (3d10+9)</set>
+            <set name="speed">0 ft., fly 20 ft. (hover)</set>
+            <set name="senses">darkvision 90 ft., truesight 30 ft., passive Perception 18</set>
+            <set name="languages">Common, Deep Speech, telepathy 60 ft.</set>
+            <set name="skills">Perception +8</set>
+            <set name="saves">Int +3, Wis +6</set>
+            <set name="resistances">psychic</set>
+            <set name="conditionimmunities">prone</set>
+            <set name="type">aberration</set>
+            <set name="size">large</set>
+            <set name="alignment">neutral evil</set>
+            <set name="challenge">1</set>
+            <set name="proficiency">2</set>
+            <set name="actions">ID_TRPG_COMPANION_ACTION_MADWALKER_AUGURY_KEEPER_MULTIATTACK,ID_TRPG_COMPANION_ACTION_MADWALKER_AUGURY_KEEPER_FORCE_BLAST</set>
+            <set name="traits">ID_TRPG_COMPANION_TRAIT_MADWALKER_FUTURE_OMEN,ID_TRPG_COMPANION_TRAIT_MADWALKER_SIXTH_SENSE,ID_TRPG_COMPANION_TRAIT_MADWALKER_PRECOGNITION,ID_TRPG_COMPANION_TRAIT_MADWALKER_FUTURE_GUARD</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="16"/>
+            <stat name="companion:hp:max" value="25" bonus="base"/>
+            <stat name="companion:speed" value="0" bonus="base"/>
+            <stat name="companion:speed:fly" value="20" bonus="base"/>
+            <stat name="companion:perception:proficiency" value="companion:proficiency" bonus="double"/>
+            <stat name="companion:wisdom:save:proficiency" value="companion:proficiency" bonus="base"/>
+            <stat name="companion:intelligence:save:proficiency" value="companion:proficiency" bonus="base"/>
+        </rules>
+    </element>
+    <element name="Multiattack" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_AUGURY_KEEPER_MULTIATTACK">
+        <description>
+            <p>The nightmare keeper makes two Force Blast attacks.</p>
+        </description>
+        <sheet>
+            <description>The nightmare keeper makes two Force Blast attacks.</description>
+        </sheet>
+    </element>
+    <element name="Force Blast" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_AUGURY_KEEPER_FORCE_BLAST">
+        <description>
+            <p>Ranged Spell Attack: +6 to hit, range 60 ft., one target. Hit: 7 (1d6 + 4) force damage.</p>
+        </description>
+        <sheet>
+            <description>Ranged Spell Attack: +6 to hit, range 60 ft., one target. Hit: 7 (1d6 + 4) force damage.</description>
+        </sheet>
+    </element>
+    <element name="Nightmare Guardian" type="Companion" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_MADWALKER_AUGURY_GUARDIAN">
+        <supports>penumbral-shape</supports>
+        <requirements>[level:5],ID_TRPG_ARCHETYPE_MADWALKER_AUGURY</requirements>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="strength">14</set>
+            <set name="dexterity">12</set>
+            <set name="constitution">16</set>
+            <set name="intelligence">13</set>
+            <set name="wisdom">19</set>
+            <set name="charisma">13</set>
+            <set name="ac">16</set>
+            <set name="hp">42 (5d10+15)</set>
+            <set name="speed">0 ft., fly 20 ft. (hover)</set>
+            <set name="senses">darkvision 90 ft., truesight 30 ft., passive Perception 18</set>
+            <set name="languages">Common, Deep Speech, telepathy 60 ft.</set>
+            <set name="skills">Perception +8</set>
+            <set name="saves">Int +3, Wis +6</set>
+            <set name="resistances">psychic</set>
+            <set name="conditionimmunities">prone</set>
+            <set name="type">aberration</set>
+            <set name="size">large</set>
+            <set name="alignment">neutral evil</set>
+            <set name="challenge">2</set>
+            <set name="proficiency">2</set>
+            <set name="actions">ID_TRPG_COMPANION_ACTION_MADWALKER_AUGURY_GUARDIAN_MULTIATTACK,ID_TRPG_COMPANION_ACTION_MADWALKER_AUGURY_GUARDIAN_FORCE_BLAST</set>
+            <set name="traits">ID_TRPG_COMPANION_TRAIT_MADWALKER_FUTURE_OMEN,ID_TRPG_COMPANION_TRAIT_MADWALKER_SIXTH_SENSE,ID_TRPG_COMPANION_TRAIT_MADWALKER_PRECOGNITION,ID_TRPG_COMPANION_TRAIT_MADWALKER_FUTURE_GUARD</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="16"/>
+            <stat name="companion:hp:max" value="42" bonus="base"/>
+            <stat name="companion:speed" value="0" bonus="base"/>
+            <stat name="companion:speed:fly" value="20" bonus="base"/>
+            <stat name="companion:perception:proficiency" value="companion:proficiency" bonus="double"/>
+            <stat name="companion:wisdom:save:proficiency" value="companion:proficiency" bonus="base"/>
+            <stat name="companion:intelligence:save:proficiency" value="companion:proficiency" bonus="base"/>
+        </rules>
+    </element>
+    <element name="Multiattack" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_AUGURY_GUARDIAN_MULTIATTACK">
+        <description>
+            <p>The nightmare guardian makes two Frightening Force Blast attacks.</p>
+        </description>
+        <sheet>
+            <description>The nightmare guardian makes two Frightening Force Blast attacks.</description>
+        </sheet>
+    </element>
+    <element name="Frightening Force Blast" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_AUGURY_GUARDIAN_FORCE_BLAST">
+        <description>
+            <p>Ranged Spell Attack: +6 to hit, range 60 ft., one target. Hit: 7 (1d6 + 4) force damage and the target must succeed on a DC 14 Wisdom saving throw or be frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
+        </description>
+        <sheet>
+            <description>Ranged Spell Attack: +6 to hit, range 60 ft., one target. Hit: 7 (1d6 + 4) force damage and the target must succeed on a DC 14 Wisdom saving throw or be frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</description>
+        </sheet>
+    </element>
+    <element name="Nightmare Warrior" type="Companion" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_MADWALKER_AUGURY_WARRIOR">
+        <supports>penumbral-shape</supports>
+        <requirements>[level:7],ID_TRPG_ARCHETYPE_MADWALKER_AUGURY</requirements>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="strength">16</set>
+            <set name="dexterity">12</set>
+            <set name="constitution">17</set>
+            <set name="intelligence">14</set>
+            <set name="wisdom">20</set>
+            <set name="charisma">13</set>
+            <set name="ac">17</set>
+            <set name="hp">66 (7d12+21)</set>
+            <set name="speed">0 ft., fly 30 ft. (hover)</set>
+            <set name="senses">darkvision 90 ft., truesight 30 ft., passive Perception 19</set>
+            <set name="languages">Common, Deep Speech, telepathy 60 ft.</set>
+            <set name="skills">Perception +9</set>
+            <set name="saves">Int +4, Wis +7</set>
+            <set name="resistances">psychic</set>
+            <set name="conditionimmunities">prone</set>
+            <set name="type">aberration</set>
+            <set name="size">huge</set>
+            <set name="alignment">neutral evil</set>
+            <set name="challenge">3</set>
+            <set name="proficiency">2</set>
+            <set name="actions">ID_TRPG_COMPANION_ACTION_MADWALKER_AUGURY_WARRIOR_MULTIATTACK,ID_TRPG_COMPANION_ACTION_MADWALKER_AUGURY_WARRIOR_FORCE_BLAST,ID_TRPG_COMPANION_ACTION_MADWALKER_AUGURY_WARRIOR_SEPLLCASTING</set>
+            <set name="traits">ID_TRPG_COMPANION_TRAIT_MADWALKER_FUTURE_OMEN,ID_TRPG_COMPANION_TRAIT_MADWALKER_SIXTH_SENSE,ID_TRPG_COMPANION_TRAIT_MADWALKER_PRECOGNITION,ID_TRPG_COMPANION_TRAIT_MADWALKER_FUTURE_GUARD</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="17"/>
+            <stat name="companion:hp:max" value="66" bonus="base"/>
+            <stat name="companion:speed" value="0" bonus="base"/>
+            <stat name="companion:speed:fly" value="30" bonus="base"/>
+            <stat name="companion:perception:proficiency" value="companion:proficiency" bonus="double"/>
+            <stat name="companion:wisdom:save:proficiency" value="companion:proficiency" bonus="base"/>
+            <stat name="companion:intelligence:save:proficiency" value="companion:proficiency" bonus="base"/>
+        </rules>
+    </element>
+    <element name="Multiattack" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_AUGURY_WARRIOR_MULTIATTACK">
+        <description>
+            <p>The nightmare warrior makes two Frightening Force Blast attacks.</p>
+        </description>
+        <sheet>
+            <description>The nightmare warrior makes two Frightening Force Blast attacks.</description>
+        </sheet>
+    </element>
+    <element name="Frightening Force Blast" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_AUGURY_WARRIOR_FORCE_BLAST">
+        <description>
+            <p> Ranged Spell Attack: +7 to hit, range 60 ft., one target. Hit: 9 (1d8 + 5) force damage and the target must succeed on a DC 15 Wisdom saving throw or be frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
+        </description>
+        <sheet>
+            <description> Ranged Spell Attack: +7 to hit, range 60 ft., one target. Hit: 9 (1d8 + 5) force damage and the target must succeed on a DC 15 Wisdom saving throw or be frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</description>
+        </sheet>
+    </element>
+    <element name="Spellcasting" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_AUGURY_WARRIOR_SEPLLCASTING">
+        <description>
+            <p>The nightmare warrior casts one of the following spells, using Wisdom as the spellcasting ability (spell save DC 15, +7 to hit with spell attacks):</p>
+            <ul>
+                <li>At will: clairvoyance, command, comprehend languages</li>
+                <li>3/day each: levitate, suggestion</li>
+                <li>1/day each: counterspell</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Wisdom caster with DC 15 and +7 to hit. - At will: clairvoyance, command, comprehend languages - 3/day each: levitate, suggestion - 1/day each: counterspell</description>
+        </sheet>
+    </element>
+    <element name="Nightmare Overseer" type="Companion" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_MADWALKER_AUGURY_OVERSEER">
+        <supports>penumbral-shape</supports>
+        <requirements>[level:9],ID_TRPG_ARCHETYPE_MADWALKER_AUGURY</requirements>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="strength">16</set>
+            <set name="dexterity">12</set>
+            <set name="constitution">17</set>
+            <set name="intelligence">14</set>
+            <set name="wisdom">20</set>
+            <set name="charisma">14</set>
+            <set name="ac">17</set>
+            <set name="hp">85 (9d12+27)</set>
+            <set name="speed">0 ft., fly 30 ft. (hover)</set>
+            <set name="senses">darkvision 90 ft., truesight 30 ft., passive Perception 19</set>
+            <set name="languages">Common, Deep Speech, telepathy 60 ft.</set>
+            <set name="skills">Perception +9</set>
+            <set name="saves">Int +4, Wis +7</set>
+            <set name="resistances">psychic</set>
+            <set name="conditionimmunities">prone</set>
+            <set name="type">aberration</set>
+            <set name="size">huge</set>
+            <set name="alignment">neutral evil</set>
+            <set name="challenge">4</set>
+            <set name="proficiency">2</set>
+            <set name="actions">ID_TRPG_COMPANION_ACTION_MADWALKER_AUGURY_OVERSEER_MULTIATTACK,ID_TRPG_COMPANION_ACTION_MADWALKER_AUGURY_OVERSEER_FORCE_BLAST,ID_TRPG_COMPANION_ACTION_MADWALKER_AUGURY_OVERSEER_SEPLLCASTING</set>
+            <set name="traits">ID_TRPG_COMPANION_TRAIT_MADWALKER_FUTURE_OMEN,ID_TRPG_COMPANION_TRAIT_MADWALKER_SIXTH_SENSE,ID_TRPG_COMPANION_TRAIT_MADWALKER_PRECOGNITION,ID_TRPG_COMPANION_TRAIT_MADWALKER_FUTURE_GUARD</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="17"/>
+            <stat name="companion:hp:max" value="85" bonus="base"/>
+            <stat name="companion:speed" value="0" bonus="base"/>
+            <stat name="companion:speed:fly" value="30" bonus="base"/>
+            <stat name="companion:perception:proficiency" value="companion:proficiency" bonus="double"/>
+            <stat name="companion:wisdom:save:proficiency" value="companion:proficiency" bonus="base"/>
+            <stat name="companion:intelligence:save:proficiency" value="companion:proficiency" bonus="base"/>
+        </rules>
+    </element>
+    <element name="Multiattack" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_AUGURY_OVERSEER_MULTIATTACK">
+        <description>
+            <p>The nightmare overseer makes three Frightening Force Blast attacks.</p>
+        </description>
+        <sheet>
+            <description>The nightmare overseer three Frightening Force Blast attacks.</description>
+        </sheet>
+    </element>
+    <element name="Frightening Force Blast" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_AUGURY_OVERSEER_FORCE_BLAST">
+        <description>
+            <p> Ranged Spell Attack: +7 to hit, range 60 ft., one target. Hit: 9 (1d8 + 5) force damage and the target must succeed on a DC 15 Wisdom saving throw or be frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
+        </description>
+        <sheet>
+            <description> Ranged Spell Attack: +7 to hit, range 60 ft., one target. Hit: 9 (1d8 + 5) force damage and the target must succeed on a DC 15 Wisdom saving throw or be frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</description>
+        </sheet>
+    </element>
+    <element name="Spellcasting" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_AUGURY_OVERSEER_SEPLLCASTING">
+        <description>
+            <p>The nightmare overseer casts one of the following spells, using Wisdom as the spellcasting ability (spell save DC 15, +7 to hit with spell attacks):</p>
+            <ul>
+                <li>At will: clairvoyance, command, comprehend languages</li>
+                <li>3/day each: levitate, suggestion</li>
+                <li>1/day each: counterspell</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Wisdom caster with DC 15 and +7 to hit. - At will: clairvoyance, command, comprehend languages - 3/day each: levitate, suggestion - 1/day each: counterspell</description>
+        </sheet>
+    </element>
+    <element name="Nightmare Eye" type="Companion" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_MADWALKER_AUGURY_EYE">
+        <supports>penumbral-shape</supports>
+        <requirements>[level:11],ID_TRPG_ARCHETYPE_MADWALKER_AUGURY</requirements>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="strength">16</set>
+            <set name="dexterity">12</set>
+            <set name="constitution">18</set>
+            <set name="intelligence">15</set>
+            <set name="wisdom">21</set>
+            <set name="charisma">14</set>
+            <set name="ac">18</set>
+            <set name="hp">115 (11d12+44)</set>
+            <set name="speed">0 ft., fly 30 ft. (hover)</set>
+            <set name="senses">darkvision 90 ft., truesight 30 ft., passive Perception 21</set>
+            <set name="languages">Common, Deep Speech, telepathy 60 ft.</set>
+            <set name="skills">Perception +11</set>
+            <set name="saves">Int +5, Wis +8</set>
+            <set name="resistances">psychic</set>
+            <set name="conditionimmunities">prone</set>
+            <set name="type">aberration</set>
+            <set name="size">huge</set>
+            <set name="alignment">neutral evil</set>
+            <set name="challenge">5</set>
+            <set name="proficiency">3</set>
+            <set name="actions">ID_TRPG_COMPANION_ACTION_MADWALKER_AUGURY_EYE_MULTIATTACK,ID_TRPG_COMPANION_ACTION_MADWALKER_AUGURY_EYE_FORCE_BLAST,ID_TRPG_COMPANION_ACTION_MADWALKER_AUGURY_EYE_SEPLLCASTING</set>
+            <set name="traits">ID_TRPG_COMPANION_TRAIT_MADWALKER_FUTURE_OMEN,ID_TRPG_COMPANION_TRAIT_MADWALKER_SIXTH_SENSE,ID_TRPG_COMPANION_TRAIT_MADWALKER_PRECOGNITION,ID_TRPG_COMPANION_TRAIT_MADWALKER_FUTURE_GUARD,ID_TRPG_COMPANION_TRAIT_MADWALKER_AUGURY_EYE_PREDICTION_GAZE</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="18"/>
+            <stat name="companion:hp:max" value="115" bonus="base"/>
+            <stat name="companion:speed" value="0" bonus="base"/>
+            <stat name="companion:speed:fly" value="30" bonus="base"/>
+            <stat name="companion:perception:proficiency" value="companion:proficiency" bonus="double"/>
+            <stat name="companion:wisdom:save:proficiency" value="companion:proficiency" bonus="base"/>
+            <stat name="companion:intelligence:save:proficiency" value="companion:proficiency" bonus="base"/>
+        </rules>
+    </element>
+    <element name="Multiattack" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_AUGURY_EYE_MULTIATTACK">
+        <description>
+            <p>The nightmare eye makes three Frightening Force Blast attacks.</p>
+        </description>
+        <sheet>
+            <description>The nightmare eye three Frightening Force Blast attacks.</description>
+        </sheet>
+    </element>
+    <element name="Frightening Force Blast" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_AUGURY_EYE_FORCE_BLAST">
+        <description>
+            <p>Ranged Spell Attack: +8 to hit, range 60 ft., one target. Hit: 9 (1d8 + 5) force damage and the target must succeed on a DC 16 Wisdom saving throw or be frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
+        </description>
+        <sheet>
+            <description>Ranged Spell Attack: +8 to hit, range 60 ft., one target. Hit: 9 (1d8 + 5) force damage and the target must succeed on a DC 16 Wisdom saving throw or be frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</description>
+        </sheet>
+    </element>
+    <element name="Spellcasting" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_AUGURY_EYE_SEPLLCASTING">
+        <description>
+            <p>The nightmare eye casts one of the following spells, using Wisdom as the spellcasting ability (spell save DC 16, +8 to hit with spell attacks):</p>
+            <ul>
+                <li>At will: clairvoyance, command, comprehend languages, levitate</li>
+                <li>3/day each: counterspell, suggestion</li>
+                <li>1/day each: arcane eye, locate creature</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Wisdom caster with DC 16 and +8 to hit. - At will: clairvoyance, command, comprehend languages, levitate - 3/day each: counterspell, suggestion - 1/day each: arcane eye, locate creature</description>
+        </sheet>
+    </element>
+    <element name="Prediction Gaze (1/day)" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_AUGURY_EYE_PREDICTION_GAZE">
+        <description>
+            <p>When the nightmare eye locks eyes with a creature, as a free action, it can see the creature’s immediate future. The creature must make a DC 16 Wisdom saving throw. On a failure, for one minute, the creature has disadvantage on all attacks, ability checks, and saving throws it makes against the nightmare eye.</p>
+        </description>
+        <sheet>
+            <description>When the nightmare eye locks eyes with a creature, as a free action, it can see the creature’s immediate future. The creature must make a DC 16 Wisdom saving throw. On a failure, for one minute, the creature has disadvantage on all attacks, ability checks, and saving throws it makes against the nightmare eye.</description>
+        </sheet>
+    </element>
+    <element name="Nightmare Oppressor" type="Companion" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_MADWALKER_AUGURY_OPPRESSOR">
+        <supports>penumbral-shape</supports>
+        <requirements>[level:13],ID_TRPG_ARCHETYPE_MADWALKER_AUGURY</requirements>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="strength">16</set>
+            <set name="dexterity">12</set>
+            <set name="constitution">18</set>
+            <set name="intelligence">16</set>
+            <set name="wisdom">21</set>
+            <set name="charisma">15</set>
+            <set name="ac">18</set>
+            <set name="hp">136 (13d12+52)</set>
+            <set name="speed">0 ft., fly 30 ft. (hover)</set>
+            <set name="senses">darkvision 90 ft., truesight 45 ft., passive Perception 21</set>
+            <set name="languages">Common, Deep Speech, telepathy 90 ft.</set>
+            <set name="skills">Perception +11</set>
+            <set name="saves">Int +6, Wis +8</set>
+            <set name="resistances">psychic</set>
+            <set name="conditionimmunities">prone</set>
+            <set name="type">aberration</set>
+            <set name="size">huge</set>
+            <set name="alignment">neutral evil</set>
+            <set name="challenge">6</set>
+            <set name="proficiency">3</set>
+            <set name="actions">ID_TRPG_COMPANION_ACTION_MADWALKER_AUGURY_OPPRESSOR_MULTIATTACK,ID_TRPG_COMPANION_ACTION_MADWALKER_AUGURY_OPPRESSOR_FORCE_BLAST,ID_TRPG_COMPANION_ACTION_MADWALKER_AUGURY_OPPRESSOR_SEPLLCASTING</set>
+            <set name="traits">ID_TRPG_COMPANION_TRAIT_MADWALKER_FUTURE_OMEN,ID_TRPG_COMPANION_TRAIT_MADWALKER_SIXTH_SENSE,ID_TRPG_COMPANION_TRAIT_MADWALKER_PRECOGNITION,ID_TRPG_COMPANION_TRAIT_MADWALKER_FUTURE_GUARD,ID_TRPG_COMPANION_TRAIT_MADWALKER_AUGURY_OPPRESSOR_PREDICTION_GAZE</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="18"/>
+            <stat name="companion:hp:max" value="136" bonus="base"/>
+            <stat name="companion:speed" value="0" bonus="base"/>
+            <stat name="companion:speed:fly" value="30" bonus="base"/>
+            <stat name="companion:perception:proficiency" value="companion:proficiency" bonus="double"/>
+            <stat name="companion:wisdom:save:proficiency" value="companion:proficiency" bonus="base"/>
+            <stat name="companion:intelligence:save:proficiency" value="companion:proficiency" bonus="base"/>
+        </rules>
+    </element>
+    <element name="Multiattack" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_AUGURY_OPPRESSOR_MULTIATTACK">
+        <description>
+            <p>The nightmare oppressor makes three Frightening Force Blast attacks.</p>
+        </description>
+        <sheet>
+            <description>The nightmare oppressor three Frightening Force Blast attacks.</description>
+        </sheet>
+    </element>
+    <element name="Frightening Force Blast" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_AUGURY_OPPRESSOR_FORCE_BLAST">
+        <description>
+            <p>Ranged Spell Attack: +8 to hit, range 60 ft., one target. Hit: 10 (1d10 + 5) force damage and the target must succeed on a DC 16 Wisdom saving throw or be frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
+        </description>
+        <sheet>
+            <description>Ranged Spell Attack: +8 to hit, range 60 ft., one target. Hit: 10 (1d10 + 5) force damage and the target must succeed on a DC 16 Wisdom saving throw or be frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</description>
+        </sheet>
+    </element>
+    <element name="Spellcasting" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_AUGURY_OPPRESSOR_SEPLLCASTING">
+        <description>
+            <p>The nightmare oppressor casts one of the following spells, using Wisdom as the spellcasting ability (spell save DC 16, +8 to hit with spell attacks):</p>
+            <ul>
+                <li>At will: clairvoyance, command, comprehend languages, levitate</li>
+                <li>3/day each: counterspell, suggestion</li>
+                <li>1/day each: arcane eye, locate creature</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Wisdom caster with DC 16 and +8 to hit. - At will: clairvoyance, command, comprehend languages, levitate - 3/day each: counterspell, suggestion - 1/day each: arcane eye, locate creature</description>
+        </sheet>
+    </element>
+    <element name="Prediction Gaze (1/day)" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_AUGURY_OPPRESSOR_PREDICTION_GAZE">
+        <description>
+            <p>When the nightmare oppressor locks oppressors with a creature, as a free action, it can see the creature’s immediate future. The creature must make a DC 16 Wisdom saving throw. On a failure, for one minute, the creature has disadvantage on all attacks, ability checks, and saving throws it makes against the nightmare oppressor.</p>
+        </description>
+        <sheet>
+            <description>When the nightmare oppressor locks oppressors with a creature, as a free action, it can see the creature’s immediate future. The creature must make a DC 16 Wisdom saving throw. On a failure, for one minute, the creature has disadvantage on all attacks, ability checks, and saving throws it makes against the nightmare oppressor.</description>
+        </sheet>
+    </element>
+    <element name="Nightmare Lord" type="Companion" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_MADWALKER_AUGURY_LORD">
+        <supports>penumbral-shape</supports>
+        <requirements>[level:15],ID_TRPG_ARCHETYPE_MADWALKER_AUGURY</requirements>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="strength">16</set>
+            <set name="dexterity">13</set>
+            <set name="constitution">18</set>
+            <set name="intelligence">17</set>
+            <set name="wisdom">22</set>
+            <set name="charisma">15</set>
+            <set name="ac">19</set>
+            <set name="hp">157 (15d12+60)</set>
+            <set name="speed">0 ft., fly 30 ft. (hover)</set>
+            <set name="senses">darkvision 90 ft., truesight 45 ft., passive Perception 22</set>
+            <set name="languages">Common, Deep Speech, telepathy 120 ft.</set>
+            <set name="skills">Perception +12</set>
+            <set name="saves">Int +6, Wis +9</set>
+            <set name="resistances">psychic</set>
+            <set name="conditionimmunities">prone</set>
+            <set name="type">aberration</set>
+            <set name="size">huge</set>
+            <set name="alignment">neutral evil</set>
+            <set name="challenge">7</set>
+            <set name="proficiency">3</set>
+            <set name="actions">ID_TRPG_COMPANION_ACTION_MADWALKER_AUGURY_LORD_MULTIATTACK,ID_TRPG_COMPANION_ACTION_MADWALKER_AUGURY_LORD_FORCE_BLAST,ID_TRPG_COMPANION_ACTION_MADWALKER_AUGURY_LORD_MAELSTROM_OF_MADNESS,ID_TRPG_COMPANION_ACTION_MADWALKER_AUGURY_LORD_SEPLLCASTING</set>
+            <set name="traits">ID_TRPG_COMPANION_TRAIT_MADWALKER_FUTURE_OMEN,ID_TRPG_COMPANION_TRAIT_MADWALKER_SIXTH_SENSE,ID_TRPG_COMPANION_TRAIT_MADWALKER_PRECOGNITION,ID_TRPG_COMPANION_TRAIT_MADWALKER_FUTURE_GUARD,ID_TRPG_COMPANION_TRAIT_MADWALKER_AUGURY_LORD_PREDICTION_GAZE</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="19"/>
+            <stat name="companion:hp:max" value="157" bonus="base"/>
+            <stat name="companion:speed" value="0" bonus="base"/>
+            <stat name="companion:speed:fly" value="30" bonus="base"/>
+            <stat name="companion:perception:proficiency" value="companion:proficiency" bonus="double"/>
+            <stat name="companion:wisdom:save:proficiency" value="companion:proficiency" bonus="base"/>
+            <stat name="companion:intelligence:save:proficiency" value="companion:proficiency" bonus="base"/>
+        </rules>
+    </element>
+    <element name="Multiattack" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_AUGURY_LORD_MULTIATTACK">
+        <description>
+            <p>The nightmare lord makes three Frightening Force Blast attacks.</p>
+        </description>
+        <sheet>
+            <description>The nightmare lord three Frightening Force Blast attacks.</description>
+        </sheet>
+    </element>
+    <element name="Frightening Force Blast" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_AUGURY_LORD_FORCE_BLAST">
+        <description>
+            <p>Ranged Spell Attack: +9 to hit, range 60 ft., one target. Hit: 11 (1d10 + 6) force damage, and the target must succeed on a DC 16 Wisdom saving throw or be frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
+        </description>
+        <sheet>
+            <description>Ranged Spell Attack: +9 to hit, range 60 ft., one target. Hit: 11 (1d10 + 6) force damage, and the target must succeed on a DC 16 Wisdom saving throw or be frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</description>
+        </sheet>
+    </element>
+    <element name="Maelstrom of Madness (Recharge 5-6)" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_AUGURY_LORD_MAELSTROM_OF_MADNESS">
+        <description>
+            <p>The nightmare lord can create a momentary 20-foot radius area of unstable psychic energy up to 90 feet away. The Maelstrom deals 49 (9d10) psychic damage and scrambles the senses of creatures within the area. They must make a DC 17 Wisdom saving throw. On a success, the damage is halved, and they are not affected by the sense-scrambling effect. On a failure, creatures have disadvantage on attack rolls and Wisdom (Perception) checks for one minute.</p>
+        </description>
+        <sheet>
+            <description>The nightmare lord can create a momentary 20-foot radius area of unstable psychic energy up to 90 feet away. The Maelstrom deals 49 (9d10) psychic damage and scrambles the senses of creatures within the area. They must make a DC 17 Wisdom saving throw. On a success, the damage is halved, and they are not affected by the sense-scrambling effect. On a failure, creatures have disadvantage on attack rolls and Wisdom (Perception) checks for one minute.</description>
+        </sheet>
+    </element>
+    <element name="Spellcasting" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_AUGURY_LORD_SEPLLCASTING">
+        <description>
+            <p>The nightmare lord casts one of the following spells, using Wisdom as the spellcasting ability (spell save DC 17, +9 to hit with spell attacks):</p>
+            <ul>
+                <li>At will: clairvoyance, command, comprehend languages, levitate</li>
+                <li>3/day each: counterspell, suggestion, locate creature</li>
+                <li>1/day each: animate objects, arcane eye, telekinesis</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Wisdom caster with DC 17 and +9 to hit. - At will: clairvoyance, command, comprehend languages, levitate - 3/day each: counterspell, suggestion, locate creature - 1/day each: animate objects, arcane eye, telekinesis</description>
+        </sheet>
+    </element>
+    <element name="Prediction Gaze (2/day)" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_AUGURY_LORD_PREDICTION_GAZE">
+        <description>
+            <p>When the nightmare lord locks lords with a creature, as a free action, it can see the creature’s immediate future. The creature must make a DC 17 Wisdom saving throw. On a failure, for one minute, the creature has disadvantage on all attacks, ability checks, and saving throws it makes against the nightmare lord.</p>
+        </description>
+        <sheet>
+            <description>When the nightmare lord locks lords with a creature, as a free action, it can see the creature’s immediate future. The creature must make a DC 17 Wisdom saving throw. On a failure, for one minute, the creature has disadvantage on all attacks, ability checks, and saving throws it makes against the nightmare lord.</description>
+        </sheet>
+    </element>
+    <element name="Nightmare Vizier" type="Companion" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_MADWALKER_AUGURY_VIZIER">
+        <supports>penumbral-shape</supports>
+        <requirements>[level:17],ID_TRPG_ARCHETYPE_MADWALKER_AUGURY</requirements>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="strength">16</set>
+            <set name="dexterity">13</set>
+            <set name="constitution">18</set>
+            <set name="intelligence">18</set>
+            <set name="wisdom">22</set>
+            <set name="charisma">15</set>
+            <set name="ac">19</set>
+            <set name="hp">178 (17d12+68)</set>
+            <set name="speed">0 ft., fly 30 ft. (hover)</set>
+            <set name="senses">darkvision 90 ft., truesight 45 ft., passive Perception 22</set>
+            <set name="languages">Common, Deep Speech, telepathy 120 ft.</set>
+            <set name="skills">Perception +12</set>
+            <set name="saves">Int +7, Wis +9</set>
+            <set name="resistances">psychic</set>
+            <set name="conditionimmunities">prone</set>
+            <set name="type">aberration</set>
+            <set name="size">huge</set>
+            <set name="alignment">neutral evil</set>
+            <set name="challenge">8</set>
+            <set name="proficiency">3</set>
+            <set name="actions">ID_TRPG_COMPANION_ACTION_MADWALKER_AUGURY_VIZIER_MULTIATTACK,ID_TRPG_COMPANION_ACTION_MADWALKER_AUGURY_VIZIER_FORCE_BLAST,ID_TRPG_COMPANION_ACTION_MADWALKER_AUGURY_VIZIER_MAELSTROM_OF_MADNESS,ID_TRPG_COMPANION_ACTION_MADWALKER_AUGURY_VIZIER_SEPLLCASTING</set>
+            <set name="traits">ID_TRPG_COMPANION_TRAIT_MADWALKER_FUTURE_OMEN,ID_TRPG_COMPANION_TRAIT_MADWALKER_SIXTH_SENSE,ID_TRPG_COMPANION_TRAIT_MADWALKER_PRECOGNITION,ID_TRPG_COMPANION_TRAIT_MADWALKER_FUTURE_GUARD,ID_TRPG_COMPANION_TRAIT_MADWALKER_AUGURY_VIZIER_PREDICTION_GAZE</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="19"/>
+            <stat name="companion:hp:max" value="178" bonus="base"/>
+            <stat name="companion:speed" value="0" bonus="base"/>
+            <stat name="companion:speed:fly" value="30" bonus="base"/>
+            <stat name="companion:perception:proficiency" value="companion:proficiency" bonus="double"/>
+            <stat name="companion:wisdom:save:proficiency" value="companion:proficiency" bonus="base"/>
+            <stat name="companion:intelligence:save:proficiency" value="companion:proficiency" bonus="base"/>
+        </rules>
+    </element>
+    <element name="Multiattack" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_AUGURY_VIZIER_MULTIATTACK">
+        <description>
+            <p>The nightmare vizier makes four Frightening Force Blast attacks.</p>
+        </description>
+        <sheet>
+            <description>The nightmare vizier four Frightening Force Blast attacks.</description>
+        </sheet>
+    </element>
+    <element name="Frightening Force Blast" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_AUGURY_VIZIER_FORCE_BLAST">
+        <description>
+            <p>Ranged Spell Attack: +9 to hit, range 60 ft., one target. Hit: 11 (1d10 + 6) force damage, and the target must succeed on a DC 16 Wisdom saving throw or be frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
+        </description>
+        <sheet>
+            <description>Ranged Spell Attack: +9 to hit, range 60 ft., one target. Hit: 11 (1d10 + 6) force damage, and the target must succeed on a DC 16 Wisdom saving throw or be frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</description>
+        </sheet>
+    </element>
+    <element name="Maelstrom of Madness (Recharge 5-6)" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_AUGURY_VIZIER_MAELSTROM_OF_MADNESS">
+        <description>
+            <p>The nightmare vizier can create a momentary 20-foot radius area of unstable psychic energy up to 90 feet away. The Maelstrom deals 49 (9d10) psychic damage and scrambles the senses of creatures within the area. They must make a DC 17 Wisdom saving throw. On a success, the damage is halved, and they are not affected by the sense-scrambling effect. On a failure, creatures have disadvantage on attack rolls and Wisdom (Perception) checks for one minute.</p>
+        </description>
+        <sheet>
+            <description>The nightmare vizier can create a momentary 20-foot radius area of unstable psychic energy up to 90 feet away. The Maelstrom deals 49 (9d10) psychic damage and scrambles the senses of creatures within the area. They must make a DC 17 Wisdom saving throw. On a success, the damage is halved, and they are not affected by the sense-scrambling effect. On a failure, creatures have disadvantage on attack rolls and Wisdom (Perception) checks for one minute.</description>
+        </sheet>
+    </element>
+    <element name="Spellcasting" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_AUGURY_VIZIER_SEPLLCASTING">
+        <description>
+            <p>The nightmare vizier casts one of the following spells, using Wisdom as the spellcasting ability (spell save DC 17, +9 to hit with spell attacks):</p>
+            <ul>
+                <li>At will: clairvoyance, command, comprehend languages, levitate</li>
+                <li>3/day each: counterspell, suggestion, locate creature</li>
+                <li>1/day each: animate objects, arcane eye, telekinesis</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Wisdom caster with DC 17 and +9 to hit. - At will: clairvoyance, command, comprehend languages, levitate - 3/day each: counterspell, suggestion, locate creature - 1/day each: animate objects, arcane eye, telekinesis</description>
+        </sheet>
+    </element>
+    <element name="Prediction Gaze (2/day)" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_AUGURY_VIZIER_PREDICTION_GAZE">
+        <description>
+            <p>When the nightmare vizier locks viziers with a creature, as a free action, it can see the creature’s immediate future. The creature must make a DC 17 Wisdom saving throw. On a failure, for one minute, the creature has disadvantage on all attacks, ability checks, and saving throws it makes against the nightmare vizier.</p>
+        </description>
+        <sheet>
+            <description>When the nightmare vizier locks viziers with a creature, as a free action, it can see the creature’s immediate future. The creature must make a DC 17 Wisdom saving throw. On a failure, for one minute, the creature has disadvantage on all attacks, ability checks, and saving throws it makes against the nightmare vizier.</description>
+        </sheet>
+    </element>
+    <element name="Nightmare Tyrant" type="Companion" source="Tanares RPG 5e" id="ID_TRPG_CLASS_FEATURE_MADWALKER_AUGURY_TYRANT">
+        <supports>penumbral-shape</supports>
+        <requirements>[level:17],ID_TRPG_ARCHETYPE_MADWALKER_AUGURY</requirements>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="strength">18</set>
+            <set name="dexterity">14</set>
+            <set name="constitution">20</set>
+            <set name="intelligence">20</set>
+            <set name="wisdom">22</set>
+            <set name="charisma">16</set>
+            <set name="ac">20</set>
+            <set name="hp">218 (19d12+95)</set>
+            <set name="speed">0 ft., fly 40 ft. (hover)</set>
+            <set name="senses">darkvision 90 ft., truesight 60 ft., passive Perception 24</set>
+            <set name="languages">Common, Deep Speech, telepathy 120 ft.</set>
+            <set name="skills">Perception +14</set>
+            <set name="saves">Int +9, Wis +10</set>
+            <set name="resistances">psychic</set>
+            <set name="conditionimmunities">prone</set>
+            <set name="type">aberration</set>
+            <set name="size">huge</set>
+            <set name="alignment">neutral evil</set>
+            <set name="challenge">10</set>
+            <set name="proficiency">4</set>
+            <set name="actions">ID_TRPG_COMPANION_ACTION_MADWALKER_AUGURY_TYRANT_MULTIATTACK,ID_TRPG_COMPANION_ACTION_MADWALKER_AUGURY_TYRANT_FORCE_BLAST,ID_TRPG_COMPANION_ACTION_MADWALKER_AUGURY_TYRANT_MAELSTROM_OF_MADNESS,ID_TRPG_COMPANION_ACTION_MADWALKER_AUGURY_TYRANT_SEPLLCASTING</set>
+            <set name="traits">ID_TRPG_COMPANION_TRAIT_MADWALKER_FUTURE_OMEN,ID_TRPG_COMPANION_TRAIT_MADWALKER_SIXTH_SENSE,ID_TRPG_COMPANION_TRAIT_MADWALKER_PRECOGNITION,ID_TRPG_COMPANION_TRAIT_MADWALKER_FUTURE_GUARD,ID_TRPG_COMPANION_TRAIT_MADWALKER_AUGURY_TYRANT_PREDICTION_GAZE</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="20"/>
+            <stat name="companion:hp:max" value="218" bonus="base"/>
+            <stat name="companion:speed" value="0" bonus="base"/>
+            <stat name="companion:speed:fly" value="40" bonus="base"/>
+            <stat name="companion:perception:proficiency" value="companion:proficiency" bonus="double"/>
+            <stat name="companion:wisdom:save:proficiency" value="companion:proficiency" bonus="base"/>
+            <stat name="companion:intelligence:save:proficiency" value="companion:proficiency" bonus="base"/>
+        </rules>
+    </element>
+    <element name="Multiattack" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_AUGURY_TYRANT_MULTIATTACK">
+        <description>
+            <p>The nightmare tyrant makes four Frightening Force Blast attacks.</p>
+        </description>
+        <sheet>
+            <description>The nightmare tyrant four Frightening Force Blast attacks.</description>
+        </sheet>
+    </element>
+    <element name="Frightening Force Blast" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_AUGURY_TYRANT_FORCE_BLAST">
+        <description>
+            <p>Ranged Spell Attack: +10 to hit, range 60 ft., one target. Hit: 11 (1d10 + 6) force damage and the target must succeed on a DC 18 Wisdom saving throw or be frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
+        </description>
+        <sheet>
+            <description>Ranged Spell Attack: +10 to hit, range 60 ft., one target. Hit: 11 (1d10 + 6) force damage and the target must succeed on a DC 18 Wisdom saving throw or be frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</description>
+        </sheet>
+    </element>
+    <element name="Maelstrom of Madness (Recharge 5-6)" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_AUGURY_TYRANT_MAELSTROM_OF_MADNESS">
+        <description>
+            <p>The nightmare tyrant can create a momentary 20-foot radius area of unstable psychic energy up to 90 feet away. The Maelstrom deals 49 (9d10) psychic damage and scrambles the senses of creatures within the area. They must make a DC 18 Wisdom saving throw. On a success, the damage is halved, and they are not affected by the sense-scrambling effect. On a failure, creatures have disadvantage on attack rolls and Wisdom (Perception) checks for one minute.</p>
+        </description>
+        <sheet>
+            <description>The nightmare tyrant can create a momentary 20-foot radius area of unstable psychic energy up to 90 feet away. The Maelstrom deals 49 (9d10) psychic damage and scrambles the senses of creatures within the area. They must make a DC 18 Wisdom saving throw. On a success, the damage is halved, and they are not affected by the sense-scrambling effect. On a failure, creatures have disadvantage on attack rolls and Wisdom (Perception) checks for one minute.</description>
+        </sheet>
+    </element>
+    <element name="Spellcasting" type="Companion Action" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_ACTION_MADWALKER_AUGURY_TYRANT_SEPLLCASTING">
+        <description>
+            <p>The nightmare tyrant casts one of the following spells, using Wisdom as the spellcasting ability (spell save DC 18, +10 to hit with spell attacks):</p>
+            <ul>
+                <li>At will: clairvoyance, command, comprehend languages, levitate</li>
+                <li>3/day each: : animate objects, arcane eye, counterspell, locate creature, suggestion</li>
+                <li>1/day each: eye bite, telekinesis</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Wisdom caster with DC 18 and +10 to hit. - At will: clairvoyance, command, comprehend languages, levitate - 3/day each: : animate objects, arcane eye, counterspell, locate creature, suggestion - 1/day each: eye bite, telekinesis</description>
+        </sheet>
+    </element>
+    <element name="Prediction Gaze (3/day)" type="Companion Trait" source="Tanares RPG 5e" id="ID_TRPG_COMPANION_TRAIT_MADWALKER_AUGURY_TYRANT_PREDICTION_GAZE">
+        <description>
+            <p>When the nightmare tyrant locks tyrants with a creature, as a free action, it can see the creature’s immediate future. The creature must make a DC 18 Wisdom saving throw. On a failure, for one minute, the creature has disadvantage on all attacks, ability checks, and saving throws it makes against the nightmare tyrant.</p>
+        </description>
+        <sheet>
+            <description>When the nightmare tyrant locks tyrants with a creature, as a free action, it can see the creature’s immediate future. The creature must make a DC 18 Wisdom saving throw. On a failure, for one minute, the creature has disadvantage on all attacks, ability checks, and saving throws it makes against the nightmare tyrant.</description>
         </sheet>
     </element>
 </elements>

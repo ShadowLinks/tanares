@@ -51,11 +51,11 @@
             <description></description>
         </sheet>
         <rules>
-            <select type="Spell" supports="arachnid-trail-mutation,1" spellcasting="Madwalker" />
-            <select type="Spell" supports="arachnid-trail-mutation,2" spellcasting="Madwalker" level="5" />
-            <select type="Spell" supports="arachnid-trail-mutation,3" spellcasting="Madwalker" level="9" />
-            <select type="Spell" supports="arachnid-trail-mutation,4" spellcasting="Madwalker" level="13" />
-            <select type="Spell" supports="arachnid-trail-mutation,5" spellcasting="Madwalker" level="17" />
+            <select name="Arachnid Trail Mutation 1" type="Spell" supports="arachnid-trail-mutation,1" spellcasting="Madwalker" />
+            <select name="Arachnid Trail Mutation 2" type="Spell" supports="arachnid-trail-mutation,2" spellcasting="Madwalker" level="5" />
+            <select name="Arachnid Trail Mutation 3" type="Spell" supports="arachnid-trail-mutation,3" spellcasting="Madwalker" level="9" />
+            <select name="Arachnid Trail Mutation 4" type="Spell" supports="arachnid-trail-mutation,4" spellcasting="Madwalker" level="13" />
+            <select name="Arachnid Trail Mutation 5" type="Spell" supports="arachnid-trail-mutation,5" spellcasting="Madwalker" level="17" />
         </rules>
     </element>
     <element name="Cunning Predator" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_MADWALKER_ARACHNID_CUNNING_PREDATOR">

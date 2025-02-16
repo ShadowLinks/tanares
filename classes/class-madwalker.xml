@@ -154,7 +154,16 @@
             <stat name="insanity-points" value="12" level="13"/>
             <stat name="insanity-points" value="12" level="17"/>
             <grant type="Spell" id="ID_TRPG_ABERRANT_MUTATION_DARK_ENERGY" spellcasting="Madwalker" />
-            <select type="Spell" supports="aberrant-mutation,$(spellcasting:slots)" spellcasting="Madwalker" />
+            <select name="Aberrant Mutation 1" type="Spell" supports="aberrant-mutation,$(spellcasting:slots)" spellcasting="Madwalker" number="2" />
+            <select name="Aberrant Mutation 3" type="Spell" supports="aberrant-mutation,$(spellcasting:slots)" spellcasting="Madwalker" level="3" />
+            <select name="Aberrant Mutation 5" type="Spell" supports="aberrant-mutation,$(spellcasting:slots)" spellcasting="Madwalker" level="5" />
+            <select name="Aberrant Mutation 7" type="Spell" supports="aberrant-mutation,$(spellcasting:slots)" spellcasting="Madwalker" level="7" />
+            <select name="Aberrant Mutation 9" type="Spell" supports="aberrant-mutation,$(spellcasting:slots)" spellcasting="Madwalker" level="9" />
+            <select name="Aberrant Mutation 11" type="Spell" supports="aberrant-mutation,$(spellcasting:slots)" spellcasting="Madwalker" level="11" />
+            <select name="Aberrant Mutation 13" type="Spell" supports="aberrant-mutation,$(spellcasting:slots)" spellcasting="Madwalker" level="13" />
+            <select name="Aberrant Mutation 15" type="Spell" supports="aberrant-mutation,$(spellcasting:slots)" spellcasting="Madwalker" level="15" />
+            <select name="Aberrant Mutation 17" type="Spell" supports="aberrant-mutation,$(spellcasting:slots)" spellcasting="Madwalker" level="17" />
+            <select name="Aberrant Mutation 19" type="Spell" supports="aberrant-mutation,$(spellcasting:slots)" spellcasting="Madwalker" level="19" />
         </rules>
         <spellcasting name="Madwalker" ability="Wisdom" prepare="false" />
     </element>
