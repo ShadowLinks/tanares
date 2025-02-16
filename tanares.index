@@ -4,7 +4,7 @@
 		<name>Tanares</name>
 		<description>Supplements from Tanares RPG 5E to expand your core gaming elements.</description>
 		<author url="https://dragorigames.com/">Dragori Games</author>
-		<update version="0.0.19">
+		<update version="0.0.20">
 			<file name="tanares.index" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/tanares.index" />
 		</update>
 	</info>
@@ -72,5 +72,9 @@
 		<file name="madwalker-arachnid.xml" url="https://github.com/ShadowLinks/tanares/raw/refs/heads/main/subclasses/madwalker-arachnid.xml"/>
 		<file name="madwalker-augury.xml" url="https://github.com/ShadowLinks/tanares/raw/refs/heads/main/subclasses/madwalker-arachnid.xml"/>
 		<file name="aberrantmutations.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/classes/aberrantmutations.xml"/>
+
+		<file name="class-redeemer.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/classes/class-redeemer.xml" />
+		<file name="redeemer-doomspeaker.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/subclasses/redeemer-doomspeaker.xml" />
+		<file name="redeemer-shepherd.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/subclasses/redeemer-shepherd.xml" />
 	</files>
 </index>

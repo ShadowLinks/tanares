@@ -17,9 +17,8 @@ To Do:
     - Dragonblade [Minor issue with finesse](https://github.com/ShadowLinks/tanares/issues/5)
     - Elementalist COMPLETED
     - Madwalker COMPLETED
-    - Redeemer
-    - Shepherd
-    - Doomspeakers
+    - Redeemer COMPLETED
+        - Blessings of Redemption (OPTIONAL RULE NOT IMPLEMENTED YET)
 - Simplified Classes COMPLETED
     - Brawler
     - Mage
