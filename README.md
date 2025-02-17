@@ -2,7 +2,9 @@ Aurora Builder element for Tanares RPG
 
 Index -  https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/tanares.index
 
-To Do:
+At this point most everthing should be added except some optional features like heroic marks. Add an issue if there is something to fix.
+NOTE: Some things might be different than written- ie spells not on spell lists, name changes, and so on...
+
 - Species
     - Common Classic Species COMPLETED
         - Dwarf
@@ -18,7 +20,7 @@ To Do:
     - Elementalist COMPLETED
     - Madwalker COMPLETED
     - Redeemer COMPLETED
-        - Blessings of Redemption (OPTIONAL RULE NOT IMPLEMENTED YET)
+        - Blessings of Redemption TBD
 - Simplified Classes COMPLETED
     - Brawler
     - Mage
@@ -30,9 +32,9 @@ To Do:
         - Path of the Penumbra
     - Bard COMPLETED
         - College of Life
-    - Cleric
-        - Chaos Domain - [Breaks PDF export](https://github.com/ShadowLinks/tanares/issues/3)
-        - Courage Domain COMPLETED
+    - Cleric COMPLETED
+        - Chaos Domain
+        - Courage Domain 
     - Druid COMPLETED
         - Circle of the Bloom
     - Fighter COMPLETED
@@ -82,6 +84,6 @@ To Do:
     - Soulborn Ancestry
     - Spycraft Mastery
     - Swift Polearm
-- New Spells
+- New Spells COMPLETED
 
 Additonal Optional features like Heroic Marks TBD
