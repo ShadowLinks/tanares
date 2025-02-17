@@ -4,7 +4,7 @@
         <name></name>
         <description>Redeemer Class from Tanares RPG 5e</description>
         <author url="">Tanares RPG 5e</author>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="class-redeemer.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/classes/class-redeemer.xml" />
         </update>
     </info>
