@@ -127,58 +127,174 @@
 			</description>
 		</sheet>
 		<rules>
-		<!--This is where things break the pdf export
-		It seems that trying to apply any spell lists known to the "Cleric" spellcasting name break the pdf export-->
             <select type="Archetype Feature" name="Chaotic Spell List" supports="Chaos Class" />
         </rules>
     </element>
 	<element name="Wizard List" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_CLERIC_CHAOS_WIZARD">
 		<supports>Chaos Class</supports>
-		<description>Wizard Spell List. Select, unselect, and reselect to work. NOTE: SELECTING ANY LIST WILL BREAK PDF EXPORT CURRENTLY</description>
-		<spellcasting name="Cleric" ability="Wisdom" prepare="TRUE">
+		<description>Wizard Spell List</description>
+		<spellcasting name="Wizard" ability="Wisdom" prepare="TRUE">
 			<list known="true">Wizard</list>
 		</spellcasting>
+		<rules>
+			<stat name="wizard:spellcasting:slots:1" value="2" level="1"/>
+			<stat name="wizard:spellcasting:slots:1" value="1" level="2"/>
+			<stat name="wizard:spellcasting:slots:1" value="1" level="3"/>
+			<stat name="wizard:spellcasting:slots:2" value="2" level="3"/>
+			<stat name="wizard:spellcasting:slots:2" value="1" level="4"/>
+			<stat name="wizard:spellcasting:slots:3" value="2" level="5"/>
+			<stat name="wizard:spellcasting:slots:3" value="1" level="6"/>
+			<stat name="wizard:spellcasting:slots:4" value="1" level="7"/>
+			<stat name="wizard:spellcasting:slots:4" value="1" level="8"/>
+			<stat name="wizard:spellcasting:slots:4" value="1" level="9"/>
+			<stat name="wizard:spellcasting:slots:5" value="1" level="9"/>
+			<stat name="wizard:spellcasting:slots:5" value="1" level="10"/>
+			<stat name="wizard:spellcasting:slots:5" value="1" level="18"/>
+			<stat name="wizard:spellcasting:slots:6" value="1" level="11"/>
+			<stat name="wizard:spellcasting:slots:6" value="1" level="19"/>
+			<stat name="wizard:spellcasting:slots:7" value="1" level="13"/>
+			<stat name="wizard:spellcasting:slots:7" value="1" level="20"/>
+			<stat name="wizard:spellcasting:slots:8" value="1" level="15"/>
+			<stat name="wizard:spellcasting:slots:9" value="1" level="17"/>
+			<stat name="wizard:spellcasting:prepare" value="wisdom:modifier"/>
+			<stat name="wizard:spellcasting:prepare" value="level:cleric"/>
+			<select type="Spell" name="Cantrip (Chaos Domain)" supports="$(spellcasting:list), 0" level="1" number="3" spellcasting="Wizard"/>
+			<select type="Spell" name="Cantrip (Chaos Domain)" supports="$(spellcasting:list), 0" level="4" number="1" spellcasting="Wizard"/>
+			<select type="Spell" name="Cantrip (Chaos Domain)" supports="$(spellcasting:list), 0" level="10" number="1" spellcasting="Wizard"/>
+		</rules>
 		
 	</element>
 	<element name="Bard List" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_CLERIC_CHAOS_BARD">
 		<supports>Chaos Class</supports>
-		<description>Bard Spell List. Select, unselect, and reselect to work. NOTE: SELECTING ANY LIST WILL BREAK PDF EXPORT CURRENTLY</description>
-		<spellcasting name="Cleric" ability="Wisdom" prepare="TRUE">
-
+		<description>Bard Spell List.</description>
+		<spellcasting name="Bard" ability="Wisdom" prepare="TRUE">
 			<list known="true">Bard</list>
 		</spellcasting>
-	</element>
-	<element name="Cleric List" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_CLERIC_CHAOS_CLERIC">
-		<supports>Chaos Class</supports>
-		<description>Cleric Spell List. Select, unselect, and reselect to work. NOTE: SELECTING ANY LIST WILL BREAK PDF EXPORT CURRENTLY</description>
-		<spellcasting name="Cleric" ability="Wisdom" prepare="TRUE">
-
-			<list known="true" requirements="!">Cleric</list>
-		</spellcasting>
+		<rules>
+			<stat name="bard:spellcasting:slots:1" value="2" level="1"/>
+			<stat name="bard:spellcasting:slots:1" value="1" level="2"/>
+			<stat name="bard:spellcasting:slots:1" value="1" level="3"/>
+			<stat name="bard:spellcasting:slots:2" value="2" level="3"/>
+			<stat name="bard:spellcasting:slots:2" value="1" level="4"/>
+			<stat name="bard:spellcasting:slots:3" value="2" level="5"/>
+			<stat name="bard:spellcasting:slots:3" value="1" level="6"/>
+			<stat name="bard:spellcasting:slots:4" value="1" level="7"/>
+			<stat name="bard:spellcasting:slots:4" value="1" level="8"/>
+			<stat name="bard:spellcasting:slots:4" value="1" level="9"/>
+			<stat name="bard:spellcasting:slots:5" value="1" level="9"/>
+			<stat name="bard:spellcasting:slots:5" value="1" level="10"/>
+			<stat name="bard:spellcasting:slots:5" value="1" level="18"/>
+			<stat name="bard:spellcasting:slots:6" value="1" level="11"/>
+			<stat name="bard:spellcasting:slots:6" value="1" level="19"/>
+			<stat name="bard:spellcasting:slots:7" value="1" level="13"/>
+			<stat name="bard:spellcasting:slots:7" value="1" level="20"/>
+			<stat name="bard:spellcasting:slots:8" value="1" level="15"/>
+			<stat name="bard:spellcasting:slots:9" value="1" level="17"/>
+			<stat name="bard:spellcasting:prepare" value="wisdom:modifier"/>
+			<stat name="bard:spellcasting:prepare" value="level:cleric"/>
+			<select type="Spell" name="Cantrip (Chaos Domain)" supports="$(spellcasting:list), 0" level="1" number="3" spellcasting="Bard"/>
+			<select type="Spell" name="Cantrip (Chaos Domain)" supports="$(spellcasting:list), 0" level="4" number="1" spellcasting="Bard"/>
+			<select type="Spell" name="Cantrip (Chaos Domain)" supports="$(spellcasting:list), 0" level="10" number="1" spellcasting="Bard"/>
+		</rules>
 	</element>
 	<element name="Druid List" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_CLERIC_CHAOS_DRUID">
 		<supports>Chaos Class</supports>
-		<description>Druid Spell List. Select, unselect, and reselect to work. NOTE: SELECTING ANY LIST WILL BREAK PDF EXPORT CURRENTLY</description>
-		<spellcasting name="Cleric" ability="Wisdom" prepare="TRUE">
-
+		<description>Druid Spell List.</description>
+		<spellcasting name="Druid" ability="Wisdom" prepare="TRUE">
 			<list known="true">Druid</list>
 		</spellcasting>
+		<rules>
+			<stat name="druid:spellcasting:slots:1" value="2" level="1"/>
+			<stat name="druid:spellcasting:slots:1" value="1" level="2"/>
+			<stat name="druid:spellcasting:slots:1" value="1" level="3"/>
+			<stat name="druid:spellcasting:slots:2" value="2" level="3"/>
+			<stat name="druid:spellcasting:slots:2" value="1" level="4"/>
+			<stat name="druid:spellcasting:slots:3" value="2" level="5"/>
+			<stat name="druid:spellcasting:slots:3" value="1" level="6"/>
+			<stat name="druid:spellcasting:slots:4" value="1" level="7"/>
+			<stat name="druid:spellcasting:slots:4" value="1" level="8"/>
+			<stat name="druid:spellcasting:slots:4" value="1" level="9"/>
+			<stat name="druid:spellcasting:slots:5" value="1" level="9"/>
+			<stat name="druid:spellcasting:slots:5" value="1" level="10"/>
+			<stat name="druid:spellcasting:slots:5" value="1" level="18"/>
+			<stat name="druid:spellcasting:slots:6" value="1" level="11"/>
+			<stat name="druid:spellcasting:slots:6" value="1" level="19"/>
+			<stat name="druid:spellcasting:slots:7" value="1" level="13"/>
+			<stat name="druid:spellcasting:slots:7" value="1" level="20"/>
+			<stat name="druid:spellcasting:slots:8" value="1" level="15"/>
+			<stat name="druid:spellcasting:slots:9" value="1" level="17"/>
+			<stat name="druid:spellcasting:prepare" value="wisdom:modifier"/>
+			<stat name="druid:spellcasting:prepare" value="level:cleric"/>
+			<select type="Spell" name="Cantrip (Chaos Domain)" supports="$(spellcasting:list), 0" level="1" number="3" spellcasting="Druid"/>
+			<select type="Spell" name="Cantrip (Chaos Domain)" supports="$(spellcasting:list), 0" level="4" number="1" spellcasting="Druid"/>
+			<select type="Spell" name="Cantrip (Chaos Domain)" supports="$(spellcasting:list), 0" level="10" number="1" spellcasting="Druid"/>
+		</rules>
 	</element>
 	<element name="Sorcerer List" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_CLERIC_CHAOS_SORCERER">
 		<supports>Chaos Class</supports>
-		<description>Sorcerer Spell List. Select, unselect, and reselect to work. NOTE: SELECTING ANY LIST WILL BREAK PDF EXPORT CURRENTLY</description>
-		<spellcasting name="Cleric" ability="Wisdom" prepare="TRUE">
-
+		<description>Sorcerer Spell List.</description>
+		<spellcasting name="Sorcerer" ability="Wisdom" prepare="TRUE">
 			<list known="true">Sorcerer</list>
 		</spellcasting>
+		<rules>
+			<stat name="sorcerer:spellcasting:slots:1" value="2" level="1"/>
+			<stat name="sorcerer:spellcasting:slots:1" value="1" level="2"/>
+			<stat name="sorcerer:spellcasting:slots:1" value="1" level="3"/>
+			<stat name="sorcerer:spellcasting:slots:2" value="2" level="3"/>
+			<stat name="sorcerer:spellcasting:slots:2" value="1" level="4"/>
+			<stat name="sorcerer:spellcasting:slots:3" value="2" level="5"/>
+			<stat name="sorcerer:spellcasting:slots:3" value="1" level="6"/>
+			<stat name="sorcerer:spellcasting:slots:4" value="1" level="7"/>
+			<stat name="sorcerer:spellcasting:slots:4" value="1" level="8"/>
+			<stat name="sorcerer:spellcasting:slots:4" value="1" level="9"/>
+			<stat name="sorcerer:spellcasting:slots:5" value="1" level="9"/>
+			<stat name="sorcerer:spellcasting:slots:5" value="1" level="10"/>
+			<stat name="sorcerer:spellcasting:slots:5" value="1" level="18"/>
+			<stat name="sorcerer:spellcasting:slots:6" value="1" level="11"/>
+			<stat name="sorcerer:spellcasting:slots:6" value="1" level="19"/>
+			<stat name="sorcerer:spellcasting:slots:7" value="1" level="13"/>
+			<stat name="sorcerer:spellcasting:slots:7" value="1" level="20"/>
+			<stat name="sorcerer:spellcasting:slots:8" value="1" level="15"/>
+			<stat name="sorcerer:spellcasting:slots:9" value="1" level="17"/>
+			<stat name="sorcerer:spellcasting:prepare" value="wisdom:modifier"/>
+			<stat name="sorcerer:spellcasting:prepare" value="level:cleric"/>
+			<select type="Spell" name="Cantrip (Chaos Domain)" supports="$(spellcasting:list), 0" level="1" number="3" spellcasting="Sorcerer"/>
+			<select type="Spell" name="Cantrip (Chaos Domain)" supports="$(spellcasting:list), 0" level="4" number="1" spellcasting="Sorcerer"/>
+			<select type="Spell" name="Cantrip (Chaos Domain)" supports="$(spellcasting:list), 0" level="10" number="1" spellcasting="Sorcerer"/>
+		</rules>
 	</element>
 	<element name="Warlock List" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_CLERIC_CHAOS_WARLOCK">
 		<supports>Chaos Class</supports>
-		<description>Warlock Spell List. Select, unselect, and reselect to work. NOTE: SELECTING ANY LIST WILL BREAK PDF EXPORT CURRENTLY</description>
-		<spellcasting name="Cleric" ability="Wisdom" prepare="TRUE">
-
+		<description>Warlock Spell List.</description>
+		<spellcasting name="Warlock" ability="Wisdom" prepare="TRUE">
 			<list known="true">Warlock</list>
 		</spellcasting>
+		<rules>
+			<stat name="warlock:spellcasting:slots:1" value="2" level="1"/>
+			<stat name="warlock:spellcasting:slots:1" value="1" level="2"/>
+			<stat name="warlock:spellcasting:slots:1" value="1" level="3"/>
+			<stat name="warlock:spellcasting:slots:2" value="2" level="3"/>
+			<stat name="warlock:spellcasting:slots:2" value="1" level="4"/>
+			<stat name="warlock:spellcasting:slots:3" value="2" level="5"/>
+			<stat name="warlock:spellcasting:slots:3" value="1" level="6"/>
+			<stat name="warlock:spellcasting:slots:4" value="1" level="7"/>
+			<stat name="warlock:spellcasting:slots:4" value="1" level="8"/>
+			<stat name="warlock:spellcasting:slots:4" value="1" level="9"/>
+			<stat name="warlock:spellcasting:slots:5" value="1" level="9"/>
+			<stat name="warlock:spellcasting:slots:5" value="1" level="10"/>
+			<stat name="warlock:spellcasting:slots:5" value="1" level="18"/>
+			<stat name="warlock:spellcasting:slots:6" value="1" level="11"/>
+			<stat name="warlock:spellcasting:slots:6" value="1" level="19"/>
+			<stat name="warlock:spellcasting:slots:7" value="1" level="13"/>
+			<stat name="warlock:spellcasting:slots:7" value="1" level="20"/>
+			<stat name="warlock:spellcasting:slots:8" value="1" level="15"/>
+			<stat name="warlock:spellcasting:slots:9" value="1" level="17"/>
+			<stat name="warlock:spellcasting:prepare" value="wisdom:modifier"/>
+			<stat name="warlock:spellcasting:prepare" value="level:cleric"/>
+			<select type="Spell" name="Cantrip (Chaos Domain)" supports="$(spellcasting:list), 0" level="1" number="3" spellcasting="Warlock"/>
+			<select type="Spell" name="Cantrip (Chaos Domain)" supports="$(spellcasting:list), 0" level="4" number="1" spellcasting="Warlock"/>
+			<select type="Spell" name="Cantrip (Chaos Domain)" supports="$(spellcasting:list), 0" level="10" number="1" spellcasting="Warlock"/>
+		</rules>
 	</element>
 	<element name="Infuse Chaos" type="Archetype Feature" source="Tanares RPG 5e" id="ID_TRPG_ARCHETYPE_FEATURE_CLERIC_CHAOS_INFUSE_CHAOS">
 		<description>
