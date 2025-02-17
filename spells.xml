@@ -206,7 +206,7 @@
             <set name="isConcentration">false</set>
             <set name="isRitual">false</set>
         </setters>
-    </element>
+    </element>                                                                                                                                                                                     
     <element name="Carry the Flame" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_CARRY_THE_FLAME">
         <supports>Bard, Cleric</supports>
         <description>
@@ -224,6 +224,940 @@
             <set name="hasMaterialComponent">true</set>
             <set name="materialComponent">sacred symbol the other person could carry</set>
             <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <!--
+    <element name="Chorus of the Furious Animal" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_CHORUS_OF_THE_FURIOUS_ANIMAL">
+        <supports>Bard, Druid, Ranger</supports>
+        <description>
+            <p>You emit a swift melody with a frenzied rhythm, provoking a beast-type creature to unleash its fury upon its foes. For the duration, the creature can make one more attack with one of his natural weapons, and become resistant to slashing, piercing, and bludgeoning damage.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">Enchantment</set>
+            <set name="time">1 action</set>
+            <set name="range">30 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Circle of Crystals" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_CIRCLE_OF_CRYSTALS">
+        <supports>Cleric, Wizard</supports>
+        <description>
+            <p>You and two other willing creatures of your choice that are in line of sight and within range of this spell become resistant to 2 types of damage, your choice of bludgeoning, slashing, piercing, acid, lightning, fire, cold, necrotic, rumbling and poisonous. If one of the affected creatures is already resistant to the chosen damage type, it becomes immune to that damage for the spell’s duration.</p>
+            <p class="indent">At Higher Levels. When you cast this spell as a slot of 6th level or higher, you can affect one more creature for each level above 5th.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">6</set>
+            <set name="school">Abjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">10 feet</set>
+            <set name="duration">Concentration up to 1 hour</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a small citrus fruit worth 100 gp</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Conjure Emogun" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_CONJURE_EMOGUN">
+        <supports>Wizard, Cleric</supports>
+        <description>
+            <p>You can call an aberrant creature of the penumbral plane to serve you. An aberration of challenge rating 5 or lower appropriate to the area you chose appears in an unoccupied space within 10 feet of it, creating a short distortion when it appears.</p>
+            <p class="indent">The aberration is friendly to you and your companions for the duration. Roll initiative for the aberration, which has its own turns. It obeys any verbal commands that you issue to it (no action required by you). If you don’t issue any commands to the aberration, it defends itself from hostile creatures but otherwise takes no actions.</p>
+            <p class="indent">If your concentration is broken, the aberration doesn’t disappear. Instead, you lose control of the aberration, it becomes hostile toward you and your companions, and it might attack. An uncontrolled aberration can’t be dismissed by you, and it disappears 1 hour after you summoned it.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">5</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 minute</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration up to 1 hour</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Corrosive Tears" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_CORROSIVE_TEARS">
+        <supports>Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>You conjure a green cloud that forms in the sky and small drops of corrosive acid fall from it, affecting a circular area of 30-foot radius in the range. All creatures that will start their turn or enter the affected area must make a Constitution save. On a failure the creature takes 2d8 acid damage, or half this damage on a success. Objects not being carried and structures in the affected area, take double damage.</p>
+        </description>
+        <setters>
+            <set name="keywords">acid</set>
+            <set name="level">3</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">120 feet</set>
+            <set name="duration">Concentration up to 30 minutes</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a small acid flask</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Cupid's Arrow" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_CUPIDS_ARROW">
+        <supports>Bard, Cleric, Druid, Spell Saving Throw</supports>
+        <description>
+            <p>You shoot a spectral arrow establishing a connection between two humanoid creatures within range (you can target yourself). Unwilling creatures must succeed on a Wisdom saving throw or be affected by the arrow.</p>
+            <p class="indent">You may make one or both of the affected creatures to become charmed by the other targeted creature (even if that second creature succeeded on its save). This can cause two creatures to become charmed by each other, or one creature to be charmed by the other, at your choice.</p>
+            <p class="indent">At Higher Levels. When you cast this spell using a spell slot of 5th level or higher you can charm any creature, not only humanoids.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Enchantment</set>
+            <set name="time">1 action</set>
+            <set name="range">30 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Demigod Wings" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_DEMIGOD_WINGS">
+        <supports>Cleric</supports>
+        <description>
+            <p>You create six wings composed of condensed divine energy that rise from your back. The wings grant you a flying speed of 50 feet for the duration of the spell. Wings have great powers and using an action you can perform the following effects:</p>
+            <p class="indent">Winds of Mercy. You create an enormous gust of healing energy. All creatures in the area of a 30-foot cone heal for 4d10.</p>
+            <p class="indent">Winds of Vengeance. The wings emit a strong pulse of energy that affects a 30-foot-radius sphere from you, hostile creatures in the area take 4d10 radiant damage. As a reaction, you can make the wings defend your body by folding around it. If you react to an attack, you can add 10 to your AC at the start of your next turn. If you react to a spell, you gain advantage on the saving throw, or the bonus to your AC, if the spell requires an attack roll.</p>
+        </description>
+        <setters>
+            <set name="keywords">radiant</set>
+            <set name="level">9</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">self</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Echoing" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_ECHOING">
+        <supports>Bard, Sorcerer</supports>
+        <description>
+            <p>You manipulate reality to create an echoing effect. As a reaction to the end of another creature’s turn, you can cast this spell to replicate the effects of their previous turn. To use this spell, you must have witnessed the events of that turn within your line of sight. The replicated effects include spellcasting, attacks, hits, damage, and the results of saving throws and ability checks. All targets remain the same, and any attacks or effects that become impossible, such as a target moving out of reach, will simply not occur. No additional dice rolls or checks are required, and the results of the replicated actions remain unchanged.</p>
+            <p class="indent">It is important to note that casting Echoing does not incur any additional costs or expenses, such as consuming spell slots or expending resources from abilities or spells. However, if the original action had any side effects on the caster, such as those caused by a wish spell, you will experience these side effects instead of the original creature, as if you had performed those actions yourself.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">9</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">Self</set>
+            <set name="duration">duration</set>
+            <set name="hasVerbalComponent">Instantaneous</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">instrument</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Edge of Mirrors" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_EDGE_OF_MIRRORS">
+        <supports>Bard, Wizard</supports>
+        <description>
+            <p>You create a number of small magic mirrors, equal to your spellcasting ability modifier, about half a foot square each, distributing them anywhere within range of the spell. Mirrors are invisible, but can be seen through spells such as Detect Magic, or by creatures that have true sight, or the like. You, and any creature you allow, are able to see the mirrors. When a creature that can see the mirrors is adjacent to one of them, it will be able to see through it as if it were positioned where any of them are.</p>
+            <p class="indent">In addition, spellcasters who can see the mirrors, and are adjacent to any of them, can cast their spells as if they were positioned at the location of any of those mirrors. The spell cast in this way cannot be touched. Creatures that are in spaces adjacent to the space occupied by one of the mirrors can sense their presence with a successful DC 18 Wisdom (Perception) check.</p>
+            <p class="indent">The mirrors have 5 hp, 13 AC.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">120 feet</set>
+            <set name="duration">Concentration up to 10 minutes</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a small mirror</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Electric Burning" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_ELECTRIC_BURNING">
+        <supports>Druid, Sorcerer, Warlock, Spell Saving Throw</supports>
+        <description>
+            <p>You create a cone of energy that extends 30 feet from the palm of your hand. All creatures within the area must make a Dexterity saving throw. On a failed save, a target takes 4d6 lightning damage plus 1d6 lightning damage per target that failed in saving throws or, on a successful one, half as much damage.</p>
+        </description>
+        <setters>
+            <set name="keywords">lightning</set>
+            <set name="level">2</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">30 foot cone</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a bit of fur or wool</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+      -->
+    <element name="Execution Blade" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_EXECUTION_BLADE">
+        <supports>Cleric, Sorcerer, Spell Saving Throw</supports>
+        <description>
+            <p>A blade of radiant light, falls from the sky in an area of 5 feets radius, dealing all creatures within that area 10d6 radiant damage, the creatures have disadvantage on any ability check they make until the end of their next turn, that blade ignores resistances and immunities. Creatures in the area can make a Dexterity saving throw, to take half damage and not suffer the effect.</p>
+        </description>
+        <setters>
+            <set name="keywords">radiant</set>
+            <set name="level">6</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">holy symbol</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Force Armor" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_FORCE_ARMOR">
+        <supports>Warlock, Wizard</supports>
+        <description>
+            <p>An energy armor forms around the caster changing their AC calculation to 12 + Dexterity modifier + Intelligence modifier. Your AC cannot be increased or reduced in any other way while this spell is active, whether by you, allies, enemies, or even items.</p>
+            <p class="indent">If a creature within 60 feet deals damage to you, you can use your reaction to shatter the armor into several shards that turn into 4 darts and launch towards the creature that damaged you. Each of the darts dealing 1d4+1 force damage to it. Doing so ends the spell.</p>
+            <p class="indent">At Higher Levels. When you cast this spell using a spell slot of 3rd level or higher, the spell creates one more dart for each slot above 2nd when you use the reaction.</p>
+        </description>
+        <setters>
+            <set name="keywords">force</set>
+            <set name="level">2</set>
+            <set name="school">Abjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">Self</set>
+            <set name="duration">1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Force Arrow" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_FORCE_ARROW">
+        <supports>Ranger</supports>
+        <description>
+            <p>You imbue magic into a ranged weapon that uses ammo, and when used by you, it fires magical ammo created on each attack, each ammo dealing in addition to its normal damage an extra 2d12 damage and all damage dealt is a force damage.</p>
+        </description>
+        <setters>
+            <set name="keywords">force</set>
+            <set name="level">5</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">Self</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Force of Hope" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_FORCE_OF_HOPE">
+        <supports>Bard, Cleric, Paladin</supports>
+        <description>
+            <p>You encourage and give hope to all friendly creatures 40ft of this spell’s range, all gain 2d8 temporary hit points and a +2 bonus to their AC, attack rolls, ability checks, and saves. The effects last for the duration.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">120 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Force of Salvation" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_FORCE_OF_SALVATION">
+        <supports>Bard, Cleric</supports>
+        <description>
+            <p>You hold a diamond and make a circular motion with your arm, saying the name of your God, creating a light on up to three willing creatures that you can see within range. Each creature heals for 5d8 and no longer suffers the effects of the conditions afflicting it.</p>
+            <p class="indent">At Higher Levels. When you cast this spell in higher spell slots, you affect one more creature per spell slot used above 7th.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">7</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a diamond worth at least 100 gp, which the spell consumes</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Force Platform" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_FORCE_PLATFORM">
+        <supports>Wizard</supports>
+        <description>
+            <p>You create eight cube-shaped platforms whose edge is 10 feet. You can position them as you wish, but at least one of them must be within 90 feet of you and they must all be connected to each other, with at least one of their sides necessarily touching the other of the cubes in order to connect them all. Each platform can hold up to 1000 pounds of load and the creatures can choose to walk or walk through them. With a bonus action on your turn, you can move all of them up to 15ft, rearranging them as you wish, while respecting the prerequisites mentioned above. Moving them this way causes creatures on top of it or in the middle of it to magically move this way. At any time, as a bonus action, you can end this spell, and all creatures over the platforms will fall normally.</p>
+            <p class="indent">At Higher Levels. If you cast this spell using a spell slot of 4th or greater, you can create 2 more platforms for each slot level above 3rd.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">90 feet</set>
+            <set name="duration">Concentration up to 1 hour</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">jewel worth 20gp</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Healing Breeze" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_HEALING_BREEZE">
+        <supports>Druid, Cleric</supports>
+        <description>
+            <p>You create a light and gentle breeze that rushes through the area relieving pain, effects and healing your allies. Creatures of your choice within a 60-foot cone recover 4d6 hit points and, if any, recover from 1 level of exhaustion.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">90 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a mint leaf or similar herb</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Huradrin's Rune of Frost" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_HURADRINS_RUNE_OF_FROST">
+        <supports>Druid, Spell Saving Throw</supports>
+        <description>
+            <p>When you cast this spell, a glowing rune appears on the ground in a 5-foot square you can see within range. The first time a creature enters the area on a turn, or if it ends its turn there, it must succeed on a Constitution saving throw or be frozen for the duration. A frozen creature takes 10d6 cold damage at the start of each of its turns and is petrified. The cold damage ignores resistance. At the end of each of its turns, the target can make another Constitution saving throw. On a successful saving throw, it is no longer frozen. If a frozen creature starts its turn outside the area, this saving throw is made with advantage. If a frozen creature suffers the cold damage from this spell on 5 consecutive turns, it remains petrified after the spell ends.</p>
+        </description>
+        <setters>
+            <set name="keywords">cold</set>
+            <set name="level">6</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">1 minute (concentration)</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a small stone rune</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Huradrin's Rune of Life" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_HURADRINS_RUNE_OF_LIFE">
+        <supports>Druid</supports>
+        <description>
+            <p>When you cast this spell, a glowing rune appears on the ground in a 5-foot square you can see within range. If a dead creature is in the space when the spell is cast, and it is willing, the creature is restored to life with 1 hit point, provided that it has been dead no longer than 24 hours. This spell can’t return a creature to life that has died of old age, nor can it restore any missing body parts.</p>
+            <p class="indent">Each time the restored creature ends its turn in contact with the rune, it regains 10 hit points while the spell lasts.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">8</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">10 minutes (concentration)</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a small rune carved from a gemstone worth at least 500 gp, which is consumed when the spell is cast</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Huradrin's Rune of Stasis" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_HURADRINS_RUNE_OF_STASIS">
+        <supports>Druid, Spell Saving Throw</supports>
+        <description>
+            <p>When you cast this spell, a glowing rune appears on the ground in a 5-foot square you can see within range. The first time a creature enters the area on a turn, or if it ends its turn there, it must succeed on a Wisdom saving throw or be paralyzed for the duration. At the end of each of its turns, the target can make another Wisdom saving throw. On a successful saving throw, it is no longer paralyzed. If the creature ends its turn no longer in the area, the saving throw is made with advantage.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">5</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">1 minute (concentration)</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a small stone rune</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Huradrin's Rune of Storms" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_HURADRINS_RUNE_OF_STORMS">
+        <supports>Druid, Spell Saving Throw</supports>
+        <description>
+            <p>When you cast this spell, a glowing rune appears on the ground in a 5-foot square you can see within range. The first time a creature enters the area on a turn, or if it ends its turn there, a bolt of lightning strikes the creature and it must succeed on a Dexterity saving throw or take 5d6 lightning damage and is unable to take reactions until the start of its next turn.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">1 minute (concentration)</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a small stone rune</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Huradrin's Rune of Transformation" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_HURADRINS_RUNE_OF_TRANSFORMATION">
+        <supports>Druid</supports>
+        <description>
+            <p>When you cast this spell, a glowing rune appears on the ground in a 5-foot square you can see within range. The first time a creature touches the rune after the spell is cast, the rune disappears and a willing creature is transformed for the duration. An unwilling creature may make a Wisdom saving throw; on a successful saving throw the spell ends and the creature is not transformed. You choose which transformation occurs when the rune is touched: Reptile, Avian or Plant.</p>
+            <p class="indent">Reptile. The target is covered in scales, grows a long tail, and its mouth becomes crocodilian.</p>
+            <ul>
+                <li>The creature’s maw becomes fanged and is a natural weapon which they can attack with using your spell attack modifier. Bite attacks deal piercing damage equal to 1d8 plus your spellcasting ability modifier on a hit.</li>
+                <li>Their scaly hide provides improved protection. While they aren’t wearing armor, their AC is 13 plus your spellcasting ability modifier.</li>
+                <li>The creature grows a scaly tail. The tail has a reach of 10 feet and if a creature enters its reach, the target of this spell can use their reaction to attempt to trip the creature. The creature makes a Strength saving throw against your spell DC or falls prone.</li>
+            </ul>
+            <p class="indent">Avian. The target is covered in feathers, grows wings, gains bird-like reflexes and hawk-like eyes.</p>
+            <ul>
+                <li>The creature gains a fly speed equal to their walking speed.</li>
+                <li>They gain advantage on any perception checks based on sight.</li>
+                <li>When they are hit with an attack, they may use their reaction to move up to their movement speed without provoking opportunity attacks.</li>
+            </ul><p class="indent">Plant. The target is covered in bark, grows leaves and roots</p>
+            <ul>
+                <li>The creature’s movement speed becomes 0.</li>
+                <li>The target gains resistance to non-magical bludgeoning damage.</li>
+                <li>The target gains vulnerability to fire damage.</li>
+            </ul>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">1 minute (concentration)</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a small stone rune</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Inner Greed" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_INNER_GREED">
+        <supports>Bard, Warlock, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>You create a small illusory energy globe that transforms into the object or person most coveted by the chosen target. The target must make a Wisdom saving throw or become charmed by the object of their desire. While charmed by this spell, the creature is incapacitated and, on its turn, will move towards the illusion, regardless of any obstacles in its path.</p>
+            <p class="indent">As a bonus action, you can move the globe up to 30ft within range of the spell. The spell ends if someone else uses an action to shake the creature out of its stupor.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">Illusion</set>
+            <set name="time">1 action</set>
+            <set name="range">120 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Locate Penumbral Portal" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_LOCATE_PENUMBRAL_PORTAL">
+        <supports>Ranger, Warlock, Wizard</supports>
+        <description>
+            <p>When casting this spell, you can feel the connections between this world and the Penumbral Plane, indicating where a nearby portal or rift to the Penumbral Plane may be located. You constantly sense the direction of the portal while you are within the range of the spell.</p>
+            <p class="indent">If you are playing outside of Tanares, you can find passages to the Shadowfell instead.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Divination</set>
+            <set name="time">1 action</set>
+            <set name="range">Half mile</set>
+            <set name="duration">Concentration up to 30 minutes</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Longburrow's Cozy Campfire" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_LONGBURROWS_COZY_CAMPFIRE">
+        <supports>Bard, Wizard</supports>
+        <description>
+            <p>You target a small non-magical campfire in range and magically transform it to be especially warm and inviting. Any creature that completes a short rest within 30 feet of the fire while this spell is in effect may roll 2 dice for each Hit Die spent to recover hit points.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">30 feet</set>
+            <set name="duration">1 hour</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">some whipped sugar and gelatin</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Longburrow's Comfortable Cottage" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_LONGBURROWS_COMFORTABLE_COTTAGE">
+        <supports>Bard, Wizard</supports>
+        <description>
+            <p>When you cast this spell, a small cottage occupying a 20 foot square, with a height of 10 feet, appears in an unoccupied space on the ground within range. A small fire burns in the fireplace in the cottage, keeping the temperature at a comfortable level regardless of the weather outside. The cottage is made of wood, with a single door facing the caster. One 5-foot square window adorns each side wall of the cottage. Within, 4 sets of bunk beds each include comfortable bedding, and a padded chair faces the fireplace. A pantry in the cottage and a barrel of ale in the corner contain enough ale and provisions to sustain 8 people for one day. At the end of the duration, the cottage and any remaining contents created by the spell vanish.</p>
+            <p class="indent">For the duration, any creature that completes a long rest within the cottage may remove an extra level of exhaustion or any other single condition afflicting it.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">Conjuration</set>
+            <set name="time">10 minutes</set>
+            <set name="range">30 feet</set>
+            <set name="duration">24 hour</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a piece of bear skin</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Longburrow's Homey Hearth" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_LONGBURROWS_HOMEY_HEARTH">
+        <supports>Bard, Wizard</supports>
+        <description>
+            <p>You target a fireplace within range and a warm and comforting fire erupts, which lasts for 8 hours. Any creature that completes a long rest in the same room of the fireplace while this spell is in effect regains all expended hit dice.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">30 feet</set>
+            <set name="duration">8 hour</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a wood chip</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Melody of Nemesis" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_MELODY_OF_NEMESIS">
+        <supports>Bard, Spell Saving Throw</supports>
+        <description>
+            <p>You play a deadly tune. Any creature other than you within a 60-foot area that can hear your tune must make a Constitution save, if they fail, they lose half their hit points, rounded down.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">8</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Memory Trial" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_MEMORY_TRIAL">
+        <supports>Bard, Ranger, Wizard</supports>
+        <description>
+            <p>By touching an object, the caster gets visions from it to discover precious information. There are two possible ways to use this spell;</p>
+            <p class="indent">In the first, when touching the spell, the caster can see through the object, everything that happened from the moment the object stopped in that place. For 1 hour, he can see and hear everything that happened until the object stays where he is, regardless of the amount of time the object has been standing there. Subtle movements the object may have had over time do not alter the spell’s effect.</p>
+            <p class="indent">In a second way, the caster can stipulate a specific time within 1 year and after that, he gets the vision of the object, similar to the above way.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">Divination</set>
+            <set name="time">1 hour</set>
+            <set name="range">Touch</set>
+            <set name="duration">1 hour</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">an object</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Metal to Wood" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_METAL_TO_WOOD">
+        <supports>Druid</supports>
+        <description>
+            <p>You cause a magical shock and transmute manufactured objects and metal equipment, in a 20 cubic feet area, into wood. Creatures within the area must make a Charisma save. If they fail, all equipped and carried equipment made of metal is turned to wood. Objects and equipment that are not being equipped or carried are automatically turned to wood. Transformation into non-magical objects and equipment is permanent, while magical objects and equipment are transformed for 24 hours. Weapons transformed into wood are considered improvised weapons and have a -2 penalty to their roll and damage and transformed armors have a -3 penalty to their AC.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">7</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Mind Reshaping" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_MIND_RESHAPING">
+        <supports>Sorcerer, Warlock, Wizard</supports>
+        <description>
+            <p>In an elaborate ritual, you wipe clean the psyche of a humanoid creature and imprint a new directive, effectively making it almost irreversible. The targeted creature is required to be seated on an obsidian structure atop a marble circle, both inscribed with arcane symbols. The creature must also be adorned with a tameranium bracelet on its right wrist and a bauronite bracelet on its left wrist.</p>
+            <p class="indent">The spell carries significant side effects; however, these are mitigated by increasing amounts of tameranium and bauronite used. With a minimum of 50 gp worth of each material, you gain 2 levels of exhaustion and are unable to cast this spell for 48 hours. Utilizing at least 500 gp of each reduces the exhaustion to one level, but the spell remains unusable for 24 hours. If you use at least 1000 gp of each, you suffer no exhaustion but are unable to recast the spell for 12 hours. The spell fails if casted before the time above pass.</p>
+            <p class="indent">The subject of the spell must remain seated for the entire casting duration. Upon completion, you may choose to implement one of the following directives (Mindless, Berserker, Focused, or Return) on the target. Subsequent castings of this spell can only reverse its effects if they focus on returning the target to their original state, or if a wish spell is used.</p>
+            <p class="indent">Mindless Soldier. The creature becomes proficient at executing orders and will only comply with commands given by individuals bound to it during the casting. You can designate any number of entities that are part of the same organization known to the creature before the ritual.</p>
+            <p class="indent">Berserker Beast. The target operates on pure instinct and obeys only the caster’s basic commands. The creature loses speech capability and becomes exceptionally hostile. The target gains advantage on Strength-based checks and saves, and its attacks dealing Strength-based damage gain a +2 bonus, while suffering disadvantage on Intelligence checks and saves.</p>
+            <p class="indent">Focused Servant. The target concentrates all its proficiency on one particular field of knowledge. Choose one skill or artisan tool. The creature gains proficiency in it, doubles its proficiency bonus for checks related to it, and gains advantage on these checks. However, it cannot apply its proficiency bonus to any other skill checks that aren’t directly related to the chosen skill or tool.</p>
+            <p class="indent">Mind Return. Consuming an object that once belonged to the target is necessary for this effect. If done, you revert the target to its state before the spell was cast on it.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">5</set>
+            <set name="school">Enchantment</set>
+            <set name="time">2 hours (ritual)</set>
+            <set name="range">10 feet</set>
+            <set name="duration">permanent</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">An obsidian seat worth at least 1000 gp, a marble circle valued at a minimum of 1000 gp, and between 100 and 1000 gp of tameranium and bauronite equally divided, all of which are consumed in the ritual</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">true</set>
+        </setters>
+    </element>
+    <element name="Nature Boon" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_NATURE_BOON">
+        <supports>Druid, Ranger, Sorcerer</supports>
+        <description>
+            <p>You cast natural energy at a willing creature within range, which gains the following benefits for the spell’s duration:</p>
+            <ul>
+                <li>The creature gains a +2 bonus to its AC and any saves;</li>
+                <li>The creature’s speeds increase by 5 feet;</li>
+                <li>The creature has advantage on Wisdom (Perception) checks, which relate to smell and hearing;</li>
+                <li>The creature’s unarmed strikes now deal 1d6 + Strength or Dexterity modifier (its choice). The damage type will be the same as the creature normally deals with its unarmed strikes.</li>
+            </ul>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Enchantment</set>
+            <set name="time">1 action</set>
+            <set name="range">30 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Nightmare Hug" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_NIGHTMARE_HUG">
+        <supports>Druid, Warlock, Wizard</supports>
+        <description>
+            <p>You summon a shadowy shape behind the target creature that embraces you. The creature must make a Constitution saving throw, if it fails, it suffers 1d4 levels of exhaustion and its respective effects for the duration of the spell. If the creature reaches the sixth level of exhaustion, it does not die but is unconscious for 24 hours, only suffering from 5 levels of exhaustion that remain even after the spell’s duration. An affected creature that hasn’t suffered all 6 levels of exhaustion can make a new save at the end of its turns, getting rid of this spell’s effects on a success.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">5</set>
+            <set name="school">Necromancy</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a black pearl worth 100 gp</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Notes of Biot" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_NOTES_OF_BIOT">
+        <supports>Bard</supports>
+        <description>
+            <p>You conjure powerful notes that echo in a 60-foot-radius circular area from a point within the spell’s range. Hostile creatures that enter or start their turn in the area take 6d8 thunder damage and must make a Constitution saving throw. If they pass, they suffer half damage; if they fail, they must roll 1d8 to define which note ran through their body and which condition affected them according to the table below.</p>
+            <p class="indent">The condition lasts for 1 minute, and the affected creature can redo the save at the end of its turns, ending the condition on a success. If a creature receives more than one condition from this spell, it makes a single save at the end of its turns, ending all conditions that have affected it as a result of it.</p>
+            <table>
+                <thead>
+                    <tr><td>d8</td><td>Note</td><td>Effect</td></tr>
+                </thead>
+                <tr><td>1</td><td>Do</td><td>The creature is Paralyzed</td></tr>
+                <tr><td>2</td><td>Re</td><td>The creature is Charmed</td></tr>
+                <tr><td>3</td><td>Mi</td><td>The creature is Stunned</td></tr>
+                <tr><td>4</td><td>Fa</td><td>The creature is Restrained</td></tr>
+                <tr><td>5</td><td>Sol</td><td>The creature is Silenced</td></tr>
+                <tr><td>6</td><td>La</td><td>The creature is Blinded</td></tr>
+                <tr><td>7</td><td>Si</td><td>The creature is Frightened</td></tr>
+                <tr><td>8</td><td>Chord</td><td>+4d8 thunder damage and roll again on the table</td></tr>
+            </table>
+        </description>
+        <setters>
+            <set name="keywords">thunder</set>
+            <set name="level">9</set>
+            <set name="school">Enchantment</set>
+            <set name="time">1 action</set>
+            <set name="range">120 feet</set>
+            <set name="duration">Concentration up to 1 hour</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a musical instrument</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Offer" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_OFFER">
+        <supports>Cleric</supports>
+        <description>
+            <p>You make an offering to your god, asking him for guidance on the day ahead. For the next 24 hours, anytime you roll a d20 to determine the outcome of any one action, you can choose to roll an additional d20 and choose which of the two results to use. You can declare you are using the extra d20 either before or after you make the first roll, but always before the GM declares the outcome. Once you use the roll the spell ends and can’t be used again before the next dawn.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 minute (ritual)</set>
+            <set name="range">30 feet</set>
+            <set name="duration">24 hours</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">8 sp in incenses, which the spell consumes</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">true</set>
+        </setters>
+    </element>
+    <element name="Penumbral Fissure" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_PENEMBRAL_FISSURE">
+        <supports>Cleric, Sorcerer, Warlock, Wizard</supports>
+        <description>
+            <p>As an action, the caster opens a 60-square-foot fissure that connects the material plane and the penumbral plane to the fissure, allowing creatures to cross from one plane to the other, right where they are. Alternatively, as an action, the caster can close a fissure between the material plane and the penumbral plane, as long as it does not exceed 60 square feet. A fissure created by this spell automatically closes if a penumbral creature comes within 5 feet of it, but reopens when there are no penumbral creatures within that range.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">6</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">30 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Phantom Vision" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_PHANTOM_VISION">
+        <supports>Bard, Ranger, Wizard</supports>
+        <description>
+            <p>You touch your eyes and they become yellow, allowing you to see creatures through solid objects, such as walls. For the duration, you can see creatures, not objects, through any obstacle up to 2ft thick, up to 20ft beyond the obstacle, regardless of the lack of light in the area. In this condition, the image of the creature is not sharp and its colors become only shades of red.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Divination</set>
+            <set name="time">1 action</set>
+            <set name="range">Touch</set>
+            <set name="duration">Concentration up to 10 minutes</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Prayer of the Desperates" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_PRAYER_OF_THE_DESPERATES">
+        <supports>Bard, Cleric</supports>
+        <description>
+            <p>You make a prayer asking your god to protect the desperate and heal the wounded.</p>
+            <p class="indent">Choose up to three creatures in range, each of them heal 1d6. In addition, if the creature had 0 hit points, it receives +2 to its AC until the start of its turn, and can immediately choose to use a reaction to stand up from prone.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">30 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Pressure Empowerment" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_PRESSURE_EMPOWERMENT">
+        <supports>Ranger, Sorcerer, Warlock, Spell Attack, Spell Saving Throw</supports>
+        <description>
+            <p>Upon casting this spell, you launch a piece of ammunition in a grand arc towards a target, exerting immense pressure as it descends. Make a ranged spell attack. On a hit, the target takes 8d6 force damage and is rendered prone. On a miss, the creature takes half the damage and must make a saving throw, choosing between Strength or Dexterity, to avoid falling prone.</p>
+            <p class="indent">All other creatures within a 20-feet radius of the target must make a Strength or Dexterity saving throw. Failure results in the creature taking 8d6 force damage and being knocked prone, while success leads to half damage and maintaining their stance. Creatures of large size or larger have advantage on saves.</p>
+        </description>
+        <setters>
+            <set name="keywords">force</set>
+            <set name="level">4</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">180 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">munition</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Pure Light Slash" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_PURE_LIGHT_SLASH">
+        <supports>Cleric, Paladin, Spell Saving Throw</supports>
+        <description>
+            <p>You conjure an immense blade of pure luminescence overhead, which descends and morphs into one of the forms you select:</p>
+            <ul>
+                <li>A sweeping slash spanning a 25-foot line, inflicting 3d4 radiant damage on all creatures within its trajectory.</li>
+                <li>A powerful thrust directly in front of you, causing 3d4 radiant damage within a 15-foot cone.</li>
+                <li> Fragmenting into several shards of brilliant light, dealing 3d4 radiant damage to all creatures adjacent to you.</li>
+            </ul>
+            <p>All creatures within the area must perform a Dexterity saving throw; on a success, they take half of the damage.</p>
+            <p class="indent">At Higher Levels. Casting this spell using a 2nd level or higher spell slot amplifies the damage by an additional 1d4 for each slot level beyond the 1st.</p>
+        </description>
+        <setters>
+            <set name="keywords">radiant</set>
+            <set name="level">1</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">Self</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Purge" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_PURGE">
+        <supports>Cleric, Spell Saving Throw</supports>
+        <description>
+            <p>You call down a beam of holy light to smite an enemy. The creature must succeed on a Charisma saving throw, taking 10d8 radiant damage plus 10d8 fire damage, is permanently blinded and becomes afflicted with the effects of the Slow spell for a minute on a failure. On a successful, take half the damage, is blinded for 1 minute and is not slowed. If the target is native to a different plane of existence than the one you’re on, he has disadvantage in the saving throw. A permanently blind creature can only remove the condition by the spells greater restoration, regeneration, wish, or similar abilities.</p>
+        </description>
+        <setters>
+            <set name="keywords">radiant, fire</set>
+            <set name="level">9</set>
+            <set name="school">Abjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">30 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">(a diamond worth at least 2000 gp that has been blessed by a ceremony spell, which is consumed</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Ray of Fear" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_RAY_OF_FEAR">
+        <supports>Warlock, Wizard, Spell Attack, Spell Saving Throw</supports>
+        <description>
+            <p>You shoot a powerful beam of dark purple energy from your open hands at a creature within range. You make a ranged spell attack against the target, and if it hits, it takes 7d6 Psychic damage and becomes frightened for 1d4 rounds. If you are in dim light or darkness, increase the damage by 3d6 and the target remains frightened for 2d4 rounds. The target takes half damage and is not frightened on a successful Dexterity saving throw.</p>
+        </description>
+        <setters>
+            <set name="keywords">psychic</set>
+            <set name="level">3</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Reveal Hidden Steps" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_REVEAL_HIDDEN_STEPS">
+        <supports>Ranger</supports>
+        <description>
+            <p>As an action, you exhale a luminous magical breath that reveals the tracks of passing creatures within 30 feet. For the duration of the spell, you gain a +10 bonus on Wisdom (Survival) checks to track creatures.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Divination</set>
+            <set name="time">1 action</set>
+            <set name="range">Self (30-foot radius)</set>
+            <set name="duration">Concentration up to 1 hour</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Rurik's Energy Shield" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_RURIKS_ENERGY_SHIELD">
+        <supports>Paladin, Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>You create a large shield of energy embellished with dwarven runes, which revolves around you and provides three-quarters of cover. Any creature that makes a melee attack against you takes 5d6 force damage. As a bonus action, you can transform the barrier made by the shield into a handaxe of arcane energy, which forms in your hand. You can make a ranged magic attack with the axe as an action against a creature within 6 feet of you. If successful, the attack deals 5d6 force damage, and if the creature hit by the axe is larger than you, you can attempt to trip it, allowing it to make a Dexterity saving throw to avoid. For the duration, as another bonus action, you can revert the handaxe to a shield of energy. If you take any damage, the spell ends.</p>
+        </description>
+        <setters>
+            <set name="keywords">force</set>
+            <set name="level">4</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">Self</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
             <set name="isRitual">false</set>
         </setters>
     </element>
@@ -247,7 +1181,160 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    
+    <element name="Shadow Sword" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_SHADOW_SWORD">
+        <supports>Sorcerer, Warlock, Wizard, Spell Attack, Spell Saving Throw</supports>
+        <description>
+            <p>You choose a target that you can see within the spell’s range and create a sword of negative energy, which emerges from the target’s shadow and attacks it. You must make a magic attack roll for the sword to stab the creature, on a success the attack deals 4d10 necrotic damage, half of that damage is deducted from the target’s maximum hit points. On subsequent turns, you can use your action to deal an additional 4d10 necrotic damage to the creature. The sword dissipates if you use your action to take any other action.</p>
+            <p class="indent">A creature that takes damage from the sword cannot have its hit points restored by any means until the sword is removed or dispelled. A creature can remove the sword using its action and make a Charisma saving throw by taking 4d10 necrotic damage and removing the sword or taking 2d10 and keeping the sword on failure.</p>
+        </description>
+        <setters>
+            <set name="keywords">negrotic</set>
+            <set name="level">7</set>
+            <set name="school">Necromancy</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a 25 gp onyx gem, which the spell consumes</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Shield of Light" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_SHIELD_OF_LIGHT">
+        <supports>Paladin</supports>
+        <description>
+            <p>You manifest a radiant energy barrier. For all purposes, it functions as a shield throughout the spell’s duration, yet allows for the execution of somatic components while casting additional spells.</p>
+            <p class="indent">At Higher Levels. This spell improves with the caster’s level, providing a +1 shield at the 5th level, a +2 shield at the 10th level, and a +3 shield at the 15th level.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">Self</set>
+            <set name="duration">8 hours</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Silver Crown" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_SILVER_CROWN">
+        <supports>Cleric, Paladin</supports>
+        <description>
+            <p>A crown of gleaming silver energy appears above the target creature’s head. The target has +1 bonus to its AC and all rolls that it adds its proficiency bonus while the spell lasts, as DC of its spells and skill checks.</p>
+            <p class="indent">At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above the 1st.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Enchantment</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">30 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Song of Life" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_SONG_OF_LIFE">
+        <supports>Bard</supports>
+        <description>
+            <p>You intone a beautiful chant. Up to five creatures of your choice that can hear within 20 feet of you regain 6d8 hit points and have advantage on the next Constitution saving throw they make. This spell has no effect on undead or constructs.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">5</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">20 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Sparks of Light" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_SPARKS_OF_LIGHT">
+        <supports>Bard, Cleric, Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>You create a small spark of radiant light that surrounds a 20-foot-radius area. As long as the spell lasts, hostile creatures in the area have a -1 penalty to attack rolls, AC, and ability checks. At any time, the caster can use a bonus action to end this effect by bursting the sparks and dealing 1d4 damage to all hostile creatures in the area. They can make a Dexterity saving throw to avoid this damage.</p>
+        </description>
+        <setters>
+            <set name="keywords">radiant</set>
+            <set name="level">1</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Spiritaul Calling" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_SPIRITUAL_CALLING">
+        <supports>Cleric, Wizard</supports>
+        <description>
+            <p>You cast this spell at a location to summon the spirit of a creature that has been there before, allowing it to provide you with information about the events that occurred there. The spirit remains for 1 minute. When invoking the spirit, roll 1d10 to determine the amount of information it has, as shown in the table below:</p>
+            <table>
+                <thead>
+                    <tr><td>d10</td><td>Effect</td></tr>
+                </thead>
+                <tr><td>1-2</td><td>The spirit is hostile, refusing to answer your questions or even providing false information.</td></tr>
+                <tr><td>3-4</td><td>The spirit has vague information and is not very familiar with the place, but does not act in a harmful manner.</td></tr>
+                <tr><td>5-8</td><td>The spirit acts in a friendly manner. It knows the place, but only has rumors and incomplete information about what happened there</td></tr>
+                <tr><td>9-10</td><td>The spirit acts in a friendly manner and has detailed knowledge of the location. It can provide accurate information about events that took place.</td></tr>
+            </table>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">Necromancy</set>
+            <set name="time">1 action</set>
+            <set name="range">20 feet</set>
+            <set name="duration">1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <!-- This spell was not listed in any spell lists so i guessed-->  
+    <element name="Spiritual Soul" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_SPIRITUAL_SOUL">
+        <supports>Cleric, Paladin</supports>
+        <description>
+            <p>You conjure a floating spectral spirit within range that lasts for the spell’s duration or until you cast it again. When you first cast this spell, you can use it to perform a healing touch on yourself or one of your allies, restoring their hit points by 1d8 + your proficiency bonus. As a bonus action on your turn, you can move the spectral spirit up to 30 feet and repeat the healing effect on a different creature.</p>
+            <p class="indent">At Higher Levels. When you cast this spell using a spell slot of 6th or higher, the healing increases by 1d8 for every two slot levels above.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">30 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">holy symbol</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
     <element name="Spore Blow" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_SPORE_BLOW">
         <supports>Druid, Ranger, Spell Saving Throw</supports>
         <description>
@@ -268,7 +1355,172 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    
+    <element name="Static Bolt" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_STATIC_BOLT">
+        <supports>Sorcerer, Wizard, Spell Attack</supports>
+        <description>
+            <p>You shoot a bolt of static energy against a creature within the spell’s range. Make a ranged spell attack against the target, on a hit it takes 1d8 lightning damage plus 1d8 lightning for each 5 feet it moves willingly or not, until the end of its next turn. This effect can cause no more than 5d8 damage, and ends when such amount is reached.</p>
+            <p class="indent">At Higher Levels. The initial damage is increased by 1d8 for each spell level higher than 1st.</p>
+        </description>
+        <setters>
+            <set name="keywords">lightning</set>
+            <set name="level">1</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">40 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Stone Bow" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_STONE_BOW">
+        <supports>Ranger, Spell Saving Throw</supports>
+        <description>
+            <p>When you cast this spell, you become a conduit for magical earth energy that makes projectiles you launch charged with energy. For the duration, or when the concentration ends, your ranged attacks made with a weapon deal an extra 1d6 damage, of the same type as the weapon or ammo. Also, whenever a creature is hit by one of these attacks, it must make a Strength saving throw. On failure, it will be pushed 10 feet straight away from you. Large or larger creatures have advantage on this saving throw.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">Self</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Taram's Life-Bond" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_TARAMS_LIFE_BOND">
+        <supports>Bard, Cleric, Paladin</supports>
+        <description>
+            <p>When you cast this spell, you create a mystical bond between yourself and up to two creatures within range. Each targeted creature makes a Wisdom saving throw. On a failure, they become linked to you for the duration of the spell.</p>
+            <p class="indent">When you take damage and a bonded creature is within 120 feet, the damage is divided between you and the creature. You take half the damage (rounded down), and the bonded creature absorbs the remainder, inflicted as psychic damage. If both bonded creatures are within range, both take half of the damage. For example, if you would take 10 damage, you take only 5 and both creatures take 5 each.</p>
+            <p class="indent">At Higher Levels. For each spell slot above 4th that you use to cast this spell, you can bond with one additional creature.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">Abjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">1 hour</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Terror Clone" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_TERROR_CLONE">
+        <supports>Cleric, Druid, Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>You choose a creature and cause its shadow to detach and become a separate creature with the same statistics and equipment as the original. The target creature must make a Charisma saving throw or its shadow comes to life. If the shadow came to life, the shadow acts on the same initiative turn as the original creature but takes its turn immediately after. The shadow will attack the original creature with all its might and will continue to do so until it is defeated or the spell ends. The copy lasts until the spell’s duration ends or until the copy or its original drops to 0 hit points.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">9</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">30 feet</set>
+            <set name="duration">1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Thalia's Acceleration Rescue" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_THALIAS_ACCELERATION_RESCUE">
+        <supports>Druid, Sorcerer, Wizard</supports>
+        <description>
+            <p>This spell causes up to 5 willing creatures in a 30-foot-radius area to gain 5 feet speed and can take the Dash action as a bonus action.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">100 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Threshold Impacts" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_THRESHOLD_IMPACTS">
+        <supports>Sorcerer, Warlock, Wizard, Spell Attack</supports>
+        <description>
+            <p>You open 3 portals through the Penumbral Plane in 3 locations of your choice within range of the spell. As a bonus action, you can enter one of them and exit through any of the other two of your choice during the duration of the spell. Alternatively, if you are adjacent to one of them, you can channel energy from the portal to shoot an enemy up to 60 feet away, making a magical ranged attack and dealing 4d6 necrotic damage upon hitting. Other creatures cannot pass through the portal but can block the exit. If you pass through the portal and decide to exit through a blocked portal, both you and the creature blocking the exit take 4d6 force damage.</p>
+        </description>
+        <setters>
+            <set name="keywords">necrotic</set>
+            <set name="level">4</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">circles of silver with bone dust of a penumbral being</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <!-- Missing from spell lists, assumed bard-->
+    <element name="Thunder Weapon" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_THUNDER_WEAPON">
+        <supports>Bard, Melee, Spell Attack</supports>
+        <description>
+            <p>You conjure a resonating, spectral lute within your grasp. This lute can be used to make melee spell attacks, dealing 1d10 plus your spellcasting ability modifier as thunder damage. Additionally, upon casting this spell, you can instantly execute an attack action with it.</p>
+        </description>
+        <setters>
+            <set name="keywords">thunder</set>
+            <set name="level">1</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">Self</set>
+            <set name="duration">1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">instrument string</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Thunderous Spear" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_THUNDEROUS_SPEAR">
+        <supports>Cleric, Druid, Paladin, Ranger, Warlock, Spell Saving Throw</supports>
+        <description>
+            <p>You call forth a spear of solid lightning to skewer an enemy. The target must succeed on a Dexterity saving throw or be marked as the target of three spears that rain down from a cloud created 20 feet above the creature’s head. Whenever that creature is hit by an attack for the first time on a turn, one of the spears strikes down, dealing 4d4 piercing damage and 4d4 lightning damage. The spell ends when all three spears are used.</p>
+            <p class="indent">At Higher Levels. When you cast this spell using a spell slot of 5th level or higher, the spell creates two additional spears for each slot level above 4th.</p>
+        </description>
+        <setters>
+            <set name="keywords">lightning</set>
+            <set name="level">3</set>
+            <set name="school">Enchantment</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">30 feet</set>
+            <set name="duration">1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">one javelin and a bottle of water collected from a storm</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    -->
     <element name="Tranquil Grove" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_TRANQUIL_GROVE">
         <supports>Wizard</supports>
         <description>
@@ -283,6 +1535,46 @@
             <set name="hasVerbalComponent">true</set>
             <set name="hasSomaticComponent">true</set>
             <set name="hasMaterialComponent">false</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="True Light Palm" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_TRUE_LIGHT_PALM">
+        <supports>Paladin, Melee, Spell Attack</supports>
+        <description>
+            <p>You channel the purest light through your hand to punish or save your targets. If you use it against a hostile creature, make a melee spell attack against the target creature. On a hit, the creature takes 7d6 radiant damage, the flames spread and consume the creature’s essence imposing disadvantage on all its saves made in the next minute. If you cast it on an allied creature, it heals 7d6 hit points, the flames ignite its essence and it has advantage on all saves it makes for the next minute.</p>
+        </description>
+        <setters>
+            <set name="keywords">radiant</set>
+            <set name="level">5</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">Touch</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Uster's Necrotic Comet" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_USTERS_NECROTIC_COMET">
+        <supports>Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>You concentrate to channel the necrotic energy from the bones and piles of bodies, creating a green cloud in the sky. On your next turn, you spend your action to cause the cloud to transform into a sphere of bone necrotic energy and fall in a 30-foot-radius area within range. Creatures in the area must make a Dexterity saving throw or take 12d6 necrotic damage, or half as much damage on a success. Additionally, if this damage reduces a creature to 20 or less hit points, it must succeed on a Constitution saving throw or die, becoming a zombie as per the Animate the Dead spell. If the creature drops to 10 or fewer hit points, it makes the saving throw with disadvantage. If the creature dies from the spell’s damage, it automatically becomes undead.</p>
+        </description>
+        <setters>
+            <set name="keywords">necrotic</set>
+            <set name="level">8</set>
+            <set name="school">Necromancy</set>
+            <set name="time">2 action</set>
+            <set name="range">400 feet</set>
+            <set name="duration">2 rounds</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">dozens of bones or a pile of bodies</set>
             <set name="isConcentration">false</set>
             <set name="isRitual">false</set>
         </setters>
@@ -334,6 +1626,7 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
+  
 </elements>
 
 <!--
