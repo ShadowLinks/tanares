@@ -19,7 +19,7 @@
                 </thead>
                 <tr><td>3rd</td><td>spike growth, spore blow</td></tr>
                 <tr><td>5th</td><td>speak with plants, wild path</td></tr>
-                <tr><td>7th</td><td>conjure woodland beings, tranquil groove</td></tr>
+                <tr><td>7th</td><td>conjure woodland beings, tranquil grove</td></tr>
                 <tr><td>9th</td><td>awaken, tree stride</td></tr>
             </table>
             <div element="ID_TRPG_ARCHETYPE_FEATURE_DRUID_BLOOM_PLANT_EMPATHY" />
@@ -37,7 +37,7 @@
             <grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_PLANTS" level="5" />
             <grant type="Spell" id="ID_TRPG_SPELL_WILDPATH" level="5" />
             <grant type="Spell" id="ID_PHB_SPELL_CONJURE_WOODLAND_BEINGS" level="7" />
-            <grant type="Spell" id="ID_TRPG_SPELL_TRANQUIL_GROOVE" level="7" />
+            <grant type="Spell" id="ID_TRPG_SPELL_TRANQUIL_GROVE" level="7" />
             <grant type="Spell" id="ID_PHB_SPELL_AWAKEN" level="9" />
             <grant type="Spell" id="ID_PHB_SPELL_TREE_STRIDE" level="9" />
             <grant type="Archetype Feature" id="ID_TRPG_ARCHETYPE_FEATURE_DRUID_BLOOM_PLANT_EMPATHY" level="2" />
