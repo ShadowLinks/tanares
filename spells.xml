@@ -1,7 +1,7 @@
 <elements>
     <info>
         <name>Tanares Spells</name>
-        <update version="0.0.2">
+        <update version="0.0.3">
             <file name="spells.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/spells.xml" />
         </update>
     </info>
@@ -227,7 +227,7 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <!--
+    
     <element name="Chorus of the Furious Animal" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_CHORUS_OF_THE_FURIOUS_ANIMAL">
         <supports>Bard, Druid, Ranger</supports>
         <description>
@@ -311,6 +311,7 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
+    
     <element name="Cupid's Arrow" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_CUPIDS_ARROW">
         <supports>Bard, Cleric, Druid, Spell Saving Throw</supports>
         <description>
@@ -367,8 +368,8 @@
             <set name="school">Transmutation</set>
             <set name="time">1 action</set>
             <set name="range">Self</set>
-            <set name="duration">duration</set>
-            <set name="hasVerbalComponent">Instantaneous</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
             <set name="hasSomaticComponent">true</set>
             <set name="hasMaterialComponent">true</set>
             <set name="materialComponent">instrument</set>
@@ -376,6 +377,7 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
+
     <element name="Edge of Mirrors" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_EDGE_OF_MIRRORS">
         <supports>Bard, Wizard</supports>
         <description>
@@ -418,7 +420,6 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-      -->
     <element name="Execution Blade" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_EXECUTION_BLADE">
         <supports>Cleric, Sorcerer, Spell Saving Throw</supports>
         <description>
