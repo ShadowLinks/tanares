@@ -4,7 +4,7 @@
 		<name>Chaos Domain</name>
 		<description>Chaos Domain for Clerics from Tanares RPG 5e.</description>
 		<author url="">Dragori Games</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="cleric-chaos.xml" url="https://github.com/ShadowLinks/tanares/raw/refs/heads/main/subclasses/cleric-chaos.xml" />
 		</update>
 	</info>
