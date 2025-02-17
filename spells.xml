@@ -6,7 +6,7 @@
         </update>
     </info>
     <element name="Ammunition Eyes" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_AMMUNITION_EYES">
-        <supports>druid, ranger</supports>
+        <supports>Druid, Ranger</supports>
         <description>
             <p>When you cast this spell, you can make 1 to 20 arrows magically enchanted for the duration, making a special magical bond with each of them. You make any ranged attack using these arrows with advantage, as well as ignoring half cover and ¾ cover that protects the target of this attack. Also, for the duration of the spell, you always know where your enchanted arrows are, as well as you can use your action to magically see through one of those arrows of your choice, and continue to do so until you use your action to return to your normal senses. As long as you are seeing through the arrow, you are blind to your own senses. You will not be able to see through one of its arrows if it is more than 1 mile away from you. If one of these arrows breaks, the enchantment no longer affects it.</p>
         </description>
@@ -26,12 +26,12 @@
         </setters>
     </element>
     <element name="Amplify the Pain" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_AMPLIFY_THE_PAIN">
-        <supports>cleric, sorcerer, warlock, wizard, Spell Saving Throw</supports>
+        <supports>Cleric, Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
         <description>
             <p>You concentrate and gaze upon a creature within range, causing all of the pain it receives to be amplified for the duration of the spell. Whenever the target takes damage, it must make a Constitution saving throw or take an additional 1d8 necrotic damage. If this additional damage reduces the target’s hit points to 10 or fewer, it must make a Strength saving throw or drop anything it is holding on a failed save.</p>
         </description>
         <setters>
-            <set name="keywords"></set>
+            <set name="keywords">necrotic</set>
             <set name="level">3</set>
             <set name="school">Necromancy</set>
             <set name="time">1 bonus action</set>
@@ -46,7 +46,7 @@
         </setters>
     </element>
     <element name="Arena's Fervor" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_ARENAS_FERVOR">
-        <supports>cleric</supports>
+        <supports>Cleric</supports>
         <description>
             <p>When you cast this spell, you instill in you and your allies the spirit of the arena. You and every willing ally within 20 feet of you has advantage on Strength ability checks, Strength saving throws and all saving throws against effects that cause the frightened condition. While a creature has this effect active, it deals +2 on all damage rolls it makes, including attacks and spells. The bonus is applied to each damage caused individually before any other modifier.</p>
         </description>
@@ -66,7 +66,7 @@
         </setters>
     </element>
     <element name="Aurora Heal" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_AURORA_HEAL">
-        <supports>cleric, druid, paladin</supports>
+        <supports>Cleric, Druid, Paladin</supports>
         <description>
             <p>When you cast this spell, .you create a 20-foot radius aura around you. Allied creatures that start their turns within the area regain hit points equal to 1d6 + your proficiency bonus. Also, it supresses all magical effects that are causing a condition affecting allied creatures within the area. Lasting effects or conditions do not cease to affect the creature, but are only suspended for the duration of the spell.</p>
         </description>
@@ -86,7 +86,7 @@
         </setters>
     </element>
     <element name="Avelum's Force Spheres" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_AVELUMS_FORCE_SPHERES">
-        <supports>wizard, Spell Saving Throw</supports>
+        <supports>Wizard, Spell Saving Throw</supports>
         <description>
             <p>You conjure five small energy spheres in range, each about 2 feet in diameter, spinning at high speed and affecting a spherical area with a diameter of 10 feet. Any creature that starts its turn or enters the area takes 3d6 force damage, or half damage with a successful Dexterity saving throw. As a bonus action, you can move each sphere up to 20 feet in any direction within the spell’s rang</p>
         </description>
@@ -106,7 +106,7 @@
         </setters>
     </element>
     <element name="Banner of Inspiration" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_BANNER_OF_INSPIRATION">
-        <supports>bard</supports>
+        <supports>Bard</supports>
         <description>
             <p>You create a fixed, 10 feet high, spiritual banner in a place within range, with a symbol you are currently defendeing. Allies within a 60-foot radius area around the banner and who can see it are inspired, and for the next 10 minutes, can add 1d6 to one ability check, attack roll, or saving throw. Each ally can only use this extra die once, ending this effect for them after it is used. For all purposes, this die counts as a Bardic Inspiration die. This spell can only be cast once every 8 hours.</p>
         </description>
@@ -126,7 +126,7 @@
         </setters>
     </element>
     <element name="Beacon of Envy" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_BEACON_OF_ENVY">
-        <supports>bard, sorcerer, warlock, wizard</supports>
+        <supports>Bard, Sorcerer, Warlock, Wizard</supports>
         <description>
             <p>You become a catalyst of envy, pulling the luck of an enemy towards you. When an enemy you can see makes a roll, such as an attack or a saving throw, the target must succeed on a Charisma check. If it fails, you steal that result and store it. If you do so, the target must reroll the dice that was stolen.</p>
             <p class="indent">While maintaining concentration, you can spend the stolen value as one of your own rolls, thus ending the effect of the spell.</p>
@@ -146,8 +146,89 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
+    <element name="Bite of the Naga Queen" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_BITE_OF_THE_NAGA_QUEEN">
+        <supports>Druid, Sorcerer, Warlock, Melee, Spell Attack, Spell Saving Throw</supports>
+        <description>
+            <p>You transform one of your arms into a serpent for a moment, allowing you to make a melee spell attack against a creature within 10 feet of you. On a hit, the target takes piercing damage equal to 1d8 + your spellcasting ability modifier and must make a Constitution saving throw. On a failure, the creature takes 10d8 poison damage and becomes poisoned. On a success, the creature takes half of the poison damage and is not poisoned.</p>
+            <p class="indent">Alternatively, the serpent arm can spit the poison in a 10-foot cone, starting up to 10 feet from you, and all creatures in the area must make a Constitution saving throw. On a failed save, they take 6d8 poison damage and become poisoned, taking 1d6 poison damage at the start of their turns. They can repeat the saving throw at the end of each turn, ending the condition on a success. Creatures poisoned by this spell cannot become poisoned by it again until they finish a long rest.</p>
+        </description>
+        <setters>
+            <set name="keywords">poisons</set>
+            <set name="level">5</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">Self(10 feet)</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Black Dragon's Mantle" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_BLACK_DRAGONS_MANTLE">
+        <supports>Sorcerer, Warlock, Wizard</supports>
+        <description>
+            <p>You infuse the body of a willing creature you touch with black flames that cover its entire body. The target becomes resistant to fire and necrotic damage. Any other creature that touches the target takes 1d6 fire damage + 1d6 necrotic damage. If the target takes damage from melee attacks, fthe attacking creature must succeed on a Dexterity saving throw for each attack or take damage as if it had touched the target. In addition, the same damage is caused to a creature if the target hits it with melee attacks or manage to touch it in any other way.</p>
+        </description>
+        <setters>
+            <set name="keywords">fire, necrotic</set>
+            <set name="level">6</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">Self</set>
+            <set name="duration">Concentration up to 1 hour</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">small portion of any dragon's material</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Blinding Armor" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_BLINDING_ARMOR">
+        <supports>Paladin, Spell Saving Throw</supports>
+        <description>
+            <p>Your armor emits a strong pulse of intense light capable of blinding opponents. Any hostile creature within 15 feet of you that can see you must make a Constitution saving throw and becomes blinded for 1 minute on a failure. Blinded creatures can roll a saving throw at the end of each of their turns to regain their sight.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">Self</set>
+            <set name="duration">1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">medium armor or higher</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Carry the Flame" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_CARRY_THE_FLAME">
+        <supports>Bard, Cleric</supports>
+        <description>
+            <p>Choose a spell you are able to cast that is of 4th level or lower. For the duration, you grant a creature within range the ability to cast that spell one time. The target creature uses its Wisdom as its spellcasting ability for that spell and must expend the actions and components as described for the spell.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">5</set>
+            <set name="school">Enchantment</set>
+            <set name="time">1 action</set>
+            <set name="range">30 feet</set>
+            <set name="duration">8 hours</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">sacred symbol the other person could carry</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
     <element name="Shadow Noose" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_SHADOW_NOOSE">
-        <supports>druid, ranger, warlock, Spell Saving Throw</supports>
+        <supports>Druid, Ranger, Warlock, Spell Saving Throw</supports>
         <description>
             <p>Upon casting this spell, beams of necrotic energy burst from the shadow of a target creature within range, seeking to ensnare it. The target creature must make a Dexterity saving throw. On a failure, shadowy tendrils form around the creature for the duration of the spell, halving its speed and inflicting necrotic damage equal to 1d6 plus your spellcasting ability modifier.</p>
             <p class="indent">The ensnared creature may attempt a new saving throw at the end of each of its turns to free itself. Until it succeeds, it suffers necrotic damage equal to 1d6 plus your spellcasting ability modifier at the beginning of each of its turns. On a successful save, the spell ends</p>
@@ -168,7 +249,7 @@
     </element>
     
     <element name="Spore Blow" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_SPORE_BLOW">
-        <supports>druid, ranger, Spell Saving Throw</supports>
+        <supports>Druid, Ranger, Spell Saving Throw</supports>
         <description>
             <p>You use natural energy to release dozens of magical spores that affect a 20-foot radius sphere within range. Any creature other than you that enters or starts its turn in the affected area must make a Dexterity saving throw. On a failure, 2d4 spores stick to the creature, or half as much on a success. The attached spores explode if the creature takes any damage. The creature then takes 1d4 poison damage for each exploded spore and must succeed on a Constitution saving throw to not become poisoned for 1 minute. As long as the spores have not exploded, a creature can, as an action, make a Dexterity (Sleight of Hand) check against your spell save DC to remove 1 of the spores attached to itself or another creature, but on failure, all spores explode.</p>
         </description>
@@ -189,7 +270,7 @@
     </element>
     
     <element name="Tranquil Grove" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_TRANQUIL_GROVE">
-        <supports>wizard</supports>
+        <supports>Wizard</supports>
         <description>
             <p>You create a restful environment in a 20-foot radius around you, making it an ideal place for a long rest. A long rest taken in this area only requires half the usual time, and the creature resting recovers from the effects of one additional level of exhaustion. A creature can only benefit from this spell once per long rest, and must take at least one long rest outside of this area before it can benefit from the spell again</p>
             <p class="indent"></p> </description>
@@ -207,7 +288,7 @@
         </setters>
     </element>
     <element name="Veil of Bravery" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_VEIL_OF_BRAVERY">
-        <supports>bard, cleric</supports>
+        <supports>Bard, Cleric</supports>
         <description>
             <p>You can turn your allies’ courage into a powerful protective energy. Choose up to 3 willing creatures within range. While under this spell, you and those creatures get +1 on all saving throws, plus the following effect:</p>
             <p class="indent">When a creature affected with the veil of bravery takes damage, it can take a reaction to reduce the damage by 1d6 for each creature within 20 feet of it that is also affected by this spell. Each creature can use this spell’s effect only once; then the spell ends for it.</p>
@@ -227,7 +308,7 @@
         </setters>
     </element>
     <element name="Wildpath" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_WILDPATH">
-        <supports>ranger, Spell Saving Throw</supports>
+        <supports>Ranger, Spell Saving Throw</supports>
         <description>
             <p>You create an opaque wall of magic bushes on a solid surface within range. You can make a wall up to 30-foot long, 5-foot high and 5-foot thick or a ring wall up to 20 feet in diameter, 5 feet high and 5 feet thick. Each creature within the area when the wall appears, and, subsequently, any creatures that pass through the spaces it occupies, must make a Dexterity saving throw. On a failure, the creature must roll 1d6 to determine which effect on the table happens to it</p>
             <p class="indent"></p>
