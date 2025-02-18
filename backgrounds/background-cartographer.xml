@@ -4,7 +4,7 @@
         <name>Cartographer</name>
         <description>Cartographer background</description>
         <author url="">Dragori Games</author>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="background-cartographer.xml" url="https://github.com/ShadowLinks/tanares/raw/refs/heads/main/backgrounds/backgrounds-cartographer.xml" />
         </update>
     </info>
@@ -27,7 +27,7 @@
         </setters>
         <rules>
             <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY"/>
-            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVLA"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL"/>
             <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CARTOGRAPHERS_TOOLS" />
             <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_NAVIGATORS_TOOLS" />
             <grant type="Background Feature" id="ID_TRPG_BACKGROUND_FEATURE_DYNAMIC_MAPS" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
