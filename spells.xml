@@ -1,7 +1,7 @@
 <elements>
     <info>
         <name>Tanares Spells</name>
-        <update version="0.0.3">
+        <update version="0.0.4">
             <file name="spells.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/spells.xml" />
         </update>
     </info>
@@ -1315,7 +1315,7 @@
         </setters>
     </element>
     <!-- This spell was not listed in any spell lists so i guessed-->  
-    <element name="Spiritual Soul" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_SPIRITUAL_SOUL">
+    <element name="Spiritual Healer" type="Spell" source="Tanares RPG 5e" id="ID_TRPG_SPELL_SPIRITUAL_HEALING">
         <supports>Cleric, Paladin</supports>
         <description>
             <p>You conjure a floating spectral spirit within range that lasts for the spell’s duration or until you cast it again. When you first cast this spell, you can use it to perform a healing touch on yourself or one of your allies, restoring their hit points by 1d8 + your proficiency bonus. As a bonus action on your turn, you can move the spectral spirit up to 30 feet and repeat the healing effect on a different creature.</p>
