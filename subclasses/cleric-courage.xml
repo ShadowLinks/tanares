@@ -4,7 +4,7 @@
 		<name>Courage Domain</name>
 		<description>Courage Domain for Clerics from Tanares RPG 5e.</description>
 		<author url="">Dragori Games</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="cleric-courage.xml" url="https://github.com/ShadowLinks/tanares/raw/refs/heads/main/subclasses/cleric-courage.xml" />
 		</update>
 	</info>
@@ -106,10 +106,10 @@
         </description>
         <sheet>
             <description>
-                <p>At 1st level, you have a number of Courage Points equal to your Wisdom modifier {{wisdom:modifier}}. You recover all your Courage Points after a short rest. The Courage Points can initially be used in three ways:</p>
-                <p class="indent">- When a creature within 30 feet of you fails a saving throw, you can spend a Courage Point as a reaction to instill in it the will to fight on. The creature can make a new saving throw and must use the second result.</p>
-                <p class="indent">-  As a bonus action, you can spend a Courage Point to summon your inner strength and smite your foes. Until the start of your next turn, your first successful melee attack deals +1d10 damage of the same type as your weapon. This damage increases to +2d10 at 6th level, +3d10 at 12th level, and +4d10 at 18th level.</p>
-                <p class="indent">- As an action, you can spend a Courage Point to shout a powerful war cry. You and all allies within 30 feet of you gain a number of temporary hit points equal to 1d6 + your cleric level for 1 minute, and can roll a saving throw to remove any effect causing the frightened condition. While the temporary hit points last, they also give advantage on all other saving throws made against effects that cause the frightened condition.</p>
+                At 1st level, you have a number of Courage Points equal to your Wisdom modifier {{wisdom:modifier}}. You recover all your Courage Points after a short rest. The Courage Points can initially be used in three ways:
+                - When a creature within 30 feet of you fails a saving throw, you can spend a Courage Point as a reaction to instill in it the will to fight on. The creature can make a new saving throw and must use the second result.
+                - As a bonus action, you can spend a Courage Point to summon your inner strength and smite your foes. Until the start of your next turn, your first successful melee attack deals +1d10 damage of the same type as your weapon. This damage increases to +2d10 at 6th level, +3d10 at 12th level, and +4d10 at 18th level.
+                - As an action, you can spend a Courage Point to shout a powerful war cry. You and all allies within 30 feet of you gain a number of temporary hit points equal to 1d6 + your cleric level for 1 minute, and can roll a saving throw to remove any effect causing the frightened condition. While the temporary hit points last, they also give advantage on all other saving throws made against effects that cause the frightened condition.
             </description>
         </sheet>
     </element>
@@ -124,12 +124,12 @@
         </description>
         <sheet usage="Channel Divinity">
             <description>
-                <p>Starting at 2nd level, you can use your Channel Divinity as an action, you can give a touched creature one of the following benefits:</p>
-                <p class="indent">- +1 to AC</p>
-                <p class="indent">- +1 to Attack rolls</p>
-                <p class="indent">- +1 to Saving throws</p>
-                <p class="indent">- +1 to Damage rolls</p>
-                <p class="indent">These benefits last for 1 minute. When you use this feature, you can choose to spend a Courage Point to give a touched creature two different benefits instead of one</p>
+                Starting at 2nd level, you can use your Channel Divinity as an action, you can give a touched creature one of the following benefits:
+                - +1 to AC
+                - +1 to Attack rolls
+                - +1 to Saving throws
+                - +1 to Damage rolls
+                These benefits last for 1 minute. When you use this feature, you can choose to spend a Courage Point to give a touched creature two different benefits instead of one
             </description>
         </sheet>
     </element>
