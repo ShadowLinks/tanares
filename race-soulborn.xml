@@ -3,7 +3,7 @@
 		<name>Soulborn</name>
 		<description>Soulborn species from Tanares RPG 5e.</description>
 		<author url="">Dragori Games</author>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="race-soulborn.xml" url="https://raw.githubusercontent.com/ShadowLinks/tanares/refs/heads/main/race-soulborn.xml" />
 		</update>
 	</info>
@@ -173,7 +173,7 @@
 		</description>
 		<sheet display="false"/>
 		<rules>
-			<select type="Proficiency" name="Tools Proficiency" supports="Tool" numer="2" />
+			<select type="Proficiency" name="Tools Proficiency" supports="Tool" number="2" />
 		</rules>
 	</element>
 	<element name="Ancestral Memory (Magic)" type="Racial Trait" source="Tanares RPG 5E" id="ID_TRPG_RACIAL_TRAIT_SOULBORN_ANCESTRAL_MEMORY_CANTRIP">
